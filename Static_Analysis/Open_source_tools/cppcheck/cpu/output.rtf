@@ -1,0 +1,1990 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 eduEEC8:contiki-3.0 Jack$ cppcheck --force --enable=style  cpu/*/*\
+Checking cpu/6502/6502def.h ...\
+Checking cpu/6502/6502def.h: CONNECTIONS...\
+Checking cpu/6502/6502def.h: MTU_SIZE...\
+Checking cpu/6502/6502def.h: WITH_BOOST...\
+Checking cpu/6502/6502def.h: WITH_CLIENT...\
+Checking cpu/6502/6502def.h: WITH_DNS...\
+Checking cpu/6502/6502def.h: WITH_FORWARDING...\
+Checking cpu/6502/6502def.h: WITH_LOGGING...\
+Checking cpu/6502/6502def.h: WITH_MOUSE...\
+Checking cpu/6502/6502def.h: WITH_PFS...\
+1/459 files checked 0% done\
+Checking cpu/6502/Makefile.6502 ...\
+2/459 files checked 0% done\
+Checking cpu/6502/Makefile.customrules-6502 ...\
+[cpu/6502/Makefile.customrules-6502:22]: (error) syntax error\
+3/459 files checked 0% done\
+Checking cpu/6502/README.md ...\
+[cpu/6502/README.md:21]: (error) Invalid number of character '[' when no macros are defined.\
+4/459 files checked 0% done\
+Checking cpu/6502/ctk/ctk-mouse.c ...\
+Checking cpu/6502/ctk/ctk-mouse.c: CTK_CONF_MOUSE_SUPPORT...\
+5/459 files checked 0% done\
+Checking cpu/6502/ethconfig/ethconfig.c ...\
+Checking cpu/6502/ethconfig/ethconfig.c: __APPLE2__...\
+Checking cpu/6502/ethconfig/ethconfig.c: __ATARI__...\
+Checking cpu/6502/ethconfig/ethconfig.c: __CBM__...\
+6/459 files checked 0% done\
+Checking cpu/6502/ipconfig/ipconfig.c ...\
+[cpu/6502/ipconfig/ipconfig.c:108]: (style) Unused variable: addrptr\
+Checking cpu/6502/ipconfig/ipconfig.c: CTK_CONF_WINDOWCLOSE...\
+Checking cpu/6502/ipconfig/ipconfig.c: WITH_DNS...\
+7/459 files checked 0% done\
+Checking cpu/6502/lib/config.c ...\
+Checking cpu/6502/lib/config.c: ETHERNET...\
+Checking cpu/6502/lib/config.c: LOG_CONF_ENABLED...\
+Checking cpu/6502/lib/config.c: WITH_DNS...\
+8/459 files checked 0% done\
+Checking cpu/6502/lib/error.c ...\
+9/459 files checked 1% done\
+Checking cpu/6502/lib/log.c ...\
+Checking cpu/6502/lib/log.c: LOG_CONF_ENABLED...\
+Checking cpu/6502/lib/log.c: UIP_LOGGING...\
+10/459 files checked 1% done\
+Checking cpu/6502/lib/unload.c ...\
+Checking cpu/6502/lib/unload.c: WITH_GUI...\
+11/459 files checked 1% done\
+Checking cpu/6502/net/ethernet-drv.c ...\
+Checking cpu/6502/net/ethernet-drv.c: NETSTACK_CONF_WITH_IPV6...\
+12/459 files checked 1% done\
+Checking cpu/6502/net/ethernet.c ...\
+Checking cpu/6502/net/ethernet.c: ETHERNET...\
+13/459 files checked 1% done\
+Checking cpu/6502/net/uip_arch.c ...\
+Checking cpu/6502/net/uip_arch.c: UIP_UDP_CHECKSUMS...\
+14/459 files checked 1% done\
+Checking cpu/6502/sys/clock.c ...\
+15/459 files checked 1% done\
+Checking cpu/6502/sys/mtarch.c ...\
+16/459 files checked 1% done\
+Checking cpu/arm/aducrf101/Common/IAR/Retarget.c ...\
+17/459 files checked 1% done\
+Checking cpu/arm/aducrf101/Common/RealView/Retarget.c ...\
+[cpu/arm/aducrf101/Common/RealView/Retarget.c:50]: (style) struct member '__FILE::handle' is never used.\
+18/459 files checked 1% done\
+Checking cpu/arm/aducrf101/Common/radioeng.c ...\
+[cpu/arm/aducrf101/Common/radioeng.c:372]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:436]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:964]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:992]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:1056]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:1061]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:1194]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:1263]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:1335]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:1384]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:1427]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:1467]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:1558]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:1579]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:1606]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:1666]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:1696]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:1738]: (style) Condition 'Response==RIE_Success' is always true\
+[cpu/arm/aducrf101/Common/radioeng.c:474] -> [cpu/arm/aducrf101/Common/radioeng.c:508]: (style) Variable 'Response' is reassigned a value before the old one has been used.\
+[cpu/arm/aducrf101/Common/radioeng.c:524] -> [cpu/arm/aducrf101/Common/radioeng.c:526]: (style) Variable 'Response' is reassigned a value before the old one has been used.\
+[cpu/arm/aducrf101/Common/radioeng.c:553] -> [cpu/arm/aducrf101/Common/radioeng.c:555]: (style) Variable 'Response' is reassigned a value before the old one has been used.\
+[cpu/arm/aducrf101/Common/radioeng.c:883]: (style) The scope of the variable 'pa_level_mcr' can be reduced.\
+[cpu/arm/aducrf101/Common/radioeng.c:883]: (style) The scope of the variable 'pa_ramp' can be reduced.\
+[cpu/arm/aducrf101/Common/radioeng.c:883]: (style) The scope of the variable 'codes_per_bit' can be reduced.\
+[cpu/arm/aducrf101/Common/radioeng.c:883]: (style) The scope of the variable 'min_codes_per_bit' can be reduced.\
+[cpu/arm/aducrf101/Common/radioeng.c:1731]: (style) The scope of the variable 'pa_level_mcr' can be reduced.\
+[cpu/arm/aducrf101/Common/radioeng.c:1731]: (style) The scope of the variable 'pa_ramp' can be reduced.\
+[cpu/arm/aducrf101/Common/radioeng.c:1731]: (style) The scope of the variable 'codes_per_bit' can be reduced.\
+[cpu/arm/aducrf101/Common/radioeng.c:1731]: (style) The scope of the variable 'min_codes_per_bit' can be reduced.\
+[cpu/arm/aducrf101/Common/radioeng.c:1481]: (style) Variable 'Response' is assigned a value that is never used.\
+[cpu/arm/aducrf101/Common/radioeng.c:1146]: (error) Uninitialized variable: RdLen\
+[cpu/arm/aducrf101/Common/radioeng.c:1471]: (error) Uninitialized variable: ucInt0\
+19/459 files checked 1% done\
+Checking cpu/arm/aducrf101/Common/system_ADuCRF101.c ...\
+Checking cpu/arm/aducrf101/Common/system_ADuCRF101.c: __CC_ARM...\
+Checking cpu/arm/aducrf101/Common/system_ADuCRF101.c: __GNUC__...\
+Checking cpu/arm/aducrf101/Common/system_ADuCRF101.c: __ICCARM__...\
+Checking cpu/arm/aducrf101/Common/system_ADuCRF101.c: __TASKING__...\
+Checking cpu/arm/aducrf101/Common/system_ADuCRF101.c: __TMS470__...\
+20/459 files checked 1% done\
+Checking cpu/arm/aducrf101/clock.c ...\
+21/459 files checked 1% done\
+Checking cpu/arm/aducrf101/dev/radio.c ...\
+[cpu/arm/aducrf101/dev/radio.c:382]: (style) The scope of the variable 'len' can be reduced.\
+Checking cpu/arm/aducrf101/dev/radio.c: CC2538_RF_CONF_SNIFFER...\
+22/459 files checked 1% done\
+Checking cpu/arm/aducrf101/dev/uart.c ...\
+Checking cpu/arm/aducrf101/dev/uart.c: __ICCARM__...\
+23/459 files checked 1% done\
+Checking cpu/arm/aducrf101/dev/watchdog.c ...\
+24/459 files checked 1% done\
+Checking cpu/arm/aducrf101/rtimer-arch.c ...\
+25/459 files checked 1% done\
+Checking cpu/arm/aducrf101/slip-arch.c ...\
+26/459 files checked 1% done\
+Checking cpu/arm/arm.txt ...\
+27/459 files checked 1% done\
+Checking cpu/arm/at91sam7s/cfs-sdcard-arch.c ...\
+Checking cpu/arm/at91sam7s/cfs-sdcard-arch.c: __GNUC__...\
+28/459 files checked 1% done\
+Checking cpu/arm/at91sam7s/clock.c ...\
+Checking cpu/arm/at91sam7s/clock.c: __THUMBEL__...\
+29/459 files checked 1% done\
+Checking cpu/arm/at91sam7s/debug-uart.c ...\
+30/459 files checked 1% done\
+Checking cpu/arm/at91sam7s/efs-sdcard-arch.c ...\
+31/459 files checked 1% done\
+Checking cpu/arm/at91sam7s/elfloader-arm.c ...\
+Checking cpu/arm/at91sam7s/elfloader-arm.c: __ARM_ARCH_4T__...\
+32/459 files checked 2% done\
+Checking cpu/arm/at91sam7s/interrupt-utils.c ...\
+33/459 files checked 2% done\
+Checking cpu/arm/at91sam7s/loader/codeprop-otf.c ...\
+[cpu/arm/at91sam7s/loader/codeprop-otf.c:371]: (style) The scope of the variable 'th' can be reduced.\
+[cpu/arm/at91sam7s/loader/codeprop-otf.c:136]: (style) struct member 'codeprop_state::send_counter' is never used.\
+34/459 files checked 2% done\
+Checking cpu/arm/at91sam7s/loader/elfloader-otf.c ...\
+[cpu/arm/at91sam7s/loader/elfloader-otf.c:185]: (style) The scope of the variable 'ret' can be reduced.\
+[cpu/arm/at91sam7s/loader/elfloader-otf.c:231]: (style) The scope of the variable 'ret' can be reduced.\
+[cpu/arm/at91sam7s/loader/elfloader-otf.c:404]: (style) The scope of the variable 'nameptr' can be reduced.\
+35/459 files checked 2% done\
+Checking cpu/arm/at91sam7s/loader/empty-symbols.c ...\
+36/459 files checked 2% done\
+Checking cpu/arm/at91sam7s/loader/ram-segments.c ...\
+37/459 files checked 2% done\
+Checking cpu/arm/at91sam7s/newlib-syscalls.c ...\
+38/459 files checked 2% done\
+Checking cpu/arm/at91sam7s/rtimer-arch-interrupt.c ...\
+39/459 files checked 2% done\
+Checking cpu/arm/at91sam7s/rtimer-arch.c ...\
+40/459 files checked 2% done\
+Checking cpu/arm/at91sam7s/sdcard-arch.c ...\
+Checking cpu/arm/at91sam7s/sdcard-arch.c: __GNUC__...\
+41/459 files checked 2% done\
+Checking cpu/arm/at91sam7s/startup-SAM7S-arm.c ...\
+Checking cpu/arm/at91sam7s/startup-SAM7S-arm.c: MCK=23961600...\
+[cpu/arm/at91sam7s/startup-SAM7S-arm.c:129]: (error) syntax error\
+Checking cpu/arm/at91sam7s/startup-SAM7S-arm.c: MCK=47923200...\
+Checking cpu/arm/at91sam7s/startup-SAM7S-arm.c: RUN_AS_SYSTEM...\
+42/459 files checked 2% done\
+Checking cpu/arm/at91sam7s/startup-SAM7S.c ...\
+[cpu/arm/at91sam7s/startup-SAM7S.c:4]: (style) Variable 'dummy' is assigned a value that is never used.\
+43/459 files checked 2% done\
+Checking cpu/arm/at91sam7s/sys-interrupt.c ...\
+44/459 files checked 2% done\
+Checking cpu/arm/at91sam7s/uip-log.c ...\
+45/459 files checked 3% done\
+Checking cpu/arm/at91sam7s/usb-arch.c ...\
+[cpu/arm/at91sam7s/usb-arch.c:197]: (error) syntax error\
+Checking cpu/arm/at91sam7s/usb-arch.c: DEBUG...\
+46/459 files checked 3% done\
+Checking cpu/arm/at91sam7s/usb-interrupt.c ...\
+47/459 files checked 3% done\
+Checking cpu/arm/common/SD-card/cfs-sdcard.c ...\
+Checking cpu/arm/common/SD-card/cfs-sdcard.c: __GNUC__...\
+48/459 files checked 3% done\
+Checking cpu/arm/common/dbg-io/dbg-printf.c ...\
+49/459 files checked 3% done\
+Checking cpu/arm/common/dbg-io/dbg-putchar.c ...\
+50/459 files checked 3% done\
+Checking cpu/arm/common/dbg-io/dbg-puts.c ...\
+51/459 files checked 3% done\
+Checking cpu/arm/common/dbg-io/dbg-snprintf.c ...\
+52/459 files checked 3% done\
+Checking cpu/arm/common/dbg-io/dbg-sprintf.c ...\
+53/459 files checked 3% done\
+Checking cpu/arm/common/dbg-io/strformat.c ...\
+[cpu/arm/common/dbg-io/strformat.c:200]: (style) The scope of the variable 'res' can be reduced.\
+[cpu/arm/common/dbg-io/strformat.c:214]: (style) The scope of the variable 'res' can be reduced.\
+54/459 files checked 3% done\
+Checking cpu/arm/common/usb/cdc-acm/cdc-acm-descriptors.c ...\
+55/459 files checked 3% done\
+Checking cpu/arm/common/usb/cdc-acm/cdc-acm.c ...\
+[cpu/arm/common/usb/cdc-acm/cdc-acm.c:12]: (warning) %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.\
+56/459 files checked 3% done\
+Checking cpu/arm/common/usb/cdc-eth/cdc-eth-descriptors.c ...\
+57/459 files checked 3% done\
+Checking cpu/arm/common/usb/cdc-eth/cdc-eth-string-descriptors.c ...\
+58/459 files checked 3% done\
+Checking cpu/arm/common/usb/cdc-eth/cdc-eth.c ...\
+Checking cpu/arm/common/usb/cdc-eth/cdc-eth.c: NETSTACK_CONF_WITH_IPV6...\
+59/459 files checked 3% done\
+Checking cpu/arm/common/usb/cdc-eth/dhcps.c ...\
+[cpu/arm/common/usb/cdc-eth/dhcps.c:395]: (style) Variable 'header' is assigned a value that is never used.\
+60/459 files checked 3% done\
+Checking cpu/arm/common/usb/msc/msc-descriptors.c ...\
+61/459 files checked 3% done\
+Checking cpu/arm/common/usb/msc/usb-msc-bulk.c ...\
+[cpu/arm/common/usb/msc/usb-msc-bulk.c:213]: (warning) %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.\
+[cpu/arm/common/usb/msc/usb-msc-bulk.c:485]: (style) Statements following return, break, continue, goto or throw will never be executed.\
+62/459 files checked 3% done\
+Checking cpu/arm/common/usb/msc/usb-rbc.c ...\
+Checking cpu/arm/common/usb/msc/usb-rbc.c: DEBUG...\
+[cpu/arm/common/usb/msc/usb-rbc.c:263]: (warning) %ld in format string (no. 1) requires 'long' but the argument type is 'unsigned long'.\
+[cpu/arm/common/usb/msc/usb-rbc.c:263]: (warning) %ld in format string (no. 2) requires 'long' but the argument type is 'unsigned long'.\
+[cpu/arm/common/usb/msc/usb-rbc.c:294]: (warning) %ld in format string (no. 1) requires 'long' but the argument type is 'unsigned long'.\
+[cpu/arm/common/usb/msc/usb-rbc.c:294]: (warning) %ld in format string (no. 2) requires 'long' but the argument type is 'unsigned long'.\
+63/459 files checked 3% done\
+Checking cpu/arm/common/usb/usb-core.c ...\
+[cpu/arm/common/usb/usb-core.c:111]: (warning) %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.\
+Checking cpu/arm/common/usb/usb-core.c: HID_ENABLED...\
+Checking cpu/arm/common/usb/usb-core.c: OLD_STRING_DESCR...\
+64/459 files checked 3% done\
+Checking cpu/arm/stm32f103/clock.c ...\
+[cpu/arm/stm32f103/clock.c:36]: (portability) Shifting a negative value is technically undefined behaviour\
+65/459 files checked 3% done\
+Checking cpu/arm/stm32f103/debug-uart.c ...\
+[cpu/arm/stm32f103/debug-uart.c:100]: (portability) Shifting a negative value is technically undefined behaviour\
+66/459 files checked 3% done\
+Checking cpu/arm/stm32f103/sdcard-arch.c ...\
+Checking cpu/arm/stm32f103/sdcard-arch.c: __GNUC__...\
+67/459 files checked 3% done\
+Checking cpu/arm/stm32f103/startup-STM32F10x.c ...\
+68/459 files checked 3% done\
+Checking cpu/arm/stm32f103/usb-arch.c ...\
+[cpu/arm/stm32f103/usb-arch.c:343]: (error) syntax error\
+Checking cpu/arm/stm32f103/usb-arch.c: DEBUG...\
+Checking cpu/arm/stm32f103/usb-arch.c: USB_STM32F103_ENABLE_ALT_COPY...\
+69/459 files checked 3% done\
+Checking cpu/avr/Makefile.avr ...\
+[cpu/avr/Makefile.avr:77]: (error) #endif without #if\
+70/459 files checked 4% done\
+Checking cpu/avr/avr.c ...\
+71/459 files checked 4% done\
+Checking cpu/avr/avrdef.h ...\
+Checking cpu/avr/avrdef.h: HAVE_STDINT_H...\
+72/459 files checked 4% done\
+Checking cpu/avr/bootloader.c ...\
+Checking cpu/avr/bootloader.c: AVRGCC...\
+Checking cpu/avr/bootloader.c: BOOTLOADER_START_ADDRESS...\
+Checking cpu/avr/bootloader.c: MCUSR...\
+Checking cpu/avr/bootloader.c: UDCON...\
+Checking cpu/avr/bootloader.c: __C51__...\
+Checking cpu/avr/bootloader.c: __CODEVISIONAVR__...\
+Checking cpu/avr/bootloader.c: __IAR_SYSTEMS_ICC__...\
+Checking cpu/avr/bootloader.c: __ICC__...\
+73/459 files checked 5% done\
+Checking cpu/avr/bootloader.h ...\
+74/459 files checked 5% done\
+Checking cpu/avr/cc2420_spi.c ...\
+75/459 files checked 5% done\
+Checking cpu/avr/dev/clock.c ...\
+Checking cpu/avr/dev/clock.c: DOXYGEN...\
+Checking cpu/avr/dev/clock.c: HANDLE_UNSUPPORTED_INTERRUPTS...\
+Checking cpu/avr/dev/clock.c: HANG_ON_UNKNOWN_INTERRUPT...\
+Checking cpu/avr/dev/clock.c: RADIO_CONF_CALIBRATE_INTERVAL...\
+76/459 files checked 5% done\
+Checking cpu/avr/dev/debug.c ...\
+Checking cpu/avr/dev/debug.c: __IMAGECRAFT__...\
+77/459 files checked 5% done\
+Checking cpu/avr/dev/eeprom.c ...\
+78/459 files checked 5% done\
+Checking cpu/avr/dev/flash.c ...\
+79/459 files checked 5% done\
+Checking cpu/avr/dev/lanc111.c ...\
+[cpu/avr/dev/lanc111.c:1136]: (style) The scope of the variable 'imsk' can be reduced.\
+[cpu/avr/dev/lanc111.c:1003]: (style) Variable 'fbc' is assigned a value that is never used.\
+Checking cpu/avr/dev/lanc111.c: LANC111_RESET_BIT...\
+Checking cpu/avr/dev/lanc111.c: NIC_FIXED...\
+80/459 files checked 5% done\
+Checking cpu/avr/dev/rs232.c ...\
+Checking cpu/avr/dev/rs232.c: CONTIKI_TARGET_STK500...\
+Checking cpu/avr/dev/rs232.c: RS232_CONF_NUMPORTS...\
+Checking cpu/avr/dev/rs232.c: RS232_CONF_PRINTF_BUFFER_LENGTH...\
+Checking cpu/avr/dev/rs232.c: RS232_CONF_TX_INTERRUPTS...\
+Checking cpu/avr/dev/rs232.c: __AVR_AT90USB1287__...\
+Checking cpu/avr/dev/rs232.c: __AVR_ATmega1281__;__AVR_ATmega1284P__;__AVR_ATmega128RFA1__;__AVR_ATmega128__...\
+Checking cpu/avr/dev/rs232.c: __AVR_ATmega16__;__AVR_ATmega32__;__AVR_ATmega8__...\
+Checking cpu/avr/dev/rs232.c: __AVR_ATmega328P__...\
+Checking cpu/avr/dev/rs232.c: __AVR_ATmega644__...\
+Checking cpu/avr/dev/rs232.c: __AVR_ATmega8515__...\
+81/459 files checked 5% done\
+Checking cpu/avr/dev/usb/rndis/cdc_ecm.c ...\
+[cpu/avr/dev/usb/rndis/cdc_ecm.c:309]: (style) Variable 'byte_in_packet' is modified but its new value is never used.\
+Checking cpu/avr/dev/usb/rndis/cdc_ecm.c: CDC_ECM_USES_INTERRUPT_ENDPOINT...\
+Checking cpu/avr/dev/usb/rndis/cdc_ecm.c: RF230BB...\
+Checking cpu/avr/dev/usb/rndis/cdc_ecm.c: USB_ETH_HOOK_INIT...\
+Checking cpu/avr/dev/usb/rndis/cdc_ecm.c: USB_ETH_HOOK_RX_END...\
+Checking cpu/avr/dev/usb/rndis/cdc_ecm.c: USB_ETH_HOOK_RX_START...\
+Checking cpu/avr/dev/usb/rndis/cdc_ecm.c: USB_ETH_HOOK_TX_END...\
+Checking cpu/avr/dev/usb/rndis/cdc_ecm.c: USB_ETH_HOOK_TX_START...\
+82/459 files checked 5% done\
+Checking cpu/avr/dev/usb/rndis/cdc_eem.c ...\
+[cpu/avr/dev/usb/rndis/cdc_eem.c:52]: (style) The scope of the variable 'datalength' can be reduced.\
+[cpu/avr/dev/usb/rndis/cdc_eem.c:53]: (style) The scope of the variable 'bytecounter' can be reduced.\
+[cpu/avr/dev/usb/rndis/cdc_eem.c:53]: (style) The scope of the variable 'headercounter' can be reduced.\
+[cpu/avr/dev/usb/rndis/cdc_eem.c:54]: (style) The scope of the variable 'i' can be reduced.\
+Checking cpu/avr/dev/usb/rndis/cdc_eem.c: USB_ETH_HOOK_INIT...\
+Checking cpu/avr/dev/usb/rndis/cdc_eem.c: USB_ETH_HOOK_RX_END...\
+Checking cpu/avr/dev/usb/rndis/cdc_eem.c: USB_ETH_HOOK_RX_START...\
+Checking cpu/avr/dev/usb/rndis/cdc_eem.c: USB_ETH_HOOK_TX_END...\
+Checking cpu/avr/dev/usb/rndis/cdc_eem.c: USB_ETH_HOOK_TX_START...\
+83/459 files checked 5% done\
+Checking cpu/avr/dev/usb/rndis/rndis.c ...\
+[cpu/avr/dev/usb/rndis/rndis.c:210]: (style) The scope of the variable 'nb_counter' can be reduced.\
+[cpu/avr/dev/usb/rndis/rndis.c:794]: (style) The scope of the variable 'i' can be reduced.\
+Checking cpu/avr/dev/usb/rndis/rndis.c: RF230BB...\
+Checking cpu/avr/dev/usb/rndis/rndis.c: USB_ETH_EMULATE_WIFI...\
+Checking cpu/avr/dev/usb/rndis/rndis.c: USB_ETH_HOOK_INIT...\
+Checking cpu/avr/dev/usb/rndis/rndis.c: USB_ETH_HOOK_RX_END...\
+Checking cpu/avr/dev/usb/rndis/rndis.c: USB_ETH_HOOK_RX_START...\
+Checking cpu/avr/dev/usb/rndis/rndis.c: USB_ETH_HOOK_TX_END...\
+Checking cpu/avr/dev/usb/rndis/rndis.c: USB_ETH_HOOK_TX_START...\
+84/459 files checked 5% done\
+Checking cpu/avr/dev/usb/rndis/rndis_task.c ...\
+Checking cpu/avr/dev/usb/rndis/rndis_task.c: RF230BB...\
+Checking cpu/avr/dev/usb/rndis/rndis_task.c: USB_ETH_CONF_MASS_STORAGE_FALLBACK...\
+[cpu/avr/dev/usb/rndis/rndis_task.c:171]: (style) The scope of the variable 'iad_fail_timeout' can be reduced.\
+[cpu/avr/dev/usb/rndis/rndis_task.c:171]: (style) The scope of the variable 'rndis_fail_timeout' can be reduced.\
+Checking cpu/avr/dev/usb/rndis/rndis_task.c: USB_ETH_HOOK_IS_READY_FOR_INBOUND_PACKET...\
+85/459 files checked 5% done\
+Checking cpu/avr/dev/usb/serial/uart_usb_lib.c ...\
+86/459 files checked 5% done\
+Checking cpu/avr/dev/usb/storage/avr_flash.c ...\
+Checking cpu/avr/dev/usb/storage/avr_flash.c: SPM_PAGESIZE...\
+Checking cpu/avr/dev/usb/storage/avr_flash.c: USE_AVRDFU_BOOTLOADER...\
+87/459 files checked 5% done\
+Checking cpu/avr/dev/usb/storage/ctrl_access.c ...\
+Checking cpu/avr/dev/usb/storage/ctrl_access.c: DF_VALIDATION...\
+Checking cpu/avr/dev/usb/storage/ctrl_access.c: LUN_0...\
+Checking cpu/avr/dev/usb/storage/ctrl_access.c: LUN_1...\
+Checking cpu/avr/dev/usb/storage/ctrl_access.c: LUN_2...\
+Checking cpu/avr/dev/usb/storage/ctrl_access.c: LUN_3...\
+Checking cpu/avr/dev/usb/storage/ctrl_access.c: LUN_4...\
+Checking cpu/avr/dev/usb/storage/ctrl_access.c: LUN_5...\
+Checking cpu/avr/dev/usb/storage/ctrl_access.c: LUN_6...\
+Checking cpu/avr/dev/usb/storage/ctrl_access.c: LUN_7...\
+Checking cpu/avr/dev/usb/storage/ctrl_access.c: LUN_USB...\
+88/459 files checked 5% done\
+Checking cpu/avr/dev/usb/storage/scsi_decoder.c ...\
+[cpu/avr/dev/usb/storage/scsi_decoder.c:209]: (style) Consecutive return, break, continue, goto or throw statements are unnecessary.\
+Checking cpu/avr/dev/usb/storage/scsi_decoder.c: AVRGCC...\
+89/459 files checked 5% done\
+Checking cpu/avr/dev/usb/storage/storage_task.c ...\
+[cpu/avr/dev/usb/storage/storage_task.c:207]: (style) Variable 'dummy' is assigned a value that is never used.\
+90/459 files checked 5% done\
+Checking cpu/avr/dev/usb/usb_descriptors.c ...\
+Checking cpu/avr/dev/usb/usb_descriptors.c: AVRGCC...\
+Checking cpu/avr/dev/usb/usb_descriptors.c: CDC_ECM_USES_INTERRUPT_ENDPOINT...\
+Checking cpu/avr/dev/usb/usb_descriptors.c: USB_CONF_MACINTOSH...\
+Checking cpu/avr/dev/usb/usb_descriptors.c: USB_CONF_MACINTOSH;USB_CONF_SERIAL...\
+Checking cpu/avr/dev/usb/usb_descriptors.c: USB_CONF_MACINTOSH;USB_CONF_STORAGE...\
+Checking cpu/avr/dev/usb/usb_descriptors.c: USB_CONF_SERIAL...\
+Checking cpu/avr/dev/usb/usb_descriptors.c: USB_CONF_STORAGE...\
+Checking cpu/avr/dev/usb/usb_descriptors.c: __C51__...\
+Checking cpu/avr/dev/usb/usb_descriptors.c: __CODEVISIONAVR__...\
+Checking cpu/avr/dev/usb/usb_descriptors.c: __IAR_SYSTEMS_ICC__...\
+Checking cpu/avr/dev/usb/usb_descriptors.c: __ICC__...\
+91/459 files checked 5% done\
+Checking cpu/avr/dev/usb/usb_drv.c ...\
+Checking cpu/avr/dev/usb/usb_drv.c: AVRGCC...\
+Checking cpu/avr/dev/usb/usb_drv.c: __C51__...\
+Checking cpu/avr/dev/usb/usb_drv.c: __CODEVISIONAVR__...\
+Checking cpu/avr/dev/usb/usb_drv.c: __IAR_SYSTEMS_ICC__...\
+Checking cpu/avr/dev/usb/usb_drv.c: __ICC__...\
+92/459 files checked 6% done\
+Checking cpu/avr/dev/usb/usb_specific_request.c ...\
+Checking cpu/avr/dev/usb/usb_specific_request.c: AVRGCC...\
+Checking cpu/avr/dev/usb/usb_specific_request.c: GLOBAL_WR_PROTECT...\
+[cpu/avr/dev/usb/usb_specific_request.c:438]: (style) Statements following return, break, continue, goto or throw will never be executed.\
+[cpu/avr/dev/usb/usb_specific_request.c:228]: (style) The scope of the variable 'i' can be reduced.\
+Checking cpu/avr/dev/usb/usb_specific_request.c: UART_USB_DEFAULT_OUTPUT...\
+Checking cpu/avr/dev/usb/usb_specific_request.c: USB_CONF_MACINTOSH...\
+Checking cpu/avr/dev/usb/usb_specific_request.c: USB_CONF_SERIAL...\
+Checking cpu/avr/dev/usb/usb_specific_request.c: USB_CONF_STORAGE...\
+Checking cpu/avr/dev/usb/usb_specific_request.c: __C51__...\
+Checking cpu/avr/dev/usb/usb_specific_request.c: __CODEVISIONAVR__...\
+Checking cpu/avr/dev/usb/usb_specific_request.c: __IAR_SYSTEMS_ICC__...\
+Checking cpu/avr/dev/usb/usb_specific_request.c: __ICC__...\
+93/459 files checked 6% done\
+Checking cpu/avr/dev/usb/usb_standard_request.c ...\
+[cpu/avr/dev/usb/usb_standard_request.c:251] -> [cpu/avr/dev/usb/usb_standard_request.c:252]: (style) Variable 'dummy' is reassigned a value before the old one has been used.\
+[cpu/avr/dev/usb/usb_standard_request.c:343] -> [cpu/avr/dev/usb/usb_standard_request.c:344]: (style) Variable 'dummy' is reassigned a value before the old one has been used.\
+[cpu/avr/dev/usb/usb_standard_request.c:471] -> [cpu/avr/dev/usb/usb_standard_request.c:472]: (style) Variable 'dummy' is reassigned a value before the old one has been used.\
+[cpu/avr/dev/usb/usb_standard_request.c:485] -> [cpu/avr/dev/usb/usb_standard_request.c:486]: (style) Variable 'dummy' is reassigned a value before the old one has been used.\
+[cpu/avr/dev/usb/usb_standard_request.c:571] -> [cpu/avr/dev/usb/usb_standard_request.c:572]: (style) Variable 'dummy' is reassigned a value before the old one has been used.\
+Checking cpu/avr/dev/usb/usb_standard_request.c: AVRGCC...\
+Checking cpu/avr/dev/usb/usb_standard_request.c: USB_CONF_MACINTOSH...\
+Checking cpu/avr/dev/usb/usb_standard_request.c: USB_CONF_STORAGE...\
+Checking cpu/avr/dev/usb/usb_standard_request.c: __C51__...\
+Checking cpu/avr/dev/usb/usb_standard_request.c: __CODEVISIONAVR__...\
+Checking cpu/avr/dev/usb/usb_standard_request.c: __IAR_SYSTEMS_ICC__...\
+Checking cpu/avr/dev/usb/usb_standard_request.c: __ICC__...\
+94/459 files checked 6% done\
+Checking cpu/avr/dev/usb/usb_task.c ...\
+Checking cpu/avr/dev/usb/usb_task.c: AVRGCC...\
+Checking cpu/avr/dev/usb/usb_task.c: LOG_STR_CODE...\
+Checking cpu/avr/dev/usb/usb_task.c: USB_CONF_MACINTOSH...\
+Checking cpu/avr/dev/usb/usb_task.c: USB_CONF_STORAGE...\
+Checking cpu/avr/dev/usb/usb_task.c: USE_USB_PADS_REGULATOR...\
+Checking cpu/avr/dev/usb/usb_task.c: __C51__...\
+Checking cpu/avr/dev/usb/usb_task.c: __CODEVISIONAVR__...\
+Checking cpu/avr/dev/usb/usb_task.c: __IAR_SYSTEMS_ICC__...\
+Checking cpu/avr/dev/usb/usb_task.c: __ICC__...\
+95/459 files checked 6% done\
+Checking cpu/avr/leds-arch.c ...\
+96/459 files checked 6% done\
+Checking cpu/avr/minileds.c ...\
+97/459 files checked 6% done\
+Checking cpu/avr/mtarch.c ...\
+Checking cpu/avr/mtarch.c: __AVR_AT90USB1287__...\
+Checking cpu/avr/mtarch.c: __AVR_ATmega1281__...\
+Checking cpu/avr/mtarch.c: __AVR_ATmega1284P__...\
+Checking cpu/avr/mtarch.c: __AVR_ATmega128RFA1__...\
+Checking cpu/avr/mtarch.c: __AVR_ATmega128__...\
+Checking cpu/avr/mtarch.c: __AVR_ATmega16__;__AVR_ATmega32__;__AVR_ATmega8515__;__AVR_ATmega8__...\
+Checking cpu/avr/mtarch.c: __AVR_ATmega328P__;__AVR_ATmega644__...\
+98/459 files checked 7% done\
+Checking cpu/avr/mtarch.h ...\
+Checking cpu/avr/mtarch.h: MTARCH_CONF_STACKSIZE...\
+99/459 files checked 7% done\
+Checking cpu/avr/radio/ieee-manager/ieee-15-4-manager.c ...\
+100/459 files checked 7% done\
+Checking cpu/avr/radio/mac/mac.c ...\
+[cpu/avr/radio/mac/mac.c:174]: (style) Variable 'buf' is assigned a value that is never used.\
+101/459 files checked 7% done\
+Checking cpu/avr/radio/mac/sicslowmac.c ...\
+[cpu/avr/radio/mac/sicslowmac.c:164] -> [cpu/avr/radio/mac/sicslowmac.c:169]: (style) Variable 'object' is reassigned a value before the old one has been used.\
+[cpu/avr/radio/mac/sicslowmac.c:196]: (style) The scope of the variable 'event' can be reduced.\
+[cpu/avr/radio/mac/sicslowmac.c:654]: (style) The scope of the variable 'tempbyte' can be reduced.\
+[cpu/avr/radio/mac/sicslowmac.c:604]: (style) Variable 'return_value' is assigned a value that is never used.\
+Checking cpu/avr/radio/mac/sicslowmac.c: JACKDAW...\
+Checking cpu/avr/radio/mac/sicslowmac.c: NETSTACK_CONF_WITH_RIME...\
+Checking cpu/avr/radio/mac/sicslowmac.c: UIP_CONF_USE_RUM...\
+Checking cpu/avr/radio/mac/sicslowmac.c: UIP_LLADDR_LEN=8...\
+102/459 files checked 7% done\
+Checking cpu/avr/radio/rf230/frame.c ...\
+Checking cpu/avr/radio/rf230/frame.c: __GNUC__...\
+103/459 files checked 7% done\
+Checking cpu/avr/radio/rf230/hal.c ...\
+Checking cpu/avr/radio/rf230/hal.c: DOXYGEN...\
+104/459 files checked 7% done\
+Checking cpu/avr/radio/rf230/radio.c ...\
+105/459 files checked 7% done\
+Checking cpu/avr/radio/rf230bb/halbb.c ...\
+Checking cpu/avr/radio/rf230bb/halbb.c: CONTIKI_TARGET_MULLE...\
+[cpu/avr/radio/rf230bb/halbb.c:437]: (style) The scope of the variable 'rx_data' can be reduced.\
+[cpu/avr/radio/rf230bb/halbb.c:306]: (style) Variable 'spiTemp' is assigned a value that is never used.\
+[cpu/avr/radio/rf230bb/halbb.c:332]: (style) Variable 'spiTemp' is assigned a value that is never used.\
+[cpu/avr/radio/rf230bb/halbb.c:540]: (style) Variable 'spiTemp' is assigned a value that is never used.\
+[cpu/avr/radio/rf230bb/halbb.c:736]: (style) Variable 'spiTemp' is assigned a value that is never used.\
+Checking cpu/avr/radio/rf230bb/halbb.c: DEBUGFLOWSIZE...\
+Checking cpu/avr/radio/rf230bb/halbb.c: DOXYGEN...\
+Checking cpu/avr/radio/rf230bb/halbb.c: RF230_CONF_AUTOACK;RF230_MIN_RX_POWER...\
+Checking cpu/avr/radio/rf230bb/halbb.c: RF230_CONF_AUTOACK;__AVR_ATmega128RFA1__...\
+Checking cpu/avr/radio/rf230bb/halbb.c: RF230_MIN_RX_POWER...\
+Checking cpu/avr/radio/rf230bb/halbb.c: RF230_MIN_RX_POWER;__AVR_ATmega128RFA1__...\
+Checking cpu/avr/radio/rf230bb/halbb.c: __AVR_ATmega128RFA1__...\
+Checking cpu/avr/radio/rf230bb/halbb.c: __AVR__...\
+106/459 files checked 7% done\
+Checking cpu/avr/radio/rf230bb/rf230bb.c ...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: AVR_WEBSERVER...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: CONTIKI_TARGET_MULLE...\
+[cpu/avr/radio/rf230bb/rf230bb.c:401]: (style) The scope of the variable 'radio_state' can be reduced.\
+[cpu/avr/radio/rf230bb/rf230bb.c:1354]: (style) The scope of the variable 'len' can be reduced.\
+[cpu/avr/radio/rf230bb/rf230bb.c:1750]: (style) The scope of the variable 'radio_state' can be reduced.\
+[cpu/avr/radio/rf230bb/rf230bb.c:147]: (style) struct member 'timestamp::time' is never used.\
+[cpu/avr/radio/rf230bb/rf230bb.c:148]: (style) struct member 'timestamp::authority_level' is never used.\
+[cpu/avr/radio/rf230bb/rf230bb.c:1502]: (style) Variable 'framep' is assigned a value that is never used.\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: DEBUGFLOWSIZE...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: ENERGEST_CONF_LEVELDEVICE_LEVELS...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: JACKDAW...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: NETSTACK_CONF_WITH_RIME...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RADIO_CONF_CALIBRATE_INTERVAL...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RF230BB_CONF_LEDONPORTE1...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RF230BB_CONF_LEDONPORTE1;__AVR_ATmega128RFA1__...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RF230BB_HOOK_IS_SEND_ENABLED...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RF230BB_HOOK_RADIO_OFF...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RF230BB_HOOK_RADIO_ON...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RF230BB_HOOK_RX_PACKET...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RF230BB_HOOK_TX_PACKET...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RF230_CONF_AUTORETRIES...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RF230_CONF_CCA_THRES...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RF230_CONF_CCA_THRES;__AVR_ATmega128RFA1__...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RF230_CONF_TIMESTAMPS...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RF230_MAX_TX_POWER...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RF230_MIN_RX_POWER...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: RF230_MIN_RX_POWER;__AVR_ATmega128RFA1__...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: __AVR_ATmega128RFA1__...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: __AVR__...\
+Checking cpu/avr/radio/rf230bb/rf230bb.c: __MSP430__...\
+107/459 files checked 7% done\
+Checking cpu/avr/rtimer-arch.c ...\
+Checking cpu/avr/rtimer-arch.c: AVR_CONF_USE32KCRYSTAL;RDC_CONF_MCU_SLEEP...\
+Checking cpu/avr/rtimer-arch.c: RDC_CONF_MCU_SLEEP...\
+Checking cpu/avr/rtimer-arch.c: RDC_CONF_MCU_SLEEP;RTIMER_ARCH_PRESCALER...\
+Checking cpu/avr/rtimer-arch.c: RDC_CONF_MCU_SLEEP;RTIMER_ARCH_PRESCALER;TCNT3...\
+Checking cpu/avr/rtimer-arch.c: RTIMER_ARCH_PRESCALER...\
+Checking cpu/avr/rtimer-arch.c: RTIMER_ARCH_PRESCALER;RTIMER_ARCH_PRESCALER=1...\
+Checking cpu/avr/rtimer-arch.c: RTIMER_ARCH_PRESCALER;RTIMER_ARCH_PRESCALER=1024...\
+Checking cpu/avr/rtimer-arch.c: RTIMER_ARCH_PRESCALER;RTIMER_ARCH_PRESCALER=1024;TCNT3...\
+Checking cpu/avr/rtimer-arch.c: RTIMER_ARCH_PRESCALER;RTIMER_ARCH_PRESCALER=1;TCNT3...\
+Checking cpu/avr/rtimer-arch.c: RTIMER_ARCH_PRESCALER;RTIMER_ARCH_PRESCALER=256...\
+Checking cpu/avr/rtimer-arch.c: RTIMER_ARCH_PRESCALER;RTIMER_ARCH_PRESCALER=256;TCNT3...\
+Checking cpu/avr/rtimer-arch.c: RTIMER_ARCH_PRESCALER;RTIMER_ARCH_PRESCALER=64...\
+Checking cpu/avr/rtimer-arch.c: RTIMER_ARCH_PRESCALER;RTIMER_ARCH_PRESCALER=64;TCNT3...\
+Checking cpu/avr/rtimer-arch.c: RTIMER_ARCH_PRESCALER;RTIMER_ARCH_PRESCALER=8...\
+Checking cpu/avr/rtimer-arch.c: RTIMER_ARCH_PRESCALER;RTIMER_ARCH_PRESCALER=8;TCNT3...\
+Checking cpu/avr/rtimer-arch.c: RTIMER_ARCH_PRESCALER;TCNT3...\
+Checking cpu/avr/rtimer-arch.c: RTIMER_CONF_NESTED_INTERRUPTS;TCNT3...\
+Checking cpu/avr/rtimer-arch.c: TCNT3...\
+Checking cpu/avr/rtimer-arch.c: __AVR_AT90USB1287__;__AVR_ATmega1281__;__AVR_ATmega128RFA1__...\
+Checking cpu/avr/rtimer-arch.c: __AVR_ATmega1284P__...\
+Checking cpu/avr/rtimer-arch.c: __AVR_ATmega328P__;__AVR_ATmega644__...\
+108/459 files checked 8% done\
+Checking cpu/avr/rtimer-arch.h ...\
+Checking cpu/avr/rtimer-arch.h: TCNT3...\
+109/459 files checked 8% done\
+Checking cpu/avr/slip_uart1.c ...\
+[cpu/avr/slip_uart1.c:83]: (style) Variable 'dummy' is assigned a value that is never used.\
+110/459 files checked 8% done\
+Checking cpu/avr/spi.c ...\
+111/459 files checked 8% done\
+Checking cpu/avr/watchdog.c ...\
+Checking cpu/avr/watchdog.c: MCUSR...\
+112/459 files checked 9% done\
+Checking cpu/cc2430/8051def.h ...\
+Checking cpu/cc2430/8051def.h: SDCC_mcs51;__SDCC_mcs51...\
+113/459 files checked 9% done\
+Checking cpu/cc2430/Makefile.cc2430 ...\
+114/459 files checked 9% done\
+Checking cpu/cc2430/Makefile.customrules-cc2430 ...\
+[cpu/cc2430/Makefile.customrules-cc2430:23]: (error) syntax error\
+115/459 files checked 10% done\
+Checking cpu/cc2430/bank-alloc.py ...\
+116/459 files checked 10% done\
+Checking cpu/cc2430/cc2430_sfr.h ...\
+Checking cpu/cc2430/cc2430_sfr.h: SDCC_mcs51;__SDCC_mcs51...\
+117/459 files checked 12% done\
+Checking cpu/cc2430/dev/bus.c ...\
+118/459 files checked 12% done\
+Checking cpu/cc2430/dev/cc2430_rf.c ...\
+[cpu/cc2430/dev/cc2430_rf.c:621]: (style) Suspicious condition (bitwise operator + comparison); Clarify expression with parentheses.\
+[cpu/cc2430/dev/cc2430_rf.c:254]: (style) The scope of the variable 'f' can be reduced.\
+[cpu/cc2430/dev/cc2430_rf.c:734]: (style) The scope of the variable 'len' can be reduced.\
+Checking cpu/cc2430/dev/cc2430_rf.c: CC2420_CONF_CHECKSUM...\
+[cpu/cc2430/dev/cc2430_rf.c:487]: (style) Unused variable: checksum\
+Checking cpu/cc2430/dev/cc2430_rf.c: CC2430_RFERR_INTERRUPT...\
+Checking cpu/cc2430/dev/cc2430_rf.c: CC2430_RF_CONF_AUTOACK...\
+Checking cpu/cc2430/dev/cc2430_rf.c: CC2430_RF_CONF_CHANNEL...\
+Checking cpu/cc2430/dev/cc2430_rf.c: CC2430_RF_CONF_HEXDUMP...\
+Checking cpu/cc2430/dev/cc2430_rf.c: CC2430_RF_CONF_TX_POWER...\
+Checking cpu/cc2430/dev/cc2430_rf.c: DEBUG_LEDS...\
+Checking cpu/cc2430/dev/cc2430_rf.c: HAVE_RF_ERROR...\
+Checking cpu/cc2430/dev/cc2430_rf.c: UART_ONE_CONF_ENABLE...\
+Checking cpu/cc2430/dev/cc2430_rf.c: UART_ONE_CONF_WITH_INPUT...\
+119/459 files checked 12% done\
+Checking cpu/cc2430/dev/cc2430_rf_intr.c ...\
+Checking cpu/cc2430/dev/cc2430_rf_intr.c: CC2430_RFERR_INTERRUPT...\
+Checking cpu/cc2430/dev/cc2430_rf_intr.c: CC2430_RFERR_INTERRUPT;CC_CONF_OPTIMIZE_STACK_SIZE...\
+Checking cpu/cc2430/dev/cc2430_rf_intr.c: CC2430_RFERR_INTERRUPT;HAVE_RF_ERROR...\
+Checking cpu/cc2430/dev/cc2430_rf_intr.c: CC_CONF_OPTIMIZE_STACK_SIZE...\
+Checking cpu/cc2430/dev/cc2430_rf_intr.c: HAVE_RF_ERROR...\
+Checking cpu/cc2430/dev/cc2430_rf_intr.c: RF_LED_ENABLE...\
+120/459 files checked 12% done\
+Checking cpu/cc2430/dev/clock.c ...\
+Checking cpu/cc2430/dev/clock.c: CC_CONF_OPTIMIZE_STACK_SIZE...\
+Checking cpu/cc2430/dev/clock.c: CLOCK_CONF_STACK_FRIENDLY...\
+121/459 files checked 12% done\
+Checking cpu/cc2430/dev/dma.c ...\
+Checking cpu/cc2430/dev/dma.c: DMA_ON...\
+122/459 files checked 12% done\
+Checking cpu/cc2430/dev/dma_intr.c ...\
+Checking cpu/cc2430/dev/dma_intr.c: CC_CONF_OPTIMIZE_STACK_SIZE...\
+Checking cpu/cc2430/dev/dma_intr.c: DMA_ON...\
+Checking cpu/cc2430/dev/dma_intr.c: HAVE_RF_DMA...\
+Checking cpu/cc2430/dev/dma_intr.c: SPI_DMA_RX...\
+123/459 files checked 12% done\
+Checking cpu/cc2430/dev/random.c ...\
+124/459 files checked 12% done\
+Checking cpu/cc2430/dev/uart0.c ...\
+Checking cpu/cc2430/dev/uart0.c: UART0_ALTERNATIVE_2;UART0_RTSCTS;UART_ZERO_ENABLE...\
+Checking cpu/cc2430/dev/uart0.c: UART0_ALTERNATIVE_2;UART_ZERO_ENABLE...\
+Checking cpu/cc2430/dev/uart0.c: UART0_RTSCTS;UART_ZERO_ENABLE...\
+Checking cpu/cc2430/dev/uart0.c: UART_ZERO_ENABLE...\
+125/459 files checked 12% done\
+Checking cpu/cc2430/dev/uart1.c ...\
+Checking cpu/cc2430/dev/uart1.c: UART1_ALTERNATIVE_1;UART1_RTSCTS;UART_ONE_ENABLE...\
+Checking cpu/cc2430/dev/uart1.c: UART1_ALTERNATIVE_1;UART_ONE_ENABLE...\
+Checking cpu/cc2430/dev/uart1.c: UART1_RTSCTS;UART_ONE_ENABLE...\
+Checking cpu/cc2430/dev/uart1.c: UART_ONE_CONF_HIGH_SPEED;UART_ONE_ENABLE...\
+Checking cpu/cc2430/dev/uart1.c: UART_ONE_ENABLE...\
+126/459 files checked 12% done\
+Checking cpu/cc2430/dev/uart_intr.c ...\
+Checking cpu/cc2430/dev/uart_intr.c: CC_CONF_OPTIMIZE_STACK_SIZE;UART_ONE_CONF_WITH_INPUT;UART_ONE_ENABLE...\
+Checking cpu/cc2430/dev/uart_intr.c: CC_CONF_OPTIMIZE_STACK_SIZE;UART_ZERO_ENABLE...\
+Checking cpu/cc2430/dev/uart_intr.c: UART_ONE_CONF_WITH_INPUT;UART_ONE_ENABLE...\
+Checking cpu/cc2430/dev/uart_intr.c: UART_ONE_ENABLE...\
+Checking cpu/cc2430/dev/uart_intr.c: UART_ZERO_ENABLE...\
+127/459 files checked 12% done\
+Checking cpu/cc2430/dev/watchdog-cc2430.c ...\
+Checking cpu/cc2430/dev/watchdog-cc2430.c: CC_CONF_OPTIMIZE_STACK_SIZE;WDT_TIMER_MODE...\
+Checking cpu/cc2430/dev/watchdog-cc2430.c: WDT_TIMER_MODE...\
+128/459 files checked 12% done\
+Checking cpu/cc2430/mtarch.h ...\
+129/459 files checked 12% done\
+Checking cpu/cc2430/rtimer-arch.c ...\
+Checking cpu/cc2430/rtimer-arch.c: CC_CONF_OPTIMIZE_STACK_SIZE...\
+Checking cpu/cc2430/rtimer-arch.c: SDCC_mcs51;__SDCC_mcs51...\
+130/459 files checked 13% done\
+Checking cpu/cc2430/rtimer-arch.h ...\
+Checking cpu/cc2430/rtimer-arch.h: SDCC_mcs51;__SDCC_mcs51...\
+131/459 files checked 13% done\
+Checking cpu/cc2430/segment.rules ...\
+[cpu/cc2430/segment.rules:26]: (error) syntax error\
+132/459 files checked 13% done\
+Checking cpu/cc2430/stack.c ...\
+[cpu/cc2430/stack.c] -> [cpu/cc2430/stack.c]: (error) syntax error\
+133/459 files checked 13% done\
+Checking cpu/cc2430/stack.h ...\
+Checking cpu/cc2430/stack.h: STACK_CONF_DEBUGGING...\
+134/459 files checked 13% done\
+Checking cpu/cc2538/Makefile.cc2538 ...\
+135/459 files checked 14% done\
+Checking cpu/cc2538/cc2538.lds ...\
+Checking cpu/cc2538/cc2538.lds: FLASH_CONF_ORIGIN...\
+Checking cpu/cc2538/cc2538.lds: FLASH_CONF_SIZE...\
+136/459 files checked 14% done\
+Checking cpu/cc2538/clock.c ...\
+Checking cpu/cc2538/clock.c: SYS_CTRL_CONF_IO_DIV...\
+Checking cpu/cc2538/clock.c: SYS_CTRL_CONF_OSC32K_USE_XTAL...\
+Checking cpu/cc2538/clock.c: SYS_CTRL_CONF_SYS_DIV...\
+137/459 files checked 15% done\
+Checking cpu/cc2538/cpu.c ...\
+138/459 files checked 15% done\
+Checking cpu/cc2538/cpu.h ...\
+139/459 files checked 15% done\
+Checking cpu/cc2538/dbg.c ...\
+Checking cpu/cc2538/dbg.c: DBG_CONF_SLIP_MUX...\
+140/459 files checked 15% done\
+Checking cpu/cc2538/dbg.h ...\
+Checking cpu/cc2538/dbg.h: DBG_CONF_USB...\
+141/459 files checked 16% done\
+Checking cpu/cc2538/debug-uart.h ...\
+Checking cpu/cc2538/debug-uart.h: DBG_CONF_USB...\
+142/459 files checked 16% done\
+Checking cpu/cc2538/dev/adc.c ...\
+143/459 files checked 16% done\
+Checking cpu/cc2538/dev/aes.c ...\
+[cpu/cc2538/dev/aes.c:57]: (style) The scope of the variable 'i' can be reduced.\
+144/459 files checked 16% done\
+Checking cpu/cc2538/dev/cc2538-rf.c ...\
+[cpu/cc2538/dev/cc2538-rf.c:504]: (style) The scope of the variable 'i' can be reduced.\
+[cpu/cc2538/dev/cc2538-rf.c:631]: (style) The scope of the variable 'i' can be reduced.\
+[cpu/cc2538/dev/cc2538-rf.c:883]: (style) The scope of the variable 'target' can be reduced.\
+[cpu/cc2538/dev/cc2538-rf.c:884]: (style) The scope of the variable 'i' can be reduced.\
+[cpu/cc2538/dev/cc2538-rf.c:904]: (style) The scope of the variable 'i' can be reduced.\
+[cpu/cc2538/dev/cc2538-rf.c:949]: (style) The scope of the variable 'len' can be reduced.\
+Checking cpu/cc2538/dev/cc2538-rf.c: CC2538_RF_CONF_AUTOACK...\
+Checking cpu/cc2538/dev/cc2538-rf.c: CC2538_RF_CONF_SNIFFER...\
+145/459 files checked 16% done\
+Checking cpu/cc2538/dev/cc2538-temp-sensor.c ...\
+146/459 files checked 16% done\
+Checking cpu/cc2538/dev/ccm.c ...\
+147/459 files checked 17% done\
+Checking cpu/cc2538/dev/crypto.c ...\
+148/459 files checked 17% done\
+Checking cpu/cc2538/dev/gpio.c ...\
+149/459 files checked 17% done\
+Checking cpu/cc2538/dev/i2c.c ...\
+[cpu/cc2538/dev/i2c.c:190]: (style) The scope of the variable 'sent' can be reduced.\
+[cpu/cc2538/dev/i2c.c:220]: (style) The scope of the variable 'recv' can be reduced.\
+Checking cpu/cc2538/dev/i2c.c: SYS_CTRL_CONF_IO_DIV...\
+Checking cpu/cc2538/dev/i2c.c: SYS_CTRL_CONF_OSC32K_USE_XTAL...\
+Checking cpu/cc2538/dev/i2c.c: SYS_CTRL_CONF_SYS_DIV...\
+150/459 files checked 17% done\
+Checking cpu/cc2538/dev/ioc.c ...\
+151/459 files checked 17% done\
+Checking cpu/cc2538/dev/nvic.c ...\
+152/459 files checked 17% done\
+Checking cpu/cc2538/dev/random.c ...\
+153/459 files checked 18% done\
+Checking cpu/cc2538/dev/sha256.c ...\
+[cpu/cc2538/dev/sha256.c:269]: (portability) 'data' is of type 'const void *'. When using void pointers in calculations, the behaviour is undefined.\
+[cpu/cc2538/dev/sha256.c:275]: (portability) 'data' is of type 'const void *'. When using void pointers in calculations, the behaviour is undefined.\
+[cpu/cc2538/dev/sha256.c:297]: (portability) 'data' is of type 'const void *'. When using void pointers in calculations, the behaviour is undefined.\
+[cpu/cc2538/dev/sha256.c:303]: (portability) 'data' is of type 'const void *'. When using void pointers in calculations, the behaviour is undefined.\
+154/459 files checked 18% done\
+Checking cpu/cc2538/dev/spi.c ...\
+Checking cpu/cc2538/dev/spi.c: SPI_DEFAULT_INSTANCE...\
+Checking cpu/cc2538/dev/spi.c: SPI_DEFAULT_INSTANCE;SPI_DEFAULT_INSTANCE=0...\
+Checking cpu/cc2538/dev/spi.c: SPI_DEFAULT_INSTANCE;SPI_DEFAULT_INSTANCE=1...\
+155/459 files checked 18% done\
+Checking cpu/cc2538/dev/sys-ctrl.c ...\
+Checking cpu/cc2538/dev/sys-ctrl.c: SYS_CTRL_OSC32K_USE_XTAL...\
+156/459 files checked 18% done\
+Checking cpu/cc2538/dev/uart.c ...\
+157/459 files checked 18% done\
+Checking cpu/cc2538/dev/udma.c ...\
+[cpu/cc2538/dev/udma.c:50]: (style) struct member 'channel_ctrl::unused' is never used.\
+158/459 files checked 18% done\
+Checking cpu/cc2538/dev/vdd3-sensor.c ...\
+159/459 files checked 18% done\
+Checking cpu/cc2538/dev/watchdog.c ...\
+160/459 files checked 19% done\
+Checking cpu/cc2538/ieee-addr.c ...\
+Checking cpu/cc2538/ieee-addr.c: IEEE_ADDR_CONF_LOCATION_SECONDARY...\
+Checking cpu/cc2538/ieee-addr.c: IEEE_ADDR_CONF_USE_SECONDARY_LOCATION...\
+Checking cpu/cc2538/ieee-addr.c: IEEE_ADDR_NODE_ID...\
+161/459 files checked 19% done\
+Checking cpu/cc2538/ieee-addr.h ...\
+Checking cpu/cc2538/ieee-addr.h: IEEE_ADDR_CONF_LOCATION_SECONDARY...\
+Checking cpu/cc2538/ieee-addr.h: IEEE_ADDR_CONF_USE_SECONDARY_LOCATION...\
+162/459 files checked 19% done\
+Checking cpu/cc2538/lpm.c ...\
+Checking cpu/cc2538/lpm.c: ENERGEST_CONF_ON...\
+Checking cpu/cc2538/lpm.c: LPM_CONF_ENABLE=0...\
+Checking cpu/cc2538/lpm.c: LPM_CONF_PERIPH_PERMIT_PM1_FUNCS_MAX...\
+Checking cpu/cc2538/lpm.c: LPM_CONF_STATS...\
+Checking cpu/cc2538/lpm.c: SYS_CTRL_CONF_IO_DIV...\
+Checking cpu/cc2538/lpm.c: SYS_CTRL_CONF_OSC32K_USE_XTAL...\
+Checking cpu/cc2538/lpm.c: SYS_CTRL_CONF_SYS_DIV...\
+163/459 files checked 20% done\
+Checking cpu/cc2538/lpm.h ...\
+Checking cpu/cc2538/lpm.h: LPM_CONF_ENABLE=0...\
+Checking cpu/cc2538/lpm.h: LPM_CONF_STATS...\
+164/459 files checked 21% done\
+Checking cpu/cc2538/mtarch.h ...\
+165/459 files checked 21% done\
+Checking cpu/cc2538/reg.h ...\
+166/459 files checked 21% done\
+Checking cpu/cc2538/rtimer-arch.c ...\
+Checking cpu/cc2538/rtimer-arch.c: LPM_CONF_ENABLE=0...\
+Checking cpu/cc2538/rtimer-arch.c: LPM_CONF_STATS...\
+167/459 files checked 22% done\
+Checking cpu/cc2538/rtimer-arch.h ...\
+168/459 files checked 22% done\
+Checking cpu/cc2538/slip-arch.c ...\
+169/459 files checked 22% done\
+Checking cpu/cc2538/spi-arch.h ...\
+Checking cpu/cc2538/spi-arch.h: SPI0_CONF_CPRS_CPSDVSR...\
+Checking cpu/cc2538/spi-arch.h: SPI1_CONF_CPRS_CPSDVSR...\
+Checking cpu/cc2538/spi-arch.h: SPI_CONF_DEFAULT_INSTANCE...\
+Checking cpu/cc2538/spi-arch.h: SPI_FLUSH...\
+170/459 files checked 23% done\
+Checking cpu/cc2538/startup-gcc.c ...\
+Checking cpu/cc2538/startup-gcc.c: FLASH_CCA_CONF_BOOTLDR_BACKDOOR...\
+Checking cpu/cc2538/startup-gcc.c: FLASH_CCA_CONF_BOOTLDR_BACKDOOR;FLASH_CCA_CONF_BOOTLDR_BACKDOOR_ACTIVE_HIGH...\
+171/459 files checked 24% done\
+Checking cpu/cc2538/usb/cdc-acm-descriptors.c ...\
+172/459 files checked 24% done\
+Checking cpu/cc2538/usb/usb-arch.c ...\
+[cpu/cc2538/usb/usb-arch.c:1179]: (style) The scope of the variable 'res' can be reduced.\
+[cpu/cc2538/usb/usb-arch.c:896]: (style) Clarify calculation precedence for '&' and '?'.\
+Checking cpu/cc2538/usb/usb-arch.c: USB_ARCH_WRITE_NOTIFY...\
+[cpu/cc2538/usb/usb-arch.c:1209]: (style) The scope of the variable 'res' can be reduced.\
+Checking cpu/cc2538/usb/usb-arch.c: USB_PULLUP_PIN...\
+Checking cpu/cc2538/usb/usb-arch.c: USB_PULLUP_PORT...\
+173/459 files checked 24% done\
+Checking cpu/cc2538/usb/usb-serial.c ...\
+[cpu/cc2538/usb/usb-serial.c:157]: (style) The scope of the variable 'lown' can be reduced.\
+[cpu/cc2538/usb/usb-serial.c:157]: (style) The scope of the variable 'highn' can be reduced.\
+[cpu/cc2538/usb/usb-serial.c:158]: (style) The scope of the variable 'c' can be reduced.\
+174/459 files checked 24% done\
+Checking cpu/cc253x/8051def.h ...\
+Checking cpu/cc253x/8051def.h: SDCC_mcs51;__SDCC_mcs51...\
+175/459 files checked 24% done\
+Checking cpu/cc253x/Makefile.cc253x ...\
+176/459 files checked 25% done\
+Checking cpu/cc253x/Makefile.customrules-cc253x ...\
+[cpu/cc253x/Makefile.customrules-cc253x:23]: (error) syntax error\
+177/459 files checked 25% done\
+Checking cpu/cc253x/bank-alloc.py ...\
+178/459 files checked 26% done\
+Checking cpu/cc253x/cc253x.h ...\
+179/459 files checked 29% done\
+Checking cpu/cc253x/dev/cc2530-rf.c ...\
+[cpu/cc253x/dev/cc2530-rf.c:619]: (style) Suspicious condition (bitwise operator + comparison); Clarify expression with parentheses.\
+[cpu/cc253x/dev/cc2530-rf.c:765]: (style) The scope of the variable 'target' can be reduced.\
+[cpu/cc253x/dev/cc2530-rf.c:766]: (style) The scope of the variable 'i' can be reduced.\
+[cpu/cc253x/dev/cc2530-rf.c:786]: (style) The scope of the variable 'i' can be reduced.\
+Checking cpu/cc253x/dev/cc2530-rf.c: CC2530_RF_CONF_AUTOACK...\
+Checking cpu/cc253x/dev/cc2530-rf.c: CC2530_RF_CONF_HEXDUMP...\
+Checking cpu/cc253x/dev/cc2530-rf.c: CC2530_RF_CONF_LEDS...\
+Checking cpu/cc253x/dev/cc2530-rf.c: CC2530_RF_LOW_POWER_RX...\
+180/459 files checked 29% done\
+Checking cpu/cc253x/dev/clock.c ...\
+Checking cpu/cc253x/dev/clock.c: CC_CONF_OPTIMIZE_STACK_SIZE...\
+Checking cpu/cc253x/dev/clock.c: CLOCK_CONF_STACK_FRIENDLY...\
+181/459 files checked 29% done\
+Checking cpu/cc253x/dev/dma.c ...\
+Checking cpu/cc253x/dev/dma.c: DMA_ON...\
+182/459 files checked 29% done\
+Checking cpu/cc253x/dev/dma_intr.c ...\
+Checking cpu/cc253x/dev/dma_intr.c: CC_CONF_OPTIMIZE_STACK_SIZE...\
+Checking cpu/cc253x/dev/dma_intr.c: DMA_ON...\
+Checking cpu/cc253x/dev/dma_intr.c: HAVE_RF_DMA...\
+Checking cpu/cc253x/dev/dma_intr.c: SPI_DMA_RX...\
+183/459 files checked 29% done\
+Checking cpu/cc253x/dev/port2-intr.c ...\
+Checking cpu/cc253x/dev/port2-intr.c: CC_CONF_OPTIMIZE_STACK_SIZE...\
+Checking cpu/cc253x/dev/port2-intr.c: PORT_2_ISR_ENABLED...\
+184/459 files checked 29% done\
+Checking cpu/cc253x/dev/port2.c ...\
+Checking cpu/cc253x/dev/port2.c: PORT_2_ISR_ENABLED...\
+185/459 files checked 29% done\
+Checking cpu/cc253x/dev/random.c ...\
+186/459 files checked 29% done\
+Checking cpu/cc253x/dev/uart-intr.c ...\
+Checking cpu/cc253x/dev/uart-intr.c: CC_CONF_OPTIMIZE_STACK_SIZE;UART0_CONF_WITH_INPUT;UART0_ENABLE...\
+Checking cpu/cc253x/dev/uart-intr.c: CC_CONF_OPTIMIZE_STACK_SIZE;UART1_ENABLE;UART_ONE_CONF_WITH_INPUT...\
+Checking cpu/cc253x/dev/uart-intr.c: UART0_CONF_WITH_INPUT;UART0_ENABLE...\
+Checking cpu/cc253x/dev/uart-intr.c: UART0_ENABLE...\
+Checking cpu/cc253x/dev/uart-intr.c: UART1_ENABLE...\
+Checking cpu/cc253x/dev/uart-intr.c: UART1_ENABLE;UART_ONE_CONF_WITH_INPUT...\
+187/459 files checked 29% done\
+Checking cpu/cc253x/dev/uart0.c ...\
+Checking cpu/cc253x/dev/uart0.c: UART0_ALTERNATIVE_2;UART0_ENABLE...\
+Checking cpu/cc253x/dev/uart0.c: UART0_ALTERNATIVE_2;UART0_ENABLE;UART0_RTSCTS...\
+Checking cpu/cc253x/dev/uart0.c: UART0_CONF_HIGH_SPEED;UART0_ENABLE...\
+Checking cpu/cc253x/dev/uart0.c: UART0_ENABLE...\
+Checking cpu/cc253x/dev/uart0.c: UART0_ENABLE;UART0_RTSCTS...\
+188/459 files checked 29% done\
+Checking cpu/cc253x/dev/uart1.c ...\
+Checking cpu/cc253x/dev/uart1.c: UART1_ALTERNATIVE_1;UART1_ENABLE...\
+Checking cpu/cc253x/dev/uart1.c: UART1_ALTERNATIVE_1;UART1_ENABLE;UART1_RTSCTS...\
+Checking cpu/cc253x/dev/uart1.c: UART1_ENABLE...\
+Checking cpu/cc253x/dev/uart1.c: UART1_ENABLE;UART1_RTSCTS...\
+Checking cpu/cc253x/dev/uart1.c: UART1_ENABLE;UART_ONE_CONF_HIGH_SPEED...\
+189/459 files checked 29% done\
+Checking cpu/cc253x/dev/watchdog.c ...\
+190/459 files checked 29% done\
+Checking cpu/cc253x/mtarch.h ...\
+191/459 files checked 29% done\
+Checking cpu/cc253x/rtimer-arch.c ...\
+Checking cpu/cc253x/rtimer-arch.c: CC_CONF_OPTIMIZE_STACK_SIZE...\
+192/459 files checked 30% done\
+Checking cpu/cc253x/rtimer-arch.h ...\
+193/459 files checked 30% done\
+Checking cpu/cc253x/segment.rules ...\
+194/459 files checked 30% done\
+Checking cpu/cc253x/sfr-bits.h ...\
+195/459 files checked 31% done\
+Checking cpu/cc253x/soc.c ...\
+Checking cpu/cc253x/soc.c: SDCC_mcs51;__SDCC_mcs51...\
+196/459 files checked 31% done\
+Checking cpu/cc253x/soc.h ...\
+197/459 files checked 31% done\
+Checking cpu/cc253x/stack.c ...\
+[cpu/cc253x/stack.c] -> [cpu/cc253x/stack.c]: (error) syntax error\
+198/459 files checked 31% done\
+Checking cpu/cc253x/stack.h ...\
+Checking cpu/cc253x/stack.h: STACK_CONF_DEBUGGING...\
+199/459 files checked 31% done\
+Checking cpu/cc253x/usb/cdc-acm-descriptors.c ...\
+Checking cpu/cc253x/usb/cdc-acm-descriptors.c: USB_CONF_CLASS=1...\
+200/459 files checked 31% done\
+Checking cpu/cc253x/usb/common/cdc-acm/cdc-acm.c ...\
+Checking cpu/cc253x/usb/common/cdc-acm/cdc-acm.c: DEBUG...\
+[cpu/cc253x/usb/common/cdc-acm/cdc-acm.c:33]: (warning) %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.\
+201/459 files checked 31% done\
+Checking cpu/cc253x/usb/common/usb-core.c ...\
+Checking cpu/cc253x/usb/common/usb-core.c: DEBUG...\
+[cpu/cc253x/usb/common/usb-core.c:116]: (warning) %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.\
+Checking cpu/cc253x/usb/common/usb-core.c: HID_ENABLED...\
+Checking cpu/cc253x/usb/common/usb-core.c: OLD_STRING_DESCR...\
+Checking cpu/cc253x/usb/common/usb-core.c: __GNUC__...\
+202/459 files checked 31% done\
+Checking cpu/cc253x/usb/usb-arch.c ...\
+[cpu/cc253x/usb/usb-arch.c:962]: (style) The scope of the variable 'temp' can be reduced.\
+[cpu/cc253x/usb/usb-arch.c:1211]: (style) The scope of the variable 'res' can be reduced.\
+[cpu/cc253x/usb/usb-arch.c:1240]: (style) The scope of the variable 'res' can be reduced.\
+[cpu/cc253x/usb/usb-arch.c:971]: (style) Variable 'temp' is assigned a value that is never used.\
+[cpu/cc253x/usb/usb-arch.c:935]: (style) Clarify calculation precedence for '&' and '?'.\
+Checking cpu/cc253x/usb/usb-arch.c: DMA_ON...\
+Checking cpu/cc253x/usb/usb-arch.c: DMA_ON;DMA_USB_CHANNEL...\
+203/459 files checked 31% done\
+Checking cpu/cc26xx/Makefile.cc26xx ...\
+204/459 files checked 32% done\
+Checking cpu/cc26xx/cc26xx-model.h ...\
+Checking cpu/cc26xx/cc26xx-model.h: CC26XX_MODEL_CONF_CPU_VARIANT...\
+205/459 files checked 32% done\
+Checking cpu/cc26xx/cc26xx.ld ...\
+206/459 files checked 32% done\
+Checking cpu/cc26xx/clock.c ...\
+207/459 files checked 33% done\
+Checking cpu/cc26xx/dbg.h ...\
+208/459 files checked 33% done\
+Checking cpu/cc26xx/debug-uart.h ...\
+209/459 files checked 33% done\
+Checking cpu/cc26xx/dev/batmon-sensor.c ...\
+210/459 files checked 33% done\
+Checking cpu/cc26xx/dev/cc26xx-rf.c ...\
+[cpu/cc26xx/dev/cc26xx-rf.c:1229]: (style) The scope of the variable 'stat' can be reduced.\
+[cpu/cc26xx/dev/cc26xx-rf.c:1773]: (style) The scope of the variable 'target' can be reduced.\
+[cpu/cc26xx/dev/cc26xx-rf.c:1775]: (style) The scope of the variable 'i' can be reduced.\
+[cpu/cc26xx/dev/cc26xx-rf.c:1797]: (style) The scope of the variable 'was_off' can be reduced.\
+[cpu/cc26xx/dev/cc26xx-rf.c:1799]: (style) The scope of the variable 'i' can be reduced.\
+[cpu/cc26xx/dev/cc26xx-rf.c:1800]: (style) The scope of the variable 'dst' can be reduced.\
+Checking cpu/cc26xx/dev/cc26xx-rf.c: CC26XX_CONF_DEBUG_CRC...\
+Checking cpu/cc26xx/dev/cc26xx-rf.c: CC26XX_RF_BLE_SUPPORT...\
+[cpu/cc26xx/dev/cc26xx-rf.c:1984]: (style) The scope of the variable 'p' can be reduced.\
+Checking cpu/cc26xx/dev/cc26xx-rf.c: CC26XX_RF_CONF_AUTOACK...\
+Checking cpu/cc26xx/dev/cc26xx-rf.c: CC26XX_RF_CONF_PROMISCOUS...\
+Checking cpu/cc26xx/dev/cc26xx-rf.c: __GNUC__...\
+211/459 files checked 33% done\
+Checking cpu/cc26xx/dev/cc26xx-rtc.c ...\
+212/459 files checked 33% done\
+Checking cpu/cc26xx/dev/cc26xx-uart.c ...\
+[cpu/cc26xx/dev/cc26xx-uart.c:356]: (style) The scope of the variable 'the_char' can be reduced.\
+213/459 files checked 33% done\
+Checking cpu/cc26xx/dev/contiki-watchdog.c ...\
+214/459 files checked 33% done\
+Checking cpu/cc26xx/dev/gpio-interrupt.c ...\
+215/459 files checked 33% done\
+Checking cpu/cc26xx/dev/oscillators.c ...\
+216/459 files checked 34% done\
+Checking cpu/cc26xx/fault-handlers.c ...\
+217/459 files checked 34% done\
+Checking cpu/cc26xx/ieee-addr.c ...\
+Checking cpu/cc26xx/ieee-addr.c: IEEE_ADDR_CONF_LOCATION_SECONDARY...\
+Checking cpu/cc26xx/ieee-addr.c: IEEE_ADDR_NODE_ID...\
+218/459 files checked 34% done\
+Checking cpu/cc26xx/ieee-addr.h ...\
+Checking cpu/cc26xx/ieee-addr.h: IEEE_ADDR_CONF_LOCATION_SECONDARY...\
+219/459 files checked 34% done\
+Checking cpu/cc26xx/lpm.c ...\
+Checking cpu/cc26xx/lpm.c: ENERGEST_CONF_ON...\
+220/459 files checked 36% done\
+Checking cpu/cc26xx/lpm.h ...\
+221/459 files checked 36% done\
+Checking cpu/cc26xx/mtarch.h ...\
+222/459 files checked 36% done\
+Checking cpu/cc26xx/putchar.c ...\
+223/459 files checked 37% done\
+Checking cpu/cc26xx/rtimer-arch.c ...\
+224/459 files checked 37% done\
+Checking cpu/cc26xx/rtimer-arch.h ...\
+225/459 files checked 37% done\
+Checking cpu/cc26xx/slip-arch.c ...\
+226/459 files checked 37% done\
+Checking cpu/cc26xx/ti-lib.h ...\
+227/459 files checked 41% done\
+Checking cpu/mc1322x/COPYING ...\
+228/459 files checked 41% done\
+Checking cpu/mc1322x/CREDITS ...\
+229/459 files checked 41% done\
+Checking cpu/mc1322x/Makefile.include ...\
+230/459 files checked 41% done\
+Checking cpu/mc1322x/Makefile.mc1322x ...\
+[cpu/mc1322x/Makefile.mc1322x:17]: (error) Invalid number of character '(' when no macros are defined.\
+231/459 files checked 42% done\
+Checking cpu/mc1322x/README.md ...\
+[cpu/mc1322x/README.md:4]: (error) syntax error\
+232/459 files checked 42% done\
+Checking cpu/mc1322x/README.subtree.md ...\
+233/459 files checked 42% done\
+Checking cpu/mc1322x/TODO ...\
+234/459 files checked 42% done\
+Checking cpu/mc1322x/clock.c ...\
+235/459 files checked 42% done\
+Checking cpu/mc1322x/config.c ...\
+[cpu/mc1322x/config.c:31] -> [cpu/mc1322x/config.c:32]: (style) Variable 'err' is reassigned a value before the old one has been used.\
+[cpu/mc1322x/config.c:32]: (style) Variable 'err' is assigned a value that is never used.\
+[cpu/mc1322x/config.c:41]: (style) Variable 'err' is assigned a value that is never used.\
+[cpu/mc1322x/config.c:59]: (style) Unused variable: eui64\
+[cpu/mc1322x/config.c:40]: (error) Uninitialized variable: type\
+236/459 files checked 43% done\
+Checking cpu/mc1322x/config.h ...\
+237/459 files checked 43% done\
+Checking cpu/mc1322x/contiki-maca.c ...\
+[cpu/mc1322x/contiki-maca.c:209]: (style) Unused variable: i\
+[cpu/mc1322x/contiki-maca.c:244]: (style) Unused variable: i\
+[cpu/mc1322x/contiki-maca.c:321]: (style) Unused variable: i\
+Checking cpu/mc1322x/contiki-maca.c: CONTIKI_MACA_DEBUG...\
+[cpu/mc1322x/contiki-maca.c:209]: (style) The scope of the variable 'i' can be reduced.\
+Checking cpu/mc1322x/contiki-maca.c: CONTIKI_MACA_RAW_MODE...\
+Checking cpu/mc1322x/contiki-maca.c: DEBUG_ANNOTATE...\
+238/459 files checked 44% done\
+Checking cpu/mc1322x/contiki-maca.h ...\
+239/459 files checked 44% done\
+Checking cpu/mc1322x/contiki-mc1322x-conf.h ...\
+240/459 files checked 44% done\
+Checking cpu/mc1322x/contiki-misc.c ...\
+241/459 files checked 44% done\
+Checking cpu/mc1322x/contiki-uart.c ...\
+242/459 files checked 44% done\
+Checking cpu/mc1322x/contiki-uart.h ...\
+243/459 files checked 44% done\
+Checking cpu/mc1322x/dbg-io.c ...\
+244/459 files checked 45% done\
+Checking cpu/mc1322x/debug-uart.c ...\
+245/459 files checked 45% done\
+Checking cpu/mc1322x/debug-uart.h ...\
+246/459 files checked 45% done\
+Checking cpu/mc1322x/init.c ...\
+[cpu/mc1322x/init.c:111]: (style) Variable 'err' is assigned a value that is never used.\
+Checking cpu/mc1322x/init.c: DEBUG_FULL...\
+247/459 files checked 45% done\
+Checking cpu/mc1322x/io.h ...\
+248/459 files checked 45% done\
+Checking cpu/mc1322x/leds-arch.c ...\
+249/459 files checked 45% done\
+Checking cpu/mc1322x/lib/adc.c ...\
+[cpu/mc1322x/lib/adc.c:65]: (style) The scope of the variable 'value' can be reduced.\
+[cpu/mc1322x/lib/adc.c:66]: (style) The scope of the variable 'channel' can be reduced.\
+250/459 files checked 45% done\
+Checking cpu/mc1322x/lib/gpio-util.c ...\
+251/459 files checked 45% done\
+Checking cpu/mc1322x/lib/gpio.c ...\
+252/459 files checked 45% done\
+Checking cpu/mc1322x/lib/i2c.c ...\
+[cpu/mc1322x/lib/i2c.c:219]: (style) Variable 'tmp' is assigned a value that is never used.\
+Checking cpu/mc1322x/lib/i2c.c: I2C_NON_BLOCKING...\
+[cpu/mc1322x/lib/i2c.c:288]: (style) The scope of the variable 'dummy' can be reduced.\
+[cpu/mc1322x/lib/i2c.c:308]: (style) Variable 'dummy' is assigned a value that is never used.\
+253/459 files checked 45% done\
+Checking cpu/mc1322x/lib/maca.c ...\
+[cpu/mc1322x/lib/maca.c:215]: (warning) %lx in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned int'.\
+[cpu/mc1322x/lib/maca.c:218]: (warning) %lx in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned int'.\
+[cpu/mc1322x/lib/maca.c:223]: (warning) %lx in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned int'.\
+[cpu/mc1322x/lib/maca.c:226]: (warning) %lx in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned int'.\
+[cpu/mc1322x/lib/maca.c:231]: (warning) %lx in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned int'.\
+[cpu/mc1322x/lib/maca.c:234]: (warning) %lx in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned int'.\
+[cpu/mc1322x/lib/maca.c:238]: (warning) %lx in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned int'.\
+[cpu/mc1322x/lib/maca.c:239]: (warning) %lx in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned int'.\
+[cpu/mc1322x/lib/maca.c:1283] -> [cpu/mc1322x/lib/maca.c:1287]: (style) Variable 'err' is reassigned a value before the old one has been used.\
+[cpu/mc1322x/lib/maca.c:1232]: (style) The scope of the variable 'i' can be reduced.\
+[cpu/mc1322x/lib/maca.c:1280]: (style) The scope of the variable 'len' can be reduced.\
+[cpu/mc1322x/lib/maca.c:1298]: (style) Variable 'err' is assigned a value that is never used.\
+Checking cpu/mc1322x/lib/maca.c: PACKET_STATS...\
+[cpu/mc1322x/lib/maca.c:348] -> [cpu/mc1322x/lib/maca.c:340]: (warning) Either the condition 'p!=0' is redundant or there is possible null pointer dereference: p.\
+[cpu/mc1322x/lib/maca.c:411] -> [cpu/mc1322x/lib/maca.c:405]: (warning) Either the condition 'p!=0' is redundant or there is possible null pointer dereference: p.\
+Checking cpu/mc1322x/lib/maca.c: USE_PA...\
+254/459 files checked 46% done\
+Checking cpu/mc1322x/lib/nvm.c ...\
+255/459 files checked 46% done\
+Checking cpu/mc1322x/lib/printf.c ...\
+[cpu/mc1322x/lib/printf.c:149]: (style) The scope of the variable 'i' can be reduced.\
+[cpu/mc1322x/lib/printf.c:149]: (style) The scope of the variable 'len' can be reduced.\
+[cpu/mc1322x/lib/printf.c:226]: (style) The scope of the variable 't' can be reduced.\
+256/459 files checked 46% done\
+Checking cpu/mc1322x/lib/pwm.c ...\
+257/459 files checked 46% done\
+Checking cpu/mc1322x/lib/rtc.c ...\
+[cpu/mc1322x/lib/rtc.c:114]: (style) The scope of the variable 'ftune' can be reduced.\
+[cpu/mc1322x/lib/rtc.c:167]: (style) The scope of the variable 'mid' can be reduced.\
+[cpu/mc1322x/lib/rtc.c:168]: (style) The scope of the variable 'count' can be reduced.\
+258/459 files checked 46% done\
+Checking cpu/mc1322x/lib/tmr.c ...\
+259/459 files checked 46% done\
+Checking cpu/mc1322x/lib/uart.c ...\
+260/459 files checked 46% done\
+Checking cpu/mc1322x/lib/uart1.c ...\
+Checking cpu/mc1322x/lib/uart1.c: UART1_DROP_CHARS...\
+261/459 files checked 46% done\
+Checking cpu/mc1322x/lib/uart2.c ...\
+Checking cpu/mc1322x/lib/uart2.c: UART2_DROP_CHARS...\
+262/459 files checked 46% done\
+Checking cpu/mc1322x/mc1322x.lds.S ...\
+[cpu/mc1322x/mc1322x.lds.S:172]: (error) Syntax Error: AST broken, ternary operator lacks ':'.\
+Checking cpu/mc1322x/mc1322x.lds.S: ABT_CONF_STACK_SIZE...\
+Checking cpu/mc1322x/mc1322x.lds.S: FIQ_CONF_STACK_SIZE...\
+Checking cpu/mc1322x/mc1322x.lds.S: HEAP_CONF_SIZE...\
+Checking cpu/mc1322x/mc1322x.lds.S: IRQ_CONF_STACK_SIZE...\
+Checking cpu/mc1322x/mc1322x.lds.S: SVC_CONF_STACK_SIZE...\
+Checking cpu/mc1322x/mc1322x.lds.S: SYS_CONF_STACK_SIZE...\
+Checking cpu/mc1322x/mc1322x.lds.S: UND_CONF_STACK_SIZE...\
+263/459 files checked 47% done\
+Checking cpu/mc1322x/mtarch.h ...\
+Checking cpu/mc1322x/mtarch.h: MTARCH_CONF_STACKSIZE...\
+264/459 files checked 47% done\
+Checking cpu/mc1322x/rtimer-arch.c ...\
+265/459 files checked 47% done\
+Checking cpu/mc1322x/rtimer-arch.h ...\
+Checking cpu/mc1322x/rtimer-arch.h: USE_32KHZ_XTAL...\
+266/459 files checked 47% done\
+Checking cpu/mc1322x/slip-uart1.c ...\
+Checking cpu/mc1322x/slip-uart1.c: NETSTACK_CONF_WITH_IPV4...\
+267/459 files checked 48% done\
+Checking cpu/mc1322x/src/default_lowlevel.c ...\
+268/459 files checked 48% done\
+Checking cpu/mc1322x/src/isr.c ...\
+269/459 files checked 48% done\
+Checking cpu/mc1322x/tests/adc.c ...\
+270/459 files checked 48% done\
+Checking cpu/mc1322x/tests/asm.c ...\
+271/459 files checked 48% done\
+Checking cpu/mc1322x/tests/autoack-rx.c ...\
+[cpu/mc1322x/tests/autoack-rx.c:52]: (style) The scope of the variable 'p' can be reduced.\
+272/459 files checked 48% done\
+Checking cpu/mc1322x/tests/autoack-tx.c ...\
+[cpu/mc1322x/tests/autoack-tx.c:94]: (style) The scope of the variable 'p' can be reduced.\
+273/459 files checked 48% done\
+Checking cpu/mc1322x/tests/blink-allio.c ...\
+274/459 files checked 48% done\
+Checking cpu/mc1322x/tests/blink-blue.c ...\
+275/459 files checked 48% done\
+Checking cpu/mc1322x/tests/blink-green.c ...\
+276/459 files checked 48% done\
+Checking cpu/mc1322x/tests/blink-red.c ...\
+277/459 files checked 48% done\
+Checking cpu/mc1322x/tests/blink-white.c ...\
+278/459 files checked 49% done\
+Checking cpu/mc1322x/tests/flasher.c ...\
+[cpu/mc1322x/tests/flasher.c:211]: (style) The scope of the variable 'c' can be reduced.\
+[cpu/mc1322x/tests/flasher.c:241]: (style) The scope of the variable 'val' can be reduced.\
+[cpu/mc1322x/tests/flasher.c:213]: (style) Variable 'c' is assigned a value that is never used.\
+Checking cpu/mc1322x/tests/flasher.c: BOOT_OK...\
+Checking cpu/mc1322x/tests/flasher.c: BOOT_SECURE...\
+279/459 files checked 49% done\
+Checking cpu/mc1322x/tests/nvm-read.c ...\
+280/459 files checked 49% done\
+Checking cpu/mc1322x/tests/nvm-write.c ...\
+281/459 files checked 49% done\
+Checking cpu/mc1322x/tests/per.c ...\
+[cpu/mc1322x/tests/per.c:96]: (style) The scope of the variable 'p' can be reduced.\
+[cpu/mc1322x/tests/per.c:113]: (style) The scope of the variable 'sesid' can be reduced.\
+282/459 files checked 49% done\
+Checking cpu/mc1322x/tests/printf.c ...\
+[cpu/mc1322x/tests/printf.c:99]: (warning) %u in format string (no. 2) requires 'unsigned int' but the argument type is 'signed int'.\
+[cpu/mc1322x/tests/printf.c:93]: (error) Null pointer dereference: np\
+[cpu/mc1322x/tests/printf.c:90]: (error) Signed integer overflow for expression '(1<<(bs-1))+1'.\
+Checking cpu/mc1322x/tests/printf.c: __linux__...\
+283/459 files checked 49% done\
+Checking cpu/mc1322x/tests/put.c ...\
+284/459 files checked 49% done\
+Checking cpu/mc1322x/tests/pwm.c ...\
+285/459 files checked 49% done\
+Checking cpu/mc1322x/tests/rftest-rx.c ...\
+[cpu/mc1322x/tests/rftest-rx.c:52]: (style) The scope of the variable 'p' can be reduced.\
+286/459 files checked 49% done\
+Checking cpu/mc1322x/tests/rftest-tx.c ...\
+[cpu/mc1322x/tests/rftest-tx.c:68]: (style) The scope of the variable 'p' can be reduced.\
+287/459 files checked 49% done\
+Checking cpu/mc1322x/tests/romimg.c ...\
+[cpu/mc1322x/tests/romimg.c:48]: (warning) Possible null pointer dereference: data\
+288/459 files checked 49% done\
+Checking cpu/mc1322x/tests/sleep.c ...\
+Checking cpu/mc1322x/tests/sleep.c: USE_32KHZ...\
+289/459 files checked 50% done\
+Checking cpu/mc1322x/tests/tests.c ...\
+[cpu/mc1322x/tests/tests.c:73]: (warning) %lx in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned int'.\
+[cpu/mc1322x/tests/tests.c:75]: (warning) %lx in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned int'.\
+[cpu/mc1322x/tests/tests.c:48]: (style) The scope of the variable 'i' can be reduced.\
+[cpu/mc1322x/tests/tests.c:48]: (style) The scope of the variable 'j' can be reduced.\
+[cpu/mc1322x/tests/tests.c:48]: (style) The scope of the variable 'k' can be reduced.\
+290/459 files checked 50% done\
+Checking cpu/mc1322x/tests/tmr-ints.c ...\
+291/459 files checked 50% done\
+Checking cpu/mc1322x/tests/tmr.c ...\
+292/459 files checked 50% done\
+Checking cpu/mc1322x/tests/u1u2-loopback.c ...\
+293/459 files checked 50% done\
+Checking cpu/mc1322x/tests/uart1-loopback.c ...\
+294/459 files checked 50% done\
+Checking cpu/mc1322x/tests/wdt.c ...\
+295/459 files checked 50% done\
+Checking cpu/mc1322x/tests/xtal-trim.c ...\
+296/459 files checked 50% done\
+Checking cpu/mc1322x/tools/ftditools/bbmc.c ...\
+[cpu/mc1322x/tools/ftditools/bbmc.c:231]: (warning) %i in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'.\
+[cpu/mc1322x/tools/ftditools/bbmc.c:234]: (warning) %i in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'.\
+[cpu/mc1322x/tools/ftditools/bbmc.c:379]: (style) The scope of the variable 'ret' can be reduced.\
+[cpu/mc1322x/tools/ftditools/bbmc.c:412]: (style) Variable 'input' is assigned a value that is never used.\
+297/459 files checked 50% done\
+Checking cpu/mc1322x/tools/mc1322x-load.c ...\
+[cpu/mc1322x/tools/mc1322x-load.c:216] -> [cpu/mc1322x/tools/mc1322x-load.c:218]: (style) Variable 'r' is reassigned a value before the old one has been used.\
+[cpu/mc1322x/tools/mc1322x-load.c:181] -> [cpu/mc1322x/tools/mc1322x-load.c:183]: (style) Variable 'r' is reassigned a value before the old one has been used.\
+[cpu/mc1322x/tools/mc1322x-load.c:267] -> [cpu/mc1322x/tools/mc1322x-load.c:269]: (style) Variable 'r' is reassigned a value before the old one has been used.\
+[cpu/mc1322x/tools/mc1322x-load.c:290] -> [cpu/mc1322x/tools/mc1322x-load.c:291]: (style) Variable 'r' is reassigned a value before the old one has been used.\
+298/459 files checked 50% done\
+Checking cpu/mc1322x/watchdog.c ...\
+299/459 files checked 51% done\
+Checking cpu/msp430/Makefile.msp430 ...\
+[cpu/msp430/Makefile.msp430:218]: (error) syntax error\
+300/459 files checked 51% done\
+Checking cpu/msp430/button.c ...\
+Checking cpu/msp430/button.c: __AQCOMPILER__...\
+Checking cpu/msp430/button.c: __CROSSWORKS_MSP430...\
+Checking cpu/msp430/button.c: __GNUC__;__MSP430__...\
+Checking cpu/msp430/button.c: __IAR_SYSTEMS_ICC__...\
+Checking cpu/msp430/button.c: __TI_COMPILER_VERSION__...\
+301/459 files checked 51% done\
+Checking cpu/msp430/cc2420-arch-sfd.c ...\
+Checking cpu/msp430/cc2420-arch-sfd.c: __AQCOMPILER__...\
+Checking cpu/msp430/cc2420-arch-sfd.c: __CROSSWORKS_MSP430...\
+Checking cpu/msp430/cc2420-arch-sfd.c: __GNUC__;__MSP430__...\
+Checking cpu/msp430/cc2420-arch-sfd.c: __IAR_SYSTEMS_ICC__...\
+Checking cpu/msp430/cc2420-arch-sfd.c: __TI_COMPILER_VERSION__...\
+302/459 files checked 51% done\
+Checking cpu/msp430/cc2420-arch-sfd.h ...\
+303/459 files checked 52% done\
+Checking cpu/msp430/cc2420-arch.c ...\
+Checking cpu/msp430/cc2420-arch.c: CC2420_CONF_SFD_TIMESTAMPS...\
+Checking cpu/msp430/cc2420-arch.c: __AQCOMPILER__...\
+Checking cpu/msp430/cc2420-arch.c: __CROSSWORKS_MSP430...\
+Checking cpu/msp430/cc2420-arch.c: __GNUC__;__MSP430__...\
+Checking cpu/msp430/cc2420-arch.c: __IAR_SYSTEMS_ICC__...\
+Checking cpu/msp430/cc2420-arch.c: __TI_COMPILER_VERSION__...\
+304/459 files checked 52% done\
+Checking cpu/msp430/cc2520-arch-sfd.c ...\
+Checking cpu/msp430/cc2520-arch-sfd.c: __AQCOMPILER__...\
+Checking cpu/msp430/cc2520-arch-sfd.c: __CROSSWORKS_MSP430...\
+Checking cpu/msp430/cc2520-arch-sfd.c: __GNUC__;__MSP430__...\
+Checking cpu/msp430/cc2520-arch-sfd.c: __IAR_SYSTEMS_ICC__...\
+Checking cpu/msp430/cc2520-arch-sfd.c: __TI_COMPILER_VERSION__...\
+305/459 files checked 52% done\
+Checking cpu/msp430/cc2520-arch-sfd.h ...\
+306/459 files checked 52% done\
+Checking cpu/msp430/cc2520-arch.c ...\
+Checking cpu/msp430/cc2520-arch.c: CC2520_CONF_SFD_TIMESTAMPS...\
+Checking cpu/msp430/cc2520-arch.c: __AQCOMPILER__...\
+Checking cpu/msp430/cc2520-arch.c: __CROSSWORKS_MSP430...\
+Checking cpu/msp430/cc2520-arch.c: __GNUC__;__MSP430__...\
+Checking cpu/msp430/cc2520-arch.c: __IAR_SYSTEMS_ICC__...\
+Checking cpu/msp430/cc2520-arch.c: __TI_COMPILER_VERSION__...\
+307/459 files checked 52% done\
+Checking cpu/msp430/dev/uart0-putchar.c ...\
+308/459 files checked 53% done\
+Checking cpu/msp430/dev/uart1-putchar.c ...\
+309/459 files checked 53% done\
+Checking cpu/msp430/f1xxx/clock.c ...\
+[cpu/msp430/f1xxx/clock.c:162]: (error) failed to evaluate #if condition\
+310/459 files checked 53% done\
+Checking cpu/msp430/f1xxx/msp430.c ...\
+[cpu/msp430/f1xxx/msp430.c:77]: (style) The scope of the variable 'compare' can be reduced.\
+Checking cpu/msp430/f1xxx/msp430.c: DCOSYNCH_CONF_ENABLED...\
+Checking cpu/msp430/f1xxx/msp430.c: P1DIR...\
+Checking cpu/msp430/f1xxx/msp430.c: P1SEL...\
+Checking cpu/msp430/f1xxx/msp430.c: P2DIR...\
+Checking cpu/msp430/f1xxx/msp430.c: P2SEL...\
+Checking cpu/msp430/f1xxx/msp430.c: P3DIR...\
+Checking cpu/msp430/f1xxx/msp430.c: P3SEL...\
+Checking cpu/msp430/f1xxx/msp430.c: P4DIR...\
+Checking cpu/msp430/f1xxx/msp430.c: P4SEL...\
+Checking cpu/msp430/f1xxx/msp430.c: P5DIR...\
+Checking cpu/msp430/f1xxx/msp430.c: P5SEL...\
+Checking cpu/msp430/f1xxx/msp430.c: P6DIR...\
+Checking cpu/msp430/f1xxx/msp430.c: P6SEL...\
+Checking cpu/msp430/f1xxx/msp430.c: P7DIR...\
+Checking cpu/msp430/f1xxx/msp430.c: P8DIR...\
+Checking cpu/msp430/f1xxx/msp430.c: __GNUC__;__MSP430__...\
+Checking cpu/msp430/f1xxx/msp430.c: __IAR_SYSTEMS_ICC__...\
+311/459 files checked 53% done\
+Checking cpu/msp430/f1xxx/rtimer-arch.c ...\
+312/459 files checked 53% done\
+Checking cpu/msp430/f1xxx/spi.c ...\
+313/459 files checked 53% done\
+Checking cpu/msp430/f1xxx/uart1.c ...\
+Checking cpu/msp430/f1xxx/uart1.c: F_CPU=2457600ul...\
+Checking cpu/msp430/f1xxx/uart1.c: F_CPU=3900000ul...\
+Checking cpu/msp430/f1xxx/uart1.c: UART1_CONF_RX_WITH_DMA...\
+Checking cpu/msp430/f1xxx/uart1.c: UART1_CONF_TX_WITH_INTERRUPT...\
+314/459 files checked 53% done\
+Checking cpu/msp430/f2xxx/msp430.c ...\
+[cpu/msp430/f2xxx/msp430.c:228]: (style) The scope of the variable 'oldcapture' can be reduced.\
+[cpu/msp430/f2xxx/msp430.c:229]: (style) The scope of the variable 'diff' can be reduced.\
+Checking cpu/msp430/f2xxx/msp430.c: P1DIR...\
+Checking cpu/msp430/f2xxx/msp430.c: P1SEL...\
+Checking cpu/msp430/f2xxx/msp430.c: P2DIR...\
+Checking cpu/msp430/f2xxx/msp430.c: P2SEL...\
+Checking cpu/msp430/f2xxx/msp430.c: P3DIR...\
+Checking cpu/msp430/f2xxx/msp430.c: P3SEL...\
+Checking cpu/msp430/f2xxx/msp430.c: P4DIR...\
+Checking cpu/msp430/f2xxx/msp430.c: P4SEL...\
+Checking cpu/msp430/f2xxx/msp430.c: P5DIR...\
+Checking cpu/msp430/f2xxx/msp430.c: P5SEL...\
+Checking cpu/msp430/f2xxx/msp430.c: P6DIR...\
+Checking cpu/msp430/f2xxx/msp430.c: P6SEL...\
+Checking cpu/msp430/f2xxx/msp430.c: P7DIR...\
+Checking cpu/msp430/f2xxx/msp430.c: P8DIR...\
+Checking cpu/msp430/f2xxx/msp430.c: __GNUC__;__MSP430__...\
+Checking cpu/msp430/f2xxx/msp430.c: __IAR_SYSTEMS_ICC__...\
+315/459 files checked 53% done\
+Checking cpu/msp430/f2xxx/spi.c ...\
+316/459 files checked 53% done\
+Checking cpu/msp430/f2xxx/uart0.c ...\
+Checking cpu/msp430/f2xxx/uart0.c: UART0_CONF_TX_WITH_INTERRUPT...\
+317/459 files checked 53% done\
+Checking cpu/msp430/f2xxx/uart1.c ...\
+Checking cpu/msp430/f2xxx/uart1.c: UART1_CONF_TX_WITH_INTERRUPT...\
+318/459 files checked 53% done\
+Checking cpu/msp430/f5xxx/clock.c ...\
+[cpu/msp430/f5xxx/clock.c:159]: (error) failed to evaluate #if condition\
+319/459 files checked 53% done\
+Checking cpu/msp430/f5xxx/msp430.c ...\
+Checking cpu/msp430/f5xxx/msp430.c: P1DIR...\
+Checking cpu/msp430/f5xxx/msp430.c: P1SEL...\
+Checking cpu/msp430/f5xxx/msp430.c: P2DIR...\
+Checking cpu/msp430/f5xxx/msp430.c: P2SEL...\
+Checking cpu/msp430/f5xxx/msp430.c: P3DIR...\
+Checking cpu/msp430/f5xxx/msp430.c: P3SEL...\
+Checking cpu/msp430/f5xxx/msp430.c: P4DIR...\
+Checking cpu/msp430/f5xxx/msp430.c: P4SEL...\
+Checking cpu/msp430/f5xxx/msp430.c: P5DIR...\
+Checking cpu/msp430/f5xxx/msp430.c: P5SEL...\
+Checking cpu/msp430/f5xxx/msp430.c: P6DIR...\
+Checking cpu/msp430/f5xxx/msp430.c: P6SEL...\
+Checking cpu/msp430/f5xxx/msp430.c: P7DIR...\
+Checking cpu/msp430/f5xxx/msp430.c: P8DIR...\
+Checking cpu/msp430/f5xxx/msp430.c: __GNUC__;__MSP430__...\
+Checking cpu/msp430/f5xxx/msp430.c: __IAR_SYSTEMS_ICC__...\
+320/459 files checked 53% done\
+Checking cpu/msp430/f5xxx/rtimer-arch.c ...\
+321/459 files checked 53% done\
+Checking cpu/msp430/f5xxx/spi.c ...\
+322/459 files checked 53% done\
+Checking cpu/msp430/f5xxx/uart0.c ...\
+[cpu/msp430/f5xxx/uart0.c:104]: (style) The scope of the variable 'c' can be reduced.\
+323/459 files checked 53% done\
+Checking cpu/msp430/f5xxx/uart1.c ...\
+[cpu/msp430/f5xxx/uart1.c:109]: (style) The scope of the variable 'c' can be reduced.\
+324/459 files checked 53% done\
+Checking cpu/msp430/flash.c ...\
+325/459 files checked 53% done\
+Checking cpu/msp430/isr_compat.h ...\
+Checking cpu/msp430/isr_compat.h: __AQCOMPILER__...\
+Checking cpu/msp430/isr_compat.h: __CROSSWORKS_MSP430...\
+Checking cpu/msp430/isr_compat.h: __GNUC__;__MSP430__...\
+Checking cpu/msp430/isr_compat.h: __IAR_SYSTEMS_ICC__...\
+Checking cpu/msp430/isr_compat.h: __TI_COMPILER_VERSION__...\
+326/459 files checked 53% done\
+Checking cpu/msp430/leds-arch.c ...\
+327/459 files checked 54% done\
+Checking cpu/msp430/loader-arch.c ...\
+328/459 files checked 54% done\
+Checking cpu/msp430/lpm.c ...\
+Checking cpu/msp430/lpm.c: LPM_CONF_OFF...\
+Checking cpu/msp430/lpm.c: LPM_CONF_ON...\
+329/459 files checked 54% done\
+Checking cpu/msp430/minileds.c ...\
+330/459 files checked 55% done\
+Checking cpu/msp430/msp430def.h ...\
+Checking cpu/msp430/msp430def.h: DCOSYNCH_CONF_PERIOD...\
+Checking cpu/msp430/msp430def.h: F_CPU...\
+Checking cpu/msp430/msp430def.h: HAVE_STDINT_H...\
+Checking cpu/msp430/msp430def.h: __GNUC__...\
+Checking cpu/msp430/msp430def.h: __IAR_SYSTEMS_ICC__...\
+Checking cpu/msp430/msp430def.h: __MSPGCC__...\
+331/459 files checked 55% done\
+Checking cpu/msp430/mtarch.c ...\
+Checking cpu/msp430/mtarch.c: __IAR_SYSTEMS_ICC__...\
+332/459 files checked 55% done\
+Checking cpu/msp430/mtarch.h ...\
+333/459 files checked 55% done\
+Checking cpu/msp430/rom.c ...\
+334/459 files checked 56% done\
+Checking cpu/msp430/rtimer-arch.h ...\
+Checking cpu/msp430/rtimer-arch.h: RTIMER_CONF_SECOND...\
+335/459 files checked 56% done\
+Checking cpu/msp430/slip_uart0.c ...\
+Checking cpu/msp430/slip_uart0.c: NETSTACK_CONF_WITH_IPV4...\
+336/459 files checked 56% done\
+Checking cpu/msp430/slip_uart1.c ...\
+Checking cpu/msp430/slip_uart1.c: NETSTACK_CONF_WITH_IPV4...\
+337/459 files checked 56% done\
+Checking cpu/msp430/uip-ipchksum.c ...\
+Checking cpu/msp430/uip-ipchksum.c: UIP_ARCH_IPCHKSUM...\
+Checking cpu/msp430/uip-ipchksum.c: UIP_ARCH_IPCHKSUM;__IAR_SYSTEMS_ICC__...\
+338/459 files checked 57% done\
+Checking cpu/msp430/watchdog.c ...\
+Checking cpu/msp430/watchdog.c: CONTIKI_TARGET_SKY...\
+Checking cpu/msp430/watchdog.c: CONTIKI_TARGET_WISMOTE...\
+Checking cpu/msp430/watchdog.c: __AQCOMPILER__...\
+Checking cpu/msp430/watchdog.c: __CROSSWORKS_MSP430...\
+Checking cpu/msp430/watchdog.c: __GNUC__;__MSP430__...\
+Checking cpu/msp430/watchdog.c: __IAR_SYSTEMS_ICC__...\
+Checking cpu/msp430/watchdog.c: __TI_COMPILER_VERSION__...\
+339/459 files checked 57% done\
+Checking cpu/native/Makefile.native ...\
+340/459 files checked 57% done\
+Checking cpu/native/dev/eeprom.c ...\
+341/459 files checked 57% done\
+Checking cpu/native/mtarch.c ...\
+Checking cpu/native/mtarch.c: _WIN32;__CYGWIN__...\
+Checking cpu/native/mtarch.c: __APPLE__;__APPLE__;__linux...\
+Checking cpu/native/mtarch.c: __APPLE__;__linux...\
+Checking cpu/native/mtarch.c: __linux...\
+Checking cpu/native/mtarch.c: __linux;linux...\
+342/459 files checked 58% done\
+Checking cpu/native/mtarch.h ...\
+343/459 files checked 58% done\
+Checking cpu/native/net/tapdev-drv.c ...\
+Checking cpu/native/net/tapdev-drv.c: NETSTACK_CONF_WITH_IPV6...\
+344/459 files checked 58% done\
+Checking cpu/native/net/tapdev.c ...\
+Checking cpu/native/net/tapdev.c: linux...\
+345/459 files checked 58% done\
+Checking cpu/native/net/tapdev6.c ...\
+Checking cpu/native/net/tapdev6.c: NETSTACK_CONF_WITH_IPV6...\
+Checking cpu/native/net/tapdev6.c: NETSTACK_CONF_WITH_IPV6;__APPLE__...\
+Checking cpu/native/net/tapdev6.c: NETSTACK_CONF_WITH_IPV6;linux...\
+346/459 files checked 58% done\
+Checking cpu/native/net/wpcap-drv.c ...\
+Checking cpu/native/net/wpcap-drv.c: NETSTACK_CONF_WITH_IPV6...\
+Checking cpu/native/net/wpcap-drv.c: NETSTACK_CONF_WITH_IPV6;UIP_FALLBACK_INTERFACE...\
+Checking cpu/native/net/wpcap-drv.c: SELECT_CALLBACK...\
+Checking cpu/native/net/wpcap-drv.c: UIP_FALLBACK_INTERFACE...\
+[cpu/native/net/wpcap-drv.c:148]: (style) Label 'bail' is not used.\
+347/459 files checked 58% done\
+Checking cpu/native/net/wpcap.c ...\
+[cpu/native/net/wpcap.c:451] -> [cpu/native/net/wpcap.c:475]: (style) Variable 'addr.s_addr' is reassigned a value before the old one has been used.\
+[cpu/native/net/wpcap.c:236]: (warning) Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead.\
+Checking cpu/native/net/wpcap.c: NETSTACK_CONF_WITH_IPV6...\
+[cpu/native/net/wpcap.c:298]: (warning) Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead.\
+Checking cpu/native/net/wpcap.c: NETSTACK_CONF_WITH_IPV6;UIP_FALLBACK_INTERFACE...\
+Checking cpu/native/net/wpcap.c: NETSTACK_CONF_WITH_IPV6;UIP_FALLBACK_INTERFACE;WPCAP_FALLBACK_ADDRESS...\
+Checking cpu/native/net/wpcap.c: NETSTACK_CONF_WITH_IPV6;UIP_FALLBACK_INTERFACE;__CYGWIN__...\
+Checking cpu/native/net/wpcap.c: NETSTACK_CONF_WITH_IPV6;WPCAP_INTERFACE_ADDRESS...\
+Checking cpu/native/net/wpcap.c: NETSTACK_CONF_WITH_IPV6;__CYGWIN__...\
+Checking cpu/native/net/wpcap.c: SELECT_CALLBACK...\
+Checking cpu/native/net/wpcap.c: UIP_FALLBACK_INTERFACE...\
+Checking cpu/native/net/wpcap.c: UIP_FALLBACK_INTERFACE;__CYGWIN__...\
+Checking cpu/native/net/wpcap.c: WPCAP_INTERFACE_ADDRESS...\
+Checking cpu/native/net/wpcap.c: __CYGWIN__...\
+348/459 files checked 58% done\
+Checking cpu/native/rtimer-arch.c ...\
+349/459 files checked 58% done\
+Checking cpu/native/rtimer-arch.h ...\
+350/459 files checked 58% done\
+Checking cpu/native/watchdog.c ...\
+351/459 files checked 59% done\
+Checking cpu/pic32/Makefile.pic32 ...\
+[cpu/pic32/Makefile.pic32:18]: (error) Invalid number of character '(' when no macros are defined.\
+352/459 files checked 59% done\
+Checking cpu/pic32/clock.c ...\
+Checking cpu/pic32/clock.c: PIC32_TIMER_CLOCK=1...\
+Checking cpu/pic32/clock.c: PIC32_TIMER_CLOCK=2...\
+Checking cpu/pic32/clock.c: PIC32_TIMER_CLOCK=3...\
+Checking cpu/pic32/clock.c: PIC32_TIMER_CLOCK=4...\
+Checking cpu/pic32/clock.c: PIC32_TIMER_CLOCK=5...\
+353/459 files checked 59% done\
+Checking cpu/pic32/debug-uart.c ...\
+Checking cpu/pic32/debug-uart.c: __USE_UART_PORT1A_FOR_DEBUG__;__USE_UART__...\
+Checking cpu/pic32/debug-uart.c: __USE_UART_PORT1B_FOR_DEBUG__;__USE_UART__...\
+Checking cpu/pic32/debug-uart.c: __USE_UART_PORT2A_FOR_DEBUG__;__USE_UART__...\
+Checking cpu/pic32/debug-uart.c: __USE_UART_PORT2B_FOR_DEBUG__;__USE_UART__...\
+Checking cpu/pic32/debug-uart.c: __USE_UART_PORT3A_FOR_DEBUG__;__USE_UART__...\
+Checking cpu/pic32/debug-uart.c: __USE_UART_PORT3B_FOR_DEBUG__;__USE_UART__...\
+Checking cpu/pic32/debug-uart.c: __USE_UART__...\
+[cpu/pic32/debug-uart.c:95]: (error) failed to expand 'DEBUG_UART', Wrong number of parameters for macro 'DEBUG_UART'.\
+354/459 files checked 59% done\
+Checking cpu/pic32/debug-uart.h ...\
+Checking cpu/pic32/debug-uart.h: __USE_UART__...\
+355/459 files checked 60% done\
+Checking cpu/pic32/lib/pic32_clock.c ...\
+356/459 files checked 60% done\
+Checking cpu/pic32/lib/pic32_spi.c ...\
+357/459 files checked 60% done\
+Checking cpu/pic32/lib/pic32_timer.c ...\
+358/459 files checked 60% done\
+Checking cpu/pic32/lib/pic32_uart.c ...\
+359/459 files checked 60% done\
+Checking cpu/pic32/mtarch.h ...\
+360/459 files checked 60% done\
+Checking cpu/pic32/pic32.c ...\
+361/459 files checked 60% done\
+Checking cpu/pic32/pic32.h ...\
+362/459 files checked 61% done\
+Checking cpu/pic32/rtimer-arch.c ...\
+363/459 files checked 61% done\
+Checking cpu/pic32/rtimer-arch.h ...\
+364/459 files checked 61% done\
+Checking cpu/pic32/slip-uart.c ...\
+[cpu/pic32/slip-uart.c:93]: (error) failed to expand 'SLIP_UART', Wrong number of parameters for macro 'SLIP_UART'.\
+Checking cpu/pic32/slip-uart.c: __USE_UART_PORT1A_FOR_SLIP__...\
+Checking cpu/pic32/slip-uart.c: __USE_UART_PORT1B_FOR_SLIP__...\
+Checking cpu/pic32/slip-uart.c: __USE_UART_PORT2A_FOR_SLIP__...\
+Checking cpu/pic32/slip-uart.c: __USE_UART_PORT2B_FOR_SLIP__...\
+Checking cpu/pic32/slip-uart.c: __USE_UART_PORT3A_FOR_SLIP__...\
+Checking cpu/pic32/slip-uart.c: __USE_UART_PORT3B_FOR_SLIP__...\
+365/459 files checked 61% done\
+Checking cpu/pic32/watchdog.c ...\
+366/459 files checked 62% done\
+Checking cpu/rl78/Communication.c ...\
+[cpu/rl78/Communication.c:622]: (style) The scope of the variable 'byte' can be reduced.\
+[cpu/rl78/Communication.c:671]: (style) The scope of the variable 'byte' can be reduced.\
+Checking cpu/rl78/Communication.c: __GNUC__...\
+367/459 files checked 63% done\
+Checking cpu/rl78/Communication.h ...\
+368/459 files checked 63% done\
+Checking cpu/rl78/Makefile.rl78 ...\
+[cpu/rl78/Makefile.rl78:198]: (error) syntax error\
+369/459 files checked 64% done\
+Checking cpu/rl78/R5F100xL.ld ...\
+370/459 files checked 64% done\
+Checking cpu/rl78/adf7023/ADF7023.c ...\
+[cpu/rl78/adf7023/ADF7023.c:461]: (style) The scope of the variable 'status' can be reduced.\
+[cpu/rl78/adf7023/ADF7023.c:163]: (style) Checking if unsigned variable 'len' is less than zero.\
+371/459 files checked 64% done\
+Checking cpu/rl78/adf7023/adf7023-contiki.c ...\
+372/459 files checked 64% done\
+Checking cpu/rl78/contiki-uart.c ...\
+373/459 files checked 65% done\
+Checking cpu/rl78/contiki-uart.h ...\
+374/459 files checked 65% done\
+Checking cpu/rl78/crt0.S ...\
+375/459 files checked 65% done\
+Checking cpu/rl78/mtarch.h ...\
+Checking cpu/rl78/mtarch.h: MTARCH_CONF_STACKSIZE...\
+376/459 files checked 65% done\
+Checking cpu/rl78/rl78-sys.h ...\
+[cpu/rl78/rl78-sys.h:59]: (error) syntax error\
+377/459 files checked 66% done\
+Checking cpu/rl78/rl78.h ...\
+378/459 files checked 66% done\
+Checking cpu/rl78/rtimer-arch.h ...\
+379/459 files checked 66% done\
+Checking cpu/rl78/sfrs-ext.h ...\
+380/459 files checked 79% done\
+Checking cpu/rl78/sfrs.h ...\
+381/459 files checked 88% done\
+Checking cpu/rl78/slip-arch.c ...\
+382/459 files checked 88% done\
+Checking cpu/rl78/slip-arch.h ...\
+383/459 files checked 88% done\
+Checking cpu/rl78/sys/clock.c ...\
+384/459 files checked 88% done\
+Checking cpu/rl78/uart0.c ...\
+385/459 files checked 89% done\
+Checking cpu/rl78/uart0.h ...\
+386/459 files checked 89% done\
+Checking cpu/rl78/watchdog.c ...\
+387/459 files checked 89% done\
+Checking cpu/rl78/write.c ...\
+Checking cpu/rl78/write.c: __IAR_SYSTEMS_ICC__...\
+388/459 files checked 89% done\
+Checking cpu/rl78/write.h ...\
+389/459 files checked 89% done\
+Checking cpu/stm32w108/Makefile.stm32w108 ...\
+390/459 files checked 90% done\
+Checking cpu/stm32w108/README.txt ...\
+[cpu/stm32w108/README.txt:3]: (error) syntax error\
+391/459 files checked 90% done\
+Checking cpu/stm32w108/board-sensors.h ...\
+392/459 files checked 90% done\
+Checking cpu/stm32w108/cfs-coffee-arch.c ...\
+Checking cpu/stm32w108/cfs-coffee-arch.c: CORTEXM3_STM32F103...\
+[cpu/stm32w108/cfs-coffee-arch.c:507]: (style) The scope of the variable 'next_page' can be reduced.\
+[cpu/stm32w108/cfs-coffee-arch.c:507]: (style) The scope of the variable 'curr_page' can be reduced.\
+[cpu/stm32w108/cfs-coffee-arch.c:508]: (style) The scope of the variable 'offset' can be reduced.\
+Checking cpu/stm32w108/cfs-coffee-arch.c: CORTEXM3_STM32W108...\
+Checking cpu/stm32w108/cfs-coffee-arch.c: DOXYGEN_SHOULD_SKIP_THIS...\
+Checking cpu/stm32w108/cfs-coffee-arch.c: __ICCARM__...\
+393/459 files checked 91% done\
+Checking cpu/stm32w108/cfs-coffee-arch.h ...\
+Checking cpu/stm32w108/cfs-coffee-arch.h: CORTEXM3_STM32F103...\
+Checking cpu/stm32w108/cfs-coffee-arch.h: CORTEXM3_STM32W108...\
+Checking cpu/stm32w108/cfs-coffee-arch.h: DOXYGEN_SHOULD_SKIP_THIS...\
+Checking cpu/stm32w108/cfs-coffee-arch.h: __ICCARM__...\
+394/459 files checked 92% done\
+Checking cpu/stm32w108/clock.c ...\
+[cpu/stm32w108/hal/micro/cortexm3/nvm.h:254]: (error) failed to evaluate #if condition\
+Checking cpu/stm32w108/clock.c: CORTEXM3_STM32F103...\
+Checking cpu/stm32w108/clock.c: CORTEXM3_STM32W108...\
+Checking cpu/stm32w108/clock.c: DOXYGEN_SHOULD_SKIP_THIS...\
+395/459 files checked 92% done\
+Checking cpu/stm32w108/dev/stm32w-radio.c ...\
+[cpu/stm32w108/dev/stm32w-radio.c:383]: (style) The scope of the variable 'target' can be reduced.\
+[cpu/stm32w108/dev/stm32w-radio.c:384]: (style) The scope of the variable 'i' can be reduced.\
+[cpu/stm32w108/dev/stm32w-radio.c:762]: (style) The scope of the variable 'len' can be reduced.\
+Checking cpu/stm32w108/dev/stm32w-radio.c: RDC_CONF_DEBUG_LED...\
+Checking cpu/stm32w108/dev/stm32w-radio.c: RDC_CONF_HARDWARE_CSMA...\
+Checking cpu/stm32w108/dev/stm32w-radio.c: ST_CONF_RADIO_AUTOACK...\
+396/459 files checked 92% done\
+Checking cpu/stm32w108/dev/stm32w-systick.c ...\
+Checking cpu/stm32w108/dev/stm32w-systick.c: DEBUG...\
+397/459 files checked 92% done\
+Checking cpu/stm32w108/dev/uart1-putchar.c ...\
+Checking cpu/stm32w108/dev/uart1-putchar.c: __GNUC__...\
+Checking cpu/stm32w108/dev/uart1-putchar.c: __ICCARM__...\
+398/459 files checked 92% done\
+Checking cpu/stm32w108/dev/uart1.c ...\
+Checking cpu/stm32w108/dev/uart1.c: UART1_CONF_TX_BUFSIZE...\
+Checking cpu/stm32w108/dev/uart1.c: UART1_CONF_TX_WITH_INTERRUPT...\
+399/459 files checked 92% done\
+Checking cpu/stm32w108/e_stdio/src/scanf.c ...\
+Checking cpu/stm32w108/e_stdio/src/scanf.c: _HAVE_STDC...\
+Checking cpu/stm32w108/e_stdio/src/scanf.c: __GNUC__...\
+400/459 files checked 92% done\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c ...\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:264]: (style) Unused variable: bbits\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:264]: (style) Unused variable: b2\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:264]: (style) Unused variable: b5\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:264]: (style) Unused variable: be\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:264]: (style) Unused variable: dig\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:264]: (style) Unused variable: i\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:264]: (style) Unused variable: ieps\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:264]: (style) Unused variable: ilim\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:264]: (style) Unused variable: ilim0\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:264]: (style) Unused variable: ilim1\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:264]: (style) Unused variable: j\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:264]: (style) Unused variable: j1\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:264]: (style) Variable 'k' is not assigned a value.\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:264]: (style) Unused variable: k0\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:265]: (style) Unused variable: k_check\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:265]: (style) Unused variable: leftright\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:265]: (style) Unused variable: m2\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:265]: (style) Unused variable: m5\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:265]: (style) Unused variable: s2\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:265]: (style) Unused variable: s5\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:265]: (style) Unused variable: spec_case\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:265]: (style) Unused variable: try_quick\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:266]: (style) Unused variable: d2\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:266]: (style) Unused variable: eps\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:267]: (style) Unused variable: L\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:272]: (style) Unused variable: b\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:272]: (style) Unused variable: b1\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:272]: (style) Unused variable: delta\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:272]: (style) Unused variable: mhi\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:272]: (style) Unused variable: S\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:273]: (style) Unused variable: ds\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:275]: (style) Variable 's0' is not assigned a value.\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:1169]: (error) Uninitialized variable: k\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:1171]: (error) Uninitialized variable: s\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:1172]: (error) Uninitialized variable: s0\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: Check_FLT_ROUNDS;IEEE_Arith;VAX...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: DEBUG...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: IBM...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: IBM;IEEE_Arith;VAX...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: IBM;VAX...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: IEEE_Arith;IEEE_Arith;VAX...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: IEEE_Arith;VAX...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: IEEE_Arith;VAX;Pack_32...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: IEEE_Arith;VAX;Sudden_Underflow...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: KR_headers;RND_PRODQUOT...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: Pack_32...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: RND_PRODQUOT...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: SMALL_SCANF...\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:299]: (style) Variable 'tab_b' is assigned a value that is never used.\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:299]: (style) Variable 'tab_b1' is assigned a value that is never used.\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:299]: (style) Variable 'tab_delta' is assigned a value that is never used.\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:299]: (style) Variable 'tab_mlo' is assigned a value that is never used.\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:299]: (style) Variable 'tab_mhi' is assigned a value that is never used.\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:299]: (style) Variable 'tab_S' is assigned a value that is never used.\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:300]: (style) Variable 'tab_blshift' is assigned a value that is never used.\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:300]: (style) Variable 'tab_Slshift' is assigned a value that is never used.\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:300]: (style) Variable 'tab_mhilshift' is assigned a value that is never used.\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:300]: (style) Variable 'tab_mlolshift' is assigned a value that is never used.\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:301]: (style) Unused variable: tab_s0\
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:302]: (style) Variable 's0' is not assigned a value.\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: Unsigned_Shifts...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: VAX;__IEEE_BYTES_LITTLE_ENDIAN...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: _DOUBLE_IS_32BITS...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: _DOUBLE_IS_32BITS;__v800...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: __IEEE_BIG_ENDIAN...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: __IEEE_LITTLE_ENDIAN...\
+Checking cpu/stm32w108/e_stdio/src/small-dtoa.c: __Z8000__...\
+401/459 files checked 92% done\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c ...\
+[cpu/stm32w108/e_stdio/src/small-mprec.c:328]: (style) Boolean result is used in bitwise operation. Clarify expression with parentheses.\
+[cpu/stm32w108/e_stdio/src/small-mprec.c:791] -> [cpu/stm32w108/e_stdio/src/small-mprec.c:798]: (style) Variable 'd.d' is reassigned a value before the old one has been used.\
+[cpu/stm32w108/e_stdio/src/small-mprec.c:115]: (style) The scope of the variable 'x' can be reduced.\
+[cpu/stm32w108/e_stdio/src/small-mprec.c:843]: (style) Variable 'i' is assigned a value that is never used.\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: DEBUG...\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: DEBUG;Pack_32...\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: IBM...\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: IBM;VAX...\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: KR_headers;RND_PRODQUOT...\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: Pack_32...\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: RND_PRODQUOT...\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: SMALL_SCANF;_SMALL_PRINTF...\
+[cpu/stm32w108/e_stdio/src/small-mprec.c:1208]: (style) Boolean result is used in bitwise operation. Clarify expression with parentheses.\
+[cpu/stm32w108/e_stdio/src/small-mprec.c:1731] -> [cpu/stm32w108/e_stdio/src/small-mprec.c:1738]: (style) Variable 'd.d' is reassigned a value before the old one has been used.\
+[cpu/stm32w108/e_stdio/src/small-mprec.c:1092]: (style) Variable 'tab_b' is assigned a value that is never used.\
+[cpu/stm32w108/e_stdio/src/small-mprec.c:1792]: (style) Variable 'i' is assigned a value that is never used.\
+[cpu/stm32w108/e_stdio/src/small-mprec.c:1356]: (error) Uninitialized variable: p5\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: Sudden_Underflow...\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: Unsigned_Shifts...\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: VAX...\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: VAX;__IEEE_BYTES_LITTLE_ENDIAN...\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: _DOUBLE_IS_32BITS...\
+[cpu/stm32w108/e_stdio/src/small-mprec.c:786]: (style) The scope of the variable 'i' can be reduced.\
+[cpu/stm32w108/e_stdio/src/small-mprec.c:787]: (style) Unused variable: y\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: _DOUBLE_IS_32BITS;__v800...\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: __IEEE_BIG_ENDIAN...\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: __IEEE_LITTLE_ENDIAN...\
+Checking cpu/stm32w108/e_stdio/src/small-mprec.c: __Z8000__...\
+402/459 files checked 92% done\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c ...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: Check_FLT_ROUNDS...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: DEBUG...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: IBM...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: IBM;Sudden_Underflow...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: IBM;VAX...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: IEEE_Arith...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: KR_headers;RND_PRODQUOT...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: RND_PRODQUOT...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: Sudden_Underflow...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: Unsigned_Shifts...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: VAX...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: VAX;__IEEE_BYTES_LITTLE_ENDIAN...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: _DOUBLE_IS_32BITS...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: _DOUBLE_IS_32BITS;__v800...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: _HAVE_STDC...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: _SMALL_PRINTF...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: __IEEE_BIG_ENDIAN...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: __IEEE_LITTLE_ENDIAN...\
+Checking cpu/stm32w108/e_stdio/src/small-strtod.c: __Z8000__...\
+403/459 files checked 92% done\
+Checking cpu/stm32w108/e_stdio/src/small-vfsscanf.c ...\
+[cpu/stm32w108/e_stdio/src/small-vfsscanf.c:385]: (style) Condition 'nbytes==1' is always true\
+Checking cpu/stm32w108/e_stdio/src/small-vfsscanf.c: MB_CAPABLE...\
+Checking cpu/stm32w108/e_stdio/src/small-vfsscanf.c: SMALL_SCANF...\
+[cpu/stm32w108/e_stdio/src/small-vfsscanf.c:1252]: (warning) Comparison of a boolean expression with an integer other than 0 or 1.\
+[cpu/stm32w108/e_stdio/src/small-vfsscanf.c:866]: (error) Uninitialized variable: mbslen\
+Checking cpu/stm32w108/e_stdio/src/small-vfsscanf.c: WANT_IO_LONG_DBL...\
+Checking cpu/stm32w108/e_stdio/src/small-vfsscanf.c: WANT_PRINTF_LONG_LONG;__GNUC__...\
+Checking cpu/stm32w108/e_stdio/src/small-vfsscanf.c: _HAVE_STDC...\
+Checking cpu/stm32w108/e_stdio/src/small-vfsscanf.c: __GNUC__...\
+Checking cpu/stm32w108/e_stdio/src/small-vfsscanf.c: hardway...\
+404/459 files checked 92% done\
+Checking cpu/stm32w108/e_stdio/src/small-wcrtomb.c ...\
+[cpu/stm32w108/e_stdio/src/small-wcrtomb.c:21]: (style) The scope of the variable 'buf' can be reduced.\
+Checking cpu/stm32w108/e_stdio/src/small-wcrtomb.c: MB_CAPABLE...\
+Checking cpu/stm32w108/e_stdio/src/small-wcrtomb.c: SMALL_SCANF;_SMALL_PRINTF...\
+405/459 files checked 93% done\
+Checking cpu/stm32w108/e_stdio/src/small-wcsrtombs.c ...\
+Checking cpu/stm32w108/e_stdio/src/small-wcsrtombs.c: MB_CAPABLE...\
+Checking cpu/stm32w108/e_stdio/src/small-wcsrtombs.c: SMALL_SCANF;_SMALL_PRINTF...\
+[cpu/stm32w108/e_stdio/src/small-wcsrtombs.c:22]: (style) Variable 'buff' is not assigned a value.\
+406/459 files checked 93% done\
+Checking cpu/stm32w108/e_stdio/src/small-wctomb-r.c ...\
+Checking cpu/stm32w108/e_stdio/src/small-wctomb-r.c: SMALL_SCANF;_SMALL_PRINTF...\
+407/459 files checked 93% done\
+Checking cpu/stm32w108/e_stdio/src/sp-printf.c ...\
+Checking cpu/stm32w108/e_stdio/src/sp-printf.c: INTEGER_ONLY...\
+Checking cpu/stm32w108/e_stdio/src/sp-printf.c: _HAVE_STDC...\
+Checking cpu/stm32w108/e_stdio/src/sp-printf.c: _SMALL_PRINTF...\
+Checking cpu/stm32w108/e_stdio/src/sp-printf.c: __GNUC__...\
+408/459 files checked 93% done\
+Checking cpu/stm32w108/e_stdio/src/sp-puts.c ...\
+409/459 files checked 93% done\
+Checking cpu/stm32w108/e_stdio/src/sp-snprintf.c ...\
+Checking cpu/stm32w108/e_stdio/src/sp-snprintf.c: INTEGER_ONLY;_SMALL_PRINTF...\
+Checking cpu/stm32w108/e_stdio/src/sp-snprintf.c: _HAVE_STDC...\
+Checking cpu/stm32w108/e_stdio/src/sp-snprintf.c: _SMALL_PRINTF...\
+Checking cpu/stm32w108/e_stdio/src/sp-snprintf.c: __GNUC__...\
+410/459 files checked 93% done\
+Checking cpu/stm32w108/e_stdio/src/sp-sprintf.c ...\
+Checking cpu/stm32w108/e_stdio/src/sp-sprintf.c: INTEGER_ONLY;_SMALL_PRINTF...\
+Checking cpu/stm32w108/e_stdio/src/sp-sprintf.c: _HAVE_STDC...\
+Checking cpu/stm32w108/e_stdio/src/sp-sprintf.c: _SMALL_PRINTF...\
+Checking cpu/stm32w108/e_stdio/src/sp-sprintf.c: __GNUC__...\
+411/459 files checked 93% done\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c ...\
+[cpu/stm32w108/e_stdio/src/sp-vfprintf.c:828]: (style) Clarify calculation precedence for '&' and '?'.\
+[cpu/stm32w108/e_stdio/src/sp-vfprintf.c:953]: (style) Clarify calculation precedence for '&' and '?'.\
+[cpu/stm32w108/e_stdio/src/sp-vfprintf.c:1049]: (style) Clarify calculation precedence for '&' and '?'.\
+[cpu/stm32w108/e_stdio/src/sp-vfprintf.c:1057]: (style) Clarify calculation precedence for '&' and '?'.\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: IBM...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: IBM;VAX...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: INTEGER_ONLY...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: LDBL_MANT_DIG=24;WANT_IO_LONG_DBL...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: LDBL_MANT_DIG=53;WANT_IO_LONG_DBL...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: LDBL_MANT_DIG=64;WANT_IO_LONG_DBL...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: LIBC_SCCS...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: MB_CAPABLE...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: Unsigned_Shifts...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: WANT_IO_LONG_DBL...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: WANT_IO_POS_ARGS...\
+[cpu/stm32w108/e_stdio/src/sp-vfprintf.c:1523]: (style) The scope of the variable 'number' can be reduced.\
+[cpu/stm32w108/e_stdio/src/sp-vfprintf.c:1523]: (style) The scope of the variable 'flags' can be reduced.\
+[cpu/stm32w108/e_stdio/src/sp-vfprintf.c:1524]: (style) The scope of the variable 'spec_type' can be reduced.\
+[cpu/stm32w108/e_stdio/src/sp-vfprintf.c:1529]: (style) The scope of the variable 'pos' can be reduced.\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: WANT_PRINTF_LONG_LONG;__GNUC__...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: _DOUBLE_IS_32BITS...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: _HAVE_STDC...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: _SMALL_PRINTF...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: __GNUC__...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: __IEEE_BIG_ENDIAN...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: __IEEE_LITTLE_ENDIAN...\
+Checking cpu/stm32w108/e_stdio/src/sp-vfprintf.c: __Z8000__...\
+412/459 files checked 93% done\
+Checking cpu/stm32w108/e_stdio/src/sscanf.c ...\
+Checking cpu/stm32w108/e_stdio/src/sscanf.c: _HAVE_STDC...\
+Checking cpu/stm32w108/e_stdio/src/sscanf.c: __GNUC__...\
+413/459 files checked 93% done\
+Checking cpu/stm32w108/e_stdio/src/syscalls.c ...\
+Checking cpu/stm32w108/e_stdio/src/syscalls.c: __thumb__...\
+414/459 files checked 93% done\
+Checking cpu/stm32w108/e_stdio/src/test-mes.c ...\
+[cpu/stm32w108/e_stdio/src/test-mes.c:9]: (style) Unused variable: ent_char\
+415/459 files checked 93% done\
+Checking cpu/stm32w108/e_stdio/src/test-printf.c ...\
+416/459 files checked 93% done\
+Checking cpu/stm32w108/e_stdio/src/test-scanf.c ...\
+417/459 files checked 93% done\
+Checking cpu/stm32w108/e_stdio/src/test.c ...\
+[cpu/stm32w108/e_stdio/src/test.c:62]: (warning) %lu in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned short'.\
+[cpu/stm32w108/e_stdio/src/test.c:66]: (warning) %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'.\
+[cpu/stm32w108/e_stdio/src/test.c:70]: (warning) %o in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'.\
+[cpu/stm32w108/e_stdio/src/test.c:125]: (warning) %Lf in format string (no. 1) requires 'long double *' but the argument type is 'double *'.\
+[cpu/stm32w108/e_stdio/src/test.c:126]: (warning) %Lf in format string (no. 1) requires 'long double' but the argument type is 'double'.\
+[cpu/stm32w108/e_stdio/src/test.c:247]: (warning) %x in format string (no. 6) requires 'unsigned int *' but the argument type is 'signed int *'.\
+[cpu/stm32w108/e_stdio/src/test.c:23]: (style) Unused variable: tab\
+[cpu/stm32w108/e_stdio/src/test.c:27]: (style) Unused variable: f4\
+[cpu/stm32w108/e_stdio/src/test.c:78]: (warning) scanf() without field width limits can crash with huge input data.\
+[cpu/stm32w108/e_stdio/src/test.c:83]: (warning) scanf() without field width limits can crash with huge input data.\
+[cpu/stm32w108/e_stdio/src/test.c:95]: (warning) scanf() without field width limits can crash with huge input data.\
+[cpu/stm32w108/e_stdio/src/test.c:99]: (warning) scanf() without field width limits can crash with huge input data.\
+[cpu/stm32w108/e_stdio/src/test.c:247]: (warning) scanf() without field width limits can crash with huge input data.\
+418/459 files checked 94% done\
+Checking cpu/stm32w108/elfloader-arch.c ...\
+Checking cpu/stm32w108/elfloader-arch.c: CORTEXM3_STM32F103...\
+[cpu/stm32w108/elfloader-arch.c:173]: (warning) %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.\
+[cpu/stm32w108/elfloader-arch.c:88]: (style) The scope of the variable 'nbytes' can be reduced.\
+Checking cpu/stm32w108/elfloader-arch.c: CORTEXM3_STM32W108...\
+Checking cpu/stm32w108/elfloader-arch.c: DOXYGEN_SHOULD_SKIP_THIS...\
+Checking cpu/stm32w108/elfloader-arch.c: __ARM_ARCH_4T__...\
+Checking cpu/stm32w108/elfloader-arch.c: __ICCARM__...\
+419/459 files checked 94% done\
+Checking cpu/stm32w108/gnu-stm32w108.ld ...\
+420/459 files checked 94% done\
+Checking cpu/stm32w108/gnu-stm32w108CC.ld ...\
+[cpu/stm32w108/gnu-stm32w108CC.ld:16]: (error) syntax error\
+421/459 files checked 95% done\
+Checking cpu/stm32w108/gnu-stm32w108xB.ld ...\
+[cpu/stm32w108/gnu-stm32w108xB.ld:16]: (error) syntax error\
+422/459 files checked 95% done\
+Checking cpu/stm32w108/gnu.ld ...\
+423/459 files checked 95% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/adc.c ...\
+[cpu/stm32w108/hal/micro/cortexm3/adc.c:76]: (style) The scope of the variable 'i' can be reduced.\
+[cpu/stm32w108/hal/micro/cortexm3/adc.c:302]: (style) The scope of the variable 'N' can be reduced.\
+[cpu/stm32w108/hal/micro/cortexm3/adc.c:304]: (style) The scope of the variable 'nvalue' can be reduced.\
+Checking cpu/stm32w108/hal/micro/cortexm3/adc.c: ENABLE_ADC_EXTENDED_RANGE_BROKEN...\
+424/459 files checked 95% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/board.c ...\
+[cpu/stm32w108/hal/micro/cortexm3/board.c:268]: (error) Array 'boardList[7]' accessed at index 13, which is out of bounds.\
+Checking cpu/stm32w108/hal/micro/cortexm3/board.c: EMBERZNET_HAL...\
+Checking cpu/stm32w108/hal/micro/cortexm3/board.c: TEST_COMMANDS...\
+425/459 files checked 95% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/button.c ...\
+426/459 files checked 95% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/clocks.c ...\
+Checking cpu/stm32w108/hal/micro/cortexm3/clocks.c: CORTEXM3_STM32W108...\
+427/459 files checked 95% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/flash.c ...\
+Checking cpu/stm32w108/hal/micro/cortexm3/flash.c: CORTEXM3_STM32F103...\
+Checking cpu/stm32w108/hal/micro/cortexm3/flash.c: CORTEXM3_STM32W108...\
+Checking cpu/stm32w108/hal/micro/cortexm3/flash.c: FLASH_PROGRAMMING_WITH_EMPTY_FIB...\
+428/459 files checked 96% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/led.c ...\
+429/459 files checked 96% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/mems.c ...\
+[cpu/stm32w108/hal/micro/cortexm3/mems.c:84]: (style) The scope of the variable 'data' can be reduced.\
+Checking cpu/stm32w108/hal/micro/cortexm3/mems.c: ST_DBG...\
+430/459 files checked 96% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/mfg-token.c ...\
+431/459 files checked 96% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/micro-common-internal.c ...\
+432/459 files checked 96% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/micro-common.c ...\
+Checking cpu/stm32w108/hal/micro/cortexm3/micro-common.c: DIGITAL_OSC32_EXT;ENABLE_OSC32K...\
+Checking cpu/stm32w108/hal/micro/cortexm3/micro-common.c: ENABLE_OSC32K...\
+433/459 files checked 96% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/micro.c ...\
+[cpu/stm32w108/hal/micro/cortexm3/micro.c:124]: (style) union member 'Anonymous0::offset' is never used.\
+434/459 files checked 96% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/nvm.c ...\
+[cpu/stm32w108/hal/micro/cortexm3/nvm.c:75]: (style) Expression is always false because 'else if' condition matches previous condition at line 62.\
+[cpu/stm32w108/hal/micro/cortexm3/nvm.c:204]: (style) The scope of the variable 'address' can be reduced.\
+[cpu/stm32w108/hal/micro/cortexm3/nvm.c:205]: (style) The scope of the variable 'flash' can be reduced.\
+Checking cpu/stm32w108/hal/micro/cortexm3/nvm.c: NVM_RAM_EMULATION...\
+435/459 files checked 96% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/sleep.c ...\
+436/459 files checked 96% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/stm32w108/crt-stm32w108.c ...\
+[cpu/stm32w108/hal/micro/cortexm3/stm32w108/crt-stm32w108.c:388]: (warning) Redundant assignment of 'fd' to itself.\
+[cpu/stm32w108/hal/micro/cortexm3/stm32w108/crt-stm32w108.c:388]: (style) Statements following return, break, continue, goto or throw will never be executed.\
+Checking cpu/stm32w108/hal/micro/cortexm3/stm32w108/crt-stm32w108.c: USE_HEAP...\
+437/459 files checked 96% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/stm32w108/low-level-init.c ...\
+[cpu/stm32w108/hal/micro/cortexm3/stm32w108/low-level-init.c] -> [cpu/stm32w108/hal/micro/cortexm3/stm32w108/low-level-init.c]: (error) syntax error\
+438/459 files checked 96% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/system-timer.c ...\
+439/459 files checked 96% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/temperature-sensor.c ...\
+Checking cpu/stm32w108/hal/micro/cortexm3/temperature-sensor.c: ENABLE_ADC_EXTENDED_RANGE_BROKEN...\
+440/459 files checked 97% done\
+Checking cpu/stm32w108/hal/micro/cortexm3/uart.c ...\
+Checking cpu/stm32w108/hal/micro/cortexm3/uart.c: __GNUC__...\
+Checking cpu/stm32w108/hal/micro/cortexm3/uart.c: __ICCARM__...\
+441/459 files checked 97% done\
+Checking cpu/stm32w108/iar-cfg-coffee.icf ...\
+[cpu/stm32w108/iar-cfg-coffee.icf:35]: (error) syntax error\
+442/459 files checked 97% done\
+Checking cpu/stm32w108/iar-cfg.icf ...\
+[cpu/stm32w108/iar-cfg.icf:29]: (error) syntax error\
+443/459 files checked 97% done\
+Checking cpu/stm32w108/leds-arch.c ...\
+Checking cpu/stm32w108/leds-arch.c: CORTEXM3_STM32F103...\
+Checking cpu/stm32w108/leds-arch.c: CORTEXM3_STM32W108...\
+Checking cpu/stm32w108/leds-arch.c: DOXYGEN_SHOULD_SKIP_THIS...\
+444/459 files checked 97% done\
+Checking cpu/stm32w108/mtarch.h ...\
+445/459 files checked 97% done\
+Checking cpu/stm32w108/rand.c ...\
+446/459 files checked 98% done\
+Checking cpu/stm32w108/rtimer-arch.c ...\
+447/459 files checked 98% done\
+Checking cpu/stm32w108/rtimer-arch.h ...\
+Checking cpu/stm32w108/rtimer-arch.h: RTIMER_ARCH_CONF_RESOLUTION...\
+448/459 files checked 98% done\
+Checking cpu/stm32w108/slip-uart1.c ...\
+449/459 files checked 98% done\
+Checking cpu/stm32w108/small-printf/sp-printf.c ...\
+Checking cpu/stm32w108/small-printf/sp-printf.c: INTEGER_ONLY...\
+Checking cpu/stm32w108/small-printf/sp-printf.c: _HAVE_STDC...\
+Checking cpu/stm32w108/small-printf/sp-printf.c: _SMALL_PRINTF...\
+450/459 files checked 98% done\
+Checking cpu/stm32w108/small-printf/sp-puts.c ...\
+451/459 files checked 98% done\
+Checking cpu/stm32w108/small-printf/sp-snprintf.c ...\
+Checking cpu/stm32w108/small-printf/sp-snprintf.c: INTEGER_ONLY;_SMALL_PRINTF...\
+Checking cpu/stm32w108/small-printf/sp-snprintf.c: _HAVE_STDC...\
+Checking cpu/stm32w108/small-printf/sp-snprintf.c: _SMALL_PRINTF...\
+452/459 files checked 98% done\
+Checking cpu/stm32w108/small-printf/sp-sprintf.c ...\
+Checking cpu/stm32w108/small-printf/sp-sprintf.c: INTEGER_ONLY;_SMALL_PRINTF...\
+Checking cpu/stm32w108/small-printf/sp-sprintf.c: _HAVE_STDC...\
+Checking cpu/stm32w108/small-printf/sp-sprintf.c: _SMALL_PRINTF...\
+453/459 files checked 99% done\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c ...\
+[cpu/stm32w108/small-printf/sp-vfprintf.c:828]: (style) Clarify calculation precedence for '&' and '?'.\
+[cpu/stm32w108/small-printf/sp-vfprintf.c:953]: (style) Clarify calculation precedence for '&' and '?'.\
+[cpu/stm32w108/small-printf/sp-vfprintf.c:1049]: (style) Clarify calculation precedence for '&' and '?'.\
+[cpu/stm32w108/small-printf/sp-vfprintf.c:1057]: (style) Clarify calculation precedence for '&' and '?'.\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: IBM...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: IBM;VAX...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: INTEGER_ONLY...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: LDBL_MANT_DIG=24;WANT_IO_LONG_DBL...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: LDBL_MANT_DIG=53;WANT_IO_LONG_DBL...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: LDBL_MANT_DIG=64;WANT_IO_LONG_DBL...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: LIBC_SCCS...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: MB_CAPABLE...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: Unsigned_Shifts...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: WANT_IO_LONG_DBL...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: WANT_IO_POS_ARGS...\
+[cpu/stm32w108/small-printf/sp-vfprintf.c:1523]: (style) The scope of the variable 'number' can be reduced.\
+[cpu/stm32w108/small-printf/sp-vfprintf.c:1523]: (style) The scope of the variable 'flags' can be reduced.\
+[cpu/stm32w108/small-printf/sp-vfprintf.c:1524]: (style) The scope of the variable 'spec_type' can be reduced.\
+[cpu/stm32w108/small-printf/sp-vfprintf.c:1529]: (style) The scope of the variable 'pos' can be reduced.\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: WANT_PRINTF_LONG_LONG;__GNUC__...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: _DOUBLE_IS_32BITS...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: _HAVE_STDC...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: _SMALL_PRINTF...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: __IEEE_BIG_ENDIAN...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: __IEEE_LITTLE_ENDIAN...\
+Checking cpu/stm32w108/small-printf/sp-vfprintf.c: __Z8000__...\
+454/459 files checked 99% done\
+Checking cpu/stm32w108/uip-arch.c ...\
+Checking cpu/stm32w108/uip-arch.c: UIP_TCP...\
+455/459 files checked 99% done\
+Checking cpu/stm32w108/watchdog.c ...\
+Checking cpu/stm32w108/watchdog.c: CORTEXM3_STM32F103...\
+Checking cpu/stm32w108/watchdog.c: CORTEXM3_STM32W108...\
+Checking cpu/stm32w108/watchdog.c: DOXYGEN_SHOULD_SKIP_THIS...\
+456/459 files checked 99% done\
+Checking cpu/x86/Makefile.x86 ...\
+[cpu/x86/Makefile.x86] -> [cpu/x86/Makefile.x86]: (error) syntax error\
+457/459 files checked 99% done\
+Checking cpu/x86/mtarch.c ...\
+458/459 files checked 99% done\
+Checking cpu/x86/mtarch.h ...\
+459/459 files checked 100% done}

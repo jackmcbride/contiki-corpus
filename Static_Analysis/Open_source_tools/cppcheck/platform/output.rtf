@@ -1,0 +1,1728 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 eduEEC8:contiki-3.0 Jack$ cppcheck --force --enable=style  platform/*/*\
+Checking platform/apple2enh/Makefile.apple2enh ...\
+1/445 files checked 0% done\
+Checking platform/apple2enh/Makefile.customrules-apple2enh ...\
+[platform/apple2enh/Makefile.customrules-apple2enh:1]: (error) syntax error\
+2/445 files checked 0% done\
+Checking platform/apple2enh/README.md ...\
+[platform/apple2enh/README.md:4]: (error) syntax error\
+3/445 files checked 0% done\
+Checking platform/apple2enh/contiki-conf.h ...\
+4/445 files checked 0% done\
+Checking platform/apple2enh/contiki-main.c ...\
+Checking platform/apple2enh/contiki-main.c: WITH_ARGS...\
+Checking platform/apple2enh/contiki-main.c: WITH_DNS...\
+Checking platform/apple2enh/contiki-main.c: WITH_GUI...\
+Checking platform/apple2enh/contiki-main.c: WITH_REBOOT...\
+5/445 files checked 0% done\
+Checking platform/apple2enh/lib/error.c ...\
+Checking platform/apple2enh/lib/error.c: LOG_CONF_ENABLED...\
+6/445 files checked 0% done\
+Checking platform/apple2enh/sys/clock.c ...\
+7/445 files checked 0% done\
+Checking platform/atarixl/Makefile.atarixl ...\
+8/445 files checked 0% done\
+Checking platform/atarixl/Makefile.customrules-atarixl ...\
+[platform/atarixl/Makefile.customrules-atarixl:1]: (error) syntax error\
+9/445 files checked 0% done\
+Checking platform/atarixl/README.md ...\
+10/445 files checked 1% done\
+Checking platform/atarixl/contiki-conf.h ...\
+11/445 files checked 1% done\
+Checking platform/atarixl/contiki-main.c ...\
+Checking platform/atarixl/contiki-main.c: WITH_ARGS...\
+Checking platform/atarixl/contiki-main.c: WITH_DNS...\
+Checking platform/atarixl/contiki-main.c: WITH_GUI...\
+12/445 files checked 1% done\
+Checking platform/atarixl/lib/error.c ...\
+Checking platform/atarixl/lib/error.c: LOG_CONF_ENABLED...\
+13/445 files checked 1% done\
+Checking platform/avr-atmega128rfa1/Makefile.avr-atmega128rfa1 ...\
+[platform/avr-atmega128rfa1/Makefile.avr-atmega128rfa1:7]: (error) Internal error. Token::astOperand1() cyclic dependency.\
+14/445 files checked 1% done\
+Checking platform/avr-atmega128rfa1/apps/raven-ipso/raven-ipso.c ...\
+[platform/avr-atmega128rfa1/apps/raven-ipso/raven-ipso.c:112]: (portability) '(void*)((struct uip_icmp_hdr*)&uip_buf[uip_l2_l3_hdr_len])' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.\
+15/445 files checked 1% done\
+Checking platform/avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c ...\
+[platform/avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c:271]: (style) The scope of the variable 'i' can be reduced.\
+[platform/avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c:271]: (style) The scope of the variable 'activeconnections' can be reduced.\
+[platform/avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c:271]: (style) The scope of the variable 'radio_state' can be reduced.\
+[platform/avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c:131]: (portability) '(void*)((struct uip_icmp_hdr*)&uip_buf[uip_l2_l3_hdr_len])' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.\
+[platform/avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c:133]: (portability) '(void*)((struct uip_icmp_hdr*)&uip_buf[uip_l2_l3_hdr_len])' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.\
+Checking platform/avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c: AVR_CONF_USE32KCRYSTAL...\
+Checking platform/avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c: RF230BB_CONF_LEDONPORTE1...\
+Checking platform/avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c: WEBSERVER...\
+Checking platform/avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c: __AVR_ATmega128RFA1__...\
+16/445 files checked 1% done\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c ...\
+17/445 files checked 1% done\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cfs.c ...\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cfs.c: WEBSERVER_CONF_CFS_CONNS...\
+18/445 files checked 1% done\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c ...\
+[platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '\{' when no macros are defined.\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c: COFFEE_FILES...\
+[platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '\{' when these macros are defined: 'COFFEE_FILES'.\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c: HTTPD_FS_STATISTICS...\
+[platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '\{' when these macros are defined: 'HTTPD_FS_STATISTICS'.\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c: HTTPD_FS_STATISTICS;HTTPD_FS_STATISTICS=1...\
+[platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '\{' when these macros are defined: 'HTTPD_FS_STATISTICS;HTTPD_FS_STATISTICS=1'.\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c: HTTPD_FS_STATISTICS;HTTPD_FS_STATISTICS=2...\
+[platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '\{' when these macros are defined: 'HTTPD_FS_STATISTICS;HTTPD_FS_STATISTICS=2'.\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c: RF230BB...\
+[platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '\{' when these macros are defined: 'RF230BB'.\
+19/445 files checked 1% done\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fs.c ...\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fs.c: COFFEE_FILES...\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fs.c: HTTPD_FS_STATISTICS...\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fs.c: HTTPD_FS_STATISTICS=1...\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fs.c: HTTPD_FS_STATISTICS=2...\
+20/445 files checked 1% done\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c ...\
+21/445 files checked 1% done\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd.c ...\
+[platform/avr-atmega128rfa1/apps/raven-webserver/httpd.c:360]: (style) The scope of the variable 'ptr' can be reduced.\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd.c: COFFEE_FILES...\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd.c: RF230BB_CONF_LEDONPORTE1...\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/httpd.c: WEBSERVER_CONF_CGI_CONNS...\
+22/445 files checked 1% done\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/webserver-dsc.c ...\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/webserver-dsc.c: CTK_CONF_ICONS...\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/webserver-dsc.c: CTK_CONF_ICON_BITMAPS...\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/webserver-dsc.c: CTK_CONF_ICON_TEXTMAPS...\
+23/445 files checked 1% done\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/webserver-nogui.c ...\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/webserver-nogui.c: COFFEE_FILES...\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/webserver-nogui.c: LOG_CONF_ENABLED...\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/webserver-nogui.c: LOG_CONF_ENABLED;NETSTACK_CONF_WITH_IPV6...\
+24/445 files checked 1% done\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/webserver.c ...\
+Checking platform/avr-atmega128rfa1/apps/raven-webserver/webserver.c: COFFEE_FILES...\
+25/445 files checked 2% done\
+Checking platform/avr-atmega128rfa1/button-sensor.c ...\
+26/445 files checked 2% done\
+Checking platform/avr-atmega128rfa1/contiki-conf.h ...\
+Checking platform/avr-atmega128rfa1/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/avr-atmega128rfa1/contiki-conf.h: PROJECT_CONF_H...\
+[platform/avr-atmega128rfa1/contiki-conf.h:353]: (error) No header in #include\
+Checking platform/avr-atmega128rfa1/contiki-conf.h: UIP_CONF_IPV6_RPL...\
+27/445 files checked 3% done\
+Checking platform/avr-atmega128rfa1/contiki-main.c ...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: AVR_WEBSERVER...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: AVR_WEBSERVER;COFFEE_FILES=1...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: AVR_WEBSERVER;COFFEE_FILES=2...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: AVR_WEBSERVER;COFFEE_FILES=3...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: AVR_WEBSERVER;COFFEE_FILES=4...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: CHANNEL_802_15_4...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: COFFEE_FILES...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: DEBUGFLOWSIZE...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: DOMAIN_NAME...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: ENERGEST_CONF_ON...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: EUI64_ADDRESS...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: IEEE802154_PANADDR...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: IEEE802154_PANID...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: NETSTACK_CONF_WITH_IPV6...\
+[platform/avr-atmega128rfa1/contiki-main.c:400]: (style) The scope of the variable 'a' can be reduced.\
+Checking platform/avr-atmega128rfa1/contiki-main.c: NODE_ID...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: RADIOSTATS...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: RAVEN_LCD_INTERFACE...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: RF230BB_CONF_LEDONPORTE1...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: RF230_MAX_TX_POWER...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: SERVER_NAME...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: UIP_CONF_IPV6_RPL...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: UIP_CONF_LL_802154...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: UIP_CONF_ROUTER...\
+Checking platform/avr-atmega128rfa1/contiki-main.c: WITH_NODE_ID...\
+28/445 files checked 4% done\
+Checking platform/avr-atmega128rfa1/params.c ...\
+Checking platform/avr-atmega128rfa1/params.c: AVR_WEBSERVER...\
+Checking platform/avr-atmega128rfa1/params.c: CHANNEL_802_15_4...\
+Checking platform/avr-atmega128rfa1/params.c: CONTIKI_CONF_RANDOM_MAC...\
+Checking platform/avr-atmega128rfa1/params.c: CONTIKI_CONF_RANDOM_MAC;PARAMETER_STORAGE=0...\
+Checking platform/avr-atmega128rfa1/params.c: CONTIKI_CONF_RANDOM_MAC;PARAMETER_STORAGE=1...\
+Checking platform/avr-atmega128rfa1/params.c: DOMAIN_NAME...\
+Checking platform/avr-atmega128rfa1/params.c: EUI64_ADDRESS...\
+Checking platform/avr-atmega128rfa1/params.c: IEEE802154_PANADDR...\
+Checking platform/avr-atmega128rfa1/params.c: IEEE802154_PANID...\
+Checking platform/avr-atmega128rfa1/params.c: NODE_ID...\
+Checking platform/avr-atmega128rfa1/params.c: PARAMETER_STORAGE=0...\
+Checking platform/avr-atmega128rfa1/params.c: PARAMETER_STORAGE=1...\
+Checking platform/avr-atmega128rfa1/params.c: RF230_MAX_TX_POWER...\
+Checking platform/avr-atmega128rfa1/params.c: SERVER_NAME...\
+Checking platform/avr-atmega128rfa1/params.c: UIP_CONF_LL_802154...\
+Checking platform/avr-atmega128rfa1/params.c: WITH_NODE_ID...\
+29/445 files checked 4% done\
+Checking platform/avr-atmega128rfa1/params.h ...\
+Checking platform/avr-atmega128rfa1/params.h: AVR_WEBSERVER...\
+Checking platform/avr-atmega128rfa1/params.h: CHANNEL_802_15_4...\
+Checking platform/avr-atmega128rfa1/params.h: DOMAIN_NAME...\
+Checking platform/avr-atmega128rfa1/params.h: EUI64_ADDRESS...\
+Checking platform/avr-atmega128rfa1/params.h: IEEE802154_PANADDR...\
+Checking platform/avr-atmega128rfa1/params.h: IEEE802154_PANID...\
+Checking platform/avr-atmega128rfa1/params.h: NODE_ID...\
+Checking platform/avr-atmega128rfa1/params.h: RF230_MAX_TX_POWER...\
+Checking platform/avr-atmega128rfa1/params.h: SERVER_NAME...\
+Checking platform/avr-atmega128rfa1/params.h: UIP_CONF_LL_802154...\
+30/445 files checked 5% done\
+Checking platform/avr-atmega128rfa1/raven-lcd.h ...\
+31/445 files checked 5% done\
+Checking platform/avr-atmega128rfa1/slip_uart0.c ...\
+32/445 files checked 5% done\
+Checking platform/avr-raven/Makefile.avr-raven ...\
+[platform/avr-raven/Makefile.avr-raven:9]: (error) Internal error. Token::astOperand1() cyclic dependency.\
+33/445 files checked 5% done\
+Checking platform/avr-raven/apps/raven-ipso/raven-ipso.c ...\
+[platform/avr-raven/apps/raven-ipso/raven-ipso.c:112]: (portability) '(void*)((struct uip_icmp_hdr*)&uip_buf[uip_l2_l3_hdr_len])' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.\
+34/445 files checked 5% done\
+Checking platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c ...\
+[platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c:261]: (style) The scope of the variable 'radio_state' can be reduced.\
+[platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c:131]: (portability) '(void*)((struct uip_icmp_hdr*)&uip_buf[uip_l2_l3_hdr_len])' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.\
+[platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c:133]: (portability) '(void*)((struct uip_icmp_hdr*)&uip_buf[uip_l2_l3_hdr_len])' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.\
+Checking platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c: AVR_CONF_USE32KCRYSTAL...\
+Checking platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c: AVR_WEBSERVER...\
+Checking platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c: UIP_CONF_TCP...\
+[platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c:261]: (style) The scope of the variable 'i' can be reduced.\
+[platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c:261]: (style) The scope of the variable 'activeconnections' can be reduced.\
+35/445 files checked 5% done\
+Checking platform/avr-raven/apps/raven-webserver/http-strings.c ...\
+36/445 files checked 5% done\
+Checking platform/avr-raven/apps/raven-webserver/httpd-cfs.c ...\
+Checking platform/avr-raven/apps/raven-webserver/httpd-cfs.c: WEBSERVER_CONF_CFS_CONNS...\
+37/445 files checked 5% done\
+Checking platform/avr-raven/apps/raven-webserver/httpd-cgi.c ...\
+[platform/avr-raven/apps/raven-webserver/httpd-cgi.c:398]: (style) The scope of the variable 'p1' can be reduced.\
+[platform/avr-raven/apps/raven-webserver/httpd-cgi.c:327]: (style) Unused variable: i\
+[platform/avr-raven/apps/raven-webserver/httpd-cgi.c:360]: (style) Unused variable: i\
+Checking platform/avr-raven/apps/raven-webserver/httpd-cgi.c: COFFEE_FILES...\
+Checking platform/avr-raven/apps/raven-webserver/httpd-cgi.c: HTTPD_FS_STATISTICS...\
+Checking platform/avr-raven/apps/raven-webserver/httpd-cgi.c: HTTPD_FS_STATISTICS;HTTPD_FS_STATISTICS=1...\
+Checking platform/avr-raven/apps/raven-webserver/httpd-cgi.c: HTTPD_FS_STATISTICS;HTTPD_FS_STATISTICS=2...\
+Checking platform/avr-raven/apps/raven-webserver/httpd-cgi.c: RF230BB...\
+38/445 files checked 5% done\
+Checking platform/avr-raven/apps/raven-webserver/httpd-fs.c ...\
+Checking platform/avr-raven/apps/raven-webserver/httpd-fs.c: COFFEE_FILES...\
+Checking platform/avr-raven/apps/raven-webserver/httpd-fs.c: HTTPD_FS_STATISTICS...\
+Checking platform/avr-raven/apps/raven-webserver/httpd-fs.c: HTTPD_FS_STATISTICS=1...\
+Checking platform/avr-raven/apps/raven-webserver/httpd-fs.c: HTTPD_FS_STATISTICS=2...\
+39/445 files checked 5% done\
+Checking platform/avr-raven/apps/raven-webserver/httpd.c ...\
+[platform/avr-raven/apps/raven-webserver/httpd.c:358]: (style) The scope of the variable 'ptr' can be reduced.\
+Checking platform/avr-raven/apps/raven-webserver/httpd.c: COFFEE_FILES...\
+Checking platform/avr-raven/apps/raven-webserver/httpd.c: WEBSERVER_CONF_CGI_CONNS...\
+40/445 files checked 5% done\
+Checking platform/avr-raven/apps/raven-webserver/webserver-dsc.c ...\
+Checking platform/avr-raven/apps/raven-webserver/webserver-dsc.c: CTK_CONF_ICONS...\
+Checking platform/avr-raven/apps/raven-webserver/webserver-dsc.c: CTK_CONF_ICON_BITMAPS...\
+Checking platform/avr-raven/apps/raven-webserver/webserver-dsc.c: CTK_CONF_ICON_TEXTMAPS...\
+41/445 files checked 5% done\
+Checking platform/avr-raven/apps/raven-webserver/webserver-nogui.c ...\
+Checking platform/avr-raven/apps/raven-webserver/webserver-nogui.c: COFFEE_FILES...\
+Checking platform/avr-raven/apps/raven-webserver/webserver-nogui.c: LOG_CONF_ENABLED...\
+Checking platform/avr-raven/apps/raven-webserver/webserver-nogui.c: LOG_CONF_ENABLED;NETSTACK_CONF_WITH_IPV6...\
+42/445 files checked 6% done\
+Checking platform/avr-raven/apps/raven-webserver/webserver.c ...\
+Checking platform/avr-raven/apps/raven-webserver/webserver.c: COFFEE_FILES...\
+43/445 files checked 6% done\
+Checking platform/avr-raven/button-sensor.c ...\
+44/445 files checked 6% done\
+Checking platform/avr-raven/cfs-coffee-arch.c ...\
+[platform/avr-raven/cfs-coffee-arch.c:560]: (style) The scope of the variable 'pptr' can be reduced.\
+Checking platform/avr-raven/cfs-coffee-arch.c: CFS_EEPROM_CONF_OFFSET...\
+Checking platform/avr-raven/cfs-coffee-arch.c: COFFEE_AVR_EEPROM...\
+Checking platform/avr-raven/cfs-coffee-arch.c: COFFEE_AVR_FLASH...\
+Checking platform/avr-raven/cfs-coffee-arch.c: COFFEE_AVR_FLASH;FLASH_COMPLEMENT_DATA...\
+Checking platform/avr-raven/cfs-coffee-arch.c: COFFEE_AVR_FLASH;FLASH_COMPLEMENT_DATA;FLASH_WORD_READS...\
+Checking platform/avr-raven/cfs-coffee-arch.c: COFFEE_AVR_FLASH;FLASH_WORD_READS...\
+Checking platform/avr-raven/cfs-coffee-arch.c: COFFEE_FILES=1...\
+Checking platform/avr-raven/cfs-coffee-arch.c: COFFEE_FILES=2...\
+Checking platform/avr-raven/cfs-coffee-arch.c: COFFEE_FILES=3...\
+Checking platform/avr-raven/cfs-coffee-arch.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/avr-raven/cfs-coffee-arch.c: PROJECT_CONF_H...\
+[platform/avr-raven/contiki-conf.h:367]: (error) No header in #include\
+Checking platform/avr-raven/cfs-coffee-arch.c: RF230BB...\
+Checking platform/avr-raven/cfs-coffee-arch.c: UIP_CONF_IPV6_RPL...\
+45/445 files checked 7% done\
+Checking platform/avr-raven/cfs-coffee-arch.h ...\
+Checking platform/avr-raven/cfs-coffee-arch.h: CFS_EEPROM_CONF_OFFSET...\
+Checking platform/avr-raven/cfs-coffee-arch.h: COFFEE_FILES=1...\
+Checking platform/avr-raven/cfs-coffee-arch.h: COFFEE_FILES=2...\
+Checking platform/avr-raven/cfs-coffee-arch.h: COFFEE_FILES=3...\
+Checking platform/avr-raven/cfs-coffee-arch.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/avr-raven/cfs-coffee-arch.h: PROJECT_CONF_H...\
+Checking platform/avr-raven/cfs-coffee-arch.h: RF230BB...\
+Checking platform/avr-raven/cfs-coffee-arch.h: UIP_CONF_IPV6_RPL...\
+46/445 files checked 7% done\
+Checking platform/avr-raven/contiki-conf.h ...\
+Checking platform/avr-raven/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/avr-raven/contiki-conf.h: PROJECT_CONF_H...\
+Checking platform/avr-raven/contiki-conf.h: RF230BB...\
+Checking platform/avr-raven/contiki-conf.h: UIP_CONF_IPV6_RPL...\
+47/445 files checked 9% done\
+Checking platform/avr-raven/contiki-raven-default-init-lowlevel.c ...\
+48/445 files checked 9% done\
+Checking platform/avr-raven/contiki-raven-default-init-net.c ...\
+49/445 files checked 9% done\
+Checking platform/avr-raven/contiki-raven-main.c ...\
+Checking platform/avr-raven/contiki-raven-main.c: AVR_WEBSERVER...\
+Checking platform/avr-raven/contiki-raven-main.c: AVR_WEBSERVER;COFFEE_FILES=1...\
+Checking platform/avr-raven/contiki-raven-main.c: AVR_WEBSERVER;COFFEE_FILES=2...\
+Checking platform/avr-raven/contiki-raven-main.c: AVR_WEBSERVER;COFFEE_FILES=3...\
+Checking platform/avr-raven/contiki-raven-main.c: AVR_WEBSERVER;COFFEE_FILES=4...\
+Checking platform/avr-raven/contiki-raven-main.c: CHANNEL_802_15_4...\
+Checking platform/avr-raven/contiki-raven-main.c: COFFEE_FILES...\
+Checking platform/avr-raven/contiki-raven-main.c: CONTIKI_CONF_SETTINGS_MANAGER...\
+Checking platform/avr-raven/contiki-raven-main.c: CONTIKI_CONF_SETTINGS_MANAGER;MCU_CONF_LOW_WEAR...\
+Checking platform/avr-raven/contiki-raven-main.c: DEBUGFLOWSIZE...\
+Checking platform/avr-raven/contiki-raven-main.c: DOMAIN_NAME...\
+Checking platform/avr-raven/contiki-raven-main.c: ENERGEST_CONF_ON...\
+Checking platform/avr-raven/contiki-raven-main.c: EUI64_ADDRESS...\
+Checking platform/avr-raven/contiki-raven-main.c: IEEE802154_PANADDR...\
+Checking platform/avr-raven/contiki-raven-main.c: IEEE802154_PANID...\
+Checking platform/avr-raven/contiki-raven-main.c: MCU_CONF_LOW_WEAR...\
+Checking platform/avr-raven/contiki-raven-main.c: NETSTACK_CONF_WITH_IPV6...\
+[platform/avr-raven/contiki-raven-main.c:412]: (style) The scope of the variable 'a' can be reduced.\
+Checking platform/avr-raven/contiki-raven-main.c: NETSTACK_CONF_WITH_IPV6;RF230BB...\
+Checking platform/avr-raven/contiki-raven-main.c: NODE_ID...\
+Checking platform/avr-raven/contiki-raven-main.c: RADIOSTATS...\
+Checking platform/avr-raven/contiki-raven-main.c: RAVEN_LCD_INTERFACE...\
+Checking platform/avr-raven/contiki-raven-main.c: RF230BB...\
+Checking platform/avr-raven/contiki-raven-main.c: RF230BB;UIP_CONF_IPV6_RPL...\
+Checking platform/avr-raven/contiki-raven-main.c: RF230BB;UIP_CONF_ROUTER...\
+Checking platform/avr-raven/contiki-raven-main.c: RF230BB;WITH_NODE_ID...\
+Checking platform/avr-raven/contiki-raven-main.c: RF230_MAX_TX_POWER...\
+Checking platform/avr-raven/contiki-raven-main.c: SERVER_NAME...\
+Checking platform/avr-raven/contiki-raven-main.c: UIP_CONF_LL_802154...\
+50/445 files checked 10% done\
+Checking platform/avr-raven/contiki-raven.h ...\
+51/445 files checked 10% done\
+Checking platform/avr-raven/loadable_prg.c ...\
+52/445 files checked 10% done\
+Checking platform/avr-raven/params.c ...\
+Checking platform/avr-raven/params.c: AVR_WEBSERVER...\
+Checking platform/avr-raven/params.c: CHANNEL_802_15_4...\
+Checking platform/avr-raven/params.c: CONTIKI_CONF_RANDOM_MAC...\
+Checking platform/avr-raven/params.c: CONTIKI_CONF_RANDOM_MAC;PARAMETER_STORAGE=0...\
+Checking platform/avr-raven/params.c: CONTIKI_CONF_RANDOM_MAC;PARAMETER_STORAGE=1...\
+Checking platform/avr-raven/params.c: CONTIKI_CONF_SETTINGS_MANAGER...\
+Checking platform/avr-raven/params.c: CONTIKI_CONF_SETTINGS_MANAGER;MCU_CONF_LOW_WEAR...\
+Checking platform/avr-raven/params.c: DOMAIN_NAME...\
+Checking platform/avr-raven/params.c: EUI64_ADDRESS...\
+Checking platform/avr-raven/params.c: IEEE802154_PANADDR...\
+Checking platform/avr-raven/params.c: IEEE802154_PANID...\
+Checking platform/avr-raven/params.c: MCU_CONF_LOW_WEAR...\
+Checking platform/avr-raven/params.c: NODE_ID...\
+Checking platform/avr-raven/params.c: PARAMETER_STORAGE=0...\
+Checking platform/avr-raven/params.c: PARAMETER_STORAGE=1...\
+Checking platform/avr-raven/params.c: RF230_MAX_TX_POWER...\
+Checking platform/avr-raven/params.c: SERVER_NAME...\
+Checking platform/avr-raven/params.c: UIP_CONF_LL_802154...\
+Checking platform/avr-raven/params.c: WITH_NODE_ID...\
+53/445 files checked 11% done\
+Checking platform/avr-raven/params.h ...\
+Checking platform/avr-raven/params.h: AVR_WEBSERVER...\
+Checking platform/avr-raven/params.h: CHANNEL_802_15_4...\
+Checking platform/avr-raven/params.h: CONTIKI_CONF_SETTINGS_MANAGER...\
+Checking platform/avr-raven/params.h: CONTIKI_CONF_SETTINGS_MANAGER;MCU_CONF_LOW_WEAR...\
+Checking platform/avr-raven/params.h: DOMAIN_NAME...\
+Checking platform/avr-raven/params.h: EUI64_ADDRESS...\
+Checking platform/avr-raven/params.h: IEEE802154_PANADDR...\
+Checking platform/avr-raven/params.h: IEEE802154_PANID...\
+Checking platform/avr-raven/params.h: MCU_CONF_LOW_WEAR...\
+Checking platform/avr-raven/params.h: NODE_ID...\
+Checking platform/avr-raven/params.h: RF230_MAX_TX_POWER...\
+Checking platform/avr-raven/params.h: SERVER_NAME...\
+Checking platform/avr-raven/params.h: UIP_CONF_LL_802154...\
+54/445 files checked 11% done\
+Checking platform/avr-raven/raven-lcd.h ...\
+55/445 files checked 11% done\
+Checking platform/avr-raven/slip_uart0.c ...\
+56/445 files checked 12% done\
+Checking platform/avr-ravenlcd/Makefile ...\
+[platform/avr-ravenlcd/Makefile] -> [platform/avr-ravenlcd/Makefile]: (error) syntax error\
+57/445 files checked 12% done\
+Checking platform/avr-ravenlcd/Makefile.avr-ravenlcd ...\
+58/445 files checked 12% done\
+Checking platform/avr-ravenlcd/adc.c ...\
+59/445 files checked 12% done\
+Checking platform/avr-ravenlcd/adc.h ...\
+60/445 files checked 12% done\
+Checking platform/avr-ravenlcd/beep.c ...\
+61/445 files checked 13% done\
+Checking platform/avr-ravenlcd/beep.h ...\
+62/445 files checked 13% done\
+Checking platform/avr-ravenlcd/key.c ...\
+63/445 files checked 13% done\
+Checking platform/avr-ravenlcd/key.h ...\
+64/445 files checked 14% done\
+Checking platform/avr-ravenlcd/lcd.c ...\
+[platform/avr-ravenlcd/lcd.c:772]: (style) The scope of the variable 'nibble' can be reduced.\
+[platform/avr-ravenlcd/lcd.c:772]: (style) The scope of the variable 'nibbleMask' can be reduced.\
+[platform/avr-ravenlcd/lcd.c:775]: (style) The scope of the variable 'lcd_reg' can be reduced.\
+Checking platform/avr-ravenlcd/lcd.c: DOXYGEN...\
+65/445 files checked 15% done\
+Checking platform/avr-ravenlcd/lcd.h ...\
+66/445 files checked 16% done\
+Checking platform/avr-ravenlcd/main.h ...\
+67/445 files checked 16% done\
+Checking platform/avr-ravenlcd/menu.c ...\
+[platform/avr-ravenlcd/menu.c:479]: (style) Variable 'str' is assigned a value that is never used.\
+Checking platform/avr-ravenlcd/menu.c: MEASURE_ADC2...\
+68/445 files checked 17% done\
+Checking platform/avr-ravenlcd/menu.h ...\
+69/445 files checked 17% done\
+Checking platform/avr-ravenlcd/raven3290.c ...\
+Checking platform/avr-ravenlcd/raven3290.c: DOXYGEN...\
+70/445 files checked 18% done\
+Checking platform/avr-ravenlcd/ravenlcd_3290.aps ...\
+[platform/avr-ravenlcd/ravenlcd_3290.aps:1]: (error) syntax error\
+71/445 files checked 19% done\
+Checking platform/avr-ravenlcd/sleep.c ...\
+72/445 files checked 19% done\
+Checking platform/avr-ravenlcd/sleep.h ...\
+73/445 files checked 19% done\
+Checking platform/avr-ravenlcd/temp.c ...\
+[platform/avr-ravenlcd/temp.c:238]: (style) The scope of the variable 'table_val' can be reduced.\
+Checking platform/avr-ravenlcd/temp.c: DOXYGEN...\
+Checking platform/avr-ravenlcd/temp.c: MEASURE_ADC2...\
+74/445 files checked 20% done\
+Checking platform/avr-ravenlcd/temp.h ...\
+75/445 files checked 20% done\
+Checking platform/avr-ravenlcd/timer.c ...\
+76/445 files checked 20% done\
+Checking platform/avr-ravenlcd/timer.h ...\
+77/445 files checked 21% done\
+Checking platform/avr-ravenlcd/uart.c ...\
+78/445 files checked 21% done\
+Checking platform/avr-ravenlcd/uart.h ...\
+79/445 files checked 22% done\
+Checking platform/avr-ravenusb/Makefile.avr-ravenusb ...\
+80/445 files checked 22% done\
+Checking platform/avr-ravenusb/cdc_task.c ...\
+Checking platform/avr-ravenusb/cdc_task.c: CONFIG_STACK_MONITOR...\
+Checking platform/avr-ravenusb/cdc_task.c: JACKDAW_CONF_RANDOM_MAC...\
+Checking platform/avr-ravenusb/cdc_task.c: JACKDAW_CONF_USE_SETTINGS...\
+Checking platform/avr-ravenusb/cdc_task.c: RF230BB...\
+Checking platform/avr-ravenusb/cdc_task.c: UIP_CONF_IPV6_RPL...\
+[platform/avr-ravenusb/cdc_task.c:256]: (style) The scope of the variable 'a' can be reduced.\
+Checking platform/avr-ravenusb/cdc_task.c: USB_CONF_RS232...\
+Checking platform/avr-ravenusb/cdc_task.c: USB_CONF_RS232;USB_CONF_STORAGE...\
+Checking platform/avr-ravenusb/cdc_task.c: USB_CONF_STORAGE...\
+81/445 files checked 23% done\
+Checking platform/avr-ravenusb/cdc_task.h ...\
+82/445 files checked 24% done\
+Checking platform/avr-ravenusb/contiki-conf.h ...\
+Checking platform/avr-ravenusb/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/avr-ravenusb/contiki-conf.h: RF230BB...\
+Checking platform/avr-ravenusb/contiki-conf.h: UIP_CONF_IPV6_RPL...\
+Checking platform/avr-ravenusb/contiki-conf.h: UIP_CONF_USE_RUM...\
+83/445 files checked 25% done\
+Checking platform/avr-ravenusb/contiki-raven-default-init-lowlevel.c ...\
+Checking platform/avr-ravenusb/contiki-raven-default-init-lowlevel.c: WINXPSP2...\
+84/445 files checked 25% done\
+Checking platform/avr-ravenusb/contiki-raven-default-init-net.c ...\
+[platform/avr-ravenusb/contiki-raven-default-init-net.c:45]: (style) The scope of the variable 'tempbyte' can be reduced.\
+85/445 files checked 25% done\
+Checking platform/avr-ravenusb/contiki-raven-main.c ...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: CHANNEL_802_15_4...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: CONFIG_STACK_MONITOR...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: IEEE802154_PANADDR...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: IEEE802154_PANID...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: JACKDAW_CONF_RANDOM_MAC...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: JACKDAW_CONF_USE_SETTINGS...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: JACKDAW_CONF_USE_SETTINGS;RF230BB...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: NETSTACK_CONF_WITH_IPV6;RF230BB...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: RF230BB...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: RF230BB;RPL_BORDER_ROUTER;UIP_CONF_IPV6_RPL...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: RF230BB;RPL_HTTPD_SERVER;UIP_CONF_IPV6_RPL...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: RF230BB;UIP_CONF_IPV6_RPL...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: RF230_MAX_TX_POWER...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: RF230_MIN_RX_POWER...\
+[platform/avr-ravenusb/contiki-raven-main.c:612]: (error) Uninitialized variable: lastprint\
+Checking platform/avr-ravenusb/contiki-raven-main.c: RPL_BORDER_ROUTER;UIP_CONF_IPV6_RPL...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: RPL_BORDER_ROUTER;UIP_CONF_IPV6_RPL;UIP_CONF_ROUTER_RECEIVE_RA...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: UIP_CONF_IPV6_RPL...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: USB_CONF_RS232...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: USB_CONF_SERIAL...\
+Checking platform/avr-ravenusb/contiki-raven-main.c: USB_CONF_STORAGE...\
+86/445 files checked 27% done\
+Checking platform/avr-ravenusb/contiki-raven.h ...\
+87/445 files checked 27% done\
+Checking platform/avr-ravenusb/httpd-simple-avr.c ...\
+[platform/avr-ravenusb/httpd-simple-avr.c:223]: (style) The scope of the variable 'a' can be reduced.\
+[platform/avr-ravenusb/httpd-simple-avr.c:300]: (style) Variable 'i' is modified but its new value is never used.\
+Checking platform/avr-ravenusb/httpd-simple-avr.c: FIND_THE_SCRIPT...\
+Checking platform/avr-ravenusb/httpd-simple-avr.c: NETSTACK_CONF_WITH_IPV6...\
+[platform/avr-ravenusb/httpd-simple-avr.c:250]: (style) Variable 'i' is assigned a value that is never used.\
+Checking platform/avr-ravenusb/httpd-simple-avr.c: WEBSERVER_CONF_CFS_CONNS...\
+Checking platform/avr-ravenusb/httpd-simple-avr.c: WEBSERVER_CONF_CFS_PATHLEN...\
+Checking platform/avr-ravenusb/httpd-simple-avr.c: WEBSERVER_CONF_CFS_URLCONV...\
+88/445 files checked 28% done\
+Checking platform/avr-ravenusb/loadable_prg.c ...\
+89/445 files checked 28% done\
+Checking platform/avr-ravenusb/rng.c ...\
+Checking platform/avr-ravenusb/rng.c: PRR...\
+90/445 files checked 29% done\
+Checking platform/avr-ravenusb/rng.h ...\
+91/445 files checked 29% done\
+Checking platform/avr-ravenusb/sicslow_ethernet.c ...\
+[platform/avr-ravenusb/sicslow_ethernet.c:772]: (style) Unused variable: index\
+[platform/avr-ravenusb/sicslow_ethernet.c:844]: (style) Variable 'index' is assigned a value that is never used.\
+Checking platform/avr-ravenusb/sicslow_ethernet.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/avr-ravenusb/sicslow_ethernet.c: NETSTACK_CONF_WITH_IPV6;UIP_CONF_IPV6_RPL...\
+Checking platform/avr-ravenusb/sicslow_ethernet.c: RF230BB...\
+Checking platform/avr-ravenusb/sicslow_ethernet.c: UIP_CONF_IPV6_RPL...\
+Checking platform/avr-ravenusb/sicslow_ethernet.c: UIP_CONF_USE_RUM...\
+Checking platform/avr-ravenusb/sicslow_ethernet.c: UIP_LLADDR_LEN=8...\
+[platform/avr-ravenusb/sicslow_ethernet.c:772]: (style) The scope of the variable 'index' can be reduced.\
+[platform/avr-ravenusb/sicslow_ethernet.c:844]: (style) The scope of the variable 'index' can be reduced.\
+[platform/avr-ravenusb/sicslow_ethernet.c:845]: (style) The scope of the variable 'i' can be reduced.\
+92/445 files checked 31% done\
+Checking platform/avr-ravenusb/sicslow_ethernet.h ...\
+93/445 files checked 31% done\
+Checking platform/avr-rcb/Makefile.avr-rcb ...\
+94/445 files checked 31% done\
+Checking platform/avr-rcb/contiki-conf.h ...\
+Checking platform/avr-rcb/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+95/445 files checked 32% done\
+Checking platform/avr-rcb/contiki-rcb-main.c ...\
+Checking platform/avr-rcb/contiki-rcb-main.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/avr-rcb/contiki-rcb-main.c: RF230BB...\
+96/445 files checked 32% done\
+Checking platform/avr-rcb/contiki-rcb.h ...\
+97/445 files checked 32% done\
+Checking platform/avr-rcb/loadable_prg.c ...\
+98/445 files checked 32% done\
+Checking platform/avr-zigbit/Makefile.avr-zigbit ...\
+99/445 files checked 33% done\
+Checking platform/avr-zigbit/contiki-avr-zigbit-main.c ...\
+Checking platform/avr-zigbit/contiki-avr-zigbit-main.c: CHANNEL_802_15_4;RF230BB...\
+Checking platform/avr-zigbit/contiki-avr-zigbit-main.c: MY_NODE_ID...\
+Checking platform/avr-zigbit/contiki-avr-zigbit-main.c: NETSTACK_CONF_WITH_IPV6;RF230BB...\
+Checking platform/avr-zigbit/contiki-avr-zigbit-main.c: RF230BB...\
+Checking platform/avr-zigbit/contiki-avr-zigbit-main.c: RF230BB;UIP_CONF_ROUTER...\
+100/445 files checked 33% done\
+Checking platform/avr-zigbit/contiki-avr-zigbit.h ...\
+101/445 files checked 33% done\
+Checking platform/avr-zigbit/contiki-conf.h ...\
+Checking platform/avr-zigbit/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/avr-zigbit/contiki-conf.h: NETSTACK_CONF_WITH_IPV6;RF230BB...\
+Checking platform/avr-zigbit/contiki-conf.h: RF230BB...\
+102/445 files checked 34% done\
+Checking platform/avr-zigbit/loadable_prg.c ...\
+103/445 files checked 34% done\
+Checking platform/c128/Makefile.c128 ...\
+104/445 files checked 34% done\
+Checking platform/c128/Makefile.customrules-c128 ...\
+[platform/c128/Makefile.customrules-c128:1]: (error) syntax error\
+105/445 files checked 34% done\
+Checking platform/c128/README.md ...\
+[platform/c128/README.md:17]: (error) Invalid number of character '[' when no macros are defined.\
+106/445 files checked 34% done\
+Checking platform/c128/contiki-conf.h ...\
+107/445 files checked 34% done\
+Checking platform/c128/contiki-main.c ...\
+Checking platform/c128/contiki-main.c: WITH_ARGS...\
+Checking platform/c128/contiki-main.c: WITH_DNS...\
+Checking platform/c128/contiki-main.c: WITH_GUI...\
+108/445 files checked 34% done\
+Checking platform/c128/lib/lseek.c ...\
+109/445 files checked 34% done\
+Checking platform/c64/Makefile.c64 ...\
+110/445 files checked 35% done\
+Checking platform/c64/Makefile.customrules-c64 ...\
+[platform/c64/Makefile.customrules-c64:1]: (error) syntax error\
+111/445 files checked 35% done\
+Checking platform/c64/README.md ...\
+[platform/c64/README.md:4]: (error) syntax error\
+112/445 files checked 35% done\
+Checking platform/c64/contiki-conf.h ...\
+113/445 files checked 35% done\
+Checking platform/c64/contiki-main.c ...\
+Checking platform/c64/contiki-main.c: WITH_ARGS...\
+Checking platform/c64/contiki-main.c: WITH_DNS...\
+Checking platform/c64/contiki-main.c: WITH_GUI...\
+114/445 files checked 35% done\
+Checking platform/c64/lib/lseek.c ...\
+115/445 files checked 35% done\
+Checking platform/cc2530dk/Makefile.cc2530dk ...\
+[platform/cc2530dk/Makefile.cc2530dk] -> [platform/cc2530dk/Makefile.cc2530dk]: (error) syntax error\
+116/445 files checked 35% done\
+Checking platform/cc2530dk/Makefile.customrules-cc2530dk ...\
+117/445 files checked 35% done\
+Checking platform/cc2530dk/contiki-conf.h ...\
+Checking platform/cc2530dk/contiki-conf.h: CMD_CONF_OUTPUT;UIP_FALLBACK_INTERFACE...\
+Checking platform/cc2530dk/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/cc2530dk/contiki-conf.h: PROJECT_CONF_H...\
+118/445 files checked 36% done\
+Checking platform/cc2530dk/contiki-main.c ...\
+[platform/cc2530dk/contiki-main.c:66]: (style) The scope of the variable 'a' can be reduced.\
+[platform/cc2530dk/contiki-main.c:67]: (style) The scope of the variable 'j' can be reduced.\
+[platform/cc2530dk/contiki-main.c:77]: (style) Variable 'a' is assigned a value that is never used.\
+Checking platform/cc2530dk/contiki-main.c: ADC_SENSOR_CONF_ON...\
+Checking platform/cc2530dk/contiki-main.c: BATTERY_SENSOR_CONF_ON...\
+Checking platform/cc2530dk/contiki-main.c: BUTTON_SENSOR_CONF_ON...\
+Checking platform/cc2530dk/contiki-main.c: CC2530_CONF_MAC_FROM_PRIMARY...\
+Checking platform/cc2530dk/contiki-main.c: CLOCK_CONF_STACK_FRIENDLY...\
+Checking platform/cc2530dk/contiki-main.c: DMA_ON...\
+Checking platform/cc2530dk/contiki-main.c: ENERGEST_CONF_ON...\
+Checking platform/cc2530dk/contiki-main.c: HAVE_SDCC_BANKING;STARTUP_CONF_VERBOSE...\
+Checking platform/cc2530dk/contiki-main.c: LPM_MODE...\
+Checking platform/cc2530dk/contiki-main.c: MODELS_CONF_CC2531_USB_STICK...\
+Checking platform/cc2530dk/contiki-main.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/cc2530dk/contiki-main.c: SDCC_MODEL_HUGE;STARTUP_CONF_VERBOSE...\
+Checking platform/cc2530dk/contiki-main.c: SDCC_MODEL_LARGE;STARTUP_CONF_VERBOSE...\
+Checking platform/cc2530dk/contiki-main.c: SDCC_STACK_AUTO;STARTUP_CONF_VERBOSE...\
+Checking platform/cc2530dk/contiki-main.c: SLIP_ARCH_CONF_ENABLE...\
+Checking platform/cc2530dk/contiki-main.c: STARTUP_CONF_VERBOSE...\
+Checking platform/cc2530dk/contiki-main.c: TEMP_SENSOR_CONF_ON...\
+Checking platform/cc2530dk/contiki-main.c: VDD_SENSOR_CONF_ON...\
+Checking platform/cc2530dk/contiki-main.c: VIZTOOL_CONF_ON...\
+119/445 files checked 37% done\
+Checking platform/cc2530dk/debug.c ...\
+120/445 files checked 37% done\
+Checking platform/cc2530dk/debug.h ...\
+121/445 files checked 37% done\
+Checking platform/cc2530dk/dev/adc-sensor.c ...\
+Checking platform/cc2530dk/dev/adc-sensor.c: ADC_SENSOR_CONF_ON...\
+Checking platform/cc2530dk/dev/adc-sensor.c: ADC_SENSOR_ON...\
+Checking platform/cc2530dk/dev/adc-sensor.c: ADC_SENSOR_ON;TEMP_SENSOR_ON...\
+Checking platform/cc2530dk/dev/adc-sensor.c: ADC_SENSOR_ON;VDD_SENSOR_ON...\
+Checking platform/cc2530dk/dev/adc-sensor.c: BATTERY_SENSOR_CONF_ON...\
+Checking platform/cc2530dk/dev/adc-sensor.c: TEMP_SENSOR_CONF_ON...\
+Checking platform/cc2530dk/dev/adc-sensor.c: VDD_SENSOR_CONF_ON...\
+122/445 files checked 37% done\
+Checking platform/cc2530dk/dev/button-sensor.c ...\
+Checking platform/cc2530dk/dev/button-sensor.c: CC2531_CONF_B2_REBOOTS;MODELS_CONF_CC2531_USB_STICK...\
+Checking platform/cc2530dk/dev/button-sensor.c: CC_CONF_OPTIMIZE_STACK_SIZE...\
+Checking platform/cc2530dk/dev/button-sensor.c: MODELS_CONF_CC2531_USB_STICK...\
+123/445 files checked 37% done\
+Checking platform/cc2530dk/dev/leds-arch.c ...\
+Checking platform/cc2530dk/dev/leds-arch.c: MODELS_CONF_CC2531_USB_STICK...\
+124/445 files checked 37% done\
+Checking platform/cc2530dk/dev/slip-arch.c ...\
+125/445 files checked 37% done\
+Checking platform/cc2530dk/dev/smartrf-sensors.c ...\
+Checking platform/cc2530dk/dev/smartrf-sensors.c: ADC_SENSOR_ON...\
+Checking platform/cc2530dk/dev/smartrf-sensors.c: BUTTON_SENSOR_ON...\
+Checking platform/cc2530dk/dev/smartrf-sensors.c: BUTTON_SENSOR_ON;MODELS_CONF_CC2531_USB_STICK...\
+126/445 files checked 37% done\
+Checking platform/cc2530dk/dev/usb-serial.c ...\
+[platform/cc2530dk/dev/usb-serial.c:134]: (style) The scope of the variable 'lown' can be reduced.\
+[platform/cc2530dk/dev/usb-serial.c:134]: (style) The scope of the variable 'highn' can be reduced.\
+[platform/cc2530dk/dev/usb-serial.c:135]: (style) The scope of the variable 'c' can be reduced.\
+Checking platform/cc2530dk/dev/usb-serial.c: USB_SERIAL_CONF_BUFFERED...\
+127/445 files checked 37% done\
+Checking platform/cc2530dk/models.h ...\
+Checking platform/cc2530dk/models.h: MODELS_CONF_CC2531_USB_STICK...\
+128/445 files checked 37% done\
+Checking platform/cc2530dk/putchar.c ...\
+Checking platform/cc2530dk/putchar.c: CMD_CONF_OUTPUT;UIP_FALLBACK_INTERFACE...\
+Checking platform/cc2530dk/putchar.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/cc2530dk/putchar.c: PROJECT_CONF_H...\
+Checking platform/cc2530dk/putchar.c: SLIP_ARCH_CONF_ENABLE...\
+129/445 files checked 37% done\
+Checking platform/cc2530dk/segment.rules ...\
+130/445 files checked 37% done\
+Checking platform/cc2530dk/uip-debug.c ...\
+Checking platform/cc2530dk/uip-debug.c: NETSTACK_CONF_WITH_IPV6...\
+[platform/cc2530dk/uip-debug.c:47]: (style) The scope of the variable 'a' can be reduced.\
+131/445 files checked 38% done\
+Checking platform/cc2530dk/viztool.c ...\
+132/445 files checked 38% done\
+Checking platform/cc2538dk/Makefile.cc2538dk ...\
+[platform/cc2538dk/Makefile.cc2538dk] -> [platform/cc2538dk/Makefile.cc2538dk]: (error) syntax error\
+133/445 files checked 38% done\
+Checking platform/cc2538dk/README.md ...\
+134/445 files checked 40% done\
+Checking platform/cc2538dk/contiki-conf.h ...\
+Checking platform/cc2538dk/contiki-conf.h: CMD_CONF_OUTPUT;UIP_FALLBACK_INTERFACE...\
+Checking platform/cc2538dk/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/cc2538dk/contiki-conf.h: PROJECT_CONF_H...\
+[platform/cc2538dk/contiki-conf.h:16]: (error) No header in #include\
+135/445 files checked 41% done\
+Checking platform/cc2538dk/contiki-main.c ...\
+[platform/cc2538dk/contiki-main.c:91]: (style) The scope of the variable 'j' can be reduced.\
+Checking platform/cc2538dk/contiki-main.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/cc2538dk/contiki-main.c: STARTUP_CONF_VERBOSE...\
+Checking platform/cc2538dk/contiki-main.c: UART_CONF_ENABLE...\
+Checking platform/cc2538dk/contiki-main.c: USB_SERIAL_CONF_ENABLE...\
+136/445 files checked 42% done\
+Checking platform/cc2538dk/dev/als-sensor.c ...\
+137/445 files checked 42% done\
+Checking platform/cc2538dk/dev/button-sensor.c ...\
+138/445 files checked 42% done\
+Checking platform/cc2538dk/dev/leds-arch.c ...\
+139/445 files checked 42% done\
+Checking platform/cc2538dk/dev/smartrf-sensors.c ...\
+140/445 files checked 42% done\
+Checking platform/cooja-ip64/Makefile.cooja-ip64 ...\
+[platform/cooja-ip64/Makefile.cooja-ip64:15]: (error) syntax error\
+141/445 files checked 42% done\
+Checking platform/cooja-ip64/Makefile.customrules-cooja-ip64 ...\
+[platform/cooja-ip64/Makefile.customrules-cooja-ip64] -> [platform/cooja-ip64/Makefile.customrules-cooja-ip64]: (error) syntax error\
+142/445 files checked 42% done\
+Checking platform/cooja-ip64/contiki-cooja-ip64-main.c ...\
+Checking platform/cooja-ip64/contiki-cooja-ip64-main.c: CLASSNAME...\
+143/445 files checked 43% done\
+Checking platform/cooja-ip64/ip64-conf.h ...\
+144/445 files checked 43% done\
+Checking platform/cooja-ip64/subplatform-conf.h ...\
+Checking platform/cooja-ip64/subplatform-conf.h: WITH_IP64...\
+145/445 files checked 43% done\
+Checking platform/cooja/Makefile.cooja ...\
+[platform/cooja/Makefile.cooja] -> [platform/cooja/Makefile.cooja]: (error) syntax error\
+146/445 files checked 44% done\
+Checking platform/cooja/Makefile.customrules-cooja ...\
+[platform/cooja/Makefile.customrules-cooja] -> [platform/cooja/Makefile.customrules-cooja]: (error) syntax error\
+147/445 files checked 44% done\
+Checking platform/cooja/cfs/cfs-cooja.c ...\
+148/445 files checked 44% done\
+Checking platform/cooja/contiki-conf.h ...\
+Checking platform/cooja/contiki-conf.h: INCLUDE_SUBPLATFORM_CONF...\
+Checking platform/cooja/contiki-conf.h: NETSTACK_CONF_H...\
+Checking platform/cooja/contiki-conf.h: NETSTACK_CONF_WITH_IPV4...\
+Checking platform/cooja/contiki-conf.h: NETSTACK_CONF_WITH_IPV4;NETSTACK_CONF_WITH_IPV6...\
+Checking platform/cooja/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/cooja/contiki-conf.h: PROJECT_CONF_H...\
+[platform/cooja/contiki-conf.h:257]: (error) No header in #include\
+149/445 files checked 44% done\
+Checking platform/cooja/contiki-cooja-main.c ...\
+Checking platform/cooja/contiki-cooja-main.c: CLASSNAME...\
+150/445 files checked 46% done\
+Checking platform/cooja/dev/beep.c ...\
+151/445 files checked 46% done\
+Checking platform/cooja/dev/button-sensor.c ...\
+152/445 files checked 46% done\
+Checking platform/cooja/dev/cooja-radio.c ...\
+[platform/cooja/dev/cooja-radio.c:250]: (style) The scope of the variable 'len' can be reduced.\
+153/445 files checked 46% done\
+Checking platform/cooja/dev/eeprom.c ...\
+154/445 files checked 46% done\
+Checking platform/cooja/dev/ip.c ...\
+Checking platform/cooja/dev/ip.c: NETSTACK_CONF_WITH_IPV4...\
+Checking platform/cooja/dev/ip.c: NETSTACK_CONF_WITH_IPV6...\
+155/445 files checked 46% done\
+Checking platform/cooja/dev/leds-arch.c ...\
+156/445 files checked 46% done\
+Checking platform/cooja/dev/moteid.c ...\
+157/445 files checked 46% done\
+Checking platform/cooja/dev/pir-sensor.c ...\
+158/445 files checked 46% done\
+Checking platform/cooja/dev/rs232.c ...\
+159/445 files checked 46% done\
+Checking platform/cooja/dev/vib-sensor.c ...\
+160/445 files checked 46% done\
+Checking platform/cooja/dev/watchdog.c ...\
+161/445 files checked 46% done\
+Checking platform/cooja/lib/simEnvChange.c ...\
+162/445 files checked 46% done\
+Checking platform/cooja/mtarch.c ...\
+163/445 files checked 46% done\
+Checking platform/cooja/mtarch.h ...\
+164/445 files checked 46% done\
+Checking platform/cooja/net/radio-uip-uaodv.c ...\
+165/445 files checked 46% done\
+Checking platform/cooja/net/uip-driver.c ...\
+166/445 files checked 46% done\
+Checking platform/cooja/netstack-conf-example.h ...\
+167/445 files checked 47% done\
+Checking platform/cooja/rtimer-arch.c ...\
+168/445 files checked 47% done\
+Checking platform/cooja/rtimer-arch.h ...\
+Checking platform/cooja/rtimer-arch.h: INCLUDE_SUBPLATFORM_CONF...\
+Checking platform/cooja/rtimer-arch.h: NETSTACK_CONF_H...\
+Checking platform/cooja/rtimer-arch.h: NETSTACK_CONF_WITH_IPV4...\
+Checking platform/cooja/rtimer-arch.h: NETSTACK_CONF_WITH_IPV4;NETSTACK_CONF_WITH_IPV6...\
+Checking platform/cooja/rtimer-arch.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/cooja/rtimer-arch.h: PROJECT_CONF_H...\
+169/445 files checked 47% done\
+Checking platform/cooja/slip-arch.c ...\
+170/445 files checked 47% done\
+Checking platform/cooja/sys/clock.c ...\
+171/445 files checked 47% done\
+Checking platform/cooja/sys/cooja_mt.c ...\
+172/445 files checked 47% done\
+Checking platform/cooja/sys/cooja_mtarch.c ...\
+173/445 files checked 47% done\
+Checking platform/cooja/sys/log.c ...\
+[platform/cooja/sys/log.c:116]: (style) The scope of the variable 'debug_frame' can be reduced.\
+Checking platform/cooja/sys/log.c: NETSTACK_CONF_WITH_IPV4...\
+174/445 files checked 47% done\
+Checking platform/cooja/testapps/hello-world.c ...\
+175/445 files checked 47% done\
+Checking platform/cooja/testapps/testbutton.c ...\
+176/445 files checked 47% done\
+Checking platform/cooja/testapps/testcfs.c ...\
+[platform/cooja/testapps/testcfs.c:44]: (style) The scope of the variable 'fd' can be reduced.\
+177/445 files checked 47% done\
+Checking platform/cooja/testapps/testctimer.c ...\
+178/445 files checked 47% done\
+Checking platform/cooja/testapps/testetimer.c ...\
+179/445 files checked 47% done\
+Checking platform/cooja/testapps/testsensors.c ...\
+180/445 files checked 47% done\
+Checking platform/cooja/testapps/testserial.c ...\
+181/445 files checked 47% done\
+Checking platform/cooja/testapps/testuaodv.c ...\
+[platform/cooja/testapps/testuaodv.c:75]: (error) printf format string requires 8 parameters but only 2 are given.\
+[platform/cooja/testapps/testuaodv.c:78]: (error) printf format string requires 8 parameters but only 2 are given.\
+[platform/cooja/testapps/testuaodv.c:87]: (warning) %d in format string (no. 2) requires 'int' but the argument type is 'signed char *'.\
+[platform/cooja/testapps/testuaodv.c:87]: (error) printf format string requires 5 parameters but only 2 are given.\
+182/445 files checked 47% done\
+Checking platform/cooja/testapps/testuip.c ...\
+183/445 files checked 47% done\
+Checking platform/econotag/Makefile.econotag ...\
+184/445 files checked 47% done\
+Checking platform/econotag/button-sensor.c ...\
+185/445 files checked 48% done\
+Checking platform/econotag/button-sensor2.c ...\
+186/445 files checked 48% done\
+Checking platform/econotag/contiki-conf.h ...\
+Checking platform/econotag/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/econotag/contiki-conf.h: PROJECT_CONF_H...\
+[platform/econotag/contiki-conf.h:233]: (error) No header in #include\
+187/445 files checked 48% done\
+Checking platform/econotag/main.c ...\
+Checking platform/econotag/main.c: DEBUG_ANNOTATE;NETSTACK_CONF_WITH_IPV6...\
+Checking platform/econotag/main.c: M12_CONF_SERIAL...\
+Checking platform/econotag/main.c: NETSTACK_CONF_WITH_IPV6...\
+188/445 files checked 49% done\
+Checking platform/econotag/platform_prints.c ...\
+189/445 files checked 49% done\
+Checking platform/econotag/platform_prints.h ...\
+190/445 files checked 49% done\
+Checking platform/ev-aducrf101mkxz/Makefile.ev-aducrf101mkxz ...\
+191/445 files checked 49% done\
+Checking platform/ev-aducrf101mkxz/README.md ...\
+192/445 files checked 49% done\
+Checking platform/ev-aducrf101mkxz/button-sensor.c ...\
+193/445 files checked 50% done\
+Checking platform/ev-aducrf101mkxz/contiki-conf.h ...\
+Checking platform/ev-aducrf101mkxz/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/ev-aducrf101mkxz/contiki-conf.h: PROJECT_CONF_H...\
+[platform/ev-aducrf101mkxz/contiki-conf.h:179]: (error) No header in #include\
+194/445 files checked 50% done\
+Checking platform/ev-aducrf101mkxz/contiki-main.c ...\
+[platform/ev-aducrf101mkxz/contiki-main.c:195]: (warning) %u in format string (no. 2) requires 'unsigned int' but the argument type is 'int'.\
+Checking platform/ev-aducrf101mkxz/contiki-main.c: NETSTACK_CONF_WITH_IPV4...\
+Checking platform/ev-aducrf101mkxz/contiki-main.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/ev-aducrf101mkxz/contiki-main.c: NETSTACK_CONF_WITH_IPV6;UIP_CONF_IPV6_RPL...\
+195/445 files checked 50% done\
+Checking platform/ev-aducrf101mkxz/leds-arch.c ...\
+196/445 files checked 51% done\
+Checking platform/ev-aducrf101mkxz/platform-conf.h ...\
+197/445 files checked 51% done\
+Checking platform/eval-adf7xxxmb4z/Makefile.eval-adf7xxxmb4z ...\
+198/445 files checked 51% done\
+Checking platform/eval-adf7xxxmb4z/README.md ...\
+199/445 files checked 51% done\
+Checking platform/eval-adf7xxxmb4z/button-sensor.c ...\
+200/445 files checked 51% done\
+Checking platform/eval-adf7xxxmb4z/contiki-conf.h ...\
+Checking platform/eval-adf7xxxmb4z/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/eval-adf7xxxmb4z/contiki-conf.h: PROJECT_CONF_H...\
+[platform/eval-adf7xxxmb4z/contiki-conf.h:182]: (error) No header in #include\
+201/445 files checked 52% done\
+Checking platform/eval-adf7xxxmb4z/contiki-main.c ...\
+Checking platform/eval-adf7xxxmb4z/contiki-main.c: NETSTACK_CONF_WITH_IPV4...\
+Checking platform/eval-adf7xxxmb4z/contiki-main.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/eval-adf7xxxmb4z/contiki-main.c: NETSTACK_CONF_WITH_IPV6;UIP_CONF_IPV6_RPL...\
+Checking platform/eval-adf7xxxmb4z/contiki-main.c: __GNUC__...\
+202/445 files checked 52% done\
+Checking platform/eval-adf7xxxmb4z/platform-conf.h ...\
+203/445 files checked 53% done\
+Checking platform/exp5438/Makefile.exp5438 ...\
+[platform/exp5438/Makefile.exp5438:76]: (error) syntax error\
+204/445 files checked 53% done\
+Checking platform/exp5438/blink.c ...\
+205/445 files checked 53% done\
+Checking platform/exp5438/cc2420-arch.c ...\
+206/445 files checked 53% done\
+Checking platform/exp5438/clock.c ...\
+[platform/exp5438/clock.c:159]: (error) failed to evaluate #if condition\
+Checking platform/exp5438/clock.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/exp5438/clock.c: PLATFORM_CONF_H...\
+[platform/exp5438/contiki-conf.h:7]: (error) No header in #include\
+Checking platform/exp5438/clock.c: PROJECT_CONF_H...\
+[platform/exp5438/contiki-conf.h:213]: (error) No header in #include\
+Checking platform/exp5438/clock.c: RF_CHANNEL...\
+Checking platform/exp5438/clock.c: __GNUC__...\
+Checking platform/exp5438/clock.c: __IAR_SYSTEMS_ICC__...\
+207/445 files checked 54% done\
+Checking platform/exp5438/contiki-conf.h ...\
+Checking platform/exp5438/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/exp5438/contiki-conf.h: PLATFORM_CONF_H...\
+Checking platform/exp5438/contiki-conf.h: PROJECT_CONF_H...\
+Checking platform/exp5438/contiki-conf.h: RF_CHANNEL...\
+208/445 files checked 54% done\
+Checking platform/exp5438/contiki-exp5438-main.c ...\
+Checking platform/exp5438/contiki-exp5438-main.c: BURN_NODEID;NODEID...\
+Checking platform/exp5438/contiki-exp5438-main.c: MAC_1...\
+Checking platform/exp5438/contiki-exp5438-main.c: NETSTACK_CONF_WITH_IPV4...\
+Checking platform/exp5438/contiki-exp5438-main.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/exp5438/contiki-exp5438-main.c: NODEID...\
+Checking platform/exp5438/contiki-exp5438-main.c: TIMESYNCH_CONF_ENABLED...\
+209/445 files checked 55% done\
+Checking platform/exp5438/duty-cycle-scroller.c ...\
+[platform/exp5438/duty-cycle-scroller.c:47]: (style) The scope of the variable 'height' can be reduced.\
+[platform/exp5438/duty-cycle-scroller.c:49]: (style) The scope of the variable 'cpu' can be reduced.\
+[platform/exp5438/duty-cycle-scroller.c:49]: (style) The scope of the variable 'lpm' can be reduced.\
+[platform/exp5438/duty-cycle-scroller.c:49]: (style) The scope of the variable 'transmit' can be reduced.\
+[platform/exp5438/duty-cycle-scroller.c:49]: (style) The scope of the variable 'listen' can be reduced.\
+[platform/exp5438/duty-cycle-scroller.c:50]: (style) The scope of the variable 'all_cpu' can be reduced.\
+[platform/exp5438/duty-cycle-scroller.c:50]: (style) The scope of the variable 'all_lpm' can be reduced.\
+[platform/exp5438/duty-cycle-scroller.c:50]: (style) The scope of the variable 'all_transmit' can be reduced.\
+[platform/exp5438/duty-cycle-scroller.c:50]: (style) The scope of the variable 'all_listen' can be reduced.\
+[platform/exp5438/duty-cycle-scroller.c:51]: (style) The scope of the variable 'radio' can be reduced.\
+[platform/exp5438/duty-cycle-scroller.c:51]: (style) The scope of the variable 'time' can be reduced.\
+210/445 files checked 55% done\
+Checking platform/exp5438/duty-cycle-scroller.h ...\
+211/445 files checked 55% done\
+Checking platform/exp5438/flash.c ...\
+[platform/exp5438/flash.c:100]: (style) Variable 'r' is not assigned a value.\
+[platform/exp5438/flash.c:125]: (style) Variable 'r' is not assigned a value.\
+[platform/exp5438/flash.c:109]: (error) Uninitialized variable: r\
+[platform/exp5438/flash.c:134]: (error) Uninitialized variable: r\
+212/445 files checked 55% done\
+Checking platform/exp5438/hal_MSP-EXP430F5438.h ...\
+213/445 files checked 55% done\
+Checking platform/exp5438/hal_lcd.c ...\
+[platform/exp5438/hal_lcd.c:229]: (style) The scope of the variable 'dutyCycle' can be reduced.\
+[platform/exp5438/hal_lcd.c:229]: (style) The scope of the variable 'i' can be reduced.\
+[platform/exp5438/hal_lcd.c:229]: (style) The scope of the variable 'dummy' can be reduced.\
+[platform/exp5438/hal_lcd.c:533]: (style) The scope of the variable 'Address' can be reduced.\
+[platform/exp5438/hal_lcd.c:533]: (style) The scope of the variable 'Value' can be reduced.\
+[platform/exp5438/hal_lcd.c:534]: (style) The scope of the variable 'offset' can be reduced.\
+[platform/exp5438/hal_lcd.c:788]: (style) The scope of the variable 'LookUpChar' can be reduced.\
+[platform/exp5438/hal_lcd.c:119]: (style) Variable 'i' is assigned a value that is never used.\
+Checking platform/exp5438/hal_lcd.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/exp5438/hal_lcd.c: PLATFORM_CONF_H...\
+Checking platform/exp5438/hal_lcd.c: PROJECT_CONF_H...\
+Checking platform/exp5438/hal_lcd.c: RF_CHANNEL...\
+214/445 files checked 58% done\
+Checking platform/exp5438/hal_lcd.h ...\
+215/445 files checked 59% done\
+Checking platform/exp5438/hal_lcd_fonts.c ...\
+216/445 files checked 60% done\
+Checking platform/exp5438/hal_lcd_fonts.h ...\
+217/445 files checked 60% done\
+Checking platform/exp5438/lcd.c ...\
+[platform/exp5438/lcd.c:89]: (style) The scope of the variable 'string' can be reduced.\
+218/445 files checked 61% done\
+Checking platform/exp5438/lcd.h ...\
+219/445 files checked 61% done\
+Checking platform/exp5438/leds-arch.c ...\
+Checking platform/exp5438/leds-arch.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/exp5438/leds-arch.c: PLATFORM_CONF_H...\
+Checking platform/exp5438/leds-arch.c: PROJECT_CONF_H...\
+Checking platform/exp5438/leds-arch.c: RF_CHANNEL...\
+220/445 files checked 61% done\
+Checking platform/exp5438/msp430.c ...\
+Checking platform/exp5438/msp430.c: P1DIR...\
+Checking platform/exp5438/msp430.c: P1SEL...\
+Checking platform/exp5438/msp430.c: P2DIR...\
+Checking platform/exp5438/msp430.c: P2SEL...\
+Checking platform/exp5438/msp430.c: P3DIR...\
+Checking platform/exp5438/msp430.c: P3SEL...\
+Checking platform/exp5438/msp430.c: P4DIR...\
+Checking platform/exp5438/msp430.c: P4SEL...\
+Checking platform/exp5438/msp430.c: P5DIR...\
+Checking platform/exp5438/msp430.c: P5SEL...\
+Checking platform/exp5438/msp430.c: P6DIR...\
+Checking platform/exp5438/msp430.c: P6SEL...\
+Checking platform/exp5438/msp430.c: P7DIR...\
+Checking platform/exp5438/msp430.c: P8DIR...\
+Checking platform/exp5438/msp430.c: __GNUC__;__MSP430__...\
+Checking platform/exp5438/msp430.c: __IAR_SYSTEMS_ICC__...\
+221/445 files checked 62% done\
+Checking platform/exp5438/node-id.c ...\
+[platform/exp5438/node-id.c:57]: (style) The scope of the variable 'i' can be reduced.\
+Checking platform/exp5438/node-id.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/exp5438/node-id.c: PLATFORM_CONF_H...\
+Checking platform/exp5438/node-id.c: PROJECT_CONF_H...\
+Checking platform/exp5438/node-id.c: RF_CHANNEL...\
+222/445 files checked 62% done\
+Checking platform/exp5438/platform-conf.h ...\
+223/445 files checked 62% done\
+Checking platform/exp5438/port-mapping.txt ...\
+[platform/exp5438/port-mapping.txt:23]: (error) syntax error\
+224/445 files checked 62% done\
+Checking platform/exp5438/rtimer-arch.c ...\
+225/445 files checked 63% done\
+Checking platform/exp5438/spix.c ...\
+Checking platform/exp5438/spix.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/exp5438/spix.c: PLATFORM_CONF_H...\
+Checking platform/exp5438/spix.c: PROJECT_CONF_H...\
+Checking platform/exp5438/spix.c: RF_CHANNEL...\
+226/445 files checked 63% done\
+Checking platform/exp5438/uart1-putchar.c ...\
+227/445 files checked 63% done\
+Checking platform/exp5438/uart1x.c ...\
+[platform/exp5438/uart1x.c:112]: (style) The scope of the variable 'c' can be reduced.\
+228/445 files checked 63% done\
+Checking platform/exp5438/watchdog.c ...\
+Checking platform/exp5438/watchdog.c: CONTIKI_TARGET_SKY...\
+Checking platform/exp5438/watchdog.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/exp5438/watchdog.c: PLATFORM_CONF_H...\
+Checking platform/exp5438/watchdog.c: PROJECT_CONF_H...\
+Checking platform/exp5438/watchdog.c: RF_CHANNEL...\
+229/445 files checked 63% done\
+Checking platform/mbxxx/Makefile.mbxxx ...\
+230/445 files checked 63% done\
+Checking platform/mbxxx/apps/shell-sensors.c ...\
+[platform/mbxxx/apps/shell-sensors.c:78]: (warning) %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.\
+[platform/mbxxx/apps/shell-sensors.c:78]: (warning) %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.\
+231/445 files checked 63% done\
+Checking platform/mbxxx/board.c ...\
+[platform/mbxxx/board.c:405]: (error) Array 'boardList[12]' accessed at index 23, which is out of bounds.\
+Checking platform/mbxxx/board.c: EMBERZNET_HAL...\
+232/445 files checked 65% done\
+Checking platform/mbxxx/board.h ...\
+233/445 files checked 65% done\
+Checking platform/mbxxx/clock.c ...\
+234/445 files checked 66% done\
+Checking platform/mbxxx/contiki-conf.h ...\
+Checking platform/mbxxx/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/mbxxx/contiki-conf.h: PLATFORM_CONF_H...\
+[platform/mbxxx/contiki-conf.h:55]: (error) No header in #include\
+Checking platform/mbxxx/contiki-conf.h: PROJECT_CONF_H...\
+[platform/mbxxx/contiki-conf.h:163]: (error) No header in #include\
+Checking platform/mbxxx/contiki-conf.h: __ICCARM__...\
+235/445 files checked 66% done\
+Checking platform/mbxxx/contiki-init-net.c ...\
+Checking platform/mbxxx/contiki-init-net.c: FIXED_NET_ADDRESS;NETSTACK_CONF_WITH_IPV6...\
+Checking platform/mbxxx/contiki-init-net.c: FIXED_NET_ADDRESS;NETSTACK_CONF_WITH_IPV6;RPL_BORDER_ROUTER...\
+Checking platform/mbxxx/contiki-init-net.c: NETSTACK_CONF_WITH_IPV6...\
+236/445 files checked 66% done\
+Checking platform/mbxxx/contiki-init-net.h ...\
+237/445 files checked 67% done\
+Checking platform/mbxxx/contiki-main.c ...\
+Checking platform/mbxxx/contiki-main.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/mbxxx/contiki-main.c: WITH_SERIAL_LINE_INPUT...\
+238/445 files checked 67% done\
+Checking platform/mbxxx/dev/acc-sensor.c ...\
+239/445 files checked 67% done\
+Checking platform/mbxxx/dev/button-sensor.c ...\
+240/445 files checked 67% done\
+Checking platform/mbxxx/dev/contact-sensor.c ...\
+241/445 files checked 67% done\
+Checking platform/mbxxx/dev/eeprom.c ...\
+242/445 files checked 67% done\
+Checking platform/mbxxx/dev/i2c.c ...\
+243/445 files checked 67% done\
+Checking platform/mbxxx/dev/irq.c ...\
+244/445 files checked 67% done\
+Checking platform/mbxxx/dev/mems.c ...\
+245/445 files checked 67% done\
+Checking platform/mbxxx/dev/temperature-sensor.c ...\
+[platform/mbxxx/dev/temperature-sensor.c:79]: (style) Variable 'scale' is assigned a value that is never used.\
+246/445 files checked 67% done\
+Checking platform/mbxxx/platform-conf.h ...\
+Checking platform/mbxxx/platform-conf.h: __ICCARM__...\
+247/445 files checked 68% done\
+Checking platform/micaz/Makefile.micaz ...\
+[platform/micaz/Makefile.micaz] -> [platform/micaz/Makefile.micaz]: (error) syntax error\
+248/445 files checked 68% done\
+Checking platform/micaz/apps/battery-monitor.c ...\
+249/445 files checked 68% done\
+Checking platform/micaz/apps/mts310/accel-test.c ...\
+250/445 files checked 68% done\
+Checking platform/micaz/apps/mts310/light-test.c ...\
+251/445 files checked 68% done\
+Checking platform/micaz/apps/mts310/magnet-test.c ...\
+252/445 files checked 68% done\
+Checking platform/micaz/apps/mts310/mic-test.c ...\
+253/445 files checked 68% done\
+Checking platform/micaz/contiki-conf.h ...\
+Checking platform/micaz/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/micaz/contiki-conf.h: RF_CHANNEL...\
+254/445 files checked 68% done\
+Checking platform/micaz/contiki-micaz-main.c ...\
+255/445 files checked 69% done\
+Checking platform/micaz/dev/adc.c ...\
+256/445 files checked 69% done\
+Checking platform/micaz/dev/cc2420-arch.c ...\
+257/445 files checked 69% done\
+Checking platform/micaz/dev/clock.c ...\
+258/445 files checked 69% done\
+Checking platform/micaz/dev/ds2401.c ...\
+259/445 files checked 69% done\
+Checking platform/micaz/dev/leds-arch.c ...\
+260/445 files checked 69% done\
+Checking platform/micaz/dev/sensors/battery-sensor.c ...\
+261/445 files checked 69% done\
+Checking platform/micaz/dev/sensors/mts300.c ...\
+262/445 files checked 69% done\
+Checking platform/micaz/dev/slip_uart0.c ...\
+263/445 files checked 69% done\
+Checking platform/micaz/init-net.c ...\
+Checking platform/micaz/init-net.c: NETSTACK_CONF_WITH_IPV4...\
+Checking platform/micaz/init-net.c: NETSTACK_CONF_WITH_IPV6...\
+264/445 files checked 69% done\
+Checking platform/micaz/init-net.h ...\
+265/445 files checked 69% done\
+Checking platform/micaz/node-id.c ...\
+Checking platform/micaz/node-id.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/micaz/node-id.c: RF_CHANNEL...\
+266/445 files checked 70% done\
+Checking platform/micaz/platform-conf.h ...\
+267/445 files checked 70% done\
+Checking platform/minimal-net/Makefile.minimal-net ...\
+268/445 files checked 70% done\
+Checking platform/minimal-net/clock.c ...\
+269/445 files checked 70% done\
+Checking platform/minimal-net/contiki-conf.h ...\
+Checking platform/minimal-net/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/minimal-net/contiki-conf.h: RPL_BORDER_ROUTER;UIP_CONF_IPV6_RPL...\
+Checking platform/minimal-net/contiki-conf.h: UIP_CONF_IPV6_RPL...\
+270/445 files checked 71% done\
+Checking platform/minimal-net/contiki-main.c ...\
+[platform/minimal-net/contiki-main.c:267]: (error) printf format string requires 4 parameters but only 1 is given.\
+[platform/minimal-net/contiki-main.c:275]: (error) printf format string requires 4 parameters but only 1 is given.\
+[platform/minimal-net/contiki-main.c:282]: (error) printf format string requires 4 parameters but only 1 is given.\
+[platform/minimal-net/contiki-main.c:413]: (warning) %u in format string (no. 2) requires 'unsigned int' but the argument type is 'int'.\
+Checking platform/minimal-net/contiki-main.c: DEBUG_SLEEP...\
+Checking platform/minimal-net/contiki-main.c: HARD_CODED_ADDRESS...\
+Checking platform/minimal-net/contiki-main.c: HARD_CODED_ADDRESS;NETSTACK_CONF_WITH_IPV6...\
+Checking platform/minimal-net/contiki-main.c: HARD_CODED_ADDRESS;RPL_BORDER_ROUTER...\
+Checking platform/minimal-net/contiki-main.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/minimal-net/contiki-main.c: RPL_BORDER_ROUTER...\
+Checking platform/minimal-net/contiki-main.c: RPL_BORDER_ROUTER;UIP_CONF_ROUTER_RECEIVE_RA...\
+Checking platform/minimal-net/contiki-main.c: UIP_CONF_IPV6_RPL...\
+Checking platform/minimal-net/contiki-main.c: UIP_CONF_ROUTER...\
+Checking platform/minimal-net/contiki-main.c: UIP_FALLBACK_INTERFACE;__CYGWIN__...\
+[platform/minimal-net/contiki-main.c:349] -> [platform/minimal-net/contiki-main.c:361]: (style) Variable 'next_event' is reassigned a value before the old one has been used.\
+Checking platform/minimal-net/contiki-main.c: __CYGWIN__...\
+271/445 files checked 72% done\
+Checking platform/minimal-net/leds-arch.c ...\
+272/445 files checked 72% done\
+Checking platform/native/Makefile.native ...\
+[platform/native/Makefile.native:45]: (error) syntax error\
+273/445 files checked 72% done\
+Checking platform/native/cfs-coffee-arch.h ...\
+Checking platform/native/cfs-coffee-arch.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/native/cfs-coffee-arch.h: PLATFORM_BUILD...\
+Checking platform/native/cfs-coffee-arch.h: PROJECT_CONF_H...\
+[platform/native/contiki-conf.h:272]: (error) No header in #include\
+274/445 files checked 72% done\
+Checking platform/native/clock.c ...\
+275/445 files checked 73% done\
+Checking platform/native/contiki-conf.h ...\
+Checking platform/native/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/native/contiki-conf.h: PLATFORM_BUILD...\
+Checking platform/native/contiki-conf.h: PROJECT_CONF_H...\
+276/445 files checked 73% done\
+Checking platform/native/contiki-main.c ...\
+[platform/native/contiki-main.c:92]: (style) The scope of the variable 'i' can be reduced.\
+Checking platform/native/contiki-main.c: NETSTACK_CONF_WITH_IPV4...\
+Checking platform/native/contiki-main.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/native/contiki-main.c: NETSTACK_CONF_WITH_IPV6;UIP_CONF_IPV6_RPL...\
+Checking platform/native/contiki-main.c: NETSTACK_CONF_WITH_IPV6;__CYGWIN__...\
+Checking platform/native/contiki-main.c: SELECT_CONF_MAX...\
+Checking platform/native/contiki-main.c: UIP_FALLBACK_INTERFACE;__CYGWIN__...\
+Checking platform/native/contiki-main.c: WITH_GUI...\
+Checking platform/native/contiki-main.c: __CYGWIN__...\
+277/445 files checked 74% done\
+Checking platform/native/ctk/ctk-curses.c ...\
+Checking platform/native/ctk/ctk-curses.c: NCURSES_MOUSE_VERSION...\
+278/445 files checked 74% done\
+Checking platform/native/dev/beep.c ...\
+279/445 files checked 74% done\
+Checking platform/native/dev/button-sensor.c ...\
+280/445 files checked 74% done\
+Checking platform/native/dev/dummy-sensors.c ...\
+281/445 files checked 74% done\
+Checking platform/native/dev/irq.c ...\
+282/445 files checked 74% done\
+Checking platform/native/dev/leds-arch.c ...\
+283/445 files checked 74% done\
+Checking platform/native/dev/pir-sensor.c ...\
+284/445 files checked 74% done\
+Checking platform/native/dev/vib-sensor.c ...\
+285/445 files checked 74% done\
+Checking platform/native/dev/xmem.c ...\
+286/445 files checked 74% done\
+Checking platform/remote/Makefile.remote ...\
+[platform/remote/Makefile.remote] -> [platform/remote/Makefile.remote]: (error) syntax error\
+287/445 files checked 74% done\
+Checking platform/remote/README.md ...\
+288/445 files checked 75% done\
+Checking platform/remote/contiki-conf.h ...\
+Checking platform/remote/contiki-conf.h: CMD_CONF_OUTPUT;UIP_FALLBACK_INTERFACE...\
+Checking platform/remote/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/remote/contiki-conf.h: PROJECT_CONF_H...\
+[platform/remote/contiki-conf.h:16]: (error) No header in #include\
+289/445 files checked 76% done\
+Checking platform/remote/contiki-main.c ...\
+[platform/remote/contiki-main.c:91]: (style) The scope of the variable 'j' can be reduced.\
+Checking platform/remote/contiki-main.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/remote/contiki-main.c: STARTUP_CONF_VERBOSE...\
+Checking platform/remote/contiki-main.c: UART_CONF_ENABLE...\
+Checking platform/remote/contiki-main.c: USB_SERIAL_CONF_ENABLE...\
+290/445 files checked 77% done\
+Checking platform/remote/dev/antenna-sw.c ...\
+291/445 files checked 77% done\
+Checking platform/remote/dev/button-sensor.c ...\
+292/445 files checked 77% done\
+Checking platform/remote/dev/led-strip.c ...\
+293/445 files checked 77% done\
+Checking platform/remote/dev/leds-arch.c ...\
+294/445 files checked 77% done\
+Checking platform/remote/dev/mp3-wtv020sd.c ...\
+295/445 files checked 77% done\
+Checking platform/remote/dev/phidget-sensor.c ...\
+296/445 files checked 77% done\
+Checking platform/remote/dev/remote-sensors.c ...\
+297/445 files checked 77% done\
+Checking platform/remote/dev/sht25.c ...\
+[platform/remote/dev/sht25.c:112]: (style) The scope of the variable 'raw' can be reduced.\
+298/445 files checked 77% done\
+Checking platform/remote/dev/tmp102.c ...\
+[platform/remote/dev/tmp102.c:54]: (style) The scope of the variable 'buf' can be reduced.\
+[platform/remote/dev/tmp102.c:55]: (style) The scope of the variable 'temp' can be reduced.\
+299/445 files checked 77% done\
+Checking platform/remote/dev/tsl2563.c ...\
+[platform/remote/dev/tsl2563.c:127]: (style) The scope of the variable 'buf' can be reduced.\
+[platform/remote/dev/tsl2563.c:69]: (style) Unsigned variable 'lratio' can't be negative so it is unnecessary to test it.\
+[platform/remote/dev/tsl2563.c:87]: (style) Checking if unsigned variable 'tmp' is less than zero.\
+300/445 files checked 77% done\
+Checking platform/seedeye/Makefile.seedeye ...\
+301/445 files checked 77% done\
+Checking platform/seedeye/contiki-conf.h ...\
+Checking platform/seedeye/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/seedeye/contiki-conf.h: PROJECT_CONF_H...\
+[platform/seedeye/contiki-conf.h:133]: (error) No header in #include\
+302/445 files checked 78% done\
+Checking platform/seedeye/contiki-seedeye-main.c ...\
+Checking platform/seedeye/contiki-seedeye-main.c: UIP_CONF_ROUTER...\
+Checking platform/seedeye/contiki-seedeye-main.c: UIP_CONF_ROUTER;UIP_CONF_ROUTER_MODULE...\
+303/445 files checked 78% done\
+Checking platform/seedeye/dev/battery-sensor.c ...\
+304/445 files checked 78% done\
+Checking platform/seedeye/dev/button-sensor.c ...\
+305/445 files checked 78% done\
+Checking platform/seedeye/dev/leds-arch.c ...\
+[platform/seedeye/dev/leds-arch.c:90]: (style) Clarify calculation precedence for '&' and '?'.\
+306/445 files checked 78% done\
+Checking platform/seedeye/dev/mrf24j40/mrf24j40.c ...\
+[platform/seedeye/dev/mrf24j40/mrf24j40.c:406]: (style) The scope of the variable 'i' can be reduced.\
+[platform/seedeye/dev/mrf24j40/mrf24j40.c:679]: (style) Variable 'i' is assigned a value that is never used.\
+Checking platform/seedeye/dev/mrf24j40/mrf24j40.c: ADD_RSSI_AND_LQI_TO_PACKET...\
+Checking platform/seedeye/dev/mrf24j40/mrf24j40.c: INT_POLARITY_HIGH...\
+Checking platform/seedeye/dev/mrf24j40/mrf24j40.c: MRF24J40MB...\
+Checking platform/seedeye/dev/mrf24j40/mrf24j40.c: MRF24J40_ACCEPT_WRONG_CRC_PKT...\
+Checking platform/seedeye/dev/mrf24j40/mrf24j40.c: MRF24J40_COORDINATOR...\
+Checking platform/seedeye/dev/mrf24j40/mrf24j40.c: MRF24J40_DISABLE_AUTOMATIC_ACK...\
+Checking platform/seedeye/dev/mrf24j40/mrf24j40.c: MRF24J40_PAN_COORDINATOR...\
+Checking platform/seedeye/dev/mrf24j40/mrf24j40.c: MRF24J40_PROMISCUOUS_MODE...\
+Checking platform/seedeye/dev/mrf24j40/mrf24j40.c: __USE_MRF24J40_SPI_PORT_1A__...\
+Checking platform/seedeye/dev/mrf24j40/mrf24j40.c: __USE_MRF24J40_SPI_PORT_1__...\
+Checking platform/seedeye/dev/mrf24j40/mrf24j40.c: __USE_MRF24J40_SPI_PORT_2A__...\
+Checking platform/seedeye/dev/mrf24j40/mrf24j40.c: __USE_MRF24J40_SPI_PORT_3A__...\
+307/445 files checked 78% done\
+Checking platform/seedeye/dev/radio-sensor.c ...\
+308/445 files checked 78% done\
+Checking platform/seedeye/init-net.c ...\
+Checking platform/seedeye/init-net.c: LINKADDR_CONF_SIZE=2;NETSTACK_CONF_WITH_IPV6...\
+Checking platform/seedeye/init-net.c: NETSTACK_CONF_WITH_IPV6...\
+309/445 files checked 79% done\
+Checking platform/seedeye/init-net.h ...\
+310/445 files checked 79% done\
+Checking platform/seedeye/platform-conf.h ...\
+311/445 files checked 79% done\
+Checking platform/sensinode/Makefile.customrules-sensinode ...\
+312/445 files checked 79% done\
+Checking platform/sensinode/Makefile.sensinode ...\
+[platform/sensinode/Makefile.sensinode:63]: (error) syntax error\
+313/445 files checked 79% done\
+Checking platform/sensinode/apps/batmon/batmon.c ...\
+[platform/sensinode/apps/batmon/batmon.c:184]: (style) Consecutive return, break, continue, goto or throw statements are unnecessary.\
+Checking platform/sensinode/apps/batmon/batmon.c: ENERGEST_CONF_ON...\
+314/445 files checked 79% done\
+Checking platform/sensinode/contiki-conf.h ...\
+Checking platform/sensinode/contiki-conf.h: CMD_CONF_OUTPUT;UIP_FALLBACK_INTERFACE...\
+Checking platform/sensinode/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/sensinode/contiki-conf.h: PROJECT_CONF_H...\
+315/445 files checked 80% done\
+Checking platform/sensinode/contiki-sensinode-main.c ...\
+[platform/sensinode/contiki-sensinode-main.c:77]: (style) The scope of the variable 'a' can be reduced.\
+[platform/sensinode/contiki-sensinode-main.c:78]: (style) The scope of the variable 'j' can be reduced.\
+[platform/sensinode/contiki-sensinode-main.c:98]: (style) The scope of the variable 'i' can be reduced.\
+[platform/sensinode/contiki-sensinode-main.c:88]: (style) Variable 'a' is assigned a value that is never used.\
+Checking platform/sensinode/contiki-sensinode-main.c: ACC_SENSOR_CONF_GSEL;MODEL_N740...\
+Checking platform/sensinode/contiki-sensinode-main.c: ACC_SENSOR_CONF_ON;MODEL_N740...\
+Checking platform/sensinode/contiki-sensinode-main.c: ADC_SENSOR_CONF_ON...\
+Checking platform/sensinode/contiki-sensinode-main.c: BATMON_CONF_ON...\
+Checking platform/sensinode/contiki-sensinode-main.c: BATTERY_SENSOR_CONF_ON;MODEL_N710;MODEL_N711;MODEL_N740...\
+Checking platform/sensinode/contiki-sensinode-main.c: BUTTON_SENSOR_CONF_ON;MODEL_N711;MODEL_N740...\
+Checking platform/sensinode/contiki-sensinode-main.c: CLOCK_CONF_STACK_FRIENDLY...\
+Checking platform/sensinode/contiki-sensinode-main.c: DISCO_ENABLED;NETSTACK_CONF_WITH_IPV6...\
+Checking platform/sensinode/contiki-sensinode-main.c: DMA_ON...\
+Checking platform/sensinode/contiki-sensinode-main.c: ENERGEST_CONF_ON...\
+Checking platform/sensinode/contiki-sensinode-main.c: HAVE_SDCC_BANKING...\
+Checking platform/sensinode/contiki-sensinode-main.c: LIGHT_SENSOR_CONF_ON;MODEL_N710;MODEL_N711;MODEL_N740...\
+Checking platform/sensinode/contiki-sensinode-main.c: LPM_MODE...\
+Checking platform/sensinode/contiki-sensinode-main.c: MODEL_N100...\
+Checking platform/sensinode/contiki-sensinode-main.c: MODEL_N600...\
+Checking platform/sensinode/contiki-sensinode-main.c: MODEL_N601...\
+Checking platform/sensinode/contiki-sensinode-main.c: MODEL_N710...\
+Checking platform/sensinode/contiki-sensinode-main.c: MODEL_N710;MODEL_N711;MODEL_N740...\
+Checking platform/sensinode/contiki-sensinode-main.c: MODEL_N711...\
+Checking platform/sensinode/contiki-sensinode-main.c: MODEL_N711;MODEL_N740...\
+Checking platform/sensinode/contiki-sensinode-main.c: MODEL_N740...\
+Checking platform/sensinode/contiki-sensinode-main.c: NETSTACK_CONF_SHORTCUTS...\
+Checking platform/sensinode/contiki-sensinode-main.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/sensinode/contiki-sensinode-main.c: NETSTACK_CONF_WITH_IPV6;VIZTOOL_CONF_ON...\
+Checking platform/sensinode/contiki-sensinode-main.c: SDCC_MODEL_HUGE...\
+Checking platform/sensinode/contiki-sensinode-main.c: SDCC_MODEL_LARGE...\
+Checking platform/sensinode/contiki-sensinode-main.c: SDCC_STACK_AUTO...\
+Checking platform/sensinode/contiki-sensinode-main.c: SLIP_ARCH_CONF_ENABLE...\
+Checking platform/sensinode/contiki-sensinode-main.c: STARTUP_CONF_VERBOSE...\
+Checking platform/sensinode/contiki-sensinode-main.c: TEMP_SENSOR_CONF_ON...\
+Checking platform/sensinode/contiki-sensinode-main.c: VDD_SENSOR_CONF_ON...\
+Checking platform/sensinode/contiki-sensinode-main.c: VIZTOOL_CONF_ON...\
+316/445 files checked 80% done\
+Checking platform/sensinode/debug.c ...\
+317/445 files checked 81% done\
+Checking platform/sensinode/debug.h ...\
+318/445 files checked 81% done\
+Checking platform/sensinode/dev/adc-sensor.c ...\
+Checking platform/sensinode/dev/adc-sensor.c: ACC_SENSOR_GSEL;ACC_SENSOR_ON;ADC_SENSOR_ON;MODEL_N740...\
+[platform/sensinode/dev/adc-sensor.c:125] -> [platform/sensinode/dev/adc-sensor.c:126]: (style) Variable 'reading' is reassigned a value before the old one has been used.\
+Checking platform/sensinode/dev/adc-sensor.c: ACC_SENSOR_GSEL;ADC_SENSOR_ON;MODEL_N740...\
+Checking platform/sensinode/dev/adc-sensor.c: ACC_SENSOR_ON;ADC_SENSOR_ON...\
+Checking platform/sensinode/dev/adc-sensor.c: ACC_SENSOR_ON;ADC_SENSOR_ON;MODEL_N740...\
+Checking platform/sensinode/dev/adc-sensor.c: ADC_SENSOR_ON...\
+Checking platform/sensinode/dev/adc-sensor.c: ADC_SENSOR_ON;BATTERY_SENSOR_ON...\
+Checking platform/sensinode/dev/adc-sensor.c: ADC_SENSOR_ON;LIGHT_SENSOR_ON...\
+Checking platform/sensinode/dev/adc-sensor.c: ADC_SENSOR_ON;LIGHT_SENSOR_ON;MODEL_N740...\
+Checking platform/sensinode/dev/adc-sensor.c: ADC_SENSOR_ON;MODEL_N740...\
+[platform/sensinode/dev/adc-sensor.c:176]: (style) Assignment of function parameter has no effect outside the function.\
+Checking platform/sensinode/dev/adc-sensor.c: ADC_SENSOR_ON;TEMP_SENSOR_ON...\
+Checking platform/sensinode/dev/adc-sensor.c: ADC_SENSOR_ON;VDD_SENSOR_ON...\
+319/445 files checked 81% done\
+Checking platform/sensinode/dev/button-sensor.c ...\
+Checking platform/sensinode/dev/button-sensor.c: BUTTON_SENSOR_ON...\
+Checking platform/sensinode/dev/button-sensor.c: BUTTON_SENSOR_ON;CC_CONF_OPTIMIZE_STACK_SIZE...\
+Checking platform/sensinode/dev/button-sensor.c: BUTTON_SENSOR_ON;MODEL_N711...\
+Checking platform/sensinode/dev/button-sensor.c: BUTTON_SENSOR_ON;MODEL_N740...\
+320/445 files checked 81% done\
+Checking platform/sensinode/dev/leds-arch.c ...\
+Checking platform/sensinode/dev/leds-arch.c: MODEL_N740...\
+321/445 files checked 81% done\
+Checking platform/sensinode/dev/m25p16.c ...\
+[platform/sensinode/dev/m25p16.c:69]: (style) The scope of the variable 'bit' can be reduced.\
+Checking platform/sensinode/dev/m25p16.c: M25P16_READ_FAST...\
+322/445 files checked 81% done\
+Checking platform/sensinode/dev/models.c ...\
+Checking platform/sensinode/dev/models.c: M25P16_CONF_ON;MODEL_N740...\
+Checking platform/sensinode/dev/models.c: MODEL_N740...\
+323/445 files checked 81% done\
+Checking platform/sensinode/dev/n740.c ...\
+[platform/sensinode/dev/n740.c:97]: (style) The scope of the variable 'temp' can be reduced.\
+324/445 files checked 81% done\
+Checking platform/sensinode/dev/sensinode-sensors.c ...\
+Checking platform/sensinode/dev/sensinode-sensors.c: ADC_SENSOR_ON...\
+Checking platform/sensinode/dev/sensinode-sensors.c: BUTTON_SENSOR_ON...\
+325/445 files checked 81% done\
+Checking platform/sensinode/dev/slip-arch.c ...\
+326/445 files checked 81% done\
+Checking platform/sensinode/disco.c ...\
+[platform/sensinode/disco.c:122]: (style) The scope of the variable 'wip' can be reduced.\
+[platform/sensinode/disco.c:323]: (style) The scope of the variable 'len' can be reduced.\
+Checking platform/sensinode/disco.c: BATMON_CONF_ENABLED...\
+Checking platform/sensinode/disco.c: M25P16_CONF_READ_FAST...\
+327/445 files checked 82% done\
+Checking platform/sensinode/disco.h ...\
+328/445 files checked 82% done\
+Checking platform/sensinode/putchar.c ...\
+Checking platform/sensinode/putchar.c: CMD_CONF_OUTPUT;UIP_FALLBACK_INTERFACE...\
+Checking platform/sensinode/putchar.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/sensinode/putchar.c: PROJECT_CONF_H...\
+Checking platform/sensinode/putchar.c: SLIP_ARCH_CONF_ENABLE...\
+329/445 files checked 82% done\
+Checking platform/sensinode/segment.rules ...\
+330/445 files checked 82% done\
+Checking platform/sensinode/uip-debug.c ...\
+Checking platform/sensinode/uip-debug.c: NETSTACK_CONF_WITH_IPV6...\
+[platform/sensinode/uip-debug.c:47]: (style) The scope of the variable 'a' can be reduced.\
+331/445 files checked 82% done\
+Checking platform/sensinode/viztool.c ...\
+332/445 files checked 83% done\
+Checking platform/sky/Makefile.common ...\
+[platform/sky/Makefile.common:40]: (error) syntax error\
+333/445 files checked 83% done\
+Checking platform/sky/Makefile.sky ...\
+334/445 files checked 83% done\
+Checking platform/sky/apps/blink.c ...\
+335/445 files checked 83% done\
+Checking platform/sky/apps/burn-nodeid.c ...\
+Checking platform/sky/apps/burn-nodeid.c: NODEID...\
+336/445 files checked 83% done\
+Checking platform/sky/apps/fader.c ...\
+337/445 files checked 83% done\
+Checking platform/sky/cfs-coffee-arch.h ...\
+Checking platform/sky/cfs-coffee-arch.h: COFFEE_CONF_DYN_SIZE...\
+Checking platform/sky/cfs-coffee-arch.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/sky/cfs-coffee-arch.h: PLATFORM_CONF_H...\
+[platform/sky/contiki-conf.h:7]: (error) No header in #include\
+Checking platform/sky/cfs-coffee-arch.h: PROJECT_CONF_H...\
+[platform/sky/contiki-conf.h:216]: (error) No header in #include\
+Checking platform/sky/cfs-coffee-arch.h: RF_CHANNEL...\
+338/445 files checked 84% done\
+Checking platform/sky/contiki-conf.h ...\
+Checking platform/sky/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/sky/contiki-conf.h: PLATFORM_CONF_H...\
+Checking platform/sky/contiki-conf.h: PROJECT_CONF_H...\
+Checking platform/sky/contiki-conf.h: RF_CHANNEL...\
+339/445 files checked 84% done\
+Checking platform/sky/contiki-sky-main.c ...\
+[platform/sky/contiki-sky-main.c:377]: (warning) %u in format string (no. 5) requires 'unsigned int' but the argument type is 'signed int'.\
+Checking platform/sky/contiki-sky-main.c: CC2420_CONF_SFD_TIMESTAMPS;DCOSYNCH_CONF_ENABLED...\
+Checking platform/sky/contiki-sky-main.c: COFFEE_CONF_DYN_SIZE...\
+Checking platform/sky/contiki-sky-main.c: DCOSYNCH_CONF_ENABLED...\
+Checking platform/sky/contiki-sky-main.c: EXPERIMENT_SETUP...\
+Checking platform/sky/contiki-sky-main.c: IEEE_802154_MAC_ADDRESS...\
+Checking platform/sky/contiki-sky-main.c: LOG_CONF_ENABLED...\
+Checking platform/sky/contiki-sky-main.c: NETSTACK_CONF_WITH_IPV6...\
+[platform/sky/contiki-sky-main.c:364]: (warning) %u in format string (no. 5) requires 'unsigned int' but the argument type is 'signed int'.\
+Checking platform/sky/contiki-sky-main.c: PLATFORM_CONF_H...\
+Checking platform/sky/contiki-sky-main.c: PROJECT_CONF_H...\
+Checking platform/sky/contiki-sky-main.c: RF_CHANNEL...\
+Checking platform/sky/contiki-sky-main.c: TIMESYNCH_CONF_ENABLED...\
+Checking platform/sky/contiki-sky-main.c: UIP_CONF_ROUTER...\
+Checking platform/sky/contiki-sky-main.c: UIP_CONF_ROUTER;UIP_CONF_ROUTER_MODULE...\
+Checking platform/sky/contiki-sky-main.c: WITH_TINYOS_AUTO_IDS...\
+340/445 files checked 85% done\
+Checking platform/sky/contiki-sky-platform.c ...\
+341/445 files checked 85% done\
+Checking platform/sky/dev/battery-sensor.c ...\
+342/445 files checked 85% done\
+Checking platform/sky/dev/button-sensor.c ...\
+343/445 files checked 85% done\
+Checking platform/sky/dev/i2c.c ...\
+344/445 files checked 85% done\
+Checking platform/sky/dev/light-sensor.c ...\
+345/445 files checked 85% done\
+Checking platform/sky/dev/light.c ...\
+346/445 files checked 85% done\
+Checking platform/sky/dev/radio-sensor.c ...\
+347/445 files checked 85% done\
+Checking platform/sky/dev/sky-sensors.c ...\
+[platform/sky/dev/sky-sensors.c:116]: (style) The scope of the variable 'c' can be reduced.\
+348/445 files checked 86% done\
+Checking platform/sky/dev/temperature-sensor.c ...\
+349/445 files checked 86% done\
+Checking platform/sky/dev/xmem.c ...\
+[platform/sky/dev/xmem.c:232]: (style) The scope of the variable 'next_page' can be reduced.\
+350/445 files checked 86% done\
+Checking platform/sky/node-id.c ...\
+Checking platform/sky/node-id.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/sky/node-id.c: PLATFORM_CONF_H...\
+Checking platform/sky/node-id.c: PROJECT_CONF_H...\
+Checking platform/sky/node-id.c: RF_CHANNEL...\
+351/445 files checked 86% done\
+Checking platform/sky/platform-conf.h ...\
+352/445 files checked 86% done\
+Checking platform/srf06-cc26xx/Makefile.srf06-cc26xx ...\
+353/445 files checked 86% done\
+Checking platform/srf06-cc26xx/README.md ...\
+354/445 files checked 87% done\
+Checking platform/srf06-cc26xx/contiki-conf.h ...\
+Checking platform/srf06-cc26xx/contiki-conf.h: CMD_CONF_OUTPUT;UIP_FALLBACK_INTERFACE...\
+Checking platform/srf06-cc26xx/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/srf06-cc26xx/contiki-conf.h: PROJECT_CONF_H...\
+[platform/srf06-cc26xx/contiki-conf.h:44]: (error) No header in #include\
+355/445 files checked 88% done\
+Checking platform/srf06-cc26xx/contiki-main.c ...\
+[platform/srf06-cc26xx/contiki-main.c:73]: (style) The scope of the variable 'j' can be reduced.\
+Checking platform/srf06-cc26xx/contiki-main.c: CC26XX_UART_CONF_ENABLE...\
+Checking platform/srf06-cc26xx/contiki-main.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/srf06-cc26xx/contiki-main.c: STARTUP_CONF_VERBOSE...\
+356/445 files checked 88% done\
+Checking platform/srf06-cc26xx/sensortag/bmp-280-sensor.c ...\
+357/445 files checked 88% done\
+Checking platform/srf06-cc26xx/sensortag/board-i2c.c ...\
+358/445 files checked 88% done\
+Checking platform/srf06-cc26xx/sensortag/board-spi.c ...\
+359/445 files checked 88% done\
+Checking platform/srf06-cc26xx/sensortag/board.c ...\
+Checking platform/srf06-cc26xx/sensortag/board.c: MPU_9250_SENSOR_CONF_ACC_RANGE...\
+360/445 files checked 88% done\
+Checking platform/srf06-cc26xx/sensortag/button-sensor.c ...\
+Checking platform/srf06-cc26xx/sensortag/button-sensor.c: BUTTON_SENSOR_CONF_ENABLE_SHUTDOWN...\
+361/445 files checked 88% done\
+Checking platform/srf06-cc26xx/sensortag/buzzer.c ...\
+[platform/srf06-cc26xx/sensortag/buzzer.c:66]: (style) The scope of the variable 'load' can be reduced.\
+362/445 files checked 89% done\
+Checking platform/srf06-cc26xx/sensortag/ext-flash.c ...\
+[platform/srf06-cc26xx/sensortag/ext-flash.c:306]: (style) The scope of the variable 'ret' can be reduced.\
+[platform/srf06-cc26xx/sensortag/ext-flash.c:307]: (style) The scope of the variable 'ilen' can be reduced.\
+363/445 files checked 89% done\
+Checking platform/srf06-cc26xx/sensortag/hdc-1000-sensor.c ...\
+[platform/srf06-cc26xx/sensortag/hdc-1000-sensor.c:238]: (error) Uninitialized variable: rv\
+364/445 files checked 89% done\
+Checking platform/srf06-cc26xx/sensortag/leds-arch.c ...\
+365/445 files checked 89% done\
+Checking platform/srf06-cc26xx/sensortag/mpu-9250-sensor.c ...\
+[platform/srf06-cc26xx/sensortag/mpu-9250-sensor.c:375]: (style) Condition 'mpu_config==0' is always true\
+[platform/srf06-cc26xx/sensortag/mpu-9250-sensor.c:323] -> [platform/srf06-cc26xx/sensortag/mpu-9250-sensor.c:329]: (style) Variable 'success' is reassigned a value before the old one has been used.\
+Checking platform/srf06-cc26xx/sensortag/mpu-9250-sensor.c: MPU_9250_SENSOR_CONF_ACC_RANGE...\
+366/445 files checked 89% done\
+Checking platform/srf06-cc26xx/sensortag/opt-3001-sensor.c ...\
+367/445 files checked 89% done\
+Checking platform/srf06-cc26xx/sensortag/reed-relay.c ...\
+368/445 files checked 89% done\
+Checking platform/srf06-cc26xx/sensortag/sensor-common.c ...\
+369/445 files checked 89% done\
+Checking platform/srf06-cc26xx/sensortag/sensortag-sensors.c ...\
+370/445 files checked 89% done\
+Checking platform/srf06-cc26xx/sensortag/tmp-007-sensor.c ...\
+371/445 files checked 89% done\
+Checking platform/srf06-cc26xx/srf06/board.c ...\
+372/445 files checked 89% done\
+Checking platform/srf06-cc26xx/srf06/button-sensor.c ...\
+Checking platform/srf06-cc26xx/srf06/button-sensor.c: BUTTON_SENSOR_CONF_ENABLE_SHUTDOWN...\
+373/445 files checked 89% done\
+Checking platform/srf06-cc26xx/srf06/leds-arch.c ...\
+374/445 files checked 89% done\
+Checking platform/srf06-cc26xx/srf06/srf06-sensors.c ...\
+375/445 files checked 89% done\
+Checking platform/stm32test/Makefile ...\
+376/445 files checked 89% done\
+Checking platform/stm32test/Makefile.stm32test ...\
+[platform/stm32test/Makefile.stm32test:17]: (error) No header in #include\
+377/445 files checked 89% done\
+Checking platform/stm32test/contiki-conf.h ...\
+378/445 files checked 89% done\
+Checking platform/stm32test/contiki-main.c ...\
+379/445 files checked 90% done\
+Checking platform/stm32test/structgen_opts.gen.h ...\
+380/445 files checked 90% done\
+Checking platform/win32/Makefile ...\
+381/445 files checked 90% done\
+Checking platform/win32/Makefile.customrules-win32 ...\
+[platform/win32/Makefile.customrules-win32:26]: (error) syntax error\
+382/445 files checked 90% done\
+Checking platform/win32/Makefile.win32 ...\
+[platform/win32/Makefile.win32] -> [platform/win32/Makefile.win32]: (error) syntax error\
+383/445 files checked 90% done\
+Checking platform/win32/README-1.X.md ...\
+384/445 files checked 90% done\
+Checking platform/win32/README-VC.md ...\
+[platform/win32/README-VC.md:24]: (error) Invalid number of character '[' when no macros are defined.\
+385/445 files checked 90% done\
+Checking platform/win32/cfs/cfs-win32-dir.c ...\
+386/445 files checked 90% done\
+Checking platform/win32/clock.c ...\
+387/445 files checked 90% done\
+Checking platform/win32/conio.h ...\
+388/445 files checked 90% done\
+Checking platform/win32/contiki-conf.h ...\
+Checking platform/win32/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/win32/contiki-conf.h: PLATFORM_BUILD...\
+Checking platform/win32/contiki-conf.h: _USRDLL...\
+Checking platform/win32/contiki-conf.h: __CYGWIN__...\
+389/445 files checked 91% done\
+Checking platform/win32/contiki-main.c ...\
+Checking platform/win32/contiki-main.c: HARD_CODED_ADDRESS...\
+Checking platform/win32/contiki-main.c: HARD_CODED_ADDRESS;UIP_CONF_ROUTER...\
+Checking platform/win32/contiki-main.c: PLATFORM_BUILD...\
+Checking platform/win32/contiki-main.c: UIP_FALLBACK_INTERFACE...\
+Checking platform/win32/contiki-main.c: WITH_GUI...\
+390/445 files checked 91% done\
+Checking platform/win32/ctk/ctk-console.c ...\
+391/445 files checked 91% done\
+Checking platform/win32/loader/dll-loader.c ...\
+392/445 files checked 91% done\
+Checking platform/win32/loader/unload.c ...\
+393/445 files checked 91% done\
+Checking platform/wismote/Makefile.wismote ...\
+[platform/wismote/Makefile.wismote] -> [platform/wismote/Makefile.wismote]: (error) syntax error\
+394/445 files checked 91% done\
+Checking platform/wismote/cfs-coffee-arch.h ...\
+Checking platform/wismote/cfs-coffee-arch.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/wismote/cfs-coffee-arch.h: PROJECT_CONF_H...\
+[platform/wismote/contiki-conf.h:197]: (error) No header in #include\
+395/445 files checked 92% done\
+Checking platform/wismote/contiki-conf.h ...\
+Checking platform/wismote/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/wismote/contiki-conf.h: PROJECT_CONF_H...\
+396/445 files checked 92% done\
+Checking platform/wismote/contiki-wismote-main.c ...\
+[platform/wismote/contiki-wismote-main.c:342]: (warning) %u in format string (no. 4) requires 'unsigned int' but the argument type is 'signed int'.\
+Checking platform/wismote/contiki-wismote-main.c: EXPERIMENT_SETUP...\
+Checking platform/wismote/contiki-wismote-main.c: IEEE_802154_MAC_ADDRESS...\
+Checking platform/wismote/contiki-wismote-main.c: LOG_CONF_ENABLED...\
+Checking platform/wismote/contiki-wismote-main.c: NETSTACK_CONF_WITH_IPV6...\
+[platform/wismote/contiki-wismote-main.c:301]: (warning) %u in format string (no. 4) requires 'unsigned int' but the argument type is 'signed int'.\
+Checking platform/wismote/contiki-wismote-main.c: TIMESYNCH_CONF_ENABLED...\
+Checking platform/wismote/contiki-wismote-main.c: UIP_CONF_ROUTER...\
+Checking platform/wismote/contiki-wismote-main.c: UIP_CONF_ROUTER;UIP_CONF_ROUTER_MODULE...\
+397/445 files checked 93% done\
+Checking platform/wismote/contiki-wismote-platform.c ...\
+398/445 files checked 93% done\
+Checking platform/wismote/dev/acc-sensor.c ...\
+399/445 files checked 93% done\
+Checking platform/wismote/dev/battery-sensor.c ...\
+400/445 files checked 93% done\
+Checking platform/wismote/dev/button-sensor.c ...\
+401/445 files checked 93% done\
+Checking platform/wismote/dev/ext-sensor.c ...\
+402/445 files checked 93% done\
+Checking platform/wismote/dev/i2c.c ...\
+403/445 files checked 93% done\
+Checking platform/wismote/dev/light-sensor.c ...\
+404/445 files checked 93% done\
+Checking platform/wismote/dev/light.c ...\
+405/445 files checked 93% done\
+Checking platform/wismote/dev/radio-sensor.c ...\
+406/445 files checked 93% done\
+Checking platform/wismote/dev/sht15.c ...\
+407/445 files checked 93% done\
+Checking platform/wismote/dev/sky-sensors.c ...\
+408/445 files checked 94% done\
+Checking platform/wismote/dev/xmem.c ...\
+[platform/wismote/dev/xmem.c:224]: (style) The scope of the variable 'next_page' can be reduced.\
+[platform/wismote/dev/xmem.c:85]: (style) Variable 'u' is not assigned a value.\
+[platform/wismote/dev/xmem.c:177]: (style) Variable 'u' is not assigned a value.\
+[platform/wismote/dev/xmem.c:101]: (error) Uninitialized variable: u\
+[platform/wismote/dev/xmem.c:179]: (error) Uninitialized variable: u\
+409/445 files checked 94% done\
+Checking platform/wismote/flash.c ...\
+[platform/wismote/flash.c:80]: (style) Variable 'r' is not assigned a value.\
+[platform/wismote/flash.c:93]: (style) Variable 'r' is not assigned a value.\
+[platform/wismote/flash.c:82]: (error) Uninitialized variable: r\
+[platform/wismote/flash.c:95]: (error) Uninitialized variable: r\
+410/445 files checked 94% done\
+Checking platform/wismote/leds-arch.c ...\
+411/445 files checked 94% done\
+Checking platform/wismote/node-id.c ...\
+Checking platform/wismote/node-id.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/wismote/node-id.c: PROJECT_CONF_H...\
+412/445 files checked 94% done\
+Checking platform/wismote/platform-conf.h ...\
+413/445 files checked 95% done\
+Checking platform/z1/Makefile.common ...\
+[platform/z1/Makefile.common] -> [platform/z1/Makefile.common]: (error) syntax error\
+414/445 files checked 95% done\
+Checking platform/z1/Makefile.z1 ...\
+415/445 files checked 95% done\
+Checking platform/z1/Makefile.z1sp ...\
+416/445 files checked 95% done\
+Checking platform/z1/README.z1sp ...\
+[platform/z1/README.z1sp:9]: (error) syntax error\
+417/445 files checked 95% done\
+Checking platform/z1/apps/blink.c ...\
+418/445 files checked 95% done\
+Checking platform/z1/apps/burn-nodeid.c ...\
+Checking platform/z1/apps/burn-nodeid.c: NODEID...\
+419/445 files checked 95% done\
+Checking platform/z1/apps/fader.c ...\
+420/445 files checked 95% done\
+Checking platform/z1/cfs-coffee-arch.h ...\
+Checking platform/z1/cfs-coffee-arch.h: I2C_CONF_RX_WITH_INTERRUPT...\
+Checking platform/z1/cfs-coffee-arch.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/z1/cfs-coffee-arch.h: PROJECT_CONF_H...\
+[platform/z1/contiki-conf.h:191]: (error) No header in #include\
+Checking platform/z1/cfs-coffee-arch.h: RF_CHANNEL...\
+Checking platform/z1/cfs-coffee-arch.h: Z1_IS_Z1SP...\
+Checking platform/z1/cfs-coffee-arch.h: __GNUC__...\
+Checking platform/z1/cfs-coffee-arch.h: __IAR_SYSTEMS_ICC__...\
+421/445 files checked 95% done\
+Checking platform/z1/contiki-conf.h ...\
+Checking platform/z1/contiki-conf.h: I2C_CONF_RX_WITH_INTERRUPT...\
+Checking platform/z1/contiki-conf.h: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/z1/contiki-conf.h: PROJECT_CONF_H...\
+Checking platform/z1/contiki-conf.h: RF_CHANNEL...\
+Checking platform/z1/contiki-conf.h: Z1_IS_Z1SP...\
+Checking platform/z1/contiki-conf.h: __GNUC__...\
+Checking platform/z1/contiki-conf.h: __IAR_SYSTEMS_ICC__...\
+422/445 files checked 96% done\
+Checking platform/z1/contiki-z1-main.c ...\
+[platform/z1/contiki-z1-main.c:365]: (warning) %u in format string (no. 4) requires 'unsigned int' but the argument type is 'signed int'.\
+Checking platform/z1/contiki-z1-main.c: DCOSYNCH_CONF_ENABLED...\
+Checking platform/z1/contiki-z1-main.c: EXPERIMENT_SETUP...\
+Checking platform/z1/contiki-z1-main.c: I2C_CONF_RX_WITH_INTERRUPT...\
+Checking platform/z1/contiki-z1-main.c: IEEE_802154_MAC_ADDRESS...\
+Checking platform/z1/contiki-z1-main.c: LOG_CONF_ENABLED...\
+Checking platform/z1/contiki-z1-main.c: MACID...\
+Checking platform/z1/contiki-z1-main.c: NETSTACK_CONF_WITH_IPV6...\
+[platform/z1/contiki-z1-main.c:324]: (warning) %u in format string (no. 4) requires 'unsigned int' but the argument type is 'signed int'.\
+Checking platform/z1/contiki-z1-main.c: PROJECT_CONF_H...\
+Checking platform/z1/contiki-z1-main.c: RF_CHANNEL...\
+Checking platform/z1/contiki-z1-main.c: SERIALNUM...\
+Checking platform/z1/contiki-z1-main.c: TIMESYNCH_CONF_ENABLED...\
+Checking platform/z1/contiki-z1-main.c: Z1_IS_Z1SP...\
+Checking platform/z1/contiki-z1-main.c: __GNUC__...\
+Checking platform/z1/contiki-z1-main.c: __IAR_SYSTEMS_ICC__...\
+423/445 files checked 97% done\
+Checking platform/z1/contiki-z1-platform.c ...\
+424/445 files checked 97% done\
+Checking platform/z1/dev/adxl345.c ...\
+425/445 files checked 97% done\
+Checking platform/z1/dev/battery-sensor.c ...\
+426/445 files checked 97% done\
+Checking platform/z1/dev/button-sensor.c ...\
+427/445 files checked 97% done\
+Checking platform/z1/dev/cc2420-arch.c ...\
+428/445 files checked 97% done\
+Checking platform/z1/dev/i2cmaster.c ...\
+Checking platform/z1/dev/i2cmaster.c: I2C_RX_WITH_INTERRUPT...\
+429/445 files checked 97% done\
+Checking platform/z1/dev/light-sensor.c ...\
+Checking platform/z1/dev/light-sensor.c: POTENTIOMETER_MEM...\
+430/445 files checked 98% done\
+Checking platform/z1/dev/light-ziglet.c ...\
+[platform/z1/dev/light-ziglet.c:82]: (style) Unsigned variable 'lratio' can't be negative so it is unnecessary to test it.\
+[platform/z1/dev/light-ziglet.c:100]: (style) Checking if unsigned variable 'tmp' is less than zero.\
+431/445 files checked 98% done\
+Checking platform/z1/dev/light.c ...\
+432/445 files checked 98% done\
+Checking platform/z1/dev/potentiometer-sensor.c ...\
+433/445 files checked 98% done\
+Checking platform/z1/dev/radio-sensor.c ...\
+434/445 files checked 98% done\
+Checking platform/z1/dev/reed-sensor.c ...\
+435/445 files checked 98% done\
+Checking platform/z1/dev/relay-phidget.c ...\
+436/445 files checked 98% done\
+Checking platform/z1/dev/sht25.c ...\
+437/445 files checked 98% done\
+Checking platform/z1/dev/sky-sensors.c ...\
+[platform/z1/dev/sky-sensors.c:116]: (style) The scope of the variable 'c' can be reduced.\
+438/445 files checked 98% done\
+Checking platform/z1/dev/temperature-sensor.c ...\
+439/445 files checked 98% done\
+Checking platform/z1/dev/tlc59116.c ...\
+[platform/z1/dev/tlc59116.c:153]: (style) Checking if unsigned variable 'led' is less than zero.\
+440/445 files checked 98% done\
+Checking platform/z1/dev/tmp102.c ...\
+441/445 files checked 98% done\
+Checking platform/z1/dev/xmem.c ...\
+[platform/z1/dev/xmem.c:225]: (style) The scope of the variable 'next_page' can be reduced.\
+442/445 files checked 99% done\
+Checking platform/z1/dev/z1-phidgets.c ...\
+443/445 files checked 99% done\
+Checking platform/z1/node-id.c ...\
+Checking platform/z1/node-id.c: I2C_CONF_RX_WITH_INTERRUPT...\
+Checking platform/z1/node-id.c: NETSTACK_CONF_WITH_IPV6...\
+Checking platform/z1/node-id.c: PROJECT_CONF_H...\
+Checking platform/z1/node-id.c: RF_CHANNEL...\
+Checking platform/z1/node-id.c: Z1_IS_Z1SP...\
+Checking platform/z1/node-id.c: __GNUC__...\
+Checking platform/z1/node-id.c: __IAR_SYSTEMS_ICC__...\
+444/445 files checked 99% done\
+Checking platform/z1/platform-conf.h ...\
+Checking platform/z1/platform-conf.h: I2C_CONF_RX_WITH_INTERRUPT...\
+Checking platform/z1/platform-conf.h: Z1_IS_Z1SP...\
+Checking platform/z1/platform-conf.h: __GNUC__...\
+Checking platform/z1/platform-conf.h: __IAR_SYSTEMS_ICC__...\
+445/445 files checked 100% done\
+eduEEC8:contiki-3.0 Jack$ }

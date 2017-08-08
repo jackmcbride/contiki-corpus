@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<title>./resources/res-ble-advd.c</title>
+<style type="text/css">
+ body { color:#000000; background-color:#ffffff }
+ body { font-family:Helvetica, sans-serif; font-size:10pt }
+ h1 { font-size:14pt }
+ .code { border-collapse:collapse; width:100%; }
+ .code { font-family: "Monospace", monospace; font-size:10pt }
+ .code { line-height: 1.2em }
+ .comment { color: green; font-style: oblique }
+ .keyword { color: blue }
+ .string_literal { color: red }
+ .directive { color: darkmagenta }
+ .expansion { display: none; }
+ .macro:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000;   border-radius:5px;  box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 } 
+ .macro { color: darkmagenta; background-color:LemonChiffon; position: relative }
+ .num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+ .num { text-align:right; font-size:8pt }
+ .num { color:#444444 }
+ .line { padding-left: 1ex; border-left: 3px solid #ccc }
+ .line { white-space: pre }
+ .msg { -webkit-box-shadow:1px 1px 7px #000 }
+ .msg { box-shadow:1px 1px 7px #000 }
+ .msg { -webkit-border-radius:5px }
+ .msg { border-radius:5px }
+ .msg { font-family:Helvetica, sans-serif; font-size:8pt }
+ .msg { float:left }
+ .msg { padding:0.25em 1ex 0.25em 1ex }
+ .msg { margin-top:10px; margin-bottom:10px }
+ .msg { font-weight:bold }
+ .msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap }
+ .msgT { padding:0x; spacing:0x }
+ .msgEvent { background-color:#fff8b4; color:#000000 }
+ .msgControl { background-color:#bbbbbb; color:#000000 }
+ .msgNote { background-color:#ddeeff; color:#000000 }
+ .mrange { background-color:#dfddf3 }
+ .mrange { border-bottom:1px solid #6F9DBE }
+ .PathIndex { font-weight: bold; padding:0px 5px; margin-right:5px; }
+ .PathIndex { -webkit-border-radius:8px }
+ .PathIndex { border-radius:8px }
+ .PathIndexEvent { background-color:#bfba87 }
+ .PathIndexControl { background-color:#8c8c8c }
+ .PathNav a { text-decoration:none; font-size: larger }
+ .CodeInsertionHint { font-weight: bold; background-color: #10dd10 }
+ .CodeRemovalHint { background-color:#de1010 }
+ .CodeRemovalHint { border-bottom:1px solid #6F9DBE }
+ table.simpletable {
+   padding: 5px;
+   font-size:12pt;
+   margin:20px;
+   border-collapse: collapse; border-spacing: 0px;
+ }
+ td.rowname {
+   text-align: right;
+   vertical-align: top;
+   font-weight: bold;
+   color:#444444;
+   padding-right:2ex;
+ }
+</style>
+</head>
+<body>
+<!-- BUGDESC Value stored to 'len' is never read -->
+
+<!-- BUGTYPE Dead assignment -->
+
+<!-- BUGCATEGORY Dead store -->
+
+<!-- BUGFILE /Users/Jack/Documents/Computer_Science/Contiki/contiki-red-blue-team/examples/cc26xx/cc26xx-web-demo/./resources/res-ble-advd.c -->
+
+<!-- FILENAME res-ble-advd.c -->
+
+<!-- FUNCTIONNAME res_ble_post_put_handler -->
+
+<!-- ISSUEHASHCONTENTOFLINEINCONTEXT f951390fc0a3d6a97f6558b56362f5b7 -->
+
+<!-- BUGLINE 71 -->
+
+<!-- BUGCOLUMN 3 -->
+
+<!-- BUGPATHLENGTH 1 -->
+
+<!-- BUGMETAEND -->
+<!-- REPORTHEADER -->
+<h3>Bug Summary</h3>
+<table class="simpletable">
+<tr><td class="rowname">File:</td><td>examples/cc26xx/cc26xx-web-demo/./resources/res-ble-advd.c</td></tr>
+<tr><td class="rowname">Warning:</td><td><a href="#EndPath">line 71, column 3</a><br />Value stored to 'len' is never read</td></tr>
+</table>
+<!-- REPORTSUMMARYEXTRA -->
+<h3>Annotated Source Code</h3>
+<table class="code">
+<tr><td class="num" id="LN1">1</td><td class="line"><span class='comment'>/*</span></td></tr>
+<tr><td class="num" id="LN2">2</td><td class="line"> <span class='comment'>* Copyright (c) 2015, Texas Instruments Incorporated - http://www.ti.com/</span></td></tr>
+<tr><td class="num" id="LN3">3</td><td class="line"> <span class='comment'>* All rights reserved.</span></td></tr>
+<tr><td class="num" id="LN4">4</td><td class="line"> <span class='comment'>*</span></td></tr>
+<tr><td class="num" id="LN5">5</td><td class="line"> <span class='comment'>* Redistribution and use in source and binary forms, with or without</span></td></tr>
+<tr><td class="num" id="LN6">6</td><td class="line"> <span class='comment'>* modification, are permitted provided that the following conditions</span></td></tr>
+<tr><td class="num" id="LN7">7</td><td class="line"> <span class='comment'>* are met:</span></td></tr>
+<tr><td class="num" id="LN8">8</td><td class="line"> <span class='comment'>* 1. Redistributions of source code must retain the above copyright</span></td></tr>
+<tr><td class="num" id="LN9">9</td><td class="line"> <span class='comment'>*    notice, this list of conditions and the following disclaimer.</span></td></tr>
+<tr><td class="num" id="LN10">10</td><td class="line"> <span class='comment'>* 2. Redistributions in binary form must reproduce the above copyright</span></td></tr>
+<tr><td class="num" id="LN11">11</td><td class="line"> <span class='comment'>*    notice, this list of conditions and the following disclaimer in the</span></td></tr>
+<tr><td class="num" id="LN12">12</td><td class="line"> <span class='comment'>*    documentation and/or other materials provided with the distribution.</span></td></tr>
+<tr><td class="num" id="LN13">13</td><td class="line"> <span class='comment'>* 3. Neither the name of the Institute nor the names of its contributors</span></td></tr>
+<tr><td class="num" id="LN14">14</td><td class="line"> <span class='comment'>*    may be used to endorse or promote products derived from this software</span></td></tr>
+<tr><td class="num" id="LN15">15</td><td class="line"> <span class='comment'>*    without specific prior written permission.</span></td></tr>
+<tr><td class="num" id="LN16">16</td><td class="line"> <span class='comment'>*</span></td></tr>
+<tr><td class="num" id="LN17">17</td><td class="line"> <span class='comment'>* THIS SOFTWARE IS PROVIDED BY THE INSTITUTE AND CONTRIBUTORS ``AS IS'' AND</span></td></tr>
+<tr><td class="num" id="LN18">18</td><td class="line"> <span class='comment'>* ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span></td></tr>
+<tr><td class="num" id="LN19">19</td><td class="line"> <span class='comment'>* IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></td></tr>
+<tr><td class="num" id="LN20">20</td><td class="line"> <span class='comment'>* ARE DISCLAIMED.  IN NO EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE</span></td></tr>
+<tr><td class="num" id="LN21">21</td><td class="line"> <span class='comment'>* FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL</span></td></tr>
+<tr><td class="num" id="LN22">22</td><td class="line"> <span class='comment'>* DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS</span></td></tr>
+<tr><td class="num" id="LN23">23</td><td class="line"> <span class='comment'>* OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)</span></td></tr>
+<tr><td class="num" id="LN24">24</td><td class="line"> <span class='comment'>* HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</span></td></tr>
+<tr><td class="num" id="LN25">25</td><td class="line"> <span class='comment'>* LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY</span></td></tr>
+<tr><td class="num" id="LN26">26</td><td class="line"> <span class='comment'>* OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF</span></td></tr>
+<tr><td class="num" id="LN27">27</td><td class="line"> <span class='comment'>* SUCH DAMAGE.</span></td></tr>
+<tr><td class="num" id="LN28">28</td><td class="line"> <span class='comment'>*/</span></td></tr>
+<tr><td class="num" id="LN29">29</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN30">30</td><td class="line"><span class='comment'>/**</span></td></tr>
+<tr><td class="num" id="LN31">31</td><td class="line"> <span class='comment'>* \addtogroup cc26xx-web-demo</span></td></tr>
+<tr><td class="num" id="LN32">32</td><td class="line"> <span class='comment'>* @{</span></td></tr>
+<tr><td class="num" id="LN33">33</td><td class="line"> <span class='comment'>*</span></td></tr>
+<tr><td class="num" id="LN34">34</td><td class="line"> <span class='comment'>* \file</span></td></tr>
+<tr><td class="num" id="LN35">35</td><td class="line"> <span class='comment'>*      CoAP resource to start/stop/configure BLE advertisements</span></td></tr>
+<tr><td class="num" id="LN36">36</td><td class="line"> <span class='comment'>*/</span></td></tr>
+<tr><td class="num" id="LN37">37</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN38">38</td><td class="line"><span class='directive'>#include "contiki.h"</span></td></tr>
+<tr><td class="num" id="LN39">39</td><td class="line"><span class='directive'>#include "rest-engine.h"</span></td></tr>
+<tr><td class="num" id="LN40">40</td><td class="line"><span class='directive'>#include "er-coap.h"</span></td></tr>
+<tr><td class="num" id="LN41">41</td><td class="line"><span class='directive'>#include "rf-core/rf-ble.h"</span></td></tr>
+<tr><td class="num" id="LN42">42</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN43">43</td><td class="line"><span class='directive'>#include &lt;string.h&gt;</span></td></tr>
+<tr><td class="num" id="LN44">44</td><td class="line"><span class='directive'>#include &lt;stdlib.h&gt;</span></td></tr>
+<tr><td class="num" id="LN45">45</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN46">46</td><td class="line"><span class='directive'>#define <span class='macro'>BLE_NAME_BUF_LEN<span class='expansion'>32</span></span> 32</span></td></tr>
+<tr><td class="num" id="LN47">47</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN48">48</td><td class="line"><span class='keyword'>const</span> <span class='keyword'>char</span> *forbidden_payload = <span class='string_literal'>"Name to advertise unspecified.\n"</span></td></tr>
+<tr><td class="num" id="LN49">49</td><td class="line">                                <span class='string_literal'>"Use name=&lt;name&gt; in the request"</span>;</td></tr>
+<tr><td class="num" id="LN50">50</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN51">51</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN52">52</td><td class="line">res_ble_post_put_handler(<span class='keyword'>void</span> *request, <span class='keyword'>void</span> *response, uint8_t *buffer,</td></tr>
+<tr><td class="num" id="LN53">53</td><td class="line">                         uint16_t preferred_size, int32_t *offset)</td></tr>
+<tr><td class="num" id="LN54">54</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN55">55</td><td class="line">  size_t len = 0;</td></tr>
+<tr><td class="num" id="LN56">56</td><td class="line">  <span class='keyword'>const</span> <span class='keyword'>char</span> *text = <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>;</td></tr>
+<tr><td class="num" id="LN57">57</td><td class="line">  <span class='keyword'>char</span> name[<span class='macro'>BLE_NAME_BUF_LEN<span class='expansion'>32</span></span>];</td></tr>
+<tr><td class="num" id="LN58">58</td><td class="line">  <span class='keyword'>int</span> success = 0;</td></tr>
+<tr><td class="num" id="LN59">59</td><td class="line">  <span class='keyword'>int</span> rv;</td></tr>
+<tr><td class="num" id="LN60">60</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN61">61</td><td class="line">  <span class='macro'>memset(name, 0, BLE_NAME_BUF_LEN)<span class='expansion'>__builtin___memset_chk (name, 0, 32, __builtin_object_size (name<br>, 0))</span></span>;</td></tr>
+<tr><td class="num" id="LN62">62</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN63">63</td><td class="line">  len = <span class='macro'>REST<span class='expansion'>coap_rest_implementation</span></span>.get_post_variable(request, <span class='string_literal'>"name"</span>, &amp;text);</td></tr>
+<tr><td class="num" id="LN64">64</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN65">65</td><td class="line">  <span class='keyword'>if</span>(len &gt; 0 &amp;&amp; len &lt; <span class='macro'>BLE_NAME_BUF_LEN<span class='expansion'>32</span></span>) {</td></tr>
+<tr><td class="num" id="LN66">66</td><td class="line">    <span class='macro'>memcpy(name, text, len)<span class='expansion'>__builtin___memcpy_chk (name, text, len, __builtin_object_size<br> (name, 0))</span></span>;</td></tr>
+<tr><td class="num" id="LN67">67</td><td class="line">    rf_ble_beacond_config(0, name);</td></tr>
+<tr><td class="num" id="LN68">68</td><td class="line">    success = 1;</td></tr>
+<tr><td class="num" id="LN69">69</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN70">70</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN71">71</td><td class="line">  len = <span class="mrange"><span class='macro'>REST<span class='expansion'>coap_rest_implementation</span></span>.get_post_variable(request, <span class='string_literal'>"interval"</span>, &amp;text)</span>;</td></tr>
+<tr><td class="num"></td><td class="line"><div id="EndPath" class="msg msgEvent" style="margin-left:3ex">Value stored to 'len' is never read</div></td></tr>
+<tr><td class="num" id="LN72">72</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN73">73</td><td class="line">  rv = atoi(text);</td></tr>
+<tr><td class="num" id="LN74">74</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN75">75</td><td class="line">  <span class='keyword'>if</span>(rv &gt; 0) {</td></tr>
+<tr><td class="num" id="LN76">76</td><td class="line">    rf_ble_beacond_config((clock_time_t)(rv * <span class='macro'>CLOCK_SECOND<span class='expansion'>128</span></span>), <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>);</td></tr>
+<tr><td class="num" id="LN77">77</td><td class="line">    success = 1;</td></tr>
+<tr><td class="num" id="LN78">78</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN79">79</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN80">80</td><td class="line">  len = <span class='macro'>REST<span class='expansion'>coap_rest_implementation</span></span>.get_post_variable(request, <span class='string_literal'>"mode"</span>, &amp;text);</td></tr>
+<tr><td class="num" id="LN81">81</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN82">82</td><td class="line">  <span class='keyword'>if</span>(len) {</td></tr>
+<tr><td class="num" id="LN83">83</td><td class="line">    <span class='keyword'>if</span>(strncmp(text, <span class='string_literal'>"on"</span>, len) == 0) {</td></tr>
+<tr><td class="num" id="LN84">84</td><td class="line">      <span class='keyword'>if</span>(rf_ble_beacond_start()) {</td></tr>
+<tr><td class="num" id="LN85">85</td><td class="line">        success = 1;</td></tr>
+<tr><td class="num" id="LN86">86</td><td class="line">      } <span class='keyword'>else</span> {</td></tr>
+<tr><td class="num" id="LN87">87</td><td class="line">        <span class='macro'>REST<span class='expansion'>coap_rest_implementation</span></span>.set_response_status(response, <span class='macro'>REST<span class='expansion'>coap_rest_implementation</span></span>.status.FORBIDDEN);</td></tr>
+<tr><td class="num" id="LN88">88</td><td class="line">        <span class='macro'>REST<span class='expansion'>coap_rest_implementation</span></span>.set_response_payload(response, forbidden_payload,</td></tr>
+<tr><td class="num" id="LN89">89</td><td class="line">                                  strlen(forbidden_payload));</td></tr>
+<tr><td class="num" id="LN90">90</td><td class="line">        <span class='keyword'>return</span>;</td></tr>
+<tr><td class="num" id="LN91">91</td><td class="line">      }</td></tr>
+<tr><td class="num" id="LN92">92</td><td class="line">    } <span class='keyword'>else</span> <span class='keyword'>if</span>(strncmp(text, <span class='string_literal'>"off"</span>, len) == 0) {</td></tr>
+<tr><td class="num" id="LN93">93</td><td class="line">      rf_ble_beacond_stop();</td></tr>
+<tr><td class="num" id="LN94">94</td><td class="line">      success = 1;</td></tr>
+<tr><td class="num" id="LN95">95</td><td class="line">    } <span class='keyword'>else</span> {</td></tr>
+<tr><td class="num" id="LN96">96</td><td class="line">      success = 0;</td></tr>
+<tr><td class="num" id="LN97">97</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN98">98</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN99">99</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN100">100</td><td class="line">  <span class='keyword'>if</span>(!success) {</td></tr>
+<tr><td class="num" id="LN101">101</td><td class="line">    <span class='macro'>REST<span class='expansion'>coap_rest_implementation</span></span>.set_response_status(response, <span class='macro'>REST<span class='expansion'>coap_rest_implementation</span></span>.status.BAD_REQUEST);</td></tr>
+<tr><td class="num" id="LN102">102</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN103">103</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN104">104</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN105">105</td><td class="line"><span class='macro'>RESOURCE(res_ble_advd,<span class='expansion'>resource_t res_ble_advd = { ((void*)0), ((void*)0), NO_FLAGS,<br> "title=\"BLE advd config: POST/PUT name=&lt;name&gt;&amp;mode=on|off"<br> "&amp;interval=&lt;secs&gt;\";rt=\"Control\"", ((void*)0), res_ble_post_put_handler<br>, res_ble_post_put_handler, ((void*)0), { ((void*)0) } }</span></span></td></tr>
+<tr><td class="num" id="LN106">106</td><td class="line">         <span class='string_literal'><span class='macro'>"title=\"BLE advd config: POST/PUT name=&lt;name&gt;&amp;mode=on|off"<span class='expansion'>resource_t res_ble_advd = { ((void*)0), ((void*)0), NO_FLAGS,<br> "title=\"BLE advd config: POST/PUT name=&lt;name&gt;&amp;mode=on|off"<br> "&amp;interval=&lt;secs&gt;\";rt=\"Control\"", ((void*)0), res_ble_post_put_handler<br>, res_ble_post_put_handler, ((void*)0), { ((void*)0) } }</span></span></span></td></tr>
+<tr><td class="num" id="LN107">107</td><td class="line">         <span class='string_literal'><span class='macro'>"&amp;interval=&lt;secs&gt;\";rt=\"Control\""</span>,<span class='expansion'>resource_t res_ble_advd = { ((void*)0), ((void*)0), NO_FLAGS,<br> "title=\"BLE advd config: POST/PUT name=&lt;name&gt;&amp;mode=on|off"<br> "&amp;interval=&lt;secs&gt;\";rt=\"Control\"", ((void*)0), res_ble_post_put_handler<br>, res_ble_post_put_handler, ((void*)0), { ((void*)0) } }</span></span></td></tr>
+<tr><td class="num" id="LN108">108</td><td class="line">         <span class='macro'>NULL,<span class='expansion'>resource_t res_ble_advd = { ((void*)0), ((void*)0), NO_FLAGS,<br> "title=\"BLE advd config: POST/PUT name=&lt;name&gt;&amp;mode=on|off"<br> "&amp;interval=&lt;secs&gt;\";rt=\"Control\"", ((void*)0), res_ble_post_put_handler<br>, res_ble_post_put_handler, ((void*)0), { ((void*)0) } }</span></span></td></tr>
+<tr><td class="num" id="LN109">109</td><td class="line">         <span class='macro'>res_ble_post_put_handler,<span class='expansion'>resource_t res_ble_advd = { ((void*)0), ((void*)0), NO_FLAGS,<br> "title=\"BLE advd config: POST/PUT name=&lt;name&gt;&amp;mode=on|off"<br> "&amp;interval=&lt;secs&gt;\";rt=\"Control\"", ((void*)0), res_ble_post_put_handler<br>, res_ble_post_put_handler, ((void*)0), { ((void*)0) } }</span></span></td></tr>
+<tr><td class="num" id="LN110">110</td><td class="line">         <span class='macro'>res_ble_post_put_handler,<span class='expansion'>resource_t res_ble_advd = { ((void*)0), ((void*)0), NO_FLAGS,<br> "title=\"BLE advd config: POST/PUT name=&lt;name&gt;&amp;mode=on|off"<br> "&amp;interval=&lt;secs&gt;\";rt=\"Control\"", ((void*)0), res_ble_post_put_handler<br>, res_ble_post_put_handler, ((void*)0), { ((void*)0) } }</span></span></td></tr>
+<tr><td class="num" id="LN111">111</td><td class="line">         <span class='macro'>NULL)<span class='expansion'>resource_t res_ble_advd = { ((void*)0), ((void*)0), NO_FLAGS,<br> "title=\"BLE advd config: POST/PUT name=&lt;name&gt;&amp;mode=on|off"<br> "&amp;interval=&lt;secs&gt;\";rt=\"Control\"", ((void*)0), res_ble_post_put_handler<br>, res_ble_post_put_handler, ((void*)0), { ((void*)0) } }</span></span>;</td></tr>
+<tr><td class="num" id="LN112">112</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN113">113</td><td class="line"><span class='comment'>/** @} */</span></td></tr>
+</table></body></html>

@@ -1,0 +1,688 @@
+<!doctype html>
+<html>
+<head>
+<title>../../apps/shell/shell.c</title>
+<style type="text/css">
+ body { color:#000000; background-color:#ffffff }
+ body { font-family:Helvetica, sans-serif; font-size:10pt }
+ h1 { font-size:14pt }
+ .code { border-collapse:collapse; width:100%; }
+ .code { font-family: "Monospace", monospace; font-size:10pt }
+ .code { line-height: 1.2em }
+ .comment { color: green; font-style: oblique }
+ .keyword { color: blue }
+ .string_literal { color: red }
+ .directive { color: darkmagenta }
+ .expansion { display: none; }
+ .macro:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000;   border-radius:5px;  box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 } 
+ .macro { color: darkmagenta; background-color:LemonChiffon; position: relative }
+ .num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+ .num { text-align:right; font-size:8pt }
+ .num { color:#444444 }
+ .line { padding-left: 1ex; border-left: 3px solid #ccc }
+ .line { white-space: pre }
+ .msg { -webkit-box-shadow:1px 1px 7px #000 }
+ .msg { box-shadow:1px 1px 7px #000 }
+ .msg { -webkit-border-radius:5px }
+ .msg { border-radius:5px }
+ .msg { font-family:Helvetica, sans-serif; font-size:8pt }
+ .msg { float:left }
+ .msg { padding:0.25em 1ex 0.25em 1ex }
+ .msg { margin-top:10px; margin-bottom:10px }
+ .msg { font-weight:bold }
+ .msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap }
+ .msgT { padding:0x; spacing:0x }
+ .msgEvent { background-color:#fff8b4; color:#000000 }
+ .msgControl { background-color:#bbbbbb; color:#000000 }
+ .msgNote { background-color:#ddeeff; color:#000000 }
+ .mrange { background-color:#dfddf3 }
+ .mrange { border-bottom:1px solid #6F9DBE }
+ .PathIndex { font-weight: bold; padding:0px 5px; margin-right:5px; }
+ .PathIndex { -webkit-border-radius:8px }
+ .PathIndex { border-radius:8px }
+ .PathIndexEvent { background-color:#bfba87 }
+ .PathIndexControl { background-color:#8c8c8c }
+ .PathNav a { text-decoration:none; font-size: larger }
+ .CodeInsertionHint { font-weight: bold; background-color: #10dd10 }
+ .CodeRemovalHint { background-color:#de1010 }
+ .CodeRemovalHint { border-bottom:1px solid #6F9DBE }
+ table.simpletable {
+   padding: 5px;
+   font-size:12pt;
+   margin:20px;
+   border-collapse: collapse; border-spacing: 0px;
+ }
+ td.rowname {
+   text-align: right;
+   vertical-align: top;
+   font-weight: bold;
+   color:#444444;
+   padding-right:2ex;
+ }
+</style>
+</head>
+<body>
+<!-- BUGDESC Null pointer argument in call to string length function -->
+
+<!-- BUGTYPE Unix API -->
+
+<!-- BUGCATEGORY Logic error -->
+
+<!-- BUGFILE /Users/Jack/Documents/Computer_Science/Contiki/contiki-red-blue-team/examples/telnet-server/../../apps/shell/shell.c -->
+
+<!-- FILENAME shell.c -->
+
+<!-- FUNCTIONNAME shell_output_str -->
+
+<!-- ISSUEHASHCONTENTOFLINEINCONTEXT 1015b62c6a9f3d70cb38e3150d6d7e75 -->
+
+<!-- BUGLINE 390 -->
+
+<!-- BUGCOLUMN 17 -->
+
+<!-- BUGPATHLENGTH 9 -->
+
+<!-- BUGMETAEND -->
+<!-- REPORTHEADER -->
+<h3>Bug Summary</h3>
+<table class="simpletable">
+<tr><td class="rowname">File:</td><td>examples/telnet-server/../../apps/shell/shell.c</td></tr>
+<tr><td class="rowname">Warning:</td><td><a href="#EndPath">line 390, column 17</a><br />Null pointer argument in call to string length function</td></tr>
+</table>
+<!-- REPORTSUMMARYEXTRA -->
+<h3>Annotated Source Code</h3>
+<table class="code">
+<tr><td class="num" id="LN1">1</td><td class="line"><span class='comment'>/*</span></td></tr>
+<tr><td class="num" id="LN2">2</td><td class="line"> <span class='comment'>* Copyright (c) 2008, Swedish Institute of Computer Science.</span></td></tr>
+<tr><td class="num" id="LN3">3</td><td class="line"> <span class='comment'>* All rights reserved.</span></td></tr>
+<tr><td class="num" id="LN4">4</td><td class="line"> <span class='comment'>*</span></td></tr>
+<tr><td class="num" id="LN5">5</td><td class="line"> <span class='comment'>* Redistribution and use in source and binary forms, with or without</span></td></tr>
+<tr><td class="num" id="LN6">6</td><td class="line"> <span class='comment'>* modification, are permitted provided that the following conditions</span></td></tr>
+<tr><td class="num" id="LN7">7</td><td class="line"> <span class='comment'>* are met:</span></td></tr>
+<tr><td class="num" id="LN8">8</td><td class="line"> <span class='comment'>* 1. Redistributions of source code must retain the above copyright</span></td></tr>
+<tr><td class="num" id="LN9">9</td><td class="line"> <span class='comment'>*    notice, this list of conditions and the following disclaimer.</span></td></tr>
+<tr><td class="num" id="LN10">10</td><td class="line"> <span class='comment'>* 2. Redistributions in binary form must reproduce the above copyright</span></td></tr>
+<tr><td class="num" id="LN11">11</td><td class="line"> <span class='comment'>*    notice, this list of conditions and the following disclaimer in the</span></td></tr>
+<tr><td class="num" id="LN12">12</td><td class="line"> <span class='comment'>*    documentation and/or other materials provided with the distribution.</span></td></tr>
+<tr><td class="num" id="LN13">13</td><td class="line"> <span class='comment'>* 3. Neither the name of the Institute nor the names of its contributors</span></td></tr>
+<tr><td class="num" id="LN14">14</td><td class="line"> <span class='comment'>*    may be used to endorse or promote products derived from this software</span></td></tr>
+<tr><td class="num" id="LN15">15</td><td class="line"> <span class='comment'>*    without specific prior written permission.</span></td></tr>
+<tr><td class="num" id="LN16">16</td><td class="line"> <span class='comment'>*</span></td></tr>
+<tr><td class="num" id="LN17">17</td><td class="line"> <span class='comment'>* THIS SOFTWARE IS PROVIDED BY THE INSTITUTE AND CONTRIBUTORS ``AS IS'' AND</span></td></tr>
+<tr><td class="num" id="LN18">18</td><td class="line"> <span class='comment'>* ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span></td></tr>
+<tr><td class="num" id="LN19">19</td><td class="line"> <span class='comment'>* IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></td></tr>
+<tr><td class="num" id="LN20">20</td><td class="line"> <span class='comment'>* ARE DISCLAIMED.  IN NO EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE</span></td></tr>
+<tr><td class="num" id="LN21">21</td><td class="line"> <span class='comment'>* FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL</span></td></tr>
+<tr><td class="num" id="LN22">22</td><td class="line"> <span class='comment'>* DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS</span></td></tr>
+<tr><td class="num" id="LN23">23</td><td class="line"> <span class='comment'>* OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)</span></td></tr>
+<tr><td class="num" id="LN24">24</td><td class="line"> <span class='comment'>* HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</span></td></tr>
+<tr><td class="num" id="LN25">25</td><td class="line"> <span class='comment'>* LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY</span></td></tr>
+<tr><td class="num" id="LN26">26</td><td class="line"> <span class='comment'>* OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF</span></td></tr>
+<tr><td class="num" id="LN27">27</td><td class="line"> <span class='comment'>* SUCH DAMAGE.</span></td></tr>
+<tr><td class="num" id="LN28">28</td><td class="line"> <span class='comment'>*</span></td></tr>
+<tr><td class="num" id="LN29">29</td><td class="line"> <span class='comment'>* This file is part of the Contiki operating system.</span></td></tr>
+<tr><td class="num" id="LN30">30</td><td class="line"> <span class='comment'>*</span></td></tr>
+<tr><td class="num" id="LN31">31</td><td class="line"> <span class='comment'>*/</span></td></tr>
+<tr><td class="num" id="LN32">32</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN33">33</td><td class="line"><span class='comment'>/**</span></td></tr>
+<tr><td class="num" id="LN34">34</td><td class="line"> <span class='comment'>* \file</span></td></tr>
+<tr><td class="num" id="LN35">35</td><td class="line"> <span class='comment'>*         The shell application</span></td></tr>
+<tr><td class="num" id="LN36">36</td><td class="line"> <span class='comment'>* \author</span></td></tr>
+<tr><td class="num" id="LN37">37</td><td class="line"> <span class='comment'>*         Adam Dunkels &lt;adam@sics.se&gt;</span></td></tr>
+<tr><td class="num" id="LN38">38</td><td class="line"> <span class='comment'>*/</span></td></tr>
+<tr><td class="num" id="LN39">39</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN40">40</td><td class="line"><span class='comment'>/**</span></td></tr>
+<tr><td class="num" id="LN41">41</td><td class="line"> <span class='comment'>* \addtogroup shell</span></td></tr>
+<tr><td class="num" id="LN42">42</td><td class="line"> <span class='comment'>* @{</span></td></tr>
+<tr><td class="num" id="LN43">43</td><td class="line"> <span class='comment'>*/</span></td></tr>
+<tr><td class="num" id="LN44">44</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN45">45</td><td class="line"><span class='directive'>#include "contiki.h"</span></td></tr>
+<tr><td class="num" id="LN46">46</td><td class="line"><span class='directive'>#include "contiki-lib.h"</span></td></tr>
+<tr><td class="num" id="LN47">47</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN48">48</td><td class="line"><span class='directive'>#include "net/rime/rime.h"</span></td></tr>
+<tr><td class="num" id="LN49">49</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN50">50</td><td class="line"><span class='directive'>#include "shell.h"</span></td></tr>
+<tr><td class="num" id="LN51">51</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN52">52</td><td class="line"><span class='directive'>#include &lt;ctype.h&gt;</span></td></tr>
+<tr><td class="num" id="LN53">53</td><td class="line"><span class='directive'>#include &lt;string.h&gt;</span></td></tr>
+<tr><td class="num" id="LN54">54</td><td class="line"><span class='directive'>#include &lt;stdio.h&gt;</span></td></tr>
+<tr><td class="num" id="LN55">55</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN56">56</td><td class="line"><span class='directive'>#ifdef SHELL_CONF_PROMPT</span></td></tr>
+<tr><td class="num" id="LN57">57</td><td class="line"><span class='keyword'>extern</span> <span class='keyword'>char</span> shell_prompt_text[];</td></tr>
+<tr><td class="num" id="LN58">58</td><td class="line"><span class='directive'>#else</span></td></tr>
+<tr><td class="num" id="LN59">59</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>char</span> shell_prompt_text[] = <span class='string_literal'>"Contiki&gt; "</span>;</td></tr>
+<tr><td class="num" id="LN60">60</td><td class="line"><span class='directive'>#endif</span></td></tr>
+<tr><td class="num" id="LN61">61</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN62">62</td><td class="line"><span class='directive'>#ifdef SHELL_CONF_BANNER</span></td></tr>
+<tr><td class="num" id="LN63">63</td><td class="line"><span class='keyword'>extern</span> <span class='keyword'>char</span> shell_banner_text[];</td></tr>
+<tr><td class="num" id="LN64">64</td><td class="line"><span class='directive'>#else</span></td></tr>
+<tr><td class="num" id="LN65">65</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>char</span> shell_banner_text[] = <span class='string_literal'>"Contiki command shell"</span>;</td></tr>
+<tr><td class="num" id="LN66">66</td><td class="line"><span class='directive'>#endif</span></td></tr>
+<tr><td class="num" id="LN67">67</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN68">68</td><td class="line"><span class='macro'>LIST(commands)<span class='expansion'>static void *commands_list = ((void*)0); static list_t commands<br> = (list_t)&amp;commands_list</span></span>;</td></tr>
+<tr><td class="num" id="LN69">69</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN70">70</td><td class="line"><span class='keyword'>int</span> shell_event_input;</td></tr>
+<tr><td class="num" id="LN71">71</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN72">72</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>struct</span> process *front_process;</td></tr>
+<tr><td class="num" id="LN73">73</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN74">74</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>unsigned</span> <span class='keyword'>long</span> time_offset;</td></tr>
+<tr><td class="num" id="LN75">75</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN76">76</td><td class="line"><span class='macro'>PROCESS(shell_process, <span class='string_literal'>"Shell"</span>)<span class='expansion'>static char process_thread_shell_process(struct pt *process_pt<br>, process_event_t ev, process_data_t data); struct process shell_process<br> = { ((void*)0), "Shell", process_thread_shell_process }</span></span>;</td></tr>
+<tr><td class="num" id="LN77">77</td><td class="line"><span class='macro'>PROCESS(shell_server_process, <span class='string_literal'>"Shell server"</span>)<span class='expansion'>static char process_thread_shell_server_process(struct pt *process_pt<br>, process_event_t ev, process_data_t data); struct process shell_server_process<br> = { ((void*)0), "Shell server", process_thread_shell_server_process<br> }</span></span>;</td></tr>
+<tr><td class="num" id="LN78">78</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN79">79</td><td class="line"><span class='macro'>PROCESS(help_command_process, <span class='string_literal'>"help"</span>)<span class='expansion'>static char process_thread_help_command_process(struct pt *process_pt<br>, process_event_t ev, process_data_t data); struct process help_command_process<br> = { ((void*)0), "help", process_thread_help_command_process }</span></span>;</td></tr>
+<tr><td class="num" id="LN80">80</td><td class="line"><span class='macro'>SHELL_COMMAND(help_command, <span class='string_literal'>"help"</span>, <span class='string_literal'>"help: shows this help"</span>,<span class='expansion'>static struct shell_command help_command = { ((void*)0), "help"<br>, "help: shows this help", &amp;help_command_process }</span></span></td></tr>
+<tr><td class="num" id="LN81">81</td><td class="line">	      <span class='macro'>&amp;help_command_process)<span class='expansion'>static struct shell_command help_command = { ((void*)0), "help"<br>, "help: shows this help", &amp;help_command_process }</span></span>;</td></tr>
+<tr><td class="num" id="LN82">82</td><td class="line"><span class='macro'>SHELL_COMMAND(question_command, <span class='string_literal'>"?"</span>, <span class='string_literal'>"?: shows this help"</span>,<span class='expansion'>static struct shell_command question_command = { ((void*)0), "?"<br>, "?: shows this help", &amp;help_command_process }</span></span></td></tr>
+<tr><td class="num" id="LN83">83</td><td class="line">	      <span class='macro'>&amp;help_command_process)<span class='expansion'>static struct shell_command question_command = { ((void*)0), "?"<br>, "?: shows this help", &amp;help_command_process }</span></span>;</td></tr>
+<tr><td class="num" id="LN84">84</td><td class="line"><span class='macro'>PROCESS(shell_killall_process, <span class='string_literal'>"killall"</span>)<span class='expansion'>static char process_thread_shell_killall_process(struct pt *process_pt<br>, process_event_t ev, process_data_t data); struct process shell_killall_process<br> = { ((void*)0), "killall", process_thread_shell_killall_process<br> }</span></span>;</td></tr>
+<tr><td class="num" id="LN85">85</td><td class="line"><span class='macro'>SHELL_COMMAND(killall_command, <span class='string_literal'>"killall"</span>, <span class='string_literal'>"killall: stop all running commands"</span>,<span class='expansion'>static struct shell_command killall_command = { ((void*)0), "killall"<br>, "killall: stop all running commands", &amp;shell_killall_process<br> }</span></span></td></tr>
+<tr><td class="num" id="LN86">86</td><td class="line">	      <span class='macro'>&amp;shell_killall_process)<span class='expansion'>static struct shell_command killall_command = { ((void*)0), "killall"<br>, "killall: stop all running commands", &amp;shell_killall_process<br> }</span></span>;</td></tr>
+<tr><td class="num" id="LN87">87</td><td class="line"><span class='macro'>PROCESS(shell_kill_process, <span class='string_literal'>"kill"</span>)<span class='expansion'>static char process_thread_shell_kill_process(struct pt *process_pt<br>, process_event_t ev, process_data_t data); struct process shell_kill_process<br> = { ((void*)0), "kill", process_thread_shell_kill_process }</span></span>;</td></tr>
+<tr><td class="num" id="LN88">88</td><td class="line"><span class='macro'>SHELL_COMMAND(kill_command, <span class='string_literal'>"kill"</span>, <span class='string_literal'>"kill &lt;command&gt;: stop a specific command"</span>,<span class='expansion'>static struct shell_command kill_command = { ((void*)0), "kill"<br>, "kill &lt;command&gt;: stop a specific command", &amp;shell_kill_process<br> }</span></span></td></tr>
+<tr><td class="num" id="LN89">89</td><td class="line">	      <span class='macro'>&amp;shell_kill_process)<span class='expansion'>static struct shell_command kill_command = { ((void*)0), "kill"<br>, "kill &lt;command&gt;: stop a specific command", &amp;shell_kill_process<br> }</span></span>;</td></tr>
+<tr><td class="num" id="LN90">90</td><td class="line"><span class='macro'>PROCESS(shell_null_process, <span class='string_literal'>"null"</span>)<span class='expansion'>static char process_thread_shell_null_process(struct pt *process_pt<br>, process_event_t ev, process_data_t data); struct process shell_null_process<br> = { ((void*)0), "null", process_thread_shell_null_process }</span></span>;</td></tr>
+<tr><td class="num" id="LN91">91</td><td class="line"><span class='macro'>SHELL_COMMAND(null_command, <span class='string_literal'>"null"</span>, <span class='string_literal'>"null: discard input"</span>,<span class='expansion'>static struct shell_command null_command = { ((void*)0), "null"<br>, "null: discard input", &amp;shell_null_process }</span></span></td></tr>
+<tr><td class="num" id="LN92">92</td><td class="line">	      <span class='macro'>&amp;shell_null_process)<span class='expansion'>static struct shell_command null_command = { ((void*)0), "null"<br>, "null: discard input", &amp;shell_null_process }</span></span>;</td></tr>
+<tr><td class="num" id="LN93">93</td><td class="line"><span class='macro'>PROCESS(shell_exit_process, <span class='string_literal'>"exit"</span>)<span class='expansion'>static char process_thread_shell_exit_process(struct pt *process_pt<br>, process_event_t ev, process_data_t data); struct process shell_exit_process<br> = { ((void*)0), "exit", process_thread_shell_exit_process }</span></span>;</td></tr>
+<tr><td class="num" id="LN94">94</td><td class="line"><span class='macro'>SHELL_COMMAND(exit_command, <span class='string_literal'>"exit"</span>, <span class='string_literal'>"exit: exit shell"</span>,<span class='expansion'>static struct shell_command exit_command = { ((void*)0), "exit"<br>, "exit: exit shell", &amp;shell_exit_process }</span></span></td></tr>
+<tr><td class="num" id="LN95">95</td><td class="line">	      <span class='macro'>&amp;shell_exit_process)<span class='expansion'>static struct shell_command exit_command = { ((void*)0), "exit"<br>, "exit: exit shell", &amp;shell_exit_process }</span></span>;</td></tr>
+<tr><td class="num" id="LN96">96</td><td class="line"><span class='macro'>SHELL_COMMAND(quit_command, <span class='string_literal'>"quit"</span>, <span class='string_literal'>"quit: exit shell"</span>,<span class='expansion'>static struct shell_command quit_command = { ((void*)0), "quit"<br>, "quit: exit shell", &amp;shell_exit_process }</span></span></td></tr>
+<tr><td class="num" id="LN97">97</td><td class="line">	      <span class='macro'>&amp;shell_exit_process)<span class='expansion'>static struct shell_command quit_command = { ((void*)0), "quit"<br>, "quit: exit shell", &amp;shell_exit_process }</span></span>;</td></tr>
+<tr><td class="num" id="LN98">98</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN99">99</td><td class="line"><span class='macro'>PROCESS_THREAD(shell_null_process, ev, data)<span class='expansion'>static char process_thread_shell_null_process(struct pt *process_pt<br>, process_event_t ev, process_data_t data)</span></span></td></tr>
+<tr><td class="num" id="LN100">100</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN101">101</td><td class="line">  <span class='keyword'>struct</span> shell_input *input;</td></tr>
+<tr><td class="num" id="LN102">102</td><td class="line">  <span class='macro'>PROCESS_BEGIN()<span class='expansion'>{ char PT_YIELD_FLAG = 1; if (PT_YIELD_FLAG) {;} switch((process_pt<br>)-&gt;lc) { case 0:</span></span>;</td></tr>
+<tr><td class="num" id="LN103">103</td><td class="line">  <span class='keyword'>while</span>(1) {</td></tr>
+<tr><td class="num" id="LN104">104</td><td class="line">    <span class='macro'>PROCESS_WAIT_EVENT_UNTIL(ev == shell_event_input)<span class='expansion'>do { PT_YIELD_FLAG = 0; (process_pt)-&gt;lc = 104; case 104:;<br> if((PT_YIELD_FLAG == 0) || !(ev == shell_event_input)) { return<br> 1; } } while(0)</span></span>;</td></tr>
+<tr><td class="num" id="LN105">105</td><td class="line">    input = data;</td></tr>
+<tr><td class="num" id="LN106">106</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN107">107</td><td class="line">    <span class='keyword'>if</span>(input-&gt;len1 + input-&gt;len2 == 0) {</td></tr>
+<tr><td class="num" id="LN108">108</td><td class="line">      <span class='macro'>PROCESS_EXIT()<span class='expansion'>do { (process_pt)-&gt;lc = 0;; return 2; } while(0)</span></span>;</td></tr>
+<tr><td class="num" id="LN109">109</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN110">110</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN111">111</td><td class="line">  <span class='macro'>PROCESS_END()<span class='expansion'>}; PT_YIELD_FLAG = 0; (process_pt)-&gt;lc = 0;; return 3; }</span></span>;</td></tr>
+<tr><td class="num" id="LN112">112</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN113">113</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN114">114</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN115">115</td><td class="line">command_kill(<span class='keyword'>struct</span> shell_command *c)</td></tr>
+<tr><td class="num" id="LN116">116</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN117">117</td><td class="line">  <span class='keyword'>if</span>(c != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num" id="LN118">118</td><td class="line">    shell_output_str(&amp;killall_command, <span class='string_literal'>"Stopping command "</span>, c-&gt;command);</td></tr>
+<tr><td class="num" id="LN119">119</td><td class="line">    process_exit(c-&gt;process);</td></tr>
+<tr><td class="num" id="LN120">120</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN121">121</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN122">122</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN123">123</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN124">124</td><td class="line">killall(<span class='keyword'>void</span>)</td></tr>
+<tr><td class="num" id="LN125">125</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN126">126</td><td class="line">  <span class='keyword'>struct</span> shell_command *c;</td></tr>
+<tr><td class="num" id="LN127">127</td><td class="line">  <span class='keyword'>for</span>(c = list_head(commands);</td></tr>
+<tr><td class="num" id="LN128">128</td><td class="line">      c != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>;</td></tr>
+<tr><td class="num" id="LN129">129</td><td class="line">      c = c-&gt;next) {</td></tr>
+<tr><td class="num" id="LN130">130</td><td class="line">    <span class='keyword'>if</span>(c != &amp;killall_command &amp;&amp; process_is_running(c-&gt;process)) {</td></tr>
+<tr><td class="num" id="LN131">131</td><td class="line">      command_kill(c);</td></tr>
+<tr><td class="num" id="LN132">132</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN133">133</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN134">134</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN135">135</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN136">136</td><td class="line"><span class='macro'>PROCESS_THREAD(shell_killall_process, ev, data)<span class='expansion'>static char process_thread_shell_killall_process(struct pt *process_pt<br>, process_event_t ev, process_data_t data)</span></span></td></tr>
+<tr><td class="num" id="LN137">137</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN138">138</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN139">139</td><td class="line">  <span class='macro'>PROCESS_BEGIN()<span class='expansion'>{ char PT_YIELD_FLAG = 1; if (PT_YIELD_FLAG) {;} switch((process_pt<br>)-&gt;lc) { case 0:</span></span>;</td></tr>
+<tr><td class="num" id="LN140">140</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN141">141</td><td class="line">  killall();</td></tr>
+<tr><td class="num" id="LN142">142</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN143">143</td><td class="line">  <span class='macro'>PROCESS_END()<span class='expansion'>}; PT_YIELD_FLAG = 0; (process_pt)-&gt;lc = 0;; return 3; }</span></span>;</td></tr>
+<tr><td class="num" id="LN144">144</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN145">145</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN146">146</td><td class="line"><span class='macro'>PROCESS_THREAD(shell_kill_process, ev, data)<span class='expansion'>static char process_thread_shell_kill_process(struct pt *process_pt<br>, process_event_t ev, process_data_t data)</span></span></td></tr>
+<tr><td class="num" id="LN147">147</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN148">148</td><td class="line">  <span class='keyword'>struct</span> shell_command *c;</td></tr>
+<tr><td class="num" id="LN149">149</td><td class="line">  <span class='keyword'>char</span> *name;</td></tr>
+<tr><td class="num" id="LN150">150</td><td class="line">  <span class='macro'>PROCESS_BEGIN()<span class='expansion'>{ char PT_YIELD_FLAG = 1; if (PT_YIELD_FLAG) {;} switch((process_pt<br>)-&gt;lc) { case 0:</span></span>;</td></tr>
+<tr><td class="num" id="LN151">151</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN152">152</td><td class="line">  <span class="mrange">name = data</span>;</td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path1" class="msg msgEvent" style="margin-left:3ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">1</div></td><td>Value assigned to 'name'</td><td><div class="PathNav"><a href="#Path2" title="Next event (2)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr><td class="num" id="LN153">153</td><td class="line">  <span class='keyword'>if</span>(<span class="mrange">name == <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span></span> || strlen(name) == 0) {</td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path2" class="msg msgEvent" style="margin-left:6ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">2</div></td><td><div class="PathNav"><a href="#Path1" title="Previous event (1)">&#x2190;</a></div></td></td><td>Assuming 'name' is equal to null</td><td><div class="PathNav"><a href="#Path3" title="Next event (3)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr><td class="num" id="LN154">154</td><td class="line">    shell_output_str(&amp;kill_command,</td></tr>
+<tr><td class="num" id="LN155">155</td><td class="line">		     <span class='string_literal'>"kill &lt;command&gt;: command name must be given"</span>, <span class='string_literal'>""</span>);</td></tr>
+<tr><td class="num" id="LN156">156</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN157">157</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN158">158</td><td class="line">  <span class='keyword'>for</span>(c = list_head(commands);</td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path4" class="msg msgControl" style="margin-left:3ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexControl">4</div></td><td><div class="PathNav"><a href="#Path3" title="Previous event (3)">&#x2190;</a></div></td></td><td>Loop condition is false. Execution continues on line 169</td><td><div class="PathNav"><a href="#Path5" title="Next event (5)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr><td class="num" id="LN159">159</td><td class="line">      <span class="mrange">c != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span></span>;</td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path3" class="msg msgEvent" style="margin-left:7ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">3</div></td><td><div class="PathNav"><a href="#Path2" title="Previous event (2)">&#x2190;</a></div></td></td><td>Assuming 'c' is equal to null</td><td><div class="PathNav"><a href="#Path4" title="Next event (4)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr><td class="num" id="LN160">160</td><td class="line">      c = c-&gt;next) {</td></tr>
+<tr><td class="num" id="LN161">161</td><td class="line">    <span class='keyword'>if</span>(strcmp(name, c-&gt;command) == 0 &amp;&amp;</td></tr>
+<tr><td class="num" id="LN162">162</td><td class="line">       c != &amp;kill_command &amp;&amp;</td></tr>
+<tr><td class="num" id="LN163">163</td><td class="line">       process_is_running(c-&gt;process)) {</td></tr>
+<tr><td class="num" id="LN164">164</td><td class="line">      command_kill(c);</td></tr>
+<tr><td class="num" id="LN165">165</td><td class="line">      <span class='macro'>PROCESS_EXIT()<span class='expansion'>do { (process_pt)-&gt;lc = 0;; return 2; } while(0)</span></span>;</td></tr>
+<tr><td class="num" id="LN166">166</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN167">167</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN168">168</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN169">169</td><td class="line">  <span class="mrange">shell_output_str(&amp;kill_command, <span class='string_literal'>"Command not found: "</span>, <span class="mrange">name</span>)</span>;</td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path5" class="msg msgEvent" style="margin-left:58ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">5</div></td><td><div class="PathNav"><a href="#Path4" title="Previous event (4)">&#x2190;</a></div></td></td><td>Passing null pointer value via 3rd parameter 'text2'</td><td><div class="PathNav"><a href="#Path6" title="Next event (6)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path6" class="msg msgEvent" style="margin-left:3ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">6</div></td><td><div class="PathNav"><a href="#Path5" title="Previous event (5)">&#x2190;</a></div></td></td><td>Calling 'shell_output_str'</td><td><div class="PathNav"><a href="#Path7" title="Next event (7)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr><td class="num" id="LN170">170</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN171">171</td><td class="line">  <span class='macro'>PROCESS_END()<span class='expansion'>}; PT_YIELD_FLAG = 0; (process_pt)-&gt;lc = 0;; return 3; }</span></span>;</td></tr>
+<tr><td class="num" id="LN172">172</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN173">173</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN174">174</td><td class="line"><span class='macro'>PROCESS_THREAD(help_command_process, ev, data)<span class='expansion'>static char process_thread_help_command_process(struct pt *process_pt<br>, process_event_t ev, process_data_t data)</span></span></td></tr>
+<tr><td class="num" id="LN175">175</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN176">176</td><td class="line">  <span class='keyword'>struct</span> shell_command *c;</td></tr>
+<tr><td class="num" id="LN177">177</td><td class="line">  <span class='macro'>PROCESS_BEGIN()<span class='expansion'>{ char PT_YIELD_FLAG = 1; if (PT_YIELD_FLAG) {;} switch((process_pt<br>)-&gt;lc) { case 0:</span></span>;</td></tr>
+<tr><td class="num" id="LN178">178</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN179">179</td><td class="line">  shell_output_str(&amp;help_command, <span class='string_literal'>"Available commands:"</span>, <span class='string_literal'>""</span>);</td></tr>
+<tr><td class="num" id="LN180">180</td><td class="line">  <span class='keyword'>for</span>(c = list_head(commands);</td></tr>
+<tr><td class="num" id="LN181">181</td><td class="line">      c != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>;</td></tr>
+<tr><td class="num" id="LN182">182</td><td class="line">      c = c-&gt;next) {</td></tr>
+<tr><td class="num" id="LN183">183</td><td class="line">    shell_output_str(&amp;help_command, c-&gt;description, <span class='string_literal'>""</span>);</td></tr>
+<tr><td class="num" id="LN184">184</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN185">185</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN186">186</td><td class="line">  <span class='macro'>PROCESS_END()<span class='expansion'>}; PT_YIELD_FLAG = 0; (process_pt)-&gt;lc = 0;; return 3; }</span></span>;</td></tr>
+<tr><td class="num" id="LN187">187</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN188">188</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN189">189</td><td class="line"><span class='macro'>PROCESS_THREAD(shell_exit_process, ev, data)<span class='expansion'>static char process_thread_shell_exit_process(struct pt *process_pt<br>, process_event_t ev, process_data_t data)</span></span></td></tr>
+<tr><td class="num" id="LN190">190</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN191">191</td><td class="line">  <span class='macro'>PROCESS_BEGIN()<span class='expansion'>{ char PT_YIELD_FLAG = 1; if (PT_YIELD_FLAG) {;} switch((process_pt<br>)-&gt;lc) { case 0:</span></span>;</td></tr>
+<tr><td class="num" id="LN192">192</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN193">193</td><td class="line">  shell_exit();</td></tr>
+<tr><td class="num" id="LN194">194</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN195">195</td><td class="line">  <span class='macro'>PROCESS_END()<span class='expansion'>}; PT_YIELD_FLAG = 0; (process_pt)-&gt;lc = 0;; return 3; }</span></span>;</td></tr>
+<tr><td class="num" id="LN196">196</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN197">197</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN198">198</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN199">199</td><td class="line">replace_braces(<span class='keyword'>char</span> *commandline)</td></tr>
+<tr><td class="num" id="LN200">200</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN201">201</td><td class="line">  <span class='keyword'>char</span> *ptr;</td></tr>
+<tr><td class="num" id="LN202">202</td><td class="line">  <span class='keyword'>int</span> level = 0;</td></tr>
+<tr><td class="num" id="LN203">203</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN204">204</td><td class="line">  <span class='keyword'>for</span>(ptr = commandline; *ptr != 0; ++ptr) {</td></tr>
+<tr><td class="num" id="LN205">205</td><td class="line">    <span class='keyword'>if</span>(*ptr == '{') {</td></tr>
+<tr><td class="num" id="LN206">206</td><td class="line">      <span class='keyword'>if</span>(level == 0) {</td></tr>
+<tr><td class="num" id="LN207">207</td><td class="line">	*ptr = ' ';</td></tr>
+<tr><td class="num" id="LN208">208</td><td class="line">      }</td></tr>
+<tr><td class="num" id="LN209">209</td><td class="line">      ++level;</td></tr>
+<tr><td class="num" id="LN210">210</td><td class="line">    } <span class='keyword'>else</span> <span class='keyword'>if</span>(*ptr == '}') {</td></tr>
+<tr><td class="num" id="LN211">211</td><td class="line">      --level;</td></tr>
+<tr><td class="num" id="LN212">212</td><td class="line">      <span class='keyword'>if</span>(level == 0) {</td></tr>
+<tr><td class="num" id="LN213">213</td><td class="line">	*ptr = ' ';</td></tr>
+<tr><td class="num" id="LN214">214</td><td class="line">      }</td></tr>
+<tr><td class="num" id="LN215">215</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN216">216</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN217">217</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN218">218</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN219">219</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>char</span> *</td></tr>
+<tr><td class="num" id="LN220">220</td><td class="line">find_pipe(<span class='keyword'>char</span> *commandline)</td></tr>
+<tr><td class="num" id="LN221">221</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN222">222</td><td class="line">  <span class='keyword'>char</span> *ptr;</td></tr>
+<tr><td class="num" id="LN223">223</td><td class="line">  <span class='keyword'>int</span> level = 0;</td></tr>
+<tr><td class="num" id="LN224">224</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN225">225</td><td class="line">  <span class='keyword'>for</span>(ptr = commandline; *ptr != 0; ++ptr) {</td></tr>
+<tr><td class="num" id="LN226">226</td><td class="line">    <span class='keyword'>if</span>(*ptr == '{') {</td></tr>
+<tr><td class="num" id="LN227">227</td><td class="line">      ++level;</td></tr>
+<tr><td class="num" id="LN228">228</td><td class="line">    } <span class='keyword'>else</span> <span class='keyword'>if</span>(*ptr == '}') {</td></tr>
+<tr><td class="num" id="LN229">229</td><td class="line">      --level;</td></tr>
+<tr><td class="num" id="LN230">230</td><td class="line">    } <span class='keyword'>else</span> <span class='keyword'>if</span>(*ptr == '|') {</td></tr>
+<tr><td class="num" id="LN231">231</td><td class="line">      <span class='keyword'>if</span>(level == 0) {</td></tr>
+<tr><td class="num" id="LN232">232</td><td class="line">	<span class='keyword'>return</span> ptr;</td></tr>
+<tr><td class="num" id="LN233">233</td><td class="line">      }</td></tr>
+<tr><td class="num" id="LN234">234</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN235">235</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN236">236</td><td class="line">  <span class='keyword'>return</span> <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>;</td></tr>
+<tr><td class="num" id="LN237">237</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN238">238</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN239">239</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>struct</span> shell_command *</td></tr>
+<tr><td class="num" id="LN240">240</td><td class="line">start_command(<span class='keyword'>char</span> *commandline, <span class='keyword'>struct</span> shell_command *child)</td></tr>
+<tr><td class="num" id="LN241">241</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN242">242</td><td class="line">  <span class='keyword'>char</span> *next, *args;</td></tr>
+<tr><td class="num" id="LN243">243</td><td class="line">  <span class='keyword'>int</span> command_len;</td></tr>
+<tr><td class="num" id="LN244">244</td><td class="line">  <span class='keyword'>struct</span> shell_command *c;</td></tr>
+<tr><td class="num" id="LN245">245</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN246">246</td><td class="line">  <span class='comment'>/* Shave off any leading spaces. */</span></td></tr>
+<tr><td class="num" id="LN247">247</td><td class="line">  <span class='keyword'>while</span>(*commandline == ' ') {</td></tr>
+<tr><td class="num" id="LN248">248</td><td class="line">    commandline++;</td></tr>
+<tr><td class="num" id="LN249">249</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN250">250</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN251">251</td><td class="line">  <span class='comment'>/* Find the next command in a pipeline and start it. */</span></td></tr>
+<tr><td class="num" id="LN252">252</td><td class="line">  next = find_pipe(commandline);</td></tr>
+<tr><td class="num" id="LN253">253</td><td class="line">  <span class='keyword'>if</span>(next != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num" id="LN254">254</td><td class="line">    *next = 0;</td></tr>
+<tr><td class="num" id="LN255">255</td><td class="line">    child = start_command(next + 1, child);</td></tr>
+<tr><td class="num" id="LN256">256</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN257">257</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN258">258</td><td class="line">  <span class='comment'>/* Separate the command arguments, and remove braces. */</span></td></tr>
+<tr><td class="num" id="LN259">259</td><td class="line">  replace_braces(commandline);</td></tr>
+<tr><td class="num" id="LN260">260</td><td class="line">  args = strchr(commandline, ' ');</td></tr>
+<tr><td class="num" id="LN261">261</td><td class="line">  <span class='keyword'>if</span>(args != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num" id="LN262">262</td><td class="line">    args++;</td></tr>
+<tr><td class="num" id="LN263">263</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN264">264</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN265">265</td><td class="line">  <span class='comment'>/* Shave off any trailing spaces. */</span></td></tr>
+<tr><td class="num" id="LN266">266</td><td class="line">  command_len = (<span class='keyword'>int</span>)strlen(commandline);</td></tr>
+<tr><td class="num" id="LN267">267</td><td class="line">  <span class='keyword'>while</span>(command_len &gt; 0 &amp;&amp; commandline[command_len - 1] == ' ') {</td></tr>
+<tr><td class="num" id="LN268">268</td><td class="line">    commandline[command_len - 1] = 0;</td></tr>
+<tr><td class="num" id="LN269">269</td><td class="line">    command_len--;</td></tr>
+<tr><td class="num" id="LN270">270</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN271">271</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN272">272</td><td class="line">  <span class='keyword'>if</span>(args == <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num" id="LN273">273</td><td class="line">    command_len = (<span class='keyword'>int</span>)strlen(commandline);</td></tr>
+<tr><td class="num" id="LN274">274</td><td class="line">    args = &amp;commandline[command_len];</td></tr>
+<tr><td class="num" id="LN275">275</td><td class="line">  } <span class='keyword'>else</span> {</td></tr>
+<tr><td class="num" id="LN276">276</td><td class="line">    command_len = (<span class='keyword'>int</span>)(args - commandline - 1);</td></tr>
+<tr><td class="num" id="LN277">277</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN278">278</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN279">279</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN280">280</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN281">281</td><td class="line">  <span class='comment'>/* Go through list of commands to find a match for the first word in</span></td></tr>
+<tr><td class="num" id="LN282">282</td><td class="line">     <span class='comment'>the command line. */</span></td></tr>
+<tr><td class="num" id="LN283">283</td><td class="line">  <span class='keyword'>for</span>(c = list_head(commands);</td></tr>
+<tr><td class="num" id="LN284">284</td><td class="line">      c != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span> &amp;&amp;</td></tr>
+<tr><td class="num" id="LN285">285</td><td class="line">	!(strncmp(c-&gt;command, commandline, command_len) == 0 &amp;&amp;</td></tr>
+<tr><td class="num" id="LN286">286</td><td class="line">	  c-&gt;command[command_len] == 0);</td></tr>
+<tr><td class="num" id="LN287">287</td><td class="line">      c = c-&gt;next);</td></tr>
+<tr><td class="num" id="LN288">288</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN289">289</td><td class="line">  <span class='keyword'>if</span>(c == <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num" id="LN290">290</td><td class="line">    shell_output_str(<span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>, commandline, <span class='string_literal'>": command not found (try 'help')"</span>);</td></tr>
+<tr><td class="num" id="LN291">291</td><td class="line">    command_kill(child);</td></tr>
+<tr><td class="num" id="LN292">292</td><td class="line">    c = <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>;</td></tr>
+<tr><td class="num" id="LN293">293</td><td class="line">  } <span class='keyword'>else</span> <span class='keyword'>if</span>(process_is_running(c-&gt;process) || child == c) {</td></tr>
+<tr><td class="num" id="LN294">294</td><td class="line">    shell_output_str(<span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>, commandline, <span class='string_literal'>": command already running"</span>);</td></tr>
+<tr><td class="num" id="LN295">295</td><td class="line">    c-&gt;child = <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>;</td></tr>
+<tr><td class="num" id="LN296">296</td><td class="line">    c = <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>;</td></tr>
+<tr><td class="num" id="LN297">297</td><td class="line">  } <span class='keyword'>else</span> {</td></tr>
+<tr><td class="num" id="LN298">298</td><td class="line">    c-&gt;child = child;</td></tr>
+<tr><td class="num" id="LN299">299</td><td class="line">    <span class='comment'>/*    printf("shell: start_command starting '%s'\n", c-&gt;process-&gt;name);*/</span></td></tr>
+<tr><td class="num" id="LN300">300</td><td class="line">    <span class='comment'>/* Start a new process for the command. */</span></td></tr>
+<tr><td class="num" id="LN301">301</td><td class="line">    process_start(c-&gt;process, (<span class='keyword'>void</span> *)args);</td></tr>
+<tr><td class="num" id="LN302">302</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN303">303</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN304">304</td><td class="line">  <span class='keyword'>return</span> c;</td></tr>
+<tr><td class="num" id="LN305">305</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN306">306</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN307">307</td><td class="line"><span class='keyword'>int</span></td></tr>
+<tr><td class="num" id="LN308">308</td><td class="line">shell_start_command(<span class='keyword'>char</span> *commandline, <span class='keyword'>int</span> commandline_len,</td></tr>
+<tr><td class="num" id="LN309">309</td><td class="line">		    <span class='keyword'>struct</span> shell_command *child,</td></tr>
+<tr><td class="num" id="LN310">310</td><td class="line">		    <span class='keyword'>struct</span> process **started_process)</td></tr>
+<tr><td class="num" id="LN311">311</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN312">312</td><td class="line">  <span class='keyword'>struct</span> shell_command *c;</td></tr>
+<tr><td class="num" id="LN313">313</td><td class="line">  <span class='keyword'>int</span> background = 0;</td></tr>
+<tr><td class="num" id="LN314">314</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN315">315</td><td class="line">  <span class='keyword'>if</span>(commandline_len == 0) {</td></tr>
+<tr><td class="num" id="LN316">316</td><td class="line">    <span class='keyword'>if</span>(started_process != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num" id="LN317">317</td><td class="line">      *started_process = <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>;</td></tr>
+<tr><td class="num" id="LN318">318</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN319">319</td><td class="line">    <span class='keyword'>return</span> SHELL_NOTHING;</td></tr>
+<tr><td class="num" id="LN320">320</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN321">321</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN322">322</td><td class="line">  <span class='keyword'>if</span>(commandline[commandline_len - 1] == '&amp;') {</td></tr>
+<tr><td class="num" id="LN323">323</td><td class="line">    commandline[commandline_len - 1] = 0;</td></tr>
+<tr><td class="num" id="LN324">324</td><td class="line">    background = 1;</td></tr>
+<tr><td class="num" id="LN325">325</td><td class="line">    commandline_len--;</td></tr>
+<tr><td class="num" id="LN326">326</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN327">327</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN328">328</td><td class="line">  c = start_command(commandline, child);</td></tr>
+<tr><td class="num" id="LN329">329</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN330">330</td><td class="line">  <span class='comment'>/* Return a pointer to the started process, so that the caller can</span></td></tr>
+<tr><td class="num" id="LN331">331</td><td class="line">     <span class='comment'>wait for the process to complete. */</span></td></tr>
+<tr><td class="num" id="LN332">332</td><td class="line">  <span class='keyword'>if</span>(c != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span> &amp;&amp; started_process != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num" id="LN333">333</td><td class="line">    *started_process = c-&gt;process;</td></tr>
+<tr><td class="num" id="LN334">334</td><td class="line">    <span class='keyword'>if</span>(background) {</td></tr>
+<tr><td class="num" id="LN335">335</td><td class="line">      <span class='keyword'>return</span> SHELL_BACKGROUND;</td></tr>
+<tr><td class="num" id="LN336">336</td><td class="line">    } <span class='keyword'>else</span> {</td></tr>
+<tr><td class="num" id="LN337">337</td><td class="line">      <span class='keyword'>return</span> SHELL_FOREGROUND;</td></tr>
+<tr><td class="num" id="LN338">338</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN339">339</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN340">340</td><td class="line">  <span class='keyword'>return</span> SHELL_NOTHING;</td></tr>
+<tr><td class="num" id="LN341">341</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN342">342</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN343">343</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN344">344</td><td class="line">input_to_child_command(<span class='keyword'>struct</span> shell_command *c,</td></tr>
+<tr><td class="num" id="LN345">345</td><td class="line">		       <span class='keyword'>char</span> *data1, <span class='keyword'>int</span> len1,</td></tr>
+<tr><td class="num" id="LN346">346</td><td class="line">		       <span class='keyword'>const</span> <span class='keyword'>char</span> *data2, <span class='keyword'>int</span> len2)</td></tr>
+<tr><td class="num" id="LN347">347</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN348">348</td><td class="line">  <span class='keyword'>struct</span> shell_input input;</td></tr>
+<tr><td class="num" id="LN349">349</td><td class="line">  <span class='keyword'>if</span>(process_is_running(c-&gt;process)) {</td></tr>
+<tr><td class="num" id="LN350">350</td><td class="line">    input.data1 = data1;</td></tr>
+<tr><td class="num" id="LN351">351</td><td class="line">    input.len1 = len1;</td></tr>
+<tr><td class="num" id="LN352">352</td><td class="line">    input.data2 = data2;</td></tr>
+<tr><td class="num" id="LN353">353</td><td class="line">    input.len2 = len2;</td></tr>
+<tr><td class="num" id="LN354">354</td><td class="line">    process_post_synch(c-&gt;process, shell_event_input, &amp;input);</td></tr>
+<tr><td class="num" id="LN355">355</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN356">356</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN357">357</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN358">358</td><td class="line"><span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN359">359</td><td class="line">shell_input(<span class='keyword'>char</span> *commandline, <span class='keyword'>int</span> commandline_len)</td></tr>
+<tr><td class="num" id="LN360">360</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN361">361</td><td class="line">  <span class='keyword'>struct</span> shell_input input;</td></tr>
+<tr><td class="num" id="LN362">362</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN363">363</td><td class="line">  <span class='comment'>/*  printf("shell_input front_process '%s'\n", front_process-&gt;name);*/</span></td></tr>
+<tr><td class="num" id="LN364">364</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN365">365</td><td class="line">  <span class='keyword'>if</span>(commandline[0] == '~' &amp;&amp;</td></tr>
+<tr><td class="num" id="LN366">366</td><td class="line">     commandline[1] == 'K') {</td></tr>
+<tr><td class="num" id="LN367">367</td><td class="line">    <span class='comment'>/*    process_start(&amp;shell_killall_process, (void *)commandline);*/</span></td></tr>
+<tr><td class="num" id="LN368">368</td><td class="line">    <span class='keyword'>if</span>(front_process != &amp;shell_process) {</td></tr>
+<tr><td class="num" id="LN369">369</td><td class="line">      process_exit(front_process);</td></tr>
+<tr><td class="num" id="LN370">370</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN371">371</td><td class="line">  } <span class='keyword'>else</span> {</td></tr>
+<tr><td class="num" id="LN372">372</td><td class="line">    <span class='keyword'>if</span>(process_is_running(front_process)) {</td></tr>
+<tr><td class="num" id="LN373">373</td><td class="line">      input.data1 = commandline;</td></tr>
+<tr><td class="num" id="LN374">374</td><td class="line">      input.len1 = commandline_len;</td></tr>
+<tr><td class="num" id="LN375">375</td><td class="line">      input.data2 = <span class='string_literal'>""</span>;</td></tr>
+<tr><td class="num" id="LN376">376</td><td class="line">      input.len2 = 0;</td></tr>
+<tr><td class="num" id="LN377">377</td><td class="line">      process_post_synch(front_process, shell_event_input, &amp;input);</td></tr>
+<tr><td class="num" id="LN378">378</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN379">379</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN380">380</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN381">381</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN382">382</td><td class="line"><span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN383">383</td><td class="line">shell_output_str(<span class='keyword'>struct</span> shell_command *c, <span class='keyword'>char</span> *text1, <span class='keyword'>const</span> <span class='keyword'>char</span> *text2)</td></tr>
+<tr><td class="num" id="LN384">384</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN385">385</td><td class="line">  <span class='keyword'>if</span>(c != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span> &amp;&amp; <span class="mrange">c-&gt;child != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span></span>) {</td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path7" class="msg msgEvent" style="margin-left:19ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">7</div></td><td><div class="PathNav"><a href="#Path6" title="Previous event (6)">&#x2190;</a></div></td></td><td>Assuming the condition is false</td><td><div class="PathNav"><a href="#Path8" title="Next event (8)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path8" class="msg msgControl" style="margin-left:3ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexControl">8</div></td><td><div class="PathNav"><a href="#Path7" title="Previous event (7)">&#x2190;</a></div></td></td><td>Taking false branch</td><td><div class="PathNav"><a href="#EndPath" title="Next event (9)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr><td class="num" id="LN386">386</td><td class="line">    input_to_child_command(c-&gt;child, text1, (<span class='keyword'>int</span>)strlen(text1),</td></tr>
+<tr><td class="num" id="LN387">387</td><td class="line">			   text2, (<span class='keyword'>int</span>)strlen(text2));</td></tr>
+<tr><td class="num" id="LN388">388</td><td class="line">  } <span class='keyword'>else</span> {</td></tr>
+<tr><td class="num" id="LN389">389</td><td class="line">    shell_default_output(text1, (<span class='keyword'>int</span>)strlen(text1),</td></tr>
+<tr><td class="num" id="LN390">390</td><td class="line">			 text2, (<span class='keyword'>int</span>)strlen(<span class="mrange">text2</span>));</td></tr>
+<tr><td class="num"></td><td class="line"><div id="EndPath" class="msg msgEvent" style="margin-left:38ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">9</div></td><td><div class="PathNav"><a href="#Path8" title="Previous event (8)">&#x2190;</a></div></td></td><td>Null pointer argument in call to string length function</td></tr></table></div></td></tr>
+<tr><td class="num" id="LN391">391</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN392">392</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN393">393</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN394">394</td><td class="line"><span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN395">395</td><td class="line">shell_output(<span class='keyword'>struct</span> shell_command *c,</td></tr>
+<tr><td class="num" id="LN396">396</td><td class="line">	     <span class='keyword'>void</span> *data1, <span class='keyword'>int</span> len1,</td></tr>
+<tr><td class="num" id="LN397">397</td><td class="line">	     <span class='keyword'>const</span> <span class='keyword'>void</span> *data2, <span class='keyword'>int</span> len2)</td></tr>
+<tr><td class="num" id="LN398">398</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN399">399</td><td class="line">  <span class='keyword'>if</span>(c != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span> &amp;&amp; c-&gt;child != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num" id="LN400">400</td><td class="line">    input_to_child_command(c-&gt;child, data1, len1, data2, len2);</td></tr>
+<tr><td class="num" id="LN401">401</td><td class="line">  } <span class='keyword'>else</span> {</td></tr>
+<tr><td class="num" id="LN402">402</td><td class="line">    shell_default_output(data1, len1, data2, len2);</td></tr>
+<tr><td class="num" id="LN403">403</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN404">404</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN405">405</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN406">406</td><td class="line"><span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN407">407</td><td class="line">shell_unregister_command(<span class='keyword'>struct</span> shell_command *c)</td></tr>
+<tr><td class="num" id="LN408">408</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN409">409</td><td class="line">  list_remove(commands, c);</td></tr>
+<tr><td class="num" id="LN410">410</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN411">411</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN412">412</td><td class="line"><span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN413">413</td><td class="line">shell_register_command(<span class='keyword'>struct</span> shell_command *c)</td></tr>
+<tr><td class="num" id="LN414">414</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN415">415</td><td class="line">  <span class='keyword'>struct</span> shell_command *i, *p;</td></tr>
+<tr><td class="num" id="LN416">416</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN417">417</td><td class="line">  p = <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>;</td></tr>
+<tr><td class="num" id="LN418">418</td><td class="line">  <span class='keyword'>for</span>(i = list_head(commands);</td></tr>
+<tr><td class="num" id="LN419">419</td><td class="line">      i != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span> &amp;&amp;</td></tr>
+<tr><td class="num" id="LN420">420</td><td class="line">	strcmp(i-&gt;command, c-&gt;command) &lt; 0;</td></tr>
+<tr><td class="num" id="LN421">421</td><td class="line">      i = i-&gt;next) {</td></tr>
+<tr><td class="num" id="LN422">422</td><td class="line">    p = i;</td></tr>
+<tr><td class="num" id="LN423">423</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN424">424</td><td class="line">  <span class='keyword'>if</span>(p == <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num" id="LN425">425</td><td class="line">    list_push(commands, c);</td></tr>
+<tr><td class="num" id="LN426">426</td><td class="line">  } <span class='keyword'>else</span> <span class='keyword'>if</span>(i == <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num" id="LN427">427</td><td class="line">    list_add(commands, c);</td></tr>
+<tr><td class="num" id="LN428">428</td><td class="line">  } <span class='keyword'>else</span> {</td></tr>
+<tr><td class="num" id="LN429">429</td><td class="line">    list_insert(commands, p, c);</td></tr>
+<tr><td class="num" id="LN430">430</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN431">431</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN432">432</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN433">433</td><td class="line"><span class='macro'>PROCESS_THREAD(shell_process, ev, data)<span class='expansion'>static char process_thread_shell_process(struct pt *process_pt<br>, process_event_t ev, process_data_t data)</span></span></td></tr>
+<tr><td class="num" id="LN434">434</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN435">435</td><td class="line">  <span class='keyword'>static</span> <span class='keyword'>struct</span> process *started_process;</td></tr>
+<tr><td class="num" id="LN436">436</td><td class="line">  <span class='keyword'>struct</span> shell_input *input;</td></tr>
+<tr><td class="num" id="LN437">437</td><td class="line">  <span class='keyword'>int</span> ret;</td></tr>
+<tr><td class="num" id="LN438">438</td><td class="line">  <span class='macro'>PROCESS_BEGIN()<span class='expansion'>{ char PT_YIELD_FLAG = 1; if (PT_YIELD_FLAG) {;} switch((process_pt<br>)-&gt;lc) { case 0:</span></span>;</td></tr>
+<tr><td class="num" id="LN439">439</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN440">440</td><td class="line">  <span class='comment'>/* Let the system start up before showing the prompt. */</span></td></tr>
+<tr><td class="num" id="LN441">441</td><td class="line">  <span class='macro'>PROCESS_PAUSE()<span class='expansion'>do { process_post(process_current, 0x85, ((void*)0)); do { PT_YIELD_FLAG<br> = 0; (process_pt)-&gt;lc = 441; case 441:; if((PT_YIELD_FLAG<br> == 0) || !(ev == 0x85)) { return 1; } } while(0); } while(0)</span></span>;</td></tr>
+<tr><td class="num" id="LN442">442</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN443">443</td><td class="line">  <span class='keyword'>while</span>(1) {</td></tr>
+<tr><td class="num" id="LN444">444</td><td class="line">    shell_prompt(shell_prompt_text);</td></tr>
+<tr><td class="num" id="LN445">445</td><td class="line">    </td></tr>
+<tr><td class="num" id="LN446">446</td><td class="line">    <span class='macro'>PROCESS_WAIT_EVENT_UNTIL(ev == shell_event_input)<span class='expansion'>do { PT_YIELD_FLAG = 0; (process_pt)-&gt;lc = 446; case 446:;<br> if((PT_YIELD_FLAG == 0) || !(ev == shell_event_input)) { return<br> 1; } } while(0)</span></span>;</td></tr>
+<tr><td class="num" id="LN447">447</td><td class="line">    {</td></tr>
+<tr><td class="num" id="LN448">448</td><td class="line">      input = data;</td></tr>
+<tr><td class="num" id="LN449">449</td><td class="line">      ret = shell_start_command(input-&gt;data1, input-&gt;len1, <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>,</td></tr>
+<tr><td class="num" id="LN450">450</td><td class="line">				&amp;started_process);</td></tr>
+<tr><td class="num" id="LN451">451</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN452">452</td><td class="line">      <span class='keyword'>if</span>(started_process != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span> &amp;&amp;</td></tr>
+<tr><td class="num" id="LN453">453</td><td class="line">	 ret == SHELL_FOREGROUND &amp;&amp;</td></tr>
+<tr><td class="num" id="LN454">454</td><td class="line">	 process_is_running(started_process)) {</td></tr>
+<tr><td class="num" id="LN455">455</td><td class="line">	front_process = started_process;</td></tr>
+<tr><td class="num" id="LN456">456</td><td class="line">	<span class='macro'>PROCESS_WAIT_EVENT_UNTIL(ev == PROCESS_EVENT_EXITED &amp;&amp;<span class='expansion'>do { PT_YIELD_FLAG = 0; (process_pt)-&gt;lc = 457; case 457:;<br> if((PT_YIELD_FLAG == 0) || !(ev == 0x87 &amp;&amp; data == started_process<br>)) { return 1; } } while(0)</span></span></td></tr>
+<tr><td class="num" id="LN457">457</td><td class="line">				 <span class='macro'>data == started_process)<span class='expansion'>do { PT_YIELD_FLAG = 0; (process_pt)-&gt;lc = 457; case 457:;<br> if((PT_YIELD_FLAG == 0) || !(ev == 0x87 &amp;&amp; data == started_process<br>)) { return 1; } } while(0)</span></span>;</td></tr>
+<tr><td class="num" id="LN458">458</td><td class="line">      }</td></tr>
+<tr><td class="num" id="LN459">459</td><td class="line">      front_process = &amp;shell_process;</td></tr>
+<tr><td class="num" id="LN460">460</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN461">461</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN462">462</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN463">463</td><td class="line">  <span class='macro'>PROCESS_END()<span class='expansion'>}; PT_YIELD_FLAG = 0; (process_pt)-&gt;lc = 0;; return 3; }</span></span>;</td></tr>
+<tr><td class="num" id="LN464">464</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN465">465</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN466">466</td><td class="line"><span class='macro'>PROCESS_THREAD(shell_server_process, ev, data)<span class='expansion'>static char process_thread_shell_server_process(struct pt *process_pt<br>, process_event_t ev, process_data_t data)</span></span></td></tr>
+<tr><td class="num" id="LN467">467</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN468">468</td><td class="line">  <span class='keyword'>struct</span> process *p;</td></tr>
+<tr><td class="num" id="LN469">469</td><td class="line">  <span class='keyword'>struct</span> shell_command *c;</td></tr>
+<tr><td class="num" id="LN470">470</td><td class="line">  <span class='keyword'>static</span> <span class='keyword'>struct</span> etimer etimer;</td></tr>
+<tr><td class="num" id="LN471">471</td><td class="line">  <span class='macro'>PROCESS_BEGIN()<span class='expansion'>{ char PT_YIELD_FLAG = 1; if (PT_YIELD_FLAG) {;} switch((process_pt<br>)-&gt;lc) { case 0:</span></span>;</td></tr>
+<tr><td class="num" id="LN472">472</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN473">473</td><td class="line">  etimer_set(&amp;etimer, <span class='macro'>CLOCK_SECOND<span class='expansion'>1000</span></span> * 10);</td></tr>
+<tr><td class="num" id="LN474">474</td><td class="line">  <span class='keyword'>while</span>(1) {</td></tr>
+<tr><td class="num" id="LN475">475</td><td class="line">    <span class='macro'>PROCESS_WAIT_EVENT()<span class='expansion'>do { PT_YIELD_FLAG = 0; (process_pt)-&gt;lc = 475; case 475:;<br> if(PT_YIELD_FLAG == 0) { return 1; } } while(0)</span></span>;</td></tr>
+<tr><td class="num" id="LN476">476</td><td class="line">    <span class='keyword'>if</span>(ev == <span class='macro'>PROCESS_EVENT_EXITED<span class='expansion'>0x87</span></span>) {</td></tr>
+<tr><td class="num" id="LN477">477</td><td class="line">      p = data;</td></tr>
+<tr><td class="num" id="LN478">478</td><td class="line">      <span class='comment'>/*      printf("process exited '%s' (front '%s')\n", p-&gt;name,</span></td></tr>
+<tr><td class="num" id="LN479">479</td><td class="line">	      <span class='comment'>front_process-&gt;name);*/</span></td></tr>
+<tr><td class="num" id="LN480">480</td><td class="line">      <span class='keyword'>for</span>(c = list_head(commands);</td></tr>
+<tr><td class="num" id="LN481">481</td><td class="line">	  c != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span> &amp;&amp; c-&gt;process != p;</td></tr>
+<tr><td class="num" id="LN482">482</td><td class="line">	  c = c-&gt;next);</td></tr>
+<tr><td class="num" id="LN483">483</td><td class="line">      <span class='keyword'>while</span>(c != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num" id="LN484">484</td><td class="line">	<span class='keyword'>if</span>(c-&gt;child != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span> &amp;&amp; c-&gt;child-&gt;process != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num" id="LN485">485</td><td class="line">	  <span class='comment'>/*	  printf("Killing '%s'\n", c-&gt;process-&gt;name);*/</span></td></tr>
+<tr><td class="num" id="LN486">486</td><td class="line">	  input_to_child_command(c-&gt;child, <span class='string_literal'>""</span>, 0, <span class='string_literal'>""</span>, 0);</td></tr>
+<tr><td class="num" id="LN487">487</td><td class="line">	  <span class='comment'>/*	  process_exit(c-&gt;process);*/</span></td></tr>
+<tr><td class="num" id="LN488">488</td><td class="line">	}</td></tr>
+<tr><td class="num" id="LN489">489</td><td class="line">	c = c-&gt;child;</td></tr>
+<tr><td class="num" id="LN490">490</td><td class="line">      }</td></tr>
+<tr><td class="num" id="LN491">491</td><td class="line">    } <span class='keyword'>else</span> <span class='keyword'>if</span>(ev == <span class='macro'>PROCESS_EVENT_TIMER<span class='expansion'>0x88</span></span>) {</td></tr>
+<tr><td class="num" id="LN492">492</td><td class="line">      etimer_reset(&amp;etimer);</td></tr>
+<tr><td class="num" id="LN493">493</td><td class="line">      shell_set_time(shell_time());</td></tr>
+<tr><td class="num" id="LN494">494</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN495">495</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN496">496</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN497">497</td><td class="line">  <span class='macro'>PROCESS_END()<span class='expansion'>}; PT_YIELD_FLAG = 0; (process_pt)-&gt;lc = 0;; return 3; }</span></span>;</td></tr>
+<tr><td class="num" id="LN498">498</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN499">499</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN500">500</td><td class="line"><span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN501">501</td><td class="line">shell_init(<span class='keyword'>void</span>)</td></tr>
+<tr><td class="num" id="LN502">502</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN503">503</td><td class="line">  list_init(commands);</td></tr>
+<tr><td class="num" id="LN504">504</td><td class="line">  shell_register_command(&amp;help_command);</td></tr>
+<tr><td class="num" id="LN505">505</td><td class="line">  shell_register_command(&amp;question_command);</td></tr>
+<tr><td class="num" id="LN506">506</td><td class="line">  shell_register_command(&amp;killall_command);</td></tr>
+<tr><td class="num" id="LN507">507</td><td class="line">  shell_register_command(&amp;kill_command);</td></tr>
+<tr><td class="num" id="LN508">508</td><td class="line">  shell_register_command(&amp;null_command);</td></tr>
+<tr><td class="num" id="LN509">509</td><td class="line">  shell_register_command(&amp;exit_command);</td></tr>
+<tr><td class="num" id="LN510">510</td><td class="line">  shell_register_command(&amp;quit_command);</td></tr>
+<tr><td class="num" id="LN511">511</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN512">512</td><td class="line">  shell_event_input = process_alloc_event();</td></tr>
+<tr><td class="num" id="LN513">513</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN514">514</td><td class="line">  process_start(&amp;shell_process, <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>);</td></tr>
+<tr><td class="num" id="LN515">515</td><td class="line">  process_start(&amp;shell_server_process, <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>);</td></tr>
+<tr><td class="num" id="LN516">516</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN517">517</td><td class="line">  front_process = &amp;shell_process;</td></tr>
+<tr><td class="num" id="LN518">518</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN519">519</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN520">520</td><td class="line"><span class='keyword'>unsigned</span> <span class='keyword'>long</span></td></tr>
+<tr><td class="num" id="LN521">521</td><td class="line">shell_strtolong(<span class='keyword'>const</span> <span class='keyword'>char</span> *str, <span class='keyword'>const</span> <span class='keyword'>char</span> **retstr)</td></tr>
+<tr><td class="num" id="LN522">522</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN523">523</td><td class="line">  <span class='keyword'>int</span> i;</td></tr>
+<tr><td class="num" id="LN524">524</td><td class="line">  <span class='keyword'>unsigned</span> <span class='keyword'>long</span> num = 0;</td></tr>
+<tr><td class="num" id="LN525">525</td><td class="line">  <span class='keyword'>const</span> <span class='keyword'>char</span> *strptr = str;</td></tr>
+<tr><td class="num" id="LN526">526</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN527">527</td><td class="line">  <span class='keyword'>if</span>(str == <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num" id="LN528">528</td><td class="line">    <span class='keyword'>return</span> 0;</td></tr>
+<tr><td class="num" id="LN529">529</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN530">530</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN531">531</td><td class="line">  <span class='keyword'>while</span>(*strptr == ' ') {</td></tr>
+<tr><td class="num" id="LN532">532</td><td class="line">    ++strptr;</td></tr>
+<tr><td class="num" id="LN533">533</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN534">534</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN535">535</td><td class="line">  <span class='keyword'>for</span>(i = 0; i &lt; 10 &amp;&amp; isdigit((<span class='keyword'>int</span>)strptr[i]); ++i) {</td></tr>
+<tr><td class="num" id="LN536">536</td><td class="line">    num = num * 10 + strptr[i] - '0';</td></tr>
+<tr><td class="num" id="LN537">537</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN538">538</td><td class="line">  <span class='keyword'>if</span>(retstr != <span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num" id="LN539">539</td><td class="line">    <span class='keyword'>if</span>(i == 0) {</td></tr>
+<tr><td class="num" id="LN540">540</td><td class="line">      *retstr = str;</td></tr>
+<tr><td class="num" id="LN541">541</td><td class="line">    } <span class='keyword'>else</span> {</td></tr>
+<tr><td class="num" id="LN542">542</td><td class="line">      *retstr = strptr + i;</td></tr>
+<tr><td class="num" id="LN543">543</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN544">544</td><td class="line">  }</td></tr>
+<tr><td class="num" id="LN545">545</td><td class="line">  </td></tr>
+<tr><td class="num" id="LN546">546</td><td class="line">  <span class='keyword'>return</span> num;</td></tr>
+<tr><td class="num" id="LN547">547</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN548">548</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN549">549</td><td class="line"><span class='keyword'>unsigned</span> <span class='keyword'>long</span></td></tr>
+<tr><td class="num" id="LN550">550</td><td class="line">shell_time(<span class='keyword'>void</span>)</td></tr>
+<tr><td class="num" id="LN551">551</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN552">552</td><td class="line">  <span class='keyword'>return</span> clock_seconds() + time_offset;</td></tr>
+<tr><td class="num" id="LN553">553</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN554">554</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN555">555</td><td class="line"><span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN556">556</td><td class="line">shell_set_time(<span class='keyword'>unsigned</span> <span class='keyword'>long</span> seconds)</td></tr>
+<tr><td class="num" id="LN557">557</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN558">558</td><td class="line">  time_offset = seconds - clock_seconds();</td></tr>
+<tr><td class="num" id="LN559">559</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN560">560</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN561">561</td><td class="line"><span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN562">562</td><td class="line">shell_start(<span class='keyword'>void</span>)</td></tr>
+<tr><td class="num" id="LN563">563</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN564">564</td><td class="line">  shell_output_str(<span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>, shell_banner_text, <span class='string_literal'>""</span>);</td></tr>
+<tr><td class="num" id="LN565">565</td><td class="line">  shell_output_str(<span class='macro'>NULL<span class='expansion'>((void*)0)</span></span>, <span class='string_literal'>"Type '?' and return for help"</span>, <span class='string_literal'>""</span>);</td></tr>
+<tr><td class="num" id="LN566">566</td><td class="line">  shell_prompt(shell_prompt_text);</td></tr>
+<tr><td class="num" id="LN567">567</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN568">568</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN569">569</td><td class="line"><span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN570">570</td><td class="line">shell_stop(<span class='keyword'>void</span>)</td></tr>
+<tr><td class="num" id="LN571">571</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN572">572</td><td class="line">  killall();</td></tr>
+<tr><td class="num" id="LN573">573</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN574">574</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN575">575</td><td class="line"><span class='keyword'>void</span></td></tr>
+<tr><td class="num" id="LN576">576</td><td class="line">shell_quit(<span class='keyword'>void</span>)</td></tr>
+<tr><td class="num" id="LN577">577</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN578">578</td><td class="line">  shell_stop();</td></tr>
+<tr><td class="num" id="LN579">579</td><td class="line">  process_exit(&amp;shell_process);</td></tr>
+<tr><td class="num" id="LN580">580</td><td class="line">  process_exit(&amp;shell_server_process);</td></tr>
+<tr><td class="num" id="LN581">581</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN582">582</td><td class="line"><span class='comment'>/*---------------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN583">583</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN584">584</td><td class="line"><span class='comment'>/** @} */</span></td></tr>
+</table></body></html>

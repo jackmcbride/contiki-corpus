@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>rpl-tsch - scan-build results</title>
+<link type="text/css" rel="stylesheet" href="scanview.css"/>
+<script src="sorttable.js"></script>
+<script language='javascript' type="text/javascript">
+function SetDisplay(RowClass, DisplayVal)
+{
+  var Rows = document.getElementsByTagName("tr");
+  for ( var i = 0 ; i < Rows.length; ++i ) {
+    if (Rows[i].className == RowClass) {
+      Rows[i].style.display = DisplayVal;
+    }
+  }
+}
+
+function CopyCheckedStateToCheckButtons(SummaryCheckButton) {
+  var Inputs = document.getElementsByTagName("input");
+  for ( var i = 0 ; i < Inputs.length; ++i ) {
+    if (Inputs[i].type == "checkbox") {
+      if(Inputs[i] != SummaryCheckButton) {
+        Inputs[i].checked = SummaryCheckButton.checked;
+        Inputs[i].onclick();
+      }
+    }
+  }
+}
+
+function returnObjById( id ) {
+    if (document.getElementById)
+        var returnVar = document.getElementById(id);
+    else if (document.all)
+        var returnVar = document.all[id];
+    else if (document.layers)
+        var returnVar = document.layers[id];
+    return returnVar;
+}
+
+var NumUnchecked = 0;
+
+function ToggleDisplay(CheckButton, ClassName) {
+  if (CheckButton.checked) {
+    SetDisplay(ClassName, "");
+    if (--NumUnchecked == 0) {
+      returnObjById("AllBugsCheck").checked = true;
+    }
+  }
+  else {
+    SetDisplay(ClassName, "none");
+    NumUnchecked++;
+    returnObjById("AllBugsCheck").checked = false;
+  }
+}
+</script>
+<!-- SUMMARYENDHEAD -->
+</head>
+<body>
+<h1>rpl-tsch - scan-build results</h1>
+
+<table>
+<tr><th>User:</th><td>Jack@eduED3C.kent.ac.uk</td></tr>
+<tr><th>Working Directory:</th><td>/Users/Jack/Documents/Computer_Science/Contiki/contiki-red-blue-team/examples/ipv6/rpl-tsch</td></tr>
+<tr><th>Command Line:</th><td>make</td></tr>
+<tr><th>Clang Version:</th><td>clang version 4.0.0 (tags/checker/checker-279)
+</td></tr>
+<tr><th>Date:</th><td>Tue Aug  8 18:13:19 2017</td></tr>
+<tr><th>Version:</th><td>checker-279 (2016-11-14 15:34:09)</td></tr>
+</table>
+<h2>Bug Summary</h2>
+<p>Results in this analysis run are based on analyzer build <b>checker-279</b>.</p>
+<table>
+<thead><tr><td>Bug Type</td><td>Quantity</td><td class="sorttable_nosort">Display?</td></tr></thead>
+<tr style="font-weight:bold"><td class="SUMM_DESC">All Bugs</td><td class="Q">18</td><td><center><input type="checkbox" id="AllBugsCheck" onClick="CopyCheckedStateToCheckButtons(this);" checked/></center></td></tr>
+<tr><th>Dead store</th><th colspan=2></th></tr>
+<tr><td class="SUMM_DESC">Dead assignment</td><td class="Q">6</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_dead_store_dead_assignment');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Dead initialization</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_dead_store_dead_initialization');" checked/></center></td></tr>
+<tr><th>Logic error</th><th colspan=2></th></tr>
+<tr><td class="SUMM_DESC">Dereference of null pointer</td><td class="Q">7</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_dereference_of_null_pointer');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Division by zero</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_division_by_zero');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Out-of-bound array access</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_out-of-bound_array_access');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Unix API</td><td class="Q">2</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_unix_api');" checked/></center></td></tr>
+</table>
+<h2>Reports</h2>
+
+<table class="sortable" style="table-layout:automatic">
+<thead><tr>
+  <td>Bug Group</td>
+  <td class="sorttable_sorted">Bug Type<span id="sorttable_sortfwdind">&nbsp;&#x25BE;</span></td>
+  <td>File</td>
+  <td>Function/Method</td>
+  <td class="Q">Line</td>
+  <td class="Q">Path Length</td>
+  <td class="sorttable_nosort"></td>
+  <!-- REPORTBUGCOL -->
+</tr></thead>
+<tbody>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>net/ip/resolv.c</td><td class="DESC">newdata</td><td class="Q">810</td><td class="Q">1</td><td><a href="report-136a01.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-136a01.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>net/rpl/rpl-timers.c</td><td class="DESC">schedule_dao</td><td class="Q">322</td><td class="Q">1</td><td><a href="report-344b5b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-344b5b.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>net/ip/resolv.c</td><td class="DESC">newdata</td><td class="Q">951</td><td class="Q">1</td><td><a href="report-69ce8f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-69ce8f.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>net/rpl/rpl-ext-header.c</td><td class="DESC">rpl_remove_header</td><td class="Q">627</td><td class="Q">1</td><td><a href="report-87e740.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-87e740.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>net/rpl/rpl-icmp6.c</td><td class="DESC">dao_input_nonstoring</td><td class="Q">913</td><td class="Q">1</td><td><a href="report-94f717.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-94f717.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>net/ip/resolv.c</td><td class="DESC">newdata</td><td class="Q">913</td><td class="Q">1</td><td><a href="report-a54378.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a54378.html" -->
+</tr>
+<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>net/ip/resolv.c</td><td class="DESC">newdata</td><td class="Q">799</td><td class="Q">1</td><td><a href="report-1931bd.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-1931bd.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>ctk/ctk.c</td><td class="DESC">select_widget</td><td class="Q">983</td><td class="Q">52</td><td><a href="report-0d1cab.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0d1cab.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>net/ipv6/uip-ds6.c</td><td class="DESC">uip_ds6_periodic</td><td class="Q">154</td><td class="Q">9</td><td><a href="report-a169de.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a169de.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>net/rpl/rpl-ext-header.c</td><td class="DESC">insert_hbh_header</td><td class="Q">575</td><td class="Q">11</td><td><a href="report-a5f537.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a5f537.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>net/mac/tsch/tsch-packet.c</td><td class="DESC">tsch_packet_parse_eack</td><td class="Q">184</td><td class="Q">18</td><td><a href="report-b6ee64.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b6ee64.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>net/ip/tcpip.c</td><td class="DESC">tcpip_uipcall</td><td class="Q">792</td><td class="Q">5</td><td><a href="report-bd7dcc.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-bd7dcc.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>net/mac/tsch/tsch-packet.c</td><td class="DESC">tsch_packet_parse_eb</td><td class="Q">407</td><td class="Q">16</td><td><a href="report-e02388.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e02388.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>net/rpl/rpl-dag.c</td><td class="DESC">rpl_print_neighbor_list</td><td class="Q">113</td><td class="Q">18</td><td><a href="report-e125b6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e125b6.html" -->
+</tr>
+<tr class="bt_logic_error_division_by_zero"><td class="DESC">Logic error</td><td class="DESC">Division by zero</td><td>net/mac/tsch/tsch-adaptive-timesync.c</td><td class="DESC">timesync_entry_add</td><td class="Q">88</td><td class="Q">14</td><td><a href="report-2f3cd5.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2f3cd5.html" -->
+</tr>
+<tr class="bt_logic_error_out-of-bound_array_access"><td class="DESC">Logic error</td><td class="DESC">Out-of-bound array access</td><td>net/ip/resolv.c</td><td class="DESC">resolv_set_hostname</td><td class="Q">1097</td><td class="Q">4</td><td><a href="report-ba33b3.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ba33b3.html" -->
+</tr>
+<tr class="bt_logic_error_unix_api"><td class="DESC">Logic error</td><td class="DESC">Unix API</td><td>net/rpl/rpl-ns.c</td><td class="DESC">rpl_ns_update_node</td><td class="Q">152</td><td class="Q">6</td><td><a href="report-c7d893.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c7d893.html" -->
+</tr>
+<tr class="bt_logic_error_unix_api"><td class="DESC">Logic error</td><td class="DESC">Unix API</td><td>net/rpl/rpl-dag-root.c</td><td class="DESC">create_dag_callback</td><td class="Q">91</td><td class="Q">7</td><td><a href="report-f7caf9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f7caf9.html" -->
+</tr>
+</tbody>
+</table>
+
+</body></html>
