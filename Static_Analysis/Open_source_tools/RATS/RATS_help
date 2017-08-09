@@ -1,0 +1,39 @@
+RATS v2.4 - Rough Auditing Tool for Security
+Copyright 2001, 2002 Secure Software Inc
+http://www.securesoftware.com
+
+usage: rats [-adhilrwxR] [--help] [--database|--db]  name1 name2 ... namen
+
+    -a <fun>       report any occurence of function 'fun' in the source file(s)
+    -d <filename>  specify an alternate vulnerability database.
+    --db
+    --database
+    -h             display usage information (what you're reading)
+    --help
+    -i             report functions that accept external input
+    --input
+    -l <language>  force the specified langauge to be used
+    --language <language>
+    -r             include references that are not function calls
+    --references
+    -w <1,2,3>     set warning level (default 2)
+    --warning <1,2,3>
+    -x             do not load default databases
+    -R             don't recurse subdirectories scanning for matching files
+    --no-recursion
+    --xml          Output in XML.
+    --html         Output in HTML.
+    --follow-symlinks
+                   Follow symlinks and process files found.
+    --noheader
+		       Don't print initial header in output
+    --nofooter
+                   Don't show timing information footer at end of analysis
+    --quiet
+                   Don't print status information regarding what file is being analyzed
+    --resultsonly
+                   No header, footer, or status information
+    --columns
+                   Show column number of hte line where the problem occured.
+    --context
+                   Display the line of code that caused the problem report

@@ -1,0 +1,1496 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+Analyzing ./apps/about/about-dsc.c
+Analyzing ./apps/about/about.c
+Analyzing ./apps/antelope/antelope.c
+Analyzing ./apps/antelope/aql-adt.c
+Analyzing ./apps/antelope/aql-exec.c
+Analyzing ./apps/antelope/aql-lexer.c
+Analyzing ./apps/antelope/aql-parser.c
+Analyzing ./apps/antelope/index-inline.c
+Analyzing ./apps/antelope/index-maxheap.c
+Analyzing ./apps/antelope/index-memhash.c
+Analyzing ./apps/antelope/index.c
+Analyzing ./apps/antelope/lvm.c
+Analyzing ./apps/antelope/relation.c
+Analyzing ./apps/antelope/result.c
+Analyzing ./apps/antelope/storage-cfs.c
+Analyzing ./apps/at-master/at-master.c
+Analyzing ./apps/calc/calc-dsc.c
+Analyzing ./apps/calc/calc.c
+Analyzing ./apps/cmdd/cmdd.c
+Analyzing ./apps/codeprop/codeprop-tmp.c
+Analyzing ./apps/codeprop/codeprop.c
+Analyzing ./apps/codeprop/tcp_loader.c
+Analyzing ./apps/codeprop/tcp_loader2.c
+Analyzing ./apps/collect-view/collect-view-sky.c
+Analyzing ./apps/collect-view/collect-view-template.c
+Analyzing ./apps/collect-view/collect-view-z1.c
+Analyzing ./apps/collect-view/collect-view.c
+Analyzing ./apps/dhcp/dhcp-dsc.c
+Analyzing ./apps/dhcp/dhcp.c
+Analyzing ./apps/directory/directory-dsc.c
+Analyzing ./apps/directory/directory.c
+Analyzing ./apps/email/email-dsc.c
+Analyzing ./apps/email/email.c
+Analyzing ./apps/email/smtp-socket.c
+Analyzing ./apps/email/smtp-strings.c
+Analyzing ./apps/er-coap/er-coap-block1.c
+Analyzing ./apps/er-coap/er-coap-engine.c
+Analyzing ./apps/er-coap/er-coap-observe-client.c
+Analyzing ./apps/er-coap/er-coap-observe.c
+Analyzing ./apps/er-coap/er-coap-res-well-known-core.c
+Analyzing ./apps/er-coap/er-coap-separate.c
+Analyzing ./apps/er-coap/er-coap-transactions.c
+Analyzing ./apps/er-coap/er-coap.c
+Analyzing ./apps/ftp/ftp-dsc.c
+Analyzing ./apps/ftp/ftp.c
+Analyzing ./apps/ftp/ftpc.c
+Analyzing ./apps/http-post-auth/http-post-auth.c
+Analyzing ./apps/httpd-ws/httpd-ws.c
+Analyzing ./apps/ipso-objects/ipso-button.c
+Analyzing ./apps/ipso-objects/ipso-leds-control.c
+Analyzing ./apps/ipso-objects/ipso-light-control.c
+Analyzing ./apps/ipso-objects/ipso-objects.c
+Analyzing ./apps/ipso-objects/ipso-temperature.c
+Analyzing ./apps/irc/irc-dsc.c
+Analyzing ./apps/irc/irc.c
+Analyzing ./apps/irc/ircc-strings.c
+Analyzing ./apps/irc/ircc.c
+Analyzing ./apps/json/jsonparse.c
+Analyzing ./apps/json/jsontree.c
+Analyzing ./apps/mqtt/mqtt.c
+Analyzing ./apps/netconf/netconf-dsc.c
+Analyzing ./apps/netconf/netconf.c
+Analyzing ./apps/oma-lwm2m/lwm2m-device.c
+Analyzing ./apps/oma-lwm2m/lwm2m-engine.c
+Analyzing ./apps/oma-lwm2m/lwm2m-json.c
+Analyzing ./apps/oma-lwm2m/lwm2m-object.c
+Analyzing ./apps/oma-lwm2m/lwm2m-plain-text.c
+Analyzing ./apps/oma-lwm2m/lwm2m-security.c
+Analyzing ./apps/oma-lwm2m/lwm2m-server.c
+Analyzing ./apps/oma-lwm2m/oma-tlv-reader.c
+Analyzing ./apps/oma-lwm2m/oma-tlv-writer.c
+Analyzing ./apps/oma-lwm2m/oma-tlv.c
+Analyzing ./apps/orchestra/orchestra-rule-default-common.c
+Analyzing ./apps/orchestra/orchestra-rule-eb-per-time-source.c
+Analyzing ./apps/orchestra/orchestra-rule-unicast-per-neighbor-rpl-ns.c
+Analyzing ./apps/orchestra/orchestra-rule-unicast-per-neighbor-rpl-storing.c
+Analyzing ./apps/orchestra/orchestra.c
+Analyzing ./apps/ping6/ping6.c
+Analyzing ./apps/powertrace/powertrace.c
+Analyzing ./apps/process-list/process-list-dsc.c
+Analyzing ./apps/process-list/process-list.c
+Analyzing ./apps/program-handler/program-handler.c
+Analyzing ./apps/rest-engine/rest-engine.c
+Analyzing ./apps/serial-shell/serial-shell.c
+Analyzing ./apps/servreg-hack/servreg-hack.c
+Analyzing ./apps/shell/gui-shell.c
+Analyzing ./apps/shell/shell-base64.c
+Analyzing ./apps/shell/shell-blink.c
+Analyzing ./apps/shell/shell-coffee.c
+Analyzing ./apps/shell/shell-collect-view.c
+Analyzing ./apps/shell/shell-crc.c
+Analyzing ./apps/shell/shell-download.c
+Analyzing ./apps/shell/shell-dsc.c
+Analyzing ./apps/shell/shell-exec.c
+Analyzing ./apps/shell/shell-file.c
+Analyzing ./apps/shell/shell-httpd.c
+Analyzing ./apps/shell/shell-irc.c
+Analyzing ./apps/shell/shell-memdebug.c
+Analyzing ./apps/shell/shell-netperf.c
+Analyzing ./apps/shell/shell-netstat.c
+Analyzing ./apps/shell/shell-ping.c
+Analyzing ./apps/shell/shell-power.c
+Analyzing ./apps/shell/shell-powertrace.c
+Analyzing ./apps/shell/shell-profile.c
+Analyzing ./apps/shell/shell-ps.c
+Analyzing ./apps/shell/shell-reboot.c
+Analyzing ./apps/shell/shell-rime-debug-runicast.c
+Analyzing ./apps/shell/shell-rime-debug.c
+Analyzing ./apps/shell/shell-rime-neighbors.c
+Analyzing ./apps/shell/shell-rime-netcmd.c
+Analyzing ./apps/shell/shell-rime-ping.c
+Analyzing ./apps/shell/shell-rime-sendcmd.c
+Analyzing ./apps/shell/shell-rime-sniff.c
+Analyzing ./apps/shell/shell-rime-unicast.c
+Analyzing ./apps/shell/shell-rime.c
+Analyzing ./apps/shell/shell-rsh.c
+Analyzing ./apps/shell/shell-run.c
+Analyzing ./apps/shell/shell-sendtest.c
+Analyzing ./apps/shell/shell-sky.c
+Analyzing ./apps/shell/shell-tcpsend.c
+Analyzing ./apps/shell/shell-text.c
+Analyzing ./apps/shell/shell-time.c
+Analyzing ./apps/shell/shell-udpsend.c
+Analyzing ./apps/shell/shell-vars.c
+Analyzing ./apps/shell/shell-wget.c
+Analyzing ./apps/shell/shell.c
+Analyzing ./apps/slip-cmd/cmd.c
+Analyzing ./apps/slip-cmd/packetutils.c
+Analyzing ./apps/telnet/simpletelnet.c
+Analyzing ./apps/telnet/telnet-dsc.c
+Analyzing ./apps/telnet/telnet.c
+Analyzing ./apps/telnetd/telnetd-dsc.c
+Analyzing ./apps/telnetd/telnetd-gui.c
+Analyzing ./apps/telnetd/telnetd.c
+Analyzing ./apps/unit-test/example-test.c
+Analyzing ./apps/unit-test/unit-test.c
+Analyzing ./apps/webbrowser/html-strings.c
+Analyzing ./apps/webbrowser/htmlparser.c
+Analyzing ./apps/webbrowser/http-strings.c
+Analyzing ./apps/webbrowser/http-user-agent-string.c
+Analyzing ./apps/webbrowser/webclient.c
+Analyzing ./apps/webbrowser/www-dsc.c
+Analyzing ./apps/webbrowser/www.c
+Analyzing ./apps/webserver/http-strings.c
+Analyzing ./apps/webserver/httpd-cfs.c
+Analyzing ./apps/webserver/httpd-cgi.c
+Analyzing ./apps/webserver/httpd-fs.c
+Analyzing ./apps/webserver/httpd-fsdata.c
+Analyzing ./apps/webserver/httpd.c
+Analyzing ./apps/webserver/urlconv.c
+Analyzing ./apps/webserver/webserver-dsc.c
+Analyzing ./apps/webserver/webserver-nogui.c
+Analyzing ./apps/webserver/webserver.c
+Analyzing ./apps/webserver-nano/httpd-cfs.c
+Analyzing ./apps/webserver-nano/httpd-cgi.c
+Analyzing ./apps/webserver-nano/httpd-fs.c
+Analyzing ./apps/webserver-nano/httpd-fsdata.c
+Analyzing ./apps/webserver-nano/httpd.c
+Analyzing ./apps/webserver-nano/urlconv.c
+Analyzing ./apps/webserver-nano/webserver-dsc.c
+Analyzing ./apps/webserver-nano/webserver-nogui.c
+Analyzing ./apps/webserver-nano/webserver.c
+Analyzing ./core/cfs/cfs-coffee.c
+Analyzing ./core/cfs/cfs-eeprom.c
+Analyzing ./core/cfs/cfs-posix-dir.c
+Analyzing ./core/cfs/cfs-posix.c
+Analyzing ./core/cfs/cfs-ram.c
+Analyzing ./core/cfs/cfs-xmem.c
+Analyzing ./core/ctk/ctk-conio.c
+Analyzing ./core/ctk/ctk-filedialog.c
+Analyzing ./core/ctk/ctk-textentry-checkbox.c
+Analyzing ./core/ctk/ctk-textentry-cmdline.c
+Analyzing ./core/ctk/ctk-textentry-multiline.c
+Analyzing ./core/ctk/ctk.c
+Analyzing ./core/ctk/libconio/libconio.c
+Analyzing ./core/dev/leds.c
+Analyzing ./core/dev/nullradio.c
+Analyzing ./core/dev/serial-line.c
+Analyzing ./core/dev/slip.c
+Analyzing ./core/lib/aes-128.c
+Analyzing ./core/lib/assert.c
+Analyzing ./core/lib/ccm-star.c
+Analyzing ./core/lib/crc16.c
+Analyzing ./core/lib/gcr.c
+Analyzing ./core/lib/ifft.c
+Analyzing ./core/lib/list.c
+Analyzing ./core/lib/me.c
+Analyzing ./core/lib/me_tabs.c
+Analyzing ./core/lib/memb.c
+Analyzing ./core/lib/mmem.c
+Analyzing ./core/lib/petsciiconv.c
+Analyzing ./core/lib/print-stats.c
+Analyzing ./core/lib/random.c
+Analyzing ./core/lib/ringbuf.c
+Analyzing ./core/lib/ringbufindex.c
+Analyzing ./core/lib/sensors.c
+Analyzing ./core/lib/settings.c
+Analyzing ./core/lib/strncasecmp/strncasecmp.c
+Analyzing ./core/lib/trickle-timer.c
+Analyzing ./core/loader/cle.c
+Analyzing ./core/loader/cle_avr.c
+Analyzing ./core/loader/cle_msp430.c
+Analyzing ./core/loader/cmod.c
+Analyzing ./core/loader/dlloader.c
+Analyzing ./core/loader/elfloader-avr.c
+Analyzing ./core/loader/elfloader-msp430.c
+Analyzing ./core/loader/elfloader-msp430x.c
+Analyzing ./core/loader/elfloader-stub.c
+Analyzing ./core/loader/elfloader-x86.c
+Analyzing ./core/loader/elfloader.c
+Analyzing ./core/loader/elfloader_compat.c
+Analyzing ./core/loader/sym.c
+Analyzing ./core/loader/symtab-avr.c
+Analyzing ./core/loader/symtab.c
+Analyzing ./core/net/http-socket/http-socket.c
+Analyzing ./core/net/ip/dhcpc.c
+Analyzing ./core/net/ip/ip64-addr.c
+Analyzing ./core/net/ip/psock.c
+Analyzing ./core/net/ip/resolv.c
+Analyzing ./core/net/ip/simple-udp.c
+Analyzing ./core/net/ip/slipdev.c
+Analyzing ./core/net/ip/tcp-socket.c
+Analyzing ./core/net/ip/tcpip.c
+Analyzing ./core/net/ip/udp-socket.c
+Analyzing ./core/net/ip/uip-debug.c
+Analyzing ./core/net/ip/uip-nameserver.c
+Analyzing ./core/net/ip/uip-packetqueue.c
+Analyzing ./core/net/ip/uip-split.c
+Analyzing ./core/net/ip/uip-udp-packet.c
+Analyzing ./core/net/ip/uiplib.c
+Analyzing ./core/net/ip64/ip64-addrmap.c
+Analyzing ./core/net/ip64/ip64-arp.c
+Analyzing ./core/net/ip64/ip64-dhcpc.c
+Analyzing ./core/net/ip64/ip64-dns64.c
+Analyzing ./core/net/ip64/ip64-eth-interface.c
+Analyzing ./core/net/ip64/ip64-eth.c
+Analyzing ./core/net/ip64/ip64-ipv4-dhcp.c
+Analyzing ./core/net/ip64/ip64-null-driver.c
+Analyzing ./core/net/ip64/ip64-slip-interface.c
+Analyzing ./core/net/ip64/ip64-special-ports.c
+Analyzing ./core/net/ip64/ip64.c
+Analyzing ./core/net/ipv4/uaodv-rt.c
+Analyzing ./core/net/ipv4/uaodv.c
+Analyzing ./core/net/ipv4/uip-fw-drv.c
+Analyzing ./core/net/ipv4/uip-fw.c
+Analyzing ./core/net/ipv4/uip-neighbor.c
+Analyzing ./core/net/ipv4/uip-over-mesh.c
+Analyzing ./core/net/ipv4/uip.c
+Analyzing ./core/net/ipv4/uip_arp.c
+Analyzing ./core/net/ipv6/multicast/esmrf.c
+Analyzing ./core/net/ipv6/multicast/roll-tm.c
+Analyzing ./core/net/ipv6/multicast/smrf.c
+Analyzing ./core/net/ipv6/multicast/uip-mcast6-route.c
+Analyzing ./core/net/ipv6/multicast/uip-mcast6-stats.c
+Analyzing ./core/net/ipv6/sicslowpan.c
+Analyzing ./core/net/ipv6/uip-ds6-nbr.c
+Analyzing ./core/net/ipv6/uip-ds6-route.c
+Analyzing ./core/net/ipv6/uip-ds6.c
+Analyzing ./core/net/ipv6/uip-icmp6.c
+Analyzing ./core/net/ipv6/uip-nd6.c
+Analyzing ./core/net/ipv6/uip6.c
+Analyzing ./core/net/ipv6/websocket-http-client.c
+Analyzing ./core/net/ipv6/websocket.c
+Analyzing ./core/net/link-stats.c
+Analyzing ./core/net/linkaddr.c
+Analyzing ./core/net/llsec/anti-replay.c
+Analyzing ./core/net/llsec/ccm-star-packetbuf.c
+Analyzing ./core/net/llsec/noncoresec/noncoresec.c
+Analyzing ./core/net/llsec/nullsec.c
+Analyzing ./core/net/mac/contikimac/contikimac-framer.c
+Analyzing ./core/net/mac/contikimac/contikimac.c
+Analyzing ./core/net/mac/csma.c
+Analyzing ./core/net/mac/cxmac/cxmac.c
+Analyzing ./core/net/mac/frame802154.c
+Analyzing ./core/net/mac/frame802154e-ie.c
+Analyzing ./core/net/mac/framer-802154.c
+Analyzing ./core/net/mac/framer-nullmac.c
+Analyzing ./core/net/mac/mac-sequence.c
+Analyzing ./core/net/mac/mac.c
+Analyzing ./core/net/mac/nordc.c
+Analyzing ./core/net/mac/nullmac.c
+Analyzing ./core/net/mac/nullrdc-noframer.c
+Analyzing ./core/net/mac/nullrdc.c
+Analyzing ./core/net/mac/phase.c
+Analyzing ./core/net/mac/sicslowmac/sicslowmac.c
+Analyzing ./core/net/mac/tsch/tsch-adaptive-timesync.c
+Analyzing ./core/net/mac/tsch/tsch-log.c
+Analyzing ./core/net/mac/tsch/tsch-packet.c
+Analyzing ./core/net/mac/tsch/tsch-queue.c
+Analyzing ./core/net/mac/tsch/tsch-rpl.c
+Analyzing ./core/net/mac/tsch/tsch-schedule.c
+Analyzing ./core/net/mac/tsch/tsch-security.c
+Analyzing ./core/net/mac/tsch/tsch-slot-operation.c
+Analyzing ./core/net/mac/tsch/tsch.c
+Analyzing ./core/net/nbr-table.c
+Analyzing ./core/net/net-debug.c
+Analyzing ./core/net/netstack.c
+Analyzing ./core/net/packetbuf.c
+Analyzing ./core/net/queuebuf.c
+Analyzing ./core/net/rime/abc.c
+Analyzing ./core/net/rime/announcement.c
+Analyzing ./core/net/rime/broadcast-announcement.c
+Analyzing ./core/net/rime/broadcast.c
+Analyzing ./core/net/rime/chameleon-bitopt.c
+Analyzing ./core/net/rime/chameleon-raw.c
+Analyzing ./core/net/rime/chameleon.c
+Analyzing ./core/net/rime/channel.c
+Analyzing ./core/net/rime/collect-link-estimate.c
+Analyzing ./core/net/rime/collect-neighbor.c
+Analyzing ./core/net/rime/collect.c
+Analyzing ./core/net/rime/ipolite.c
+Analyzing ./core/net/rime/mesh.c
+Analyzing ./core/net/rime/multihop.c
+Analyzing ./core/net/rime/neighbor-discovery.c
+Analyzing ./core/net/rime/netflood.c
+Analyzing ./core/net/rime/packetqueue.c
+Analyzing ./core/net/rime/polite-announcement.c
+Analyzing ./core/net/rime/polite.c
+Analyzing ./core/net/rime/rime.c
+Analyzing ./core/net/rime/rimestats.c
+Analyzing ./core/net/rime/rmh.c
+Analyzing ./core/net/rime/route-discovery.c
+Analyzing ./core/net/rime/route.c
+Analyzing ./core/net/rime/rucb.c
+Analyzing ./core/net/rime/rudolph1.c
+Analyzing ./core/net/rime/rudolph2.c
+Analyzing ./core/net/rime/runicast.c
+Analyzing ./core/net/rime/stbroadcast.c
+Analyzing ./core/net/rime/stunicast.c
+Analyzing ./core/net/rime/timesynch.c
+Analyzing ./core/net/rime/trickle.c
+Analyzing ./core/net/rime/unicast.c
+Analyzing ./core/net/rpl/rpl-dag-root.c
+Analyzing ./core/net/rpl/rpl-dag.c
+Analyzing ./core/net/rpl/rpl-ext-header.c
+Analyzing ./core/net/rpl/rpl-icmp6.c
+Analyzing ./core/net/rpl/rpl-mrhof.c
+Analyzing ./core/net/rpl/rpl-nbr-policy.c
+Analyzing ./core/net/rpl/rpl-ns.c
+Analyzing ./core/net/rpl/rpl-of0.c
+Analyzing ./core/net/rpl/rpl-timers.c
+Analyzing ./core/net/rpl/rpl.c
+Analyzing ./core/sys/arg.c
+Analyzing ./core/sys/autostart.c
+Analyzing ./core/sys/compower.c
+Analyzing ./core/sys/ctimer.c
+Analyzing ./core/sys/energest.c
+Analyzing ./core/sys/etimer.c
+Analyzing ./core/sys/mt.c
+Analyzing ./core/sys/process.c
+Analyzing ./core/sys/procinit.c
+Analyzing ./core/sys/rtimer.c
+Analyzing ./core/sys/stimer.c
+Analyzing ./core/sys/timer.c
+Analyzing ./cpu/6502/ctk/ctk-mouse.c
+Analyzing ./cpu/6502/ethconfig/ethconfig.c
+Analyzing ./cpu/6502/ipconfig/ipconfig.c
+Analyzing ./cpu/6502/lib/config.c
+Analyzing ./cpu/6502/lib/error.c
+Analyzing ./cpu/6502/lib/log.c
+Analyzing ./cpu/6502/lib/unload.c
+Analyzing ./cpu/6502/net/ethernet-drv.c
+Analyzing ./cpu/6502/net/ethernet.c
+Analyzing ./cpu/6502/net/uip_arch.c
+Analyzing ./cpu/6502/sys/clock.c
+Analyzing ./cpu/6502/sys/mtarch.c
+Analyzing ./cpu/arm/aducrf101/clock.c
+Analyzing ./cpu/arm/aducrf101/Common/IAR/Retarget.c
+Analyzing ./cpu/arm/aducrf101/Common/radioeng.c
+Analyzing ./cpu/arm/aducrf101/Common/RealView/Retarget.c
+Analyzing ./cpu/arm/aducrf101/Common/system_ADuCRF101.c
+Analyzing ./cpu/arm/aducrf101/dev/radio.c
+Analyzing ./cpu/arm/aducrf101/dev/uart.c
+Analyzing ./cpu/arm/aducrf101/dev/watchdog.c
+Analyzing ./cpu/arm/aducrf101/rtimer-arch.c
+Analyzing ./cpu/arm/aducrf101/slip-arch.c
+Analyzing ./cpu/arm/at91sam7s/cfs-sdcard-arch.c
+Analyzing ./cpu/arm/at91sam7s/clock.c
+Analyzing ./cpu/arm/at91sam7s/debug-uart.c
+Analyzing ./cpu/arm/at91sam7s/efs-sdcard-arch.c
+Analyzing ./cpu/arm/at91sam7s/elfloader-arm.c
+Analyzing ./cpu/arm/at91sam7s/interrupt-utils.c
+Analyzing ./cpu/arm/at91sam7s/loader/codeprop-otf.c
+Analyzing ./cpu/arm/at91sam7s/loader/elfloader-otf.c
+Analyzing ./cpu/arm/at91sam7s/loader/empty-symbols.c
+Analyzing ./cpu/arm/at91sam7s/loader/ram-segments.c
+Analyzing ./cpu/arm/at91sam7s/newlib-syscalls.c
+Analyzing ./cpu/arm/at91sam7s/rtimer-arch-interrupt.c
+Analyzing ./cpu/arm/at91sam7s/rtimer-arch.c
+Analyzing ./cpu/arm/at91sam7s/sdcard-arch.c
+Analyzing ./cpu/arm/at91sam7s/startup-SAM7S-arm.c
+Analyzing ./cpu/arm/at91sam7s/startup-SAM7S.c
+Analyzing ./cpu/arm/at91sam7s/sys-interrupt.c
+Analyzing ./cpu/arm/at91sam7s/uip-log.c
+Analyzing ./cpu/arm/at91sam7s/usb-arch.c
+Analyzing ./cpu/arm/at91sam7s/usb-interrupt.c
+Analyzing ./cpu/arm/common/dbg-io/dbg-printf.c
+Analyzing ./cpu/arm/common/dbg-io/dbg-putchar.c
+Analyzing ./cpu/arm/common/dbg-io/dbg-puts.c
+Analyzing ./cpu/arm/common/dbg-io/dbg-snprintf.c
+Analyzing ./cpu/arm/common/dbg-io/dbg-sprintf.c
+Analyzing ./cpu/arm/common/dbg-io/strformat.c
+Analyzing ./cpu/arm/common/SD-card/cfs-sdcard.c
+Analyzing ./cpu/arm/common/sys/mtarch.c
+Analyzing ./cpu/arm/common/usb/cdc-acm/cdc-acm-descriptors.c
+Analyzing ./cpu/arm/common/usb/cdc-acm/cdc-acm.c
+Analyzing ./cpu/arm/common/usb/cdc-eth/cdc-eth-descriptors.c
+Analyzing ./cpu/arm/common/usb/cdc-eth/cdc-eth-string-descriptors.c
+Analyzing ./cpu/arm/common/usb/cdc-eth/cdc-eth.c
+Analyzing ./cpu/arm/common/usb/cdc-eth/dhcps.c
+Analyzing ./cpu/arm/common/usb/msc/msc-descriptors.c
+Analyzing ./cpu/arm/common/usb/msc/usb-msc-bulk.c
+Analyzing ./cpu/arm/common/usb/msc/usb-rbc.c
+Analyzing ./cpu/arm/common/usb/usb-core.c
+Analyzing ./cpu/arm/stm32f103/clock.c
+Analyzing ./cpu/arm/stm32f103/debug-uart.c
+Analyzing ./cpu/arm/stm32f103/sdcard-arch.c
+Analyzing ./cpu/arm/stm32f103/startup-STM32F10x.c
+Analyzing ./cpu/arm/stm32f103/usb-arch.c
+Analyzing ./cpu/arm/stm32l152/clock.c
+Analyzing ./cpu/arm/stm32l152/console.c
+Analyzing ./cpu/arm/stm32l152/crt.c
+Analyzing ./cpu/arm/stm32l152/rtimer-arch.c
+Analyzing ./cpu/arm/stm32l152/syscalls.c
+Analyzing ./cpu/arm/stm32l152/uart.c
+Analyzing ./cpu/arm/stm32l152/watchdog.c
+Analyzing ./cpu/avr/avr.c
+Analyzing ./cpu/avr/bootloader.c
+Analyzing ./cpu/avr/cc2420_spi.c
+Analyzing ./cpu/avr/dev/clock.c
+Analyzing ./cpu/avr/dev/debug.c
+Analyzing ./cpu/avr/dev/eeprom.c
+Analyzing ./cpu/avr/dev/flash.c
+Analyzing ./cpu/avr/dev/lanc111.c
+Analyzing ./cpu/avr/dev/rs232.c
+Analyzing ./cpu/avr/dev/usb/rndis/cdc_ecm.c
+Analyzing ./cpu/avr/dev/usb/rndis/cdc_eem.c
+Analyzing ./cpu/avr/dev/usb/rndis/rndis.c
+Analyzing ./cpu/avr/dev/usb/rndis/rndis_task.c
+Analyzing ./cpu/avr/dev/usb/serial/uart_usb_lib.c
+Analyzing ./cpu/avr/dev/usb/storage/avr_flash.c
+Analyzing ./cpu/avr/dev/usb/storage/ctrl_access.c
+Analyzing ./cpu/avr/dev/usb/storage/scsi_decoder.c
+Analyzing ./cpu/avr/dev/usb/storage/storage_task.c
+Analyzing ./cpu/avr/dev/usb/usb_descriptors.c
+Analyzing ./cpu/avr/dev/usb/usb_drv.c
+Analyzing ./cpu/avr/dev/usb/usb_specific_request.c
+Analyzing ./cpu/avr/dev/usb/usb_standard_request.c
+Analyzing ./cpu/avr/dev/usb/usb_task.c
+Analyzing ./cpu/avr/leds-arch.c
+Analyzing ./cpu/avr/minileds.c
+Analyzing ./cpu/avr/mtarch.c
+Analyzing ./cpu/avr/radio/ieee-manager/ieee-15-4-manager.c
+Analyzing ./cpu/avr/radio/mac/mac.c
+Analyzing ./cpu/avr/radio/mac/sicslowmac.c
+Analyzing ./cpu/avr/radio/rf230/frame.c
+Analyzing ./cpu/avr/radio/rf230/hal.c
+Analyzing ./cpu/avr/radio/rf230/radio.c
+Analyzing ./cpu/avr/radio/rf230bb/halbb.c
+Analyzing ./cpu/avr/radio/rf230bb/rf230bb.c
+Analyzing ./cpu/avr/rtimer-arch.c
+Analyzing ./cpu/avr/slip_uart1.c
+Analyzing ./cpu/avr/spi.c
+Analyzing ./cpu/avr/watchdog.c
+Analyzing ./cpu/cc2538/cfs-coffee-arch.c
+Analyzing ./cpu/cc2538/clock.c
+Analyzing ./cpu/cc2538/dbg.c
+Analyzing ./cpu/cc2538/dev/adc.c
+Analyzing ./cpu/cc2538/dev/aes.c
+Analyzing ./cpu/cc2538/dev/bignum-driver.c
+Analyzing ./cpu/cc2538/dev/cbc-mac.c
+Analyzing ./cpu/cc2538/dev/cbc.c
+Analyzing ./cpu/cc2538/dev/cc2538-aes-128.c
+Analyzing ./cpu/cc2538/dev/cc2538-ccm-star.c
+Analyzing ./cpu/cc2538/dev/cc2538-rf.c
+Analyzing ./cpu/cc2538/dev/cc2538-temp-sensor.c
+Analyzing ./cpu/cc2538/dev/ccm.c
+Analyzing ./cpu/cc2538/dev/crypto.c
+Analyzing ./cpu/cc2538/dev/ctr.c
+Analyzing ./cpu/cc2538/dev/ecb.c
+Analyzing ./cpu/cc2538/dev/ecc-algorithm.c
+Analyzing ./cpu/cc2538/dev/ecc-curve.c
+Analyzing ./cpu/cc2538/dev/ecc-driver.c
+Analyzing ./cpu/cc2538/dev/gcm.c
+Analyzing ./cpu/cc2538/dev/gpio.c
+Analyzing ./cpu/cc2538/dev/i2c.c
+Analyzing ./cpu/cc2538/dev/ioc.c
+Analyzing ./cpu/cc2538/dev/nvic.c
+Analyzing ./cpu/cc2538/dev/pka.c
+Analyzing ./cpu/cc2538/dev/pwm.c
+Analyzing ./cpu/cc2538/dev/random.c
+Analyzing ./cpu/cc2538/dev/sha256.c
+Analyzing ./cpu/cc2538/dev/spi.c
+Analyzing ./cpu/cc2538/dev/sys-ctrl.c
+Analyzing ./cpu/cc2538/dev/uart.c
+Analyzing ./cpu/cc2538/dev/udma.c
+Analyzing ./cpu/cc2538/dev/vdd3-sensor.c
+Analyzing ./cpu/cc2538/dev/watchdog.c
+Analyzing ./cpu/cc2538/ieee-addr.c
+Analyzing ./cpu/cc2538/lpm.c
+Analyzing ./cpu/cc2538/rtimer-arch.c
+Analyzing ./cpu/cc2538/slip-arch.c
+Analyzing ./cpu/cc2538/soc.c
+Analyzing ./cpu/cc2538/startup-gcc.c
+Analyzing ./cpu/cc2538/usb/cdc-acm-descriptors.c
+Analyzing ./cpu/cc2538/usb/usb-arch.c
+Analyzing ./cpu/cc2538/usb/usb-serial.c
+Analyzing ./cpu/cc253x/bank-alloc.py
+Analyzing ./cpu/cc253x/dev/cc2530-rf.c
+Analyzing ./cpu/cc253x/dev/clock.c
+Analyzing ./cpu/cc253x/dev/dma.c
+Analyzing ./cpu/cc253x/dev/dma_intr.c
+Analyzing ./cpu/cc253x/dev/port2-intr.c
+Analyzing ./cpu/cc253x/dev/port2.c
+Analyzing ./cpu/cc253x/dev/random.c
+Analyzing ./cpu/cc253x/dev/uart-intr.c
+Analyzing ./cpu/cc253x/dev/uart0.c
+Analyzing ./cpu/cc253x/dev/uart1.c
+Analyzing ./cpu/cc253x/dev/watchdog.c
+Analyzing ./cpu/cc253x/rtimer-arch.c
+Analyzing ./cpu/cc253x/soc.c
+Analyzing ./cpu/cc253x/stack.c
+Analyzing ./cpu/cc253x/usb/cdc-acm-descriptors.c
+Analyzing ./cpu/cc253x/usb/common/cdc-acm/cdc-acm.c
+Analyzing ./cpu/cc253x/usb/common/usb-core.c
+Analyzing ./cpu/cc253x/usb/usb-arch.c
+Analyzing ./cpu/cc26xx-cc13xx/clock.c
+Analyzing ./cpu/cc26xx-cc13xx/dev/adc-sensor.c
+Analyzing ./cpu/cc26xx-cc13xx/dev/aux-ctrl.c
+Analyzing ./cpu/cc26xx-cc13xx/dev/batmon-sensor.c
+Analyzing ./cpu/cc26xx-cc13xx/dev/cc26xx-uart.c
+Analyzing ./cpu/cc26xx-cc13xx/dev/contiki-watchdog.c
+Analyzing ./cpu/cc26xx-cc13xx/dev/gpio-interrupt.c
+Analyzing ./cpu/cc26xx-cc13xx/dev/oscillators.c
+Analyzing ./cpu/cc26xx-cc13xx/dev/soc-rtc.c
+Analyzing ./cpu/cc26xx-cc13xx/dev/soc-trng.c
+Analyzing ./cpu/cc26xx-cc13xx/fault-handlers.c
+Analyzing ./cpu/cc26xx-cc13xx/ieee-addr.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/adi.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aon_batmon.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aon_event.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aon_ioc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aon_rtc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aon_wuc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aux_adc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aux_smph.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aux_tdc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aux_timer.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aux_wuc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/ccfgread.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/chipinfo.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/cpu.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/crypto.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/ddi.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/driverlib_release.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/event.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/flash.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/gpio.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/i2c.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/i2s.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/interrupt.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/ioc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/osc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/prcm.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/pwr_ctrl.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/rfc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/rom_crypto.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/setup.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/setup_rom.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/smph.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/ssi.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/sys_ctrl.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/systick.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/timer.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/trng.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/uart.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/udma.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/vims.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/watchdog.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/startup_files/ccfg.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/startup_files/startup_gcc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc13xxware/utils/rom_crypto/standalone_rom_crypto.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/adi.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aon_batmon.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aon_event.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aon_ioc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aon_rtc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aon_wuc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aux_adc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aux_smph.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aux_tdc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aux_timer.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aux_wuc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/ccfgread.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/chipinfo.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/cpu.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/crypto.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/ddi.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/driverlib_release.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/event.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/flash.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/gpio.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/i2c.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/i2s.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/interrupt.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/ioc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/osc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/prcm.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/pwr_ctrl.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/rfc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/rom_crypto.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/setup.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/setup_rom.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/smph.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/ssi.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/sys_ctrl.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/systick.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/timer.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/trng.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/uart.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/udma.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/vims.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/watchdog.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/startup_files/ccfg.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/startup_files/startup_gcc.c
+Analyzing ./cpu/cc26xx-cc13xx/lib/cc26xxware/utils/rom_crypto/standalone_rom_crypto.c
+Analyzing ./cpu/cc26xx-cc13xx/lpm.c
+Analyzing ./cpu/cc26xx-cc13xx/putchar.c
+Analyzing ./cpu/cc26xx-cc13xx/random.c
+Analyzing ./cpu/cc26xx-cc13xx/rf-core/ieee-mode.c
+Analyzing ./cpu/cc26xx-cc13xx/rf-core/prop-mode.c
+Analyzing ./cpu/cc26xx-cc13xx/rf-core/rf-ble.c
+Analyzing ./cpu/cc26xx-cc13xx/rf-core/rf-core.c
+Analyzing ./cpu/cc26xx-cc13xx/rf-core/smartrf-settings.c
+Analyzing ./cpu/cc26xx-cc13xx/rtimer-arch.c
+Analyzing ./cpu/cc26xx-cc13xx/slip-arch.c
+Analyzing ./cpu/mc1322x/clock.c
+Analyzing ./cpu/mc1322x/config.c
+Analyzing ./cpu/mc1322x/contiki-maca.c
+Analyzing ./cpu/mc1322x/contiki-misc.c
+Analyzing ./cpu/mc1322x/contiki-uart.c
+Analyzing ./cpu/mc1322x/dbg-io.c
+Analyzing ./cpu/mc1322x/debug-uart.c
+Analyzing ./cpu/mc1322x/init.c
+Analyzing ./cpu/mc1322x/leds-arch.c
+Analyzing ./cpu/mc1322x/lib/adc.c
+Analyzing ./cpu/mc1322x/lib/gpio-util.c
+Analyzing ./cpu/mc1322x/lib/gpio.c
+Analyzing ./cpu/mc1322x/lib/i2c.c
+Analyzing ./cpu/mc1322x/lib/maca.c
+Analyzing ./cpu/mc1322x/lib/nvm.c
+Analyzing ./cpu/mc1322x/lib/printf.c
+Analyzing ./cpu/mc1322x/lib/pwm.c
+Analyzing ./cpu/mc1322x/lib/rtc.c
+Analyzing ./cpu/mc1322x/lib/tmr.c
+Analyzing ./cpu/mc1322x/lib/uart.c
+Analyzing ./cpu/mc1322x/lib/uart1.c
+Analyzing ./cpu/mc1322x/lib/uart2.c
+Analyzing ./cpu/mc1322x/rtimer-arch.c
+Analyzing ./cpu/mc1322x/slip-uart1.c
+Analyzing ./cpu/mc1322x/src/default_lowlevel.c
+Analyzing ./cpu/mc1322x/src/isr.c
+Analyzing ./cpu/mc1322x/tests/adc.c
+Analyzing ./cpu/mc1322x/tests/asm.c
+Analyzing ./cpu/mc1322x/tests/autoack-rx.c
+Analyzing ./cpu/mc1322x/tests/autoack-tx.c
+Analyzing ./cpu/mc1322x/tests/blink-allio.c
+Analyzing ./cpu/mc1322x/tests/blink-blue.c
+Analyzing ./cpu/mc1322x/tests/blink-green.c
+Analyzing ./cpu/mc1322x/tests/blink-red.c
+Analyzing ./cpu/mc1322x/tests/blink-white.c
+Analyzing ./cpu/mc1322x/tests/flasher.c
+Analyzing ./cpu/mc1322x/tests/nvm-read.c
+Analyzing ./cpu/mc1322x/tests/nvm-write.c
+Analyzing ./cpu/mc1322x/tests/per.c
+Analyzing ./cpu/mc1322x/tests/printf.c
+Analyzing ./cpu/mc1322x/tests/put.c
+Analyzing ./cpu/mc1322x/tests/pwm.c
+Analyzing ./cpu/mc1322x/tests/rftest-rx.c
+Analyzing ./cpu/mc1322x/tests/rftest-tx.c
+Analyzing ./cpu/mc1322x/tests/romimg.c
+Analyzing ./cpu/mc1322x/tests/sleep.c
+Analyzing ./cpu/mc1322x/tests/tests.c
+Analyzing ./cpu/mc1322x/tests/tmr-ints.c
+Analyzing ./cpu/mc1322x/tests/tmr.c
+Analyzing ./cpu/mc1322x/tests/u1u2-loopback.c
+Analyzing ./cpu/mc1322x/tests/uart1-loopback.c
+Analyzing ./cpu/mc1322x/tests/wdt.c
+Analyzing ./cpu/mc1322x/tests/xtal-trim.c
+Analyzing ./cpu/mc1322x/tools/bin2macbin.pl
+Analyzing ./cpu/mc1322x/tools/burn-mac.pl
+Analyzing ./cpu/mc1322x/tools/ftditools/bbmc.c
+Analyzing ./cpu/mc1322x/tools/map2dot.pl
+Analyzing ./cpu/mc1322x/tools/mc1322x-load.c
+Analyzing ./cpu/mc1322x/tools/mc1322x-load.pl
+Analyzing ./cpu/mc1322x/tools/rftestrx2pcap.pl
+Analyzing ./cpu/mc1322x/tools/rftestrx2pcap.py
+Analyzing ./cpu/mc1322x/tools/rimecollect-rrd/collect2rrd.pl
+Analyzing ./cpu/mc1322x/tools/test-grid/burn-macs.pl
+Analyzing ./cpu/mc1322x/tools/test-grid/erase-all.pl
+Analyzing ./cpu/mc1322x/tools/test-grid/load-all.pl
+Analyzing ./cpu/mc1322x/tools/test-grid/open-terms.pl
+Analyzing ./cpu/mc1322x/tools/test-grid/reset-all.pl
+Analyzing ./cpu/mc1322x/watchdog.c
+Analyzing ./cpu/msp430/button.c
+Analyzing ./cpu/msp430/cc2420-arch-sfd.c
+Analyzing ./cpu/msp430/cc2420-arch.c
+Analyzing ./cpu/msp430/cc2520-arch-sfd.c
+Analyzing ./cpu/msp430/cc2520-arch.c
+Analyzing ./cpu/msp430/dev/uart0-putchar.c
+Analyzing ./cpu/msp430/dev/uart1-putchar.c
+Analyzing ./cpu/msp430/f1xxx/clock.c
+Analyzing ./cpu/msp430/f1xxx/msp430.c
+Analyzing ./cpu/msp430/f1xxx/rtimer-arch.c
+Analyzing ./cpu/msp430/f1xxx/spi.c
+Analyzing ./cpu/msp430/f1xxx/uart1.c
+Analyzing ./cpu/msp430/f2xxx/msp430.c
+Analyzing ./cpu/msp430/f2xxx/spi.c
+Analyzing ./cpu/msp430/f2xxx/uart0.c
+Analyzing ./cpu/msp430/f2xxx/uart1.c
+Analyzing ./cpu/msp430/f5xxx/clock.c
+Analyzing ./cpu/msp430/f5xxx/msp430.c
+Analyzing ./cpu/msp430/f5xxx/rtimer-arch.c
+Analyzing ./cpu/msp430/f5xxx/spi.c
+Analyzing ./cpu/msp430/f5xxx/uart0.c
+Analyzing ./cpu/msp430/f5xxx/uart1.c
+Analyzing ./cpu/msp430/flash.c
+Analyzing ./cpu/msp430/leds-arch.c
+Analyzing ./cpu/msp430/loader-arch.c
+Analyzing ./cpu/msp430/lpm.c
+Analyzing ./cpu/msp430/minileds.c
+Analyzing ./cpu/msp430/mtarch.c
+Analyzing ./cpu/msp430/rom.c
+Analyzing ./cpu/msp430/slip_uart0.c
+Analyzing ./cpu/msp430/slip_uart1.c
+Analyzing ./cpu/msp430/uip-ipchksum.c
+Analyzing ./cpu/msp430/watchdog.c
+Analyzing ./cpu/native/dev/eeprom.c
+Analyzing ./cpu/native/mtarch.c
+Analyzing ./cpu/native/net/linuxradio-drv.c
+Analyzing ./cpu/native/net/tapdev-drv.c
+Analyzing ./cpu/native/net/tapdev.c
+Analyzing ./cpu/native/net/tapdev6.c
+Analyzing ./cpu/native/net/wpcap-drv.c
+Analyzing ./cpu/native/net/wpcap.c
+Analyzing ./cpu/native/rtimer-arch.c
+Analyzing ./cpu/native/watchdog.c
+Analyzing ./cpu/nrf52832/ble/ble-core.c
+Analyzing ./cpu/nrf52832/ble/ble-mac.c
+Analyzing ./cpu/nrf52832/dev/clock.c
+Analyzing ./cpu/nrf52832/dev/random.c
+Analyzing ./cpu/nrf52832/dev/uart0.c
+Analyzing ./cpu/nrf52832/dev/watchdog.c
+Analyzing ./cpu/nrf52832/putchar.c
+Analyzing ./cpu/nrf52832/rtimer-arch.c
+Analyzing ./cpu/pic32/clock.c
+Analyzing ./cpu/pic32/debug-uart.c
+Analyzing ./cpu/pic32/lib/pic32_clock.c
+Analyzing ./cpu/pic32/lib/pic32_spi.c
+Analyzing ./cpu/pic32/lib/pic32_timer.c
+Analyzing ./cpu/pic32/lib/pic32_uart.c
+Analyzing ./cpu/pic32/pic32.c
+Analyzing ./cpu/pic32/rtimer-arch.c
+Analyzing ./cpu/pic32/slip-uart.c
+Analyzing ./cpu/pic32/watchdog.c
+Analyzing ./cpu/rl78/adf7023/adf7023-contiki.c
+Analyzing ./cpu/rl78/adf7023/ADF7023.c
+Analyzing ./cpu/rl78/Communication.c
+Analyzing ./cpu/rl78/contiki-uart.c
+Analyzing ./cpu/rl78/slip-arch.c
+Analyzing ./cpu/rl78/sys/clock.c
+Analyzing ./cpu/rl78/uart0.c
+Analyzing ./cpu/rl78/watchdog.c
+Analyzing ./cpu/rl78/write.c
+Analyzing ./cpu/stm32w108/cfs-coffee-arch.c
+Analyzing ./cpu/stm32w108/clock.c
+Analyzing ./cpu/stm32w108/dev/stm32w-radio.c
+Analyzing ./cpu/stm32w108/dev/stm32w-systick.c
+Analyzing ./cpu/stm32w108/dev/uart1-putchar.c
+Analyzing ./cpu/stm32w108/dev/uart1.c
+Analyzing ./cpu/stm32w108/e_stdio/src/scanf.c
+Analyzing ./cpu/stm32w108/e_stdio/src/small-dtoa.c
+Analyzing ./cpu/stm32w108/e_stdio/src/small-mprec.c
+Analyzing ./cpu/stm32w108/e_stdio/src/small-strtod.c
+Analyzing ./cpu/stm32w108/e_stdio/src/small-vfsscanf.c
+Analyzing ./cpu/stm32w108/e_stdio/src/small-wcrtomb.c
+Analyzing ./cpu/stm32w108/e_stdio/src/small-wcsrtombs.c
+Analyzing ./cpu/stm32w108/e_stdio/src/small-wctomb-r.c
+Analyzing ./cpu/stm32w108/e_stdio/src/sp-printf.c
+Analyzing ./cpu/stm32w108/e_stdio/src/sp-puts.c
+Analyzing ./cpu/stm32w108/e_stdio/src/sp-snprintf.c
+Analyzing ./cpu/stm32w108/e_stdio/src/sp-sprintf.c
+Analyzing ./cpu/stm32w108/e_stdio/src/sp-vfprintf.c
+Analyzing ./cpu/stm32w108/e_stdio/src/sscanf.c
+Analyzing ./cpu/stm32w108/e_stdio/src/syscalls.c
+Analyzing ./cpu/stm32w108/e_stdio/src/test-mes.c
+Analyzing ./cpu/stm32w108/e_stdio/src/test-printf.c
+Analyzing ./cpu/stm32w108/e_stdio/src/test-scanf.c
+Analyzing ./cpu/stm32w108/e_stdio/src/test.c
+Analyzing ./cpu/stm32w108/elfloader-arch.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/adc.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/board.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/button.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/clocks.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/flash.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/led.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/mems.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/mfg-token.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/micro-common-internal.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/micro-common.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/micro.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/nvm.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/sleep.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/stm32w108/crt-stm32w108.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/stm32w108/low-level-init.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/system-timer.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/temperature-sensor.c
+Analyzing ./cpu/stm32w108/hal/micro/cortexm3/uart.c
+Analyzing ./cpu/stm32w108/leds-arch.c
+Analyzing ./cpu/stm32w108/rand.c
+Analyzing ./cpu/stm32w108/rtimer-arch.c
+Analyzing ./cpu/stm32w108/slip-uart1.c
+Analyzing ./cpu/stm32w108/small-printf/sp-printf.c
+Analyzing ./cpu/stm32w108/small-printf/sp-puts.c
+Analyzing ./cpu/stm32w108/small-printf/sp-snprintf.c
+Analyzing ./cpu/stm32w108/small-printf/sp-sprintf.c
+Analyzing ./cpu/stm32w108/small-printf/sp-vfprintf.c
+Analyzing ./cpu/stm32w108/uip-arch.c
+Analyzing ./cpu/stm32w108/watchdog.c
+Analyzing ./cpu/x86/drivers/legacy_pc/nmi.c
+Analyzing ./cpu/x86/drivers/legacy_pc/pci.c
+Analyzing ./cpu/x86/drivers/legacy_pc/pic.c
+Analyzing ./cpu/x86/drivers/legacy_pc/pit.c
+Analyzing ./cpu/x86/drivers/legacy_pc/rtc.c
+Analyzing ./cpu/x86/drivers/legacy_pc/shared-isr.c
+Analyzing ./cpu/x86/drivers/legacy_pc/uart-16x50.c
+Analyzing ./cpu/x86/drivers/quarkX1000/eth.c
+Analyzing ./cpu/x86/drivers/quarkX1000/gpio.c
+Analyzing ./cpu/x86/drivers/quarkX1000/i2c.c
+Analyzing ./cpu/x86/drivers/quarkX1000/imr-conf.c
+Analyzing ./cpu/x86/drivers/quarkX1000/imr.c
+Analyzing ./cpu/x86/drivers/quarkX1000/msg-bus.c
+Analyzing ./cpu/x86/drivers/quarkX1000/uart.c
+Analyzing ./cpu/x86/init/common/cpu.c
+Analyzing ./cpu/x86/init/common/gdt.c
+Analyzing ./cpu/x86/init/common/idt.c
+Analyzing ./cpu/x86/init/legacy_pc/irq.c
+Analyzing ./cpu/x86/mm/multi-segment.c
+Analyzing ./cpu/x86/mm/paging-prot-domains.c
+Analyzing ./cpu/x86/mm/prot-domains.c
+Analyzing ./cpu/x86/mm/stacks.c
+Analyzing ./cpu/x86/mm/swseg-prot-domains.c
+Analyzing ./cpu/x86/mm/syscalls-int.c
+Analyzing ./cpu/x86/mm/tss-prot-domains.c
+Analyzing ./cpu/x86/mm/tss.c
+Analyzing ./cpu/x86/uefi/bootstrap_uefi.c
+Analyzing ./dev/bme280/bme280-sensor.c
+Analyzing ./dev/bme280/bme280.c
+Analyzing ./dev/cc1200/cc1200-802154g-863-870-fsk-50kbps.c
+Analyzing ./dev/cc1200/cc1200-868-fsk-1-2kbps.c
+Analyzing ./dev/cc1200/cc1200.c
+Analyzing ./dev/cc2420/cc2420.c
+Analyzing ./dev/cc2520/cc2520.c
+Analyzing ./dev/disk/mmc/mmc.c
+Analyzing ./dev/ds2411/ds2411.c
+Analyzing ./dev/enc28j60/enc28j60-ip64-driver.c
+Analyzing ./dev/enc28j60/enc28j60.c
+Analyzing ./dev/sht11/sht11-sensor.c
+Analyzing ./dev/sht11/sht11.c
+Analyzing ./doc/code-style.c
+Analyzing ./doc/example-list.c
+Analyzing ./doc/example-pollhandler.c
+Analyzing ./doc/example-program.c
+Analyzing ./doc/example-psock-client.c
+Analyzing ./doc/example-psock-server.c
+Analyzing ./examples/antelope/netdb/netdb-client.c
+Analyzing ./examples/antelope/netdb/netdb-server.c
+Analyzing ./examples/antelope/shell/shell-db.c
+Analyzing ./examples/avr-rss2/avr_radio_power/avr_radio_power.c
+Analyzing ./examples/avr-rss2/hello-sensors/hello-sensors.c
+Analyzing ./examples/avr-rss2/ipv6/dc-rpl-coap/coap-client.c
+Analyzing ./examples/avr-rss2/ipv6/dc-rpl-coap/coap-server.c
+Analyzing ./examples/avr-rss2/ipv6/dc-rpl-coap/dev/dc-hw-sensor.c
+Analyzing ./examples/avr-rss2/ipv6/dc-rpl-coap/dev/dc-status-sensor.c
+Analyzing ./examples/avr-rss2/ipv6/dc-rpl-coap/dev/dc-vdc-sensor.c
+Analyzing ./examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-co2.c
+Analyzing ./examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-hwcfg.c
+Analyzing ./examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-status-obs.c
+Analyzing ./examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-vdc.c
+Analyzing ./examples/avr-rss2/ipv6/dc-rpl-coap/symbols.c
+Analyzing ./examples/avr-rss2/ipv6/rpl-border-router/border-router.c
+Analyzing ./examples/avr-rss2/ipv6/rpl-border-router/enc28j60-ip64-driver.c
+Analyzing ./examples/avr-rss2/ipv6/rpl-border-router/eth-bridge.c
+Analyzing ./examples/avr-rss2/ipv6/rpl-border-router/httpd-simple.c
+Analyzing ./examples/avr-rss2/ipv6/rpl-udp-report/report.c
+Analyzing ./examples/avr-rss2/ipv6/rpl-udp-report/sink.c
+Analyzing ./examples/avr-rss2/ipv6/rpl-udp-report/symbols.c
+Analyzing ./examples/avr-rss2/ipv6/sensd_client/sensd_client.c
+Analyzing ./examples/avr-rss2/ipv6/sensd_client/server.c
+Analyzing ./examples/avr-rss2/ipv6/sensd_client/symbols.c
+Analyzing ./examples/cc2530dk/blink-hello.c
+Analyzing ./examples/cc2530dk/border-router/border-router.c
+Analyzing ./examples/cc2530dk/border-router/slip-bridge.c
+Analyzing ./examples/cc2530dk/cc2531-usb-demo/cc2531-usb-demo.c
+Analyzing ./examples/cc2530dk/hello-world.c
+Analyzing ./examples/cc2530dk/sensors-demo.c
+Analyzing ./examples/cc2530dk/timer-test.c
+Analyzing ./examples/cc2530dk/udp-ipv6/client.c
+Analyzing ./examples/cc2530dk/udp-ipv6/ping6.c
+Analyzing ./examples/cc2530dk/udp-ipv6/server.c
+Analyzing ./examples/cc2538-common/crypto/cbc-mac-test.c
+Analyzing ./examples/cc2538-common/crypto/cbc-test.c
+Analyzing ./examples/cc2538-common/crypto/ccm-test.c
+Analyzing ./examples/cc2538-common/crypto/ctr-test.c
+Analyzing ./examples/cc2538-common/crypto/ecb-test.c
+Analyzing ./examples/cc2538-common/crypto/gcm-test.c
+Analyzing ./examples/cc2538-common/crypto/sha256-test.c
+Analyzing ./examples/cc2538-common/mqtt-demo/mqtt-demo.c
+Analyzing ./examples/cc2538-common/pka/ecc-ecdh.c
+Analyzing ./examples/cc2538-common/pka/ecc-sign.c
+Analyzing ./examples/cc2538-common/pka/ecc-verify.c
+Analyzing ./examples/cc2538-common/test-pwm.c
+Analyzing ./examples/cc2538-common/test-uart.c
+Analyzing ./examples/cc2538-common/timer-test.c
+Analyzing ./examples/cc2538dk/cc2538-demo.c
+Analyzing ./examples/cc2538dk/udp-ipv6-echo-server/udp-echo-server.c
+Analyzing ./examples/cc26xx/cc26xx-demo.c
+Analyzing ./examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.c
+Analyzing ./examples/cc26xx/cc26xx-web-demo/cetic-6lbr-client.c
+Analyzing ./examples/cc26xx/cc26xx-web-demo/coap-server.c
+Analyzing ./examples/cc26xx/cc26xx-web-demo/httpd-simple.c
+Analyzing ./examples/cc26xx/cc26xx-web-demo/mqtt-client.c
+Analyzing ./examples/cc26xx/cc26xx-web-demo/net-uart.c
+Analyzing ./examples/cc26xx/cc26xx-web-demo/resources/res-ble-advd.c
+Analyzing ./examples/cc26xx/cc26xx-web-demo/resources/res-device.c
+Analyzing ./examples/cc26xx/cc26xx-web-demo/resources/res-leds.c
+Analyzing ./examples/cc26xx/cc26xx-web-demo/resources/res-net.c
+Analyzing ./examples/cc26xx/cc26xx-web-demo/resources/res-sensors.c
+Analyzing ./examples/cc26xx/cc26xx-web-demo/resources/res-toggle-leds.c
+Analyzing ./examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c
+Analyzing ./examples/cfs-coffee/example-coffee.c
+./apps/about/about.c:81: High: strcpy
+./apps/antelope/aql-adt.c:115: High: strcpy
+./apps/antelope/storage-cfs.c:74: High: strcpy
+./apps/antelope/storage-cfs.c:385: High: strcpy
+./apps/directory/directory.c:191: High: strcpy
+./apps/directory/directory.c:217: High: strcpy
+./apps/ftp/ftpc.c:293: High: strcpy
+./apps/http-post-auth/http-post-auth.c:159: High: strcpy
+./apps/shell/shell-rime-netcmd.c:128: High: strcpy
+./apps/shell/shell-rime-sendcmd.c:132: High: strcpy
+./apps/telnet/simpletelnet.c:232: High: strcpy
+./apps/webbrowser/htmlparser.c:431: High: strcpy
+./apps/webbrowser/www.c:632: High: strcpy
+./apps/webbrowser/www.c:634: High: strcpy
+./apps/webbrowser/www.c:710: High: strcpy
+./apps/webbrowser/www.c:713: High: strcpy
+./apps/webbrowser/www.c:787: High: strcpy
+./apps/webbrowser/www.c:801: High: strcpy
+./apps/webbrowser/www.c:817: High: strcpy
+./apps/webbrowser/www.c:818: High: strcpy
+./apps/webbrowser/www.c:925: High: strcpy
+./apps/webbrowser/www.c:961: High: strcpy
+./apps/webserver/httpd.c:225: High: strcpy
+./apps/webserver-nano/httpd-cgi.c:147: High: strcpy
+./apps/webserver-nano/httpd-cgi.c:154: High: strcpy
+./apps/webserver-nano/urlconv.c:142: High: strcpy
+./core/ctk/ctk.c:1251: High: strcpy
+./core/loader/cmod.c:79: High: strcpy
+./core/loader/cmod.c:107: High: strcpy
+./core/loader/cmod.c:124: High: strcpy
+Check to be sure that argument 2 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+./apps/antelope/aql-exec.c:194: High: fixed size local buffer
+./apps/antelope/aql-parser.c:725: High: fixed size local buffer
+./apps/antelope/index-inline.c:88: High: fixed size local buffer
+./apps/antelope/index-maxheap.c:497: High: fixed size local buffer
+./apps/antelope/index-maxheap.c:498: High: fixed size local buffer
+./apps/antelope/index-maxheap.c:599: High: fixed size local buffer
+./apps/antelope/lvm.c:72: High: fixed size local buffer
+./apps/antelope/lvm.c:826: High: fixed size local buffer
+./apps/antelope/relation.c:479: High: fixed size local buffer
+./apps/antelope/storage-cfs.c:52: High: fixed size local buffer
+./apps/antelope/storage-cfs.c:58: High: fixed size local buffer
+./apps/antelope/storage-cfs.c:59: High: fixed size local buffer
+./apps/antelope/storage-cfs.c:81: High: fixed size local buffer
+./apps/antelope/storage-cfs.c:296: High: fixed size local buffer
+./apps/antelope/storage-cfs.c:336: High: fixed size local buffer
+./apps/antelope/storage-cfs.c:372: High: fixed size local buffer
+./apps/antelope/storage-cfs.c:449: High: fixed size local buffer
+./apps/cmdd/cmdd.c:9: High: fixed size local buffer
+./apps/codeprop/tcp_loader.c:95: High: fixed size local buffer
+./apps/codeprop/tcp_loader2.c:104: High: fixed size local buffer
+./apps/directory/directory.c:174: High: fixed size local buffer
+./apps/directory/directory.c:201: High: fixed size local buffer
+./apps/email/smtp-socket.c:47: High: fixed size local buffer
+./apps/er-coap/er-coap-observe.c:196: High: fixed size local buffer
+./apps/er-coap/er-coap-observe.c:285: High: fixed size local buffer
+./apps/ftp/ftpc.c:57: High: fixed size local buffer
+./apps/ftp/ftpc.c:99: High: fixed size local buffer
+./apps/ftp/ftpc.c:104: High: fixed size local buffer
+./apps/ftp/ftpc.c:111: High: fixed size local buffer
+./apps/http-post-auth/http-post-auth.c:57: High: fixed size local buffer
+./apps/http-post-auth/http-post-auth.c:58: High: fixed size local buffer
+./apps/http-post-auth/http-post-auth.c:59: High: fixed size local buffer
+./apps/json/jsontree.c:84: High: fixed size local buffer
+./apps/oma-lwm2m/lwm2m-engine.c:403: High: fixed size local buffer
+./apps/process-list/process-list.c:49: High: fixed size local buffer
+./apps/program-handler/program-handler.c:187: High: fixed size local buffer
+./apps/shell/shell-download.c:137: High: fixed size local buffer
+./apps/shell/shell-file.c:82: High: fixed size local buffer
+./apps/shell/shell-file.c:193: High: fixed size local buffer
+./apps/shell/shell-file.c:196: High: fixed size local buffer
+./apps/shell/shell-httpd.c:80: High: fixed size local buffer
+./apps/shell/shell-irc.c:66: High: fixed size local buffer
+./apps/shell/shell-memdebug.c:98: High: fixed size local buffer
+./apps/shell/shell-netperf.c:523: High: fixed size local buffer
+./apps/shell/shell-netstat.c:112: High: fixed size local buffer
+./apps/shell/shell-power.c:139: High: fixed size local buffer
+./apps/shell/shell-power.c:201: High: fixed size local buffer
+./apps/shell/shell-powertrace.c:53: High: fixed size local buffer
+./apps/shell/shell-profile.c:59: High: fixed size local buffer
+./apps/shell/shell-ps.c:60: High: fixed size local buffer
+./apps/shell/shell-rime-debug-runicast.c:81: High: fixed size local buffer
+./apps/shell/shell-rime-debug.c:145: High: fixed size local buffer
+./apps/shell/shell-rime-netcmd.c:72: High: fixed size local buffer
+./apps/shell/shell-rime-netcmd.c:120: High: fixed size local buffer
+./apps/shell/shell-rime-ping.c:72: High: fixed size local buffer
+./apps/shell/shell-rime-ping.c:128: High: fixed size local buffer
+./apps/shell/shell-rime-sendcmd.c:61: High: fixed size local buffer
+./apps/shell/shell-rime-sendcmd.c:100: High: fixed size local buffer
+./apps/shell/shell-rime.c:216: High: fixed size local buffer
+./apps/shell/shell-rsh.c:71: High: fixed size local buffer
+./apps/shell/shell-sendtest.c:70: High: fixed size local buffer
+./apps/shell/shell-sendtest.c:122: High: fixed size local buffer
+./apps/shell/shell-sky.c:186: High: fixed size local buffer
+./apps/shell/shell-sky.c:267: High: fixed size local buffer
+./apps/shell/shell-tcpsend.c:68: High: fixed size local buffer
+./apps/shell/shell-text.c:87: High: fixed size local buffer
+./apps/shell/shell-text.c:132: High: fixed size local buffer
+./apps/shell/shell-text.c:183: High: fixed size local buffer
+./apps/shell/shell-time.c:160: High: fixed size local buffer
+./apps/shell/shell-time.c:205: High: fixed size local buffer
+./apps/shell/shell-time.c:287: High: fixed size local buffer
+./apps/shell/shell-vars.c:93: High: fixed size local buffer
+./apps/shell/shell-wget.c:64: High: fixed size local buffer
+./apps/telnetd/telnetd.c:70: High: fixed size local buffer
+./apps/telnetd/telnetd.c:102: High: fixed size local buffer
+./apps/telnetd/telnetd.c:176: High: fixed size local buffer
+./apps/telnetd/telnetd.c:276: High: fixed size local buffer
+./apps/webbrowser/htmlparser.c:145: High: fixed size local buffer
+./apps/webbrowser/htmlparser.c:147: High: fixed size local buffer
+./apps/webbrowser/htmlparser.c:149: High: fixed size local buffer
+./apps/webbrowser/htmlparser.c:153: High: fixed size local buffer
+./apps/webbrowser/htmlparser.c:155: High: fixed size local buffer
+./apps/webbrowser/htmlparser.c:159: High: fixed size local buffer
+./apps/webbrowser/htmlparser.c:161: High: fixed size local buffer
+./apps/webbrowser/htmlparser.c:162: High: fixed size local buffer
+./apps/webbrowser/webclient.c:65: High: fixed size local buffer
+./apps/webbrowser/webclient.c:66: High: fixed size local buffer
+./apps/webbrowser/webclient.c:70: High: fixed size local buffer
+./apps/webbrowser/webclient.c:73: High: fixed size local buffer
+./apps/webbrowser/www.c:130: High: fixed size local buffer
+./apps/webbrowser/www.c:137: High: fixed size local buffer
+./apps/webbrowser/www.c:150: High: fixed size local buffer
+./apps/webbrowser/www.c:157: High: fixed size local buffer
+./apps/webbrowser/www.c:313: High: fixed size local buffer
+./apps/webserver/httpd-cgi.c:159: High: fixed size local buffer
+./apps/webserver/httpd-cgi.c:211: High: fixed size local buffer
+./apps/webserver/webserver-nogui.c:71: High: fixed size local buffer
+./apps/webserver/webserver-nogui.c:76: High: fixed size local buffer
+./apps/webserver-nano/httpd-cgi.c:213: High: fixed size local buffer
+./apps/webserver-nano/httpd-cgi.c:293: High: fixed size local buffer
+./apps/webserver-nano/httpd-cgi.c:362: High: fixed size local buffer
+./apps/webserver-nano/httpd-cgi.c:414: High: fixed size local buffer
+./apps/webserver-nano/httpd.c:177: High: fixed size local buffer
+./apps/webserver-nano/httpd.c:390: High: fixed size local buffer
+./apps/webserver-nano/webserver-nogui.c:69: High: fixed size local buffer
+./apps/webserver-nano/webserver-nogui.c:74: High: fixed size local buffer
+./apps/webserver-nano/webserver-nogui.c:78: High: fixed size local buffer
+./core/cfs/cfs-coffee.c:190: High: fixed size local buffer
+./core/cfs/cfs-coffee.c:489: High: fixed size local buffer
+./core/cfs/cfs-coffee.c:810: High: fixed size local buffer
+./core/cfs/cfs-coffee.c:930: High: fixed size local buffer
+./core/cfs/cfs-coffee.c:1150: High: fixed size local buffer
+./core/dev/serial-line.c:89: High: fixed size local buffer
+./core/dev/slip.c:339: High: fixed size local buffer
+./core/lib/settings.c:454: High: fixed size local buffer
+./core/loader/elfloader-avr.c:117: High: fixed size local buffer
+./core/loader/elfloader-avr.c:182: High: fixed size local buffer
+./core/loader/elfloader-msp430x.c:62: High: fixed size local buffer
+./core/loader/elfloader-msp430x.c:218: High: fixed size local buffer
+./core/loader/elfloader-msp430x.c:261: High: fixed size local buffer
+./core/loader/elfloader-msp430x.c:338: High: fixed size local buffer
+./core/loader/elfloader-msp430x.c:368: High: fixed size local buffer
+./core/loader/elfloader-msp430x.c:711: High: fixed size local buffer
+./core/loader/elfloader.c:57: High: fixed size local buffer
+./core/loader/elfloader.c:182: High: fixed size local buffer
+./core/loader/elfloader.c:224: High: fixed size local buffer
+./core/loader/elfloader.c:300: High: fixed size local buffer
+./core/loader/elfloader.c:347: High: fixed size local buffer
+./core/loader/symtab-avr.c:68: High: fixed size local buffer
+./core/net/http-socket/http-socket.c:401: High: fixed size local buffer
+./core/net/http-socket/http-socket.c:402: High: fixed size local buffer
+./core/net/http-socket/http-socket.c:404: High: fixed size local buffer
+./core/net/http-socket/http-socket.c:492: High: fixed size local buffer
+./core/net/http-socket/http-socket.c:493: High: fixed size local buffer
+./core/net/http-socket/http-socket.c:555: High: fixed size local buffer
+./core/net/ip/resolv.c:269: High: fixed size local buffer
+./core/net/ip/resolv.c:966: High: fixed size local buffer
+./core/net/ip/resolv.c:1248: High: fixed size local buffer
+./core/net/ip/resolv.c:1472: High: fixed size local buffer
+./core/net/ipv6/websocket-http-client.c:88: High: fixed size local buffer
+./core/net/ipv6/websocket.c:550: High: fixed size local buffer
+./core/net/ipv6/websocket.c:551: High: fixed size local buffer
+./core/net/queuebuf.c:143: High: fixed size local buffer
+./core/net/rime/chameleon-bitopt.c:223: High: fixed size local buffer
+./core/net/rime/chameleon.c:77: High: fixed size local buffer
+./core/sys/arg.c:73: High: fixed size local buffer
+./cpu/6502/net/ethernet.c:46: High: fixed size local buffer
+./cpu/6502/net/ethernet.c:64: High: fixed size local buffer
+./cpu/arm/at91sam7s/loader/elfloader-otf.c:57: High: fixed size local buffer
+./cpu/arm/at91sam7s/loader/elfloader-otf.c:152: High: fixed size local buffer
+./cpu/arm/at91sam7s/loader/elfloader-otf.c:183: High: fixed size local buffer
+./cpu/arm/at91sam7s/loader/elfloader-otf.c:228: High: fixed size local buffer
+./cpu/arm/at91sam7s/loader/elfloader-otf.c:327: High: fixed size local buffer
+./cpu/arm/at91sam7s/loader/elfloader-otf.c:405: High: fixed size local buffer
+./cpu/arm/at91sam7s/loader/elfloader-otf.c:651: High: fixed size local buffer
+./cpu/arm/common/dbg-io/strformat.c:201: High: fixed size local buffer
+./cpu/arm/common/dbg-io/strformat.c:215: High: fixed size local buffer
+./cpu/arm/common/dbg-io/strformat.c:381: High: fixed size local buffer
+./cpu/arm/common/dbg-io/strformat.c:558: High: fixed size local buffer
+./cpu/arm/common/usb/msc/usb-rbc.c:77: High: fixed size local buffer
+./cpu/avr/dev/rs232.c:407: High: fixed size local buffer
+./cpu/avr/dev/usb/rndis/rndis.c:631: High: fixed size local buffer
+./cpu/avr/dev/usb/usb_specific_request.c:227: High: fixed size local buffer
+./cpu/cc26xx-cc13xx/rf-core/rf-ble.c:96: High: fixed size local buffer
+./cpu/mc1322x/lib/printf.c:224: High: fixed size local buffer
+./cpu/mc1322x/lib/printf.c:281: High: fixed size local buffer
+./cpu/mc1322x/tools/ftditools/bbmc.c:163: High: fixed size local buffer
+./cpu/mc1322x/tools/ftditools/bbmc.c:382: High: fixed size local buffer
+./cpu/mc1322x/tools/ftditools/bbmc.c:383: High: fixed size local buffer
+./cpu/msp430/loader-arch.c:64: High: fixed size local buffer
+./cpu/native/mtarch.c:60: High: fixed size local buffer
+./cpu/native/net/tapdev.c:95: High: fixed size local buffer
+./cpu/native/net/tapdev.c:108: High: fixed size local buffer
+./cpu/native/net/tapdev6.c:297: High: fixed size local buffer
+./cpu/native/net/wpcap.c:246: High: fixed size local buffer
+./cpu/native/net/wpcap.c:308: High: fixed size local buffer
+./cpu/native/net/wpcap.c:352: High: fixed size local buffer
+./cpu/rl78/adf7023/ADF7023.c:433: High: fixed size local buffer
+./cpu/stm32w108/cfs-coffee-arch.c:81: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/small-dtoa.c:301: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/small-vfsscanf.c:353: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/small-vfsscanf.c:354: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/small-wcrtomb.c:21: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/small-wcsrtombs.c:22: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/sp-vfprintf.c:256: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/sp-vfprintf.c:452: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/sp-vfprintf.c:466: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/sp-vfprintf.c:469: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/sp-vfprintf.c:470: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/sp-vfprintf.c:483: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/sp-vfprintf.c:485: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/sp-vfprintf.c:1350: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/test.c:15: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/test.c:18: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/test.c:19: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/test.c:23: High: fixed size local buffer
+./cpu/stm32w108/e_stdio/src/test.c:227: High: fixed size local buffer
+./cpu/stm32w108/hal/micro/cortexm3/board.c:252: High: fixed size local buffer
+./cpu/stm32w108/small-printf/sp-vfprintf.c:256: High: fixed size local buffer
+./cpu/stm32w108/small-printf/sp-vfprintf.c:452: High: fixed size local buffer
+./cpu/stm32w108/small-printf/sp-vfprintf.c:466: High: fixed size local buffer
+./cpu/stm32w108/small-printf/sp-vfprintf.c:469: High: fixed size local buffer
+./cpu/stm32w108/small-printf/sp-vfprintf.c:470: High: fixed size local buffer
+./cpu/stm32w108/small-printf/sp-vfprintf.c:483: High: fixed size local buffer
+./cpu/stm32w108/small-printf/sp-vfprintf.c:485: High: fixed size local buffer
+./cpu/stm32w108/small-printf/sp-vfprintf.c:1350: High: fixed size local buffer
+./examples/antelope/netdb/netdb-client.c:106: High: fixed size local buffer
+./examples/antelope/netdb/netdb-server.c:94: High: fixed size local buffer
+./examples/antelope/netdb/netdb-server.c:273: High: fixed size local buffer
+./examples/avr-rss2/hello-sensors/hello-sensors.c:63: High: fixed size local buffer
+./examples/avr-rss2/ipv6/dc-rpl-coap/coap-client.c:342: High: fixed size local buffer
+./examples/avr-rss2/ipv6/rpl-border-router/border-router.c:152: High: fixed size local buffer
+./examples/avr-rss2/ipv6/rpl-udp-report/report.c:92: High: fixed size local buffer
+./examples/cc2538-common/crypto/sha256-test.c:75: High: fixed size local buffer
+./examples/cc2538-common/mqtt-demo/mqtt-demo.c:153: High: fixed size local buffer
+./examples/cc2538-common/mqtt-demo/mqtt-demo.c:154: High: fixed size local buffer
+./examples/cc2538-common/mqtt-demo/mqtt-demo.c:155: High: fixed size local buffer
+./examples/cc2538-common/mqtt-demo/mqtt-demo.c:156: High: fixed size local buffer
+./examples/cc2538-common/mqtt-demo/mqtt-demo.c:157: High: fixed size local buffer
+./examples/cc2538-common/mqtt-demo/mqtt-demo.c:158: High: fixed size local buffer
+./examples/cc2538-common/mqtt-demo/mqtt-demo.c:475: High: fixed size local buffer
+./examples/cc2538-common/test-uart.c:82: High: fixed size local buffer
+./examples/cc26xx/cc26xx-web-demo/cetic-6lbr-client.c:102: High: fixed size local buffer
+./examples/cc26xx/cc26xx-web-demo/httpd-simple.c:254: High: fixed size local buffer
+./examples/cc26xx/cc26xx-web-demo/httpd-simple.c:255: High: fixed size local buffer
+./examples/cc26xx/cc26xx-web-demo/httpd-simple.c:268: High: fixed size local buffer
+./examples/cc26xx/cc26xx-web-demo/httpd-simple.c:269: High: fixed size local buffer
+./examples/cc26xx/cc26xx-web-demo/httpd-simple.c:427: High: fixed size local buffer
+./examples/cc26xx/cc26xx-web-demo/mqtt-client.c:629: High: fixed size local buffer
+./examples/cc26xx/cc26xx-web-demo/resources/res-ble-advd.c:57: High: fixed size local buffer
+./examples/cc26xx/cc26xx-web-demo/resources/res-net.c:88: High: fixed size local buffer
+./examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:180: High: fixed size local buffer
+./examples/cfs-coffee/example-coffee.c:63: High: fixed size local buffer
+Extra care should be taken to ensure that character arrays that are allocated
+on the stack are used safely.  They are prime targets for buffer overflow
+attacks.
+
+./apps/antelope/storage-cfs.c:75: High: strcat
+Check to be sure that argument 2 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+./apps/ping6/ping6.c:92: High: scanf
+./apps/ping6/ping6.c:99: High: scanf
+./cpu/stm32w108/e_stdio/src/scanf.c:32: High: scanf
+./cpu/stm32w108/e_stdio/src/scanf.c:34: High: scanf
+./cpu/stm32w108/e_stdio/src/test-mes.c:18: High: scanf
+./cpu/stm32w108/e_stdio/src/test-mes.c:33: High: scanf
+./cpu/stm32w108/e_stdio/src/test-scanf.c:8: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:33: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:39: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:45: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:49: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:53: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:57: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:61: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:66: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:70: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:74: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:78: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:83: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:95: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:99: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:103: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:121: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:125: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:130: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:138: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:142: High: scanf
+./cpu/stm32w108/e_stdio/src/test.c:247: High: scanf
+Check to be sure that the format string passed as argument 2 to this function
+call does not come from an untrusted source that could have added formatting
+characters that the code is not prepared to handle.  Additionally, the format
+string could contain `%s' without precision that could result in a buffer
+overflow.
+
+./core/net/ip/resolv.c:1097: High: strncat
+./core/net/ip/resolv.c:1477: High: strncat
+./core/net/ip/resolv.c:1482: High: strncat
+Consider using strlcat() instead.
+
+./core/net/ip/resolv.c:1097: High: strncat
+./core/net/ip/resolv.c:1477: High: strncat
+./core/net/ip/resolv.c:1482: High: strncat
+Check to be sure that argument 1 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+./core/net/ipv4/uaodv.c:118: High: vprintf
+Check to be sure that the non-constant format string passed as argument 1 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+./core/net/rime/chameleon-bitopt.c:231: High: printf
+./core/net/rime/chameleon.c:85: High: printf
+./cpu/arm/common/dbg-io/dbg-printf.c:20: High: printf
+./cpu/mc1322x/lib/printf.c:397: High: printf
+./cpu/mc1322x/tests/tests.c:77: High: printf
+./cpu/mc1322x/tests/tests.c:79: High: printf
+./cpu/rl78/adf7023/ADF7023.c:194: High: printf
+./cpu/rl78/adf7023/ADF7023.c:320: High: printf
+./cpu/rl78/adf7023/ADF7023.c:330: High: printf
+./cpu/rl78/adf7023/ADF7023.c:444: High: printf
+./cpu/rl78/adf7023/ADF7023.c:446: High: printf
+./cpu/rl78/adf7023/ADF7023.c:448: High: printf
+./cpu/rl78/adf7023/ADF7023.c:555: High: printf
+./cpu/rl78/adf7023/ADF7023.c:625: High: printf
+./cpu/rl78/adf7023/ADF7023.c:664: High: printf
+./cpu/stm32w108/e_stdio/src/sp-printf.c:54: High: printf
+./cpu/stm32w108/e_stdio/src/sp-printf.c:57: High: printf
+./cpu/stm32w108/small-printf/sp-printf.c:57: High: printf
+./cpu/stm32w108/small-printf/sp-printf.c:60: High: printf
+./cpu/x86/drivers/quarkX1000/eth.c:242: High: printf
+./cpu/x86/drivers/quarkX1000/eth.c:319: High: printf
+./cpu/x86/drivers/quarkX1000/eth.c:448: High: printf
+Check to be sure that the non-constant format string passed as argument 1 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+./cpu/arm/common/dbg-io/dbg-sprintf.c:14: High: sprintf
+./cpu/mc1322x/lib/printf.c:381: High: sprintf
+./cpu/stm32w108/e_stdio/src/sp-sprintf.c:367: High: sprintf
+./cpu/stm32w108/small-printf/sp-sprintf.c:369: High: sprintf
+Check to be sure that the non-constant format string passed as argument 2 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+./cpu/arm/common/dbg-io/dbg-sprintf.c:14: High: sprintf
+./cpu/mc1322x/lib/printf.c:381: High: sprintf
+./cpu/stm32w108/e_stdio/src/sp-sprintf.c:367: High: sprintf
+./cpu/stm32w108/small-printf/sp-sprintf.c:369: High: sprintf
+Check to be sure that the format string passed as argument 2 to this function
+call does not come from an untrusted source that could have added formatting
+characters that the code is not prepared to handle.  Additionally, the format
+string could contain `%s' without precision that could result in a buffer
+overflow.
+
+./cpu/cc253x/bank-alloc.py:148: High: input
+Argument 1 to this function call should be checked to ensure that it does not
+come from an untrusted source without first verifying that it contains nothing
+dangerous.
+
+./cpu/mc1322x/tools/ftditools/bbmc.c:196: High: getopt_long
+Truncate all input strings to a reasonable length 
+before passing them to this function
+
+./cpu/mc1322x/tools/mc1322x-load.c:74: High: getopt
+Truncate all input strings to a reasonable length 
+before passing them to this function
+
+./cpu/mc1322x/tools/mc1322x-load.c:174: High: system
+./cpu/native/net/tapdev.c:99: High: system
+./cpu/native/net/tapdev.c:130: High: system
+./cpu/native/net/tapdev.c:141: High: system
+./cpu/native/net/tapdev6.c:334: High: system
+Argument 1 to this function call should be checked to ensure that it does not
+come from an untrusted source without first verifying that it contains nothing
+dangerous.
+
+./cpu/native/dev/eeprom.c:75: High: getenv
+Environment variables are highly untrustable input. They may be of any length, and contain any data. Do not make any assumptions regarding content or length. If at all possible avoid using them, and if it is necessary, sanitize them and truncate them to a reasonable length.
+
+./cpu/native/net/wpcap.c:580: High: LoadLibrary
+LoadLibrary will search several places for a library if
+no path is specified, allowing trojan DLL's to be inserted elsewhere even
+if the intended DLL is correctly protected from overwriting. Make sure to specify the full path.
+
+./cpu/stm32w108/e_stdio/src/scanf.c:32: High: scanf
+./cpu/stm32w108/e_stdio/src/scanf.c:34: High: scanf
+Check to be sure that the non-constant format string passed as argument 1 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+./cpu/stm32w108/e_stdio/src/sp-printf.c:74: High: vfprintf
+./cpu/stm32w108/small-printf/sp-printf.c:78: High: vfprintf
+Check to be sure that the non-constant format string passed as argument 2 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+./cpu/stm32w108/e_stdio/src/sscanf.c:395: High: sscanf
+Check to be sure that the non-constant format string passed as argument 2 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+./cpu/stm32w108/e_stdio/src/sscanf.c:395: High: sscanf
+Check to be sure that the format string passed as argument 2 to this function
+call does not come from an untrusted source that could have added formatting
+characters that the code is not prepared to handle.  Additionally, the format
+string could contain `%s' without precision that could result in a buffer
+overflow.
+
+./cpu/x86/drivers/quarkX1000/eth.c:349: High: fprintf
+./cpu/x86/drivers/quarkX1000/eth.c:401: High: fprintf
+Check to be sure that the non-constant format string passed as argument 2 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+./apps/oma-lwm2m/lwm2m-engine.c:1028: Medium: read
+./core/cfs/cfs-posix.c:79: Medium: read
+./core/net/mac/contikimac/contikimac.c:766: Medium: read
+./core/net/mac/cxmac/cxmac.c:563: Medium: read
+./core/net/mac/nullrdc.c:187: Medium: read
+./core/net/mac/tsch/tsch-slot-operation.c:616: Medium: read
+./core/net/mac/tsch/tsch-slot-operation.c:794: Medium: read
+./core/net/mac/tsch/tsch.c:651: Medium: read
+./cpu/arm/aducrf101/dev/radio.c:211: Medium: read
+./cpu/arm/aducrf101/dev/radio.c:361: Medium: read
+./cpu/cc2538/dev/cc2538-rf.c:684: Medium: read
+./cpu/cc2538/dev/cc2538-rf.c:1031: Medium: read
+./cpu/cc253x/dev/cc2530-rf.c:491: Medium: read
+./cpu/cc26xx-cc13xx/rf-core/rf-core.c:542: Medium: read
+./cpu/mc1322x/tools/mc1322x-load.c:183: Medium: read
+./cpu/mc1322x/tools/mc1322x-load.c:218: Medium: read
+./cpu/mc1322x/tools/mc1322x-load.c:226: Medium: read
+./cpu/mc1322x/tools/mc1322x-load.c:237: Medium: read
+./cpu/mc1322x/tools/mc1322x-load.c:269: Medium: read
+./cpu/mc1322x/tools/mc1322x-load.c:277: Medium: read
+./cpu/mc1322x/tools/mc1322x-load.c:297: Medium: read
+./cpu/native/net/linuxradio-drv.c:148: Medium: read
+./cpu/native/net/tapdev.c:169: Medium: read
+./cpu/native/net/tapdev6.c:131: Medium: read
+./cpu/x86/drivers/quarkX1000/gpio.c:90: Medium: read
+./cpu/x86/drivers/quarkX1000/gpio.c:122: Medium: read
+./cpu/x86/drivers/quarkX1000/gpio.c:135: Medium: read
+./cpu/x86/drivers/quarkX1000/gpio.c:212: Medium: read
+./cpu/x86/drivers/quarkX1000/gpio.c:228: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:112: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:142: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:152: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:225: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:229: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:242: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:254: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:260: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:264: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:301: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:321: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:376: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:388: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:438: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:443: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:450: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:462: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:473: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:488: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:501: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:508: Medium: read
+./cpu/x86/drivers/quarkX1000/i2c.c:512: Medium: read
+./dev/cc1200/cc1200.c:436: Medium: read
+./dev/cc1200/cc1200.c:638: Medium: read
+./dev/cc1200/cc1200.c:860: Medium: read
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+./core/lib/random.c:43: Medium: srand
+./cpu/avr/radio/mac/mac.c:179: Medium: srand
+./cpu/mc1322x/contiki-misc.c:46: Medium: srand
+./cpu/stm32w108/rand.c:65: Medium: srand
+Standard random number generators should not be used to 
+generate randomness used for security reasons.  For security sensitive 
+randomness a crytographic randomness generator that provides sufficient
+entropy should be used.
+
+./cpu/6502/ethconfig/ethconfig.c:37: Medium: getchar
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+./cpu/arm/aducrf101/Common/RealView/Retarget.c:89: Medium: fgetc
+./cpu/arm/stm32l152/console.c:160: Medium: fgetc
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+./cpu/mc1322x/tests/flasher.c:57: Medium: getc
+./cpu/mc1322x/tests/flasher.c:163: Medium: getc
+./cpu/mc1322x/tests/flasher.c:170: Medium: getc
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+./cpu/mc1322x/tools/bin2macbin.pl:80: Medium: system
+./cpu/mc1322x/tools/burn-mac.pl:66: Medium: system
+./cpu/mc1322x/tools/mc1322x-load.pl:91: Medium: system
+./cpu/mc1322x/tools/test-grid/burn-macs.pl:50: Medium: system
+./cpu/mc1322x/tools/test-grid/erase-all.pl:16: Medium: system
+./cpu/mc1322x/tools/test-grid/load-all.pl:17: Medium: system
+./cpu/mc1322x/tools/test-grid/open-terms.pl:46: Medium: system
+./cpu/mc1322x/tools/test-grid/reset-all.pl:16: Medium: system
+When using system, it is important to be sure that the string being used does not contain relative path elements (../ for example), or a null, which may cause underlying C calls to behave strangely. It is also imperative
+to insure the string has no characters that may be interpreted by the shell, possibly allowing arbitrary commands to be run
+
+./cpu/mc1322x/tools/mc1322x-load.c:205: Medium: stat
+A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.  This is
+the first line where a check has occured.
+The following line(s) contain uses that may match up with this check:
+209 (open)
+
+./cpu/mc1322x/tools/mc1322x-load.c:256: Medium: stat
+A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.  This is
+the first line where a check has occured.
+The following line(s) contain uses that may match up with this check:
+260 (open)
+
+./cpu/mc1322x/tools/mc1322x-load.pl:124: Medium: open
+./cpu/mc1322x/tools/test-grid/open-terms.pl:21: Medium: open
+The filename argument of open should be carefully checked if it is being created with any user-supplied string as a compontent of it. Strings should be checked for occurences of path backtracking/relative path components (../ as an example), or nulls, which may cause the underlying C call to interpret the filename to open differently than expected. It is also important to make sure that the final filename does not end in a "|", as this will cause the path to be executed.
+
+./cpu/native/dev/eeprom.c:92: Medium: tmpfile
+Many calls for generating temporary file names are 
+insecure (susceptible to race conditions).  Use a securely generated file
+name, for example, by pulling 64 bits of randomness from /dev/random, base 
+64 encoding it and using that as a file suffix.
+
+./cpu/native/rtimer-arch.c:61: Medium: signal
+./cpu/native/rtimer-arch.c:69: Medium: signal
+When setting signal handlers, do not use the same function to handle multiple signals. There exists the possibility a race condition will result if 2 or more different signals are sent to the process at nearly the same time. Also, when writing signal handlers, it is best to do as little as possible in them. The best strategy is to use the signal handler to set a flag, that another part of the program tests and performs the appropriate action(s) when it is set.
+See also: http://razor.bindview.com/publish/papers/signals.txt
+
+Total lines analyzed: 260029
+Total time 0.314755 seconds
+826131 lines per second
