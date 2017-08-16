@@ -1,0 +1,53 @@
+Have a non-directory at the top, so creating directory top_dir
+Adding /Users/Jack/Documents/Computer_Science/Contiki/over_time/contiki-2.0//Makefile to top_dir
+Adding /Users/Jack/Documents/Computer_Science/Contiki/over_time/contiki-2.0//Makefile.include to top_dir
+Adding /Users/Jack/Documents/Computer_Science/Contiki/over_time/contiki-2.0//README to top_dir
+Creating filelist for apps
+Creating filelist for core
+Creating filelist for cpu
+Creating filelist for doc
+Creating filelist for examples
+Creating filelist for platform
+Creating filelist for tools
+Categorizing files.
+Finding a working MD5 command....
+Found a working MD5 command.
+Computing results.
+
+
+SLOC	Directory	SLOC-by-Language (Sorted)
+25960   platform        ansic=22324,asm=2932,python=704
+25520   core            ansic=25520
+19369   tools           java=17840,ansic=1381,perl=91,sh=57
+10654   apps            ansic=10654
+8388    cpu             ansic=8078,asm=310
+978     examples        ansic=978
+230     doc             ansic=230
+0       top_dir         (none)
+
+
+Totals grouped by language (dominant language first):
+ansic:        69165 (75.92%)
+java:         17840 (19.58%)
+asm:           3242 (3.56%)
+python:         704 (0.77%)
+perl:            91 (0.10%)
+sh:              57 (0.06%)
+
+
+
+
+Total Physical Source Lines of Code (SLOC)                = 91,099
+Development Effort Estimate, Person-Years (Person-Months) = 22.83 (273.97)
+ (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
+Schedule Estimate, Years (Months)                         = 1.76 (21.10)
+ (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
+Estimated Average Number of Developers (Effort/Schedule)  = 12.98
+Total Estimated Cost to Develop                           = $ 3,084,117
+ (average salary = $56,286/year, overhead = 2.40).
+SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
+SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
+SLOCCount comes with ABSOLUTELY NO WARRANTY, and you are welcome to
+redistribute it under certain conditions as specified by the GNU GPL license;
+see the documentation for details.
+Please credit this data as "generated using David A. Wheeler's 'SLOCCount'."

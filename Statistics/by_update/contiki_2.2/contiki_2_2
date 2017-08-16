@@ -1,0 +1,59 @@
+Have a non-directory at the top, so creating directory top_dir
+Adding /Users/Jack/Documents/Computer_Science/Contiki/over_time/contiki-2.2//Makefile.include to top_dir
+Adding /Users/Jack/Documents/Computer_Science/Contiki/over_time/contiki-2.2//README to top_dir
+Adding /Users/Jack/Documents/Computer_Science/Contiki/over_time/contiki-2.2//README-BUILDING to top_dir
+Adding /Users/Jack/Documents/Computer_Science/Contiki/over_time/contiki-2.2//README-EXAMPLES to top_dir
+Creating filelist for apps
+Creating filelist for backyard
+Creating filelist for core
+Creating filelist for cpu
+Creating filelist for doc
+Creating filelist for examples
+Creating filelist for platform
+Creating filelist for tools
+Categorizing files.
+Finding a working MD5 command....
+Found a working MD5 command.
+Computing results.
+
+
+SLOC	Directory	SLOC-by-Language (Sorted)
+33969   tools           java=26445,python=4128,ansic=2855,perl=384,sh=121,
+                        php=36
+24695   core            ansic=24695
+20591   backyard        ansic=17650,asm=2939,sh=2
+18477   platform        ansic=17465,python=704,asm=308
+13071   apps            ansic=13071
+12166   cpu             ansic=11053,asm=1109,awk=4
+3903    examples        ansic=3243,java=526,perl=114,sh=20
+185     doc             ansic=185
+0       top_dir         (none)
+
+
+Totals grouped by language (dominant language first):
+ansic:        90217 (71.01%)
+java:         26971 (21.23%)
+python:        4832 (3.80%)
+asm:           4356 (3.43%)
+perl:           498 (0.39%)
+sh:             143 (0.11%)
+php:             36 (0.03%)
+awk:              4 (0.00%)
+
+
+
+
+Total Physical Source Lines of Code (SLOC)                = 127,057
+Development Effort Estimate, Person-Years (Person-Months) = 32.38 (388.52)
+ (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
+Schedule Estimate, Years (Months)                         = 2.01 (24.09)
+ (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
+Estimated Average Number of Developers (Effort/Schedule)  = 16.12
+Total Estimated Cost to Develop                           = $ 4,373,611
+ (average salary = $56,286/year, overhead = 2.40).
+SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
+SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
+SLOCCount comes with ABSOLUTELY NO WARRANTY, and you are welcome to
+redistribute it under certain conditions as specified by the GNU GPL license;
+see the documentation for details.
+Please credit this data as "generated using David A. Wheeler's 'SLOCCount'."

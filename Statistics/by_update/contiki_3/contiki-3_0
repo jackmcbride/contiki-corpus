@@ -1,0 +1,62 @@
+Have a non-directory at the top, so creating directory top_dir
+Adding /Users/Jack/Documents/Computer_Science/Contiki/over_time/contiki-3.0//CONTRIBUTING.md to top_dir
+Adding /Users/Jack/Documents/Computer_Science/Contiki/over_time/contiki-3.0//LICENSE to top_dir
+Adding /Users/Jack/Documents/Computer_Science/Contiki/over_time/contiki-3.0//Makefile.include to top_dir
+Adding /Users/Jack/Documents/Computer_Science/Contiki/over_time/contiki-3.0//README-BUILDING.md to top_dir
+Adding /Users/Jack/Documents/Computer_Science/Contiki/over_time/contiki-3.0//README-EXAMPLES.md to top_dir
+Adding /Users/Jack/Documents/Computer_Science/Contiki/over_time/contiki-3.0//README.md to top_dir
+Creating filelist for apps
+Creating filelist for core
+Creating filelist for cpu
+Creating filelist for dev
+Creating filelist for doc
+Creating filelist for examples
+Creating filelist for platform
+Creating filelist for regression-tests
+Creating filelist for tools
+Categorizing files.
+Finding a working MD5 command....
+Found a working MD5 command.
+WARNING! File /Users/Jack/Documents/Computer_Science/Contiki/over_time/contiki-3.0/cpu/mc1322x/tools/run-kermit has unknown start: #!/usr/bin/kermit +
+Computing results.
+
+
+SLOC	Directory	SLOC-by-Language (Sorted)
+119334  cpu             ansic=116320,asm=2119,perl=540,python=351,awk=4
+77547   tools           java=55824,ansic=13264,python=6602,perl=1780,sh=77
+41450   core            ansic=41450
+37513   platform        ansic=36624,asm=889
+28583   apps            ansic=28583
+21164   examples        ansic=20803,java=209,perl=114,sh=20,python=18
+2654    dev             ansic=2654
+546     regression-tests ansic=494,sh=52
+154     doc             ansic=154
+0       top_dir         (none)
+
+
+Totals grouped by language (dominant language first):
+ansic:       260346 (79.15%)
+java:         56033 (17.03%)
+python:        6971 (2.12%)
+asm:           3008 (0.91%)
+perl:          2434 (0.74%)
+sh:             149 (0.05%)
+awk:              4 (0.00%)
+
+
+
+
+Total Physical Source Lines of Code (SLOC)                = 328,945
+Development Effort Estimate, Person-Years (Person-Months) = 87.90 (1,054.85)
+ (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
+Schedule Estimate, Years (Months)                         = 2.93 (35.22)
+ (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
+Estimated Average Number of Developers (Effort/Schedule)  = 29.95
+Total Estimated Cost to Develop                           = $ 11,874,657
+ (average salary = $56,286/year, overhead = 2.40).
+SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
+SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
+SLOCCount comes with ABSOLUTELY NO WARRANTY, and you are welcome to
+redistribute it under certain conditions as specified by the GNU GPL license;
+see the documentation for details.
+Please credit this data as "generated using David A. Wheeler's 'SLOCCount'."
