@@ -1,0 +1,3663 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>Security_Analysis_of_Contiki</title>
+
+
+<style type="text/css">
+*{margin:0;padding:0;}
+body {
+	font:13.34px helvetica,arial,freesans,clean,sans-serif;
+	color:black;
+	line-height:1.4em;
+	background-color: #F8F8F8;
+	padding: 0.7em;
+}
+p {
+	margin:1em 0;
+	line-height:1.5em;
+}
+table {
+	font-size:inherit;
+	font:100%;
+	margin:1em;
+}
+table th{border-bottom:1px solid #bbb;padding:.2em 1em;}
+table td{border-bottom:1px solid #ddd;padding:.2em 1em;}
+input[type=text],input[type=password],input[type=image],textarea{font:99% helvetica,arial,freesans,sans-serif;}
+select,option{padding:0 .25em;}
+optgroup{margin-top:.5em;}
+pre,code{font:12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;}
+pre {
+	margin:1em 0;
+	font-size:12px;
+	background-color:#eee;
+	border:1px solid #ddd;
+	padding:5px;
+	line-height:1.5em;
+	color:#444;
+	overflow:auto;
+	-webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;border-radius:3px;
+}
+pre code {
+	padding:0;
+	font-size:12px;
+	background-color:#eee;
+	border:none;
+}
+code {
+	font-size:12px;
+	background-color:#f8f8ff;
+	color:#444;
+	padding:0 .2em;
+	border:1px solid #dedede;
+}
+img{border:0;max-width:100%;}
+abbr{border-bottom:none;}
+a{color:#4183c4;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a code,a:link code,a:visited code{color:#4183c4;}
+h2,h3{margin:1em 0;}
+h1,h2,h3,h4,h5,h6{border:0;}
+h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
+h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
+h3{margin-top:1em;}
+hr{border:1px solid #ddd;}
+ul{margin:1em 0 1em 2em;}
+ol{margin:1em 0 1em 2em;}
+ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
+ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0;}
+blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+dt{font-weight:bold;margin-left:1em;}
+dd{margin-left:2em;margin-bottom:1em;}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+<style type="text/css">
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<p><center>
+<h1 style = "font-size: 35px;">Security Analysis of Contiki: Corpus</h1>
+</center></p>
+
+<h1 id="toc_0">Contents</h1>
+
+<ul class="toc">
+<li>
+<a href="#toc_0">Contents</a>
+</li>
+<li>
+<a href="#toc_1">Introduction</a>
+<ul>
+<li>
+<a href="#toc_2">Author Notes</a>
+</li>
+<li>
+<a href="#toc_3">Abstract</a>
+</li>
+<li>
+<a href="#toc_4">Aim</a>
+</li>
+<li>
+<a href="#toc_5">Acknowledgements</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_6">Initial Ideas</a>
+<ul>
+<li>
+<a href="#toc_7">Overview</a>
+</li>
+<li>
+<a href="#toc_8">Aims</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_9">Contiki</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_10">Overview</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_11">Features</a>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_12">uIP (Micro IP)</a>
+</li>
+<li>
+<a href="#toc_13">6LoWPAN</a>
+</li>
+<li>
+<a href="#toc_14">Transition from IPv4 to IPv6</a>
+</li>
+<li>
+<a href="#toc_15">Dual Stack</a>
+</li>
+<li>
+<a href="#toc_16">Tunnelling</a>
+</li>
+<li>
+<a href="#toc_17">Header Translation</a>
+</li>
+<li>
+<a href="#toc_18">RPL</a>
+</li>
+<li>
+<a href="#toc_19">Terminology related to RPL</a>
+</li>
+<li>
+<a href="#toc_20">Destination Oriented Direct acyclic graph (DODAG)</a>
+</li>
+<li>
+<a href="#toc_21">RPL Control Messages</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_22">Contiki 3.0</a>
+<ul>
+<li>
+<a href="#toc_23">Features</a>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_24">Memory Allocation</a>
+</li>
+<li>
+<a href="#toc_25">Full IP Networking</a>
+</li>
+<li>
+<a href="#toc_26">Power Awareness</a>
+</li>
+<li>
+<a href="#toc_27">6lowpan, RPL, CoAP</a>
+</li>
+<li>
+<a href="#toc_28">Dynamic Module Loading</a>
+</li>
+<li>
+<a href="#toc_29">Examples</a>
+</li>
+<li>
+<a href="#toc_30">The Cooja Network Simulator</a>
+</li>
+<li>
+<a href="#toc_31">Sleepy Routers</a>
+</li>
+<li>
+<a href="#toc_32">Hardware Platforms</a>
+</li>
+<li>
+<a href="#toc_33">Contiki hardware »</a>
+</li>
+<li>
+<a href="#toc_34">Protothreads</a>
+</li>
+<li>
+<a href="#toc_35">Coffee flash file system</a>
+</li>
+<li>
+<a href="#toc_36">The Contiki shell</a>
+</li>
+<li>
+<a href="#toc_37">Regression Tests</a>
+</li>
+<li>
+<a href="#toc_38">The Rime Stack</a>
+</li>
+<li>
+<a href="#toc_39">Build System</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_40">Code Metrics</a>
+<ul>
+<li>
+<a href="#toc_41">By codebase</a>
+<ul>
+<li>
+<a href="#toc_42">Contiki 2.0</a>
+</li>
+<li>
+<a href="#toc_43">Contiki 2.1</a>
+</li>
+<li>
+<a href="#toc_44">Contiki 2.2</a>
+</li>
+<li>
+<a href="#toc_45">Contiki 2.3</a>
+</li>
+<li>
+<a href="#toc_46">Contiki 2.4</a>
+</li>
+<li>
+<a href="#toc_47">Contiki 2.5</a>
+</li>
+<li>
+<a href="#toc_48">Contiki 2.6</a>
+</li>
+<li>
+<a href="#toc_49">Contiki 2.7</a>
+</li>
+<li>
+<a href="#toc_50">Contiki 3.0</a>
+</li>
+<li>
+<a href="#toc_51">Contiki 3.x</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_52">Areas of Interest</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_53">Cppcheck</a>
+<ul>
+<li>
+<a href="#toc_54">Brief</a>
+</li>
+<li>
+<a href="#toc_55">Features</a>
+</li>
+<li>
+<a href="#toc_56">Images</a>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_57">Scanning directories for bugs</a>
+</li>
+<li>
+<a href="#toc_58">Sample output of the <q>apps</q> directory</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_59">Limitations</a>
+</li>
+<li>
+<a href="#toc_60">Conclusion</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_61">Flawfinder</a>
+<ul>
+<li>
+<a href="#toc_62">Brief</a>
+</li>
+<li>
+<a href="#toc_63">Features</a>
+<ul>
+<li>
+<a href="#toc_64">CWEs</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_65">Images</a>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_66">Scanning directories for bugs</a>
+</li>
+<li>
+<a href="#toc_67">Sample output of the <q>cpu</q> directory</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_68">Limitations</a>
+</li>
+<li>
+<a href="#toc_69">Conclusion</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_70">Rough Auditing Tool for Security (RATS)</a>
+<ul>
+<li>
+<a href="#toc_71">Features</a>
+</li>
+<li>
+<a href="#toc_72">Images</a>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_73">Scanning directories for bugs</a>
+</li>
+<li>
+<a href="#toc_74">Sample output of the <q>core</q> directory</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_75">Limitations</a>
+</li>
+<li>
+<a href="#toc_76">Conclusion</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_77">Clang Analyzer</a>
+<ul>
+<li>
+<a href="#toc_78">Brief</a>
+</li>
+<li>
+<a href="#toc_79">Features</a>
+</li>
+<li>
+<a href="#toc_80">Images</a>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_81">Executing build analysis of cc26xx-web-demo</a>
+</li>
+<li>
+<a href="#toc_82">Clang-Analyzer Bug Categories</a>
+</li>
+<li>
+<a href="#toc_83">Output of build analysis</a>
+</li>
+<li>
+<a href="#toc_84">GUI example of a null pointer dereference bug in mqtt.c</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_85">Limitations</a>
+</li>
+<li>
+<a href="#toc_86">Conclusion</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_87">GrammaTech CodeSonar</a>
+<ul>
+<li>
+<a href="#toc_88">Features</a>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_89">Security Issues</a>
+</li>
+<li>
+<a href="#toc_90">Reliability Issues</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_91">Images</a>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_92">CodeSonar Overview</a>
+</li>
+<li>
+<a href="#toc_93">Warnings per project</a>
+</li>
+<li>
+<a href="#toc_94">Files per project</a>
+</li>
+<li>
+<a href="#toc_95">Lines per project</a>
+</li>
+<li>
+<a href="#toc_96">Application Report</a>
+</li>
+<li>
+<a href="#toc_97">MQTT Uninitialized Variable Bug</a>
+</li>
+<li>
+<a href="#toc_98">Application Metrics</a>
+</li>
+<li>
+<a href="#toc_99">Application: cc26xx-web-demo comparison</a>
+</li>
+<li>
+<a href="#toc_100">Data Visualisation</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_101">Limitations</a>
+</li>
+<li>
+<a href="#toc_102">Conclusions</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_103">SciTools Understand</a>
+<ul>
+<li>
+<a href="#toc_104">Features</a>
+</li>
+<li>
+<a href="#toc_105">Images</a>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_106">Understand overview</a>
+</li>
+<li>
+<a href="#toc_107">Contiki Project Treemap</a>
+</li>
+<li>
+<a href="#toc_108">MQTT Source Code</a>
+</li>
+<li>
+<a href="#toc_109">MQTT Control Flow</a>
+</li>
+<li>
+<a href="#toc_110">MQTT Butterfly Chart</a>
+</li>
+<li>
+<a href="#toc_111">Static Analysers</a>
+</li>
+<li>
+<a href="#toc_112">Static Analysis Report: <q>SciTools&#39; Recommended Checks</q></a>
+</li>
+<li>
+<a href="#toc_113">Static Analysis Report: <q>Clang Static Analyzer (beta)</q></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_114">Limitations</a>
+</li>
+<li>
+<a href="#toc_115">Conclusions</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_116">Static Analysis</a>
+<ul>
+<li>
+<a href="#toc_117">Overview</a>
+</li>
+<li>
+<a href="#toc_118">Static Analysis Tools</a>
+</li>
+<li>
+<a href="#toc_119">Open Source</a>
+</li>
+<li>
+<a href="#toc_120">Errors in Contiki OS</a>
+<ul>
+<li>
+<a href="#toc_121">By codebase</a>
+<ul>
+<li>
+<a href="#toc_122">Conclusion</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_123">By directory</a>
+<ul>
+<li>
+<a href="#toc_124">Conclusion</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_125">Bug density in Contiki OS</a>
+<ul>
+<li>
+<a href="#toc_126">By codebase</a>
+<ul>
+<li>
+<a href="#toc_127">Conclusion</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_128">By directory</a>
+<ul>
+<li>
+<a href="#toc_129">Conclusion</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_130">Unsafe function usage</a>
+<ul>
+<li>
+<a href="#toc_131">By codebase</a>
+<ul>
+<li>
+<a href="#toc_132">Conclusion</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_133">By directory</a>
+<ul>
+<li>
+<a href="#toc_134">Conclusion</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_135">Common Weakness Enumeration</a>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_136">CWE: Weaknesses in Software Written in C</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_137">Operating System Comparison</a>
+<ul>
+<li>
+<a href="#toc_138">Over time</a>
+<ul>
+<li>
+<a href="#toc_139">Conclusion</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_140">By tool</a>
+<ul>
+<li>
+<a href="#toc_141">Conclusion</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_142">Bug density of competing OSes</a>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_143">Conclusion</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_144">License-based static analysis tools</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_145">Bitbucket workflow</a>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_146">Screenshots</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_147">CVE Disclosure</a>
+<ul>
+<li>
+<a href="#toc_148">CVE-2017-7295</a>
+<ul>
+<li>
+<a href="#toc_149">Screenshots</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_150">CVE-2017-7296</a>
+<ul>
+<li>
+<a href="#toc_151">Screenshots</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_152">Results</a>
+</li>
+<li>
+<a href="#toc_153">Meetings</a>
+<ul>
+<li>
+<a href="#toc_154">25/1/2017 Meeting @ Kent</a>
+</li>
+<li>
+<a href="#toc_155">01/2/2017 Meeting @ Kent</a>
+</li>
+<li>
+<a href="#toc_156">14/2/2017 Meeting @ Kent with Bristol</a>
+</li>
+<li>
+<a href="#toc_157">01/03/2017 Meeting @ Bristol</a>
+</li>
+<li>
+<a href="#toc_158">07/03/2017 Meeting @ Kent with Bristol</a>
+</li>
+<li>
+<a href="#toc_159">27/03/2017 Meeting @ Bristol</a>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<h1 id="toc_1">Introduction</h1>
+
+<h2 id="toc_2">Author Notes</h2>
+
+<p>The author of this project is Jack Lucas Gilmore McBride, as supervised by Budi Arief. The project was conducted between January of 2017, and completed in August 2017, with a finish date of 24/08/2017. If you wish to contact the author, please do so at <a href="mailto:jlgm2@kent.ac.uk"><a href="mailto:jlgm2@kent.ac.uk">jlgm2@kent.ac.uk</a></a>.</p>
+
+<h2 id="toc_3">Abstract</h2>
+
+<p>Based on the set of resource-conscious use cases and services provided by IoT devices, the development of operating systems suited to constrained systems is on the rise; many of which thrive as open-source community driven projects. As security researchers, this affords us a unique opportunity to improve IoT stability at the heart of the issue, by working alongside developers to improve the robustness of their systems. Current open-source projects such as Contiki, TinyOS and RIOT feature open, publicly accessible repositories, allowing for the complete project source files to be scrutinised, and evaluated by the community. As such, obscuring weak security features is no longer feasible, and so the overall robustness of the system can improve beyond that of a proprietary system based on this exposure. Through this method, security techniques such as static analysis and reverse engineering can be applied to the source code and prevent vulnerabilities before they are released into the wild. This project intends to explore the effectiveness of static analysis tools on performing security analyses on the codebases of IoT systems, focusing on Contiki OS. </p>
+
+<h2 id="toc_4">Aim</h2>
+
+<p>This corpus intends to provide supplementary material and evidence to support the project dissertation. Stored within are materials documenting the results of the project, as well as a record of the developmental process leading to them. This corpus provides a roadmap of the areas of the project, whereas several heavily detailed aspects will be further described within the body of the dissertation itself. </p>
+
+<h2 id="toc_5">Acknowledgements</h2>
+
+<p>Special thanks go to my supervisor Dr Budi Arief for providing guidance and insight behind the project, and Dr Julio Hernandez-Castro for his additional assistance. Special thanks also go to Dr George Oikonomou for his introduction to the project and deep understanding of the Contiki operating system, as well as his team at Bristol who were a pleasure to collaborate with.</p>
+
+<h1 id="toc_6">Initial Ideas</h1>
+
+<h2 id="toc_7">Overview</h2>
+
+<p>The purpose of this project is to perform a security analysis of Contiki: an open source operating system designed for the Internet of Things. The main focus of this investigation will involve the use of static analysis tools, which can be deployed onto the source code to automate testing, and discovery of vulnerabilities without execution. This is considered a <q>dry-run</q> of the code, and is used as a method of security analysis as a counterpart to dynamic analysis, which determines the existence vulnerabilities through code execution. </p>
+
+<p>Contiki is written in the ANSI C programming language, which is designed to provide lightweight and efficient software to be run on resource constrained sensors. As such, due to the volatile nature of C as a language, it introduces a series of potential threats to the operating system&rsquo;s security: including the classic buffer overflow vulnerability, which allows attackers to manipulate vulnerable systems in a number of malicious ways. Based on the overhead restriction faced by IoT systems such as Contiki, implementing the level of security typical to full scale computers is not feasible due to the incurring impact on data processing and performance. This has created a mementous issue in the Internet of Things as of lately, in striking a balance between system security and performance. </p>
+
+<p>This project, therefore, is an exploration into how static analysis tools can be used to identify, document, and patch the more elusive of vulnerabilities found to be compromising such systems. Contiki, as a popular platform for many IoT developers to develop open source applications for, is therefore a strong contender for testing the effective of static analysis tools. </p>
+
+<h2 id="toc_8">Aims</h2>
+
+<p>This project has the following aims: </p>
+
+<ul>
+<li>To identify and correct flaws found in the Contiki operating system.</li>
+<li>To work collaboratively in a team, using a red-team-blue-team approach to locating and patching flaws.</li>
+<li>To measure the effectiveness of several static analysis tools at our disposal.</li>
+<li>To develop an understanding of how static analysis tools work, and can be executed to find flaws.</li>
+<li>To develop an understanding of vulnerabilities commonly faced in IoT operating systems, and evaluate the status of security in the current market.</li>
+</ul>
+
+<p>To achieve these aims, we will be amassing a collection of static analysis tools suitable for use with C/C++ code, studying and evaluating them to understand how they work, and deploying them on the source code of Contiki and that of other operating systems. Additionally, we shall be documenting the reports generated from each of these tools, formulating a work flow for which we can communicate and patch vulnerabilities alongside the project&rsquo;s developers, who can then integrate the suggested changes into the main Contiki git repository. Additionally, after the duration of the project, we aim to observe the improvements our research may have made, and make evaluations as to how they could have been improved. Finally, we intend to postulate on future work following the direction of this project, and perhaps look into how this method can be replicated to patch other operating systems similar to Contiki. </p>
+
+<h1 id="toc_9">Contiki</h1>
+
+<p>In this section, we list some of the key features of Contiki, and explore the core concepts related to IoT driven sensor networks. This is intended to provide an overview of the technologies featured in Contiki, some of the advantages and limitations of that technology, and how it is looking to progress in future. </p>
+
+<h4 id="toc_10">Overview</h4>
+
+<p>Contiki connects low-power microcontrollers to the internet and supports standards like IPv6, 6lowpan, RPL and CoAP. Other key features include highly efficient memory allocation, full IP networking, very low power consumption, dynamic module loading and more. Supported hardware platforms include Redwire Econotags, Zolertia z1 motes, ST Microelectronics development kits and Texas Instruments chips and boards.</p>
+
+<h2 id="toc_11">Features</h2>
+
+<p>Designed specifically to work with IoT 
+Devices which are low power, constrained devices - microcontrollers, wireless sensors 
+Highly portable, multi tasking 
+New features - MicroIP (uIP) and 6LoWPAN.</p>
+
+<h4 id="toc_12">uIP (Micro IP)</h4>
+
+<ul>
+<li>Implements a skeleton TCP/IP </li>
+<li>Designed for 8 and 16 bit micro controllers </li>
+<li>Stack includes TCP, UDP, ICMP protocols. </li>
+<li>Size of uIP is a few Kilobytes, ram requirements are a few hundred bytes. </li>
+<li>uIPv6 - the world’s smallest certified IPv6 stack - designed by CISCO for sensors and actuators. </li>
+</ul>
+
+<h4 id="toc_13">6LoWPAN</h4>
+
+<ul>
+<li>IPv6 - low power and wireless personal area network. </li>
+<li>Enables the use of IPv6 over the MAC and PHY layer of 802.15.4 (LR-WPAN). </li>
+<li>Challenges - each MAC layer has a limitation for data e.g. MTU - allowing in this case only 127 bytes. </li>
+<li>Networking layer - the IPv6 MTU was 280 bytes. </li>
+</ul>
+
+<h4 id="toc_14">Transition from IPv4 to IPv6</h4>
+
+<ul>
+<li>IPv4 is a 32 bit IP address - 2<sup>32</sup> = 4 billion or so available addresses, which is soon to run out. </li>
+<li>IPv6 is 128 bit IP addresses - which is considerably more. </li>
+<li>How does this transition? Slowly, and gradually. </li>
+<li>Enabled from three popular technologies: Dual stack, tunnelling and header translation. </li>
+</ul>
+
+<h4 id="toc_15">Dual Stack</h4>
+
+<ul>
+<li>TCP/IP protocol stack where we contain bother IPv4 and IPv6 parts of the protocol in the stack. </li>
+<li>If we need to communicate with an IPv4 node, use that part of the stack. Or with IPv6 address, use that part of the stack. </li>
+<li>Source queries the DNS - the DNS responds back with IPv4 or IPv6 address - based on which one, the source may respond with an IPv4 packet or an IPv6 packet which it sends to the destination node. </li>
+</ul>
+
+<h4 id="toc_16">Tunnelling</h4>
+
+<p>Implemented when different IP versions exist on path. 
+E.G. if two IPv6 machines communicate through IPv4 routers, the IPv6 packets are placed inside IPv4 packets and then forwarded towards the destination machine.</p>
+
+<h4 id="toc_17">Header Translation</h4>
+
+<ul>
+<li>Necessary when most of the Internet has moved to IPv6, but some systems still use IPv4. </li>
+<li>Sender uses IPv6, receiver uses IPv4. Tunnelling doesn’t work here, as destination machine only understands IPv4. </li>
+<li>So the header format is changed on route. </li>
+<li>It is converted from IPv6 to IPv4 on route. </li>
+<li>Done by mapped address. </li>
+</ul>
+
+<h4 id="toc_18">RPL</h4>
+
+<ul>
+<li>Routing protocol for Low power and Lossy networks (RPL) </li>
+<li>A distance vector routing protocol.</li>
+<li>The routing is based on Destination oriented Acyclic graphs or DODAGs.</li>
+</ul>
+
+<h4 id="toc_19">Terminology related to RPL</h4>
+
+<ul>
+<li>Direct acyclic graph (DAG) - a spanning tree graph when we don’t have any cycles </li>
+<li>Root - destination of the nodes in the DAG.</li>
+<li>Up - any edge that is directed towards the root. </li>
+<li>Down - any edge that is directed away from the root. </li>
+</ul>
+
+<h4 id="toc_20">Destination Oriented Direct acyclic graph (DODAG)</h4>
+
+<ul>
+<li>Special DAG where all nodes are trying to reach a single destination. </li>
+<li>Objective function - helps us determine how close we are to the root - e.g. number of intermediary nodes. </li>
+<li>Rank - distance from the root. </li>
+<li>RPL instance - When we have one or more DODAGs, then each DODAG is an instance. </li>
+<li>DODAG ID - Each DODAG has an IPv6 ID (128 bit). This ID is given to the root only. As long as the root doesn’t change, the ID doesn’t change. </li>
+<li>DODAG version - each different shape of a DODAG has a different version. E.g. if nodes sleep or turn off for a couple of weeks, the shapes will change to fill in the gaps. </li>
+<li>Goal - where a DODAG wants to reach. </li>
+<li>Grounded - when a DODAG reaches its goal. </li>
+<li>Floating - when DODAG hasn’t reached its goal. </li>
+<li>Parent - the parent node - the node to which the arrow is pointing </li>
+<li>Child - the child node - the node from which the arrow is extending. </li>
+<li>Sub-DODAG - any subtree of a given DODAG </li>
+<li>Storing nodes - keeps the whole routing table. They know how to go from one node to the other. </li>
+<li>Non storing nodes - only know about their parents. </li>
+</ul>
+
+<h4 id="toc_21">RPL Control Messages</h4>
+
+<p>5 control messages that form the spanning tree: </p>
+
+<ul>
+<li>DODAG Information object (DIO) - Message sent by a node present in a DODAG. Multicasted from the node, message contains information about whether the node is storing/non storing, floating/grounded. </li>
+<li>DODAG Information Solicitation (DIS) - Message sent by a new node when it doesn’t receive announcements - “Is there any DODAG out there”. </li>
+<li>DODAG Advertisement Object (DAO) - Request made by a new node to a parent or a root to request to be a part of their DODAG. </li>
+<li>DAO-ACK - an acknowledgement - yes or no, consistency check</li>
+</ul>
+
+<h2 id="toc_22">Contiki 3.0</h2>
+
+<p>This section contains several developer notes concerning the features of Contiki 3.0: the latest release of Contiki as of 2016. It also provides signposting for where particular functionalities of the operating system are kept, with regard to the project directories. </p>
+
+<p>GitHub Repository: <a href="https://github.com/contiki-os/contiki">https://github.com/contiki-os/contiki</a> </p>
+
+<p>Contiki Website: <a href="http://contiki-os.org/">http://contiki-os.org/</a></p>
+
+<h3 id="toc_23">Features</h3>
+
+<h5 id="toc_24">Memory Allocation</h5>
+
+<blockquote>
+<p>Contiki is designed for tiny systems, having only a few kilobytes of memory available. Contiki is therefore highly memory efficient and provides a set of mechanisms for memory allocation: memory block allocation memb, a managed memory allocator mmem, as well as the standard C memory allocator malloc.</p>
+</blockquote>
+
+<p>Found in: contiki/core/lib/{memb,mmem}.[ch].</p>
+
+<h5 id="toc_25">Full IP Networking</h5>
+
+<blockquote>
+<p>Contiki provides a full IP network stack, with standard IP protocols such as UDP, TCP, and HTTP, in addition to the new low-power standards like 6lowpan, RPL, and CoAP. The Contiki IPv6 stack, developed by and contributed to Contiki by Cisco, is fully certified under the IPv6 Ready Logo program.</p>
+</blockquote>
+
+<p>Find the code in contiki/core/net/.</p>
+
+<h5 id="toc_26">Power Awareness</h5>
+
+<blockquote>
+<p>Contiki is designed to operate in extremely low-power systems: systems that may need to run for years on a pair of AA batteries. To assist the development of low-power systems, Contiki provides mechanisms for estimating the system power consumption and for understanding where the power was spent.</p>
+</blockquote>
+
+<p>Find the code in contiki/sys/energest.[ch].</p>
+
+<h5 id="toc_27">6lowpan, RPL, CoAP</h5>
+
+<blockquote>
+<p>Contiki supports the recently standardized IETF protocols for low-power IPv6 networking, including the 6lowpan adaptation layer, the RPL IPv6 multi-hop routing protocol, and the CoAP RESTful application-layer protocol.</p>
+</blockquote>
+
+<p>Find the code in contiki/core/net/rpl/ and contiki/apps/erbium/.</p>
+
+<h5 id="toc_28">Dynamic Module Loading</h5>
+
+<blockquote>
+<p>Contiki supports dynamic loading and linking of modules at run-time. This is useful in applications in which the behavior is intended to be changed after deployment. The Contiki module loader can load, relocate, and link standard ELF files that can optionally be stripped off their debugging symbols to keep their size down.</p>
+</blockquote>
+
+<p>Find the code in contiki/core/loader/.</p>
+
+<h5 id="toc_29">Examples</h5>
+
+<blockquote>
+<p>There are plenty of examples in the Contiki source code tree to help you get started with your own code. Some examples show how to program network code, others show how to interact with the platform hardware, yet others demonstrate different aspects of the Contiki system. Most have a corresponding Cooja simulation available.</p>
+</blockquote>
+
+<p>Find the code in contiki/examples/.</p>
+
+<h5 id="toc_30">The Cooja Network Simulator</h5>
+
+<blockquote>
+<p>Contiki devices often make up large wireless networks. Developing and debugging software for such networks is really hard. Cooja, the Contiki network simulator, makes this tremendously easier by providing a simulation environment that allows developers to both see their applications run in large-scale networks or in extreme detail on fully emulated hardware devices.</p>
+</blockquote>
+
+<p>Find the code in contiki/tools/cooja/.</p>
+
+<h5 id="toc_31">Sleepy Routers</h5>
+
+<blockquote>
+<p>In wireless networks, nodes may need to relay messages from others to reach their destination. With Contiki, even relay nodes, so-called routers, can be battery-operated thanks to the ContikiMAC radio duty cycling mechanism which allows them to sleep between each relayed message. Some call this sleeping routers, we call it sleepy routers.</p>
+</blockquote>
+
+<p>Find the code in contiki/core/net/mac/.</p>
+
+<h5 id="toc_32">Hardware Platforms</h5>
+
+<blockquote>
+<p>Contiki runs on a wide range of tiny platforms, ranging from 8051-powered systems-on-a-chip through the MSP430 and the AVR to a variety of ARM devices. There are also a number of more exotic platforms thrown in there for good measure. Read more about Contiki hardware platforms:</p>
+</blockquote>
+
+<h5 id="toc_33">Contiki hardware »</h5>
+
+<p>Find the code in contiki/platform/ and contiki/cpu/.</p>
+
+<h5 id="toc_34">Protothreads</h5>
+
+<blockquote>
+<p>To save memory but provide a nice control flow in the code, Contiki uses a mechanism called protothreads. Protothreads is a mixture of the event-driven and the multi-threaded programming mechanisms. With protothreads, event-handlers can be made to block, waiting for events to occur.</p>
+</blockquote>
+
+<p>Find the code in contiki/core/sys/pt.h.</p>
+
+<h5 id="toc_35">Coffee flash file system</h5>
+
+<blockquote>
+<p>For devices that has an external flash memory chip, Contiki provides a lightweight flash file system, called Coffee. With Coffee, application programs can open, close, read from, write to, and append to files on the external flash, without having to worry about flash sectors needing to be erased before writing or flash wear-leveling. The performance of Coffee is within 95% of the raw throughput of the flash memory.</p>
+</blockquote>
+
+<p>Find the code in contiki/core/cfs/cfs-coffee.[ch].</p>
+
+<h5 id="toc_36">The Contiki shell</h5>
+
+<blockquote>
+<p>Contiki provides an optional command-line shell with a set of commands that are useful during development and debugging of Contiki systems. With Unix-style pipelines, shell commands can be combined in powerful ways. Applications can define their own shell commands that work together with existing commands.</p>
+</blockquote>
+
+<p>Find the code in contiki/apps/shell/.</p>
+
+<h5 id="toc_37">Regression Tests</h5>
+
+<blockquote>
+<p>To ensure that the Contiki code works as expected, the Contiki developers use a set of nightly regression tests that test important aspects of Contiki on a daily basis in the Cooja simulator. The regression test scripts can be used as a starting point for setting up simulations or to investigate how different Contiki mechanisms work.</p>
+</blockquote>
+
+<p>Find the code in contiki/regression-tests/.</p>
+
+<h5 id="toc_38">The Rime Stack</h5>
+
+<blockquote>
+<p>In situations when bandwidth is at a premium or where the full IPv6 networking stack is overkill, Contiki provides a tailored wireless networking stack called Rime. The Rime stack supports simple operations such as sending a message to all neighbors or to a specified neighbor, as well as more complex mechanisms such as network flooding and address-free multi-hop semi-reliable scalable data collection. Everything runs with sleepy routers to save power.</p>
+</blockquote>
+
+<p>Find the code in contiki/core/net/rime/.</p>
+
+<h5 id="toc_39">Build System</h5>
+
+<blockquote>
+<p>The Contiki build system makes it easy to compile applications for any of the available Contiki platforms. This makes it easy to try out applications on a range of different platforms. Don&rsquo;t have the hardware available? Use the Cooja simulator to emulate any of the available hardware devices!</p>
+</blockquote>
+
+<p>Find the code in contiki/Makefile.include.</p>
+
+<h2 id="toc_40">Code Metrics</h2>
+
+<p>To get an overall understanding of the Contiki software, we first conducted an investigation into the general code metrics behind the operating system. This consisted of measuring the total number of lines of code, expressed as SLOC over the entire codebase and over each directory. In addition to this, we analysed the ratio of programming languages present in Contiki: focusing on the core language of ANSI C. When it came to measuring errors, bug density, or general security of the system, we did this purely on the basis of the code written in ANSI C, as with it being the primary language of Contiki, it gave us the most accurate representation of its general behaviour when deployed on the wild. As such, all of the bug detection and patching is also performed exclusively on C code. In the sections below, we describe the method we used for obtaining the code metrics and discuss the statistics of the Contiki codebase.</p>
+
+<h3 id="toc_41">By codebase</h3>
+
+<p>The first measure we took was to collect data on the SLOC of Contiki irrespective of the programming language. At later stages, we filtered specifically to focus on C based metrics, after having broken down the weighting of each language in the project overall. </p>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Contiki Version</th>
+<th style="text-align: center">SLOC (Total)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">2.0 (2007)</td>
+<td style="text-align: center">91099</td>
+</tr>
+<tr>
+<td style="text-align: center">2.1 (2007)</td>
+<td style="text-align: center">111983</td>
+</tr>
+<tr>
+<td style="text-align: center">2.2 (2008)</td>
+<td style="text-align: center">127057</td>
+</tr>
+<tr>
+<td style="text-align: center">2.3 (2009)</td>
+<td style="text-align: center">163321</td>
+</tr>
+<tr>
+<td style="text-align: center">2.4 (2010)</td>
+<td style="text-align: center">198561</td>
+</tr>
+<tr>
+<td style="text-align: center">2.5 (2011)</td>
+<td style="text-align: center">246627</td>
+</tr>
+<tr>
+<td style="text-align: center">2.6 (2012)</td>
+<td style="text-align: center">278368</td>
+</tr>
+<tr>
+<td style="text-align: center">2.7 (2013)</td>
+<td style="text-align: center">301189</td>
+</tr>
+<tr>
+<td style="text-align: center">3.0 (2015)</td>
+<td style="text-align: center">328945</td>
+</tr>
+<tr>
+<td style="text-align: center">3.x (2017)</td>
+<td style="text-align: center">425652</td>
+</tr>
+</tbody>
+</table>
+
+<p></center></p>
+
+<p><br></p>
+
+<p><img src="Images/SLOC_total_by_version.png" alt="Total Errors"></p>
+
+<p>This is then condensed more explicity for each version in the tables below. </p>
+
+<h4 id="toc_42">Contiki 2.0</h4>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Programming Language</th>
+<th style="text-align: center">SLOC</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">ANSI C</td>
+<td style="text-align: center">69165</td>
+</tr>
+<tr>
+<td style="text-align: center">Java</td>
+<td style="text-align: center">17840</td>
+</tr>
+<tr>
+<td style="text-align: center">ASM</td>
+<td style="text-align: center">3242</td>
+</tr>
+<tr>
+<td style="text-align: center">Python</td>
+<td style="text-align: center">704</td>
+</tr>
+<tr>
+<td style="text-align: center">Perl</td>
+<td style="text-align: center">91</td>
+</tr>
+<tr>
+<td style="text-align: center">Shell Script</td>
+<td style="text-align: center">57</td>
+</tr>
+<tr>
+<td style="text-align: center"><b>Total</b></td>
+<td style="text-align: center"><b>91099</b></td>
+</tr>
+</tbody>
+</table>
+
+<p></center></p>
+
+<h4 id="toc_43">Contiki 2.1</h4>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Programming Language</th>
+<th style="text-align: center">SLOC</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">ANSI C</td>
+<td style="text-align: center">80029</td>
+</tr>
+<tr>
+<td style="text-align: center">Java</td>
+<td style="text-align: center">22629</td>
+</tr>
+<tr>
+<td style="text-align: center">Python</td>
+<td style="text-align: center">4832</td>
+</tr>
+<tr>
+<td style="text-align: center">ASM</td>
+<td style="text-align: center">4010</td>
+</tr>
+<tr>
+<td style="text-align: center">Perl</td>
+<td style="text-align: center">390</td>
+</tr>
+<tr>
+<td style="text-align: center">Shell Script</td>
+<td style="text-align: center">89</td>
+</tr>
+<tr>
+<td style="text-align: center">AWK</td>
+<td style="text-align: center">4</td>
+</tr>
+<tr>
+<td style="text-align: center"><b>Total</b></td>
+<td style="text-align: center"><b>111983</b></td>
+</tr>
+</tbody>
+</table>
+
+<p></center></p>
+
+<h4 id="toc_44">Contiki 2.2</h4>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Programming Language</th>
+<th style="text-align: center">SLOC</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">ANSI C</td>
+<td style="text-align: center">90217</td>
+</tr>
+<tr>
+<td style="text-align: center">Java</td>
+<td style="text-align: center">26971</td>
+</tr>
+<tr>
+<td style="text-align: center">Python</td>
+<td style="text-align: center">4832</td>
+</tr>
+<tr>
+<td style="text-align: center">ASM</td>
+<td style="text-align: center">4356</td>
+</tr>
+<tr>
+<td style="text-align: center">Perl</td>
+<td style="text-align: center">498</td>
+</tr>
+<tr>
+<td style="text-align: center">Shell Script</td>
+<td style="text-align: center">143</td>
+</tr>
+<tr>
+<td style="text-align: center">PHP</td>
+<td style="text-align: center">36</td>
+</tr>
+<tr>
+<td style="text-align: center">AWK</td>
+<td style="text-align: center">4</td>
+</tr>
+<tr>
+<td style="text-align: center"><b>Total</b></td>
+<td style="text-align: center"><b>127057</b></td>
+</tr>
+</tbody>
+</table>
+
+<p></center></p>
+
+<h4 id="toc_45">Contiki 2.3</h4>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Programming Language</th>
+<th style="text-align: center">SLOC</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">ANSI C</td>
+<td style="text-align: center">116648</td>
+</tr>
+<tr>
+<td style="text-align: center">Java</td>
+<td style="text-align: center">36609</td>
+</tr>
+<tr>
+<td style="text-align: center">Python</td>
+<td style="text-align: center">4832</td>
+</tr>
+<tr>
+<td style="text-align: center">ASM</td>
+<td style="text-align: center">4356</td>
+</tr>
+<tr>
+<td style="text-align: center">Perl</td>
+<td style="text-align: center">563</td>
+</tr>
+<tr>
+<td style="text-align: center">Shell Script</td>
+<td style="text-align: center">267</td>
+</tr>
+<tr>
+<td style="text-align: center">PHP</td>
+<td style="text-align: center">36</td>
+</tr>
+<tr>
+<td style="text-align: center">Lisp</td>
+<td style="text-align: center">6</td>
+</tr>
+<tr>
+<td style="text-align: center">AWK</td>
+<td style="text-align: center">4</td>
+</tr>
+<tr>
+<td style="text-align: center"><b>Total</b></td>
+<td style="text-align: center"><b>163321</b></td>
+</tr>
+</tbody>
+</table>
+
+<p></center></p>
+
+<h4 id="toc_46">Contiki 2.4</h4>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Programming Language</th>
+<th style="text-align: center">SLOC</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">ANSI C</td>
+<td style="text-align: center">147042</td>
+</tr>
+<tr>
+<td style="text-align: center">Java</td>
+<td style="text-align: center">40995</td>
+</tr>
+<tr>
+<td style="text-align: center">Python</td>
+<td style="text-align: center">4832</td>
+</tr>
+<tr>
+<td style="text-align: center">ASM</td>
+<td style="text-align: center">4356</td>
+</tr>
+<tr>
+<td style="text-align: center">Perl</td>
+<td style="text-align: center">1023</td>
+</tr>
+<tr>
+<td style="text-align: center">Shell Script</td>
+<td style="text-align: center">261</td>
+</tr>
+<tr>
+<td style="text-align: center">PHP</td>
+<td style="text-align: center">36</td>
+</tr>
+<tr>
+<td style="text-align: center">Lisp</td>
+<td style="text-align: center">12</td>
+</tr>
+<tr>
+<td style="text-align: center">AWK</td>
+<td style="text-align: center">4</td>
+</tr>
+<tr>
+<td style="text-align: center"><b>Total</b></td>
+<td style="text-align: center"><b>198561</b></td>
+</tr>
+</tbody>
+</table>
+
+<p></center></p>
+
+<h4 id="toc_47">Contiki 2.5</h4>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Programming Language</th>
+<th style="text-align: center">SLOC</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">ANSI C</td>
+<td style="text-align: center">191187</td>
+</tr>
+<tr>
+<td style="text-align: center">Java</td>
+<td style="text-align: center">45258</td>
+</tr>
+<tr>
+<td style="text-align: center">Python</td>
+<td style="text-align: center">5528</td>
+</tr>
+<tr>
+<td style="text-align: center">ASM</td>
+<td style="text-align: center">2233</td>
+</tr>
+<tr>
+<td style="text-align: center">Perl</td>
+<td style="text-align: center">2101</td>
+</tr>
+<tr>
+<td style="text-align: center">Shell Script</td>
+<td style="text-align: center">254</td>
+</tr>
+<tr>
+<td style="text-align: center">PHP</td>
+<td style="text-align: center">49</td>
+</tr>
+<tr>
+<td style="text-align: center">Lisp</td>
+<td style="text-align: center">13</td>
+</tr>
+<tr>
+<td style="text-align: center">AWK</td>
+<td style="text-align: center">4</td>
+</tr>
+<tr>
+<td style="text-align: center"><b>Total</b></td>
+<td style="text-align: center"><b>246627</b></td>
+</tr>
+</tbody>
+</table>
+
+<p></center></p>
+
+<h4 id="toc_48">Contiki 2.6</h4>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Programming Language</th>
+<th style="text-align: center">SLOC</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">ANSI C</td>
+<td style="text-align: center">217308</td>
+</tr>
+<tr>
+<td style="text-align: center">Java</td>
+<td style="text-align: center">50313</td>
+</tr>
+<tr>
+<td style="text-align: center">Python</td>
+<td style="text-align: center">5832</td>
+</tr>
+<tr>
+<td style="text-align: center">Perl</td>
+<td style="text-align: center">2362</td>
+</tr>
+<tr>
+<td style="text-align: center">ASM</td>
+<td style="text-align: center">2233</td>
+</tr>
+<tr>
+<td style="text-align: center">Shell Script</td>
+<td style="text-align: center">254</td>
+</tr>
+<tr>
+<td style="text-align: center">PHP</td>
+<td style="text-align: center">49</td>
+</tr>
+<tr>
+<td style="text-align: center">Lisp</td>
+<td style="text-align: center">13</td>
+</tr>
+<tr>
+<td style="text-align: center">AWK</td>
+<td style="text-align: center">4</td>
+</tr>
+<tr>
+<td style="text-align: center"><b>Total</b></td>
+<td style="text-align: center"><b>278368</b></td>
+</tr>
+</tbody>
+</table>
+
+<p></center></p>
+
+<h4 id="toc_49">Contiki 2.7</h4>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Programming Language</th>
+<th style="text-align: center">SLOC</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">ANSI C</td>
+<td style="text-align: center">235456</td>
+</tr>
+<tr>
+<td style="text-align: center">Java</td>
+<td style="text-align: center">53228</td>
+</tr>
+<tr>
+<td style="text-align: center">Python</td>
+<td style="text-align: center">7662</td>
+</tr>
+<tr>
+<td style="text-align: center">Perl</td>
+<td style="text-align: center">2434</td>
+</tr>
+<tr>
+<td style="text-align: center">ASM</td>
+<td style="text-align: center">2270</td>
+</tr>
+<tr>
+<td style="text-align: center">Shell Script</td>
+<td style="text-align: center">93</td>
+</tr>
+<tr>
+<td style="text-align: center">PHP</td>
+<td style="text-align: center">29</td>
+</tr>
+<tr>
+<td style="text-align: center">Lisp</td>
+<td style="text-align: center">13</td>
+</tr>
+<tr>
+<td style="text-align: center">AWK</td>
+<td style="text-align: center">4</td>
+</tr>
+<tr>
+<td style="text-align: center"><b>Total</b></td>
+<td style="text-align: center"><b>301189</b></td>
+</tr>
+</tbody>
+</table>
+
+<p></center></p>
+
+<h4 id="toc_50">Contiki 3.0</h4>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Programming Language</th>
+<th style="text-align: center">SLOC</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">ANSI C</td>
+<td style="text-align: center">260346</td>
+</tr>
+<tr>
+<td style="text-align: center">Java</td>
+<td style="text-align: center">56033</td>
+</tr>
+<tr>
+<td style="text-align: center">Python</td>
+<td style="text-align: center">6971</td>
+</tr>
+<tr>
+<td style="text-align: center">ASM</td>
+<td style="text-align: center">3008</td>
+</tr>
+<tr>
+<td style="text-align: center">Perl</td>
+<td style="text-align: center">2434</td>
+</tr>
+<tr>
+<td style="text-align: center">Shell Script</td>
+<td style="text-align: center">149</td>
+</tr>
+<tr>
+<td style="text-align: center">AWK</td>
+<td style="text-align: center">4</td>
+</tr>
+<tr>
+<td style="text-align: center"><b>Total</b></td>
+<td style="text-align: center"><b>328945</b></td>
+</tr>
+</tbody>
+</table>
+
+<p></center></p>
+
+<h4 id="toc_51">Contiki 3.x</h4>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Programming Language</th>
+<th style="text-align: center">SLOC</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">ANSI C</td>
+<td style="text-align: center">355913</td>
+</tr>
+<tr>
+<td style="text-align: center">Java</td>
+<td style="text-align: center">56497</td>
+</tr>
+<tr>
+<td style="text-align: center">Python</td>
+<td style="text-align: center">7185</td>
+</tr>
+<tr>
+<td style="text-align: center">ASM</td>
+<td style="text-align: center">3302</td>
+</tr>
+<tr>
+<td style="text-align: center">Perl</td>
+<td style="text-align: center">2452</td>
+</tr>
+<tr>
+<td style="text-align: center">Shell Script</td>
+<td style="text-align: center">299</td>
+</tr>
+<tr>
+<td style="text-align: center">AWK</td>
+<td style="text-align: center">4</td>
+</tr>
+<tr>
+<td style="text-align: center"><b>Total</b></td>
+<td style="text-align: center"><b>425652</b></td>
+</tr>
+</tbody>
+</table>
+
+<p></center></p>
+
+<p><br></p>
+
+<p>In order to generate the code metrics, we used SLOCCOUNT (<a href="https://www.dwheeler.com/sloccount/">https://www.dwheeler.com/sloccount/</a>) an open source set of tools for calculating properties of code; such as number of physical lines (SLOC). According to its documentation it is suitable for large systems such as Contiki, and has been used to perform estimations on systems as complex as the Linux kernel (<a href="https://www.dwheeler.com/sloc/redhat71-v1/redhat71sloc.html">https://www.dwheeler.com/sloc/redhat71-v1/redhat71sloc.html</a>).</p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Contiki Release</th>
+<th style="text-align: center">platform</th>
+<th style="text-align: center">core</th>
+<th style="text-align: center">tools</th>
+<th style="text-align: center">apps</th>
+<th style="text-align: center">cpu</th>
+<th style="text-align: center">examples</th>
+<th style="text-align: center">doc</th>
+<th style="text-align: center">backyard</th>
+<th style="text-align: center">regression tests</th>
+<th style="text-align: center">dev</th>
+<th style="text-align: center">lib</th>
+<th style="text-align: center">TOTAL</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">2.0</td>
+<td style="text-align: center">22324</td>
+<td style="text-align: center">25520</td>
+<td style="text-align: center">1381</td>
+<td style="text-align: center">10654</td>
+<td style="text-align: center">8078</td>
+<td style="text-align: center">978</td>
+<td style="text-align: center">230</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center">69165</td>
+</tr>
+<tr>
+<td style="text-align: center">2.1</td>
+<td style="text-align: center">17947</td>
+<td style="text-align: center">22627</td>
+<td style="text-align: center">1383</td>
+<td style="text-align: center">10125</td>
+<td style="text-align: center">10828</td>
+<td style="text-align: center">1945</td>
+<td style="text-align: center">185</td>
+<td style="text-align: center">14989</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center">80029</td>
+</tr>
+<tr>
+<td style="text-align: center">2.2</td>
+<td style="text-align: center">17465</td>
+<td style="text-align: center">24695</td>
+<td style="text-align: center">2855</td>
+<td style="text-align: center">13071</td>
+<td style="text-align: center">11053</td>
+<td style="text-align: center">3243</td>
+<td style="text-align: center">185</td>
+<td style="text-align: center">17650</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center">90217</td>
+</tr>
+<tr>
+<td style="text-align: center">2.3</td>
+<td style="text-align: center">23090</td>
+<td style="text-align: center">30774</td>
+<td style="text-align: center">4578</td>
+<td style="text-align: center">15552</td>
+<td style="text-align: center">19715</td>
+<td style="text-align: center">4627</td>
+<td style="text-align: center">187</td>
+<td style="text-align: center">18125</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center">116648</td>
+</tr>
+<tr>
+<td style="text-align: center">2.4</td>
+<td style="text-align: center">24002</td>
+<td style="text-align: center">31591</td>
+<td style="text-align: center">8562</td>
+<td style="text-align: center">16190</td>
+<td style="text-align: center">43526</td>
+<td style="text-align: center">4859</td>
+<td style="text-align: center">187</td>
+<td style="text-align: center">18125</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center">147042</td>
+</tr>
+<tr>
+<td style="text-align: center">2.5</td>
+<td style="text-align: center">37154</td>
+<td style="text-align: center">38233</td>
+<td style="text-align: center">12519</td>
+<td style="text-align: center">21037</td>
+<td style="text-align: center">73861</td>
+<td style="text-align: center">8196</td>
+<td style="text-align: center">187</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center">191187</td>
+</tr>
+<tr>
+<td style="text-align: center">2.6</td>
+<td style="text-align: center">40731</td>
+<td style="text-align: center">40514</td>
+<td style="text-align: center">12613</td>
+<td style="text-align: center">31959</td>
+<td style="text-align: center">76524</td>
+<td style="text-align: center">14780</td>
+<td style="text-align: center">187</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: center">2.7</td>
+<td style="text-align: center">43740</td>
+<td style="text-align: center">42597</td>
+<td style="text-align: center">12596</td>
+<td style="text-align: center">35386</td>
+<td style="text-align: center">84834</td>
+<td style="text-align: center">15699</td>
+<td style="text-align: center">152</td>
+<td style="text-align: center"></td>
+<td style="text-align: center">452</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center">235456</td>
+</tr>
+<tr>
+<td style="text-align: center">3.0</td>
+<td style="text-align: center">36624</td>
+<td style="text-align: center">41450</td>
+<td style="text-align: center">13264</td>
+<td style="text-align: center">28583</td>
+<td style="text-align: center">116320</td>
+<td style="text-align: center">20803</td>
+<td style="text-align: center">154</td>
+<td style="text-align: center"></td>
+<td style="text-align: center">494</td>
+<td style="text-align: center">2654</td>
+<td style="text-align: center"></td>
+<td style="text-align: center">260346</td>
+</tr>
+<tr>
+<td style="text-align: center">3.x</td>
+<td style="text-align: center">55459</td>
+<td style="text-align: center">49422</td>
+<td style="text-align: center">10154</td>
+<td style="text-align: center">31768</td>
+<td style="text-align: center">133730</td>
+<td style="text-align: center">32273</td>
+<td style="text-align: center">161</td>
+<td style="text-align: center"></td>
+<td style="text-align: center">1521</td>
+<td style="text-align: center">5568</td>
+<td style="text-align: center">35857</td>
+<td style="text-align: center">355913</td>
+</tr>
+</tbody>
+</table>
+
+<p><br></p>
+
+<p><img src="Images/SLOC_by_version_chart.png" alt="Total Errors"></p>
+
+<p>All of the above data was generated using David A. Wheeler&rsquo;s &lsquo;SLOCCount&rsquo;.</p>
+
+<p>The chart above demonstrates the growth of Contiki over 10 years. There is a particular increase to the <q>cpu</q> directory, which, for the past 7 releases has contained the highest SLOC. This is mainly owed to the substantial increase in platform support that Contiki has exhibited over time, resulting in consistently large amounts of additional code to be added at each consecutive update. As of version 3.x (current version of Contiki) cpu has grown to 133,730 lines of code. In the next sections, we explore the ratio of bugs encountered in the entire codebase as well as in each directory, in order to establish a measure of which areas of the project are most stable, and those which are perhaps more error prone.</p>
+
+<h2 id="toc_52">Areas of Interest</h2>
+
+<p>As of our initial meeting with the Bristol team of researchers, we established a few areas of interest to consider for analysis. We also established a workflow platform for which we could git pull the latest Contiki project files, analyse the source code and identify bugs, and disclose them alongside some potential improvements to the Bristol <q>blue-team</q>; who were tasked with patching the system. To achieve this, we used Eclipse to store the Contiki project and isolate the directories we were interested in analysing. As a result of the meeting, we concluded that the following areas were of interest:</p>
+
+<ul>
+<li>apps/er-coap</li>
+<li>apps/ipso-objects</li>
+<li>apps/mqtt</li>
+<li>apps/oma-lwm2m</li>
+<li>apps/rest-engine</li>
+<li>core</li>
+<li>cpu/cc26xx-cc13xx</li>
+<li>examples/ipv6</li>
+<li>examples/sensniff</li>
+<li>platform/srf06-cc26xx</li>
+<li>lib</li>
+<li>examples</li>
+<li>apps</li>
+</ul>
+
+<p>For ease of access, we configured Eclipse to display these project directories only, so that when it came to running static analysis tools via Eclipse, the tools would target only those specified areas. This was used throughout the project as the workbench for getting to grips with the Contiki code, and as a testing ground for making modifications when patching vulnerabilities.</p>
+
+<p><img src="Images/eclipse_static_analysis.png" alt="Total Errors"></p>
+
+<h1 id="toc_53">Cppcheck</h1>
+
+<h2 id="toc_54">Brief</h2>
+
+<p>Cppcheck is an analysis tool for C/C++ code. Unlike C/C++ compilers and many other analysis tools, it doesn’t detect syntax errors. Instead, Cppcheck detects the types of bugs that the compilers normally fail to detect. In order to establish a realistic overview of errors in Contiki, The goal is to avoid false positives; concentrating instead on critical flaws affect- ing its core stability. The developers behind Cppcheck lay out some key points regarding its use:</p>
+
+<ul>
+<li>You can check non-standard code that includes various compiler extensions, inline assembly code, etc.</li>
+<li>Cppcheck should be compilable by any C++ compiler that handles the latest C++ standard.</li>
+<li>Cppcheck should work on any platform that has sufficient CPU and memory.</li>
+<li>You will find more bugs in your software by testing your software carefully, than by
+using Cppcheck.</li>
+<li>You will find more bugs in your software by instrumenting your software, than by using Cppcheck. But Cppcheck can still detect some of the bugs that you miss when testing and instrumenting your software.</li>
+</ul>
+
+<p>To find out additional information regarding the usage of Cppcheck in this project, the directory <a href = "Static_Analysis/Open_source_tools/cppcheck"><code>Static_Analysis/Open_source_tools/cppcheck</code></a> contains the complete documentation and results of the tool, including screenshots, test outputs and help files.</p>
+
+<p>Additionally, consult <a href = "/Statistics/">Statistics</a> for an overview of general tool results, many of which involve reportings from Cppcheck. </p>
+
+<p>Within this report, you can also read more about Cppcheck under the <a href="#static-analysis">Static Analysis</a> section.</p>
+
+<h2 id="toc_55">Features</h2>
+
+<p>Cppcheck incorporates a classification system in order to describe the errors it flags and provide granularity. This is particularly useful in separating its results in terms of serious- ness, and is an effective measures to differentiate between superficial, stylistic issues, and those which are critical. The error categories can be seen in Table 5.2. Additionally:</p>
+
+<ul>
+<li>Recursively checks directories for C/C++ code.</li>
+<li>Evaluates code using an error system.</li>
+<li>Makes programming suggestions to aid prevention of bugs.</li>
+<li>Capable of evaluating an entire project at once.</li>
+<li>Integrated into several programming IDEs as plugins e.g. Eclipse.</li>
+</ul>
+
+<p>Below is a breakdown on the types of errors that Cppcheck is capable of reporting on. For the duration of this project, we were interested in documenting, locating and patching security bugs associated with the Contiki operating system. As such, our main interests were related to the <q>error</q> bracket of the tool&rsquo;s reportage, with less emphasis being focused on <q>warning</q> or <q>style</q> which mostly relayed stylistic information about the code. As such, in our statistical findings, we report only on the number of <q>errors</q> in our figures, particularly when comparing this tool with the others at our disposal.</p>
+
+<p><br></p>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>error</td>
+<td>Used when legitimate bugs are found.</td>
+</tr>
+<tr>
+<td>warning</td>
+<td>Suggestions about defensive programming to prevent bugs.</td>
+</tr>
+<tr>
+<td>style</td>
+<td>Stylistic issues related to code cleanup (unused functions, redundant code, constness).</td>
+</tr>
+<tr>
+<td>performance</td>
+<td>Suggestions for making the code faster.</td>
+</tr>
+<tr>
+<td>portability</td>
+<td>Code portability warnings. E.g. code might work different on different compilers.</td>
+</tr>
+<tr>
+<td>information</td>
+<td>Configuration problems. The recommendation is to only enable these during configuration.</td>
+</tr>
+</tbody>
+</table>
+
+<p></center></p>
+
+<h2 id="toc_56">Images</h2>
+
+<p>Cppcheck is run as a command line tool, and is suitable for recursively checking multiple directories of a complex project. Below are some screenshots of the tool being executed.</p>
+
+<h4 id="toc_57">Scanning directories for bugs</h4>
+
+<p><img src="Images/Cppcheck_run1.png" alt="Total Errors"></p>
+
+<h4 id="toc_58">Sample output of the <q>apps</q> directory</h4>
+
+<p><img src="Images/Cppcheck_output1.png" alt="Total Errors"></p>
+
+<h2 id="toc_59">Limitations</h2>
+
+<ul>
+<li>Cppcheck seems to be quite minimal in terms of descriptions of the errors it encounters in the code. Some more context would be useful.</li>
+<li>There seem to be inconsistencies between the number of errors reported by the tool over the entire project, against the number reported on a directory by directory basis. Could this mean it misses some errors when quickly sweeping over the entire project?</li>
+<li>From the Cppcheck manual: “Please understand that there are limits of Cppcheck. Cppcheck is rarely wrong about reported errors. But there are many bugs that it doesn’t detect”.</li>
+<li>No focus on detecting unsafe function usage. By implementing a pattern matching based approach</li>
+</ul>
+
+<h2 id="toc_60">Conclusion</h2>
+
+<p>Cppcheck is a useful tool for performing basis static analysis of C/C++. It has an impressive set of features for an open source tool, and produces error checking in a human readable output format. It also makes suggestions on how the programmer can improve the project being analysed, with the use of defensive programming tips. Furthermore, the tool manages to classify errors into sub categories based on their nature, and seemingly strips out useless information. As such, it is easy to get a general understanding of ways the tested code may be exploited. With the limited information the tool is given, it returns an excellent amount of feedback. However, there can also be several improvements to be made. </p>
+
+<h1 id="toc_61">Flawfinder</h1>
+
+<h2 id="toc_62">Brief</h2>
+
+<p>Flawfinder is a simple static analysis tool which incorporates pattern matching of source code against a database of known vulnerabilities, in order to flag bugs in software. It was developed by David Wheeler as a tool for quickly assessing the stability of C/C++ based projects, and features a reporting system based on <q>risk level</q>, allowing the user to distinguish errors based on levels of severity. As a result of its pattern matching mechanism, it is known to produce a high level of results which might otherwise be deemed harmless by the programmer. Due to this, it will likely need to be averaged against more concise tools in order to make its findings more applicable. Despite this, based on the speed and ease of use of the tool, it is incredibly trivial to apply it recursively to large codebases in short spaces of time, and as such will serve as a useful asset in pinpointing which areas of the Contiki source code, if any, are most saturated with bugs. </p>
+
+<p>To find out additional information regarding the usage of Flawfinder in this project, the directory <a href = "Static_Analysis/Open_source_tools/Flawfinder"><code>Static_Analysis/Open_source_tools/Flawfinder</code></a> contains the complete documentation and results of the tool, including screenshots, test outputs and help files.</p>
+
+<p>Additionally, consult <a href = "/Statistics/">Statistics</a> for an overview of general tool results, many of which involve reportings from Flawfinder. </p>
+
+<p>Within this report, you can also read more about Flawfinder under the <a href="#static-analysis">Static Analysis</a> section.</p>
+
+<h2 id="toc_63">Features</h2>
+
+<p>Flawfinder incorporates a built-in database of C/C++ functions with well-known problems, such as buffer overflow risks (e.g., strcpy(), strcat(), gets(), sprintf(), and the scanf() family), format string problems ([v][f]printf(), [v]snprintf(), and syslog()), race conditions (such as access(), chown(), chgrp(), chmod(), tmpfile(), tmpnam(), tempnam(), and mktemp()), potential shell metacharacter dangers (most of the exec() family, system(), popen()), and poor random number acquisition (such as random()). </p>
+
+<p>Flawfinder then takes the source code text, and matches the source code text against those names, while ignoring text inside comments and strings (except for flawfinder directives). Flawfinder also knows about gettext (a common library for internationalized programs), and will treat constant strings passed through gettext as though they were constant strings; this reduces the number of false hits in internationalized programs.</p>
+
+<p>Flawfinder produces a list of “hits” (potential security flaws), sorted by risk; by default the riskiest hits are shown first. This risk level depends not only on the function, but on the values of the parameters of the function. For example, constant strings are often less risky than fully variable strings in many contexts. In some cases, flawfinder may be able to determine that the construct isn’t risky at all, reducing false positives.</p>
+
+<p>Not every hit is actually a security vulnerability, and not every security vulnerability is necessarily found. Nevertheless, flawfinder can be an aid in finding and removing security vulnerabilities. A common way to use flawfinder is to first apply flawfinder to a set of source code and examine the highest-risk items. This applies directly to our project, and will generally be the way we use the tool. The intention is to begin with a high-level approach to the entire source code, and then zero-in on specific areas.</p>
+
+<ul>
+<li>Flawfinder can also report on hit density: hits per thousand lines of source code.</li>
+<li>Released simultaneously as RATS by Secure Software Solutions.</li>
+<li>Flawfinder is very fast: Flawfinder version 1.31 averaged an analysis speed of 45,126 lines/second when it examined the Linux kernel version 3.16 (released 2014-08-03) on a Intel Core2 Duo CPU E8400 @ 3.00GHz (each CPU running at 2GHz) running Fedora Linux version 20.</li>
+<li>Based on its simple tokenisation procedure, flawfinder will necessarily produce many false positives for vulnerabilities and fail to report many vulnerabilities.</li>
+<li>Flawfinder utilises a system of risk levels to introduce granularity into its findings. </li>
+<li>Flawfinder reports explicitly on known vulnerabilities and unsafe functions by integrating its own database.</li>
+<li>The risk level depends on the function as well as its given parameters. For example, constant strings are often less risky than fully variable strings in many contexts, and so receive a lower level of risk.</li>
+<li>Flawfinder can analyze software that you can&rsquo;t build.</li>
+<li>Flawfinder provides reccommendations for improving code security e.g. usage of safe replacement functions.</li>
+</ul>
+
+<h3 id="toc_64">CWEs</h3>
+
+<p>Flawfinder can report on the following CWEs:</p>
+
+<ul>
+<li>CWE-20: Improper Input Validation</li>
+<li>CWE-22: Improper Limitation of a Pathname to a Restricted Directory (‘‘Path Traversal’’)</li>
+<li>CWE-78: Improper Neutralization of Special Elements used in an OS Command (‘‘OS Command Injection’’)</li>
+<li>CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer (a parent ofCWE-120: Buffer Copy without Checking Size of Input (‘‘Classic Buffer Overflow’’)</li>
+<li>CWE-126: Buffer Over-read</li>
+<li>CWE-134: Uncontrolled Format String</li>
+<li>CWE-190: Integer Overflow or Wraparound</li>
+<li>CWE-250: Execution with Unnecessary Privileges</li>
+<li>CWE-327: Use of a Broken or Risky Cryptographic Algorithm</li>
+<li>CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization (‘‘Race Condition’’)</li>
+<li>CWE-377: Insecure Temporary File</li>
+<li>CWE-676: Use of Potentially Dangerous Function</li>
+<li>CWE-732: Incorrect Permission Assignment for Critical Resource</li>
+<li>CWE-785: Use of Path Manipulation Function without Maximum-sized Buffer </li>
+<li>CWE-807: Reliance on Untrusted Inputs in a Security Decision</li>
+<li>CWE-829: Inclusion of Functionality from Untrusted Control Sphere</li>
+</ul>
+
+<h2 id="toc_65">Images</h2>
+
+<p>Flawfinder can be executed via the command line as a python program. All of the reports it generates are then printed. Some screenshots of this working in action can be seen below:</p>
+
+<h4 id="toc_66">Scanning directories for bugs</h4>
+
+<p><img src="Images/Flawfinder_run1.png" alt="Total Errors"></p>
+
+<h4 id="toc_67">Sample output of the <q>cpu</q> directory</h4>
+
+<p><img src="Images/Flawfinder_output1.png" alt="Total Errors"></p>
+
+<h2 id="toc_68">Limitations</h2>
+
+<ul>
+<li>Flawfinder does not use or have access to information about control flow, data flow, or data types when searching for potential vulnerabilities or estimating the level of risk.</li>
+<li>High level of false positives can somewhat obscure the general picture of the results.</li>
+<li>No ability to run the program during a build execution. Instead, it is simply used on general segments of code.</li>
+</ul>
+
+<h2 id="toc_69">Conclusion</h2>
+
+<p>Flawfinder is an effective tool for scoping a codebase for high level issues that may be embedded in the source code. That is to say, as a tool, Flawfinder is incapable of contextual awareness - such as control flow or data types, but can spot verifiable bugs based on pattern matching with a known bank of vulnerabilities. It is a very fast tool with low overhead, so is suitable for gaining a quick understanding of source code stability when auditing a system. However, due to its emphasis on reporting negligible errors, a tool of this kind is most effective when used alongside others which are more concise, in order to establish a balanced overview of the vulnerabilities that are being reported.  </p>
+
+<h1 id="toc_70">Rough Auditing Tool for Security (RATS)</h1>
+
+<p>RATS, or <q>rough auditing tool for security</q>, is a simplistic open source software tool designed for scanning a variety of languages and reporting on vulnerabilities. It was developed as part of the CERN Computer Security group, and is currently being distributed by Fortify as open source software. Similar to Flawfinder, RATS is a very fast tool, and can be easily integrated into a building process without noticeably increasing overhead. For C/C++ code, RATS is noted for detecting several typical types of errors, including Buffer overflows and race conditions. However, it is explicity stated in the documentation as being unable to report on design flaws present in programs. It was released around the same time as Flawfinder, but has been cited by both developers as being catered for discovering different types of vulnerabilities: making the tool a useful accompaniment. The inspiration to use RATS came from research conducted by McLean et al. (2012) during which the tool RATS was used alongside Flawfinder to analyse critical vulnerabilities in a set of programs, including Wireshark and Mozilla Firefox. Concluding their results, it was believed that Flawfinder was a more useful tool in its ability to convey a greater quantity of valuable information to the user. However,  The latest version of the tool is 2.4, which is currently available on Google Code Archive: <a href="https://code.google.com/archive/p/rough-auditing-tool-for-security/downloads">https://code.google.com/archive/p/rough-auditing-tool-for-security/downloads</a>. </p>
+
+<p>To find out additional information regarding the usage of RATS in this project, the directory <a href = "Static_Analysis/Open_source_tools/RATS"><code>Static_Analysis/Open_source_tools/RATS</code></a> contains the complete documentation and results of the tool, including screenshots, test outputs and help files.</p>
+
+<p>Additionally, consult <a href = "/Statistics/">Statistics</a> for an overview of general tool results, many of which involve reportings from RATS. </p>
+
+<p>Within this report, you can also read more about RATS under the under the <a href="#static-analysis">Static Analysis</a> section.</p>
+
+<h2 id="toc_71">Features</h2>
+
+<p>RATS scanning tool provides a security analyst with a list of potential trouble spots on which to focus, along with describing the problem, and potentially suggest remedies. It also provides a relative assessment of the potential severity of each problem, to better help an auditor prioritize. This tool also performs some basic analysis to try to rule out conditions that are obviously not problems.</p>
+
+<p>As its name implies, the tool performs only a rough analysis of source code. It will not find every error and will also find things that are not errors. Manual inspection of your code is still necessary, but greatly aided with this tool.</p>
+
+<ul>
+<li>Provides a rough overview of source code and can be run quickly.</li>
+<li>Although only a rough auditing tool, provides an intelligent filtering mechanism to differentiate false positives and false negatives. This filtering system is more aggressive than that of Flawfinder.</li>
+<li>Specialises in detecting format string vulnerabilities.</li>
+<li>Also features a built-in understanding of common vulnerabilities, similarly to Flawfinder.</li>
+<li>Makes security suggestions in its report output, as with Flawfinder.</li>
+<li>Incorporates a severity level system to rank the vulnerabilities it discovers.</li>
+<li>Provides code metrics on total number of lines analyzed, number of lines read per second and time taken in seconds.</li>
+</ul>
+
+<h2 id="toc_72">Images</h2>
+
+<p>RATS is a command line driven program. All of the reports it generates are then printed to the console, but can also be piped to a text file for later analysis. Some screenshots of this working in action can be seen below:</p>
+
+<h4 id="toc_73">Scanning directories for bugs</h4>
+
+<p><img src="Images/RATS_run1.png" alt="Total Errors"></p>
+
+<h4 id="toc_74">Sample output of the <q>core</q> directory</h4>
+
+<p><img src="Images/RATS_output1.png" alt="Total Errors"></p>
+
+<h2 id="toc_75">Limitations</h2>
+
+<ul>
+<li>Known to only provide limited coverage of a program.</li>
+<li>Its filtering mechanism causes it to output a lower volume of errors than competing tools such as Flawfinder.</li>
+<li>It is unclear what type of CWE or CVE it is primarily aimed towards detecting, so applying it to detecting a specific type of error is very difficult.</li>
+<li>The severity levels reported by the tool only consist of 3 tiers against Flawfinder&rsquo;s 5, meaning there is less granularity and meaning behind the error outputs. </li>
+</ul>
+
+<h2 id="toc_76">Conclusion</h2>
+
+<p>In conclusion, as its name suggests, RATS is a useful tool for quickly scoping the general security of a software system. It can be applied readily via the command line as with other similar tools, and is able to recursively search directories and parsing entire files; returning metrics regarding the physical lines of code it has analysed. RATS also features a pattern matching system capable of detecting commonly known errors, with respect to the database of CWEs. Furthermore, the tool implements an intelligent filtering system to separate errors into three categories: low, medium and high. It is however unclear as to the basis on which these categories are separated. The filtering system is also applied more heavily than Flawfinder&rsquo;s equivalent, leading to considerably more errors being interpreted as false positive; and therefore harmless. RATS is therefore a useful addition to our collection of tools, as it will assist in averaging the findings gathered by the heavily verbose Flawfinder, and the concise Cppcheck tool. It is, in a sense an effective &lsquo;middle ground&rsquo; between the two. </p>
+
+<h1 id="toc_77">Clang Analyzer</h1>
+
+<h2 id="toc_78">Brief</h2>
+
+<p>The Clang Static Analyzer is a source code analysis tool that finds bugs in C, C++, and Objective-C programs. Currently it can be run either as a standalone tool or within Xcode. The standalone tool is invoked from the command line, and is intended to be run in tandem with a build of a codebase. The analyzer is 100% open source and is part of the Clang project. Like the rest of Clang, the analyzer is implemented as a C++ library that can be used by other tools and applications. One of the excellent features of the Clang Static Analyzer is its ability to be run in tandem with a project build command: allowing the tool to gain a context of control flow not previously possible with our other selection of open source tools. Resultantly, we can use Clang to build individual instances of Contiki, for example the cc26xx-web-demo project, which contains much of the core functionality featured across many typical Contiki deployments. In doing so, we can maximise the coverage of errors we obtain in a single run of the tool, and generate a progression of reproducible steps in the program&rsquo;s execution that leads to the evocation of a bug. This makes it an invaluable tool in assessing the actual likelihood of certain undefined behaviour occurring. </p>
+
+<p>To find out additional information regarding the usage of Clang-Analyzer in this project, the directory <a href = "Static_Analysis/Open_source_tools/checker-279"><code>Static_Analysis/Open_source_tools/checker-279</code></a> contains the complete documentation and results of the tool, including screenshots, test outputs and help files.</p>
+
+<p>Additionally, consult <a href = "/Statistics/">Statistics</a> for an overview of general tool results, many of which involve reportings from Clang-Analyzer. </p>
+
+<p>Within this report, you can also read more about Clang-Analyzer under the <a href="#static-analysis">Static Analysis</a> section. In the corpus directory, there are also files related to the reports which the tool generates. These can be viewed in an output of your choice, but the most visually useful would be as HTML reports. </p>
+
+<h2 id="toc_79">Features</h2>
+
+<ul>
+<li>C++ library used to find bugs in C/C++/Objective C programs.</li>
+<li>Can be run as a standalone tool, or through XCode.</li>
+<li>Can also be run as a project is built, allowing for error checking on the fly. Using this feature, Clang Analyzer also has a graphical user interface (GUI), which can be used to visually relay the location of areas with explicit steps in control flow.</li>
+<li>Built into many existing static analysis tools.</li>
+<li>Produce results in HTML/XML/CSV format for database storage and viewing.</li>
+</ul>
+
+<h2 id="toc_80">Images</h2>
+
+<p>Clang-Analyzer is a command line driven tool with an external GUI option for viewing reports. The following screenshots demonstrate how it can be run from the command line, and the various formats that its results can be observed in.</p>
+
+<h4 id="toc_81">Executing build analysis of cc26xx-web-demo</h4>
+
+<p><img src="Images/cc26xx-web-demo_output.png" alt="Total Errors"></p>
+
+<h4 id="toc_82">Clang-Analyzer Bug Categories</h4>
+
+<p><img src="Images/clang_bug_categories.png" alt="Total Errors"></p>
+
+<h4 id="toc_83">Output of build analysis</h4>
+
+<p><img src="Images/cc26xx-web-demo_scan-view_output.png" alt="Total Errors"></p>
+
+<h4 id="toc_84">GUI example of a null pointer dereference bug in mqtt.c</h4>
+
+<p><img src="Images/cc26xx-web-demo_null_pointer_dereference_report.png" alt="Total Errors"></p>
+
+<h2 id="toc_85">Limitations</h2>
+
+<ul>
+<li>Requires previous experience in C programming to understand output.</li>
+<li>Since the tools performs deep analysis of the code, using it for static analysis can be much slower than compilation.</li>
+<li>Suffers from very high false positive rates.</li>
+<li>Whilst it seems to discover a larger number of errors than similar tools such as Cppcheck, it isn’t so easy to distinguish between those which are stylistic compared to legitimate errors that affect Contiki’s stability.</li>
+<li>A large emphasis on <q>dead code</q> related bugs, which may be viewed as false positives.</li>
+<li>No clear distinction of bug types. There are two main categories of <q>Logic Error</q> and <q>Dead Store</q> but a lack of granularity in terms of error severity.</li>
+</ul>
+
+<h2 id="toc_86">Conclusion</h2>
+
+<p>Clang is a C/C++ static analyser which is implemented across a few different C compilers and static analysis tools. It is very easy to run, and can be easily used on multiple directories to analyse multiple C/C++ files. It is also comprehensive and diverse in the number of errors it can detect, ranging across incorrect type declarations, to warnings about the structures of arrays. As a tool, Clang possesses some versatility with regards to how it can be run, with options allowing the user to execute it via XCode, as normal through the command line, or with a GUI enabled. This versatility also translates across its results formatting, which can be viewed in HTML format and exported to CSV. There is however a lack of indication to error severities, meaning that establishing granularity between its output for certain projects is difficult. This is a feature commonly employed across the other tools, so it is surprising that a basic weighting scheme to its error detection was not employed e.g. a severity rating distinguishing redundant <q>dead code</q> from critical logic flaws. </p>
+
+<h1 id="toc_87">GrammaTech CodeSonar</h1>
+
+<p>CodeSonar by GrammaTech is a suite of advanced static analysis tools which enable deep inspection and vulnerability analysis of source code. Designed primarily for Java and C/C++ based projects, CodeSonar is capable of measuring control flow and performing taint analysis of a program, by being executed as part of the build process or through being deployed on the source code. Resultantly, we used it in this project to build 40 different examples of Contiki applications, which we then subsequently analysed for bugs during their build sequence. This provided us with extensive coverage over the operating system&rsquo;s code, which we believe has afforded us an in-depth analysis of the majority of all possible code executions between the system builds. </p>
+
+<p>According to the tool&rsquo;s website, CodeSonar has been successful in finding more vulnerabilities than any other static analysis tool on the market. As it can analyse both source code and binaries, it is able to determine security flaws in a more dynamic setting than with typical pattern matching based tools. In this project, CodeSonar was used entirely within the context of analysing binaries of programs, and was used as a basis of comparison for its closest open source equivalent used in this study: Clang-analyzer. Due to its capabilities, CodeSonar is often used within the Software Development Life Cycle by teams of professionals to analyse complete applications in a short space of time.</p>
+
+<p>A general pattern behind our use of the tool involved deploying the tool on a given application, observing the error output generated by it, and sorting the errors in terms of severity. As the tools reports on a large number of harmless errors, our focus was naturally drawn towards those which were more critical. Resultantly, we found several major flaws in Contiki&rsquo;s critical applications which would have otherwise gone unnoticed with the use of the more simplistic open source tools. </p>
+
+<p>To find out additional information regarding the usage of CodeSonar in this project, the directory <a href = "Static_Analysis/Proprietary_tools/CodeSonar"><code>Static_Analysis/Proprietary_tools/CodeSonar</code></a> contains the complete documentation and results of the tool, including screenshots, test outputs and help files.</p>
+
+<p>Within this report, you can also read more about CodeSonar under the <a href="#static-analysis">Static Analysis</a> section.</p>
+
+<h2 id="toc_88">Features</h2>
+
+<ul>
+<li>Identify complex security vulnerabilities.</li>
+<li>CodeSonar provides support for detecting and correcting multicore / multithreaded flaws.</li>
+<li>CodeSonar generates customised PDF reports documenting flaws, helping to increase code quality and provide transparency to a project.</li>
+<li>The tool also enforces coding standards based off of CVE/CWE. This allows the user to audit code against regulatory requirements.</li>
+<li>CodeSonar features extensive forms of application visualisation: such as Treemaps, Control Flow diagrams and standard graphs and charts for visualising data in a meaningful way. </li>
+<li>Can be used effectively in a team, using a centralised <q>hub</q> system to store analysis reports.</li>
+<li>Incorporates a graphical user interface (GUI) to visualise reproducible steps for encountering bugs, allowing the user to easily understand the path to a problem.</li>
+<li>Specialises in detecting a variety of vulnerability types, including static memory issues, resource management, concurrency bugs and other defects.</li>
+<li>Severity level of each vulnerability with a corresponding <q>score</q>, offering granularity within the three main error categories.</li>
+<li>Three additional <q>significance</q> classes to further express the nature of the bug: <q>Security</q>, <q>Redundancy</q> and <q>Reliability</q>.</li>
+<li>CodeSonar can perform a whole-program analysis on 10M+ lines of code.</li>
+</ul>
+
+<h4 id="toc_89">Security Issues</h4>
+
+<ul>
+<li>Buffer Overrun</li>
+<li>Uninitialized Variable</li>
+<li>Free Non-Heap Variable</li>
+<li>Use After Free</li>
+<li>Double Free/Close</li>
+<li>Format String Vulnerability</li>
+<li>Return Pointer to Local</li>
+</ul>
+
+<h4 id="toc_90">Reliability Issues</h4>
+
+<ul>
+<li>Data Race</li>
+<li>Deadlock</li>
+<li>Null-Pointer Dereference</li>
+<li>Division by Zero</li>
+<li>Double Close</li>
+<li>Dangerous Function Cast</li>
+<li>Resource Leak</li>
+</ul>
+
+<h2 id="toc_91">Images</h2>
+
+<p>Below is a series of select screenshots of CodeSonar in action. For a more comprehensive overview of the reporting capabilities of the tool, navigate to <code>/Static_Analysis/Proprietary_tools/CodeSonar/Reports</code> to view the reports of 40 different Contiki applications.</p>
+
+<h4 id="toc_92">CodeSonar Overview</h4>
+
+<p><img src="Images/CodeSonar_Overview.png" alt="Total Errors"></p>
+
+<p>An overview of the projects we deployed CodeSonar across, including metrics and datetime information.</p>
+
+<h4 id="toc_93">Warnings per project</h4>
+
+<p><img src="Images/warnings_per_project.png" alt="Total Errors"></p>
+
+<h4 id="toc_94">Files per project</h4>
+
+<p><img src="Images/files_per_project.png" alt="Total Errors"></p>
+
+<h4 id="toc_95">Lines per project</h4>
+
+<p><img src="Images/lines_per_project.png" alt="Total Errors"></p>
+
+<p>After having initiated several runs of the CodeSonar tool, we were able to produce several useful metrics exploring the number of warnings, files and lines of code per project. </p>
+
+<h4 id="toc_96">Application Report</h4>
+
+<p><img src="Images/CodeSonar_cc26xx-web-demo.png" alt="Total Errors"></p>
+
+<p>Overview of errors detected for the cc26xx-web-demo project. On the left is a <q>score</q> assigned to each vulnerability detected by the tool. Each flaw is also provided an ID, for keeping track of individual cases, as well as a classification depending upon the type of error. Additionally, there is information regarding the line on which the major error occurs, the name of the procedure affected, and some configurable options for setting priorities on certain bugs. As we handled this largely through Bitbucket, this was not a feature we made use of. </p>
+
+<h4 id="toc_97">MQTT Uninitialized Variable Bug</h4>
+
+<p><img src="Images/mqtt_uninitialised_var_bug.png" alt="Total Errors"></p>
+
+<p>By selecting individual errors in the report, you are then able to view the specific details regarding them: featuring reproducible steps referred to as <q>events</q>, and justifications made by the tool as to when and how they may occur. In the project, this formed an excellent basis for analysing the bugs at a closer level, and establishing the causes behind them. Reports such as this, which is for an MQTT bug which we ended up patching, was used to formulate our bug reports which we submitted on Bitbucket; using images such as this for evidence. The above MQTT bug was responsible for causing a system crash experienced using our CC2650 launchpad testing environment. </p>
+
+<h4 id="toc_98">Application Metrics</h4>
+
+<p><img src="Images/cc26xx-web-demo-chart.png" alt="Total Errors"></p>
+
+<p>Resulting from CodeSonar&rsquo;s extensive reporting capabilities, we were able to use it to generate simple warning metrics such as the one above, allowing us to grasp an understanding of the volume of errors as well as the nature of them. The complete collection of these across the projects we analysed can be seen in <code>/Static_Analysis/Proprietary_tools/CodeSonar/Reports</code>. To see more documentation of confirmed bugs in the Contiki project, navigate to the <code>/Static_Analysis/Proprietary_tools/CodeSonar/Bug_Screenshots</code> and <code>/Static_Analysis/Proprietary_tools/CodeSonar/Critical_Bugs</code> folders. </p>
+
+<h4 id="toc_99">Application: cc26xx-web-demo comparison</h4>
+
+<p><img src="Images/cc26xx-web-demo-chart-comparison2.png" alt="Total Errors"></p>
+
+<p>During the project we conducted multiple runs on the same source code to evaluate the effects of our patches. It was important to be certain that our proposed fixes were not responsible for the propagation of more errors. In the image above, after having fixed several major issues embedded in the cc26xx-web-demo application, we conducted a second analysis run, which shows the updated metrics. A particular issue we solved was the unitialised variable issue in mqtt.c, which, as a result, no longer appears in the updated chart as all instances of the bug have been patched.</p>
+
+<h4 id="toc_100">Data Visualisation</h4>
+
+<p><img src="Images/treemap_visualisation.png" alt="Total Errors"></p>
+
+<p><img src="Images/call_graph.png" alt="Total Errors"></p>
+
+<p>Amongst the typical graph and chart forms of visualisation, CodeSonar also features its own custom treemaps and callgraphs. Both forms of visualisation are used to express the hierachical links between specific parts of a given system: the above treemap showing the project hierarchy of the cc26xx-web-demo example. The below call graph of sicslowpan.c shows the control flow of the file, linking together the functions which invoke each other. Both forms of visualisation can aid the programmer in understanding where certain bugs may originate from, and the wider scope of procedures which may be affected as a consequence. </p>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th>Example Application</th>
+<th>Redundancy</th>
+<th>Security</th>
+<th>Reliability</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>cc2538</td>
+<td>152</td>
+<td>10</td>
+<td>26</td>
+</tr>
+<tr>
+<td>cc26xx</td>
+<td>174</td>
+<td>40</td>
+<td>26</td>
+</tr>
+<tr>
+<td>cc26xx-web-demo</td>
+<td>219</td>
+<td>61</td>
+<td>37</td>
+</tr>
+<tr>
+<td>encryption</td>
+<td>95</td>
+<td>61</td>
+<td>29</td>
+</tr>
+<tr>
+<td>er-rest-example</td>
+<td>110</td>
+<td>80</td>
+<td>31</td>
+</tr>
+<tr>
+<td>native-border-router</td>
+<td>109</td>
+<td>65</td>
+<td>30</td>
+</tr>
+<tr>
+<td>rpl-border-router</td>
+<td>184</td>
+<td>40</td>
+<td>28</td>
+</tr>
+<tr>
+<td>rpl-tsch</td>
+<td>27</td>
+<td>21</td>
+<td>10</td>
+</tr>
+<tr>
+<td>sensniff</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>simple-rpl-udp</td>
+<td>98</td>
+<td>67</td>
+<td>32</td>
+</tr>
+<tr>
+<td>slip-radio</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>telnet-server</td>
+<td>132</td>
+<td>92</td>
+<td>23</td>
+</tr>
+<tr>
+<td>udp-ipv6</td>
+<td>80</td>
+<td>64</td>
+<td>25</td>
+</tr>
+<tr>
+<td>webserver</td>
+<td>54</td>
+<td>43</td>
+<td>10</td>
+</tr>
+<tr>
+<td>webserver-ipv6</td>
+<td>20</td>
+<td>8</td>
+<td>1</td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td>1466</td>
+<td>652</td>
+<td>308</td>
+</tr>
+</tbody>
+</table>
+
+<p><br></p>
+
+<p><img src="Images/codesonar_severity.png" alt="Total Errors"></p>
+
+<p></center>
+CodeSonar output in terms of error type.</p>
+
+<h2 id="toc_101">Limitations</h2>
+
+<ul>
+<li><q>A fool with a tool is still a fool</q> - CodeSonar errors require just as much interpretation as those found in others tools. Due to its high level of reportage, a human programmer still needs to filter the results. </li>
+<li>Verbose in terms of reportage. This can be very time consuming for a security analyst to determine the false positives from the false negatives.</li>
+<li>Requires some understanding of makefiles and compilers to be able to run during the build sequence of a project.</li>
+<li>Timely execution.</li>
+<li>Requires a license to run.</li>
+<li>Decentralised storage of tool results on a webserver referred to as the CodeSonar <q>hub</q>.</li>
+</ul>
+
+<h2 id="toc_102">Conclusions</h2>
+
+<p>CodeSonar is a very inclusive software suite for determining security bugs. It is very scalable, and offers an in-depth analysis of critical flaws found in either program binaries or source code. As far as static analysis tools go, it requires configuration to work correctly, which may cause it to be less user friendly. However, a single analysis can yield a wealth of information about a project, and often reports of vulnerabilities which would otherwise be impossible to discover. Resultantly, it serves as a great benchmark for static analysis tools on the market, and has successfully been used in this project to retrieve findings where other open-source tools fall short. Additionally, it provides a great comparison against Clang-Analyzer, which we consider its open source equivalent. </p>
+
+<h1 id="toc_103">SciTools Understand</h1>
+
+<p>Understand combines a code editor with a powerful static analysis tool, several forms of data visualisation such as a treemap, and software metrics reporting system. It can be executed as a desktop application, and when supplied with a project directory (such as Contiki) it offers a suite of analyzers for spotting vulnerabilities in the source code. </p>
+
+<p>As we didn&rsquo;t use Understand to a large extent in this project, this section will be brief. Additionally, it was later revealed that Understand uses a built-in variation of the Clang Static Analyzer, so we did not expect the findings to be novel in light of what we had obtained with the open source tools. It does, however provide a useful basis for showcasing the additional features that proprietary tools have to offer. We managed to use this tool having obtained access to a year long student license.</p>
+
+<p>Understand combines the Clang Static Analyzer, as well as its own specific analysis tool with some more useful metrics and visualisations regarding the Contiki source code, which have helped us in fully comprehending how different functions interact with one another. This was particulary true in the case of the mqtt_connect function, which is integral to most devices running Contiki irrespective of platform. </p>
+
+<p>To find out additional information regarding the usage of Understand in this project, the directory <a href = "Static_Analysis/Proprietary_tools/Understand"><code>Static_Analysis/Proprietary_tools/Understand</code></a> contains the complete documentation and results of the tool, including screenshots, test outputs and help files.</p>
+
+<p>Within this report, you can also read more about Understand under the <a href="#static-analysis">Static Analysis</a> section.</p>
+
+<h2 id="toc_104">Features</h2>
+
+<ul>
+<li>Combines a beta version of the Clang Static Analyzer with several other static analysis tools, which can be implemented either simultaneously or one by one to observe differences.</li>
+<li>Different analysers for different purposes: Features the Sci-tools <q>recommended</q> analyser for universal standards of software stability, published standards agreed upon by academic experts, as well as the Clang Static Analyzer.</li>
+<li>Provides in-depth visualisation of software, including UML diagrams, treemaps, call graphs, cluster calls and butterfly charts. </li>
+<li>Incorporates a GUI for viewing code.</li>
+<li>Understand implements an <q>Entity Filter</q> used to detect all areas of a project. This allows the user to isolate specific areas of the source code, e.g. the <q>core</q> directory for closer inspection.</li>
+<li>Allows the user to set several parameters when analysing code - such as analysing only the files that have changed since a given date/time.</li>
+<li>Keeps track of localised changes to files, and subsequently recomputes results to reflect changes. </li>
+</ul>
+
+<h2 id="toc_105">Images</h2>
+
+<h4 id="toc_106">Understand overview</h4>
+
+<p><img src="Images/Understand.png" alt="Total Errors"></p>
+
+<p>An overview of the Understand graphical user interface. On the left, are the directories of the Contiki project, which we imported into the application.</p>
+
+<h4 id="toc_107">Contiki Project Treemap</h4>
+
+<p><img src="Images/MetricsTreemap-CountLine-MaxCyclomatic.png" alt="Total Errors"></p>
+
+<p>Above is a colour-coded treemap of the Contiki project, displaying the hierarchical dependencies of the main directories and the files within.</p>
+
+<h4 id="toc_108">MQTT Source Code</h4>
+
+<p><img src="Images/source_code_view.png" alt="Total Errors"></p>
+
+<p>Understand features a simple source code view of each <q>entity</q> it parses from a project. Having arranged the project in alphabetical order, it is easy to locate a particular file (in this case mqtt.c) and view its source code. From here, by right clicking a particular procedure, we can observe graphical representations of it, such as a control flow diagram.</p>
+
+<h4 id="toc_109">MQTT Control Flow</h4>
+
+<p><img src="Images/ControlFlow-mqtt_connect.png" alt="Total Errors"></p>
+
+<p>Understand is capable of mapping out the entire control flow of a given procedure: in this case, that of mqtt_connect(). This is valuable in terms of understanding a procedure&rsquo;s interlinked functions, and therefore determining the scope of which a bug can affect a system&rsquo;s performance.</p>
+
+<h4 id="toc_110">MQTT Butterfly Chart</h4>
+
+<p><img src="Images/Butterfly-mqtt_connect.png" alt="Total Errors"></p>
+
+<p>This can be viewed in multiple ways. The above chart  is referred to as a <q>Butterfly</q>. It provides an abstracted view of the dependencies of any given function. In the case of <q>mqtt_connect</q>, we can see that <q>process_post</q> and <q>uiplib_ip6addrconv</q> are dependencies, and so we should be careful in making sure they still work as planned whenever we modify the source code of <q>mqtt_connect</q>. </p>
+
+<h4 id="toc_111">Static Analysers</h4>
+
+<p><img src="Images/Running_static_analysers.png" alt="Total Errors"></p>
+
+<p>When running Understand&rsquo;s suite of static analysis tools, the result log displays the filename of each subsequent file it has analysed, followed by an indication of whether it has located bugs in the given file. </p>
+
+<h4 id="toc_112">Static Analysis Report: <q>SciTools&#39; Recommended Checks</q></h4>
+
+<p><img src="Images/understand_scitools_recc_output.png" alt="Total Errors"></p>
+
+<p>The SciTools Recommended Checks scan is largely redundant in this project, as it is based on stylistic issues associated with code. When we ran this through Contiki, the majority of the issues detected were concerned with code readability and <q>Magic Numbers</q>. As a result, no bugs of serious concern were discovered.</p>
+
+<h4 id="toc_113">Static Analysis Report: <q>Clang Static Analyzer (beta)</q></h4>
+
+<p><img src="Images/understand_clang_output.png" alt="Total Errors"></p>
+
+<p>The Clang Static Analyzer, on the other hand documented some more useful findings, highlighting areas of <q>dead code</q> which could be removed to improve the overrall efficiency of the operating system, as well as instances of unsafe function usage. </p>
+
+<h2 id="toc_114">Limitations</h2>
+
+<ul>
+<li>Running the Understand static analysis tools takes a long period of time. This is particularly an issue when running multiple analysers at one time.</li>
+<li>Occasionally reports on largely irrelevant details - such as stylistic issues associated with comments.</li>
+<li>Error output format is difficult for humans to interpret.</li>
+<li>No option to perform binary analysis such as with CodeSonar. </li>
+</ul>
+
+<h2 id="toc_115">Conclusions</h2>
+
+<p>After more use, some more substantial conclusions on the tool would be drawn. On the surface, Understand appears to effectively combine several powerful static analysers into one, providing multi-faceted coverage over a project. It can be executed very easily and requires minimal prior knowledge of programming to interpret errors. One of Understand&rsquo;s main strengths lies in the wealth of visualisation options it has at its disposal, as when processing large and complex codebases, they can be used to seamlessly understand the interlinking of code modules without having to closely examine source code.</p>
+
+<h1 id="toc_116">Static Analysis</h1>
+
+<p><a name="static-analysis"></a></p>
+
+<p>An overview of our use of static code analysis in the project.</p>
+
+<h2 id="toc_117">Overview</h2>
+
+<p>The first stage in the Contiki project is to analyse the security limitations through the use of static code analysis tools. Static analysis involves using code analysis tools on the Contiki source code to determine the existence of bugs or logic flaws without executing the code dynamically. The aim of this is to determine the bug density of Contiki based on the number of potential programming errors, and from there, to evaluate the main areas where the operating system may have vulnerabilities. Static code analysis is considered a highly effective tool for measuring software security, and essentially is capable of highlighting flaws before the system is dynamically executed or even deployed in the wild. For Internet of Things devices, which are notoriously regarded as having exploitable security features, static analysis is an invaluable tool in the developer’s arsenal.</p>
+
+<p>For sensor based systems such as Contiki, which support Internet and network connectivity of multiple devices through mesh networking and micro IP, exploitation is high risk. In the current climate of IoT insecurity, a recently amassed horde of compromised devices, known as the Mirai Botnet, have been reported as capable of delivering Denial of Service attacks of up to 1.2 Tbps (source: <a href="https://www.theguardian.com/technology/2016/oct/26/ddos-attack-dyn-mirai-botnet">https://www.theguardian.com/technology/2016/oct/26/ddos-attack-dyn-mirai-botnet</a>). This has been known to significantly impact and disrupt public services as well as specific targets; with an earlier attack on the information security blog of Brian Krebs, as well as DNS server Dyn; surpassing traffic of 665 Gbps (source: <a href="https://www.flashpoint-intel.com/mirai-botnet-linked-dyn-dns-ddos-attacks/">https://www.flashpoint-intel.com/mirai-botnet-linked-dyn-dns-ddos-attacks/</a>).</p>
+
+<p>As IoT security is a widespread issue, we also considered the security of other operating systems in our results. To establish a measure of the integrity of Contiki relative to its other open source competitors, we deployed our tools on the codebases of TinyOS, RIOT, and openWSN, and compared the results. This was done on an average tool-by-tool basis, in which we compared the error output for each respective system using a selection of tools, as well as longitudinally, using releases of each operating system from the past five years and generating an average output of errors. This was used to give us an understanding of how each system was developing in terms of its stability over time, but most importantly how our primary focus, Contiki, was shaping up in light of its competitors. </p>
+
+<p>To find tool specific examples of static analysis results, navigate to the <a href = "Static_Analysis/"><code>Static_Analysis/</code></a> directory to find our collection of open source and proprietary tools, or visit the individual tool section.</p>
+
+<h2 id="toc_118">Static Analysis Tools</h2>
+
+<p>To commence the static analysis of the Contiki source code, we initially looked at free and open source tools available at our disposal. As Contiki is written in C/C++, there were a variety of tools available for installation across several operating systems. After having found a suitable selection of open source tools, we then utilised funding to obtain some potentially more powerful licensed-based tools; with the aim to perform a more in-depth analysis of the source code. This process involved researching a bank of applicable tools which were compatible with C/C++ code, testing the effectiveness of approximately ten different open source tools, generating and evaluating their result outputs, and finally streamlining our selection of tools for further use in the project.</p>
+
+<p>The first stage of undertaking static analysis of the Contiki source code, is to first explore our bank of static analysis tools and run them on the code; documenting their features, drawbacks, results, and drawing conclusions about them. This will be done to determine the capabilities of open source tools, and evaluate where their strengths and weaknesses lie. From here, we can speculate on additional features that may be useful to our extended analysis of the Contiki source code, which can then be used as a basis for comparison against more sophisticated tools which require purchasing or academic license agreements. The tools used in this study will all be subjected to the same Contiki Source code, which we have split into several areas based on the functionality they provide to the Contiki project. As of the current release (3.x) they are: </p>
+
+<table>
+<thead>
+<tr>
+<th>Directory</th>
+<th># of files</th>
+<th>Information</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>apps</td>
+<td>142</td>
+<td>Applications to be run on the Contiki Operating System to provide functionality e.g. web server.</td>
+</tr>
+<tr>
+<td>core</td>
+<td>173</td>
+<td>Core functionality behind Contiki.</td>
+</tr>
+<tr>
+<td>cpu</td>
+<td>349</td>
+<td>Defines the functionality depending on which chip is being used to run Contiki e.g. ARM, AVR, pic32.</td>
+</tr>
+<tr>
+<td>dev</td>
+<td>7</td>
+<td>Device driver APIs.</td>
+</tr>
+<tr>
+<td>doc</td>
+<td>6</td>
+<td>Documentation behind the system. Contains some example .c files.</td>
+</tr>
+<tr>
+<td>examples</td>
+<td>230</td>
+<td>Examples fully fledged Contiki application programs e.g. base code for a TCP server.</td>
+</tr>
+<tr>
+<td>lib</td>
+<td>12</td>
+<td>Library files for FAT filesystem support.</td>
+</tr>
+<tr>
+<td>platform</td>
+<td>298</td>
+<td>Support files for integrating Contiki with device platforms and standards.</td>
+</tr>
+<tr>
+<td>regression-tests</td>
+<td>9</td>
+<td>Library of tests to measure code functionality and errors.</td>
+</tr>
+<tr>
+<td>tools</td>
+<td>39</td>
+<td>Contiki OS configuration files.</td>
+</tr>
+<tr>
+<td><b>Total</b></td>
+<td><b>1,265</b></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Our provisional list of static analysis tools included the following, as obtained from a wikipedia article on C/C++ static analysis tools (<a href="https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis">https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis</a>): </p>
+
+<ul>
+<li>Astrée: A tool which finds all potential runtime errors and data races by abstract interpretation, can prove their absence, and can prove functional assertions. Tailored towards safety-critical C code. Includes MISRA checker.</li>
+<li>Axivion Bauhaus Suite: A static code analysis tool suite that performs various analyses such as architecture checking, interface analyses, MISRA checking, and clone detection.</li>
+<li>BLAST (Berkeley Lazy Abstraction Software verification Tool): An open-source software model checker for C programs based on lazy abstraction.</li>
+<li>Cppcheck: Open-source tool that checks for several types of errors, including use of STL.</li>
+<li>Cpplint: An open-source tool that checks for compliance with Google&rsquo;s style guide for C++ coding.</li>
+<li>Clang: An open-source compiler that includes a static analyzer.</li>
+<li>Coccinelle: An open-source source code pattern matching and transformation.</li>
+<li>Coverity: A static analysis tool for C/C++.</li>
+<li>Cppdepend: Simplifies managing a complex C/C++ code base by analyzing and visualizing code dependencies, by defining design rules, by doing impact analysis, and comparing different versions of the code.</li>
+<li>ECLAIR: A platform for the automatic analysis, verification, testing and transformation of C and C++ programs.</li>
+<li>Eclipse (software): An open-source IDE that includes a static code analyzer.</li>
+<li>Flawfinder: A python based program which uses pattern matching to detect and report possible security weaknesses against a database of common weaknesses (CWE).</li>
+<li>Fluctuat: Abstract interpreter for the validation of numerical properties of programs.</li>
+<li>Frama-C: An open-source static analysis framework for C.</li>
+<li>Goanna: A software analysis tool for C/C++.</li>
+<li>GrammaTech CodeSonar: A proprietary static analysis tool suite capable of deep inspection of C/C++ code, identifies bugs that can result in system crashes, unexpected behavior, and security breaches.</li>
+<li>Klocwork Static Code Analysis: A static analysis tool for C/C++.</li>
+<li>Lint: The original static code analyzer for C.</li>
+<li>LDRA Testbed: A software analysis and testing tool suite for C/C++.</li>
+<li>Parasoft C/C++test: A C/C++ tool that does static analysis, unit testing, code review, and runtime error detection; plugins available for Visual Studio and Eclipse-based IDEs.</li>
+<li>FlexeLint/PC-Lint: A software analysis tool for C/C++.</li>
+<li>Polyspace: Uses abstract interpretation to detect and prove the absence of run time errors, Dead Code in source code as well as used to check all MISRA (2004, 2012) rules (directives, non directives).</li>
+<li>PRQA QA·C and QA·C++: Deep static analysis of C/C++ for quality assurance and guideline/coding standard enforcement with MISRA support.</li>
+<li>RATS (Rough Auditing Tool for Security): An open source tool which priotises detection of Buffer overflows and race conditions in C/C++ code.</li>
+<li>SciTools Understand: A license based tool which combines a code editor together with an array of static analysis tools and forms of data visualisation.</li>
+<li>SLAM project: A project of Microsoft Research for checking that software satisfies critical behavioral properties of the interfaces it uses.</li>
+<li>Sparse: An open-source tool designed to find faults in the Linux kernel.</li>
+<li>Splint: An open-source evolved version of Lint, for C.</li>
+</ul>
+
+<p>During the project, we conducted code evaluation using a variety of static analysis tools on the Contiki codebase. We had eight main tools at our disposal: four of which were open source, and the remaining four which were licensed based (in the case of CodeSonar, Coverity and FlexeLint) or evaluation copies (Understand). We compared the relative performances of the tools in terms of the number of issues they detected and their perceived levels of severity, detection of unsafe function usage, and ratio of false positive and false negative results. Additionally, we evaluated them within the subcategories of open source and proprietary, drawing conclusions on whether licensed based tools offered more holistic and detailed reportage of vulnerabilities in the system. To a small extent, we also evaluate the usability of the tools, with a focus on the general ease-of-use of obtaining findings, and rough time taken to analyse the code.</p>
+
+<p>The tools themselves were diverse in operation and capability: some of which functioned as simple pattern matchers for known vulnerabilities, and others which dynamically executed the code to provide a complete measure of all possible control flows. Consequently, interpreting the results varied greatly between the tools. The more simplistic cases offered basic <q>hit counters</q> as well as a measure of bug severity levels, whereas some of the proprietary tools implemented forms of data visualisation such as Treemaps and Control Flow Graphs.</p>
+
+<h2 id="toc_119">Open Source</h2>
+
+<p>The four main open source tools we used included:</p>
+
+<ul>
+<li>Cppcheck: An analysis tool for C/C++ which prioritises low false positives. Unlike compilers and other static analysis tools, it doesn&rsquo;t detect syntax errors. (<a href="http://cppcheck.sourceforge.net/">http://cppcheck.sourceforge.net/</a>)</li>
+<li>Flawfinder: A simple program which detects and reports possible security weaknesses based on a database of common weakness enumeration (CWE). (<a href="https://www.dwheeler.com/flawfinder/">https://www.dwheeler.com/flawfinder/</a>) </li>
+<li>RATS: A very fast tool which priotises detection of Buffer overflows and race conditions in C/C++ code. (<a href="https://security.web.cern.ch/security/recommendations/en/codetools/rats.shtml">https://security.web.cern.ch/security/recommendations/en/codetools/rats.shtml</a>)</li>
+<li>Clang Static Analyzer: A source code analysis tool which finds bugs in C/C++ programs. Designed to be run in tandem with a build of a codebase. Provides a GUI visualisation for errors it detects. (<a href="https://clang-analyzer.llvm.org/">https://clang-analyzer.llvm.org/</a>)</li>
+</ul>
+
+<p>In order to establish consistency in our comparison, we initially measured each tool based on the total number of errors it detected. To do this, we selected a subset of the static analysis tools which were capable of analysing the entire source code in a single run. This applied to Cppcheck, RATS and Flawfinder, which are designed to parse entire codebases and return a measure of <q>hits</q> in relation to potential flaws they detected. Unfortunately, this made it difficult to directly compare the effectiveness of open source to proprietary tools, but it did however allow us to analyse them within their own category. It also drew our attention to the reporting priorities of each tool: for example, in the case of Cppcheck, which prioritised low levels of false positives, its overall findings were the lowest in terms of the number of errors it detected. This may provide some indication of this particular tool being sophisticated, implying it uses a filtering mechanism to relay only the most important information to the user. Conversely, its findings may also suggest that the other tools return considerable levels of highly redundant results which can be safely ignored by the user as &ldquo;baggage&rdquo;, or perhaps even that Cppcheck does not offer as extensive a coverage of the source code as the other tools.</p>
+
+<p>To find more information about the open source tools used in this project, visit the <a href = "Static_Analysis/Open_source_tools"><code>Static_Analysis/Open_source_tools</code></a> directory</p>
+
+<h2 id="toc_120">Errors in Contiki OS</h2>
+
+<p>Our initial use of the open source tools involved assessing the total number of errors in the Contiki source code. This would later be used as a basis of comparison against the license based tools, and to provide general metrics regarding the stability of the operating system. The idea behind this is to establish a baseline measurement of errors in the operating system, and to reveal some information regarding the areas which are most heavily affected by bugs at present. Furthermore, this allows us to establish the error rate over time between releases, and draw conclusions and even estimations about its future development, with regards to its past trajectory. Additionally, this data will be used for comparison purposes when looking at other operating systems similar to Contiki.</p>
+
+<p>We begin by analysing this at a codebase level, and then individually by directory, in order to determine the highest concentration of errors detected by the tools.</p>
+
+<h3 id="toc_121">By codebase</h3>
+
+<p>To begin, we start with measuring the total number of errors found in consecutive releases of Contiki, over the entirety of the codebase. We conduct this measure over the past 10 years of releases, starting with version 2.0 and concluding with the current release, 3.0. During this phase, we recursively run our three source-code checking tools, Flawfinder, RATS and Cppcheck, all three of which are capable of measuring the errors in the entire source code as well as on a directory by directory basis. </p>
+
+<p><img src="Images/SLOC_average_RATS.png" alt="Total Errors"></p>
+
+<p><img src="Images/errors_Flawfinder_Cppcheck.png" alt="Total Errors"></p>
+
+<h4 id="toc_122">Conclusion</h4>
+
+<p>According to the graph, the number of errors in Contiki OS has steadily increased over time, with the latest release exhibiting upwards of 4,000 errors. This is perhaps to be expected though, as over time, the size of the codebase of any project grows, driving complexity levels higher; and therefore increasing the likelihood that bugs are introduced into the system. That said, over time studies have increasingly highlighted the dangers of unsafe programming practices in ANSI C. These findings are also generally reflected in the outputs of each tool; each of which show a gradual incline in number of errors detected between versions.</p>
+
+<h3 id="toc_123">By directory</h3>
+
+<p><img src="Images/errors_by_directory.png" alt="Total Errors"></p>
+
+<p><img src="Images/errors_by_tool.png" alt="Total Errors"></p>
+
+<h4 id="toc_124">Conclusion</h4>
+
+<p>In general, according to the graph outputs, the highest distribution of errors seem to be located within the <q>apps</q> directory, followed closely by those reported in <q>core</q> and <q>cpu</q>. This could be down to the majority of the system critical code being stored in these directories, where it is likely that some of the more complicated or volatile functions, such as those responsible for task handling across many Contiki systems are kept. In general, the three static analysis tools seem to be in accordance of this, with the highest error output being generated by Flawfinder, and the lowest by Cppcheck, as expected. Having this range of three tools with some very different reporting habits is an advantage here, as it allows us to investigate how the Contiki codebase is interpreted at different levels of sensitivity. It is clear that Flawfinder is amongst the more sensitive of static analysis tools, based on the sheer breadth of errors it reports on. Cppcheck, on the other hand, appears to be more concise in its reportage. Resultantly, we can conclude that there is an advantage to using a range of tools so as to provide extensive code coverage. As far as other quality measures go, such as the amount of work each tool output generates for the programmer, it can be argued that those with more concise results are ranked higher, simply because the programmer spends less time filing through redundant bug reports.</p>
+
+<h2 id="toc_125">Bug density in Contiki OS</h2>
+
+<p>In this section, we describe our investigation into the distribution of errors in the Contiki source code, also known as the &ldquo;bug density&rdquo;. It involves a summary of the tools we used, our methodology, and the results we obtained.</p>
+
+<p>According to several studies, it is believed that having an average of 1 bug per thousand lines of code is an indicator of good project quality. However, there are a few factors which affect the bug density metric, such as: </p>
+
+<ul>
+<li>Code complexity</li>
+<li>The type of defects taken into account for the calculation</li>
+<li>Time duration of bug density calculation</li>
+<li>Developer or Tester skills</li>
+</ul>
+
+<p>This is particularly relatable to the tools we used, in that each of them prioritises a different subset of bugs to flag as vulnerabilities. In our results, we observe a scale of sorts, in that Flawfinder reports very openly on a variety of bugs; and so returns a high result of bug density. Conversely, Cppcheck, which is known to eliminate false positives, outputs a comparatively small figure for bug density. The breakdown for the results is explained for each separate measure below.</p>
+
+<p>All of the report screenshots and images from this section can be seen in directory <a href = "Statistics/"><code>Statistics/</code></a> and
+<a href = "Statistics/Bug_Density"><code>Statistics/Bug_Density</code></a>.</p>
+
+<h3 id="toc_126">By codebase</h3>
+
+<p>To begin our investigation, we first made a general measure of the number of bugs detected by each tool, over the entirety of the Contiki code base. To do so, we simply ran each tool in a recursive fashion over the past 10 years of Contiki releases. Each of the tools possess the capability to recursively navigate each directory of the project, extract C files and analyse them, making this process trivial. Using the code metrics we obtained during our statistical analysis of Contiki with David A. Wheeler&rsquo;s &lsquo;SLOCCount&rsquo; tool, we generated a measure of bug density in the Contiki operating system across its several release versions. This was calculated by determining the average number of bugs generated by Cppcheck, Flawfinder and RATS, and averaging that value over the LOC of each Contiki distribution. This was coducted for each release of Contiki, ranging from version 2.0 to 3.0. Using the data, we then generated the total bug density across the SLOC, and scaled it by a thousand to determine the number of bugs per 1,000 lines of code; which is considered a typical measure of system security. As there is no standard way of determining bug density, we calculated it first by taking the average number of bugs across the tools, as well as by generating a separate output for each individually, to allow us to compare the differences in tool output. </p>
+
+<p>The bug density was initially measured by codebase to establish a general overview of the bugs in Contiki. Whilst the tools are capable of reporting on specific cases of error prone behaviour in the source code, exploring those capabilities was considered at a later point. From this point, the intention was to establish the critical areas of Contiki i.e. the areas most key to its functionality, most frequently featured in Contiki deployments, as well as those with the highest population of defects. This would be used as a strong indicator for the areas of the OS on which to deploy the more accurate proprietary tools, and begin targeting some of the core issues in place. Also considering that Contiki features a plethora of &ldquo;examples&rdquo; i.e. builds which are suited for specific example purposes, this practice also narrows down the scope at which we examine them.</p>
+
+<p><img src="Images/bd_average.png" alt="Total Errors"></p>
+
+<p><img src="Images/bd_flawfinder.png" alt="Total Errors"></p>
+
+<p><img src="Images/bd_RATS.png" alt="Total Errors"></p>
+
+<p><img src="Images/bd_cppcheck_.png" alt="Total Errors"></p>
+
+<h4 id="toc_127">Conclusion</h4>
+
+<p>Whilst it appears from the first figure that the average number of bugs is increasing between Contiki releases, on average the bug density is decreasing. This is reflected both in terms of the average measure taken across all three tools, as well as in the individual cases besides that of Cppcheck, for which the bug density appears to peak twice: at Contiki version 2.2 and once more at 2.7, before decreasing. This may be attributed to the nature of Cppcheck in targeting a specific subset of bugs, and eliminating false positives flagged during analysis. However, it may also indicate a fluctuation in the frequency of a particular bug which it is accurate at locating, prompting a more in-depth analysis. We look closer into this in the next phase, where we consider the bug density by directory.</p>
+
+<h3 id="toc_128">By directory</h3>
+
+<p>Besides measuring the entire source code with each tool, we also measured each separate directory of the Contiki source code, in order to further understand the areas of the project which were most error prone. This was carried out with the latest build of Contiki. In doing so, we split the source files into their constituent directories, and ran each tool consecutively over each directory, recording the number of bugs detected. The aim of this was to increase the level of granularity in our existing results for bug density, and determine possible areas that may be the culprit in those figures to create a form of <q>heatmap</q> of the operating system. The results of this can be seen in the charts below:</p>
+
+<p><img src="Images/bd_directory_average.png" alt="Total Errors">
+<img src="Images/bd_directory_flawfinder.png" alt="Total Errors">
+<img src="Images/bd_directory_RATS.png" alt="Total Errors">
+<img src="Images/bd_directory_cppcheck.png" alt="Total Errors"></p>
+
+<h4 id="toc_129">Conclusion</h4>
+
+<p>Concluding our results, across the majority of the tools, the highest bug densities seem to be located around the <q>apps</q> and <q>tools</q> directories. This is unsurprising, as most of the code from these directories form the underlying functionality in Contiki, and as such are featured in most, if not all of the builds the programmer can issue. Once again, this result is shown clearly in the relationship between Flawfinder and RATS, but less so for Cppcheck: which interprets <q>tools</q> as having a lower bug density. Given the measure of <q>Bug Density per KLOC</q>, the general consensus in research states that a frequency of 1 bug per 1,000 LOC is indicative of a stable system. This is challenged in the reportage of these tools, which in the cases of RATS and Flawfinder demonstrate bug density values of up to 29 potential bugs per 1,000 lines of code (Flawfinder). As the definition of what constitutes a bug is, however, down to interpretation, it may be that this particular result demonstrates high levels of false positives. That definition is something which would have to be decided with the developers of the Contiki source code, and for the most part is beyond the scope of this project.</p>
+
+<h2 id="toc_130">Unsafe function usage</h2>
+
+<p>For the tools that reported explicity on unsafe function usage (RATS and Flawfinder) we drew comparisons on their performances; collecting data longitudinally on the past 10 years of Contiki releases, starting from version 2.0 (30/03/2007) and concluding with the current release (23/08/2017), all of which were obtained from the project&rsquo;s GitHub repository (<a href="https://github.com/contiki-os/contiki/releases">https://github.com/contiki-os/contiki/releases</a>). Determining occurrences of unsafe function usage was largely provided by the tools themselves in their outputs, although this avenue of work is in response to previous research conducted by Alnaeli et al. (2016) on Contiki and its competitors, and is based on their definition of what they consider <q>unsafe</q> in terms of functions in C, in their work <q>Vulnerable C/C++ Code Usage in IoT Software Systems</q>. Furthermore, we consider the functions that have been deprecated and replaced with safer alternatives, as well as the wider knowledge base of professional C programmers, researchers, and the documentation of the language found online.</p>
+
+<h3 id="toc_131">By codebase</h3>
+
+<p>To measure the occurrences of unsafe function usage, we began by simply evaluating the entire codebases of the past 10 versions of Contiki, generating the frequencies of each given unsafe function</p>
+
+<p>Out of our tools, the two main ones which explicitly reported on usage of unsafe functions were Flawfinder and RATS. As such, we used them to measure the number of occurrences of unsafe functions across the past 10 versions of Contiki, to establish a picture of the operating system&rsquo;s progression. In the case of Flawfinder, this was far more trivial, as the warning associated with each function can be easily extracted from the tool&rsquo;s output based on its <q>CWE</q> (common weakness enumeration) identifier. However, with RATS it was less straightforward, and required extensive use of pattern matching tools such as grep to determine the number of unsafe functions it detected. The results can be seen in the charts below:</p>
+
+<p><img src="Images/unsafe_functions_codebase_Flawfinder.png" alt="Total Errors">
+<img src="Images/unsafe_functions_codebase_RATS.png" alt="Total Errors"></p>
+
+<h4 id="toc_132">Conclusion</h4>
+
+<p>Flawfinder, which is designed to report specifically on the usage of unsafe functions, uses a system of pattern matching to detect when and where known, volatile functions are invoked. This generally works off of a preconceived list of known dangerous functions which Flawfinder then uses for comparison against the source code. Resultantly, there is a high number of findings across most functions which were detected. Interestingly, there was a lack of consistency between the findings produced here, and those in the research by Alnaeli et al. (2016), the work showing a considerably higher number of unsafe functions found in Contiki. </p>
+
+<h3 id="toc_133">By directory</h3>
+
+<p>We also investigated this on a directory level, to close in the scope of where the most vulnerable function usage was located. These findings can be used to narrow the scope on the most problematic areas of the project, and advise developers as to which areas they should take extra time in working on. Further to this, it may also be a positive influence on the use of static analysis tools on the source code, as all of this information has been obtained quickly and easily through use of open source tools.</p>
+
+<p><img src="Images/unsafe_functions_directory_Flawfinder.png" alt="Total Errors">
+<img src="Images/unsafe_functions_directory_RATS.png" alt="Total Errors"></p>
+
+<h4 id="toc_134">Conclusion</h4>
+
+<p>In the results above, once again Flawfinder conclusively delivers more detail in terms of total number of unsafe functions detected, and concentration on particular project areas. There is a clear indication that <q>apps</q>, <q>core</q>, <q>cpu</q> and <q>examples</q> are the areas of interest here. These findings will be used to target specific directories when using our cohort of more advanced tools for deep analysis, such as those which perform analyses during build execution.</p>
+
+<h2 id="toc_135">Common Weakness Enumeration</h2>
+
+<p>A list of all of the common weaknesses found in software written in C has been documented by the programming community, and is available as an online database for the benefit of other programmers. A condensed version can be found in the table below. This list of community compiled errors has assisted in forming the general basis of our security analysis, as it clearly documents some of the clear ways in which parts of a C based system may be exploited by attackers, or suffer operational instability. When we collected data on the source code, some of our tools reported their error findings with respect to the categories mentioned here; with most having the tendency to specialise in a particular class of weakness: e.g. the buffer overflow vulnerability. As the following list is a superset of general weaknesses associated with the C programming language, not every entry is directly applicable to the Contiki source code. This is reflected in our later results, where only a subset of errors are reported on by the tools; on the basis that some of the vulnerabilities listed are unapplicable to Contiki in particular.</p>
+
+<h4 id="toc_136">CWE: Weaknesses in Software Written in C</h4>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>CWE ID #</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Access of Resource Using Incompatible Type (&lsquo;Type Confusion&rsquo;)</td>
+<td>843</td>
+</tr>
+<tr>
+<td>Addition of Data Structure Sentinel</td>
+<td>464</td>
+</tr>
+<tr>
+<td>Assigning instead of Comparing</td>
+<td>481</td>
+</tr>
+<tr>
+<td>Assignment of a Fixed Address to a Pointer</td>
+<td>587</td>
+</tr>
+<tr>
+<td>Buffer Access Using Size of Source Buffer</td>
+<td>806</td>
+</tr>
+<tr>
+<td>Buffer Access with Incorrect Length Value</td>
+<td>805</td>
+</tr>
+<tr>
+<td>Buffer Copy without Checking Size of Input (&lsquo;Classic Buffer Overflow&rsquo;)</td>
+<td>120</td>
+</tr>
+<tr>
+<td>Buffer Over-read</td>
+<td>126</td>
+</tr>
+<tr>
+<td>Buffer Under-read</td>
+<td>127</td>
+</tr>
+<tr>
+<td>Buffer Underwrite (&lsquo;Buffer Underflow&rsquo;)</td>
+<td>124</td>
+</tr>
+<tr>
+<td>Comparing instead of Assigning</td>
+<td>482</td>
+</tr>
+<tr>
+<td>Compiler Optimization Removal or Modification of Security-critical Code</td>
+<td>733</td>
+</tr>
+<tr>
+<td>Compiler Removal of Code to Clear Buffers</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Concurrent Execution using Shared Resource with Improper Synchronization (&lsquo;Race Condition&rsquo;)</td>
+<td>362</td>
+</tr>
+<tr>
+<td>Creation of chroot Jail Without Changing Working Directory</td>
+<td>243</td>
+</tr>
+<tr>
+<td>Deletion of Data Structure Sentinel</td>
+<td>463</td>
+</tr>
+<tr>
+<td>Double Free</td>
+<td>415</td>
+</tr>
+<tr>
+<td>Duplicate Key in Associative List (Alist)</td>
+<td>462</td>
+</tr>
+<tr>
+<td>Exposed IOCTL with Insufficient Access Control</td>
+<td>782</td>
+</tr>
+<tr>
+<td>Function Call With Incorrect Number of Arguments</td>
+<td>685</td>
+</tr>
+<tr>
+<td>Function Call With Incorrect Variable or Reference as Argument</td>
+<td>688</td>
+</tr>
+<tr>
+<td>Heap-based Buffer Overflow</td>
+<td>122</td>
+</tr>
+<tr>
+<td>Improper Address Validation in IOCTL with METHOD_NEITHER I/O Control Code</td>
+<td>781</td>
+</tr>
+<tr>
+<td>Improper Cleanup on Thrown Exception</td>
+<td>460</td>
+</tr>
+<tr>
+<td>Improper Clearing of Heap Memory Before Release (&lsquo;Heap Inspection&rsquo;)</td>
+<td>244</td>
+</tr>
+<tr>
+<td>Improper Handling of Length Parameter Inconsistency</td>
+<td>130</td>
+</tr>
+<tr>
+<td>Improper Null Termination</td>
+<td>170</td>
+</tr>
+<tr>
+<td>Improper Release of Memory Before Removing Last Reference (&lsquo;Memory Leak&rsquo;)</td>
+<td>401</td>
+</tr>
+<tr>
+<td>Improper Restriction of Operations within the Bounds of a Memory Buffer</td>
+<td>119</td>
+</tr>
+<tr>
+<td>Improper Update of Reference Count</td>
+<td>911</td>
+</tr>
+<tr>
+<td>Improper Validation of Array Index</td>
+<td>129</td>
+</tr>
+<tr>
+<td>Incorrect Block Delimitation</td>
+<td>483</td>
+</tr>
+<tr>
+<td>Incorrect Calculation of Buffer Size</td>
+<td>131</td>
+</tr>
+<tr>
+<td>Incorrect Calculation of Multi-Byte String Length</td>
+<td>135</td>
+</tr>
+<tr>
+<td>Incorrect Pointer Scaling</td>
+<td>468</td>
+</tr>
+<tr>
+<td>Incorrect Type Conversion or Cast</td>
+<td>704</td>
+</tr>
+<tr>
+<td>Integer Coercion Error</td>
+<td>192</td>
+</tr>
+<tr>
+<td>Integer Underflow (Wrap or Wraparound)</td>
+<td>191</td>
+</tr>
+<tr>
+<td>Mismatched Memory Management Routines</td>
+<td>762</td>
+</tr>
+<tr>
+<td>Missing Default Case in Switch Statement</td>
+<td>478</td>
+</tr>
+<tr>
+<td>NULL Pointer Dereference</td>
+<td>476</td>
+</tr>
+<tr>
+<td>Numeric Range Comparison Without Minimum Check</td>
+<td>839</td>
+</tr>
+<tr>
+<td>Numeric Truncation Error</td>
+<td>197</td>
+</tr>
+<tr>
+<td>Often Misused: String Management</td>
+<td>251</td>
+</tr>
+<tr>
+<td>Omitted Break Statement in Switch</td>
+<td>484</td>
+</tr>
+<tr>
+<td>Operator Precedence Logic Error</td>
+<td>783</td>
+</tr>
+<tr>
+<td>Out-of-bounds Read</td>
+<td>125</td>
+</tr>
+<tr>
+<td>Passing Mutable Objects to an Untrusted Method</td>
+<td>374</td>
+</tr>
+<tr>
+<td>Permission Race Condition During Resource Copy</td>
+<td>689</td>
+</tr>
+<tr>
+<td>Private Array-Typed Field Returned From A Public Method</td>
+<td>495</td>
+</tr>
+<tr>
+<td>Public Data Assigned to Private Array-Typed Field</td>
+<td>496</td>
+</tr>
+<tr>
+<td>Race Condition in Switch</td>
+<td>365</td>
+</tr>
+<tr>
+<td>Race Condition within a Thread</td>
+<td>366</td>
+</tr>
+<tr>
+<td>Reliance on Data/Memory Layout</td>
+<td>188</td>
+</tr>
+<tr>
+<td>Return of Pointer Value Outside of Expected Range</td>
+<td>466</td>
+</tr>
+<tr>
+<td>Return of Stack Variable Address</td>
+<td>562</td>
+</tr>
+<tr>
+<td>Returning a Mutable Object to an Untrusted Caller</td>
+<td>375</td>
+</tr>
+<tr>
+<td>Signal Errors</td>
+<td>387</td>
+</tr>
+<tr>
+<td>Signal Handler Race Condition</td>
+<td>364</td>
+</tr>
+<tr>
+<td>Signal Handler Use of a Non-reentrant Function</td>
+<td>479</td>
+</tr>
+<tr>
+<td>Signed to Unsigned Conversion Error</td>
+<td>195</td>
+</tr>
+<tr>
+<td>Stack-based Buffer Overflow</td>
+<td>121</td>
+</tr>
+<tr>
+<td>Unchecked Return Value to NULL Pointer Dereference</td>
+<td>690</td>
+</tr>
+<tr>
+<td>Uncontrolled Memory Allocation</td>
+<td>789</td>
+</tr>
+<tr>
+<td>Unexpected Sign Extension</td>
+<td>194</td>
+</tr>
+<tr>
+<td>Unsigned to Signed Conversion Error</td>
+<td>196</td>
+</tr>
+<tr>
+<td>Use After Free</td>
+<td>416</td>
+</tr>
+<tr>
+<td>Use of Expired File Descriptor</td>
+<td>910</td>
+</tr>
+<tr>
+<td>Use of Externally-Controlled Format String</td>
+<td>134</td>
+</tr>
+<tr>
+<td>Use of Function with Inconsistent Implementations</td>
+<td>474</td>
+</tr>
+<tr>
+<td>Use of getlogin() in Multithreaded Application</td>
+<td>558</td>
+</tr>
+<tr>
+<td>Use of Incorrect Operator</td>
+<td>480</td>
+</tr>
+<tr>
+<td>Use of Inherently Dangerous Function</td>
+<td>242</td>
+</tr>
+<tr>
+<td>Use of Path Manipulation Function without Maximum-sized Buffer</td>
+<td>785</td>
+</tr>
+<tr>
+<td>Use of Pointer Subtraction to Determine Size</td>
+<td>469</td>
+</tr>
+<tr>
+<td>Use of Potentially Dangerous Function</td>
+<td>676</td>
+</tr>
+<tr>
+<td>Use of sizeof() on a Pointer Type</td>
+<td>467</td>
+</tr>
+<tr>
+<td>Use of umask() with chmod-style Argument</td>
+<td>560</td>
+</tr>
+<tr>
+<td>Use of Uninitialized Variable</td>
+<td>457</td>
+</tr>
+<tr>
+<td>Wrap-around Error</td>
+<td>128</td>
+</tr>
+<tr>
+<td>Write-what-where Condition</td>
+<td>123</td>
+</tr>
+</tbody>
+</table>
+
+<p></center></p>
+
+<p>Of the vulnerabilities specified in the table above, some of the more high priority bugs we were expecting to see included: </p>
+
+<ul>
+<li>Buffer Over-flow (120) : The program copies an input buffer to an output buffer without verifying that the size of the input buffer is less than the size of the output buffer, leading to a buffer overflow.</li>
+<li>Buffer Over-read (126) : This typically occurs when the pointer or its index is incremented to a position beyond the bounds of the buffer or when pointer arithmetic results in a position outside of the valid memory location to name a few. This may result in exposure of sensitive information or possibly a crash.</li>
+<li>Buffer Under-read (127) : The software reads from a buffer using buffer access mechanisms such as indexes or pointers that reference memory locations prior to the targeted buffer.</li>
+<li>Improper Null Termination (170) : The software does not terminate or incorrectly terminates a string or array with a null character or equivalent terminator.</li>
+<li>NULL Pointer Dereference (476) : A NULL pointer dereference occurs when the application dereferences a pointer that it expects to be valid, but is NULL, typically causing a crash or exit.</li>
+<li>Use of Uninitialized Variable (457) : The code uses a variable that has not been initialized, leading to unpredictable or unintended results.</li>
+</ul>
+
+<p>This was based on the nature of the Contiki operating system, and were later to be found amongst the highest occurrences of bugs spotted by our tools. In the case of NULL Pointer Dereference (476) for instance, what may be a small error overlooked by programmers can result in a program crash. In the case of Contiki, which generally operates as a series of interconnected devices running the same operating system, encountering this bug in the wild can result in a catastrophic distributed crash, having potential to bring down parts of a wireless sensor network. As such, targeting the more discrete flaws such as this is crucial. This is applicable to many of the current IoT operating systems available to the public. To explore this further, we briefly considered the security of some of Contiki&rsquo;s fellow open source competitors, including: RIOT, TinyOS and OpenWSN. This investigation is designed as an extension to previous research comparing Contiki to other systems, but we have replicated the results using our own selection of tools.</p>
+
+<h2 id="toc_137">Operating System Comparison</h2>
+
+<p>Following on from work by Alnaeli et al. (2016) we used our tools to gather more up to date results on the security of Contiki OS and its ANSI C based competitors, using our own tools as a benchmark. To do so, we conducted two methods of comparison: the first was <q>over-time</q> in which we downloaded the releases of each operating system from the past 5 years (2013-2017) and ran static analysis tests using Flawfinder on the code; documenting the relationship between time and number of bugs. Secondly, we ran further tests to measure the distinct output of each of all 3 open source tools on the latest release of each operating system. For some systems, such as TinyOS, this was as far back at 2012, making it interesting to see how well it had matured with time. For other systems such as Contiki and RIOT, which had consistent yearly releases, the main point of focus was on how well maintained the levels of bugs were between releases, and whether there were particular years that saw all 4 of the systems scale in volatility.</p>
+
+<h3 id="toc_138">Over time</h3>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th>Operating System</th>
+<th>2013</th>
+<th>2014</th>
+<th>2015</th>
+<th>2016</th>
+<th>2017</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Contiki</td>
+<td>2660</td>
+<td>2963</td>
+<td>3044</td>
+<td>3081</td>
+<td>3451</td>
+</tr>
+<tr>
+<td>OpenWSN</td>
+<td>230</td>
+<td>219</td>
+<td>248</td>
+<td>242</td>
+<td>296</td>
+</tr>
+<tr>
+<td>TinyOS</td>
+<td>799</td>
+<td>799</td>
+<td>799</td>
+<td>799</td>
+<td>799</td>
+</tr>
+<tr>
+<td>RIOT</td>
+<td>409</td>
+<td>966</td>
+<td>1049</td>
+<td>1372</td>
+<td>1744</td>
+</tr>
+</tbody>
+</table>
+
+<p><br></p>
+
+<p><img src="Images/OS_over_time.png" alt="Total Errors"></p>
+
+<p></center></p>
+
+<h4 id="toc_139">Conclusion</h4>
+
+<p>In support of the findings produced from the research by Alnaeli et al. (2016), on average, Contiki has the highest distribution of errors compared to its competitors, by a considerable margin. As these results are exploratory, and have been generated using only the Flawfinder tool, it will take further investigation to draw a conclusion, but so far there is consistency between our findings and that of previous research. The next step of the study will be to measure whether there is consistency across the three main open source tools. </p>
+
+<h3 id="toc_140">By tool</h3>
+
+<p>As the above figures are purely based on the output of Flawfinder, the results below document the findings of each tool for coverage.</p>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th>Operating System</th>
+<th>Flawfinder</th>
+<th>RATS</th>
+<th>Cppcheck</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Contiki</td>
+<td>3451</td>
+<td>439</td>
+<td>125</td>
+</tr>
+<tr>
+<td>OpenWSN</td>
+<td>296</td>
+<td>16</td>
+<td>15</td>
+</tr>
+<tr>
+<td>TinyOS</td>
+<td>799</td>
+<td>3</td>
+<td>22</td>
+</tr>
+<tr>
+<td>RIOT</td>
+<td>1744</td>
+<td>27</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+
+<p><br></p>
+
+<p><img src="Images/OS_by_tool.png" alt="Total Errors"></p>
+
+<p></center></p>
+
+<h4 id="toc_141">Conclusion</h4>
+
+<p>According to our findings, there is a distinctly higher detection of errors found in Contiki when compared to the other three systems. In the next stage, we will explore what this means for the bug density of the latest version release of each operating system.</p>
+
+<h2 id="toc_142">Bug density of competing OSes</h2>
+
+<p>After having computed the general output of errors from each tool, the next stage was to calculate the overall bug density for each operating system. As a general measure, a bug density of 1 bug per 1,000 lines is indicative of a stable operating system. The results are as shown below.</p>
+
+<p><br></p>
+
+<p><center></p>
+
+<table>
+<thead>
+<tr>
+<th>Operating System</th>
+<th>Contiki</th>
+<th>TinyOS</th>
+<th>RIOT</th>
+<th>OpenWSN</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>SLOC (ANSI C)</td>
+<td>355913</td>
+<td>108121</td>
+<td>860917</td>
+<td>244798</td>
+</tr>
+<tr>
+<td># of errors</td>
+<td>4013</td>
+<td>824</td>
+<td>1778</td>
+<td>327</td>
+</tr>
+<tr>
+<td>Average # of errors</td>
+<td>1337.6666</td>
+<td>274.6666</td>
+<td>592.6666</td>
+<td>109</td>
+</tr>
+<tr>
+<td>Bug Density</td>
+<td>0.003758</td>
+<td>0.002540</td>
+<td>0.000688</td>
+<td>0.000445</td>
+</tr>
+<tr>
+<td>Bug Density per KLOC</td>
+<td>3.7584</td>
+<td>2.5403</td>
+<td>0.6884</td>
+<td>0.4452</td>
+</tr>
+</tbody>
+</table>
+
+<p><br></p>
+
+<p><img src="Images/OS_bug_density.png" alt="Total Errors"></p>
+
+<p></center></p>
+
+<h4 id="toc_143">Conclusion</h4>
+
+<p>In conclusion, Contiki has the highest bug density out of our 4 open source systems, with almost 4 bugs per 1,000 lines of code, as calculated by the averaged results of our 3 tools. This is closely followed by TinyOS, which, although having approximately 1/3 of the size of Contiki&rsquo;s codebase, still has an average of 2.5 bugs per 1,000 lines of code. Further to this, RIOT OS, which has over 800,000 SLOC, still features a large number of errors. It does however still fit within the boundary of what is considered a safe operating system by the general measure. As a result of the findings, it is clear that Contiki should be further assessed for ways of improving stability.</p>
+
+<h2 id="toc_144">License-based static analysis tools</h2>
+
+<p>In this stage of the project, we will be applying a range of license-based static analysis tools to the Contiki source code. In general, tools of this nature provide a considerably greater depth of analysis, and are capable of detecting a range of errors which have a higher sense of imperceptibility; for example logic flaws which only execute under a specific set of conditions in the control flow of the program. As such, we intend to use them to reinforce our current findings obtained from the open source tools, and develop a more concrete understanding of the security vulnerabilities in Contiki.</p>
+
+<p>Our set of license based tools for static analysis include the following:</p>
+
+<ul>
+<li>GrammaTech CodeSonar: A deep static analysis tool capable of analysing source code and binaries, and providing an error granularity system as well as visualisation. (<a href="https://www.grammatech.com/products/codesonar">https://www.grammatech.com/products/codesonar</a>)</li>
+<li>Synopsys Coverity: A comprehensive static and dynamic analysis tool capable of hooking into IDEs such as Netbeans and Eclipse. (<a href="http://www.coverity.com/">http://www.coverity.com/</a>)</li>
+<li>SciTools Understand: A documentation, maintenance and reverse engineering tools combining a code editor with static analysers. (<a href="https://scitools.com/">https://scitools.com/</a>)</li>
+<li>Gimpel FlexeLint: A complex command line tool which aims to provide cost-effective and precise analysis of C/C++ code. (<a href="http://www.gimpel.com/html/flex.htm">http://www.gimpel.com/html/flex.htm</a>)</li>
+</ul>
+
+<p>Of the aforementioned tools, the most frequently used was CodeSonar: which, as a powerful and versatile static analyser, was capable of returning most, if not all of the bugs reported upon by the other tools. Additionally, as far as setup and usage was concerned, it was the most straightforward relative to the wealth of information it output to the user. Resultantly, CodeSonar will be the main focus on this next section. Alongside this, SciTools Understand will also be briefly discussed based on the visualisation options it offered in its output. In the case of FlexeLint, it was discovered that setting it up to work alongside Contiki was very difficult, and the same coverage provided by the tool would be better made up for by using other more deployable tools. </p>
+
+<h1 id="toc_145">Bitbucket workflow</h1>
+
+<p>In order to share and collaborate our work on Contiki, we established a workflow using the Bitbucket platform, for documenting and submitting vulnerabilities we discovered using our static analysis tools. The general process of submitting a bug, writing a concise report on its behaviours and eventually getting it patched into the main Contiki GitHub repository can be seen in the flowchart below. During the project, the Bitbucket workflow served as a collaborative platform with the Bristol team, and as such was critical to sharing ideas and opinions on vulnerabilities we found, as well as staying in touch with the changes being made to the Contiki codebase. </p>
+
+<p>During our work with Bristol, at this time of writing, we collaboratively formulated 33 bug reports referred to as <q>Issues</q> and submitted them to the platform for further analysis. From there, we put together 12 pull requests consisting of program patches to be submitted to the main Contiki repository. We currently have 8 open pull requests to be assessed by the Contiki developers, which will then be integrated into the main repository once a solution is determined. The screenshots documenting this can be seen below.  </p>
+
+<p><center>
+<img src="Images/Bitbucket_wf.png" alt="Total Errors">
+</center></p>
+
+<p>On Bitbucket, we worked as a team of 4 to submit issues detected by our tools, or otherwise discovered through analysing the Contiki source code. It was generally agreed that the responsibility of the Bristol team (blue team) was to fix bugs, whereas our Kent team (red team) was largely in charge of discovering them.</p>
+
+<p>Resultantly, we performed the majority of the static analysis, formulation of bug reports, and evidence gathering reponsibilities. The handling of providing patches, formulating pull requests and submitting changes to the main Contiki repository was largely down to Bristol, although they also provided some bug reports of their own, based on the static analysis tools they themselves also had access to. </p>
+
+<h3 id="toc_146">Screenshots</h3>
+
+<p><center>
+<img src="Images/bitbucket_all_issues.png" alt="Total Errors">
+</center>
+Total list of Bitbucket issues, ordered by datetime.</p>
+
+<p><center>
+<img src="Images/bitbucket_open_issues.png" alt="Total Errors">
+</center>
+List of all open Bitbucket issues, ordered by datetime.</p>
+
+<p><center>
+<img src="Images/bitbucket_pull_requests.png" alt="Total Errors">
+</center>
+Pull requests being made to the main Contiki GitHub repository.</p>
+
+<p><center>
+<img src="Images/bitbucket_watching_issues.png" alt="Total Errors">
+</center>
+A list of the open issues I am watching. This relates to bug reports which I have submitted personally.</p>
+
+<p>When submitting a bug report, a standard format which is parsed using markdown is used. This is typical to most version control platforms, making it straightforward to quickly gather details related to a bug, specify critical line numbers in an easily recognisable way, as well as integrating any accompanying evidence such as bug screenshots into the report. Below are some example bug reports which we filed, featuring some vulnerabilities discovered by CodeSonar. </p>
+
+<p><center>
+<img src="Images/ip64_bitbucket_workflow.png" alt="Total Errors">
+</center>
+A bug report detail a possible Null Pointer Dereference in ip64-router.c; the result of which could lead to undefined behaviour in Contiki. </p>
+
+<p><center>
+<img src="Images/ip64_router_bitbucket_request.png" alt="Total Errors">
+</center>
+Providing visual evidence in the form of code screenshots is intrinsic to communicating a set of reproducible steps for evoking a bug. The patcher can then analyse these steps, and provide secure measures to ensure they are not executed. For example, in this case a null check would be put in place to check the value of the specified pointer before it is dereferenced. This would ensure that an unexpected value isn&rsquo;t later used in the program. </p>
+
+<p>To see some additional information of the Bitbucket platform, navigate to <code>/Bitbucket</code> in the corpus directory. There you will find screenshots associated with the numerous bug reports and pull requests we made, as well as evidence of submissions to the main Contiki GitHub repository.</p>
+
+<p>In addition, some of the open issues raised by this project can be seen on the Contiki Github: <a href="https://github.com/contiki-os/contiki/issues">https://github.com/contiki-os/contiki/issues</a></p>
+
+<h1 id="toc_147">CVE Disclosure</h1>
+
+<p>As a result of testing the Contiki operating system in a testbed environment (documented below) we came across the discovery of two major common vulnerabilty enumerations, (CVEs) which we disclosed to CVE mitre (<a href="https://cve.mitre.org/">https://cve.mitre.org/</a>). Also featured is a video of us reproducing one of the vulnerabilities: which was in fact a cross-site-scripting (XSS) attack on a live Contiki device running as a network node. This could result in a considerable threat level if an attacker successfully implemented it. The details are below.</p>
+
+<p><img src="Images/cve_mitre.png" alt="Total Errors"></p>
+
+<p>The CVE mitre website. This is a community driven database of vulnerabilities discovered in many different platforms. Submitting reports to this site is a way of legitimising errors, making the wider community aware of them, and maintaining a backlog of a system&rsquo;s progression. </p>
+
+<h2 id="toc_148">CVE-2017-7295</h2>
+
+<p>The first CVE applied to a board crashing vulnerability discovered following a <q>use-after-free</q> vulnerability in the httpd-simple.c file in the cc26xx-web-demo. A use after free typically entails when a memory resource, which has already been released back to the free store after being used, is called upon again by the program. The consequence of this is a program crash, which, resultantly ended up freezing the operation of a TI CC2650 Launchpad board running Contiki. There was a possibility that an attacker could somehow manipulate this to cause malicious crashes in a network in the wild, and potentially damage network infrastructure as a result.</p>
+
+<h3 id="toc_149">Screenshots</h3>
+
+<p><img src="Images/CVE-2017-7295.png" alt="Total Errors"></p>
+
+<p><img src="Images/CVE-2017-7295-detail.png" alt="Total Errors"></p>
+
+<h2 id="toc_150">CVE-2017-7296</h2>
+
+<p>The second vulnerability was centred around a cross-site-scripting attack, which essentially, due to a lack of input sanitisation in a given field, allows an attacker to execute scripted code of their choice. This vulnerability was documented with the addition of a video replicating our proof-of-concept attack, in which we launched our own arbitrary Javascript code inside a input box in an MQTT cloud configuration page being hosted by a Contiki node. The result of this, if manipulated by an attacker is undefined, but it has potential to cause huge issues depending on what script they may devise. </p>
+
+<h3 id="toc_151">Screenshots</h3>
+
+<p><img src="Images/CVE-2017-7296.png" alt="Total Errors"></p>
+
+<p><img src="Images/CVE-2017-7296-detail.png" alt="Total Errors"></p>
+
+<p>The accompanying video to this exploit can be found in the directory <a href = "Videos/mqtt-xss.mp4"><code>Videos/mqtt-xss.mp4</code></a> .</p>
+
+<h1 id="toc_152">Results</h1>
+
+<p>Resulting from our work with the Contiki operating system, we have successfully set up a collaborative workflow between teams at Kent and Bristol, facilitating the discovery, documentation, and patching of security bugs found in the project. We have demonstrated the effectiveness of deploying static analysis tools to improve system stability, by locating and patching several critical flaws in Contiki with the assistance of open source and proprietary tools including CodeSonar, Flawfinder and Cppcheck.</p>
+
+<p>Additionally, we have assessed the capabilities of the tools; using their findings as a benchmark of their effectiveness, and drawing comparisons between the performances of those capable of deep analysis which are typically proprietary, and those which are open source. We have evaluated them in terms of their ease of use, time taken to configure and deploy, and their ability to detect critical flaws whilst filtering false positives. We have found overall that cross-usage of tools is advantageous; both for the purpose of providing greater code coverage, but also because specific tools have a tendency to specialise in detecting particular vulerabilities. As such, a security analyst can evaluate a system more holistically by deploying a range of different tools.</p>
+
+<p>Our work has also contributed towards IoT security as a whole. As Contiki is a rising contender in the market for popular IoT operating systems currently in use, it is likely that we will see its presence increase. A key aspect of maintaining system security is the patching of vulnerabilities before their inevitable release into the wild. Resultantly, by using static analysis tools which can be deployed free of executing code, we afford ourselves a safe environment in which to perform security analyses without the possibility of affecting the infrastructure of a running system.</p>
+
+<p>As the motivations of this project are mainly to provide small improvements to the security of the Contiki operating system, we have provided specific tool results and the patches we have developed in response to them in the <a href="#staticanalysis">Static Analysis</a> section. Additionally, the  directory contains some metrics regarding the bug density of Contiki OS. </p>
+
+<p>Pictured below are some of the critical errors we solved as a result of deploying the static analysis tools.</p>
+
+<ul>
+<li>Our list of CVE disclosures can be found here: <a href = "/CVEs">CVEs</a></li>
+<li>Our results concerning Contiki&rsquo;s software metrics can be found here: <a href = "/Statistics">Statistics</a></li>
+<li>Our issues and pull requests made on bitbucket can be found here: <a href =  "https://bitbucket.org/antzougias/contiki-red-blue-team"><a href="https://bitbucket.org/antzougias/contiki-red-blue-team">https://bitbucket.org/antzougias/contiki-red-blue-team</a></a></li>
+<li>Our integrated changes can be found on the main Contiki GitHub repository here: <a href = "https://github.com/contiki-os/contiki/pulls"><a href="https://github.com/contiki-os/contiki/pulls">https://github.com/contiki-os/contiki/pulls</a></a></li>
+</ul>
+
+<p><img src="Images/ip64_bitbucket_workflow.png" alt="Total Errors"></p>
+
+<p><img src="Images/ip64_router_bitbucket_request.png" alt="Total Errors"></p>
+
+<p><img src="Images/mqtt_bitbucket_request.png" alt="Total Errors"></p>
+
+<p><img src="Images/mqtt_uninitialised_var_bug.png" alt="Total Errors"> </p>
+
+<h1 id="toc_153">Meetings</h1>
+
+<h2 id="toc_154">25/1/2017 Meeting @ Kent</h2>
+
+<ul>
+<li>Get list of C++ static code analysis tools, split with Arthur, write reports on each </li>
+<li>Install tools, run them with C++ </li>
+<li>Basic functionality tools </li>
+<li>Errors and bug reporting for tools - framework </li>
+<li>Google - tool Wycheproof<br></li>
+<li>Make a note of commercial static analysis tools</li>
+<li>GrammaTech Code Sonar, Flexelint - Gimple software</li>
+<li>Look for others </li>
+<li>Pen testing tools with Contiki devices</li>
+<li>Zolertia platforms: Orion, Firefly</li>
+<li>Static analysis and Pen testing </li>
+<li>Dynamic analysis tools</li>
+<li>Other platforms - specific bugs e,g, Contiki on Raspberry Pi </li>
+<li>Google Scholar - Mozilla, chrome etc. Look for the literature - bugs per line of codes. </li>
+<li>Estimate number of bugs based on size and complexity. This is the hypothesis. </li>
+<li>Drivers - buggy - IoT code conclusions. Rate occurrence - “IoT bugs occur at a rate twice of xxx systems” </li>
+<li>Bug density in IoT devices  E.g. bugs in the RIOT system, bugs in the mBed system. </li>
+<li>Investigate products that have used Contiki - are they regular market things? </li>
+<li>Contiki uses a skeleton of TCP/IP </li>
+<li>Analyse table for insertion </li>
+<li>Set up google drive for Budi, Julio, Arthur and myself </li>
+<li>Contiki mailing list bugs etc. </li>
+<li>Code inspection - by hand </li>
+<li>Typical issues will be with memory etc etc. Look through each example of mem allocation etc. </li>
+<li>Investigate some heuristics for bug hunting </li>
+</ul>
+
+<h2 id="toc_155">01/2/2017 Meeting @ Kent</h2>
+
+<ul>
+<li>Fuzzing - testing Contiki OS by fuzzing the inputs with various values</li>
+<li>Vulnerability scanner</li>
+<li>Launch Kali linux tools against IoT devices </li>
+<li>Install Kali on Mac as a virtual machine</li>
+<li>Timesheet January </li>
+<li>Test the effectiveness of individual tools, document features etc.</li>
+<li>Excel spreadsheet of tool performance</li>
+</ul>
+
+<h2 id="toc_156">14/2/2017 Meeting @ Kent with Bristol</h2>
+
+<p>On the 14th of February we met with George Oikonomou - one of the maintainers and developers behind porting Contiki to several different hardware platforms as well as a lecturer at the University of Bristol. As our project involves the exploration and deconstruction of the Contiki platform, he gave a presentation on the underlying principles and features behind the operating system; including the protocols supported, hardware architecture, memory management and possible vulnerability areas for us to target. From the meeting, we established a greater understanding of Contiki, and identified the major areas which we would next isolate and analyse with our tools. Below are some notes behind the presentation he gave on Contiki: </p>
+
+<ul>
+<li>Contiki has a concept called a protothread - a proto multi threading operating system. Multiple threads that share the same stack. </li>
+<li>Micro IP (uIP) was developed from this. This, and the protothread concept were merged into what is IPV6, which implements a full TCP/IP stack. </li>
+<li>Written in standard C, highly portable. </li>
+<li>Strictly platform independent layer used for porting operating system across hardware devices. This eliminates fiddling with compilers and toolchains. </li>
+<li>Then there are toolchains specifically configured for the hardware CPU - e.g. TI (Texas Instruments) has the launchpad, sensortags. Standard 16 bit TI microcontroller in particular is very popular, which uses a standard GCC type toolchain. </li>
+<li>Many hardware devices which sit on the Contiki platform - Zolertia Z1, Wismote Sky etc.</li>
+<li>There are some more obsolete platforms which are supported by Contiki, which for the project we are less worried about analysing. </li>
+<li>Hardware architecture CPU - different memory spaces - one for RAM, one for flash. Von Neumann type architecture - single memory space for everything. </li>
+<li>Fundamental point - good software practices for one machine do not correspond to good practices for others. </li>
+<li>Support for AVR CPUs - unmaintained for quite a while (Arduino devices). </li>
+<li>AVR support has been going stale. It might be a testing area. </li>
+<li>Cortex CPU devices - new kid on the block. </li>
+<li>Launchpad download ARM GCC. </li>
+<li>Targeting battery powered devices - sensor tag (single coin cell)</li>
+<li>Most RAM is 32KB - Zolertia, firefly.</li>
+<li>512 Flash. </li>
+<li>Contiki supports all of the IoT standards e.g. HTTP support, MQTT support. </li>
+<li>CoAP support. </li>
+<li>IPv4 and IPv6 support. </li>
+<li>Ripple - de facto standard for networking devices. </li>
+<li>6LoWPAN. </li>
+<li>TSCH - Time slotted channel hopping. </li>
+<li>We don&rsquo;t currently have TSCH for sub GHz. </li>
+<li>6LoWPAN - IPv6 for low power wireless personal area networks. </li>
+<li>We want to target these areas.</li>
+<li>Contiki has a few other core areas which may also be targeted.</li>
+<li>Coffee filesystem.</li>
+<li>LED drivers, Serial drivers etc - platform independent. Most of these things will define the Contiki API. </li>
+<li>Randomness computations are platform dependent. If a certain device driver for randomness can&rsquo;t be provided, choose the backup built in option - which isn&rsquo;t very random. Pseudorandom. Can this event be forced to happen?</li>
+<li>Very few platforms will default into the default randomness solution; most have their own defined. </li>
+<li>Entropy generation. </li>
+<li>The cache is used for storage of numbers generated for entropy. </li>
+<li> Fixing areas in the platform independent parts: important. </li>
+<li> The entire network stack - CoAP, HTTP. </li>
+</ul>
+
+<h2 id="toc_157">01/03/2017 Meeting @ Bristol</h2>
+
+<ul>
+<li>Introduction to the Bristol team members</li>
+<li>Discussion of roles in the team</li>
+<li>Setting up the Contiki environment using the Texas Instruments Launchpad CC2650 platform</li>
+<li>Discussing potential vulnerabilities to be exploited in this setup</li>
+<li>Exploring network based attacks on Contiki devices</li>
+<li>Reporting on the initial analyses of the software tools, with a focus on the findings from CodeSonar and Understand.</li>
+</ul>
+
+<h2 id="toc_158">07/03/2017 Meeting @ Kent with Bristol</h2>
+
+<ul>
+<li>Setting up a small test bed environment with two Texas Instrument LaunchPad CC2650 devices running Contiki. </li>
+<li>Discovering a core vulnerability in Firefox when launching the MQTT client, resulting in a board crash.</li>
+<li>Close analysis of CodeSonar vulnerabilities, including a discussion on alternative device platforms such as the Zolertia devices.</li>
+</ul>
+
+<h2 id="toc_159">27/03/2017 Meeting @ Bristol</h2>
+
+<ul>
+<li>A continuation of the discussion on vulnerabilities discovered some far, with  the discussion on the issues found so far.</li>
+<li>Clarification on some bugs which have been submitted through the Bitbucket workflow and patched. </li>
+<li>Reporting and documentation of the 2 CVE issues discovered at Bristol</li>
+<li>Discussion on further collaboration ideas for future.</li>
+</ul>
+
+
+
+<script type="text/javascript">
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(\w+)\b/i,t=0,n=_self.Prism={util:{encode:function(e){return e instanceof a?new a(e.type,n.util.encode(e.content),e.alias):"Array"===n.util.type(e)?e.map(n.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},objId:function(e){return e.__id||Object.defineProperty(e,"__id",{value:++t}),e.__id},clone:function(e){var t=n.util.type(e);switch(t){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=n.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return n.util.clone(e)})}return e}},languages:{extend:function(e,t){var a=n.util.clone(n.languages[e]);for(var r in t)a[r]=t[r];return a},insertBefore:function(e,t,a,r){r=r||n.languages;var l=r[e];if(2==arguments.length){a=arguments[1];for(var i in a)a.hasOwnProperty(i)&&(l[i]=a[i]);return l}var o={};for(var s in l)if(l.hasOwnProperty(s)){if(s==t)for(var i in a)a.hasOwnProperty(i)&&(o[i]=a[i]);o[s]=l[s]}return n.languages.DFS(n.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,t,a,r){r=r||{};for(var l in e)e.hasOwnProperty(l)&&(t.call(e,l,e[l],a||l),"Object"!==n.util.type(e[l])||r[n.util.objId(e[l])]?"Array"!==n.util.type(e[l])||r[n.util.objId(e[l])]||(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,l,r)):(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,null,r)))}},plugins:{},highlightAll:function(e,t){var a={callback:t,selector:'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'};n.hooks.run("before-highlightall",a);for(var r,l=a.elements||document.querySelectorAll(a.selector),i=0;r=l[i++];)n.highlightElement(r,e===!0,a.callback)},highlightElement:function(t,a,r){for(var l,i,o=t;o&&!e.test(o.className);)o=o.parentNode;o&&(l=(o.className.match(e)||[,""])[1],i=n.languages[l]),t.className=t.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=t.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var s=t.textContent,u={element:t,language:l,grammar:i,code:s};if(!s||!i)return n.hooks.run("complete",u),void 0;if(n.hooks.run("before-highlight",u),a&&_self.Worker){var c=new Worker(n.filename);c.onmessage=function(e){u.highlightedCode=e.data,n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(u.element),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},c.postMessage(JSON.stringify({language:u.language,code:u.code,immediateClose:!0}))}else u.highlightedCode=n.highlight(u.code,u.grammar,u.language),n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(t),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},highlight:function(e,t,r){var l=n.tokenize(e,t);return a.stringify(n.util.encode(l),r)},tokenize:function(e,t){var a=n.Token,r=[e],l=t.rest;if(l){for(var i in l)t[i]=l[i];delete t.rest}e:for(var i in t)if(t.hasOwnProperty(i)&&t[i]){var o=t[i];o="Array"===n.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],c=u.inside,g=!!u.lookbehind,h=!!u.greedy,f=0,d=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var m=r[p];if(r.length>e.length)break e;if(!(m instanceof a)){u.lastIndex=0;var y=u.exec(m),v=1;if(!y&&h&&p!=r.length-1){var b=r[p+1].matchedStr||r[p+1],k=m+b;if(p<r.length-2&&(k+=r[p+2].matchedStr||r[p+2]),u.lastIndex=0,y=u.exec(k),!y)continue;var w=y.index+(g?y[1].length:0);if(w>=m.length)continue;var _=y.index+y[0].length,P=m.length+b.length;if(v=3,P>=_){if(r[p+1].greedy)continue;v=2,k=k.slice(0,P)}m=k}if(y){g&&(f=y[1].length);var w=y.index+f,y=y[0].slice(f),_=w+y.length,S=m.slice(0,w),O=m.slice(_),j=[p,v];S&&j.push(S);var A=new a(i,c?n.tokenize(y,c):y,d,y,h);j.push(A),O&&j.push(O),Array.prototype.splice.apply(r,j)}}}}}return r},hooks:{all:{},add:function(e,t){var a=n.hooks.all;a[e]=a[e]||[],a[e].push(t)},run:function(e,t){var a=n.hooks.all[e];if(a&&a.length)for(var r,l=0;r=a[l++];)r(t)}}},a=n.Token=function(e,t,n,a,r){this.type=e,this.content=t,this.alias=n,this.matchedStr=a||null,this.greedy=!!r};if(a.stringify=function(e,t,r){if("string"==typeof e)return e;if("Array"===n.util.type(e))return e.map(function(n){return a.stringify(n,t,e)}).join("");var l={type:e.type,content:a.stringify(e.content,t,r),tag:"span",classes:["token",e.type],attributes:{},language:t,parent:r};if("comment"==l.type&&(l.attributes.spellcheck="true"),e.alias){var i="Array"===n.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(l.classes,i)}n.hooks.run("wrap",l);var o="";for(var s in l.attributes)o+=(o?" ":"")+s+'="'+(l.attributes[s]||"")+'"';return"<"+l.tag+' class="'+l.classes.join(" ")+'" '+o+">"+l.content+"</"+l.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var t=JSON.parse(e.data),a=t.language,r=t.code,l=t.immediateClose;_self.postMessage(n.highlight(r,n.languages[a],a)),l&&_self.close()},!1),_self.Prism):_self.Prism;var r=document.currentScript||[].slice.call(document.getElementsByTagName("script")).pop();return r&&(n.filename=r.src,document.addEventListener&&!r.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",n.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+</script>
+
+<script type="text/x-mathjax-config">
+(function () {
+
+MathJax.Hub.Config({
+	'showProcessingMessages': false,
+	'messageStyle': 'none'
+});
+
+if (typeof MathJaxListener !== 'undefined') {
+	MathJax.Hub.Register.StartupHook('End', function () {
+		MathJaxListener.invokeCallbackForKey_('End');
+	});
+}
+
+})();
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</body>
+
+</html>
