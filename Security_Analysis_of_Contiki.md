@@ -30,6 +30,8 @@ Contiki is written in the ANSI C programming language, which is designed to prov
 
 This project, therefore, is an exploration into how static analysis tools can be used to identify, document, and patch the more elusive of vulnerabilities found to be compromising such systems. Contiki, as a popular platform for many IoT developers to develop open source applications for, is therefore a strong contender for testing the effective of static analysis tools. 
 
+Some of the existing research this project is based off of can be found in the <a href = "Research">`Research`</a> directory.
+
 ##Aims
 
 This project has the following aims: 
@@ -41,6 +43,7 @@ This project has the following aims:
 * To develop an understanding of vulnerabilities commonly faced in IoT operating systems, and evaluate the status of security in the current market.
 
 To achieve these aims, we will be amassing a collection of static analysis tools suitable for use with C/C++ code, studying and evaluating them to understand how they work, and deploying them on the source code of Contiki and that of other operating systems. Additionally, we shall be documenting the reports generated from each of these tools, formulating a work flow for which we can communicate and patch vulnerabilities alongside the project's developers, who can then integrate the suggested changes into the main Contiki git repository. Additionally, after the duration of the project, we aim to observe the improvements our research may have made, and make evaluations as to how they could have been improved. Finally, we intend to postulate on future work following the direction of this project, and perhaps look into how this method can be replicated to patch other operating systems similar to Contiki. 
+
 #Contiki
 
 In this section, we list some of the key features of Contiki, and explore the core concepts related to IoT driven sensor networks. This is intended to provide an overview of the technologies featured in Contiki, some of the advantages and limitations of that technology, and how it is looking to progress in future. 
@@ -48,6 +51,14 @@ In this section, we list some of the key features of Contiki, and explore the co
 ####Overview
 
 Contiki connects low-power microcontrollers to the internet and supports standards like IPv6, 6lowpan, RPL and CoAP. Other key features include highly efficient memory allocation, full IP networking, very low power consumption, dynamic module loading and more. Supported hardware platforms include Redwire Econotags, Zolertia z1 motes, ST Microelectronics development kits and Texas Instruments chips and boards.
+
+##Timeline
+
+Below is a project timeline of Contiki:
+
+<center>
+![Total Errors](Images/Contiki_Timeline.png)
+</center>
 
 ##Features 
 
