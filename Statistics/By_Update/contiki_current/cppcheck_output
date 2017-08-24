@@ -1,0 +1,125 @@
+[contiki-3.x/LICENSE:6]: (error) syntax error
+[contiki-3.x/README.md:4]: (error) Invalid number of character '(' when no macros are defined.
+[contiki-3.x/apps/antelope/lvm.c:699]: (error) Array 'variables[3]' accessed at index 3, which is out of bounds.
+[contiki-3.x/apps/ftp/ftpc.c:286]: (error) sprintf format string requires 6 parameters but only 3 are given.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when no macros are defined.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKIMAC_CONF_COMPOWER;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKIMAC_CONF_COMPOWER;WEBSERVER_CONF_CGI;WEBSERVER_CONF_SENSORS;WEBSERVER_CONF_STATISTICS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_AVR_ATMEGA128RFA1;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_AVR_ATMEGA128RFA1;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI;WEBSERVER_CONF_PRINTADDR'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_AVR_ATMEGA128RFA1;WEBSERVER_CONF_CGI;WEBSERVER_CONF_SENSORS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_AVR_RAVEN;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_AVR_RAVEN;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI;WEBSERVER_CONF_PRINTADDR'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_AVR_RAVEN;WEBSERVER_CONF_CGI;WEBSERVER_CONF_SENSORS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_MB851;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_MINIMAL_NET;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_MINIMAL_NET;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI;WEBSERVER_CONF_PRINTADDR'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_REDBEE_ECONOTAG'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_REDBEE_ECONOTAG;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_REDBEE_ECONOTAG;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI;WEBSERVER_CONF_PRINTADDR'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_REDBEE_ECONOTAG;WEBSERVER_CONF_CGI;WEBSERVER_CONF_SENSORS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'ENERGEST_CONF_ON;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'ENERGEST_CONF_ON;WEBSERVER_CONF_CGI;WEBSERVER_CONF_SENSORS;WEBSERVER_CONF_STATISTICS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'FIXED_INTERVALS;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'HTTPD_FS_STATISTICS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'HTTPD_FS_STATISTICS;HTTPD_FS_STATISTICS=1'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'RF230BB'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'RF230BB;WEBSERVER_CONF_CGI;WEBSERVER_CONF_SENSORS;WEBSERVER_CONF_STATISTICS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'RIMESTATS_CONF_ENABLED;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'RIMESTATS_CONF_ENABLED;WEBSERVER_CONF_CGI;WEBSERVER_CONF_SENSORS;WEBSERVER_CONF_STATISTICS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_ADDRESSES;WEBSERVER_CONF_CGI'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_ADDRESSES;WEBSERVER_CONF_CGI;WEBSERVER_CONF_SHOW_ROOM'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI;WEBSERVER_CONF_HEADER;WEBSERVER_CONF_HEADER_MENU'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI;WEBSERVER_CONF_PRINTADDR'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_FILESTATS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_FILESTATS;WEBSERVER_CONF_FILESTATS=2'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_FILESTATS;WEBSERVER_CONF_HEADER;WEBSERVER_CONF_HEADER_MENU'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_FILESTATS;WEBSERVER_CONF_LOADTIME'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_HEADER'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_HEADER;WEBSERVER_CONF_HEADER_ICON'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_HEADER;WEBSERVER_CONF_HEADER_MENU'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_HEADER;WEBSERVER_CONF_HEADER_MENU;WEBSERVER_CONF_PROCESSES'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_HEADER;WEBSERVER_CONF_HEADER_MENU;WEBSERVER_CONF_SENSORS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_HEADER;WEBSERVER_CONF_HEADER_MENU;WEBSERVER_CONF_TCPSTATS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_HEADER;WEBSERVER_CONF_HEADER_MENU;WEBSERVER_CONF_TICTACTOE'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_HEADER;WEBSERVER_CONF_HEADER_W3C'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_NEIGHBORS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_NEIGHBORS;WEBSERVER_CONF_NEIGHBOR_STATUS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_NEIGHBORS;WEBSERVER_CONF_SHOW_ROOM'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_PROCESSES'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_ROUTES'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_ROUTES;WEBSERVER_CONF_ROUTE_LINKS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_ROUTES;WEBSERVER_CONF_SHOW_ROOM'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_SENSORS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_SENSORS;WEBSERVER_CONF_STATISTICS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_SHOW_ROOM'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_TCPSTATS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_CGI;WEBSERVER_CONF_TICTACTOE'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_FILESTATS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_PRINTADDR'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: 'WEBSERVER_CONF_SENSORS'.
+[contiki-3.x/apps/webserver-nano/httpd-cgi.c:651]: (error) Invalid number of character '{' when these macros are defined: '__AVR__'.
+[contiki-3.x/core/net/mac/cxmac/cxmac.c:128]: (error) failed to evaluate #if condition
+[contiki-3.x/cpu/arm/aducrf101/Common/radioeng.c:1146]: (error) Uninitialized variable: RdLen
+[contiki-3.x/cpu/arm/aducrf101/Common/radioeng.c:1470]: (error) Uninitialized variable: ucInt0
+[contiki-3.x/cpu/arm/at91sam7s/startup-SAM7S-arm.c:129]: (error) syntax error
+[contiki-3.x/cpu/arm/at91sam7s/usb-arch.c:197]: (error) syntax error
+[contiki-3.x/cpu/arm/stm32f103/usb-arch.c:343]: (error) syntax error
+[contiki-3.x/cpu/cc2538/cfs-coffee-arch.h:54]: (error) No header in #include
+[contiki-3.x/cpu/cc253x/stack.c] -> [contiki-3.x/cpu/cc253x/stack.c]: (error) syntax error
+[contiki-3.x/cpu/mc1322x/config.c:40]: (error) Uninitialized variable: type
+[contiki-3.x/cpu/mc1322x/tests/printf.c:93]: (error) Null pointer dereference: np
+[contiki-3.x/cpu/mc1322x/tests/printf.c:90]: (error) Signed integer overflow for expression '(1<<(bs-1))+1'.
+[contiki-3.x/cpu/msp430/f1xxx/clock.c:162]: (error) failed to evaluate #if condition
+[contiki-3.x/cpu/msp430/f5xxx/clock.c:159]: (error) failed to evaluate #if condition
+[contiki-3.x/cpu/pic32/debug-uart.c:95]: (error) failed to expand 'DEBUG_UART', Wrong number of parameters for macro 'DEBUG_UART'.
+[contiki-3.x/cpu/pic32/slip-uart.c:93]: (error) failed to expand 'SLIP_UART', Wrong number of parameters for macro 'SLIP_UART'.
+[contiki-3.x/cpu/stm32w108/hal/micro/cortexm3/nvm.h:253]: (error) failed to evaluate #if condition
+[contiki-3.x/cpu/stm32w108/e_stdio/src/small-dtoa.c:1169]: (error) Uninitialized variable: k
+[contiki-3.x/cpu/stm32w108/e_stdio/src/small-dtoa.c:1171]: (error) Uninitialized variable: s
+[contiki-3.x/cpu/stm32w108/e_stdio/src/small-dtoa.c:1172]: (error) Uninitialized variable: s0
+[contiki-3.x/cpu/stm32w108/e_stdio/src/small-mprec.c:1356]: (error) Uninitialized variable: p5
+[contiki-3.x/cpu/stm32w108/e_stdio/src/small-vfsscanf.c:866]: (error) Uninitialized variable: mbslen
+[contiki-3.x/cpu/stm32w108/hal/micro/cortexm3/board.c:268]: (error) Array 'boardList[7]' accessed at index 13, which is out of bounds.
+[contiki-3.x/cpu/stm32w108/hal/micro/cortexm3/stm32w108/low-level-init.c] -> [contiki-3.x/cpu/stm32w108/hal/micro/cortexm3/stm32w108/low-level-init.c]: (error) syntax error
+[contiki-3.x/examples/sky-ip/sky-telnet-server.c:63]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[contiki-3.x/examples/sky-ip/telnet-webserver.c:63]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[contiki-3.x/platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '{' when no macros are defined.
+[contiki-3.x/platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '{' when these macros are defined: 'COFFEE_FILES'.
+[contiki-3.x/platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '{' when these macros are defined: 'HTTPD_FS_STATISTICS'.
+[contiki-3.x/platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '{' when these macros are defined: 'HTTPD_FS_STATISTICS;HTTPD_FS_STATISTICS=1'.
+[contiki-3.x/platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '{' when these macros are defined: 'HTTPD_FS_STATISTICS;HTTPD_FS_STATISTICS=2'.
+[contiki-3.x/platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '{' when these macros are defined: 'RF230BB'.
+[contiki-3.x/platform/avr-raven/contiki-conf.h:357]: (error) No header in #include
+[contiki-3.x/platform/avr-ravenusb/contiki-raven-main.c:613]: (error) Uninitialized variable: lastprint
+[contiki-3.x/platform/cooja/testapps/testuaodv.c:75]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-3.x/platform/cooja/testapps/testuaodv.c:78]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-3.x/platform/cooja/testapps/testuaodv.c:87]: (error) printf format string requires 5 parameters but only 2 are given.
+[contiki-3.x/platform/exp5438/clock.c:159]: (error) failed to evaluate #if condition
+[contiki-3.x/platform/exp5438/contiki-conf.h:7]: (error) No header in #include
+[contiki-3.x/platform/exp5438/contiki-conf.h:210]: (error) No header in #include
+[contiki-3.x/platform/exp5438/flash.c:109]: (error) Uninitialized variable: r
+[contiki-3.x/platform/exp5438/flash.c:134]: (error) Uninitialized variable: r
+[contiki-3.x/platform/galileo/net/eth-conf.c:115]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-3.x/platform/galileo/net/eth-conf.c:116]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-3.x/platform/galileo/net/eth-conf.c:117]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-3.x/platform/galileo/net/eth-conf.c:119]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-3.x/platform/mbxxx/board.c:405]: (error) Array 'boardList[12]' accessed at index 23, which is out of bounds.
+[contiki-3.x/platform/minimal-net/contiki-main.c:267]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-3.x/platform/minimal-net/contiki-main.c:275]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-3.x/platform/minimal-net/contiki-main.c:282]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-3.x/platform/nrf52dk/rtt/segger-rtt-printf.c:508]: (error) va_list 'ParamList' was opened but not closed by va_end().
+[contiki-3.x/platform/openmote-cc2538/contiki-conf.h:55]: (error) No header in #include
+[contiki-3.x/platform/sky/contiki-conf.h:7]: (error) No header in #include
+[contiki-3.x/platform/sky/contiki-conf.h:217]: (error) No header in #include
+[contiki-3.x/platform/srf06-cc26xx/sensortag/hdc-1000-sensor.c:238]: (error) Uninitialized variable: rv
+[contiki-3.x/platform/stm32nucleo-spirit1/contiki-conf.h:132]: (error) No header in #include
+[contiki-3.x/platform/wismote/flash.c:82]: (error) Uninitialized variable: r
+[contiki-3.x/platform/wismote/flash.c:95]: (error) Uninitialized variable: r
+[contiki-3.x/platform/wismote/contiki-conf.h:191]: (error) No header in #include
+[contiki-3.x/platform/z1/contiki-conf.h:37]: (error) No header in #include
+[contiki-3.x/tools/wpcapslip/wpcap.c:524]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[contiki-3.x/tools/wpcapslip/wpcap.c:555]: (error) fprintf format string requires 8 parameters but only 2 are given.
+[contiki-3.x/tools/wpcapslip/wpcap.c:559]: (error) snprintf format string requires 12 parameters but only 3 are given.

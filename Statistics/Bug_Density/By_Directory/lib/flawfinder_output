@@ -1,0 +1,54 @@
+Flawfinder version 2.0.0, (C) 2001-2017 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 219
+Examining lib/fs/fat/diskio.h
+Examining lib/fs/fat/ff.c
+Examining lib/fs/fat/ff.h
+Examining lib/fs/fat/integer.h
+Examining lib/fs/fat/option/syscall.c
+Examining lib/fs/fat/option/unicode/cc932.c
+Examining lib/fs/fat/option/unicode/cc936.c
+Examining lib/fs/fat/option/unicode/cc949.c
+Examining lib/fs/fat/option/unicode/cc950.c
+Examining lib/fs/fat/option/unicode/ccsbcs.c
+Examining lib/fs/fat/option/unicode.c
+Examining lib/newlib/syscalls.c
+
+FINAL RESULTS:
+
+lib/newlib/syscalls.c:50:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+lib/fs/fat/ff.c:5959:  [2] (buffer) TCHAR:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+lib/fs/fat/ff.h:209:  [2] (buffer) TCHAR:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+lib/fs/fat/ff.h:210:  [2] (buffer) TCHAR:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+lib/fs/fat/ff.h:212:  [2] (buffer) TCHAR:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+
+ANALYSIS SUMMARY:
+
+Hits = 5
+Lines analyzed = 37664 in approximately 1.74 seconds (21694 lines/second)
+Physical Source Lines of Code (SLOC) = 35857
+Hits@level = [0]   0 [1]   0 [2]   4 [3]   0 [4]   1 [5]   0
+Hits@level+ = [0+]   5 [1+]   5 [2+]   5 [3+]   1 [4+]   1 [5+]   0
+Hits/KSLOC@level+ = [0+] 0.139443 [1+] 0.139443 [2+] 0.139443 [3+] 0.0278886 [4+] 0.0278886 [5+]   0
+Minimum risk level = 1
+Not every hit is necessarily a security vulnerability.
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming for Linux and Unix HOWTO'
+(http://www.dwheeler.com/secure-programs) for more information.

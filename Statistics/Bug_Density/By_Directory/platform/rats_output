@@ -1,0 +1,567 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+Analyzing platform//apple2enh/contiki-main.c
+Analyzing platform//apple2enh/lib/error.c
+Analyzing platform//apple2enh/sys/clock.c
+Analyzing platform//atarixl/contiki-main.c
+Analyzing platform//atarixl/lib/error.c
+Analyzing platform//avr-atmega128rfa1/apps/raven-ipso/raven-ipso.c
+Analyzing platform//avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c
+Analyzing platform//avr-atmega128rfa1/apps/raven-webserver/http-strings.c
+Analyzing platform//avr-atmega128rfa1/apps/raven-webserver/httpd-cfs.c
+Analyzing platform//avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c
+Analyzing platform//avr-atmega128rfa1/apps/raven-webserver/httpd-fs.c
+Analyzing platform//avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c
+Analyzing platform//avr-atmega128rfa1/apps/raven-webserver/httpd.c
+Analyzing platform//avr-atmega128rfa1/apps/raven-webserver/webserver-dsc.c
+Analyzing platform//avr-atmega128rfa1/apps/raven-webserver/webserver-nogui.c
+Analyzing platform//avr-atmega128rfa1/apps/raven-webserver/webserver.c
+Analyzing platform//avr-atmega128rfa1/button-sensor.c
+Analyzing platform//avr-atmega128rfa1/contiki-main.c
+Analyzing platform//avr-atmega128rfa1/params.c
+Analyzing platform//avr-atmega128rfa1/slip_uart0.c
+Analyzing platform//avr-raven/apps/raven-ipso/raven-ipso.c
+Analyzing platform//avr-raven/apps/raven-lcd-interface/raven-lcd.c
+Analyzing platform//avr-raven/apps/raven-webserver/http-strings.c
+Analyzing platform//avr-raven/apps/raven-webserver/httpd-cfs.c
+Analyzing platform//avr-raven/apps/raven-webserver/httpd-cgi.c
+Analyzing platform//avr-raven/apps/raven-webserver/httpd-fs.c
+Analyzing platform//avr-raven/apps/raven-webserver/httpd.c
+Analyzing platform//avr-raven/apps/raven-webserver/webserver-dsc.c
+Analyzing platform//avr-raven/apps/raven-webserver/webserver-nogui.c
+Analyzing platform//avr-raven/apps/raven-webserver/webserver.c
+Analyzing platform//avr-raven/button-sensor.c
+Analyzing platform//avr-raven/cfs-coffee-arch.c
+Analyzing platform//avr-raven/contiki-raven-default-init-lowlevel.c
+Analyzing platform//avr-raven/contiki-raven-default-init-net.c
+Analyzing platform//avr-raven/contiki-raven-main.c
+Analyzing platform//avr-raven/loadable_prg.c
+Analyzing platform//avr-raven/params.c
+Analyzing platform//avr-raven/slip_uart0.c
+Analyzing platform//avr-ravenlcd/adc.c
+Analyzing platform//avr-ravenlcd/beep.c
+Analyzing platform//avr-ravenlcd/key.c
+Analyzing platform//avr-ravenlcd/lcd.c
+Analyzing platform//avr-ravenlcd/menu.c
+Analyzing platform//avr-ravenlcd/raven3290.c
+Analyzing platform//avr-ravenlcd/sleep.c
+Analyzing platform//avr-ravenlcd/temp.c
+Analyzing platform//avr-ravenlcd/timer.c
+Analyzing platform//avr-ravenlcd/uart.c
+Analyzing platform//avr-ravenusb/cdc_task.c
+Analyzing platform//avr-ravenusb/contiki-raven-default-init-lowlevel.c
+Analyzing platform//avr-ravenusb/contiki-raven-default-init-net.c
+Analyzing platform//avr-ravenusb/contiki-raven-main.c
+Analyzing platform//avr-ravenusb/httpd-simple-avr.c
+Analyzing platform//avr-ravenusb/loadable_prg.c
+Analyzing platform//avr-ravenusb/rng.c
+Analyzing platform//avr-ravenusb/sicslow_ethernet.c
+Analyzing platform//avr-rcb/contiki-rcb-main.c
+Analyzing platform//avr-rcb/loadable_prg.c
+Analyzing platform//avr-rss2/contiki-main.c
+Analyzing platform//avr-rss2/dev/adc.c
+Analyzing platform//avr-rss2/dev/battery-sensor.c
+Analyzing platform//avr-rss2/dev/bme280-arch.c
+Analyzing platform//avr-rss2/dev/button-sensor.c
+Analyzing platform//avr-rss2/dev/co2_sa_kxx-sensor.c
+Analyzing platform//avr-rss2/dev/enc28j60_avr.c
+Analyzing platform//avr-rss2/dev/i2c.c
+Analyzing platform//avr-rss2/dev/leds.c
+Analyzing platform//avr-rss2/dev/light-sensor.c
+Analyzing platform//avr-rss2/dev/pulse-sensor.c
+Analyzing platform//avr-rss2/dev/temp-sensor.c
+Analyzing platform//avr-rss2/dev/temp_mcu-sensor.c
+Analyzing platform//avr-rss2/params.c
+Analyzing platform//avr-rss2/slip_uart0.c
+Analyzing platform//avr-zigbit/contiki-avr-zigbit-main.c
+Analyzing platform//avr-zigbit/loadable_prg.c
+Analyzing platform//c128/contiki-main.c
+Analyzing platform//c128/lib/exec.c
+Analyzing platform//c128/lib/lseek.c
+Analyzing platform//c128/lib/pfs-dir.c
+Analyzing platform//c64/contiki-main.c
+Analyzing platform//c64/lib/exec.c
+Analyzing platform//c64/lib/lseek.c
+Analyzing platform//c64/lib/pfs-dir.c
+Analyzing platform//cc2530dk/contiki-main.c
+Analyzing platform//cc2530dk/debug.c
+Analyzing platform//cc2530dk/dev/adc-sensor.c
+Analyzing platform//cc2530dk/dev/button-sensor.c
+Analyzing platform//cc2530dk/dev/leds-arch.c
+Analyzing platform//cc2530dk/dev/slip-arch.c
+Analyzing platform//cc2530dk/dev/smartrf-sensors.c
+Analyzing platform//cc2530dk/dev/usb-serial.c
+Analyzing platform//cc2530dk/putchar.c
+Analyzing platform//cc2530dk/uip-debug.c
+Analyzing platform//cc2530dk/viztool.c
+Analyzing platform//cc2538dk/contiki-main.c
+Analyzing platform//cc2538dk/dev/als-sensor.c
+Analyzing platform//cc2538dk/dev/button-sensor.c
+Analyzing platform//cc2538dk/dev/leds-arch.c
+Analyzing platform//cc2538dk/dev/smartrf-sensors.c
+Analyzing platform//cooja/cfs/cfs-cooja.c
+Analyzing platform//cooja/contiki-cooja-main.c
+Analyzing platform//cooja/dev/beep.c
+Analyzing platform//cooja/dev/button-sensor.c
+Analyzing platform//cooja/dev/cooja-radio.c
+Analyzing platform//cooja/dev/eeprom.c
+Analyzing platform//cooja/dev/ip.c
+Analyzing platform//cooja/dev/leds-arch.c
+Analyzing platform//cooja/dev/moteid.c
+Analyzing platform//cooja/dev/pir-sensor.c
+Analyzing platform//cooja/dev/rs232.c
+Analyzing platform//cooja/dev/vib-sensor.c
+Analyzing platform//cooja/dev/watchdog.c
+Analyzing platform//cooja/lib/simEnvChange.c
+Analyzing platform//cooja/mtarch.c
+Analyzing platform//cooja/net/radio-uip-uaodv.c
+Analyzing platform//cooja/net/uip-driver.c
+Analyzing platform//cooja/rtimer-arch.c
+Analyzing platform//cooja/slip-arch.c
+Analyzing platform//cooja/sys/clock.c
+Analyzing platform//cooja/sys/cooja_mt.c
+Analyzing platform//cooja/sys/cooja_mtarch.c
+Analyzing platform//cooja/sys/log.c
+Analyzing platform//cooja/testapps/hello-world.c
+Analyzing platform//cooja/testapps/testbutton.c
+Analyzing platform//cooja/testapps/testcfs.c
+Analyzing platform//cooja/testapps/testctimer.c
+Analyzing platform//cooja/testapps/testetimer.c
+Analyzing platform//cooja/testapps/testsensors.c
+Analyzing platform//cooja/testapps/testserial.c
+Analyzing platform//cooja/testapps/testuaodv.c
+Analyzing platform//cooja/testapps/testuip.c
+Analyzing platform//cooja-ip64/contiki-cooja-ip64-main.c
+Analyzing platform//econotag/apps/ecc/ecc.c
+Analyzing platform//econotag/apps/flash/flash.c
+Analyzing platform//econotag/button-sensor.c
+Analyzing platform//econotag/button-sensor2.c
+Analyzing platform//econotag/main.c
+Analyzing platform//econotag/platform_prints.c
+Analyzing platform//ev-aducrf101mkxz/button-sensor.c
+Analyzing platform//ev-aducrf101mkxz/contiki-main.c
+Analyzing platform//ev-aducrf101mkxz/leds-arch.c
+Analyzing platform//eval-adf7xxxmb4z/button-sensor.c
+Analyzing platform//eval-adf7xxxmb4z/contiki-main.c
+Analyzing platform//exp5438/blink.c
+Analyzing platform//exp5438/cc2420-arch.c
+Analyzing platform//exp5438/clock.c
+Analyzing platform//exp5438/contiki-exp5438-main.c
+Analyzing platform//exp5438/duty-cycle-scroller.c
+Analyzing platform//exp5438/flash.c
+Analyzing platform//exp5438/hal_lcd.c
+Analyzing platform//exp5438/hal_lcd_fonts.c
+Analyzing platform//exp5438/lcd.c
+Analyzing platform//exp5438/leds-arch.c
+Analyzing platform//exp5438/msp430.c
+Analyzing platform//exp5438/node-id.c
+Analyzing platform//exp5438/rtimer-arch.c
+Analyzing platform//exp5438/spix.c
+Analyzing platform//exp5438/uart1-putchar.c
+Analyzing platform//exp5438/uart1x.c
+Analyzing platform//exp5438/watchdog.c
+Analyzing platform//galileo/contiki-main.c
+Analyzing platform//galileo/core/sys/clock.c
+Analyzing platform//galileo/core/sys/rtimer-arch.c
+Analyzing platform//galileo/drivers/cy8c9540a.c
+Analyzing platform//galileo/drivers/galileo-gen1-pinmux.c
+Analyzing platform//galileo/drivers/galileo-gen2-pinmux.c
+Analyzing platform//galileo/drivers/galileo-gpio.c
+Analyzing platform//galileo/drivers/gpio-pcal9535a.c
+Analyzing platform//galileo/drivers/pwm-pca9685.c
+Analyzing platform//galileo/net/eth-conf.c
+Analyzing platform//galileo/net/eth-proc.c
+Analyzing platform//galileo/newlib-syscalls.c
+Analyzing platform//jn516x/contiki-jn516x-main.c
+Analyzing platform//jn516x/dev/clock.c
+Analyzing platform//jn516x/dev/dongle/leds-arch.c
+Analyzing platform//jn516x/dev/dr1174/button-sensor.c
+Analyzing platform//jn516x/dev/dr1174/leds-arch.c
+Analyzing platform//jn516x/dev/dr1175/ht-sensor.c
+Analyzing platform//jn516x/dev/dr1175/leds-arch-1175.c
+Analyzing platform//jn516x/dev/dr1175/light-sensor.c
+Analyzing platform//jn516x/dev/dr1199/leds-arch-1199.c
+Analyzing platform//jn516x/dev/dr1199/pot-sensor.c
+Analyzing platform//jn516x/dev/exceptions.c
+Analyzing platform//jn516x/dev/jn516x-ccm-star.c
+Analyzing platform//jn516x/dev/leds-extension.c
+Analyzing platform//jn516x/dev/micromac-radio.c
+Analyzing platform//jn516x/dev/mtarch.c
+Analyzing platform//jn516x/dev/node-id.c
+Analyzing platform//jn516x/dev/rtimer-arch-slow.c
+Analyzing platform//jn516x/dev/rtimer-arch.c
+Analyzing platform//jn516x/dev/slip_uart0.c
+Analyzing platform//jn516x/dev/uart-driver.c
+Analyzing platform//jn516x/dev/uart0.c
+Analyzing platform//jn516x/dev/uart1.c
+Analyzing platform//jn516x/dev/watchdog.c
+Analyzing platform//jn516x/lib/log.c
+Analyzing platform//jn516x/lib/slip.c
+Analyzing platform//jn516x/lib/sprintf.c
+Analyzing platform//mbxxx/apps/shell-sensors.c
+Analyzing platform//mbxxx/board.c
+Analyzing platform//mbxxx/clock.c
+Analyzing platform//mbxxx/contiki-init-net.c
+Analyzing platform//mbxxx/contiki-main.c
+Analyzing platform//mbxxx/dev/acc-sensor.c
+Analyzing platform//mbxxx/dev/button-sensor.c
+Analyzing platform//mbxxx/dev/contact-sensor.c
+Analyzing platform//mbxxx/dev/eeprom.c
+Analyzing platform//mbxxx/dev/i2c.c
+Analyzing platform//mbxxx/dev/irq.c
+Analyzing platform//mbxxx/dev/mems.c
+Analyzing platform//mbxxx/dev/temperature-sensor.c
+Analyzing platform//micaz/apps/battery-monitor.c
+Analyzing platform//micaz/apps/mts310/accel-test.c
+Analyzing platform//micaz/apps/mts310/light-test.c
+Analyzing platform//micaz/apps/mts310/magnet-test.c
+Analyzing platform//micaz/apps/mts310/mic-test.c
+Analyzing platform//micaz/contiki-micaz-main.c
+Analyzing platform//micaz/dev/adc.c
+Analyzing platform//micaz/dev/cc2420-arch.c
+Analyzing platform//micaz/dev/clock.c
+Analyzing platform//micaz/dev/ds2401.c
+Analyzing platform//micaz/dev/leds-arch.c
+Analyzing platform//micaz/dev/sensors/battery-sensor.c
+Analyzing platform//micaz/dev/sensors/mts300.c
+Analyzing platform//micaz/dev/slip_uart0.c
+Analyzing platform//micaz/init-net.c
+Analyzing platform//micaz/node-id.c
+Analyzing platform//minimal-net/clock.c
+Analyzing platform//minimal-net/contiki-main.c
+Analyzing platform//minimal-net/leds-arch.c
+Analyzing platform//native/clock.c
+Analyzing platform//native/contiki-main.c
+Analyzing platform//native/ctk/ctk-curses.c
+Analyzing platform//native/dev/beep.c
+Analyzing platform//native/dev/button-sensor.c
+Analyzing platform//native/dev/dummy-sensors.c
+Analyzing platform//native/dev/irq.c
+Analyzing platform//native/dev/leds-arch.c
+Analyzing platform//native/dev/pir-sensor.c
+Analyzing platform//native/dev/vib-sensor.c
+Analyzing platform//native/dev/xmem.c
+Analyzing platform//nrf52dk/contiki-main.c
+Analyzing platform//nrf52dk/dbg-io/dbg.c
+Analyzing platform//nrf52dk/dev/button-sensor.c
+Analyzing platform//nrf52dk/dev/leds-arch.c
+Analyzing platform//nrf52dk/dev/nrf52dk-sensors.c
+Analyzing platform//nrf52dk/dev/temperature-sensor.c
+Analyzing platform//nrf52dk/rtt/rtt-printf.c
+Analyzing platform//nrf52dk/rtt/segger-rtt-printf.c
+Analyzing platform//nrf52dk/rtt/segger-rtt.c
+Analyzing platform//openmote-cc2538/board.c
+Analyzing platform//openmote-cc2538/contiki-main.c
+Analyzing platform//openmote-cc2538/dev/adxl346.c
+Analyzing platform//openmote-cc2538/dev/antenna.c
+Analyzing platform//openmote-cc2538/dev/button-sensor.c
+Analyzing platform//openmote-cc2538/dev/leds-arch.c
+Analyzing platform//openmote-cc2538/dev/max44009.c
+Analyzing platform//openmote-cc2538/dev/openmote-sensors.c
+Analyzing platform//openmote-cc2538/dev/sht21.c
+Analyzing platform//openmote-cc2538/dev/tps62730.c
+Analyzing platform//seedeye/contiki-seedeye-main.c
+Analyzing platform//seedeye/dev/battery-sensor.c
+Analyzing platform//seedeye/dev/button-sensor.c
+Analyzing platform//seedeye/dev/leds-arch.c
+Analyzing platform//seedeye/dev/mrf24j40/mrf24j40.c
+Analyzing platform//seedeye/dev/radio-sensor.c
+Analyzing platform//seedeye/init-net.c
+Analyzing platform//sky/apps/blink.c
+Analyzing platform//sky/apps/burn-nodeid.c
+Analyzing platform//sky/apps/fader.c
+Analyzing platform//sky/contiki-sky-main.c
+Analyzing platform//sky/contiki-sky-platform.c
+Analyzing platform//sky/dev/battery-sensor.c
+Analyzing platform//sky/dev/button-sensor.c
+Analyzing platform//sky/dev/i2c.c
+Analyzing platform//sky/dev/light-sensor.c
+Analyzing platform//sky/dev/radio-sensor.c
+Analyzing platform//sky/dev/sky-sensors.c
+Analyzing platform//sky/dev/temperature-sensor.c
+Analyzing platform//sky/dev/xmem.c
+Analyzing platform//sky/node-id.c
+Analyzing platform//srf06-cc26xx/common/board-spi.c
+Analyzing platform//srf06-cc26xx/common/ext-flash.c
+Analyzing platform//srf06-cc26xx/contiki-main.c
+Analyzing platform//srf06-cc26xx/launchpad/board.c
+Analyzing platform//srf06-cc26xx/launchpad/button-sensor.c
+Analyzing platform//srf06-cc26xx/launchpad/cc1350/rf-switch.c
+Analyzing platform//srf06-cc26xx/launchpad/cc1350/tx-power-driver.c
+Analyzing platform//srf06-cc26xx/launchpad/launchpad-sensors.c
+Analyzing platform//srf06-cc26xx/launchpad/leds-arch.c
+Analyzing platform//srf06-cc26xx/sensortag/bmp-280-sensor.c
+Analyzing platform//srf06-cc26xx/sensortag/board-i2c.c
+Analyzing platform//srf06-cc26xx/sensortag/board.c
+Analyzing platform//srf06-cc26xx/sensortag/button-sensor.c
+Analyzing platform//srf06-cc26xx/sensortag/buzzer.c
+Analyzing platform//srf06-cc26xx/sensortag/cc1350/leds-arch.c
+Analyzing platform//srf06-cc26xx/sensortag/cc2650/leds-arch.c
+Analyzing platform//srf06-cc26xx/sensortag/hdc-1000-sensor.c
+Analyzing platform//srf06-cc26xx/sensortag/mpu-9250-sensor.c
+Analyzing platform//srf06-cc26xx/sensortag/opt-3001-sensor.c
+Analyzing platform//srf06-cc26xx/sensortag/reed-relay.c
+Analyzing platform//srf06-cc26xx/sensortag/sensor-common.c
+Analyzing platform//srf06-cc26xx/sensortag/sensortag-sensors.c
+Analyzing platform//srf06-cc26xx/sensortag/tmp-007-sensor.c
+Analyzing platform//srf06-cc26xx/srf06/als-sensor.c
+Analyzing platform//srf06-cc26xx/srf06/board.c
+Analyzing platform//srf06-cc26xx/srf06/button-sensor.c
+Analyzing platform//srf06-cc26xx/srf06/leds-arch.c
+Analyzing platform//srf06-cc26xx/srf06/srf06-sensors.c
+Analyzing platform//stm32nucleo-spirit1/contiki-spirit1-main.c
+Analyzing platform//stm32nucleo-spirit1/dev/acceleration-sensor.c
+Analyzing platform//stm32nucleo-spirit1/dev/button-sensor.c
+Analyzing platform//stm32nucleo-spirit1/dev/gyroscope-sensor.c
+Analyzing platform//stm32nucleo-spirit1/dev/humidity-sensor.c
+Analyzing platform//stm32nucleo-spirit1/dev/leds-arch.c
+Analyzing platform//stm32nucleo-spirit1/dev/magneto-sensor.c
+Analyzing platform//stm32nucleo-spirit1/dev/pressure-sensor.c
+Analyzing platform//stm32nucleo-spirit1/dev/radio-sensor.c
+Analyzing platform//stm32nucleo-spirit1/dev/temperature-sensor.c
+Analyzing platform//stm32nucleo-spirit1/node-id.c
+Analyzing platform//stm32nucleo-spirit1/spirit1-arch.c
+Analyzing platform//stm32nucleo-spirit1/spirit1.c
+Analyzing platform//stm32nucleo-spirit1/uart-msg.c
+Analyzing platform//stm32test/contiki-main.c
+Analyzing platform//win32/cfs/cfs-win32-dir.c
+Analyzing platform//win32/clock.c
+Analyzing platform//win32/contiki-main.c
+Analyzing platform//win32/ctk/ctk-console.c
+Analyzing platform//win32/loader/dll-loader.c
+Analyzing platform//win32/loader/unload.c
+Analyzing platform//wismote/apps/burn-nodeid.c
+Analyzing platform//wismote/contiki-wismote-main.c
+Analyzing platform//wismote/contiki-wismote-platform.c
+Analyzing platform//wismote/dev/acc-sensor.c
+Analyzing platform//wismote/dev/battery-sensor.c
+Analyzing platform//wismote/dev/button-sensor.c
+Analyzing platform//wismote/dev/ext-sensor.c
+Analyzing platform//wismote/dev/i2c.c
+Analyzing platform//wismote/dev/light-sensor.c
+Analyzing platform//wismote/dev/radio-sensor.c
+Analyzing platform//wismote/dev/sht15.c
+Analyzing platform//wismote/dev/sky-sensors.c
+Analyzing platform//wismote/dev/xmem.c
+Analyzing platform//wismote/flash.c
+Analyzing platform//wismote/leds-arch.c
+Analyzing platform//wismote/node-id.c
+Analyzing platform//z1/apps/blink.c
+Analyzing platform//z1/apps/burn-nodeid.c
+Analyzing platform//z1/apps/fader.c
+Analyzing platform//z1/contiki-z1-main.c
+Analyzing platform//z1/contiki-z1-platform.c
+Analyzing platform//z1/dev/adxl345.c
+Analyzing platform//z1/dev/battery-sensor.c
+Analyzing platform//z1/dev/button-sensor.c
+Analyzing platform//z1/dev/cc2420-arch.c
+Analyzing platform//z1/dev/i2cmaster.c
+Analyzing platform//z1/dev/light-sensor.c
+Analyzing platform//z1/dev/light-ziglet.c
+Analyzing platform//z1/dev/potentiometer-sensor.c
+Analyzing platform//z1/dev/radio-sensor.c
+Analyzing platform//z1/dev/reed-sensor.c
+Analyzing platform//z1/dev/relay-phidget.c
+Analyzing platform//z1/dev/sht25.c
+Analyzing platform//z1/dev/sky-sensors.c
+Analyzing platform//z1/dev/temperature-sensor.c
+Analyzing platform//z1/dev/tlc59116.c
+Analyzing platform//z1/dev/tmp102.c
+Analyzing platform//z1/dev/xmem.c
+Analyzing platform//z1/dev/z1-phidgets.c
+Analyzing platform//z1/dev/z1-sensors.c
+Analyzing platform//z1/node-id.c
+Analyzing platform//zoul/contiki-main.c
+Analyzing platform//zoul/dev/ac-dimmer.c
+Analyzing platform//zoul/dev/adc-sensors.c
+Analyzing platform//zoul/dev/adc-zoul.c
+Analyzing platform//zoul/dev/antenna-sw.c
+Analyzing platform//zoul/dev/bme280-arch.c
+Analyzing platform//zoul/dev/bmpx8x.c
+Analyzing platform//zoul/dev/button-sensor.c
+Analyzing platform//zoul/dev/cc1200-zoul-arch.c
+Analyzing platform//zoul/dev/dht22.c
+Analyzing platform//zoul/dev/grove-gyro.c
+Analyzing platform//zoul/dev/iaq.c
+Analyzing platform//zoul/dev/led-strip.c
+Analyzing platform//zoul/dev/leds-arch.c
+Analyzing platform//zoul/dev/mmc-arch.c
+Analyzing platform//zoul/dev/motion-sensor.c
+Analyzing platform//zoul/dev/mp3-wtv020sd.c
+Analyzing platform//zoul/dev/pm10-sensor.c
+Analyzing platform//zoul/dev/relay.c
+Analyzing platform//zoul/dev/rgb-bl-lcd.c
+Analyzing platform//zoul/dev/rtcc.c
+Analyzing platform//zoul/dev/servo.c
+Analyzing platform//zoul/dev/sht25.c
+Analyzing platform//zoul/dev/tmp102.c
+Analyzing platform//zoul/dev/tsl256x.c
+Analyzing platform//zoul/dev/weather-meter.c
+Analyzing platform//zoul/dev/zonik.c
+Analyzing platform//zoul/dev/zoul-sensors.c
+Analyzing platform//zoul/firefly/board.c
+Analyzing platform//zoul/firefly-reva/board.c
+Analyzing platform//zoul/fs/fat/diskio.c
+Analyzing platform//zoul/orion/board.c
+Analyzing platform//zoul/orion/enc28j60-arch-gpio.c
+Analyzing platform//zoul/orion/enc28j60-arch-spi.c
+Analyzing platform//zoul/remote-reva/board.c
+Analyzing platform//zoul/remote-reva/power-mgmt.c
+Analyzing platform//zoul/remote-revb/board.c
+Analyzing platform//zoul/remote-revb/leds-res-arch.c
+Analyzing platform//zoul/remote-revb/power-mgmt.c
+platform//avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c:462: High: fixed size local buffer
+platform//avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:165: High: fixed size local buffer
+platform//avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:229: High: fixed size local buffer
+platform//avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:268: High: fixed size local buffer
+platform//avr-atmega128rfa1/apps/raven-webserver/httpd.c:214: High: fixed size local buffer
+platform//avr-atmega128rfa1/apps/raven-webserver/webserver-nogui.c:72: High: fixed size local buffer
+platform//avr-atmega128rfa1/apps/raven-webserver/webserver-nogui.c:77: High: fixed size local buffer
+platform//avr-atmega128rfa1/contiki-main.c:353: High: fixed size local buffer
+platform//avr-raven/apps/raven-lcd-interface/raven-lcd.c:462: High: fixed size local buffer
+platform//avr-raven/apps/raven-webserver/httpd-cgi.c:166: High: fixed size local buffer
+platform//avr-raven/apps/raven-webserver/httpd-cgi.c:230: High: fixed size local buffer
+platform//avr-raven/apps/raven-webserver/httpd-cgi.c:269: High: fixed size local buffer
+platform//avr-raven/apps/raven-webserver/httpd.c:214: High: fixed size local buffer
+platform//avr-raven/apps/raven-webserver/webserver-nogui.c:72: High: fixed size local buffer
+platform//avr-raven/apps/raven-webserver/webserver-nogui.c:77: High: fixed size local buffer
+platform//avr-raven/cfs-coffee-arch.c:82: High: fixed size local buffer
+platform//avr-raven/cfs-coffee-arch.c:560: High: fixed size local buffer
+platform//avr-raven/contiki-raven-main.c:371: High: fixed size local buffer
+platform//avr-ravenlcd/uart.c:320: High: fixed size local buffer
+platform//avr-ravenusb/cdc_task.c:294: High: fixed size local buffer
+platform//avr-ravenusb/contiki-raven-main.c:166: High: fixed size local buffer
+platform//avr-ravenusb/httpd-simple-avr.c:59: High: fixed size local buffer
+platform//avr-ravenusb/httpd-simple-avr.c:60: High: fixed size local buffer
+platform//avr-ravenusb/httpd-simple-avr.c:61: High: fixed size local buffer
+platform//avr-rss2/contiki-main.c:287: High: fixed size local buffer
+platform//avr-rss2/contiki-main.c:404: High: fixed size local buffer
+platform//c128/lib/exec.c:54: High: fixed size local buffer
+platform//c128/lib/exec.c:55: High: fixed size local buffer
+platform//c128/lib/exec.c:57: High: fixed size local buffer
+platform//c128/lib/pfs-dir.c:65: High: fixed size local buffer
+platform//c128/lib/pfs-dir.c:101: High: fixed size local buffer
+platform//c64/lib/exec.c:54: High: fixed size local buffer
+platform//c64/lib/exec.c:55: High: fixed size local buffer
+platform//c64/lib/exec.c:57: High: fixed size local buffer
+platform//c64/lib/pfs-dir.c:65: High: fixed size local buffer
+platform//c64/lib/pfs-dir.c:101: High: fixed size local buffer
+platform//cooja/sys/log.c:157: High: fixed size local buffer
+platform//cooja/testapps/testcfs.c:46: High: fixed size local buffer
+platform//exp5438/lcd.c:89: High: fixed size local buffer
+platform//jn516x/lib/sprintf.c:216: High: fixed size local buffer
+platform//mbxxx/apps/shell-sensors.c:64: High: fixed size local buffer
+platform//mbxxx/board.c:389: High: fixed size local buffer
+platform//minimal-net/contiki-main.c:85: High: fixed size local buffer
+platform//minimal-net/contiki-main.c:155: High: fixed size local buffer
+platform//nrf52dk/rtt/segger-rtt-printf.c:128: High: fixed size local buffer
+platform//nrf52dk/rtt/segger-rtt-printf.c:319: High: fixed size local buffer
+platform//nrf52dk/rtt/segger-rtt.c:308: High: fixed size local buffer
+platform//nrf52dk/rtt/segger-rtt.c:975: High: fixed size local buffer
+platform//sky/node-id.c:50: High: fixed size local buffer
+platform//sky/node-id.c:63: High: fixed size local buffer
+platform//win32/cfs/cfs-win32-dir.c:56: High: fixed size local buffer
+platform//win32/contiki-main.c:74: High: fixed size local buffer
+platform//win32/loader/dll-loader.c:82: High: fixed size local buffer
+platform//wismote/node-id.c:50: High: fixed size local buffer
+platform//wismote/node-id.c:63: High: fixed size local buffer
+platform//z1/node-id.c:52: High: fixed size local buffer
+platform//z1/node-id.c:66: High: fixed size local buffer
+Extra care should be taken to ensure that character arrays that are allocated
+on the stack are used safely.  They are prime targets for buffer overflow
+attacks.
+
+platform//avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:124: High: strcpy
+platform//avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:130: High: strcpy
+platform//avr-raven/apps/raven-webserver/httpd-cgi.c:123: High: strcpy
+platform//avr-raven/apps/raven-webserver/httpd-cgi.c:130: High: strcpy
+platform//win32/loader/dll-loader.c:91: High: strcpy
+Check to be sure that argument 2 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+platform//c128/lib/exec.c:129: High: strncat
+platform//c64/lib/exec.c:129: High: strncat
+Consider using strlcat() instead.
+
+platform//c128/lib/exec.c:129: High: strncat
+platform//c64/lib/exec.c:129: High: strncat
+Check to be sure that argument 1 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+platform//cooja/contiki-cooja-main.c:221: High: printf
+platform//cooja/sys/log.c:154: High: printf
+platform//cooja-ip64/contiki-cooja-ip64-main.c:180: High: printf
+platform//ev-aducrf101mkxz/contiki-main.c:120: High: printf
+platform//ev-aducrf101mkxz/contiki-main.c:122: High: printf
+platform//ev-aducrf101mkxz/contiki-main.c:125: High: printf
+platform//eval-adf7xxxmb4z/contiki-main.c:98: High: printf
+platform//eval-adf7xxxmb4z/contiki-main.c:165: High: printf
+platform//eval-adf7xxxmb4z/contiki-main.c:167: High: printf
+platform//eval-adf7xxxmb4z/contiki-main.c:170: High: printf
+platform//eval-adf7xxxmb4z/contiki-main.c:186: High: printf
+platform//eval-adf7xxxmb4z/contiki-main.c:204: High: printf
+platform//eval-adf7xxxmb4z/contiki-main.c:252: High: printf
+platform//eval-adf7xxxmb4z/contiki-main.c:258: High: printf
+platform//jn516x/lib/sprintf.c:213: High: printf
+platform//native/contiki-main.c:180: High: printf
+platform//native/contiki-main.c:182: High: printf
+platform//native/contiki-main.c:185: High: printf
+platform//nrf52dk/rtt/rtt-printf.c:14: High: printf
+platform//srf06-cc26xx/contiki-main.c:191: High: printf
+platform//srf06-cc26xx/contiki-main.c:194: High: printf
+platform//wismote/contiki-wismote-main.c:282: High: printf
+Check to be sure that the non-constant format string passed as argument 1 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+platform//jn516x/lib/sprintf.c:193: High: sprintf
+Check to be sure that the non-constant format string passed as argument 2 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+platform//jn516x/lib/sprintf.c:193: High: sprintf
+Check to be sure that the format string passed as argument 2 to this function
+call does not come from an untrusted source that could have added formatting
+characters that the code is not prepared to handle.  Additionally, the format
+string could contain `%s' without precision that could result in a buffer
+overflow.
+
+platform//win32/contiki-main.c:77: High: vsprintf
+Check to be sure that the non-constant format string passed as argument 2 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+platform//win32/contiki-main.c:77: High: vsprintf
+Check to be sure that the format string passed as argument 2 to this function
+call does not come from an untrusted source that could have added formatting
+characters that the code is not prepared to handle.  Additionally, the format
+string could contain `%s' without precision that could result in a buffer
+overflow.
+
+platform//win32/loader/dll-loader.c:49: High: LoadLibrary
+platform//win32/loader/dll-loader.c:84: High: LoadLibrary
+LoadLibrary will search several places for a library if
+no path is specified, allowing trojan DLL's to be inserted elsewhere even
+if the intended DLL is correctly protected from overwriting. Make sure to specify the full path.
+
+platform//cc2530dk/contiki-main.c:302: Medium: read
+platform//cooja/net/radio-uip-uaodv.c:164: Medium: read
+platform//eval-adf7xxxmb4z/contiki-main.c:220: Medium: read
+platform//jn516x/dev/micromac-radio.c:569: Medium: read
+platform//jn516x/dev/micromac-radio.c:884: Medium: read
+platform//minimal-net/contiki-main.c:383: Medium: read
+platform//native/contiki-main.c:134: Medium: read
+platform//zoul/fs/fat/diskio.c:58: Medium: read
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+platform//native/ctk/ctk-curses.c:149: Medium: signal
+When setting signal handlers, do not use the same function to handle multiple signals. There exists the possibility a race condition will result if 2 or more different signals are sent to the process at nearly the same time. Also, when writing signal handlers, it is best to do as little as possible in them. The best strategy is to use the signal handler to set a flag, that another part of the program tests and performs the appropriate action(s) when it is set.
+See also: http://razor.bindview.com/publish/papers/signals.txt
+
+Total lines analyzed: 78854
+Total time 0.075017 seconds
+1051148 lines per second

@@ -1,0 +1,163 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+Analyzing RIOT/boards/airfy-beacon/board.c
+Analyzing RIOT/boards/arduino-atmega-common/board.c
+Analyzing RIOT/boards/arduino-due/board.c
+Analyzing RIOT/boards/arduino-mkr1000/board.c
+Analyzing RIOT/boards/arduino-zero/board.c
+Analyzing RIOT/boards/avsextrem/board_init.c
+Analyzing RIOT/boards/b-l072z-lrwan1/board.c
+Analyzing RIOT/boards/calliope-mini/board.c
+Analyzing RIOT/boards/calliope-mini/mini/mini.c
+Analyzing RIOT/boards/cc2538dk/board.c
+Analyzing RIOT/boards/cc2650stk/board.c
+Analyzing RIOT/boards/chronos/board_init.c
+Analyzing RIOT/boards/chronos/drivers/battery.c
+Analyzing RIOT/boards/chronos/drivers/buzzer.c
+Analyzing RIOT/boards/chronos/drivers/display.c
+Analyzing RIOT/boards/chronos/drivers/display_chars.c
+Analyzing RIOT/boards/chronos/drivers/display_putchar.c
+Analyzing RIOT/boards/chronos/stdio.c
+Analyzing RIOT/boards/ek-lm4f120xl/board.c
+Analyzing RIOT/boards/f4vi1/board.c
+Analyzing RIOT/boards/fox/board.c
+Analyzing RIOT/boards/frdm-k22f/board.c
+Analyzing RIOT/boards/frdm-k64f/board.c
+Analyzing RIOT/boards/iotlab-common/board_init.c
+Analyzing RIOT/boards/limifrog-v1/board.c
+Analyzing RIOT/boards/maple-mini/board.c
+Analyzing RIOT/boards/mbed_lpc1768/board.c
+Analyzing RIOT/boards/mbed_lpc1768/system.c
+Analyzing RIOT/boards/microbit/board.c
+Analyzing RIOT/boards/microbit/microbit/microbit.c
+Analyzing RIOT/boards/mips-malta/malta.c
+Analyzing RIOT/boards/msb-430-common/board_init.c
+Analyzing RIOT/boards/msba2/board_init.c
+Analyzing RIOT/boards/msba2-common/board_common_init.c
+Analyzing RIOT/boards/msba2-common/tools/src/boot_23xx.c
+Analyzing RIOT/boards/msba2-common/tools/src/boot_2xxx.c
+Analyzing RIOT/boards/msba2-common/tools/src/chipinfo.c
+Analyzing RIOT/boards/msba2-common/tools/src/cksum_test.c
+Analyzing RIOT/boards/msba2-common/tools/src/control_2xxx.c
+Analyzing RIOT/boards/msba2-common/tools/src/download.c
+Analyzing RIOT/boards/msba2-common/tools/src/gui.c
+Analyzing RIOT/boards/msba2-common/tools/src/ihex.c
+Analyzing RIOT/boards/msba2-common/tools/src/lpc2k_pgm.c
+Analyzing RIOT/boards/msba2-common/tools/src/pseudoterm.c
+Analyzing RIOT/boards/msba2-common/tools/src/serial.c
+Analyzing RIOT/boards/msba2-common/tools/src/settings.c
+Analyzing RIOT/boards/msba2-common/tools/src/uuencode.c
+Analyzing RIOT/boards/msbiot/board.c
+Analyzing RIOT/boards/mulle/board.c
+Analyzing RIOT/boards/native/board_init.c
+Analyzing RIOT/boards/native/drivers/native-led.c
+Analyzing RIOT/boards/nrf51dongle/board.c
+Analyzing RIOT/boards/nrf52840dk/board.c
+Analyzing RIOT/boards/nrf52dk/board.c
+Analyzing RIOT/boards/nrf6310/board.c
+Analyzing RIOT/boards/nucleo-f030/board.c
+Analyzing RIOT/boards/nucleo-f070/board.c
+Analyzing RIOT/boards/nucleo-f072/board.c
+Analyzing RIOT/boards/nucleo-f091/board.c
+Analyzing RIOT/boards/nucleo-f103/board.c
+Analyzing RIOT/boards/nucleo-f302/board.c
+Analyzing RIOT/boards/nucleo-f303/board.c
+Analyzing RIOT/boards/nucleo-f334/board.c
+Analyzing RIOT/boards/nucleo-f401/board.c
+Analyzing RIOT/boards/nucleo-f410/board.c
+Analyzing RIOT/boards/nucleo-f411/board.c
+Analyzing RIOT/boards/nucleo-f446/board.c
+Analyzing RIOT/boards/nucleo-l053/board.c
+Analyzing RIOT/boards/nucleo-l073/board.c
+Analyzing RIOT/boards/nucleo-l152/board.c
+Analyzing RIOT/boards/nucleo-l476/board.c
+Analyzing RIOT/boards/nucleo144-f207/board.c
+Analyzing RIOT/boards/nucleo144-f303/board.c
+Analyzing RIOT/boards/nucleo144-f412/board.c
+Analyzing RIOT/boards/nucleo144-f413/board.c
+Analyzing RIOT/boards/nucleo144-f429/board.c
+Analyzing RIOT/boards/nucleo144-f446/board.c
+Analyzing RIOT/boards/nucleo144-f746/board.c
+Analyzing RIOT/boards/nucleo144-f767/board.c
+Analyzing RIOT/boards/nucleo32-f031/board.c
+Analyzing RIOT/boards/nucleo32-f042/board.c
+Analyzing RIOT/boards/nucleo32-f303/board.c
+Analyzing RIOT/boards/nucleo32-l031/board.c
+Analyzing RIOT/boards/nucleo32-l432/board.c
+Analyzing RIOT/boards/nz32-sc151/board.c
+Analyzing RIOT/boards/opencm904/board.c
+Analyzing RIOT/boards/opencm904/dist/robotis-loader.py
+Analyzing RIOT/boards/openmote-cc2538/board.c
+Analyzing RIOT/boards/pba-d-01-kw2x/board.c
+Analyzing RIOT/boards/pca10000/board.c
+Analyzing RIOT/boards/pca10005/board.c
+Analyzing RIOT/boards/pic32-clicker/clicker.c
+Analyzing RIOT/boards/pic32-clicker/pic32_config_settings.c
+Analyzing RIOT/boards/pic32-wifire/pic32_config_settings.c
+Analyzing RIOT/boards/pic32-wifire/wifire.c
+Analyzing RIOT/boards/qemu-i386/dist/term.py
+Analyzing RIOT/boards/qemu-i386/x86_board_init.c
+Analyzing RIOT/boards/remote-pa/board.c
+Analyzing RIOT/boards/remote-reva/board.c
+Analyzing RIOT/boards/remote-revb/board.c
+Analyzing RIOT/boards/samd21-xpro/board.c
+Analyzing RIOT/boards/saml21-xpro/board.c
+Analyzing RIOT/boards/samr21-xpro/board.c
+Analyzing RIOT/boards/seeeduino_arch-pro/board.c
+RIOT/boards/msba2-common/tools/src/cksum_test.c:47: High: fixed size local buffer
+RIOT/boards/msba2-common/tools/src/cksum_test.c:64: High: fixed size local buffer
+RIOT/boards/msba2-common/tools/src/download.c:149: High: fixed size local buffer
+RIOT/boards/msba2-common/tools/src/download.c:215: High: fixed size local buffer
+RIOT/boards/msba2-common/tools/src/download.c:248: High: fixed size local buffer
+RIOT/boards/msba2-common/tools/src/download.c:249: High: fixed size local buffer
+RIOT/boards/msba2-common/tools/src/gui.c:234: High: fixed size local buffer
+RIOT/boards/msba2-common/tools/src/gui.c:254: High: fixed size local buffer
+RIOT/boards/msba2-common/tools/src/ihex.c:66: High: fixed size local buffer
+RIOT/boards/msba2-common/tools/src/lpc2k_pgm.c:60: High: fixed size local buffer
+RIOT/boards/msba2-common/tools/src/pseudoterm.c:54: High: fixed size local buffer
+RIOT/boards/msba2-common/tools/src/pseudoterm.c:169: High: fixed size local buffer
+RIOT/boards/msba2-common/tools/src/serial.c:121: High: fixed size local buffer
+RIOT/boards/msba2-common/tools/src/settings.c:59: High: fixed size local buffer
+Extra care should be taken to ensure that character arrays that are allocated
+on the stack are used safely.  They are prime targets for buffer overflow
+attacks.
+
+RIOT/boards/msba2-common/tools/src/settings.c:61: High: getenv
+Environment variables are highly untrustable input. They may be of any length, and contain any data. Do not make any assumptions regarding content or length. If at all possible avoid using them, and if it is necessary, sanitize them and truncate them to a reasonable length.
+
+RIOT/boards/qemu-i386/dist/term.py:48: High: popen
+RIOT/boards/qemu-i386/dist/term.py:110: High: popen
+RIOT/boards/qemu-i386/dist/term.py:114: High: popen
+Argument 1 to this function call should be checked to ensure that it does not
+come from an untrusted source without first verifying that it contains nothing
+dangerous.
+
+RIOT/boards/chronos/stdio.c:39: Medium: getchar
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+RIOT/boards/msba2-common/tools/src/gui.c:239: Medium: read
+RIOT/boards/msba2-common/tools/src/pseudoterm.c:185: Medium: read
+RIOT/boards/msba2-common/tools/src/serial.c:260: Medium: read
+RIOT/boards/msba2-common/tools/src/serial.c:269: Medium: read
+RIOT/boards/mulle/board.c:167: Medium: read
+RIOT/boards/mulle/board.c:202: Medium: read
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+RIOT/boards/opencm904/dist/robotis-loader.py:85: Medium: stat
+A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.  This is
+the first line where a check has occured.
+The following line(s) contain uses that may match up with this check:
+87 (open)
+
+RIOT/boards/qemu-i386/dist/term.py:113: Medium: signal
+When setting signal handlers, do not use the same function to handle multiple signals. There exists the possibility a race condition will result if 2 or more different signals are sent to the process at nearly the same time. Also, when writing signal handlers, it is best to do as little as possible in them. The best strategy is to use the signal handler to set a flag, that another part of the program tests and performs the appropriate action(s) when it is set.
+See also: http://razor.bindview.com/publish/papers/signals.txt
+
+Total lines analyzed: 9737
+Total time 0.083099 seconds
+117173 lines per second

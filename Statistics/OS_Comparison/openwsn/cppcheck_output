@@ -1,0 +1,16 @@
+[openwsn-fw/bsp/boards/agilefox/eui64.c] -> [openwsn-fw/bsp/boards/agilefox/eui64.c]: (error) syntax error
+[openwsn-fw/bsp/boards/eldorado/Vectors.c] -> [openwsn-fw/bsp/boards/eldorado/Vectors.c]: (error) syntax error
+[openwsn-fw/bsp/boards/ez430-rf2500/eui64.c] -> [openwsn-fw/bsp/boards/ez430-rf2500/eui64.c]: (error) syntax error
+[openwsn-fw/bsp/boards/gina/eui64.c] -> [openwsn-fw/bsp/boards/gina/eui64.c]: (error) syntax error
+[openwsn-fw/bsp/boards/openmote-cc2538/adc_sensor.c:45]: (error) syntax error
+[openwsn-fw/bsp/boards/openmote-cc2538/board.c:175]: (error) syntax error
+[openwsn-fw/bsp/boards/openmote-cc2538/source/interrupt.c] -> [openwsn-fw/bsp/boards/openmote-cc2538/source/interrupt.c]: (error) syntax error
+[openwsn-fw/bsp/boards/silabs-ezr32wg/adc_sensor.c:36]: (error) Uninitialized variable: ui16Dummy
+[openwsn-fw/bsp/boards/silabs-ezr32wg/emdrv/config/nvm_config.c] -> [openwsn-fw/bsp/boards/silabs-ezr32wg/emdrv/config/nvm_config.c]: (error) syntax error
+[openwsn-fw/bsp/boards/silabs-ezr32wg/source/em_dbg.c:106]: (error) Uninitialized variable: port
+[openwsn-fw/bsp/boards/silabs-ezr32wg/source/em_dbg.c:106]: (error) Uninitialized variable: pin
+[openwsn-fw/bsp/boards/silabs-ezr32wg/source/em_idac.c:319]: (error) Uninitialized variable: tmp
+[openwsn-fw/bsp/chips/cc1101/radio.c:124]: (error) Uninitialized struct member: cc1101_PKTCTRL0_reg.unused_r0_1
+[openwsn-fw/bsp/chips/cc1101/radio.c:152]: (error) Uninitialized struct member: cc1101_MCSM0_reg.unused_r0
+[openwsn-fw/projects/gina/00std_eui64/00std_eui64.c] -> [openwsn-fw/projects/gina/00std_eui64/00std_eui64.c]: (error) syntax error
+(information) Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information.

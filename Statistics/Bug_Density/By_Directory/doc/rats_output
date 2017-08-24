@@ -1,0 +1,14 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+Analyzing doc//code-style.c
+Analyzing doc//example-list.c
+Analyzing doc//example-pollhandler.c
+Analyzing doc//example-program.c
+Analyzing doc//example-psock-client.c
+Analyzing doc//example-psock-server.c
+Total lines analyzed: 514
+Total time 0.006839 seconds
+75157 lines per second

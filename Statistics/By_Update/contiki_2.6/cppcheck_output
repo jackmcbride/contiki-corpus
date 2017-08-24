@@ -1,0 +1,60 @@
+[contiki-2.6/README:5]: (error) syntax error
+[contiki-2.6/apps/antelope/lvm.c:702]: (error) Array 'variables[7]' accessed at index 7, which is out of bounds.
+[contiki-2.6/apps/ftp/ftpc.c:287]: (error) sprintf format string requires 6 parameters but only 3 are given.
+[contiki-2.6/apps/shell/shell-vars.c:109]: (error) Buffer is accessed out of bounds: numbuf
+[contiki-2.6/apps/webserver-nano/httpd-cgi.c:1073]: (error) Array 'httpd_query[10]' accessed at index 10, which is out of bounds.
+[contiki-2.6/apps/webserver-nano/httpd-cgi.c:1369]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_REDBEE_ECONOTAG'.
+[contiki-2.6/apps/webserver-nano/httpd-cgi.c:1369]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_REDBEE_ECONOTAG;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI'.
+[contiki-2.6/apps/webserver-nano/httpd-cgi.c:1369]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_REDBEE_ECONOTAG;WEBSERVER_CONF_AJAX;WEBSERVER_CONF_CGI;WEBSERVER_CONF_PRINTADDR'.
+[contiki-2.6/apps/webserver-nano/httpd-cgi.c:1369]: (error) Invalid number of character '{' when these macros are defined: 'CONTIKI_TARGET_REDBEE_ECONOTAG;WEBSERVER_CONF_CGI;WEBSERVER_CONF_SENSORS'.
+[contiki-2.6/core/net/mac/cxmac.c:127]: (error) failed to evaluate #if condition
+[contiki-2.6/core/net/mac/lpp.c:108]: (error) failed to evaluate #if condition
+[contiki-2.6/core/net/mac/xmac.c:127]: (error) failed to evaluate #if condition
+[contiki-2.6/cpu/arm/at91sam7s/startup-SAM7S-arm.c:129]: (error) syntax error
+[contiki-2.6/cpu/arm/at91sam7s/usb-arch.c:197]: (error) syntax error
+[contiki-2.6/cpu/arm/stm32f103/usb-arch.c:343]: (error) syntax error
+[contiki-2.6/cpu/mc1322x/tests/printf.c:91]: (error) Null pointer dereference: np
+[contiki-2.6/cpu/mc1322x/tests/printf.c:88]: (error) Signed integer overflow for expression '(1<<(bs-1))+1'.
+[contiki-2.6/cpu/msp430/f1xxx/clock.c:148]: (error) failed to evaluate #if condition
+[contiki-2.6/cpu/msp430/f5xxx/clock.c:145]: (error) failed to evaluate #if condition
+[contiki-2.6/cpu/stm32w108/hal/micro/cortexm3/nvm.h:250]: (error) failed to evaluate #if condition
+[contiki-2.6/cpu/stm32w108/e_stdio/src/small_dtoa.c:1169]: (error) Uninitialized variable: k
+[contiki-2.6/cpu/stm32w108/e_stdio/src/small_dtoa.c:1171]: (error) Uninitialized variable: s
+[contiki-2.6/cpu/stm32w108/e_stdio/src/small_dtoa.c:1172]: (error) Uninitialized variable: s0
+[contiki-2.6/cpu/stm32w108/e_stdio/src/small_mprec.c:1356]: (error) Uninitialized variable: p5
+[contiki-2.6/cpu/stm32w108/e_stdio/src/small_vfsscanf.c:866]: (error) Uninitialized variable: mbslen
+[contiki-2.6/cpu/stm32w108/hal/micro/cortexm3/board.c:268]: (error) Array 'boardList[7]' accessed at index 13, which is out of bounds.
+[contiki-2.6/cpu/stm32w108/hal/micro/cortexm3/stm32w108/low_level_init.c] -> [contiki-2.6/cpu/stm32w108/hal/micro/cortexm3/stm32w108/low_level_init.c]: (error) syntax error
+[contiki-2.6/cpu/z80/loader/mef.c:101]: (error) Expression '*offset++=(char)((reloc.data+(uint16_t)offset)&255)' depends on order of evaluation of side effects
+[contiki-2.6/cpu/z80/uip_arch.c] -> [contiki-2.6/cpu/z80/uip_arch.c]: (error) syntax error
+[contiki-2.6/examples/er-rest-example/er-plugtest-server.c:468]: (error) Buffer is accessed out of bounds: obs_content
+[contiki-2.6/examples/sky-ip/sky-telnet-server.c:64]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.6/examples/sky-ip/telnet-webserver.c:64]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.6/platform/avr-raven/contiki-conf.h:357]: (error) No header in #include
+[contiki-2.6/platform/avr-ravenusb/contiki-raven-main.c:610]: (error) Uninitialized variable: lastprint
+[contiki-2.6/platform/cooja/testapps/testuaodv.c:76]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.6/platform/cooja/testapps/testuaodv.c:79]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.6/platform/cooja/testapps/testuaodv.c:88]: (error) printf format string requires 5 parameters but only 2 are given.
+[contiki-2.6/platform/esb/contiki-conf.h:121]: (error) No header in #include
+[contiki-2.6/platform/exp5438/clock.c:146]: (error) failed to evaluate #if condition
+[contiki-2.6/platform/exp5438/contiki-conf.h:8]: (error) No header in #include
+[contiki-2.6/platform/exp5438/contiki-conf.h:213]: (error) No header in #include
+[contiki-2.6/platform/exp5438/flash.c:110]: (error) Uninitialized variable: r
+[contiki-2.6/platform/exp5438/flash.c:135]: (error) Uninitialized variable: r
+[contiki-2.6/platform/iris/contiki-conf.h:195]: (error) No header in #include
+[contiki-2.6/platform/minimal-net/contiki-main.c:238]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.6/platform/minimal-net/contiki-main.c:246]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.6/platform/minimal-net/contiki-main.c:253]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.6/platform/sky/contiki-conf.h:8]: (error) No header in #include
+[contiki-2.6/platform/sky/contiki-conf.h:213]: (error) No header in #include
+[contiki-2.6/platform/stepper-robot/contiki-main.c:145]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.6/platform/stepper-robot/robot-main.c:157]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.6/platform/wismote/dev/xmem.c:102]: (error) Uninitialized variable: u
+[contiki-2.6/platform/wismote/dev/xmem.c:180]: (error) Uninitialized variable: u
+[contiki-2.6/platform/wismote/flash.c:82]: (error) Uninitialized variable: r
+[contiki-2.6/platform/wismote/flash.c:95]: (error) Uninitialized variable: r
+[contiki-2.6/platform/wismote/contiki-conf.h:208]: (error) No header in #include
+[contiki-2.6/platform/z1/contiki-conf.h:192]: (error) No header in #include
+[contiki-2.6/tools/wpcapslip/wpcap.c:524]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.6/tools/wpcapslip/wpcap.c:555]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.6/tools/wpcapslip/wpcap.c:559]: (error) snprintf format string requires 12 parameters but only 3 are given.

@@ -1,0 +1,1522 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+Analyzing contiki/apps/about/about-dsc.c
+Analyzing contiki/apps/about/about.c
+Analyzing contiki/apps/antelope/antelope.c
+Analyzing contiki/apps/antelope/aql-adt.c
+Analyzing contiki/apps/antelope/aql-exec.c
+Analyzing contiki/apps/antelope/aql-lexer.c
+Analyzing contiki/apps/antelope/aql-parser.c
+Analyzing contiki/apps/antelope/index-inline.c
+Analyzing contiki/apps/antelope/index-maxheap.c
+Analyzing contiki/apps/antelope/index-memhash.c
+Analyzing contiki/apps/antelope/index.c
+Analyzing contiki/apps/antelope/lvm.c
+Analyzing contiki/apps/antelope/relation.c
+Analyzing contiki/apps/antelope/result.c
+Analyzing contiki/apps/antelope/storage-cfs.c
+Analyzing contiki/apps/at-master/at-master.c
+Analyzing contiki/apps/calc/calc-dsc.c
+Analyzing contiki/apps/calc/calc.c
+Analyzing contiki/apps/cmdd/cmdd.c
+Analyzing contiki/apps/codeprop/codeprop-tmp.c
+Analyzing contiki/apps/codeprop/codeprop.c
+Analyzing contiki/apps/codeprop/tcp_loader.c
+Analyzing contiki/apps/codeprop/tcp_loader2.c
+Analyzing contiki/apps/collect-view/collect-view-sky.c
+Analyzing contiki/apps/collect-view/collect-view-template.c
+Analyzing contiki/apps/collect-view/collect-view-z1.c
+Analyzing contiki/apps/collect-view/collect-view.c
+Analyzing contiki/apps/dhcp/dhcp-dsc.c
+Analyzing contiki/apps/dhcp/dhcp.c
+Analyzing contiki/apps/directory/directory-dsc.c
+Analyzing contiki/apps/directory/directory.c
+Analyzing contiki/apps/email/email-dsc.c
+Analyzing contiki/apps/email/email.c
+Analyzing contiki/apps/email/smtp-socket.c
+Analyzing contiki/apps/email/smtp-strings.c
+Analyzing contiki/apps/er-coap/er-coap-block1.c
+Analyzing contiki/apps/er-coap/er-coap-engine.c
+Analyzing contiki/apps/er-coap/er-coap-observe-client.c
+Analyzing contiki/apps/er-coap/er-coap-observe.c
+Analyzing contiki/apps/er-coap/er-coap-res-well-known-core.c
+Analyzing contiki/apps/er-coap/er-coap-separate.c
+Analyzing contiki/apps/er-coap/er-coap-transactions.c
+Analyzing contiki/apps/er-coap/er-coap.c
+Analyzing contiki/apps/ftp/ftp-dsc.c
+Analyzing contiki/apps/ftp/ftp.c
+Analyzing contiki/apps/ftp/ftpc.c
+Analyzing contiki/apps/http-post-auth/http-post-auth.c
+Analyzing contiki/apps/httpd-ws/httpd-ws.c
+Analyzing contiki/apps/ipso-objects/ipso-button.c
+Analyzing contiki/apps/ipso-objects/ipso-leds-control.c
+Analyzing contiki/apps/ipso-objects/ipso-light-control.c
+Analyzing contiki/apps/ipso-objects/ipso-objects.c
+Analyzing contiki/apps/ipso-objects/ipso-temperature.c
+Analyzing contiki/apps/irc/irc-dsc.c
+Analyzing contiki/apps/irc/irc.c
+Analyzing contiki/apps/irc/ircc-strings.c
+Analyzing contiki/apps/irc/ircc.c
+Analyzing contiki/apps/json/jsonparse.c
+Analyzing contiki/apps/json/jsontree.c
+Analyzing contiki/apps/mqtt/mqtt.c
+Analyzing contiki/apps/netconf/netconf-dsc.c
+Analyzing contiki/apps/netconf/netconf.c
+Analyzing contiki/apps/oma-lwm2m/lwm2m-device.c
+Analyzing contiki/apps/oma-lwm2m/lwm2m-engine.c
+Analyzing contiki/apps/oma-lwm2m/lwm2m-json.c
+Analyzing contiki/apps/oma-lwm2m/lwm2m-object.c
+Analyzing contiki/apps/oma-lwm2m/lwm2m-plain-text.c
+Analyzing contiki/apps/oma-lwm2m/lwm2m-security.c
+Analyzing contiki/apps/oma-lwm2m/lwm2m-server.c
+Analyzing contiki/apps/oma-lwm2m/oma-tlv-reader.c
+Analyzing contiki/apps/oma-lwm2m/oma-tlv-writer.c
+Analyzing contiki/apps/oma-lwm2m/oma-tlv.c
+Analyzing contiki/apps/orchestra/orchestra-rule-default-common.c
+Analyzing contiki/apps/orchestra/orchestra-rule-eb-per-time-source.c
+Analyzing contiki/apps/orchestra/orchestra-rule-unicast-per-neighbor-rpl-ns.c
+Analyzing contiki/apps/orchestra/orchestra-rule-unicast-per-neighbor-rpl-storing.c
+Analyzing contiki/apps/orchestra/orchestra.c
+Analyzing contiki/apps/ping6/ping6.c
+Analyzing contiki/apps/powertrace/powertrace.c
+Analyzing contiki/apps/process-list/process-list-dsc.c
+Analyzing contiki/apps/process-list/process-list.c
+Analyzing contiki/apps/program-handler/program-handler.c
+Analyzing contiki/apps/rest-engine/rest-engine.c
+Analyzing contiki/apps/serial-shell/serial-shell.c
+Analyzing contiki/apps/servreg-hack/servreg-hack.c
+Analyzing contiki/apps/shell/gui-shell.c
+Analyzing contiki/apps/shell/shell-base64.c
+Analyzing contiki/apps/shell/shell-blink.c
+Analyzing contiki/apps/shell/shell-coffee.c
+Analyzing contiki/apps/shell/shell-collect-view.c
+Analyzing contiki/apps/shell/shell-crc.c
+Analyzing contiki/apps/shell/shell-download.c
+Analyzing contiki/apps/shell/shell-dsc.c
+Analyzing contiki/apps/shell/shell-exec.c
+Analyzing contiki/apps/shell/shell-file.c
+Analyzing contiki/apps/shell/shell-httpd.c
+Analyzing contiki/apps/shell/shell-irc.c
+Analyzing contiki/apps/shell/shell-memdebug.c
+Analyzing contiki/apps/shell/shell-netperf.c
+Analyzing contiki/apps/shell/shell-netstat.c
+Analyzing contiki/apps/shell/shell-ping.c
+Analyzing contiki/apps/shell/shell-power.c
+Analyzing contiki/apps/shell/shell-powertrace.c
+Analyzing contiki/apps/shell/shell-profile.c
+Analyzing contiki/apps/shell/shell-ps.c
+Analyzing contiki/apps/shell/shell-reboot.c
+Analyzing contiki/apps/shell/shell-rime-debug-runicast.c
+Analyzing contiki/apps/shell/shell-rime-debug.c
+Analyzing contiki/apps/shell/shell-rime-neighbors.c
+Analyzing contiki/apps/shell/shell-rime-netcmd.c
+Analyzing contiki/apps/shell/shell-rime-ping.c
+Analyzing contiki/apps/shell/shell-rime-sendcmd.c
+Analyzing contiki/apps/shell/shell-rime-sniff.c
+Analyzing contiki/apps/shell/shell-rime-unicast.c
+Analyzing contiki/apps/shell/shell-rime.c
+Analyzing contiki/apps/shell/shell-rsh.c
+Analyzing contiki/apps/shell/shell-run.c
+Analyzing contiki/apps/shell/shell-sendtest.c
+Analyzing contiki/apps/shell/shell-sky.c
+Analyzing contiki/apps/shell/shell-tcpsend.c
+Analyzing contiki/apps/shell/shell-text.c
+Analyzing contiki/apps/shell/shell-time.c
+Analyzing contiki/apps/shell/shell-udpsend.c
+Analyzing contiki/apps/shell/shell-vars.c
+Analyzing contiki/apps/shell/shell-wget.c
+Analyzing contiki/apps/shell/shell.c
+Analyzing contiki/apps/slip-cmd/cmd.c
+Analyzing contiki/apps/slip-cmd/packetutils.c
+Analyzing contiki/apps/telnet/simpletelnet.c
+Analyzing contiki/apps/telnet/telnet-dsc.c
+Analyzing contiki/apps/telnet/telnet.c
+Analyzing contiki/apps/telnetd/telnetd-dsc.c
+Analyzing contiki/apps/telnetd/telnetd-gui.c
+Analyzing contiki/apps/telnetd/telnetd.c
+Analyzing contiki/apps/unit-test/example-test.c
+Analyzing contiki/apps/unit-test/unit-test.c
+Analyzing contiki/apps/webbrowser/html-strings.c
+Analyzing contiki/apps/webbrowser/htmlparser.c
+Analyzing contiki/apps/webbrowser/http-strings.c
+Analyzing contiki/apps/webbrowser/http-user-agent-string.c
+Analyzing contiki/apps/webbrowser/webclient.c
+Analyzing contiki/apps/webbrowser/www-dsc.c
+Analyzing contiki/apps/webbrowser/www.c
+Analyzing contiki/apps/webserver/http-strings.c
+Analyzing contiki/apps/webserver/httpd-cfs.c
+Analyzing contiki/apps/webserver/httpd-cgi.c
+Analyzing contiki/apps/webserver/httpd-fs.c
+Analyzing contiki/apps/webserver/httpd-fsdata.c
+Analyzing contiki/apps/webserver/httpd.c
+Analyzing contiki/apps/webserver/urlconv.c
+Analyzing contiki/apps/webserver/webserver-dsc.c
+Analyzing contiki/apps/webserver/webserver-nogui.c
+Analyzing contiki/apps/webserver/webserver.c
+Analyzing contiki/apps/webserver-nano/httpd-cfs.c
+Analyzing contiki/apps/webserver-nano/httpd-cgi.c
+Analyzing contiki/apps/webserver-nano/httpd-fs.c
+Analyzing contiki/apps/webserver-nano/httpd-fsdata.c
+Analyzing contiki/apps/webserver-nano/httpd.c
+Analyzing contiki/apps/webserver-nano/urlconv.c
+Analyzing contiki/apps/webserver-nano/webserver-dsc.c
+Analyzing contiki/apps/webserver-nano/webserver-nogui.c
+Analyzing contiki/apps/webserver-nano/webserver.c
+Analyzing contiki/core/cfs/cfs-coffee.c
+Analyzing contiki/core/cfs/cfs-eeprom.c
+Analyzing contiki/core/cfs/cfs-posix-dir.c
+Analyzing contiki/core/cfs/cfs-posix.c
+Analyzing contiki/core/cfs/cfs-ram.c
+Analyzing contiki/core/cfs/cfs-xmem.c
+Analyzing contiki/core/ctk/ctk-conio.c
+Analyzing contiki/core/ctk/ctk-filedialog.c
+Analyzing contiki/core/ctk/ctk-textentry-checkbox.c
+Analyzing contiki/core/ctk/ctk-textentry-cmdline.c
+Analyzing contiki/core/ctk/ctk-textentry-multiline.c
+Analyzing contiki/core/ctk/ctk.c
+Analyzing contiki/core/ctk/libconio/libconio.c
+Analyzing contiki/core/dev/leds.c
+Analyzing contiki/core/dev/nullradio.c
+Analyzing contiki/core/dev/serial-line.c
+Analyzing contiki/core/dev/slip.c
+Analyzing contiki/core/lib/aes-128.c
+Analyzing contiki/core/lib/assert.c
+Analyzing contiki/core/lib/ccm-star.c
+Analyzing contiki/core/lib/crc16.c
+Analyzing contiki/core/lib/gcr.c
+Analyzing contiki/core/lib/ifft.c
+Analyzing contiki/core/lib/list.c
+Analyzing contiki/core/lib/me.c
+Analyzing contiki/core/lib/me_tabs.c
+Analyzing contiki/core/lib/memb.c
+Analyzing contiki/core/lib/mmem.c
+Analyzing contiki/core/lib/petsciiconv.c
+Analyzing contiki/core/lib/print-stats.c
+Analyzing contiki/core/lib/random.c
+Analyzing contiki/core/lib/ringbuf.c
+Analyzing contiki/core/lib/ringbufindex.c
+Analyzing contiki/core/lib/sensors.c
+Analyzing contiki/core/lib/settings.c
+Analyzing contiki/core/lib/strncasecmp/strncasecmp.c
+Analyzing contiki/core/lib/trickle-timer.c
+Analyzing contiki/core/loader/cle.c
+Analyzing contiki/core/loader/cle_avr.c
+Analyzing contiki/core/loader/cle_msp430.c
+Analyzing contiki/core/loader/cmod.c
+Analyzing contiki/core/loader/dlloader.c
+Analyzing contiki/core/loader/elfloader-avr.c
+Analyzing contiki/core/loader/elfloader-msp430.c
+Analyzing contiki/core/loader/elfloader-msp430x.c
+Analyzing contiki/core/loader/elfloader-stub.c
+Analyzing contiki/core/loader/elfloader-x86.c
+Analyzing contiki/core/loader/elfloader.c
+Analyzing contiki/core/loader/elfloader_compat.c
+Analyzing contiki/core/loader/sym.c
+Analyzing contiki/core/loader/symtab-avr.c
+Analyzing contiki/core/loader/symtab.c
+Analyzing contiki/core/net/http-socket/http-socket.c
+Analyzing contiki/core/net/ip/dhcpc.c
+Analyzing contiki/core/net/ip/ip64-addr.c
+Analyzing contiki/core/net/ip/psock.c
+Analyzing contiki/core/net/ip/resolv.c
+Analyzing contiki/core/net/ip/simple-udp.c
+Analyzing contiki/core/net/ip/slipdev.c
+Analyzing contiki/core/net/ip/tcp-socket.c
+Analyzing contiki/core/net/ip/tcpip.c
+Analyzing contiki/core/net/ip/udp-socket.c
+Analyzing contiki/core/net/ip/uip-debug.c
+Analyzing contiki/core/net/ip/uip-nameserver.c
+Analyzing contiki/core/net/ip/uip-packetqueue.c
+Analyzing contiki/core/net/ip/uip-split.c
+Analyzing contiki/core/net/ip/uip-udp-packet.c
+Analyzing contiki/core/net/ip/uiplib.c
+Analyzing contiki/core/net/ip64/ip64-addrmap.c
+Analyzing contiki/core/net/ip64/ip64-arp.c
+Analyzing contiki/core/net/ip64/ip64-dhcpc.c
+Analyzing contiki/core/net/ip64/ip64-dns64.c
+Analyzing contiki/core/net/ip64/ip64-eth-interface.c
+Analyzing contiki/core/net/ip64/ip64-eth.c
+Analyzing contiki/core/net/ip64/ip64-ipv4-dhcp.c
+Analyzing contiki/core/net/ip64/ip64-null-driver.c
+Analyzing contiki/core/net/ip64/ip64-slip-interface.c
+Analyzing contiki/core/net/ip64/ip64-special-ports.c
+Analyzing contiki/core/net/ip64/ip64.c
+Analyzing contiki/core/net/ipv4/uaodv-rt.c
+Analyzing contiki/core/net/ipv4/uaodv.c
+Analyzing contiki/core/net/ipv4/uip-fw-drv.c
+Analyzing contiki/core/net/ipv4/uip-fw.c
+Analyzing contiki/core/net/ipv4/uip-neighbor.c
+Analyzing contiki/core/net/ipv4/uip-over-mesh.c
+Analyzing contiki/core/net/ipv4/uip.c
+Analyzing contiki/core/net/ipv4/uip_arp.c
+Analyzing contiki/core/net/ipv6/multicast/esmrf.c
+Analyzing contiki/core/net/ipv6/multicast/roll-tm.c
+Analyzing contiki/core/net/ipv6/multicast/smrf.c
+Analyzing contiki/core/net/ipv6/multicast/uip-mcast6-route.c
+Analyzing contiki/core/net/ipv6/multicast/uip-mcast6-stats.c
+Analyzing contiki/core/net/ipv6/sicslowpan.c
+Analyzing contiki/core/net/ipv6/uip-ds6-nbr.c
+Analyzing contiki/core/net/ipv6/uip-ds6-route.c
+Analyzing contiki/core/net/ipv6/uip-ds6.c
+Analyzing contiki/core/net/ipv6/uip-icmp6.c
+Analyzing contiki/core/net/ipv6/uip-nd6.c
+Analyzing contiki/core/net/ipv6/uip6.c
+Analyzing contiki/core/net/ipv6/websocket-http-client.c
+Analyzing contiki/core/net/ipv6/websocket.c
+Analyzing contiki/core/net/link-stats.c
+Analyzing contiki/core/net/linkaddr.c
+Analyzing contiki/core/net/llsec/anti-replay.c
+Analyzing contiki/core/net/llsec/ccm-star-packetbuf.c
+Analyzing contiki/core/net/llsec/noncoresec/noncoresec.c
+Analyzing contiki/core/net/llsec/nullsec.c
+Analyzing contiki/core/net/mac/contikimac/contikimac-framer.c
+Analyzing contiki/core/net/mac/contikimac/contikimac.c
+Analyzing contiki/core/net/mac/csma.c
+Analyzing contiki/core/net/mac/cxmac/cxmac.c
+Analyzing contiki/core/net/mac/frame802154.c
+Analyzing contiki/core/net/mac/frame802154e-ie.c
+Analyzing contiki/core/net/mac/framer-802154.c
+Analyzing contiki/core/net/mac/framer-nullmac.c
+Analyzing contiki/core/net/mac/mac-sequence.c
+Analyzing contiki/core/net/mac/mac.c
+Analyzing contiki/core/net/mac/nordc.c
+Analyzing contiki/core/net/mac/nullmac.c
+Analyzing contiki/core/net/mac/nullrdc-noframer.c
+Analyzing contiki/core/net/mac/nullrdc.c
+Analyzing contiki/core/net/mac/phase.c
+Analyzing contiki/core/net/mac/sicslowmac/sicslowmac.c
+Analyzing contiki/core/net/mac/tsch/tsch-adaptive-timesync.c
+Analyzing contiki/core/net/mac/tsch/tsch-log.c
+Analyzing contiki/core/net/mac/tsch/tsch-packet.c
+Analyzing contiki/core/net/mac/tsch/tsch-queue.c
+Analyzing contiki/core/net/mac/tsch/tsch-rpl.c
+Analyzing contiki/core/net/mac/tsch/tsch-schedule.c
+Analyzing contiki/core/net/mac/tsch/tsch-security.c
+Analyzing contiki/core/net/mac/tsch/tsch-slot-operation.c
+Analyzing contiki/core/net/mac/tsch/tsch.c
+Analyzing contiki/core/net/nbr-table.c
+Analyzing contiki/core/net/net-debug.c
+Analyzing contiki/core/net/netstack.c
+Analyzing contiki/core/net/packetbuf.c
+Analyzing contiki/core/net/queuebuf.c
+Analyzing contiki/core/net/rime/abc.c
+Analyzing contiki/core/net/rime/announcement.c
+Analyzing contiki/core/net/rime/broadcast-announcement.c
+Analyzing contiki/core/net/rime/broadcast.c
+Analyzing contiki/core/net/rime/chameleon-bitopt.c
+Analyzing contiki/core/net/rime/chameleon-raw.c
+Analyzing contiki/core/net/rime/chameleon.c
+Analyzing contiki/core/net/rime/channel.c
+Analyzing contiki/core/net/rime/collect-link-estimate.c
+Analyzing contiki/core/net/rime/collect-neighbor.c
+Analyzing contiki/core/net/rime/collect.c
+Analyzing contiki/core/net/rime/ipolite.c
+Analyzing contiki/core/net/rime/mesh.c
+Analyzing contiki/core/net/rime/multihop.c
+Analyzing contiki/core/net/rime/neighbor-discovery.c
+Analyzing contiki/core/net/rime/netflood.c
+Analyzing contiki/core/net/rime/packetqueue.c
+Analyzing contiki/core/net/rime/polite-announcement.c
+Analyzing contiki/core/net/rime/polite.c
+Analyzing contiki/core/net/rime/rime.c
+Analyzing contiki/core/net/rime/rimestats.c
+Analyzing contiki/core/net/rime/rmh.c
+Analyzing contiki/core/net/rime/route-discovery.c
+Analyzing contiki/core/net/rime/route.c
+Analyzing contiki/core/net/rime/rucb.c
+Analyzing contiki/core/net/rime/rudolph1.c
+Analyzing contiki/core/net/rime/rudolph2.c
+Analyzing contiki/core/net/rime/runicast.c
+Analyzing contiki/core/net/rime/stbroadcast.c
+Analyzing contiki/core/net/rime/stunicast.c
+Analyzing contiki/core/net/rime/timesynch.c
+Analyzing contiki/core/net/rime/trickle.c
+Analyzing contiki/core/net/rime/unicast.c
+Analyzing contiki/core/net/rpl/rpl-dag-root.c
+Analyzing contiki/core/net/rpl/rpl-dag.c
+Analyzing contiki/core/net/rpl/rpl-ext-header.c
+Analyzing contiki/core/net/rpl/rpl-icmp6.c
+Analyzing contiki/core/net/rpl/rpl-mrhof.c
+Analyzing contiki/core/net/rpl/rpl-nbr-policy.c
+Analyzing contiki/core/net/rpl/rpl-ns.c
+Analyzing contiki/core/net/rpl/rpl-of0.c
+Analyzing contiki/core/net/rpl/rpl-timers.c
+Analyzing contiki/core/net/rpl/rpl.c
+Analyzing contiki/core/sys/arg.c
+Analyzing contiki/core/sys/autostart.c
+Analyzing contiki/core/sys/compower.c
+Analyzing contiki/core/sys/ctimer.c
+Analyzing contiki/core/sys/energest.c
+Analyzing contiki/core/sys/etimer.c
+Analyzing contiki/core/sys/mt.c
+Analyzing contiki/core/sys/process.c
+Analyzing contiki/core/sys/procinit.c
+Analyzing contiki/core/sys/rtimer.c
+Analyzing contiki/core/sys/stimer.c
+Analyzing contiki/core/sys/timer.c
+Analyzing contiki/cpu/6502/ctk/ctk-mouse.c
+Analyzing contiki/cpu/6502/ethconfig/ethconfig.c
+Analyzing contiki/cpu/6502/ipconfig/ipconfig.c
+Analyzing contiki/cpu/6502/lib/config.c
+Analyzing contiki/cpu/6502/lib/error.c
+Analyzing contiki/cpu/6502/lib/log.c
+Analyzing contiki/cpu/6502/lib/unload.c
+Analyzing contiki/cpu/6502/net/ethernet-drv.c
+Analyzing contiki/cpu/6502/net/ethernet.c
+Analyzing contiki/cpu/6502/net/slip_arch.c
+Analyzing contiki/cpu/6502/net/uip_arch.c
+Analyzing contiki/cpu/6502/serconfig/serconfig.c
+Analyzing contiki/cpu/6502/sys/clock.c
+Analyzing contiki/cpu/6502/sys/mtarch.c
+Analyzing contiki/cpu/arm/aducrf101/clock.c
+Analyzing contiki/cpu/arm/aducrf101/Common/IAR/Retarget.c
+Analyzing contiki/cpu/arm/aducrf101/Common/radioeng.c
+Analyzing contiki/cpu/arm/aducrf101/Common/RealView/Retarget.c
+Analyzing contiki/cpu/arm/aducrf101/Common/system_ADuCRF101.c
+Analyzing contiki/cpu/arm/aducrf101/dev/radio.c
+Analyzing contiki/cpu/arm/aducrf101/dev/uart.c
+Analyzing contiki/cpu/arm/aducrf101/dev/watchdog.c
+Analyzing contiki/cpu/arm/aducrf101/rtimer-arch.c
+Analyzing contiki/cpu/arm/aducrf101/slip-arch.c
+Analyzing contiki/cpu/arm/at91sam7s/cfs-sdcard-arch.c
+Analyzing contiki/cpu/arm/at91sam7s/clock.c
+Analyzing contiki/cpu/arm/at91sam7s/debug-uart.c
+Analyzing contiki/cpu/arm/at91sam7s/efs-sdcard-arch.c
+Analyzing contiki/cpu/arm/at91sam7s/elfloader-arm.c
+Analyzing contiki/cpu/arm/at91sam7s/interrupt-utils.c
+Analyzing contiki/cpu/arm/at91sam7s/loader/codeprop-otf.c
+Analyzing contiki/cpu/arm/at91sam7s/loader/elfloader-otf.c
+Analyzing contiki/cpu/arm/at91sam7s/loader/empty-symbols.c
+Analyzing contiki/cpu/arm/at91sam7s/loader/ram-segments.c
+Analyzing contiki/cpu/arm/at91sam7s/newlib-syscalls.c
+Analyzing contiki/cpu/arm/at91sam7s/rtimer-arch-interrupt.c
+Analyzing contiki/cpu/arm/at91sam7s/rtimer-arch.c
+Analyzing contiki/cpu/arm/at91sam7s/sdcard-arch.c
+Analyzing contiki/cpu/arm/at91sam7s/startup-SAM7S-arm.c
+Analyzing contiki/cpu/arm/at91sam7s/startup-SAM7S.c
+Analyzing contiki/cpu/arm/at91sam7s/sys-interrupt.c
+Analyzing contiki/cpu/arm/at91sam7s/uip-log.c
+Analyzing contiki/cpu/arm/at91sam7s/usb-arch.c
+Analyzing contiki/cpu/arm/at91sam7s/usb-interrupt.c
+Analyzing contiki/cpu/arm/common/dbg-io/dbg-printf.c
+Analyzing contiki/cpu/arm/common/dbg-io/dbg-putchar.c
+Analyzing contiki/cpu/arm/common/dbg-io/dbg-puts.c
+Analyzing contiki/cpu/arm/common/dbg-io/dbg-snprintf.c
+Analyzing contiki/cpu/arm/common/dbg-io/dbg-sprintf.c
+Analyzing contiki/cpu/arm/common/dbg-io/strformat.c
+Analyzing contiki/cpu/arm/common/SD-card/cfs-sdcard.c
+Analyzing contiki/cpu/arm/common/sys/mtarch.c
+Analyzing contiki/cpu/arm/common/usb/cdc-acm/cdc-acm-descriptors.c
+Analyzing contiki/cpu/arm/common/usb/cdc-acm/cdc-acm.c
+Analyzing contiki/cpu/arm/common/usb/cdc-eth/cdc-eth-descriptors.c
+Analyzing contiki/cpu/arm/common/usb/cdc-eth/cdc-eth-string-descriptors.c
+Analyzing contiki/cpu/arm/common/usb/cdc-eth/cdc-eth.c
+Analyzing contiki/cpu/arm/common/usb/cdc-eth/dhcps.c
+Analyzing contiki/cpu/arm/common/usb/msc/msc-descriptors.c
+Analyzing contiki/cpu/arm/common/usb/msc/usb-msc-bulk.c
+Analyzing contiki/cpu/arm/common/usb/msc/usb-rbc.c
+Analyzing contiki/cpu/arm/common/usb/usb-core.c
+Analyzing contiki/cpu/arm/stm32f103/clock.c
+Analyzing contiki/cpu/arm/stm32f103/debug-uart.c
+Analyzing contiki/cpu/arm/stm32f103/sdcard-arch.c
+Analyzing contiki/cpu/arm/stm32f103/startup-STM32F10x.c
+Analyzing contiki/cpu/arm/stm32f103/usb-arch.c
+Analyzing contiki/cpu/arm/stm32l152/clock.c
+Analyzing contiki/cpu/arm/stm32l152/console.c
+Analyzing contiki/cpu/arm/stm32l152/crt.c
+Analyzing contiki/cpu/arm/stm32l152/rtimer-arch.c
+Analyzing contiki/cpu/arm/stm32l152/syscalls.c
+Analyzing contiki/cpu/arm/stm32l152/uart.c
+Analyzing contiki/cpu/arm/stm32l152/watchdog.c
+Analyzing contiki/cpu/avr/avr.c
+Analyzing contiki/cpu/avr/bootloader.c
+Analyzing contiki/cpu/avr/cc2420_spi.c
+Analyzing contiki/cpu/avr/dev/clock.c
+Analyzing contiki/cpu/avr/dev/debug.c
+Analyzing contiki/cpu/avr/dev/eeprom.c
+Analyzing contiki/cpu/avr/dev/flash.c
+Analyzing contiki/cpu/avr/dev/lanc111.c
+Analyzing contiki/cpu/avr/dev/rs232.c
+Analyzing contiki/cpu/avr/dev/usb/rndis/cdc_ecm.c
+Analyzing contiki/cpu/avr/dev/usb/rndis/cdc_eem.c
+Analyzing contiki/cpu/avr/dev/usb/rndis/rndis.c
+Analyzing contiki/cpu/avr/dev/usb/rndis/rndis_task.c
+Analyzing contiki/cpu/avr/dev/usb/serial/uart_usb_lib.c
+Analyzing contiki/cpu/avr/dev/usb/storage/avr_flash.c
+Analyzing contiki/cpu/avr/dev/usb/storage/ctrl_access.c
+Analyzing contiki/cpu/avr/dev/usb/storage/scsi_decoder.c
+Analyzing contiki/cpu/avr/dev/usb/storage/storage_task.c
+Analyzing contiki/cpu/avr/dev/usb/usb_descriptors.c
+Analyzing contiki/cpu/avr/dev/usb/usb_drv.c
+Analyzing contiki/cpu/avr/dev/usb/usb_specific_request.c
+Analyzing contiki/cpu/avr/dev/usb/usb_standard_request.c
+Analyzing contiki/cpu/avr/dev/usb/usb_task.c
+Analyzing contiki/cpu/avr/leds-arch.c
+Analyzing contiki/cpu/avr/minileds.c
+Analyzing contiki/cpu/avr/mtarch.c
+Analyzing contiki/cpu/avr/radio/ieee-manager/ieee-15-4-manager.c
+Analyzing contiki/cpu/avr/radio/mac/mac.c
+Analyzing contiki/cpu/avr/radio/mac/sicslowmac.c
+Analyzing contiki/cpu/avr/radio/rf230/frame.c
+Analyzing contiki/cpu/avr/radio/rf230/hal.c
+Analyzing contiki/cpu/avr/radio/rf230/radio.c
+Analyzing contiki/cpu/avr/radio/rf230bb/halbb.c
+Analyzing contiki/cpu/avr/radio/rf230bb/rf230bb.c
+Analyzing contiki/cpu/avr/rtimer-arch.c
+Analyzing contiki/cpu/avr/slip_uart1.c
+Analyzing contiki/cpu/avr/spi.c
+Analyzing contiki/cpu/avr/watchdog.c
+Analyzing contiki/cpu/cc2538/cfs-coffee-arch.c
+Analyzing contiki/cpu/cc2538/clock.c
+Analyzing contiki/cpu/cc2538/dbg.c
+Analyzing contiki/cpu/cc2538/dev/adc.c
+Analyzing contiki/cpu/cc2538/dev/aes.c
+Analyzing contiki/cpu/cc2538/dev/bignum-driver.c
+Analyzing contiki/cpu/cc2538/dev/cbc-mac.c
+Analyzing contiki/cpu/cc2538/dev/cbc.c
+Analyzing contiki/cpu/cc2538/dev/cc2538-aes-128.c
+Analyzing contiki/cpu/cc2538/dev/cc2538-ccm-star.c
+Analyzing contiki/cpu/cc2538/dev/cc2538-rf.c
+Analyzing contiki/cpu/cc2538/dev/cc2538-temp-sensor.c
+Analyzing contiki/cpu/cc2538/dev/ccm.c
+Analyzing contiki/cpu/cc2538/dev/crypto.c
+Analyzing contiki/cpu/cc2538/dev/ctr.c
+Analyzing contiki/cpu/cc2538/dev/ecb.c
+Analyzing contiki/cpu/cc2538/dev/ecc-algorithm.c
+Analyzing contiki/cpu/cc2538/dev/ecc-curve.c
+Analyzing contiki/cpu/cc2538/dev/ecc-driver.c
+Analyzing contiki/cpu/cc2538/dev/gcm.c
+Analyzing contiki/cpu/cc2538/dev/gpio.c
+Analyzing contiki/cpu/cc2538/dev/i2c.c
+Analyzing contiki/cpu/cc2538/dev/ioc.c
+Analyzing contiki/cpu/cc2538/dev/nvic.c
+Analyzing contiki/cpu/cc2538/dev/pka.c
+Analyzing contiki/cpu/cc2538/dev/pwm.c
+Analyzing contiki/cpu/cc2538/dev/random.c
+Analyzing contiki/cpu/cc2538/dev/sha256.c
+Analyzing contiki/cpu/cc2538/dev/spi.c
+Analyzing contiki/cpu/cc2538/dev/sys-ctrl.c
+Analyzing contiki/cpu/cc2538/dev/uart.c
+Analyzing contiki/cpu/cc2538/dev/udma.c
+Analyzing contiki/cpu/cc2538/dev/vdd3-sensor.c
+Analyzing contiki/cpu/cc2538/dev/watchdog.c
+Analyzing contiki/cpu/cc2538/ieee-addr.c
+Analyzing contiki/cpu/cc2538/lpm.c
+Analyzing contiki/cpu/cc2538/rtimer-arch.c
+Analyzing contiki/cpu/cc2538/slip-arch.c
+Analyzing contiki/cpu/cc2538/soc.c
+Analyzing contiki/cpu/cc2538/startup-gcc.c
+Analyzing contiki/cpu/cc2538/usb/cdc-acm-descriptors.c
+Analyzing contiki/cpu/cc2538/usb/usb-arch.c
+Analyzing contiki/cpu/cc2538/usb/usb-serial.c
+Analyzing contiki/cpu/cc253x/bank-alloc.py
+Analyzing contiki/cpu/cc253x/dev/cc2530-rf.c
+Analyzing contiki/cpu/cc253x/dev/clock.c
+Analyzing contiki/cpu/cc253x/dev/dma.c
+Analyzing contiki/cpu/cc253x/dev/dma_intr.c
+Analyzing contiki/cpu/cc253x/dev/port2-intr.c
+Analyzing contiki/cpu/cc253x/dev/port2.c
+Analyzing contiki/cpu/cc253x/dev/random.c
+Analyzing contiki/cpu/cc253x/dev/uart-intr.c
+Analyzing contiki/cpu/cc253x/dev/uart0.c
+Analyzing contiki/cpu/cc253x/dev/uart1.c
+Analyzing contiki/cpu/cc253x/dev/watchdog.c
+Analyzing contiki/cpu/cc253x/rtimer-arch.c
+Analyzing contiki/cpu/cc253x/soc.c
+Analyzing contiki/cpu/cc253x/stack.c
+Analyzing contiki/cpu/cc253x/usb/cdc-acm-descriptors.c
+Analyzing contiki/cpu/cc253x/usb/common/cdc-acm/cdc-acm.c
+Analyzing contiki/cpu/cc253x/usb/common/usb-core.c
+Analyzing contiki/cpu/cc253x/usb/usb-arch.c
+Analyzing contiki/cpu/cc26xx-cc13xx/clock.c
+Analyzing contiki/cpu/cc26xx-cc13xx/dev/adc-sensor.c
+Analyzing contiki/cpu/cc26xx-cc13xx/dev/aux-ctrl.c
+Analyzing contiki/cpu/cc26xx-cc13xx/dev/batmon-sensor.c
+Analyzing contiki/cpu/cc26xx-cc13xx/dev/cc26xx-uart.c
+Analyzing contiki/cpu/cc26xx-cc13xx/dev/contiki-watchdog.c
+Analyzing contiki/cpu/cc26xx-cc13xx/dev/gpio-interrupt.c
+Analyzing contiki/cpu/cc26xx-cc13xx/dev/oscillators.c
+Analyzing contiki/cpu/cc26xx-cc13xx/dev/soc-rtc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/dev/soc-trng.c
+Analyzing contiki/cpu/cc26xx-cc13xx/fault-handlers.c
+Analyzing contiki/cpu/cc26xx-cc13xx/ieee-addr.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/adi.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aon_batmon.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aon_event.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aon_ioc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aon_rtc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aon_wuc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aux_adc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aux_smph.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aux_tdc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aux_timer.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/aux_wuc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/ccfgread.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/chipinfo.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/cpu.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/crypto.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/ddi.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/driverlib_release.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/event.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/flash.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/gpio.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/i2c.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/i2s.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/interrupt.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/ioc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/osc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/prcm.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/pwr_ctrl.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/rfc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/rom_crypto.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/setup.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/setup_rom.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/smph.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/ssi.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/sys_ctrl.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/systick.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/timer.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/trng.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/uart.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/udma.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/vims.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/driverlib/watchdog.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/startup_files/ccfg.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/startup_files/startup_gcc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc13xxware/utils/rom_crypto/standalone_rom_crypto.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/adi.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aon_batmon.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aon_event.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aon_ioc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aon_rtc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aon_wuc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aux_adc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aux_smph.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aux_tdc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aux_timer.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/aux_wuc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/ccfgread.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/chipinfo.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/cpu.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/crypto.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/ddi.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/driverlib_release.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/event.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/flash.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/gpio.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/i2c.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/i2s.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/interrupt.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/ioc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/osc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/prcm.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/pwr_ctrl.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/rfc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/rom_crypto.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/setup.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/setup_rom.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/smph.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/ssi.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/sys_ctrl.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/systick.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/timer.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/trng.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/uart.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/udma.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/vims.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/driverlib/watchdog.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/startup_files/ccfg.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/startup_files/startup_gcc.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lib/cc26xxware/utils/rom_crypto/standalone_rom_crypto.c
+Analyzing contiki/cpu/cc26xx-cc13xx/lpm.c
+Analyzing contiki/cpu/cc26xx-cc13xx/putchar.c
+Analyzing contiki/cpu/cc26xx-cc13xx/random.c
+Analyzing contiki/cpu/cc26xx-cc13xx/rf-core/ieee-mode.c
+Analyzing contiki/cpu/cc26xx-cc13xx/rf-core/prop-mode-tx-power.c
+Analyzing contiki/cpu/cc26xx-cc13xx/rf-core/prop-mode.c
+Analyzing contiki/cpu/cc26xx-cc13xx/rf-core/rf-ble.c
+Analyzing contiki/cpu/cc26xx-cc13xx/rf-core/rf-core.c
+Analyzing contiki/cpu/cc26xx-cc13xx/rf-core/smartrf-settings.c
+Analyzing contiki/cpu/cc26xx-cc13xx/rtimer-arch.c
+Analyzing contiki/cpu/cc26xx-cc13xx/slip-arch.c
+Analyzing contiki/cpu/mc1322x/clock.c
+Analyzing contiki/cpu/mc1322x/config.c
+Analyzing contiki/cpu/mc1322x/contiki-maca.c
+Analyzing contiki/cpu/mc1322x/contiki-misc.c
+Analyzing contiki/cpu/mc1322x/contiki-uart.c
+Analyzing contiki/cpu/mc1322x/dbg-io.c
+Analyzing contiki/cpu/mc1322x/debug-uart.c
+Analyzing contiki/cpu/mc1322x/init.c
+Analyzing contiki/cpu/mc1322x/leds-arch.c
+Analyzing contiki/cpu/mc1322x/lib/adc.c
+Analyzing contiki/cpu/mc1322x/lib/gpio-util.c
+Analyzing contiki/cpu/mc1322x/lib/gpio.c
+Analyzing contiki/cpu/mc1322x/lib/i2c.c
+Analyzing contiki/cpu/mc1322x/lib/maca.c
+Analyzing contiki/cpu/mc1322x/lib/nvm.c
+Analyzing contiki/cpu/mc1322x/lib/printf.c
+Analyzing contiki/cpu/mc1322x/lib/pwm.c
+Analyzing contiki/cpu/mc1322x/lib/rtc.c
+Analyzing contiki/cpu/mc1322x/lib/tmr.c
+Analyzing contiki/cpu/mc1322x/lib/uart.c
+Analyzing contiki/cpu/mc1322x/lib/uart1.c
+Analyzing contiki/cpu/mc1322x/lib/uart2.c
+Analyzing contiki/cpu/mc1322x/rtimer-arch.c
+Analyzing contiki/cpu/mc1322x/slip-uart1.c
+Analyzing contiki/cpu/mc1322x/src/default_lowlevel.c
+Analyzing contiki/cpu/mc1322x/src/isr.c
+Analyzing contiki/cpu/mc1322x/tests/adc.c
+Analyzing contiki/cpu/mc1322x/tests/asm.c
+Analyzing contiki/cpu/mc1322x/tests/autoack-rx.c
+Analyzing contiki/cpu/mc1322x/tests/autoack-tx.c
+Analyzing contiki/cpu/mc1322x/tests/blink-allio.c
+Analyzing contiki/cpu/mc1322x/tests/blink-blue.c
+Analyzing contiki/cpu/mc1322x/tests/blink-green.c
+Analyzing contiki/cpu/mc1322x/tests/blink-red.c
+Analyzing contiki/cpu/mc1322x/tests/blink-white.c
+Analyzing contiki/cpu/mc1322x/tests/flasher.c
+Analyzing contiki/cpu/mc1322x/tests/nvm-read.c
+Analyzing contiki/cpu/mc1322x/tests/nvm-write.c
+Analyzing contiki/cpu/mc1322x/tests/per.c
+Analyzing contiki/cpu/mc1322x/tests/printf.c
+Analyzing contiki/cpu/mc1322x/tests/put.c
+Analyzing contiki/cpu/mc1322x/tests/pwm.c
+Analyzing contiki/cpu/mc1322x/tests/rftest-rx.c
+Analyzing contiki/cpu/mc1322x/tests/rftest-tx.c
+Analyzing contiki/cpu/mc1322x/tests/romimg.c
+Analyzing contiki/cpu/mc1322x/tests/sleep.c
+Analyzing contiki/cpu/mc1322x/tests/tests.c
+Analyzing contiki/cpu/mc1322x/tests/tmr-ints.c
+Analyzing contiki/cpu/mc1322x/tests/tmr.c
+Analyzing contiki/cpu/mc1322x/tests/u1u2-loopback.c
+Analyzing contiki/cpu/mc1322x/tests/uart1-loopback.c
+Analyzing contiki/cpu/mc1322x/tests/wdt.c
+Analyzing contiki/cpu/mc1322x/tests/xtal-trim.c
+Analyzing contiki/cpu/mc1322x/tools/bin2macbin.pl
+Analyzing contiki/cpu/mc1322x/tools/burn-mac.pl
+Analyzing contiki/cpu/mc1322x/tools/ftditools/bbmc.c
+Analyzing contiki/cpu/mc1322x/tools/map2dot.pl
+Analyzing contiki/cpu/mc1322x/tools/mc1322x-load.c
+Analyzing contiki/cpu/mc1322x/tools/mc1322x-load.pl
+Analyzing contiki/cpu/mc1322x/tools/rftestrx2pcap.pl
+Analyzing contiki/cpu/mc1322x/tools/rftestrx2pcap.py
+Analyzing contiki/cpu/mc1322x/tools/rimecollect-rrd/collect2rrd.pl
+Analyzing contiki/cpu/mc1322x/tools/test-grid/burn-macs.pl
+Analyzing contiki/cpu/mc1322x/tools/test-grid/erase-all.pl
+Analyzing contiki/cpu/mc1322x/tools/test-grid/load-all.pl
+Analyzing contiki/cpu/mc1322x/tools/test-grid/open-terms.pl
+Analyzing contiki/cpu/mc1322x/tools/test-grid/reset-all.pl
+Analyzing contiki/cpu/mc1322x/watchdog.c
+Analyzing contiki/cpu/msp430/button.c
+Analyzing contiki/cpu/msp430/cc2420-arch-sfd.c
+Analyzing contiki/cpu/msp430/cc2420-arch.c
+Analyzing contiki/cpu/msp430/cc2520-arch-sfd.c
+Analyzing contiki/cpu/msp430/cc2520-arch.c
+Analyzing contiki/cpu/msp430/dev/uart0-putchar.c
+Analyzing contiki/cpu/msp430/dev/uart1-putchar.c
+Analyzing contiki/cpu/msp430/f1xxx/clock.c
+Analyzing contiki/cpu/msp430/f1xxx/msp430.c
+Analyzing contiki/cpu/msp430/f1xxx/rtimer-arch.c
+Analyzing contiki/cpu/msp430/f1xxx/spi.c
+Analyzing contiki/cpu/msp430/f1xxx/uart1.c
+Analyzing contiki/cpu/msp430/f2xxx/msp430.c
+Analyzing contiki/cpu/msp430/f2xxx/spi.c
+Analyzing contiki/cpu/msp430/f2xxx/uart0.c
+Analyzing contiki/cpu/msp430/f2xxx/uart1.c
+Analyzing contiki/cpu/msp430/f5xxx/clock.c
+Analyzing contiki/cpu/msp430/f5xxx/msp430.c
+Analyzing contiki/cpu/msp430/f5xxx/rtimer-arch.c
+Analyzing contiki/cpu/msp430/f5xxx/spi.c
+Analyzing contiki/cpu/msp430/f5xxx/uart0.c
+Analyzing contiki/cpu/msp430/f5xxx/uart1.c
+Analyzing contiki/cpu/msp430/flash.c
+Analyzing contiki/cpu/msp430/leds-arch.c
+Analyzing contiki/cpu/msp430/loader-arch.c
+Analyzing contiki/cpu/msp430/lpm.c
+Analyzing contiki/cpu/msp430/minileds.c
+Analyzing contiki/cpu/msp430/mtarch.c
+Analyzing contiki/cpu/msp430/rom.c
+Analyzing contiki/cpu/msp430/slip_uart0.c
+Analyzing contiki/cpu/msp430/slip_uart1.c
+Analyzing contiki/cpu/msp430/uip-ipchksum.c
+Analyzing contiki/cpu/msp430/watchdog.c
+Analyzing contiki/cpu/native/dev/eeprom.c
+Analyzing contiki/cpu/native/mtarch.c
+Analyzing contiki/cpu/native/net/linuxradio-drv.c
+Analyzing contiki/cpu/native/net/tapdev-drv.c
+Analyzing contiki/cpu/native/net/tapdev.c
+Analyzing contiki/cpu/native/net/tapdev6.c
+Analyzing contiki/cpu/native/net/wpcap-drv.c
+Analyzing contiki/cpu/native/net/wpcap.c
+Analyzing contiki/cpu/native/rtimer-arch.c
+Analyzing contiki/cpu/native/watchdog.c
+Analyzing contiki/cpu/nrf52832/ble/ble-core.c
+Analyzing contiki/cpu/nrf52832/ble/ble-mac.c
+Analyzing contiki/cpu/nrf52832/dev/clock.c
+Analyzing contiki/cpu/nrf52832/dev/random.c
+Analyzing contiki/cpu/nrf52832/dev/uart0.c
+Analyzing contiki/cpu/nrf52832/dev/watchdog.c
+Analyzing contiki/cpu/nrf52832/putchar.c
+Analyzing contiki/cpu/nrf52832/rtimer-arch.c
+Analyzing contiki/cpu/pic32/clock.c
+Analyzing contiki/cpu/pic32/debug-uart.c
+Analyzing contiki/cpu/pic32/lib/pic32_clock.c
+Analyzing contiki/cpu/pic32/lib/pic32_spi.c
+Analyzing contiki/cpu/pic32/lib/pic32_timer.c
+Analyzing contiki/cpu/pic32/lib/pic32_uart.c
+Analyzing contiki/cpu/pic32/pic32.c
+Analyzing contiki/cpu/pic32/rtimer-arch.c
+Analyzing contiki/cpu/pic32/slip-uart.c
+Analyzing contiki/cpu/pic32/watchdog.c
+Analyzing contiki/cpu/rl78/adf7023/adf7023-contiki.c
+Analyzing contiki/cpu/rl78/adf7023/ADF7023.c
+Analyzing contiki/cpu/rl78/Communication.c
+Analyzing contiki/cpu/rl78/contiki-uart.c
+Analyzing contiki/cpu/rl78/slip-arch.c
+Analyzing contiki/cpu/rl78/sys/clock.c
+Analyzing contiki/cpu/rl78/uart0.c
+Analyzing contiki/cpu/rl78/watchdog.c
+Analyzing contiki/cpu/rl78/write.c
+Analyzing contiki/cpu/stm32w108/cfs-coffee-arch.c
+Analyzing contiki/cpu/stm32w108/clock.c
+Analyzing contiki/cpu/stm32w108/dev/stm32w-radio.c
+Analyzing contiki/cpu/stm32w108/dev/stm32w-systick.c
+Analyzing contiki/cpu/stm32w108/dev/uart1-putchar.c
+Analyzing contiki/cpu/stm32w108/dev/uart1.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/scanf.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/small-dtoa.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/small-mprec.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/small-strtod.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/small-vfsscanf.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/small-wcrtomb.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/small-wcsrtombs.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/small-wctomb-r.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/sp-printf.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/sp-puts.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/sp-snprintf.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/sp-sprintf.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/sp-vfprintf.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/sscanf.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/syscalls.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/test-mes.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/test-printf.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/test-scanf.c
+Analyzing contiki/cpu/stm32w108/e_stdio/src/test.c
+Analyzing contiki/cpu/stm32w108/elfloader-arch.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/adc.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/board.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/button.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/clocks.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/flash.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/led.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/mems.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/mfg-token.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/micro-common-internal.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/micro-common.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/micro.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/nvm.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/sleep.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/stm32w108/crt-stm32w108.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/stm32w108/low-level-init.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/system-timer.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/temperature-sensor.c
+Analyzing contiki/cpu/stm32w108/hal/micro/cortexm3/uart.c
+Analyzing contiki/cpu/stm32w108/leds-arch.c
+Analyzing contiki/cpu/stm32w108/rand.c
+Analyzing contiki/cpu/stm32w108/rtimer-arch.c
+Analyzing contiki/cpu/stm32w108/slip-uart1.c
+Analyzing contiki/cpu/stm32w108/small-printf/sp-printf.c
+Analyzing contiki/cpu/stm32w108/small-printf/sp-puts.c
+Analyzing contiki/cpu/stm32w108/small-printf/sp-snprintf.c
+Analyzing contiki/cpu/stm32w108/small-printf/sp-sprintf.c
+Analyzing contiki/cpu/stm32w108/small-printf/sp-vfprintf.c
+Analyzing contiki/cpu/stm32w108/uip-arch.c
+Analyzing contiki/cpu/stm32w108/watchdog.c
+Analyzing contiki/cpu/x86/drivers/legacy_pc/nmi.c
+Analyzing contiki/cpu/x86/drivers/legacy_pc/pci.c
+Analyzing contiki/cpu/x86/drivers/legacy_pc/pic.c
+Analyzing contiki/cpu/x86/drivers/legacy_pc/pit.c
+Analyzing contiki/cpu/x86/drivers/legacy_pc/rtc.c
+Analyzing contiki/cpu/x86/drivers/legacy_pc/shared-isr.c
+Analyzing contiki/cpu/x86/drivers/legacy_pc/uart-16x50.c
+Analyzing contiki/cpu/x86/drivers/quarkX1000/eth.c
+Analyzing contiki/cpu/x86/drivers/quarkX1000/gpio.c
+Analyzing contiki/cpu/x86/drivers/quarkX1000/i2c.c
+Analyzing contiki/cpu/x86/drivers/quarkX1000/imr-conf.c
+Analyzing contiki/cpu/x86/drivers/quarkX1000/imr.c
+Analyzing contiki/cpu/x86/drivers/quarkX1000/msg-bus.c
+Analyzing contiki/cpu/x86/drivers/quarkX1000/uart.c
+Analyzing contiki/cpu/x86/init/common/cpu.c
+Analyzing contiki/cpu/x86/init/common/gdt.c
+Analyzing contiki/cpu/x86/init/common/idt.c
+Analyzing contiki/cpu/x86/init/legacy_pc/irq.c
+Analyzing contiki/cpu/x86/mm/multi-segment.c
+Analyzing contiki/cpu/x86/mm/paging-prot-domains.c
+Analyzing contiki/cpu/x86/mm/prot-domains.c
+Analyzing contiki/cpu/x86/mm/stacks.c
+Analyzing contiki/cpu/x86/mm/swseg-prot-domains.c
+Analyzing contiki/cpu/x86/mm/syscalls-int.c
+Analyzing contiki/cpu/x86/mm/tss-prot-domains.c
+Analyzing contiki/cpu/x86/mm/tss.c
+Analyzing contiki/cpu/x86/uefi/bootstrap_uefi.c
+Analyzing contiki/dev/bme280/bme280-sensor.c
+Analyzing contiki/dev/bme280/bme280.c
+Analyzing contiki/dev/cc1200/cc1200-802154g-863-870-fsk-50kbps.c
+Analyzing contiki/dev/cc1200/cc1200-868-fsk-1-2kbps.c
+Analyzing contiki/dev/cc1200/cc1200.c
+Analyzing contiki/dev/cc2420/cc2420.c
+Analyzing contiki/dev/cc2520/cc2520.c
+Analyzing contiki/dev/disk/mmc/mmc.c
+Analyzing contiki/dev/ds2411/ds2411.c
+Analyzing contiki/dev/enc28j60/enc28j60-ip64-driver.c
+Analyzing contiki/dev/enc28j60/enc28j60.c
+Analyzing contiki/dev/sht11/sht11-sensor.c
+Analyzing contiki/dev/sht11/sht11.c
+Analyzing contiki/doc/code-style.c
+Analyzing contiki/doc/example-list.c
+Analyzing contiki/doc/example-pollhandler.c
+Analyzing contiki/doc/example-program.c
+Analyzing contiki/doc/example-psock-client.c
+Analyzing contiki/doc/example-psock-server.c
+Analyzing contiki/examples/antelope/netdb/netdb-client.c
+Analyzing contiki/examples/antelope/netdb/netdb-server.c
+Analyzing contiki/examples/antelope/shell/shell-db.c
+Analyzing contiki/examples/avr-rss2/AES128HW_test/AES128HW_test.c
+Analyzing contiki/examples/avr-rss2/avr_radio_power/avr_radio_power.c
+Analyzing contiki/examples/avr-rss2/hello-sensors/hello-sensors.c
+Analyzing contiki/examples/avr-rss2/ipv6/dc-rpl-coap/coap-client.c
+Analyzing contiki/examples/avr-rss2/ipv6/dc-rpl-coap/coap-server.c
+Analyzing contiki/examples/avr-rss2/ipv6/dc-rpl-coap/dev/dc-hw-sensor.c
+Analyzing contiki/examples/avr-rss2/ipv6/dc-rpl-coap/dev/dc-status-sensor.c
+Analyzing contiki/examples/avr-rss2/ipv6/dc-rpl-coap/dev/dc-vdc-sensor.c
+Analyzing contiki/examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-co2.c
+Analyzing contiki/examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-hwcfg.c
+Analyzing contiki/examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-status-obs.c
+Analyzing contiki/examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-vdc.c
+Analyzing contiki/examples/avr-rss2/ipv6/rpl-border-router/border-router.c
+Analyzing contiki/examples/avr-rss2/ipv6/rpl-border-router/enc28j60-ip64-driver.c
+Analyzing contiki/examples/avr-rss2/ipv6/rpl-border-router/eth-bridge.c
+Analyzing contiki/examples/avr-rss2/ipv6/rpl-border-router/httpd-simple.c
+Analyzing contiki/examples/avr-rss2/ipv6/rpl-udp-report/report.c
+Analyzing contiki/examples/avr-rss2/ipv6/rpl-udp-report/sink.c
+Analyzing contiki/examples/avr-rss2/ipv6/sensd_client/sensd_client.c
+Analyzing contiki/examples/avr-rss2/ipv6/sensd_client/server.c
+Analyzing contiki/examples/cc2530dk/blink-hello.c
+Analyzing contiki/examples/cc2530dk/border-router/border-router.c
+Analyzing contiki/examples/cc2530dk/border-router/slip-bridge.c
+Analyzing contiki/examples/cc2530dk/cc2531-usb-demo/cc2531-usb-demo.c
+Analyzing contiki/examples/cc2530dk/hello-world.c
+Analyzing contiki/examples/cc2530dk/sensors-demo.c
+Analyzing contiki/examples/cc2530dk/timer-test.c
+Analyzing contiki/examples/cc2530dk/udp-ipv6/client.c
+Analyzing contiki/examples/cc2530dk/udp-ipv6/ping6.c
+Analyzing contiki/examples/cc2530dk/udp-ipv6/server.c
+Analyzing contiki/examples/cc2538-common/crypto/cbc-mac-test.c
+Analyzing contiki/examples/cc2538-common/crypto/cbc-test.c
+Analyzing contiki/examples/cc2538-common/crypto/ccm-test.c
+Analyzing contiki/examples/cc2538-common/crypto/ctr-test.c
+Analyzing contiki/examples/cc2538-common/crypto/ecb-test.c
+Analyzing contiki/examples/cc2538-common/crypto/gcm-test.c
+Analyzing contiki/examples/cc2538-common/crypto/sha256-test.c
+Analyzing contiki/examples/cc2538-common/mqtt-demo/mqtt-demo.c
+Analyzing contiki/examples/cc2538-common/pka/ecc-ecdh.c
+Analyzing contiki/examples/cc2538-common/pka/ecc-sign.c
+Analyzing contiki/examples/cc2538-common/pka/ecc-verify.c
+Analyzing contiki/examples/cc2538-common/test-pwm.c
+Analyzing contiki/examples/cc2538-common/test-uart.c
+Analyzing contiki/examples/cc2538-common/timer-test.c
+Analyzing contiki/examples/cc2538dk/cc2538-demo.c
+Analyzing contiki/examples/cc2538dk/udp-ipv6-echo-server/udp-echo-server.c
+Analyzing contiki/examples/cc26xx/cc26xx-demo.c
+Analyzing contiki/examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.c
+Analyzing contiki/examples/cc26xx/cc26xx-web-demo/cetic-6lbr-client.c
+Analyzing contiki/examples/cc26xx/cc26xx-web-demo/coap-server.c
+Analyzing contiki/examples/cc26xx/cc26xx-web-demo/httpd-simple.c
+Analyzing contiki/examples/cc26xx/cc26xx-web-demo/mqtt-client.c
+Analyzing contiki/examples/cc26xx/cc26xx-web-demo/net-uart.c
+Analyzing contiki/examples/cc26xx/cc26xx-web-demo/resources/res-ble-advd.c
+Analyzing contiki/examples/cc26xx/cc26xx-web-demo/resources/res-device.c
+Analyzing contiki/examples/cc26xx/cc26xx-web-demo/resources/res-leds.c
+Analyzing contiki/examples/cc26xx/cc26xx-web-demo/resources/res-net.c
+Analyzing contiki/examples/cc26xx/cc26xx-web-demo/resources/res-sensors.c
+Analyzing contiki/examples/cc26xx/cc26xx-web-demo/resources/res-toggle-leds.c
+Analyzing contiki/examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c
+Analyzing contiki/examples/cfs-coffee/example-coffee.c
+Analyzing contiki/examples/cfs-coffee/test-cfs.c
+Analyzing contiki/examples/cfs-coffee/test-coffee.c
+Analyzing contiki/examples/collect/collect-view-shell.c
+Analyzing contiki/examples/econotag-ecc-test/econotag-ecc-test.c
+Analyzing contiki/examples/econotag-flash-test/econotag-flash-test.c
+Analyzing contiki/examples/eeprom-test/eeprom-test.c
+Analyzing contiki/examples/email/email-client.c
+contiki/apps/about/about.c:81: High: strcpy
+contiki/apps/antelope/aql-adt.c:115: High: strcpy
+contiki/apps/antelope/storage-cfs.c:74: High: strcpy
+contiki/apps/antelope/storage-cfs.c:385: High: strcpy
+contiki/apps/directory/directory.c:191: High: strcpy
+contiki/apps/directory/directory.c:217: High: strcpy
+contiki/apps/ftp/ftpc.c:293: High: strcpy
+contiki/apps/http-post-auth/http-post-auth.c:159: High: strcpy
+contiki/apps/shell/shell-rime-netcmd.c:128: High: strcpy
+contiki/apps/shell/shell-rime-sendcmd.c:132: High: strcpy
+contiki/apps/telnet/simpletelnet.c:232: High: strcpy
+contiki/apps/webbrowser/htmlparser.c:431: High: strcpy
+contiki/apps/webbrowser/www.c:632: High: strcpy
+contiki/apps/webbrowser/www.c:634: High: strcpy
+contiki/apps/webbrowser/www.c:710: High: strcpy
+contiki/apps/webbrowser/www.c:713: High: strcpy
+contiki/apps/webbrowser/www.c:787: High: strcpy
+contiki/apps/webbrowser/www.c:801: High: strcpy
+contiki/apps/webbrowser/www.c:817: High: strcpy
+contiki/apps/webbrowser/www.c:818: High: strcpy
+contiki/apps/webbrowser/www.c:925: High: strcpy
+contiki/apps/webbrowser/www.c:961: High: strcpy
+contiki/apps/webserver/httpd.c:225: High: strcpy
+contiki/apps/webserver-nano/httpd-cgi.c:147: High: strcpy
+contiki/apps/webserver-nano/httpd-cgi.c:154: High: strcpy
+contiki/apps/webserver-nano/urlconv.c:142: High: strcpy
+contiki/core/ctk/ctk.c:1251: High: strcpy
+contiki/core/loader/cmod.c:79: High: strcpy
+contiki/core/loader/cmod.c:107: High: strcpy
+contiki/core/loader/cmod.c:124: High: strcpy
+Check to be sure that argument 2 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+contiki/apps/antelope/aql-exec.c:194: High: fixed size local buffer
+contiki/apps/antelope/aql-parser.c:725: High: fixed size local buffer
+contiki/apps/antelope/index-inline.c:88: High: fixed size local buffer
+contiki/apps/antelope/index-maxheap.c:497: High: fixed size local buffer
+contiki/apps/antelope/index-maxheap.c:498: High: fixed size local buffer
+contiki/apps/antelope/index-maxheap.c:599: High: fixed size local buffer
+contiki/apps/antelope/lvm.c:72: High: fixed size local buffer
+contiki/apps/antelope/lvm.c:826: High: fixed size local buffer
+contiki/apps/antelope/relation.c:479: High: fixed size local buffer
+contiki/apps/antelope/storage-cfs.c:52: High: fixed size local buffer
+contiki/apps/antelope/storage-cfs.c:58: High: fixed size local buffer
+contiki/apps/antelope/storage-cfs.c:59: High: fixed size local buffer
+contiki/apps/antelope/storage-cfs.c:81: High: fixed size local buffer
+contiki/apps/antelope/storage-cfs.c:296: High: fixed size local buffer
+contiki/apps/antelope/storage-cfs.c:336: High: fixed size local buffer
+contiki/apps/antelope/storage-cfs.c:372: High: fixed size local buffer
+contiki/apps/antelope/storage-cfs.c:449: High: fixed size local buffer
+contiki/apps/cmdd/cmdd.c:9: High: fixed size local buffer
+contiki/apps/codeprop/tcp_loader.c:95: High: fixed size local buffer
+contiki/apps/codeprop/tcp_loader2.c:104: High: fixed size local buffer
+contiki/apps/directory/directory.c:174: High: fixed size local buffer
+contiki/apps/directory/directory.c:201: High: fixed size local buffer
+contiki/apps/email/smtp-socket.c:47: High: fixed size local buffer
+contiki/apps/er-coap/er-coap-observe.c:196: High: fixed size local buffer
+contiki/apps/er-coap/er-coap-observe.c:289: High: fixed size local buffer
+contiki/apps/ftp/ftpc.c:57: High: fixed size local buffer
+contiki/apps/ftp/ftpc.c:99: High: fixed size local buffer
+contiki/apps/ftp/ftpc.c:104: High: fixed size local buffer
+contiki/apps/ftp/ftpc.c:111: High: fixed size local buffer
+contiki/apps/http-post-auth/http-post-auth.c:57: High: fixed size local buffer
+contiki/apps/http-post-auth/http-post-auth.c:58: High: fixed size local buffer
+contiki/apps/http-post-auth/http-post-auth.c:59: High: fixed size local buffer
+contiki/apps/json/jsontree.c:84: High: fixed size local buffer
+contiki/apps/oma-lwm2m/lwm2m-engine.c:403: High: fixed size local buffer
+contiki/apps/process-list/process-list.c:49: High: fixed size local buffer
+contiki/apps/program-handler/program-handler.c:187: High: fixed size local buffer
+contiki/apps/shell/shell-download.c:137: High: fixed size local buffer
+contiki/apps/shell/shell-file.c:82: High: fixed size local buffer
+contiki/apps/shell/shell-file.c:193: High: fixed size local buffer
+contiki/apps/shell/shell-file.c:196: High: fixed size local buffer
+contiki/apps/shell/shell-httpd.c:80: High: fixed size local buffer
+contiki/apps/shell/shell-irc.c:66: High: fixed size local buffer
+contiki/apps/shell/shell-memdebug.c:98: High: fixed size local buffer
+contiki/apps/shell/shell-netperf.c:523: High: fixed size local buffer
+contiki/apps/shell/shell-netstat.c:112: High: fixed size local buffer
+contiki/apps/shell/shell-power.c:139: High: fixed size local buffer
+contiki/apps/shell/shell-power.c:201: High: fixed size local buffer
+contiki/apps/shell/shell-powertrace.c:53: High: fixed size local buffer
+contiki/apps/shell/shell-profile.c:59: High: fixed size local buffer
+contiki/apps/shell/shell-ps.c:60: High: fixed size local buffer
+contiki/apps/shell/shell-rime-debug-runicast.c:81: High: fixed size local buffer
+contiki/apps/shell/shell-rime-debug.c:145: High: fixed size local buffer
+contiki/apps/shell/shell-rime-netcmd.c:72: High: fixed size local buffer
+contiki/apps/shell/shell-rime-netcmd.c:120: High: fixed size local buffer
+contiki/apps/shell/shell-rime-ping.c:72: High: fixed size local buffer
+contiki/apps/shell/shell-rime-ping.c:128: High: fixed size local buffer
+contiki/apps/shell/shell-rime-sendcmd.c:61: High: fixed size local buffer
+contiki/apps/shell/shell-rime-sendcmd.c:100: High: fixed size local buffer
+contiki/apps/shell/shell-rime.c:216: High: fixed size local buffer
+contiki/apps/shell/shell-rsh.c:71: High: fixed size local buffer
+contiki/apps/shell/shell-sendtest.c:70: High: fixed size local buffer
+contiki/apps/shell/shell-sendtest.c:122: High: fixed size local buffer
+contiki/apps/shell/shell-sky.c:186: High: fixed size local buffer
+contiki/apps/shell/shell-sky.c:267: High: fixed size local buffer
+contiki/apps/shell/shell-tcpsend.c:68: High: fixed size local buffer
+contiki/apps/shell/shell-text.c:87: High: fixed size local buffer
+contiki/apps/shell/shell-text.c:132: High: fixed size local buffer
+contiki/apps/shell/shell-text.c:183: High: fixed size local buffer
+contiki/apps/shell/shell-time.c:160: High: fixed size local buffer
+contiki/apps/shell/shell-time.c:205: High: fixed size local buffer
+contiki/apps/shell/shell-time.c:287: High: fixed size local buffer
+contiki/apps/shell/shell-vars.c:93: High: fixed size local buffer
+contiki/apps/shell/shell-wget.c:64: High: fixed size local buffer
+contiki/apps/telnetd/telnetd.c:70: High: fixed size local buffer
+contiki/apps/telnetd/telnetd.c:102: High: fixed size local buffer
+contiki/apps/telnetd/telnetd.c:176: High: fixed size local buffer
+contiki/apps/telnetd/telnetd.c:276: High: fixed size local buffer
+contiki/apps/webbrowser/htmlparser.c:145: High: fixed size local buffer
+contiki/apps/webbrowser/htmlparser.c:147: High: fixed size local buffer
+contiki/apps/webbrowser/htmlparser.c:149: High: fixed size local buffer
+contiki/apps/webbrowser/htmlparser.c:153: High: fixed size local buffer
+contiki/apps/webbrowser/htmlparser.c:155: High: fixed size local buffer
+contiki/apps/webbrowser/htmlparser.c:159: High: fixed size local buffer
+contiki/apps/webbrowser/htmlparser.c:161: High: fixed size local buffer
+contiki/apps/webbrowser/htmlparser.c:162: High: fixed size local buffer
+contiki/apps/webbrowser/webclient.c:65: High: fixed size local buffer
+contiki/apps/webbrowser/webclient.c:66: High: fixed size local buffer
+contiki/apps/webbrowser/webclient.c:70: High: fixed size local buffer
+contiki/apps/webbrowser/webclient.c:73: High: fixed size local buffer
+contiki/apps/webbrowser/www.c:130: High: fixed size local buffer
+contiki/apps/webbrowser/www.c:137: High: fixed size local buffer
+contiki/apps/webbrowser/www.c:150: High: fixed size local buffer
+contiki/apps/webbrowser/www.c:157: High: fixed size local buffer
+contiki/apps/webbrowser/www.c:313: High: fixed size local buffer
+contiki/apps/webserver/httpd-cgi.c:159: High: fixed size local buffer
+contiki/apps/webserver/httpd-cgi.c:211: High: fixed size local buffer
+contiki/apps/webserver/webserver-nogui.c:71: High: fixed size local buffer
+contiki/apps/webserver/webserver-nogui.c:76: High: fixed size local buffer
+contiki/apps/webserver-nano/httpd-cgi.c:213: High: fixed size local buffer
+contiki/apps/webserver-nano/httpd-cgi.c:293: High: fixed size local buffer
+contiki/apps/webserver-nano/httpd-cgi.c:362: High: fixed size local buffer
+contiki/apps/webserver-nano/httpd-cgi.c:414: High: fixed size local buffer
+contiki/apps/webserver-nano/httpd.c:177: High: fixed size local buffer
+contiki/apps/webserver-nano/httpd.c:390: High: fixed size local buffer
+contiki/apps/webserver-nano/webserver-nogui.c:69: High: fixed size local buffer
+contiki/apps/webserver-nano/webserver-nogui.c:74: High: fixed size local buffer
+contiki/apps/webserver-nano/webserver-nogui.c:78: High: fixed size local buffer
+contiki/core/cfs/cfs-coffee.c:190: High: fixed size local buffer
+contiki/core/cfs/cfs-coffee.c:489: High: fixed size local buffer
+contiki/core/cfs/cfs-coffee.c:810: High: fixed size local buffer
+contiki/core/cfs/cfs-coffee.c:930: High: fixed size local buffer
+contiki/core/cfs/cfs-coffee.c:1150: High: fixed size local buffer
+contiki/core/dev/serial-line.c:89: High: fixed size local buffer
+contiki/core/dev/slip.c:339: High: fixed size local buffer
+contiki/core/lib/settings.c:454: High: fixed size local buffer
+contiki/core/loader/elfloader-avr.c:117: High: fixed size local buffer
+contiki/core/loader/elfloader-avr.c:182: High: fixed size local buffer
+contiki/core/loader/elfloader-msp430x.c:62: High: fixed size local buffer
+contiki/core/loader/elfloader-msp430x.c:218: High: fixed size local buffer
+contiki/core/loader/elfloader-msp430x.c:261: High: fixed size local buffer
+contiki/core/loader/elfloader-msp430x.c:338: High: fixed size local buffer
+contiki/core/loader/elfloader-msp430x.c:368: High: fixed size local buffer
+contiki/core/loader/elfloader-msp430x.c:711: High: fixed size local buffer
+contiki/core/loader/elfloader.c:57: High: fixed size local buffer
+contiki/core/loader/elfloader.c:182: High: fixed size local buffer
+contiki/core/loader/elfloader.c:224: High: fixed size local buffer
+contiki/core/loader/elfloader.c:300: High: fixed size local buffer
+contiki/core/loader/elfloader.c:347: High: fixed size local buffer
+contiki/core/loader/symtab-avr.c:68: High: fixed size local buffer
+contiki/core/net/http-socket/http-socket.c:401: High: fixed size local buffer
+contiki/core/net/http-socket/http-socket.c:402: High: fixed size local buffer
+contiki/core/net/http-socket/http-socket.c:404: High: fixed size local buffer
+contiki/core/net/http-socket/http-socket.c:492: High: fixed size local buffer
+contiki/core/net/http-socket/http-socket.c:493: High: fixed size local buffer
+contiki/core/net/http-socket/http-socket.c:555: High: fixed size local buffer
+contiki/core/net/ip/resolv.c:269: High: fixed size local buffer
+contiki/core/net/ip/resolv.c:966: High: fixed size local buffer
+contiki/core/net/ip/resolv.c:1248: High: fixed size local buffer
+contiki/core/net/ip/resolv.c:1472: High: fixed size local buffer
+contiki/core/net/ipv6/websocket-http-client.c:88: High: fixed size local buffer
+contiki/core/net/ipv6/websocket.c:550: High: fixed size local buffer
+contiki/core/net/ipv6/websocket.c:551: High: fixed size local buffer
+contiki/core/net/queuebuf.c:143: High: fixed size local buffer
+contiki/core/net/rime/chameleon-bitopt.c:223: High: fixed size local buffer
+contiki/core/net/rime/chameleon.c:77: High: fixed size local buffer
+contiki/core/sys/arg.c:73: High: fixed size local buffer
+contiki/cpu/6502/lib/config.c:54: High: fixed size local buffer
+contiki/cpu/6502/net/ethernet.c:46: High: fixed size local buffer
+contiki/cpu/6502/net/ethernet.c:64: High: fixed size local buffer
+contiki/cpu/arm/at91sam7s/loader/elfloader-otf.c:57: High: fixed size local buffer
+contiki/cpu/arm/at91sam7s/loader/elfloader-otf.c:152: High: fixed size local buffer
+contiki/cpu/arm/at91sam7s/loader/elfloader-otf.c:183: High: fixed size local buffer
+contiki/cpu/arm/at91sam7s/loader/elfloader-otf.c:228: High: fixed size local buffer
+contiki/cpu/arm/at91sam7s/loader/elfloader-otf.c:327: High: fixed size local buffer
+contiki/cpu/arm/at91sam7s/loader/elfloader-otf.c:405: High: fixed size local buffer
+contiki/cpu/arm/at91sam7s/loader/elfloader-otf.c:651: High: fixed size local buffer
+contiki/cpu/arm/common/dbg-io/strformat.c:201: High: fixed size local buffer
+contiki/cpu/arm/common/dbg-io/strformat.c:215: High: fixed size local buffer
+contiki/cpu/arm/common/dbg-io/strformat.c:381: High: fixed size local buffer
+contiki/cpu/arm/common/dbg-io/strformat.c:558: High: fixed size local buffer
+contiki/cpu/arm/common/usb/msc/usb-rbc.c:77: High: fixed size local buffer
+contiki/cpu/avr/dev/rs232.c:407: High: fixed size local buffer
+contiki/cpu/avr/dev/usb/rndis/rndis.c:631: High: fixed size local buffer
+contiki/cpu/avr/dev/usb/usb_specific_request.c:227: High: fixed size local buffer
+contiki/cpu/cc26xx-cc13xx/rf-core/rf-ble.c:90: High: fixed size local buffer
+contiki/cpu/mc1322x/lib/printf.c:224: High: fixed size local buffer
+contiki/cpu/mc1322x/lib/printf.c:281: High: fixed size local buffer
+contiki/cpu/mc1322x/tools/ftditools/bbmc.c:163: High: fixed size local buffer
+contiki/cpu/mc1322x/tools/ftditools/bbmc.c:382: High: fixed size local buffer
+contiki/cpu/mc1322x/tools/ftditools/bbmc.c:383: High: fixed size local buffer
+contiki/cpu/msp430/loader-arch.c:64: High: fixed size local buffer
+contiki/cpu/native/mtarch.c:60: High: fixed size local buffer
+contiki/cpu/native/net/tapdev.c:95: High: fixed size local buffer
+contiki/cpu/native/net/tapdev.c:108: High: fixed size local buffer
+contiki/cpu/native/net/tapdev6.c:297: High: fixed size local buffer
+contiki/cpu/native/net/wpcap.c:246: High: fixed size local buffer
+contiki/cpu/native/net/wpcap.c:308: High: fixed size local buffer
+contiki/cpu/native/net/wpcap.c:352: High: fixed size local buffer
+contiki/cpu/rl78/adf7023/ADF7023.c:433: High: fixed size local buffer
+contiki/cpu/stm32w108/cfs-coffee-arch.c:81: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/small-dtoa.c:301: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/small-vfsscanf.c:353: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/small-vfsscanf.c:354: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/small-wcrtomb.c:21: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/small-wcsrtombs.c:22: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/sp-vfprintf.c:256: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/sp-vfprintf.c:452: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/sp-vfprintf.c:466: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/sp-vfprintf.c:469: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/sp-vfprintf.c:470: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/sp-vfprintf.c:483: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/sp-vfprintf.c:485: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/sp-vfprintf.c:1350: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/test.c:15: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/test.c:18: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/test.c:19: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/test.c:23: High: fixed size local buffer
+contiki/cpu/stm32w108/e_stdio/src/test.c:227: High: fixed size local buffer
+contiki/cpu/stm32w108/hal/micro/cortexm3/board.c:252: High: fixed size local buffer
+contiki/cpu/stm32w108/small-printf/sp-vfprintf.c:256: High: fixed size local buffer
+contiki/cpu/stm32w108/small-printf/sp-vfprintf.c:452: High: fixed size local buffer
+contiki/cpu/stm32w108/small-printf/sp-vfprintf.c:466: High: fixed size local buffer
+contiki/cpu/stm32w108/small-printf/sp-vfprintf.c:469: High: fixed size local buffer
+contiki/cpu/stm32w108/small-printf/sp-vfprintf.c:470: High: fixed size local buffer
+contiki/cpu/stm32w108/small-printf/sp-vfprintf.c:483: High: fixed size local buffer
+contiki/cpu/stm32w108/small-printf/sp-vfprintf.c:485: High: fixed size local buffer
+contiki/cpu/stm32w108/small-printf/sp-vfprintf.c:1350: High: fixed size local buffer
+contiki/examples/antelope/netdb/netdb-client.c:106: High: fixed size local buffer
+contiki/examples/antelope/netdb/netdb-server.c:94: High: fixed size local buffer
+contiki/examples/antelope/netdb/netdb-server.c:273: High: fixed size local buffer
+contiki/examples/avr-rss2/hello-sensors/hello-sensors.c:63: High: fixed size local buffer
+contiki/examples/avr-rss2/ipv6/dc-rpl-coap/coap-client.c:342: High: fixed size local buffer
+contiki/examples/avr-rss2/ipv6/rpl-border-router/border-router.c:152: High: fixed size local buffer
+contiki/examples/avr-rss2/ipv6/rpl-udp-report/report.c:92: High: fixed size local buffer
+contiki/examples/cc2538-common/crypto/sha256-test.c:75: High: fixed size local buffer
+contiki/examples/cc2538-common/mqtt-demo/mqtt-demo.c:153: High: fixed size local buffer
+contiki/examples/cc2538-common/mqtt-demo/mqtt-demo.c:154: High: fixed size local buffer
+contiki/examples/cc2538-common/mqtt-demo/mqtt-demo.c:155: High: fixed size local buffer
+contiki/examples/cc2538-common/mqtt-demo/mqtt-demo.c:156: High: fixed size local buffer
+contiki/examples/cc2538-common/mqtt-demo/mqtt-demo.c:157: High: fixed size local buffer
+contiki/examples/cc2538-common/mqtt-demo/mqtt-demo.c:158: High: fixed size local buffer
+contiki/examples/cc2538-common/mqtt-demo/mqtt-demo.c:475: High: fixed size local buffer
+contiki/examples/cc2538-common/test-uart.c:82: High: fixed size local buffer
+contiki/examples/cc26xx/cc26xx-web-demo/cetic-6lbr-client.c:102: High: fixed size local buffer
+contiki/examples/cc26xx/cc26xx-web-demo/httpd-simple.c:258: High: fixed size local buffer
+contiki/examples/cc26xx/cc26xx-web-demo/httpd-simple.c:259: High: fixed size local buffer
+contiki/examples/cc26xx/cc26xx-web-demo/httpd-simple.c:272: High: fixed size local buffer
+contiki/examples/cc26xx/cc26xx-web-demo/httpd-simple.c:273: High: fixed size local buffer
+contiki/examples/cc26xx/cc26xx-web-demo/httpd-simple.c:456: High: fixed size local buffer
+contiki/examples/cc26xx/cc26xx-web-demo/mqtt-client.c:639: High: fixed size local buffer
+contiki/examples/cc26xx/cc26xx-web-demo/resources/res-ble-advd.c:57: High: fixed size local buffer
+contiki/examples/cc26xx/cc26xx-web-demo/resources/res-net.c:88: High: fixed size local buffer
+contiki/examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:180: High: fixed size local buffer
+contiki/examples/cfs-coffee/example-coffee.c:63: High: fixed size local buffer
+contiki/examples/cfs-coffee/test-cfs.c:63: High: fixed size local buffer
+contiki/examples/cfs-coffee/test-cfs.c:103: High: fixed size local buffer
+contiki/examples/cfs-coffee/test-coffee.c:60: High: fixed size local buffer
+contiki/examples/cfs-coffee/test-coffee.c:197: High: fixed size local buffer
+contiki/examples/cfs-coffee/test-coffee.c:253: High: fixed size local buffer
+Extra care should be taken to ensure that character arrays that are allocated
+on the stack are used safely.  They are prime targets for buffer overflow
+attacks.
+
+contiki/apps/antelope/storage-cfs.c:75: High: strcat
+Check to be sure that argument 2 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+contiki/apps/ping6/ping6.c:92: High: scanf
+contiki/apps/ping6/ping6.c:99: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/scanf.c:32: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/scanf.c:34: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test-mes.c:18: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test-mes.c:33: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test-scanf.c:8: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:33: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:39: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:45: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:49: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:53: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:57: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:61: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:66: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:70: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:74: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:78: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:83: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:95: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:99: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:103: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:121: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:125: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:130: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:138: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:142: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/test.c:247: High: scanf
+Check to be sure that the format string passed as argument 2 to this function
+call does not come from an untrusted source that could have added formatting
+characters that the code is not prepared to handle.  Additionally, the format
+string could contain `%s' without precision that could result in a buffer
+overflow.
+
+contiki/core/net/ip/resolv.c:1097: High: strncat
+contiki/core/net/ip/resolv.c:1477: High: strncat
+contiki/core/net/ip/resolv.c:1482: High: strncat
+Consider using strlcat() instead.
+
+contiki/core/net/ip/resolv.c:1097: High: strncat
+contiki/core/net/ip/resolv.c:1477: High: strncat
+contiki/core/net/ip/resolv.c:1482: High: strncat
+Check to be sure that argument 1 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+contiki/core/net/ipv4/uaodv.c:118: High: vprintf
+Check to be sure that the non-constant format string passed as argument 1 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+contiki/core/net/rime/chameleon-bitopt.c:231: High: printf
+contiki/core/net/rime/chameleon.c:85: High: printf
+contiki/cpu/arm/common/dbg-io/dbg-printf.c:20: High: printf
+contiki/cpu/mc1322x/lib/printf.c:397: High: printf
+contiki/cpu/mc1322x/tests/tests.c:77: High: printf
+contiki/cpu/mc1322x/tests/tests.c:79: High: printf
+contiki/cpu/rl78/adf7023/ADF7023.c:194: High: printf
+contiki/cpu/rl78/adf7023/ADF7023.c:320: High: printf
+contiki/cpu/rl78/adf7023/ADF7023.c:330: High: printf
+contiki/cpu/rl78/adf7023/ADF7023.c:444: High: printf
+contiki/cpu/rl78/adf7023/ADF7023.c:446: High: printf
+contiki/cpu/rl78/adf7023/ADF7023.c:448: High: printf
+contiki/cpu/rl78/adf7023/ADF7023.c:555: High: printf
+contiki/cpu/rl78/adf7023/ADF7023.c:625: High: printf
+contiki/cpu/rl78/adf7023/ADF7023.c:664: High: printf
+contiki/cpu/stm32w108/e_stdio/src/sp-printf.c:54: High: printf
+contiki/cpu/stm32w108/e_stdio/src/sp-printf.c:57: High: printf
+contiki/cpu/stm32w108/small-printf/sp-printf.c:57: High: printf
+contiki/cpu/stm32w108/small-printf/sp-printf.c:60: High: printf
+contiki/cpu/x86/drivers/quarkX1000/eth.c:242: High: printf
+contiki/cpu/x86/drivers/quarkX1000/eth.c:319: High: printf
+contiki/cpu/x86/drivers/quarkX1000/eth.c:448: High: printf
+Check to be sure that the non-constant format string passed as argument 1 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+contiki/cpu/arm/common/dbg-io/dbg-sprintf.c:14: High: sprintf
+contiki/cpu/mc1322x/lib/printf.c:381: High: sprintf
+contiki/cpu/stm32w108/e_stdio/src/sp-sprintf.c:367: High: sprintf
+contiki/cpu/stm32w108/small-printf/sp-sprintf.c:369: High: sprintf
+Check to be sure that the non-constant format string passed as argument 2 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+contiki/cpu/arm/common/dbg-io/dbg-sprintf.c:14: High: sprintf
+contiki/cpu/mc1322x/lib/printf.c:381: High: sprintf
+contiki/cpu/stm32w108/e_stdio/src/sp-sprintf.c:367: High: sprintf
+contiki/cpu/stm32w108/small-printf/sp-sprintf.c:369: High: sprintf
+Check to be sure that the format string passed as argument 2 to this function
+call does not come from an untrusted source that could have added formatting
+characters that the code is not prepared to handle.  Additionally, the format
+string could contain `%s' without precision that could result in a buffer
+overflow.
+
+contiki/cpu/cc253x/bank-alloc.py:148: High: input
+Argument 1 to this function call should be checked to ensure that it does not
+come from an untrusted source without first verifying that it contains nothing
+dangerous.
+
+contiki/cpu/mc1322x/tools/ftditools/bbmc.c:196: High: getopt_long
+Truncate all input strings to a reasonable length 
+before passing them to this function
+
+contiki/cpu/mc1322x/tools/mc1322x-load.c:74: High: getopt
+Truncate all input strings to a reasonable length 
+before passing them to this function
+
+contiki/cpu/mc1322x/tools/mc1322x-load.c:174: High: system
+contiki/cpu/native/net/tapdev.c:99: High: system
+contiki/cpu/native/net/tapdev.c:130: High: system
+contiki/cpu/native/net/tapdev.c:141: High: system
+contiki/cpu/native/net/tapdev6.c:334: High: system
+Argument 1 to this function call should be checked to ensure that it does not
+come from an untrusted source without first verifying that it contains nothing
+dangerous.
+
+contiki/cpu/native/dev/eeprom.c:75: High: getenv
+Environment variables are highly untrustable input. They may be of any length, and contain any data. Do not make any assumptions regarding content or length. If at all possible avoid using them, and if it is necessary, sanitize them and truncate them to a reasonable length.
+
+contiki/cpu/native/net/wpcap.c:580: High: LoadLibrary
+LoadLibrary will search several places for a library if
+no path is specified, allowing trojan DLL's to be inserted elsewhere even
+if the intended DLL is correctly protected from overwriting. Make sure to specify the full path.
+
+contiki/cpu/stm32w108/e_stdio/src/scanf.c:32: High: scanf
+contiki/cpu/stm32w108/e_stdio/src/scanf.c:34: High: scanf
+Check to be sure that the non-constant format string passed as argument 1 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+contiki/cpu/stm32w108/e_stdio/src/sp-printf.c:74: High: vfprintf
+contiki/cpu/stm32w108/small-printf/sp-printf.c:78: High: vfprintf
+Check to be sure that the non-constant format string passed as argument 2 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+contiki/cpu/stm32w108/e_stdio/src/sscanf.c:395: High: sscanf
+Check to be sure that the non-constant format string passed as argument 2 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+contiki/cpu/stm32w108/e_stdio/src/sscanf.c:395: High: sscanf
+Check to be sure that the format string passed as argument 2 to this function
+call does not come from an untrusted source that could have added formatting
+characters that the code is not prepared to handle.  Additionally, the format
+string could contain `%s' without precision that could result in a buffer
+overflow.
+
+contiki/cpu/x86/drivers/quarkX1000/eth.c:349: High: fprintf
+contiki/cpu/x86/drivers/quarkX1000/eth.c:401: High: fprintf
+Check to be sure that the non-constant format string passed as argument 2 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+contiki/apps/oma-lwm2m/lwm2m-engine.c:1028: Medium: read
+contiki/core/cfs/cfs-posix.c:79: Medium: read
+contiki/core/net/mac/contikimac/contikimac.c:766: Medium: read
+contiki/core/net/mac/cxmac/cxmac.c:563: Medium: read
+contiki/core/net/mac/nullrdc.c:187: Medium: read
+contiki/core/net/mac/tsch/tsch-slot-operation.c:616: Medium: read
+contiki/core/net/mac/tsch/tsch-slot-operation.c:794: Medium: read
+contiki/core/net/mac/tsch/tsch.c:651: Medium: read
+contiki/cpu/arm/aducrf101/dev/radio.c:211: Medium: read
+contiki/cpu/arm/aducrf101/dev/radio.c:361: Medium: read
+contiki/cpu/cc2538/dev/cc2538-rf.c:684: Medium: read
+contiki/cpu/cc2538/dev/cc2538-rf.c:1031: Medium: read
+contiki/cpu/cc253x/dev/cc2530-rf.c:491: Medium: read
+contiki/cpu/cc26xx-cc13xx/rf-core/rf-core.c:551: Medium: read
+contiki/cpu/mc1322x/tools/mc1322x-load.c:183: Medium: read
+contiki/cpu/mc1322x/tools/mc1322x-load.c:218: Medium: read
+contiki/cpu/mc1322x/tools/mc1322x-load.c:226: Medium: read
+contiki/cpu/mc1322x/tools/mc1322x-load.c:237: Medium: read
+contiki/cpu/mc1322x/tools/mc1322x-load.c:269: Medium: read
+contiki/cpu/mc1322x/tools/mc1322x-load.c:277: Medium: read
+contiki/cpu/mc1322x/tools/mc1322x-load.c:297: Medium: read
+contiki/cpu/native/net/linuxradio-drv.c:148: Medium: read
+contiki/cpu/native/net/tapdev.c:169: Medium: read
+contiki/cpu/native/net/tapdev6.c:131: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/gpio.c:90: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/gpio.c:122: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/gpio.c:135: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/gpio.c:212: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/gpio.c:228: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:112: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:142: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:152: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:225: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:229: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:242: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:254: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:260: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:264: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:301: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:321: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:376: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:388: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:438: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:443: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:450: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:462: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:473: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:488: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:501: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:508: Medium: read
+contiki/cpu/x86/drivers/quarkX1000/i2c.c:512: Medium: read
+contiki/dev/cc1200/cc1200.c:436: Medium: read
+contiki/dev/cc1200/cc1200.c:638: Medium: read
+contiki/dev/cc1200/cc1200.c:860: Medium: read
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+contiki/core/lib/random.c:43: Medium: srand
+contiki/cpu/avr/radio/mac/mac.c:179: Medium: srand
+contiki/cpu/mc1322x/contiki-misc.c:46: Medium: srand
+contiki/cpu/stm32w108/rand.c:65: Medium: srand
+Standard random number generators should not be used to 
+generate randomness used for security reasons.  For security sensitive 
+randomness a crytographic randomness generator that provides sufficient
+entropy should be used.
+
+contiki/cpu/6502/ethconfig/ethconfig.c:37: Medium: getchar
+contiki/cpu/6502/serconfig/serconfig.c:49: Medium: getchar
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+contiki/cpu/arm/aducrf101/Common/RealView/Retarget.c:89: Medium: fgetc
+contiki/cpu/arm/stm32l152/console.c:160: Medium: fgetc
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+contiki/cpu/avr/radio/rf230bb/rf230bb.c:2158: Medium: crypt
+contiki/cpu/avr/radio/rf230bb/rf230bb.c:2197: Medium: crypt
+contiki/cpu/avr/radio/rf230bb/rf230bb.c:2208: Medium: crypt
+contiki/cpu/avr/radio/rf230bb/rf230bb.c:2235: Medium: crypt
+contiki/cpu/avr/radio/rf230bb/rf230bb.c:2263: Medium: crypt
+contiki/cpu/avr/radio/rf230bb/rf230bb.c:2274: Medium: crypt
+Standard random number generators should not be used to 
+generate randomness used for security reasons.  For security sensitive 
+randomness a crytographic randomness generator that provides sufficient
+entropy should be used.
+
+contiki/cpu/mc1322x/tests/flasher.c:57: Medium: getc
+contiki/cpu/mc1322x/tests/flasher.c:163: Medium: getc
+contiki/cpu/mc1322x/tests/flasher.c:170: Medium: getc
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+contiki/cpu/mc1322x/tools/bin2macbin.pl:80: Medium: system
+contiki/cpu/mc1322x/tools/burn-mac.pl:66: Medium: system
+contiki/cpu/mc1322x/tools/mc1322x-load.pl:91: Medium: system
+contiki/cpu/mc1322x/tools/test-grid/burn-macs.pl:50: Medium: system
+contiki/cpu/mc1322x/tools/test-grid/erase-all.pl:16: Medium: system
+contiki/cpu/mc1322x/tools/test-grid/load-all.pl:17: Medium: system
+contiki/cpu/mc1322x/tools/test-grid/open-terms.pl:46: Medium: system
+contiki/cpu/mc1322x/tools/test-grid/reset-all.pl:16: Medium: system
+When using system, it is important to be sure that the string being used does not contain relative path elements (../ for example), or a null, which may cause underlying C calls to behave strangely. It is also imperative
+to insure the string has no characters that may be interpreted by the shell, possibly allowing arbitrary commands to be run
+
+contiki/cpu/mc1322x/tools/mc1322x-load.c:205: Medium: stat
+A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.  This is
+the first line where a check has occured.
+The following line(s) contain uses that may match up with this check:
+209 (open)
+
+contiki/cpu/mc1322x/tools/mc1322x-load.c:256: Medium: stat
+A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.  This is
+the first line where a check has occured.
+The following line(s) contain uses that may match up with this check:
+260 (open)
+
+contiki/cpu/mc1322x/tools/mc1322x-load.pl:124: Medium: open
+contiki/cpu/mc1322x/tools/test-grid/open-terms.pl:21: Medium: open
+The filename argument of open should be carefully checked if it is being created with any user-supplied string as a compontent of it. Strings should be checked for occurences of path backtracking/relative path components (../ as an example), or nulls, which may cause the underlying C call to interpret the filename to open differently than expected. It is also important to make sure that the final filename does not end in a "|", as this will cause the path to be executed.
+
+contiki/cpu/native/dev/eeprom.c:92: Medium: tmpfile
+Many calls for generating temporary file names are 
+insecure (susceptible to race conditions).  Use a securely generated file
+name, for example, by pulling 64 bits of randomness from /dev/random, base 
+64 encoding it and using that as a file suffix.
+
+contiki/cpu/native/rtimer-arch.c:61: Medium: signal
+contiki/cpu/native/rtimer-arch.c:69: Medium: signal
+When setting signal handlers, do not use the same function to handle multiple signals. There exists the possibility a race condition will result if 2 or more different signals are sent to the process at nearly the same time. Also, when writing signal handlers, it is best to do as little as possible in them. The best strategy is to use the signal handler to set a flag, that another part of the program tests and performs the appropriate action(s) when it is set.
+See also: http://razor.bindview.com/publish/papers/signals.txt
+
+Total lines analyzed: 264461
+Total time 0.253252 seconds
+1044260 lines per second

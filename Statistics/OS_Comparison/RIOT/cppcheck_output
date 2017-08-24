@@ -1,0 +1,7 @@
+[RIOT/Makefile] -> [RIOT/Makefile]: (error) syntax error
+[RIOT/README.md:105]: (error) Invalid number of character '(' when no macros are defined.
+[RIOT/Vagrantfile:21]: (error) syntax error
+[RIOT/cpu/x86/x86_pci.c:222]: (error) Common realloc mistake: 'known_pci_devices' nulled but not freed upon failure
+[RIOT/sys/quad_math/qdivrem.c:83]: (error) Division by zero.
+[RIOT/tests/ssp/main.c:33]: (error) Buffer is accessed out of bounds: buf
+[RIOT/uncrustify-riot.cfg:50]: (error) Invalid number of character '{' when no macros are defined.

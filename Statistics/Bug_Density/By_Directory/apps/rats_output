@@ -1,0 +1,326 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+Analyzing apps//about/about-dsc.c
+Analyzing apps//about/about.c
+Analyzing apps//antelope/antelope.c
+Analyzing apps//antelope/aql-adt.c
+Analyzing apps//antelope/aql-exec.c
+Analyzing apps//antelope/aql-lexer.c
+Analyzing apps//antelope/aql-parser.c
+Analyzing apps//antelope/index-inline.c
+Analyzing apps//antelope/index-maxheap.c
+Analyzing apps//antelope/index-memhash.c
+Analyzing apps//antelope/index.c
+Analyzing apps//antelope/lvm.c
+Analyzing apps//antelope/relation.c
+Analyzing apps//antelope/result.c
+Analyzing apps//antelope/storage-cfs.c
+Analyzing apps//at-master/at-master.c
+Analyzing apps//calc/calc-dsc.c
+Analyzing apps//calc/calc.c
+Analyzing apps//cmdd/cmdd.c
+Analyzing apps//codeprop/codeprop-tmp.c
+Analyzing apps//codeprop/codeprop.c
+Analyzing apps//codeprop/tcp_loader.c
+Analyzing apps//codeprop/tcp_loader2.c
+Analyzing apps//collect-view/collect-view-sky.c
+Analyzing apps//collect-view/collect-view-template.c
+Analyzing apps//collect-view/collect-view-z1.c
+Analyzing apps//collect-view/collect-view.c
+Analyzing apps//dhcp/dhcp-dsc.c
+Analyzing apps//dhcp/dhcp.c
+Analyzing apps//directory/directory-dsc.c
+Analyzing apps//directory/directory.c
+Analyzing apps//email/email-dsc.c
+Analyzing apps//email/email.c
+Analyzing apps//email/smtp-socket.c
+Analyzing apps//email/smtp-strings.c
+Analyzing apps//er-coap/er-coap-block1.c
+Analyzing apps//er-coap/er-coap-engine.c
+Analyzing apps//er-coap/er-coap-observe-client.c
+Analyzing apps//er-coap/er-coap-observe.c
+Analyzing apps//er-coap/er-coap-res-well-known-core.c
+Analyzing apps//er-coap/er-coap-separate.c
+Analyzing apps//er-coap/er-coap-transactions.c
+Analyzing apps//er-coap/er-coap.c
+Analyzing apps//ftp/ftp-dsc.c
+Analyzing apps//ftp/ftp.c
+Analyzing apps//ftp/ftpc.c
+Analyzing apps//http-post-auth/http-post-auth.c
+Analyzing apps//httpd-ws/httpd-ws.c
+Analyzing apps//ipso-objects/ipso-button.c
+Analyzing apps//ipso-objects/ipso-leds-control.c
+Analyzing apps//ipso-objects/ipso-light-control.c
+Analyzing apps//ipso-objects/ipso-objects.c
+Analyzing apps//ipso-objects/ipso-temperature.c
+Analyzing apps//irc/irc-dsc.c
+Analyzing apps//irc/irc.c
+Analyzing apps//irc/ircc-strings.c
+Analyzing apps//irc/ircc.c
+Analyzing apps//json/jsonparse.c
+Analyzing apps//json/jsontree.c
+Analyzing apps//mqtt/mqtt.c
+Analyzing apps//netconf/netconf-dsc.c
+Analyzing apps//netconf/netconf.c
+Analyzing apps//oma-lwm2m/lwm2m-device.c
+Analyzing apps//oma-lwm2m/lwm2m-engine.c
+Analyzing apps//oma-lwm2m/lwm2m-json.c
+Analyzing apps//oma-lwm2m/lwm2m-object.c
+Analyzing apps//oma-lwm2m/lwm2m-plain-text.c
+Analyzing apps//oma-lwm2m/lwm2m-security.c
+Analyzing apps//oma-lwm2m/lwm2m-server.c
+Analyzing apps//oma-lwm2m/oma-tlv-reader.c
+Analyzing apps//oma-lwm2m/oma-tlv-writer.c
+Analyzing apps//oma-lwm2m/oma-tlv.c
+Analyzing apps//orchestra/orchestra-rule-default-common.c
+Analyzing apps//orchestra/orchestra-rule-eb-per-time-source.c
+Analyzing apps//orchestra/orchestra-rule-unicast-per-neighbor-rpl-ns.c
+Analyzing apps//orchestra/orchestra-rule-unicast-per-neighbor-rpl-storing.c
+Analyzing apps//orchestra/orchestra.c
+Analyzing apps//ping6/ping6.c
+Analyzing apps//powertrace/powertrace.c
+Analyzing apps//process-list/process-list-dsc.c
+Analyzing apps//process-list/process-list.c
+Analyzing apps//program-handler/program-handler.c
+Analyzing apps//rest-engine/rest-engine.c
+Analyzing apps//serial-shell/serial-shell.c
+Analyzing apps//servreg-hack/servreg-hack.c
+Analyzing apps//shell/gui-shell.c
+Analyzing apps//shell/shell-base64.c
+Analyzing apps//shell/shell-blink.c
+Analyzing apps//shell/shell-coffee.c
+Analyzing apps//shell/shell-collect-view.c
+Analyzing apps//shell/shell-crc.c
+Analyzing apps//shell/shell-download.c
+Analyzing apps//shell/shell-dsc.c
+Analyzing apps//shell/shell-exec.c
+Analyzing apps//shell/shell-file.c
+Analyzing apps//shell/shell-httpd.c
+Analyzing apps//shell/shell-irc.c
+Analyzing apps//shell/shell-memdebug.c
+Analyzing apps//shell/shell-netperf.c
+Analyzing apps//shell/shell-netstat.c
+Analyzing apps//shell/shell-ping.c
+Analyzing apps//shell/shell-power.c
+Analyzing apps//shell/shell-powertrace.c
+Analyzing apps//shell/shell-profile.c
+Analyzing apps//shell/shell-ps.c
+Analyzing apps//shell/shell-reboot.c
+Analyzing apps//shell/shell-rime-debug-runicast.c
+Analyzing apps//shell/shell-rime-debug.c
+Analyzing apps//shell/shell-rime-neighbors.c
+Analyzing apps//shell/shell-rime-netcmd.c
+Analyzing apps//shell/shell-rime-ping.c
+Analyzing apps//shell/shell-rime-sendcmd.c
+Analyzing apps//shell/shell-rime-sniff.c
+Analyzing apps//shell/shell-rime-unicast.c
+Analyzing apps//shell/shell-rime.c
+Analyzing apps//shell/shell-rsh.c
+Analyzing apps//shell/shell-run.c
+Analyzing apps//shell/shell-sendtest.c
+Analyzing apps//shell/shell-sky.c
+Analyzing apps//shell/shell-tcpsend.c
+Analyzing apps//shell/shell-text.c
+Analyzing apps//shell/shell-time.c
+Analyzing apps//shell/shell-udpsend.c
+Analyzing apps//shell/shell-vars.c
+Analyzing apps//shell/shell-wget.c
+Analyzing apps//shell/shell.c
+Analyzing apps//slip-cmd/cmd.c
+Analyzing apps//slip-cmd/packetutils.c
+Analyzing apps//telnet/simpletelnet.c
+Analyzing apps//telnet/telnet-dsc.c
+Analyzing apps//telnet/telnet.c
+Analyzing apps//telnetd/telnetd-dsc.c
+Analyzing apps//telnetd/telnetd-gui.c
+Analyzing apps//telnetd/telnetd.c
+Analyzing apps//unit-test/example-test.c
+Analyzing apps//unit-test/unit-test.c
+Analyzing apps//webbrowser/html-strings.c
+Analyzing apps//webbrowser/htmlparser.c
+Analyzing apps//webbrowser/http-strings.c
+Analyzing apps//webbrowser/http-user-agent-string.c
+Analyzing apps//webbrowser/webclient.c
+Analyzing apps//webbrowser/www-dsc.c
+Analyzing apps//webbrowser/www.c
+Analyzing apps//webserver/http-strings.c
+Analyzing apps//webserver/httpd-cfs.c
+Analyzing apps//webserver/httpd-cgi.c
+Analyzing apps//webserver/httpd-fs.c
+Analyzing apps//webserver/httpd-fsdata.c
+Analyzing apps//webserver/httpd.c
+Analyzing apps//webserver/urlconv.c
+Analyzing apps//webserver/webserver-dsc.c
+Analyzing apps//webserver/webserver-nogui.c
+Analyzing apps//webserver/webserver.c
+Analyzing apps//webserver-nano/httpd-cfs.c
+Analyzing apps//webserver-nano/httpd-cgi.c
+Analyzing apps//webserver-nano/httpd-fs.c
+Analyzing apps//webserver-nano/httpd-fsdata.c
+Analyzing apps//webserver-nano/httpd.c
+Analyzing apps//webserver-nano/urlconv.c
+Analyzing apps//webserver-nano/webserver-dsc.c
+Analyzing apps//webserver-nano/webserver-nogui.c
+Analyzing apps//webserver-nano/webserver.c
+apps//about/about.c:81: High: strcpy
+apps//antelope/aql-adt.c:115: High: strcpy
+apps//antelope/storage-cfs.c:74: High: strcpy
+apps//antelope/storage-cfs.c:385: High: strcpy
+apps//directory/directory.c:191: High: strcpy
+apps//directory/directory.c:217: High: strcpy
+apps//ftp/ftpc.c:293: High: strcpy
+apps//http-post-auth/http-post-auth.c:159: High: strcpy
+apps//shell/shell-rime-netcmd.c:128: High: strcpy
+apps//shell/shell-rime-sendcmd.c:132: High: strcpy
+apps//telnet/simpletelnet.c:232: High: strcpy
+apps//webbrowser/htmlparser.c:431: High: strcpy
+apps//webbrowser/www.c:632: High: strcpy
+apps//webbrowser/www.c:634: High: strcpy
+apps//webbrowser/www.c:710: High: strcpy
+apps//webbrowser/www.c:713: High: strcpy
+apps//webbrowser/www.c:787: High: strcpy
+apps//webbrowser/www.c:801: High: strcpy
+apps//webbrowser/www.c:817: High: strcpy
+apps//webbrowser/www.c:818: High: strcpy
+apps//webbrowser/www.c:925: High: strcpy
+apps//webbrowser/www.c:961: High: strcpy
+apps//webserver/httpd.c:225: High: strcpy
+apps//webserver-nano/httpd-cgi.c:147: High: strcpy
+apps//webserver-nano/httpd-cgi.c:154: High: strcpy
+apps//webserver-nano/urlconv.c:142: High: strcpy
+Check to be sure that argument 2 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+apps//antelope/aql-exec.c:194: High: fixed size local buffer
+apps//antelope/aql-parser.c:725: High: fixed size local buffer
+apps//antelope/index-inline.c:88: High: fixed size local buffer
+apps//antelope/index-maxheap.c:497: High: fixed size local buffer
+apps//antelope/index-maxheap.c:498: High: fixed size local buffer
+apps//antelope/index-maxheap.c:599: High: fixed size local buffer
+apps//antelope/lvm.c:72: High: fixed size local buffer
+apps//antelope/lvm.c:826: High: fixed size local buffer
+apps//antelope/relation.c:479: High: fixed size local buffer
+apps//antelope/storage-cfs.c:52: High: fixed size local buffer
+apps//antelope/storage-cfs.c:58: High: fixed size local buffer
+apps//antelope/storage-cfs.c:59: High: fixed size local buffer
+apps//antelope/storage-cfs.c:81: High: fixed size local buffer
+apps//antelope/storage-cfs.c:296: High: fixed size local buffer
+apps//antelope/storage-cfs.c:336: High: fixed size local buffer
+apps//antelope/storage-cfs.c:372: High: fixed size local buffer
+apps//antelope/storage-cfs.c:449: High: fixed size local buffer
+apps//cmdd/cmdd.c:9: High: fixed size local buffer
+apps//codeprop/tcp_loader.c:95: High: fixed size local buffer
+apps//codeprop/tcp_loader2.c:104: High: fixed size local buffer
+apps//directory/directory.c:174: High: fixed size local buffer
+apps//directory/directory.c:201: High: fixed size local buffer
+apps//email/smtp-socket.c:47: High: fixed size local buffer
+apps//er-coap/er-coap-observe.c:196: High: fixed size local buffer
+apps//er-coap/er-coap-observe.c:289: High: fixed size local buffer
+apps//ftp/ftpc.c:57: High: fixed size local buffer
+apps//ftp/ftpc.c:99: High: fixed size local buffer
+apps//ftp/ftpc.c:104: High: fixed size local buffer
+apps//ftp/ftpc.c:111: High: fixed size local buffer
+apps//http-post-auth/http-post-auth.c:57: High: fixed size local buffer
+apps//http-post-auth/http-post-auth.c:58: High: fixed size local buffer
+apps//http-post-auth/http-post-auth.c:59: High: fixed size local buffer
+apps//json/jsontree.c:84: High: fixed size local buffer
+apps//oma-lwm2m/lwm2m-engine.c:403: High: fixed size local buffer
+apps//process-list/process-list.c:49: High: fixed size local buffer
+apps//program-handler/program-handler.c:187: High: fixed size local buffer
+apps//shell/shell-download.c:137: High: fixed size local buffer
+apps//shell/shell-file.c:82: High: fixed size local buffer
+apps//shell/shell-file.c:193: High: fixed size local buffer
+apps//shell/shell-file.c:196: High: fixed size local buffer
+apps//shell/shell-httpd.c:80: High: fixed size local buffer
+apps//shell/shell-irc.c:66: High: fixed size local buffer
+apps//shell/shell-memdebug.c:98: High: fixed size local buffer
+apps//shell/shell-netperf.c:523: High: fixed size local buffer
+apps//shell/shell-netstat.c:112: High: fixed size local buffer
+apps//shell/shell-power.c:139: High: fixed size local buffer
+apps//shell/shell-power.c:201: High: fixed size local buffer
+apps//shell/shell-powertrace.c:53: High: fixed size local buffer
+apps//shell/shell-profile.c:59: High: fixed size local buffer
+apps//shell/shell-ps.c:60: High: fixed size local buffer
+apps//shell/shell-rime-debug-runicast.c:81: High: fixed size local buffer
+apps//shell/shell-rime-debug.c:145: High: fixed size local buffer
+apps//shell/shell-rime-netcmd.c:72: High: fixed size local buffer
+apps//shell/shell-rime-netcmd.c:120: High: fixed size local buffer
+apps//shell/shell-rime-ping.c:72: High: fixed size local buffer
+apps//shell/shell-rime-ping.c:128: High: fixed size local buffer
+apps//shell/shell-rime-sendcmd.c:61: High: fixed size local buffer
+apps//shell/shell-rime-sendcmd.c:100: High: fixed size local buffer
+apps//shell/shell-rime.c:216: High: fixed size local buffer
+apps//shell/shell-rsh.c:71: High: fixed size local buffer
+apps//shell/shell-sendtest.c:70: High: fixed size local buffer
+apps//shell/shell-sendtest.c:122: High: fixed size local buffer
+apps//shell/shell-sky.c:186: High: fixed size local buffer
+apps//shell/shell-sky.c:267: High: fixed size local buffer
+apps//shell/shell-tcpsend.c:68: High: fixed size local buffer
+apps//shell/shell-text.c:87: High: fixed size local buffer
+apps//shell/shell-text.c:132: High: fixed size local buffer
+apps//shell/shell-text.c:183: High: fixed size local buffer
+apps//shell/shell-time.c:160: High: fixed size local buffer
+apps//shell/shell-time.c:205: High: fixed size local buffer
+apps//shell/shell-time.c:287: High: fixed size local buffer
+apps//shell/shell-vars.c:93: High: fixed size local buffer
+apps//shell/shell-wget.c:64: High: fixed size local buffer
+apps//telnetd/telnetd.c:70: High: fixed size local buffer
+apps//telnetd/telnetd.c:102: High: fixed size local buffer
+apps//telnetd/telnetd.c:176: High: fixed size local buffer
+apps//telnetd/telnetd.c:276: High: fixed size local buffer
+apps//webbrowser/htmlparser.c:145: High: fixed size local buffer
+apps//webbrowser/htmlparser.c:147: High: fixed size local buffer
+apps//webbrowser/htmlparser.c:149: High: fixed size local buffer
+apps//webbrowser/htmlparser.c:153: High: fixed size local buffer
+apps//webbrowser/htmlparser.c:155: High: fixed size local buffer
+apps//webbrowser/htmlparser.c:159: High: fixed size local buffer
+apps//webbrowser/htmlparser.c:161: High: fixed size local buffer
+apps//webbrowser/htmlparser.c:162: High: fixed size local buffer
+apps//webbrowser/webclient.c:65: High: fixed size local buffer
+apps//webbrowser/webclient.c:66: High: fixed size local buffer
+apps//webbrowser/webclient.c:70: High: fixed size local buffer
+apps//webbrowser/webclient.c:73: High: fixed size local buffer
+apps//webbrowser/www.c:130: High: fixed size local buffer
+apps//webbrowser/www.c:137: High: fixed size local buffer
+apps//webbrowser/www.c:150: High: fixed size local buffer
+apps//webbrowser/www.c:157: High: fixed size local buffer
+apps//webbrowser/www.c:313: High: fixed size local buffer
+apps//webserver/httpd-cgi.c:159: High: fixed size local buffer
+apps//webserver/httpd-cgi.c:211: High: fixed size local buffer
+apps//webserver/webserver-nogui.c:71: High: fixed size local buffer
+apps//webserver/webserver-nogui.c:76: High: fixed size local buffer
+apps//webserver-nano/httpd-cgi.c:213: High: fixed size local buffer
+apps//webserver-nano/httpd-cgi.c:293: High: fixed size local buffer
+apps//webserver-nano/httpd-cgi.c:362: High: fixed size local buffer
+apps//webserver-nano/httpd-cgi.c:414: High: fixed size local buffer
+apps//webserver-nano/httpd.c:177: High: fixed size local buffer
+apps//webserver-nano/httpd.c:390: High: fixed size local buffer
+apps//webserver-nano/webserver-nogui.c:69: High: fixed size local buffer
+apps//webserver-nano/webserver-nogui.c:74: High: fixed size local buffer
+apps//webserver-nano/webserver-nogui.c:78: High: fixed size local buffer
+Extra care should be taken to ensure that character arrays that are allocated
+on the stack are used safely.  They are prime targets for buffer overflow
+attacks.
+
+apps//antelope/storage-cfs.c:75: High: strcat
+Check to be sure that argument 2 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+apps//ping6/ping6.c:92: High: scanf
+apps//ping6/ping6.c:99: High: scanf
+Check to be sure that the format string passed as argument 2 to this function
+call does not come from an untrusted source that could have added formatting
+characters that the code is not prepared to handle.  Additionally, the format
+string could contain `%s' without precision that could result in a buffer
+overflow.
+
+apps//oma-lwm2m/lwm2m-engine.c:1028: Medium: read
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+Total lines analyzed: 42428
+Total time 0.032901 seconds
+1289565 lines per second

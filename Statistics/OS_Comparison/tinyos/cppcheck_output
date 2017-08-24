@@ -1,0 +1,22 @@
+[tinyos-main/Makefile.include:9]: (error) Syntax Error: AST broken, ternary operator lacks ':'.
+[tinyos-main/README.md:71]: (error) Invalid number of character '(' when no macros are defined.
+[tinyos-main/README.tinyos:27]: (error) syntax error
+[tinyos-main/apps/BaseStation15.4/seriallisten15-4.c:113]: (error) Expression 'packet[i++]<<8|packet[i++]' depends on order of evaluation of side effects
+[tinyos-main/release-notes.txt:10]: (error) syntax error
+[tinyos-main/tools/platforms/msp430/cppbsl/src/Bsl.cc:187]: (error) Resource leak: readFD
+[tinyos-main/tools/platforms/msp430/cppbsl/src/Serial.cc:409]: (error) Uninitialized variable: r
+[tinyos-main/tools/tinyos/c/blip/lib6lowpan/tests/test_lowpan_unpack_headers.c:41]: (error) Resource leak: fp
+[tinyos-main/tools/tinyos/c/blip/lib6lowpan/trace/compress.c:31]: (error) Memory leak: rv
+[tinyos-main/tools/tinyos/c/coap/examples/tiny.c:39]: (error) Uninitialized variable: ls
+[tinyos-main/tools/tinyos/c/coap/net.c:245]: (error) Memory leak: c
+[tinyos-main/tools/tinyos/c/coap/net.c:799]: (error) Uninitialized variable: dst
+[tinyos-main/tos/chips/cortex/m3/sam3/u/usb/usb/device/core/USBD_OTGHS.c] -> [tinyos-main/tos/chips/cortex/m3/sam3/u/usb/usb/device/core/USBD_OTGHS.c]: (error) syntax error
+[tinyos-main/tos/chips/cortex/m3/sam3/u/usb/usb/device/core/USBD_UDP.c] -> [tinyos-main/tos/chips/cortex/m3/sam3/u/usb/usb/device/core/USBD_UDP.c]: (error) syntax error
+[tinyos-main/tos/chips/cortex/m3/sam3/u/usb/usb/device/core/USBD_UDPHS.c] -> [tinyos-main/tos/chips/cortex/m3/sam3/u/usb/usb/device/core/USBD_UDPHS.c]: (error) syntax error
+[tinyos-main/tos/chips/msp432/driverlib/interrupt.c] -> [tinyos-main/tos/chips/msp432/driverlib/interrupt.c]: (error) syntax error
+[tinyos-main/tos/lib/tossim/csma.c:71]: (error) #endif without #if
+[tinyos-main/tos/lib/tossim/sim_log.c:259]: (error) va_list 'args' was opened but not closed by va_end().
+[tinyos-main/tos/lib/tossim/sim_log.c:274]: (error) va_list 'args' was opened but not closed by va_end().
+[tinyos-main/tos/lib/tossim/sim_log.c:288]: (error) va_list 'args' was opened but not closed by va_end().
+[tinyos-main/tos/lib/tossim/sim_log.c:302]: (error) va_list 'args' was opened but not closed by va_end().
+[tinyos-main/tos/lib/tossim/sim_noise.c:440]: (error) Array 'noiseData[node_id].key[16]' accessed at index 19, which is out of bounds.

@@ -1,0 +1,34 @@
+[platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '{' when no macros are defined.
+[platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '{' when these macros are defined: 'COFFEE_FILES'.
+[platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '{' when these macros are defined: 'HTTPD_FS_STATISTICS'.
+[platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '{' when these macros are defined: 'HTTPD_FS_STATISTICS;HTTPD_FS_STATISTICS=1'.
+[platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '{' when these macros are defined: 'HTTPD_FS_STATISTICS;HTTPD_FS_STATISTICS=2'.
+[platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:379]: (error) Invalid number of character '{' when these macros are defined: 'RF230BB'.
+[platform/avr-raven/contiki-conf.h:357]: (error) No header in #include
+[platform/avr-ravenusb/contiki-raven-main.c:613]: (error) Uninitialized variable: lastprint
+[platform/cooja/testapps/testuaodv.c:75]: (error) printf format string requires 8 parameters but only 2 are given.
+[platform/cooja/testapps/testuaodv.c:78]: (error) printf format string requires 8 parameters but only 2 are given.
+[platform/cooja/testapps/testuaodv.c:87]: (error) printf format string requires 5 parameters but only 2 are given.
+[platform/exp5438/clock.c:159]: (error) failed to evaluate #if condition
+[platform/exp5438/contiki-conf.h:7]: (error) No header in #include
+[platform/exp5438/contiki-conf.h:210]: (error) No header in #include
+[platform/exp5438/flash.c:109]: (error) Uninitialized variable: r
+[platform/exp5438/flash.c:134]: (error) Uninitialized variable: r
+[platform/galileo/net/eth-conf.c:115]: (error) printf format string requires 4 parameters but only 1 is given.
+[platform/galileo/net/eth-conf.c:116]: (error) printf format string requires 4 parameters but only 1 is given.
+[platform/galileo/net/eth-conf.c:117]: (error) printf format string requires 4 parameters but only 1 is given.
+[platform/galileo/net/eth-conf.c:119]: (error) printf format string requires 4 parameters but only 1 is given.
+[platform/mbxxx/board.c:405]: (error) Array 'boardList[12]' accessed at index 23, which is out of bounds.
+[platform/minimal-net/contiki-main.c:267]: (error) printf format string requires 4 parameters but only 1 is given.
+[platform/minimal-net/contiki-main.c:275]: (error) printf format string requires 4 parameters but only 1 is given.
+[platform/minimal-net/contiki-main.c:282]: (error) printf format string requires 4 parameters but only 1 is given.
+[platform/nrf52dk/rtt/segger-rtt-printf.c:508]: (error) va_list 'ParamList' was opened but not closed by va_end().
+[platform/openmote-cc2538/contiki-conf.h:55]: (error) No header in #include
+[platform/sky/contiki-conf.h:7]: (error) No header in #include
+[platform/sky/contiki-conf.h:217]: (error) No header in #include
+[platform/srf06-cc26xx/sensortag/hdc-1000-sensor.c:238]: (error) Uninitialized variable: rv
+[platform/stm32nucleo-spirit1/contiki-conf.h:132]: (error) No header in #include
+[platform/wismote/flash.c:82]: (error) Uninitialized variable: r
+[platform/wismote/flash.c:95]: (error) Uninitialized variable: r
+[platform/wismote/contiki-conf.h:191]: (error) No header in #include
+[platform/z1/contiki-conf.h:37]: (error) No header in #include

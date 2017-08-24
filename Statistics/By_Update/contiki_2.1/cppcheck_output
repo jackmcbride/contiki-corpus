@@ -1,0 +1,19 @@
+[contiki-2.1/README:2]: (error) syntax error
+[contiki-2.1/core/dev/cc2420.c:588]: (error) Expression 'h=h+=step' depends on order of evaluation of side effects
+[contiki-2.1/core/dev/cc2420.c:593]: (error) Expression 'h=h+=step' depends on order of evaluation of side effects
+[contiki-2.1/core/lib/malloc.c:385]: (error) Array 'sizes[32]' accessed at index 9998, which is out of bounds.
+[contiki-2.1/core/lib/malloc.c:386]: (error) Array 'sizes[32]' accessed at index 9998, which is out of bounds.
+[contiki-2.1/cpu/6502/lib/config.c:73]: (error) fprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.1/cpu/6502/lib/config.c:74]: (error) fprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.1/cpu/6502/lib/config.c:75]: (error) fprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.1/cpu/6502/lib/config.c:76]: (error) fprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.1/cpu/at91sam7s/usb/usb-proto.c:175]: (error) syntax error
+[contiki-2.1/cpu/z80/loader/mef.c:101]: (error) Expression '*offset++=(char)((reloc.data+(u16_t)offset)&255)' depends on order of evaluation of side effects
+[contiki-2.1/cpu/z80/uip_arch.c] -> [contiki-2.1/cpu/z80/uip_arch.c]: (error) syntax error
+[contiki-2.1/platform/cc2420dbk/gateway.c:130]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.1/platform/cooja/testapps/testuaodv.c:77]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.1/platform/cooja/testapps/testuaodv.c:80]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.1/platform/cooja/testapps/testuaodv.c:89]: (error) printf format string requires 5 parameters but only 2 are given.
+[contiki-2.1/platform/minimal-net/contiki-main.c:69]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.1/platform/minimal-net/contiki-main.c:73]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.1/platform/minimal-net/contiki-main.c:77]: (error) printf format string requires 4 parameters but only 1 is given.

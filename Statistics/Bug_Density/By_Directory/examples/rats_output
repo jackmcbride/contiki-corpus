@@ -1,0 +1,455 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+Analyzing examples//antelope/netdb/netdb-client.c
+Analyzing examples//antelope/netdb/netdb-server.c
+Analyzing examples//antelope/shell/shell-db.c
+Analyzing examples//avr-rss2/AES128HW_test/AES128HW_test.c
+Analyzing examples//avr-rss2/avr_radio_power/avr_radio_power.c
+Analyzing examples//avr-rss2/hello-sensors/hello-sensors.c
+Analyzing examples//avr-rss2/ipv6/dc-rpl-coap/coap-client.c
+Analyzing examples//avr-rss2/ipv6/dc-rpl-coap/coap-server.c
+Analyzing examples//avr-rss2/ipv6/dc-rpl-coap/dev/dc-hw-sensor.c
+Analyzing examples//avr-rss2/ipv6/dc-rpl-coap/dev/dc-status-sensor.c
+Analyzing examples//avr-rss2/ipv6/dc-rpl-coap/dev/dc-vdc-sensor.c
+Analyzing examples//avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-co2.c
+Analyzing examples//avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-hwcfg.c
+Analyzing examples//avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-status-obs.c
+Analyzing examples//avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-vdc.c
+Analyzing examples//avr-rss2/ipv6/rpl-border-router/border-router.c
+Analyzing examples//avr-rss2/ipv6/rpl-border-router/enc28j60-ip64-driver.c
+Analyzing examples//avr-rss2/ipv6/rpl-border-router/eth-bridge.c
+Analyzing examples//avr-rss2/ipv6/rpl-border-router/httpd-simple.c
+Analyzing examples//avr-rss2/ipv6/rpl-udp-report/report.c
+Analyzing examples//avr-rss2/ipv6/rpl-udp-report/sink.c
+Analyzing examples//avr-rss2/ipv6/sensd_client/sensd_client.c
+Analyzing examples//avr-rss2/ipv6/sensd_client/server.c
+Analyzing examples//cc2530dk/blink-hello.c
+Analyzing examples//cc2530dk/border-router/border-router.c
+Analyzing examples//cc2530dk/border-router/slip-bridge.c
+Analyzing examples//cc2530dk/cc2531-usb-demo/cc2531-usb-demo.c
+Analyzing examples//cc2530dk/hello-world.c
+Analyzing examples//cc2530dk/sensors-demo.c
+Analyzing examples//cc2530dk/timer-test.c
+Analyzing examples//cc2530dk/udp-ipv6/client.c
+Analyzing examples//cc2530dk/udp-ipv6/ping6.c
+Analyzing examples//cc2530dk/udp-ipv6/server.c
+Analyzing examples//cc2538-common/crypto/cbc-mac-test.c
+Analyzing examples//cc2538-common/crypto/cbc-test.c
+Analyzing examples//cc2538-common/crypto/ccm-test.c
+Analyzing examples//cc2538-common/crypto/ctr-test.c
+Analyzing examples//cc2538-common/crypto/ecb-test.c
+Analyzing examples//cc2538-common/crypto/gcm-test.c
+Analyzing examples//cc2538-common/crypto/sha256-test.c
+Analyzing examples//cc2538-common/mqtt-demo/mqtt-demo.c
+Analyzing examples//cc2538-common/pka/ecc-ecdh.c
+Analyzing examples//cc2538-common/pka/ecc-sign.c
+Analyzing examples//cc2538-common/pka/ecc-verify.c
+Analyzing examples//cc2538-common/test-pwm.c
+Analyzing examples//cc2538-common/test-uart.c
+Analyzing examples//cc2538-common/timer-test.c
+Analyzing examples//cc2538dk/cc2538-demo.c
+Analyzing examples//cc2538dk/udp-ipv6-echo-server/udp-echo-server.c
+Analyzing examples//cc26xx/cc26xx-demo.c
+Analyzing examples//cc26xx/cc26xx-web-demo/cc26xx-web-demo.c
+Analyzing examples//cc26xx/cc26xx-web-demo/cetic-6lbr-client.c
+Analyzing examples//cc26xx/cc26xx-web-demo/coap-server.c
+Analyzing examples//cc26xx/cc26xx-web-demo/httpd-simple.c
+Analyzing examples//cc26xx/cc26xx-web-demo/mqtt-client.c
+Analyzing examples//cc26xx/cc26xx-web-demo/net-uart.c
+Analyzing examples//cc26xx/cc26xx-web-demo/resources/res-ble-advd.c
+Analyzing examples//cc26xx/cc26xx-web-demo/resources/res-device.c
+Analyzing examples//cc26xx/cc26xx-web-demo/resources/res-leds.c
+Analyzing examples//cc26xx/cc26xx-web-demo/resources/res-net.c
+Analyzing examples//cc26xx/cc26xx-web-demo/resources/res-sensors.c
+Analyzing examples//cc26xx/cc26xx-web-demo/resources/res-toggle-leds.c
+Analyzing examples//cc26xx/very-sleepy-demo/very-sleepy-demo.c
+Analyzing examples//cfs-coffee/example-coffee.c
+Analyzing examples//cfs-coffee/test-cfs.c
+Analyzing examples//cfs-coffee/test-coffee.c
+Analyzing examples//collect/collect-view-shell.c
+Analyzing examples//econotag-ecc-test/econotag-ecc-test.c
+Analyzing examples//econotag-flash-test/econotag-flash-test.c
+Analyzing examples//eeprom-test/eeprom-test.c
+Analyzing examples//email/email-client.c
+Analyzing examples//er-rest-example/er-example-client.c
+Analyzing examples//er-rest-example/er-example-observe-client.c
+Analyzing examples//er-rest-example/er-example-server.c
+Analyzing examples//er-rest-example/er-plugtest-server.c
+Analyzing examples//er-rest-example/resources/res-b1-sep-b2.c
+Analyzing examples//er-rest-example/resources/res-battery.c
+Analyzing examples//er-rest-example/resources/res-chunks.c
+Analyzing examples//er-rest-example/resources/res-event.c
+Analyzing examples//er-rest-example/resources/res-hello.c
+Analyzing examples//er-rest-example/resources/res-leds.c
+Analyzing examples//er-rest-example/resources/res-light.c
+Analyzing examples//er-rest-example/resources/res-mirror.c
+Analyzing examples//er-rest-example/resources/res-plugtest-create1.c
+Analyzing examples//er-rest-example/resources/res-plugtest-create2.c
+Analyzing examples//er-rest-example/resources/res-plugtest-create3.c
+Analyzing examples//er-rest-example/resources/res-plugtest-large-create.c
+Analyzing examples//er-rest-example/resources/res-plugtest-large-update.c
+Analyzing examples//er-rest-example/resources/res-plugtest-large.c
+Analyzing examples//er-rest-example/resources/res-plugtest-links.c
+Analyzing examples//er-rest-example/resources/res-plugtest-locquery.c
+Analyzing examples//er-rest-example/resources/res-plugtest-longpath.c
+Analyzing examples//er-rest-example/resources/res-plugtest-multi.c
+Analyzing examples//er-rest-example/resources/res-plugtest-obs.c
+Analyzing examples//er-rest-example/resources/res-plugtest-path.c
+Analyzing examples//er-rest-example/resources/res-plugtest-query.c
+Analyzing examples//er-rest-example/resources/res-plugtest-separate.c
+Analyzing examples//er-rest-example/resources/res-plugtest-test.c
+Analyzing examples//er-rest-example/resources/res-plugtest-validate.c
+Analyzing examples//er-rest-example/resources/res-push.c
+Analyzing examples//er-rest-example/resources/res-radio.c
+Analyzing examples//er-rest-example/resources/res-separate.c
+Analyzing examples//er-rest-example/resources/res-sht11.c
+Analyzing examples//er-rest-example/resources/res-sub.c
+Analyzing examples//er-rest-example/resources/res-temperature.c
+Analyzing examples//er-rest-example/resources/res-toggle.c
+Analyzing examples//example-shell/example-shell.c
+Analyzing examples//extended-rf-api/extended-rf-api.c
+Analyzing examples//fat/example-fat.c
+Analyzing examples//ftp/ftp-client.c
+Analyzing examples//galileo/gpio-input.c
+Analyzing examples//galileo/gpio-interrupt.c
+Analyzing examples//galileo/gpio-output.c
+Analyzing examples//galileo/i2c-callbacks.c
+Analyzing examples//galileo/i2c-LSM9DS0.c
+Analyzing examples//galileo/print-imr.c
+Analyzing examples//galileo/prot-domain-switch-latency.c
+Analyzing examples//hello-world/hello-world.c
+Analyzing examples//http-socket/http-example.c
+Analyzing examples//ip64-router/ip64-router.c
+Analyzing examples//ipso-objects/example-ipso-objects.c
+Analyzing examples//ipso-objects/example-ipso-temperature.c
+Analyzing examples//ipso-objects/example-server.c
+Analyzing examples//ipso-objects/serial-protocol.c
+Analyzing examples//ipv6/json-ws/json-ws-udp.c
+Analyzing examples//ipv6/json-ws/json-ws.c
+Analyzing examples//ipv6/json-ws/setcosm.py
+Analyzing examples//ipv6/json-ws/websense-sky.c
+Analyzing examples//ipv6/json-ws/websense-z1.c
+Analyzing examples//ipv6/multicast/intermediate.c
+Analyzing examples//ipv6/multicast/root.c
+Analyzing examples//ipv6/multicast/sink.c
+Analyzing examples//ipv6/native-border-router/border-router-cmds.c
+Analyzing examples//ipv6/native-border-router/border-router-rdc.c
+Analyzing examples//ipv6/native-border-router/border-router.c
+Analyzing examples//ipv6/native-border-router/httpd-simple.c
+Analyzing examples//ipv6/native-border-router/slip-config.c
+Analyzing examples//ipv6/native-border-router/slip-dev.c
+Analyzing examples//ipv6/native-border-router/tun-bridge.c
+Analyzing examples//ipv6/rpl-border-router/border-router.c
+Analyzing examples//ipv6/rpl-border-router/httpd-simple.c
+Analyzing examples//ipv6/rpl-border-router/slip-bridge.c
+Analyzing examples//ipv6/rpl-collect/collect-common.c
+Analyzing examples//ipv6/rpl-collect/udp-sender.c
+Analyzing examples//ipv6/rpl-collect/udp-sink.c
+Analyzing examples//ipv6/rpl-tsch/node.c
+Analyzing examples//ipv6/rpl-udp/udp-client.c
+Analyzing examples//ipv6/rpl-udp/udp-server.c
+Analyzing examples//ipv6/simple-udp-rpl/broadcast-example.c
+Analyzing examples//ipv6/simple-udp-rpl/unicast-receiver.c
+Analyzing examples//ipv6/simple-udp-rpl/unicast-sender.c
+Analyzing examples//ipv6/sky-websense/sky-websense.c
+Analyzing examples//ipv6/sky-websense/websense-remote.c
+Analyzing examples//ipv6/sky-websense/wget.c
+Analyzing examples//ipv6/slip-radio/no-framer.c
+Analyzing examples//ipv6/slip-radio/slip-net.c
+Analyzing examples//ipv6/slip-radio/slip-radio-cc2420.c
+Analyzing examples//ipv6/slip-radio/slip-radio-mc1322x.c
+Analyzing examples//ipv6/slip-radio/slip-radio-rf230.c
+Analyzing examples//ipv6/slip-radio/slip-radio-sky-sensors.c
+Analyzing examples//ipv6/slip-radio/slip-radio.c
+Analyzing examples//irc/irc-client.c
+Analyzing examples//irc-80col/irc-client.c
+Analyzing examples//jn516x/dr1175-sensors/node.c
+Analyzing examples//jn516x/rime/node.c
+Analyzing examples//jn516x/rpl/border-router/border-router.c
+Analyzing examples//jn516x/rpl/border-router/slip-bridge.c
+Analyzing examples//jn516x/rpl/coap-dongle-node/dongle-node.c
+Analyzing examples//jn516x/rpl/coap-dr1175-node/dr1175-node.c
+Analyzing examples//jn516x/rpl/coap-dr1199-node/dr1199-node.c
+Analyzing examples//jn516x/rpl/node/node.c
+Analyzing examples//jn516x/rpl/tools/rpl-tools.c
+Analyzing examples//jn516x/tsch/simple-sensor-network/node/node.c
+Analyzing examples//jn516x/tsch/simple-sensor-network/rpl-border-router/border-router.c
+Analyzing examples//jn516x/tsch/simple-sensor-network/rpl-border-router/slip-bridge.c
+Analyzing examples//jn516x/tsch/simple-sensor-network/script/Output-Visualisation.py
+Analyzing examples//jn516x/tsch/tools/rpl-tools.c
+Analyzing examples//jn516x/tsch/tx-power-verification/node/node.c
+Analyzing examples//jn516x/tsch/tx-power-verification/rpl-border-router/rpl-border-router.c
+Analyzing examples//jn516x/tsch/tx-power-verification/rpl-border-router/slip-bridge.c
+Analyzing examples//jn516x/tsch/uart1-test-node/uart1-test-node.c
+Analyzing examples//llsec/ccm-star-tests/encryption/tests.c
+Analyzing examples//llsec/ccm-star-tests/verification/tests.c
+Analyzing examples//mbxxx/acc-sensor/acc-example.c
+Analyzing examples//mbxxx/button/test-button.c
+Analyzing examples//mbxxx/coffee-test/coffee-test.c
+Analyzing examples//mbxxx/mbxxx-shell/mbxxx-shell.c
+Analyzing examples//mbxxx/mbxxx-websense/mbxxx-websense.c
+Analyzing examples//mbxxx/shell-exec/hello-world.c
+Analyzing examples//mbxxx/shell-exec/shell-exec-test.c
+Analyzing examples//mbxxx/telnet-server/telnet-server.c
+Analyzing examples//mbxxx/temperature/temp-sensor.c
+Analyzing examples//mbxxx/udp-ipv6-sleep/udp-client.c
+Analyzing examples//mbxxx/udp-ipv6-sleep/udp-server.c
+Analyzing examples//mbxxx/webserver-ajax/ajax-cgi.c
+Analyzing examples//mbxxx/webserver-ajax/httpd-fs.c
+Analyzing examples//mbxxx/webserver-ajax/httpd-fsdata.c
+Analyzing examples//mbxxx/webserver-ajax/mbxxx-webserver.c
+Analyzing examples//mbxxx/webserver-ajax/symbols.c
+Analyzing examples//multi-threading/multi-threading.c
+Analyzing examples//netperf/netperf-shell.c
+Analyzing examples//nrf52dk/blink-hello/blink-hello.c
+Analyzing examples//nrf52dk/coap-demo/coap-client.c
+Analyzing examples//nrf52dk/coap-demo/coap-server.c
+Analyzing examples//nrf52dk/coap-demo/resources/res-leds.c
+Analyzing examples//nrf52dk/mqtt-demo/mqtt-demo.c
+Analyzing examples//nrf52dk/timer-test/timer-test.c
+Analyzing examples//openmote-cc2538/openmote-demo.c
+Analyzing examples//ping-ipv6/example-ping6.c
+Analyzing examples//powertrace/example-powertrace.c
+Analyzing examples//ravenusbstick/fakeuip.c
+Analyzing examples//ravenusbstick/ravenusbstick.c
+Analyzing examples//rf_environment/rf_environment.c
+Analyzing examples//rime/example-abc.c
+Analyzing examples//rime/example-announcement.c
+Analyzing examples//rime/example-broadcast.c
+Analyzing examples//rime/example-collect.c
+Analyzing examples//rime/example-mesh.c
+Analyzing examples//rime/example-multihop.c
+Analyzing examples//rime/example-neighbors.c
+Analyzing examples//rime/example-polite.c
+Analyzing examples//rime/example-rucb.c
+Analyzing examples//rime/example-rudolph1.c
+Analyzing examples//rime/example-rudolph2.c
+Analyzing examples//rime/example-runicast.c
+Analyzing examples//rime/example-trickle.c
+Analyzing examples//rime/example-unicast.c
+Analyzing examples//rime-tsch/node.c
+Analyzing examples//rssi-scanner/rssi-scanner-cc2420.c
+Analyzing examples//seedeye/powerswitch/remotepowerswitch.c
+Analyzing examples//sensniff/netstack.c
+Analyzing examples//sensniff/sensniff-rdc.c
+Analyzing examples//sensniff/sensniff.c
+Analyzing examples//servreg-hack/example-servreg-client.c
+Analyzing examples//servreg-hack/example-servreg-server.c
+Analyzing examples//settings-example/settings-example.c
+Analyzing examples//sky/radio-test.c
+Analyzing examples//sky/rt-leds.c
+Analyzing examples//sky/sky-collect.c
+Analyzing examples//sky/test-button.c
+Analyzing examples//sky-ip/ajax-cgi.c
+Analyzing examples//sky-ip/httpd-fs.c
+Analyzing examples//sky-ip/httpd-fsdata.c
+Analyzing examples//sky-ip/sky-telnet-server.c
+Analyzing examples//sky-ip/sky-webserver.c
+Analyzing examples//sky-ip/telnet-webserver.c
+Analyzing examples//sky-ip/telnet.c
+Analyzing examples//sky-shell/sky-shell.c
+Analyzing examples//sky-shell/sky-upload.c
+Analyzing examples//sky-shell-exec/hello-world.c
+Analyzing examples//sky-shell-exec/sky-shell-exec.c
+Analyzing examples//sky-shell-webserver/sky-shell-webserver.c
+Analyzing examples//stm32nucleo-spirit1/sensor-demo/sensor-demo.c
+Analyzing examples//tcp-socket/tcp-server.c
+Analyzing examples//telnet-server/telnet-server.c
+Analyzing examples//timers/all-timers.c
+Analyzing examples//trickle-library/trickle-library.c
+Analyzing examples//udp-ipv6/udp-client.c
+Analyzing examples//udp-ipv6/udp-server.c
+Analyzing examples//udp-stream/udp-stream.c
+Analyzing examples//webbrowser/webbrowser.c
+Analyzing examples//webbrowser-80col/webbrowser.c
+Analyzing examples//webserver/webserver-example.c
+Analyzing examples//webserver-ipv6/webserver6.c
+Analyzing examples//webserver-ipv6-raven/webserver6.c
+Analyzing examples//websockets/websocket-example.c
+Analyzing examples//wget/wget.c
+Analyzing examples//zolertia/z1/ipv6/z1-websense/websense-remote.c
+Analyzing examples//zolertia/z1/ipv6/z1-websense/wget.c
+Analyzing examples//zolertia/z1/ipv6/z1-websense/z1-websense.c
+Analyzing examples//zolertia/z1/test-adxl345.c
+Analyzing examples//zolertia/z1/test-battery.c
+Analyzing examples//zolertia/z1/test-light-ziglet.c
+Analyzing examples//zolertia/z1/test-phidgets.c
+Analyzing examples//zolertia/z1/test-potent.c
+Analyzing examples//zolertia/z1/test-reed-sensor.c
+Analyzing examples//zolertia/z1/test-relay-phidget.c
+Analyzing examples//zolertia/z1/test-sht11.c
+Analyzing examples//zolertia/z1/test-sht25.c
+Analyzing examples//zolertia/z1/test-tlc59116.c
+Analyzing examples//zolertia/z1/test-tmp102.c
+Analyzing examples//zolertia/zoul/at-test/at-master-test.c
+Analyzing examples//zolertia/zoul/cc1200-demo/cc1200-demo.c
+Analyzing examples//zolertia/zoul/orion/client/client.c
+Analyzing examples//zolertia/zoul/orion/client/ifttt-client.c
+Analyzing examples//zolertia/zoul/orion/ip64-router/httpd-simple.c
+Analyzing examples//zolertia/zoul/orion/ip64-router/ip64-router.c
+Analyzing examples//zolertia/zoul/rev-a/test-power-mgmt.c
+Analyzing examples//zolertia/zoul/rev-b/test-power-mgmt.c
+Analyzing examples//zolertia/zoul/rtcc/test-rtcc.c
+Analyzing examples//zolertia/zoul/test-aac-sensor.c
+Analyzing examples//zolertia/zoul/test-ac-dimmer.c
+Analyzing examples//zolertia/zoul/test-bme280.c
+Analyzing examples//zolertia/zoul/test-bmp085-bmp180.c
+Analyzing examples//zolertia/zoul/test-dht22.c
+Analyzing examples//zolertia/zoul/test-grove-gyro.c
+Analyzing examples//zolertia/zoul/test-grove-light-sensor.c
+Analyzing examples//zolertia/zoul/test-grove-loudness-sensor.c
+Analyzing examples//zolertia/zoul/test-iaq.c
+Analyzing examples//zolertia/zoul/test-lcd.c
+Analyzing examples//zolertia/zoul/test-motion.c
+Analyzing examples//zolertia/zoul/test-pm10-sensor.c
+Analyzing examples//zolertia/zoul/test-relay.c
+Analyzing examples//zolertia/zoul/test-rotation-sensor.c
+Analyzing examples//zolertia/zoul/test-servo.c
+Analyzing examples//zolertia/zoul/test-sht25.c
+Analyzing examples//zolertia/zoul/test-tsl256x.c
+Analyzing examples//zolertia/zoul/test-vac-sensor.c
+Analyzing examples//zolertia/zoul/test-weather-meter.c
+Analyzing examples//zolertia/zoul/test-zonik.c
+Analyzing examples//zolertia/zoul/zoul-demo.c
+examples//antelope/netdb/netdb-client.c:106: High: fixed size local buffer
+examples//antelope/netdb/netdb-server.c:94: High: fixed size local buffer
+examples//antelope/netdb/netdb-server.c:273: High: fixed size local buffer
+examples//avr-rss2/hello-sensors/hello-sensors.c:63: High: fixed size local buffer
+examples//avr-rss2/ipv6/dc-rpl-coap/coap-client.c:342: High: fixed size local buffer
+examples//avr-rss2/ipv6/rpl-border-router/border-router.c:152: High: fixed size local buffer
+examples//avr-rss2/ipv6/rpl-udp-report/report.c:92: High: fixed size local buffer
+examples//cc2538-common/crypto/sha256-test.c:75: High: fixed size local buffer
+examples//cc2538-common/mqtt-demo/mqtt-demo.c:153: High: fixed size local buffer
+examples//cc2538-common/mqtt-demo/mqtt-demo.c:154: High: fixed size local buffer
+examples//cc2538-common/mqtt-demo/mqtt-demo.c:155: High: fixed size local buffer
+examples//cc2538-common/mqtt-demo/mqtt-demo.c:156: High: fixed size local buffer
+examples//cc2538-common/mqtt-demo/mqtt-demo.c:157: High: fixed size local buffer
+examples//cc2538-common/mqtt-demo/mqtt-demo.c:158: High: fixed size local buffer
+examples//cc2538-common/mqtt-demo/mqtt-demo.c:475: High: fixed size local buffer
+examples//cc2538-common/test-uart.c:82: High: fixed size local buffer
+examples//cc26xx/cc26xx-web-demo/cetic-6lbr-client.c:102: High: fixed size local buffer
+examples//cc26xx/cc26xx-web-demo/httpd-simple.c:258: High: fixed size local buffer
+examples//cc26xx/cc26xx-web-demo/httpd-simple.c:259: High: fixed size local buffer
+examples//cc26xx/cc26xx-web-demo/httpd-simple.c:272: High: fixed size local buffer
+examples//cc26xx/cc26xx-web-demo/httpd-simple.c:273: High: fixed size local buffer
+examples//cc26xx/cc26xx-web-demo/httpd-simple.c:456: High: fixed size local buffer
+examples//cc26xx/cc26xx-web-demo/mqtt-client.c:639: High: fixed size local buffer
+examples//cc26xx/cc26xx-web-demo/resources/res-ble-advd.c:57: High: fixed size local buffer
+examples//cc26xx/cc26xx-web-demo/resources/res-net.c:88: High: fixed size local buffer
+examples//cc26xx/very-sleepy-demo/very-sleepy-demo.c:180: High: fixed size local buffer
+examples//cfs-coffee/example-coffee.c:63: High: fixed size local buffer
+examples//cfs-coffee/test-cfs.c:63: High: fixed size local buffer
+examples//cfs-coffee/test-cfs.c:103: High: fixed size local buffer
+examples//cfs-coffee/test-coffee.c:60: High: fixed size local buffer
+examples//cfs-coffee/test-coffee.c:197: High: fixed size local buffer
+examples//cfs-coffee/test-coffee.c:253: High: fixed size local buffer
+examples//er-rest-example/resources/res-plugtest-separate.c:63: High: fixed size local buffer
+examples//er-rest-example/resources/res-separate.c:62: High: fixed size local buffer
+examples//fat/example-fat.c:51: High: fixed size local buffer
+examples//ipso-objects/example-server.c:71: High: fixed size local buffer
+examples//ipv6/json-ws/json-ws-udp.c:119: High: fixed size local buffer
+examples//ipv6/json-ws/json-ws.c:196: High: fixed size local buffer
+examples//ipv6/json-ws/json-ws.c:232: High: fixed size local buffer
+examples//ipv6/json-ws/websense-sky.c:68: High: fixed size local buffer
+examples//ipv6/json-ws/websense-z1.c:66: High: fixed size local buffer
+examples//ipv6/native-border-router/slip-dev.c:106: High: fixed size local buffer
+examples//ipv6/native-border-router/slip-dev.c:179: High: fixed size local buffer
+examples//ipv6/native-border-router/tun-bridge.c:91: High: fixed size local buffer
+examples//ipv6/native-border-router/tun-bridge.c:145: High: fixed size local buffer
+examples//ipv6/rpl-border-router/border-router.c:155: High: fixed size local buffer
+examples//ipv6/rpl-tsch/node.c:182: High: fixed size local buffer
+examples//ipv6/rpl-tsch/node.c:183: High: fixed size local buffer
+examples//ipv6/rpl-udp/udp-client.c:89: High: fixed size local buffer
+examples//ipv6/simple-udp-rpl/unicast-sender.c:122: High: fixed size local buffer
+examples//ipv6/slip-radio/slip-radio-sky-sensors.c:58: High: fixed size local buffer
+examples//jn516x/rime/node.c:104: High: fixed size local buffer
+examples//jn516x/tsch/simple-sensor-network/node/node.c:141: High: fixed size local buffer
+examples//mbxxx/udp-ipv6-sleep/udp-client.c:74: High: fixed size local buffer
+examples//mbxxx/udp-ipv6-sleep/udp-server.c:52: High: fixed size local buffer
+examples//mbxxx/webserver-ajax/ajax-cgi.c:85: High: fixed size local buffer
+examples//mbxxx/webserver-ajax/ajax-cgi.c:119: High: fixed size local buffer
+examples//mbxxx/webserver-ajax/ajax-cgi.c:175: High: fixed size local buffer
+examples//nrf52dk/mqtt-demo/mqtt-demo.c:152: High: fixed size local buffer
+examples//nrf52dk/mqtt-demo/mqtt-demo.c:153: High: fixed size local buffer
+examples//nrf52dk/mqtt-demo/mqtt-demo.c:154: High: fixed size local buffer
+examples//nrf52dk/mqtt-demo/mqtt-demo.c:155: High: fixed size local buffer
+examples//nrf52dk/mqtt-demo/mqtt-demo.c:156: High: fixed size local buffer
+examples//nrf52dk/mqtt-demo/mqtt-demo.c:157: High: fixed size local buffer
+examples//nrf52dk/mqtt-demo/mqtt-demo.c:472: High: fixed size local buffer
+examples//rime/example-announcement.c:67: High: fixed size local buffer
+examples//rime/example-rucb.c:73: High: fixed size local buffer
+examples//rime/example-rudolph1.c:71: High: fixed size local buffer
+examples//rime/example-rudolph2.c:70: High: fixed size local buffer
+examples//settings-example/settings-example.c:54: High: fixed size local buffer
+examples//settings-example/settings-example.c:123: High: fixed size local buffer
+examples//sky-ip/ajax-cgi.c:83: High: fixed size local buffer
+examples//sky-ip/ajax-cgi.c:115: High: fixed size local buffer
+examples//sky-ip/sky-telnet-server.c:61: High: fixed size local buffer
+examples//sky-ip/telnet-webserver.c:61: High: fixed size local buffer
+examples//udp-ipv6/udp-server.c:52: High: fixed size local buffer
+examples//wget/wget.c:67: High: fixed size local buffer
+examples//wget/wget.c:165: High: fixed size local buffer
+examples//zolertia/zoul/at-test/at-master-test.c:189: High: fixed size local buffer
+examples//zolertia/zoul/at-test/at-master-test.c:304: High: fixed size local buffer
+examples//zolertia/zoul/at-test/at-master-test.c:348: High: fixed size local buffer
+examples//zolertia/zoul/at-test/at-master-test.c:401: High: fixed size local buffer
+examples//zolertia/zoul/orion/ip64-router/ip64-router.c:130: High: fixed size local buffer
+examples//zolertia/zoul/test-lcd.c:64: High: fixed size local buffer
+Extra care should be taken to ensure that character arrays that are allocated
+on the stack are used safely.  They are prime targets for buffer overflow
+attacks.
+
+examples//fat/example-fat.c:87: High: printf
+examples//nrf52dk/blink-hello/blink-hello.c:171: High: printf
+Check to be sure that the non-constant format string passed as argument 1 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+examples//ipv6/native-border-router/slip-config.c:76: High: getopt
+Truncate all input strings to a reasonable length 
+before passing them to this function
+
+examples//ipv6/native-border-router/tun-bridge.c:98: High: system
+Argument 1 to this function call should be checked to ensure that it does not
+come from an untrusted source without first verifying that it contains nothing
+dangerous.
+
+examples//ipv6/native-border-router/tun-bridge.c:147: High: strncat
+Consider using strlcat() instead.
+
+examples//ipv6/native-border-router/tun-bridge.c:147: High: strncat
+Check to be sure that argument 1 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+examples//ipv6/native-border-router/tun-bridge.c:175: High: strcpy
+examples//wget/wget.c:177: High: strcpy
+examples//wget/wget.c:185: High: strcpy
+Check to be sure that argument 2 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+examples//zolertia/zoul/at-test/at-master-test.c:429: High: strcat
+examples//zolertia/zoul/orion/client/client.c:105: High: strcat
+examples//zolertia/zoul/orion/client/ifttt-client.c:110: High: strcat
+Check to be sure that argument 2 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+examples//ipv6/native-border-router/tun-bridge.c:218: Medium: signal
+examples//ipv6/native-border-router/tun-bridge.c:219: Medium: signal
+examples//ipv6/native-border-router/tun-bridge.c:220: Medium: signal
+When setting signal handlers, do not use the same function to handle multiple signals. There exists the possibility a race condition will result if 2 or more different signals are sent to the process at nearly the same time. Also, when writing signal handlers, it is best to do as little as possible in them. The best strategy is to use the signal handler to set a flag, that another part of the program tests and performs the appropriate action(s) when it is set.
+See also: http://razor.bindview.com/publish/papers/signals.txt
+
+examples//ipv6/native-border-router/tun-bridge.c:240: Medium: read
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+examples//wget/wget.c:156: Medium: getchar
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+Total lines analyzed: 54526
+Total time 0.090782 seconds
+600625 lines per second

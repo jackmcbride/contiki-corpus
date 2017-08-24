@@ -1,0 +1,22 @@
+[cpu/arm/aducrf101/Common/radioeng.c:1146]: (error) Uninitialized variable: RdLen
+[cpu/arm/aducrf101/Common/radioeng.c:1470]: (error) Uninitialized variable: ucInt0
+[cpu/arm/at91sam7s/startup-SAM7S-arm.c:129]: (error) syntax error
+[cpu/arm/at91sam7s/usb-arch.c:197]: (error) syntax error
+[cpu/arm/stm32f103/usb-arch.c:343]: (error) syntax error
+[cpu/cc2538/cfs-coffee-arch.h:54]: (error) No header in #include
+[cpu/cc253x/stack.c] -> [cpu/cc253x/stack.c]: (error) syntax error
+[cpu/mc1322x/config.c:40]: (error) Uninitialized variable: type
+[cpu/mc1322x/tests/printf.c:93]: (error) Null pointer dereference: np
+[cpu/mc1322x/tests/printf.c:90]: (error) Signed integer overflow for expression '(1<<(bs-1))+1'.
+[cpu/msp430/f1xxx/clock.c:162]: (error) failed to evaluate #if condition
+[cpu/msp430/f5xxx/clock.c:159]: (error) failed to evaluate #if condition
+[cpu/pic32/debug-uart.c:95]: (error) failed to expand 'DEBUG_UART', Wrong number of parameters for macro 'DEBUG_UART'.
+[cpu/pic32/slip-uart.c:93]: (error) failed to expand 'SLIP_UART', Wrong number of parameters for macro 'SLIP_UART'.
+[cpu/stm32w108/hal/micro/cortexm3/nvm.h:253]: (error) failed to evaluate #if condition
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:1169]: (error) Uninitialized variable: k
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:1171]: (error) Uninitialized variable: s
+[cpu/stm32w108/e_stdio/src/small-dtoa.c:1172]: (error) Uninitialized variable: s0
+[cpu/stm32w108/e_stdio/src/small-mprec.c:1356]: (error) Uninitialized variable: p5
+[cpu/stm32w108/e_stdio/src/small-vfsscanf.c:866]: (error) Uninitialized variable: mbslen
+[cpu/stm32w108/hal/micro/cortexm3/board.c:268]: (error) Array 'boardList[7]' accessed at index 13, which is out of bounds.
+[cpu/stm32w108/hal/micro/cortexm3/stm32w108/low-level-init.c] -> [cpu/stm32w108/hal/micro/cortexm3/stm32w108/low-level-init.c]: (error) syntax error

@@ -1,0 +1,126 @@
+Results	Entity	Line	Column	CheckID	Check Name
+Number of Results: 79					
+  cpu					
+    arm					
+      aducrf101					
+        Common					
+          radioeng.c					
+            The left expression of the compound assignment is an uninitialized value. The computed value will also be garbage		1146	16		Assign
+            The left operand of '!=' is a garbage value		1386	20		UndefinedBinaryOperatorResult
+            Value stored to 'Response' is never read		1480	7		DeadStores
+            Pointer arithmetic on non-array variables relies on memory layout, which is dangerous		1527	37		PointerArithm
+            Pointer arithmetic on non-array variables relies on memory layout, which is dangerous		1585	43		PointerArithm
+            Pointer arithmetic on non-array variables relies on memory layout, which is dangerous		1610	37		PointerArithm
+      common					
+        dbg-io					
+          strformat.c					
+            Out of bound memory access (access exceeds upper limit of memory block)		565	16		ArrayBoundV2
+            Out of bound memory access (access exceeds upper limit of memory block)		568	14		ArrayBoundV2
+      stm32l152					
+        crt.c					
+          This statement is never executed		73	8		UnreachableCode
+    mc1322x					
+      lib					
+        i2c.c					
+          Value stored to 'tmp' is never read		219	2		DeadStores
+          Value stored to 'dummy' is never read		308	6		DeadStores
+      tools					
+        mc1322x-load.c					
+          Value stored to 'r' is never read		181	5		DeadStores
+          Value stored to 'r' is never read		216	3		DeadStores
+          Value stored to 'r' is never read		267	7		DeadStores
+          Value stored to 'r' is never read		290	5		DeadStores
+          Value stored to 'r' is never read		291	5		DeadStores
+    rl78					
+      Communication.c					
+        This statement is never executed		634	6		UnreachableCode
+        This statement is never executed		636	20		UnreachableCode
+        This statement is never executed		683	6		UnreachableCode
+        This statement is never executed		686	10		UnreachableCode
+    x86					
+      drivers					
+        legacy_pc					
+          shared-isr.c					
+            Pointer arithmetic on non-array variables relies on memory layout, which is dangerous		44	65		PointerArithm
+            Pointer arithmetic on non-array variables relies on memory layout, which is dangerous		85	7		PointerArithm
+            Pointer arithmetic on non-array variables relies on memory layout, which is dangerous		105	5		PointerArithm
+  lib					
+    fs					
+      fat					
+        ff.c					
+          Branch condition evaluates to a garbage value		1023	8		Branch
+          Function call argument is a pointer to uninitialized value		5005	5		CallAndMessage
+          Value stored to 'part' is never read		5242	2		DeadStores
+          Function call argument is a pointer to uninitialized value		5890	6		CallAndMessage
+    newlib					
+      syscalls.c					
+        Pointer arithmetic on non-array variables relies on memory layout, which is dangerous		79	15		PointerArithm
+        Pointer arithmetic on non-array variables relies on memory layout, which is dangerous		85	12		PointerArithm
+  platform					
+    nrf52dk					
+      rtt					
+        segger-rtt.c					
+          Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119		194	3		strcpy
+          Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119		195	3		strcpy
+          Value stored to 'pBuffer' is never read		410	5		DeadStores
+          Value stored to 'BufferSize' is never read		411	5		DeadStores
+  tools					
+    sky					
+      serialdump.c					
+        conditions of the inner and outer statements are identical		267	12		IdenticalExpr
+    stm32w					
+      serialdump.c					
+        conditions of the inner and outer statements are identical		248	5		IdenticalExpr
+      tapslip6.c					
+        This statement is never executed		206	2		UnreachableCode
+        This statement is never executed		212	8		UnreachableCode
+        This statement is never executed		221	20		UnreachableCode
+        This statement is never executed		244	30		UnreachableCode
+        Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119		279	10		strcpy
+        Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119		280	10		strcpy
+        Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119		288	9		strcpy
+        This statement is never executed		327	8		UnreachableCode
+        This statement is never executed		336	7		UnreachableCode
+        Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119		496	5		strcpy
+        Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119		497	5		strcpy
+        Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119		659	5		strcpy
+        Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119		662	5		strcpy
+    tapslip6.c					
+      Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119		364	3		strcpy
+      Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119		365	3		strcpy
+      Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119		507	2		strcpy
+      Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119		509	2		strcpy
+    tools-utils.c					
+      This statement is never executed		107	12		UnreachableCode
+    tunslip.c					
+      Pointer arithmetic on non-array variables relies on memory layout, which is dangerous		259	17		PointerArithm
+      The left operand of '==' is a garbage value		293	10		UndefinedBinaryOperatorResult
+      This statement is never executed		491	8		UnreachableCode
+      This statement is never executed		499	2		UnreachableCode
+      This statement is never executed		503	4		UnreachableCode
+      This statement is never executed		532	5		UnreachableCode
+      This statement is never executed		562	8		UnreachableCode
+      This statement is never executed		571	11		UnreachableCode
+      Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119		751	3		strcpy
+      Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119		752	3		strcpy
+      Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119		901	2		strcpy
+      Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119		903	2		strcpy
+    tunslip6.c					
+      This statement is never executed		207	8		UnreachableCode
+      This statement is never executed		214	20		UnreachableCode
+      This statement is never executed		251	6		UnreachableCode
+      This statement is never executed		291	8		UnreachableCode
+      This statement is never executed		300	11		UnreachableCode
+      This statement is never executed		303	11		UnreachableCode
+      This statement is never executed		306	11		UnreachableCode
+      Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119		553	3		strcpy
+      Size argument is greater than the free space in the destination buffer		554	3		OutOfBounds
+      Value stored to 'prefix' is never read		724	3		DeadStores
+      Null pointer argument in call to string comparison function		794	10		NewDeleteLeaks
+      Null pointer argument in call to string comparison function		807	10		NewDeleteLeaks
+      Value stored to 'size' is never read		1030	11		DeadStores
+  usr					
+    include					
+      ctype.h					
+        Out of bound memory access (index is tainted)		158	27		ArrayBoundV2
+

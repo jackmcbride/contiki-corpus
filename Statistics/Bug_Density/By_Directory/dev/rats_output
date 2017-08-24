@@ -1,0 +1,27 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+Analyzing dev//bme280/bme280-sensor.c
+Analyzing dev//bme280/bme280.c
+Analyzing dev//cc1200/cc1200-802154g-863-870-fsk-50kbps.c
+Analyzing dev//cc1200/cc1200-868-fsk-1-2kbps.c
+Analyzing dev//cc1200/cc1200.c
+Analyzing dev//cc2420/cc2420.c
+Analyzing dev//cc2520/cc2520.c
+Analyzing dev//disk/mmc/mmc.c
+Analyzing dev//ds2411/ds2411.c
+Analyzing dev//enc28j60/enc28j60-ip64-driver.c
+Analyzing dev//enc28j60/enc28j60.c
+Analyzing dev//sht11/sht11-sensor.c
+Analyzing dev//sht11/sht11.c
+dev//cc1200/cc1200.c:436: Medium: read
+dev//cc1200/cc1200.c:638: Medium: read
+dev//cc1200/cc1200.c:860: Medium: read
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+Total lines analyzed: 7312
+Total time 0.006396 seconds
+1143214 lines per second

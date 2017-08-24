@@ -1,0 +1,34 @@
+[contiki-2.2/README:2]: (error) syntax error
+[contiki-2.2/apps/ftp/ftpc.c:288]: (error) sprintf format string requires 6 parameters but only 3 are given.
+[contiki-2.2/apps/shell/shell-sky.c:251]: (error) Uninitialized variable: newptr
+[contiki-2.2/apps/shell/shell-vars.c:109]: (error) Buffer is accessed out of bounds: numbuf
+[contiki-2.2/backyard/core/dev/cc2420.c:588]: (error) Expression 'h=h+=step' depends on order of evaluation of side effects
+[contiki-2.2/backyard/core/dev/cc2420.c:593]: (error) Expression 'h=h+=step' depends on order of evaluation of side effects
+[contiki-2.2/backyard/platform/sky/client.c:126]: (error) printf format string requires 12 parameters but only 3 are given.
+[contiki-2.2/backyard/platform/sky/dhclient.c:235]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.2/backyard/platform/sky/dhclient.c:237]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.2/backyard/platform/sky/gateway.c:145]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.2/core/lib/malloc.c:385]: (error) Array 'sizes[32]' accessed at index 9998, which is out of bounds.
+[contiki-2.2/core/lib/malloc.c:386]: (error) Array 'sizes[32]' accessed at index 9998, which is out of bounds.
+[contiki-2.2/cpu/at91sam7s/usb/usb-proto.c:175]: (error) syntax error
+[contiki-2.2/cpu/z80/loader/mef.c:101]: (error) Expression '*offset++=(char)((reloc.data+(u16_t)offset)&255)' depends on order of evaluation of side effects
+[contiki-2.2/cpu/z80/uip_arch.c] -> [contiki-2.2/cpu/z80/uip_arch.c]: (error) syntax error
+[contiki-2.2/examples/sky-ip/sky-telnet-server.c:64]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.2/examples/sky-ip/telnet-webserver.c:64]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.2/platform/cc2420dbk/gateway.c:130]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.2/platform/cooja/testapps/testuaodv.c:77]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.2/platform/cooja/testapps/testuaodv.c:80]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.2/platform/cooja/testapps/testuaodv.c:89]: (error) printf format string requires 5 parameters but only 2 are given.
+[contiki-2.2/platform/minimal-net/contiki-main.c:69]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.2/platform/minimal-net/contiki-main.c:73]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.2/platform/minimal-net/contiki-main.c:77]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.2/platform/netsim/contiki-main.c:159]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.2/platform/netsim/contiki-main.c:106]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.2/platform/netsim/contiki-main.c:145]: (error) snprintf format string requires 12 parameters but only 3 are given.
+[contiki-2.2/platform/netsim/main.c:276]: (error) printf format string requires 5 parameters but only 2 are given.
+[contiki-2.2/platform/netsim/main.c:282]: (error) printf format string requires 5 parameters but only 2 are given.
+[contiki-2.2/tools/wpcapslip/wpcap.c:528]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.2/tools/wpcapslip/wpcap.c:555]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.2/tools/wpcapslip/wpcap.c:559]: (error) snprintf format string requires 12 parameters but only 3 are given.
+[contiki-2.2/tools/z80/hex2bin/src/hexameter.c:224]: (error) Resource leak: in
+[contiki-2.2/tools/z80/hex2bin/src/hexameter.c:180]: (error) Uninitialized variable: f

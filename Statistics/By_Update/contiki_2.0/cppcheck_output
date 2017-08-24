@@ -1,0 +1,9 @@
+[contiki-2.0/Makefile] -> [contiki-2.0/Makefile]: (error) syntax error
+[contiki-2.0/Makefile.include:147]: (error) syntax error
+[contiki-2.0/README:2]: (error) syntax error
+[contiki-2.0/core/dev/cc2420.c:573]: (error) Expression 'h=h+=step' depends on order of evaluation of side effects
+[contiki-2.0/core/dev/cc2420.c:578]: (error) Expression 'h=h+=step' depends on order of evaluation of side effects
+[contiki-2.0/core/lib/malloc.c:385]: (error) Array 'sizes[32]' accessed at index 9998, which is out of bounds.
+[contiki-2.0/core/lib/malloc.c:386]: (error) Array 'sizes[32]' accessed at index 9998, which is out of bounds.
+[contiki-2.0/cpu/at91sam7s/dbg-io/dbg-printf.c:24]: (error) va_list 'ap' was opened but not closed by va_end().
+[contiki-2.0/platform/cc2420dbk/gateway.c:129]: (error) printf format string requires 8 parameters but only 2 are given.

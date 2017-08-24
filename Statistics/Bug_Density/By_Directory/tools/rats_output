@@ -1,0 +1,298 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+Analyzing tools//blaster/blaster.c
+Analyzing tools//codeprop.c
+Analyzing tools//cooja/config/test_template.c
+Analyzing tools//cooja/examples/project_new_interface/dummy_intf.c
+Analyzing tools//empty-symbols.c
+Analyzing tools//jn516x/mote-list.py
+Analyzing tools//jn516x/motelist_lib/__init__.py
+Analyzing tools//jn516x/motelist_lib/linux_motelist_impl.py
+Analyzing tools//jn516x/motelist_lib/windows_motelist_impl.py
+Analyzing tools//jn516x/serialdump.c
+Analyzing tools//release-tools/compile-platforms/hello-world.c
+Analyzing tools//scat.c
+Analyzing tools//serial-log.pl
+Analyzing tools//sky/serial/__init__.py
+Analyzing tools//sky/serial/serialjava.py
+Analyzing tools//sky/serial/serialposix.py
+Analyzing tools//sky/serial/serialutil.py
+Analyzing tools//sky/serial/serialwin32.py
+Analyzing tools//sky/serialdump.c
+Analyzing tools//sky/uip6-bridge/dev/slip.c
+Analyzing tools//sky/uip6-bridge/fakeuip.c
+Analyzing tools//sky/uip6-bridge/sicslow_ethernet.c
+Analyzing tools//sky/uip6-bridge/uip6-bridge-tap.c
+Analyzing tools//stm32w/serialdump.c
+Analyzing tools//stm32w/stm32w_flasher/py_files/file_utils.py
+Analyzing tools//stm32w/stm32w_flasher/py_files/messages.py
+Analyzing tools//stm32w/stm32w_flasher/py_files/prodeng.py
+Analyzing tools//stm32w/stm32w_flasher/py_files/rs232_interface.py
+Analyzing tools//stm32w/stm32w_flasher/py_files/stm32w_flasher.py
+Analyzing tools//stm32w/stm32w_flasher/py_files/ymodem.py
+Analyzing tools//stm32w/tapslip6.c
+Analyzing tools//stm32w/uip6_bridge/dev/slip.c
+Analyzing tools//stm32w/uip6_bridge/fakeuip.c
+Analyzing tools//stm32w/uip6_bridge/sicslow_ethernet.c
+Analyzing tools//stm32w/uip6_bridge/uip6-bridge-tap.c
+Analyzing tools//stm32w/wpcapslip6/fakeuip.c
+Analyzing tools//stm32w/wpcapslip6/ip-process.c
+Analyzing tools//stm32w/wpcapslip6/wpcap6.c
+Analyzing tools//stm32w/wpcapslip6/wpcapslip6.c
+Analyzing tools//tapslip6.c
+Analyzing tools//tools-utils.c
+Analyzing tools//tunslip.c
+Analyzing tools//tunslip6.c
+Analyzing tools//wpcapslip/tcpdump.c
+Analyzing tools//wpcapslip/wpcap.c
+Analyzing tools//wpcapslip/wpcapslip.c
+Analyzing tools//wpcapslip/wpcapstdio.c
+Analyzing tools//z80/hex2bin/src/hexameter.c
+Analyzing tools//z80/hex2bin/src/ihx2bin.c
+tools//blaster/blaster.c:77: High: fixed size local buffer
+tools//blaster/blaster.c:102: High: fixed size local buffer
+tools//blaster/blaster.c:156: High: fixed size local buffer
+tools//blaster/blaster.c:243: High: fixed size local buffer
+tools//blaster/blaster.c:277: High: fixed size local buffer
+tools//blaster/blaster.c:279: High: fixed size local buffer
+tools//blaster/blaster.c:284: High: fixed size local buffer
+tools//codeprop.c:98: High: fixed size local buffer
+tools//jn516x/serialdump.c:95: High: fixed size local buffer
+tools//sky/serialdump.c:104: High: fixed size local buffer
+tools//sky/serialdump.c:105: High: fixed size local buffer
+tools//sky/uip6-bridge/dev/slip.c:265: High: fixed size local buffer
+tools//stm32w/serialdump.c:95: High: fixed size local buffer
+tools//stm32w/tapslip6.c:127: High: fixed size local buffer
+tools//stm32w/tapslip6.c:178: High: fixed size local buffer
+tools//stm32w/tapslip6.c:216: High: fixed size local buffer
+tools//stm32w/tapslip6.c:431: High: fixed size local buffer
+tools//stm32w/tapslip6.c:495: High: fixed size local buffer
+tools//stm32w/tapslip6.c:559: High: fixed size local buffer
+tools//stm32w/uip6_bridge/dev/slip.c:341: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcap6.c:175: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcap6.c:189: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcapslip6.c:177: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcapslip6.c:190: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcapslip6.c:248: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcapslip6.c:374: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcapslip6.c:702: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcapslip6.c:785: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcapslip6.c:885: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcapslip6.c:920: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcapslip6.c:996: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcapslip6.c:997: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcapslip6.c:1053: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcapslip6.c:1090: High: fixed size local buffer
+tools//stm32w/wpcapslip6/wpcapslip6.c:1093: High: fixed size local buffer
+tools//tapslip6.c:76: High: fixed size local buffer
+tools//tapslip6.c:128: High: fixed size local buffer
+tools//tapslip6.c:165: High: fixed size local buffer
+tools//tapslip6.c:304: High: fixed size local buffer
+tools//tapslip6.c:363: High: fixed size local buffer
+tools//tunslip.c:434: High: fixed size local buffer
+tools//tunslip.c:457: High: fixed size local buffer
+tools//tunslip.c:690: High: fixed size local buffer
+tools//tunslip.c:750: High: fixed size local buffer
+tools//tunslip6.c:95: High: fixed size local buffer
+tools//tunslip6.c:132: High: fixed size local buffer
+tools//tunslip6.c:175: High: fixed size local buffer
+tools//tunslip6.c:211: High: fixed size local buffer
+tools//tunslip6.c:488: High: fixed size local buffer
+tools//tunslip6.c:552: High: fixed size local buffer
+tools//tunslip6.c:678: High: fixed size local buffer
+tools//tunslip6.c:890: High: fixed size local buffer
+tools//wpcapslip/tcpdump.c:200: High: fixed size local buffer
+tools//wpcapslip/wpcap.c:188: High: fixed size local buffer
+tools//wpcapslip/wpcap.c:253: High: fixed size local buffer
+tools//wpcapslip/wpcap.c:522: High: fixed size local buffer
+tools//wpcapslip/wpcap.c:542: High: fixed size local buffer
+tools//wpcapslip/wpcap.c:646: High: fixed size local buffer
+tools//wpcapslip/wpcapslip.c:92: High: fixed size local buffer
+tools//wpcapslip/wpcapslip.c:144: High: fixed size local buffer
+tools//wpcapslip/wpcapslip.c:262: High: fixed size local buffer
+tools//wpcapslip/wpcapslip.c:523: High: fixed size local buffer
+tools//wpcapslip/wpcapslip.c:635: High: fixed size local buffer
+tools//wpcapslip/wpcapslip.c:675: High: fixed size local buffer
+tools//wpcapslip/wpcapstdio.c:102: High: fixed size local buffer
+tools//wpcapslip/wpcapstdio.c:154: High: fixed size local buffer
+tools//wpcapslip/wpcapstdio.c:277: High: fixed size local buffer
+tools//wpcapslip/wpcapstdio.c:499: High: fixed size local buffer
+tools//z80/hex2bin/src/hexameter.c:52: High: fixed size local buffer
+tools//z80/hex2bin/src/hexameter.c:173: High: fixed size local buffer
+tools//z80/hex2bin/src/hexameter.c:230: High: fixed size local buffer
+tools//z80/hex2bin/src/ihx2bin.c:52: High: fixed size local buffer
+tools//z80/hex2bin/src/ihx2bin.c:109: High: fixed size local buffer
+tools//z80/hex2bin/src/ihx2bin.c:125: High: fixed size local buffer
+Extra care should be taken to ensure that character arrays that are allocated
+on the stack are used safely.  They are prime targets for buffer overflow
+attacks.
+
+tools//scat.c:107: High: getopt
+tools//stm32w/tapslip6.c:642: High: getopt
+tools//stm32w/wpcapslip6/wpcapslip6.c:1103: High: getopt
+tools//tapslip6.c:491: High: getopt
+tools//tunslip.c:881: High: getopt
+tools//tunslip6.c:765: High: getopt
+tools//wpcapslip/wpcapslip.c:682: High: getopt
+tools//wpcapslip/wpcapstdio.c:504: High: getopt
+tools//z80/hex2bin/src/hexameter.c:121: High: getopt
+Truncate all input strings to a reasonable length 
+before passing them to this function
+
+tools//sky/serial/serialposix.py:97: High: eval
+Argument 1 to this function call should be checked to ensure that it does not
+come from an untrusted source without first verifying that it contains nothing
+dangerous.
+
+tools//stm32w/tapslip6.c:134: High: system
+tools//stm32w/wpcapslip6/wpcapslip6.c:184: High: system
+tools//tapslip6.c:83: High: system
+tools//tunslip.c:441: High: system
+tools//tunslip6.c:102: High: system
+tools//wpcapslip/wpcap.c:527: High: system
+tools//wpcapslip/wpcap.c:564: High: system
+tools//wpcapslip/wpcapslip.c:151: High: system
+tools//wpcapslip/wpcapstdio.c:161: High: system
+Argument 1 to this function call should be checked to ensure that it does not
+come from an untrusted source without first verifying that it contains nothing
+dangerous.
+
+tools//stm32w/tapslip6.c:280: High: strcat
+tools//stm32w/tapslip6.c:497: High: strcat
+tools//stm32w/wpcapslip6/wpcapslip6.c:704: High: strcat
+tools//stm32w/wpcapslip6/wpcapslip6.c:1041: High: strcat
+tools//tapslip6.c:365: High: strcat
+tools//tunslip.c:752: High: strcat
+tools//wpcapslip/wpcapslip.c:637: High: strcat
+Check to be sure that argument 2 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+tools//stm32w/tapslip6.c:288: High: strcpy
+tools//stm32w/tapslip6.c:528: High: strcpy
+tools//stm32w/tapslip6.c:659: High: strcpy
+tools//stm32w/tapslip6.c:662: High: strcpy
+tools//stm32w/wpcapslip6/wpcapslip6.c:736: High: strcpy
+tools//stm32w/wpcapslip6/wpcapslip6.c:1043: High: strcpy
+tools//tapslip6.c:397: High: strcpy
+tools//tapslip6.c:507: High: strcpy
+tools//tapslip6.c:509: High: strcpy
+tools//tunslip.c:784: High: strcpy
+tools//tunslip.c:901: High: strcpy
+tools//tunslip.c:903: High: strcpy
+tools//tunslip6.c:592: High: strcpy
+tools//wpcapslip/tcpdump.c:192: High: strcpy
+tools//wpcapslip/wpcapslip.c:703: High: strcpy
+tools//wpcapslip/wpcapslip.c:705: High: strcpy
+tools//z80/hex2bin/src/hexameter.c:102: High: strcpy
+tools//z80/hex2bin/src/hexameter.c:111: High: strcpy
+tools//z80/hex2bin/src/hexameter.c:180: High: strcpy
+tools//z80/hex2bin/src/hexameter.c:181: High: strcpy
+tools//z80/hex2bin/src/hexameter.c:183: High: strcpy
+tools//z80/hex2bin/src/hexameter.c:236: High: strcpy
+tools//z80/hex2bin/src/hexameter.c:237: High: strcpy
+tools//z80/hex2bin/src/hexameter.c:239: High: strcpy
+Check to be sure that argument 2 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+tools//stm32w/wpcapslip6/wpcap6.c:196: High: strncat
+tools//tunslip6.c:554: High: strncat
+Consider using strlcat() instead.
+
+tools//stm32w/wpcapslip6/wpcap6.c:196: High: strncat
+tools//tunslip6.c:554: High: strncat
+Check to be sure that argument 1 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+tools//stm32w/wpcapslip6/wpcap6.c:232: High: LoadLibrary
+tools//wpcapslip/wpcap.c:570: High: LoadLibrary
+LoadLibrary will search several places for a library if
+no path is specified, allowing trojan DLL's to be inserted elsewhere even
+if the intended DLL is correctly protected from overwriting. Make sure to specify the full path.
+
+tools//stm32w/wpcapslip6/wpcapslip6.c:208: High: CreateProcess
+Many program execution commands under Windows will search
+the path for a program if you do not explicitly specify a full path to the 
+file. This can allow trojans to be executed instead.  Also, be sure to
+specify a file extension, since otherwise multiple extensions will be tried
+by the operating system, providing another opportunity for trojans.
+
+tools//stm32w/wpcapslip6/wpcapslip6.c:208: High: CreateProcess
+Argument 3 to this function call should be checked to ensure that it does not
+come from an untrusted source without first verifying that it contains nothing
+dangerous.
+
+tools//blaster/blaster.c:103: Medium: fgetc
+tools//blaster/blaster.c:293: Medium: fgetc
+tools//z80/hex2bin/src/ihx2bin.c:94: Medium: fgetc
+tools//z80/hex2bin/src/ihx2bin.c:99: Medium: fgetc
+tools//z80/hex2bin/src/ihx2bin.c:113: Medium: fgetc
+tools//z80/hex2bin/src/ihx2bin.c:208: Medium: fgetc
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+tools//codeprop.c:101: Medium: read
+tools//codeprop.c:104: Medium: read
+tools//jn516x/serialdump.c:255: Medium: read
+tools//jn516x/serialdump.c:286: Medium: read
+tools//sky/serialdump.c:257: Medium: read
+tools//sky/serialdump.c:288: Medium: read
+tools//stm32w/serialdump.c:238: Medium: read
+tools//stm32w/serialdump.c:269: Medium: read
+tools//stm32w/tapslip6.c:435: Medium: read
+tools//stm32w/uip6_bridge/sicslow_ethernet.c:884: Medium: read
+tools//stm32w/uip6_bridge/sicslow_ethernet.c:886: Medium: read
+tools//tapslip6.c:308: Medium: read
+tools//tunslip.c:695: Medium: read
+tools//tunslip6.c:492: Medium: read
+tools//wpcapslip/wpcapslip.c:528: Medium: read
+tools//wpcapslip/wpcapstdio.c:289: Medium: read
+tools//wpcapslip/wpcapstdio.c:356: Medium: read
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+tools//scat.c:159: Medium: getc
+tools//scat.c:161: Medium: getc
+tools//scat.c:164: Medium: getc
+tools//scat.c:192: Medium: getc
+tools//z80/hex2bin/src/hexameter.c:242: Medium: getc
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+tools//sky/serialdump.c:95: Medium: signal
+tools//stm32w/tapslip6.c:770: Medium: signal
+tools//stm32w/tapslip6.c:771: Medium: signal
+tools//stm32w/tapslip6.c:772: Medium: signal
+tools//stm32w/wpcapslip6/wpcapslip6.c:1269: Medium: signal
+tools//stm32w/wpcapslip6/wpcapslip6.c:1270: Medium: signal
+tools//stm32w/wpcapslip6/wpcapslip6.c:1271: Medium: signal
+tools//stm32w/wpcapslip6/wpcapslip6.c:1272: Medium: signal
+tools//tapslip6.c:587: Medium: signal
+tools//tapslip6.c:588: Medium: signal
+tools//tapslip6.c:589: Medium: signal
+tools//tapslip6.c:590: Medium: signal
+tools//tunslip.c:1050: Medium: signal
+tools//tunslip.c:1051: Medium: signal
+tools//tunslip.c:1052: Medium: signal
+tools//tunslip.c:1053: Medium: signal
+tools//tunslip6.c:970: Medium: signal
+tools//tunslip6.c:971: Medium: signal
+tools//tunslip6.c:972: Medium: signal
+tools//tunslip6.c:973: Medium: signal
+tools//wpcapslip/wpcap.c:565: Medium: signal
+tools//wpcapslip/wpcapslip.c:866: Medium: signal
+tools//wpcapslip/wpcapslip.c:867: Medium: signal
+tools//wpcapslip/wpcapslip.c:868: Medium: signal
+tools//wpcapslip/wpcapslip.c:869: Medium: signal
+tools//wpcapslip/wpcapstdio.c:537: Medium: signal
+tools//wpcapslip/wpcapstdio.c:538: Medium: signal
+tools//wpcapslip/wpcapstdio.c:539: Medium: signal
+tools//wpcapslip/wpcapstdio.c:540: Medium: signal
+When setting signal handlers, do not use the same function to handle multiple signals. There exists the possibility a race condition will result if 2 or more different signals are sent to the process at nearly the same time. Also, when writing signal handlers, it is best to do as little as possible in them. The best strategy is to use the signal handler to set a flag, that another part of the program tests and performs the appropriate action(s) when it is set.
+See also: http://razor.bindview.com/publish/papers/signals.txt
+
+Total lines analyzed: 17879
+Total time 0.236083 seconds
+75731 lines per second

@@ -1,0 +1,2130 @@
+Flawfinder version 2.0.0, (C) 2001-2017 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 219
+Examining core/cfs/cfs-coffee.c
+Examining core/cfs/cfs-coffee.h
+Examining core/cfs/cfs-eeprom.c
+Examining core/cfs/cfs-posix-dir.c
+Examining core/cfs/cfs-posix.c
+Examining core/cfs/cfs-ram.c
+Examining core/cfs/cfs-xmem.c
+Examining core/cfs/cfs.h
+Examining core/contiki-default-conf.h
+Examining core/contiki-lib.h
+Examining core/contiki-net.h
+Examining core/contiki-version.h
+Examining core/contiki.h
+Examining core/ctk/ctk-conio.c
+Examining core/ctk/ctk-conio.h
+Examining core/ctk/ctk-draw.h
+Examining core/ctk/ctk-filedialog.c
+Examining core/ctk/ctk-filedialog.h
+Examining core/ctk/ctk-mouse.h
+Examining core/ctk/ctk-textentry-checkbox.c
+Examining core/ctk/ctk-textentry-checkbox.h
+Examining core/ctk/ctk-textentry-cmdline.c
+Examining core/ctk/ctk-textentry-cmdline.h
+Examining core/ctk/ctk-textentry-multiline.c
+Examining core/ctk/ctk-textentry-multiline.h
+Examining core/ctk/ctk.c
+Examining core/ctk/ctk.h
+Examining core/ctk/libconio/libconio.c
+Examining core/ctk/libconio/libconio.h
+Examining core/dev/battery-sensor.h
+Examining core/dev/button-sensor.h
+Examining core/dev/eeprom.h
+Examining core/dev/leds.c
+Examining core/dev/leds.h
+Examining core/dev/nullradio.c
+Examining core/dev/nullradio.h
+Examining core/dev/radio-sensor.h
+Examining core/dev/radio.h
+Examining core/dev/rom.h
+Examining core/dev/serial-line.c
+Examining core/dev/serial-line.h
+Examining core/dev/slip.c
+Examining core/dev/slip.h
+Examining core/dev/spi.h
+Examining core/dev/watchdog.h
+Examining core/dev/xmem.h
+Examining core/lib/aes-128.c
+Examining core/lib/aes-128.h
+Examining core/lib/assert.c
+Examining core/lib/assert.h
+Examining core/lib/ccm-star.c
+Examining core/lib/ccm-star.h
+Examining core/lib/crc16.c
+Examining core/lib/crc16.h
+Examining core/lib/gcr.c
+Examining core/lib/gcr.h
+Examining core/lib/ifft.c
+Examining core/lib/ifft.h
+Examining core/lib/list.c
+Examining core/lib/list.h
+Examining core/lib/me.c
+Examining core/lib/me.h
+Examining core/lib/me_tabs.c
+Examining core/lib/me_tabs.h
+Examining core/lib/memb.c
+Examining core/lib/memb.h
+Examining core/lib/mmem.c
+Examining core/lib/mmem.h
+Examining core/lib/petsciiconv.c
+Examining core/lib/petsciiconv.h
+Examining core/lib/print-stats.c
+Examining core/lib/print-stats.h
+Examining core/lib/random.c
+Examining core/lib/random.h
+Examining core/lib/ringbuf.c
+Examining core/lib/ringbuf.h
+Examining core/lib/ringbufindex.c
+Examining core/lib/ringbufindex.h
+Examining core/lib/sensors.c
+Examining core/lib/sensors.h
+Examining core/lib/settings.c
+Examining core/lib/settings.h
+Examining core/lib/strncasecmp/strncasecmp.c
+Examining core/lib/trickle-timer.c
+Examining core/lib/trickle-timer.h
+Examining core/loader/cle.c
+Examining core/loader/cle.h
+Examining core/loader/cle_avr.c
+Examining core/loader/cle_msp430.c
+Examining core/loader/cmod.c
+Examining core/loader/cmod.h
+Examining core/loader/dlloader.c
+Examining core/loader/dlloader.h
+Examining core/loader/elf32.h
+Examining core/loader/elfloader-arch.h
+Examining core/loader/elfloader-avr.c
+Examining core/loader/elfloader-msp430.c
+Examining core/loader/elfloader-msp430x.c
+Examining core/loader/elfloader-stub.c
+Examining core/loader/elfloader-x86.c
+Examining core/loader/elfloader.c
+Examining core/loader/elfloader.h
+Examining core/loader/elfloader_compat.c
+Examining core/loader/elfloader_compat.h
+Examining core/loader/sym.c
+Examining core/loader/sym.h
+Examining core/loader/symbols-def.h
+Examining core/loader/symbols.h
+Examining core/loader/symtab-avr.c
+Examining core/loader/symtab.c
+Examining core/loader/symtab.h
+Examining core/net/http-socket/http-socket.c
+Examining core/net/http-socket/http-socket.h
+Examining core/net/ip/dhcpc.c
+Examining core/net/ip/dhcpc.h
+Examining core/net/ip/ip64-addr.c
+Examining core/net/ip/ip64-addr.h
+Examining core/net/ip/psock.c
+Examining core/net/ip/psock.h
+Examining core/net/ip/resolv.c
+Examining core/net/ip/resolv.h
+Examining core/net/ip/simple-udp.c
+Examining core/net/ip/simple-udp.h
+Examining core/net/ip/slipdev.c
+Examining core/net/ip/slipdev.h
+Examining core/net/ip/tcp-socket.c
+Examining core/net/ip/tcp-socket.h
+Examining core/net/ip/tcpip.c
+Examining core/net/ip/tcpip.h
+Examining core/net/ip/udp-socket.c
+Examining core/net/ip/udp-socket.h
+Examining core/net/ip/uip-debug.c
+Examining core/net/ip/uip-debug.h
+Examining core/net/ip/uip-nameserver.c
+Examining core/net/ip/uip-nameserver.h
+Examining core/net/ip/uip-packetqueue.c
+Examining core/net/ip/uip-packetqueue.h
+Examining core/net/ip/uip-split.c
+Examining core/net/ip/uip-split.h
+Examining core/net/ip/uip-udp-packet.c
+Examining core/net/ip/uip-udp-packet.h
+Examining core/net/ip/uip.h
+Examining core/net/ip/uip_arch.h
+Examining core/net/ip/uiplib.c
+Examining core/net/ip/uiplib.h
+Examining core/net/ip/uipopt.h
+Examining core/net/ip64/ip64-addrmap.c
+Examining core/net/ip64/ip64-addrmap.h
+Examining core/net/ip64/ip64-arp.c
+Examining core/net/ip64/ip64-arp.h
+Examining core/net/ip64/ip64-conf-example.h
+Examining core/net/ip64/ip64-dhcpc.c
+Examining core/net/ip64/ip64-dhcpc.h
+Examining core/net/ip64/ip64-dns64.c
+Examining core/net/ip64/ip64-dns64.h
+Examining core/net/ip64/ip64-driver.h
+Examining core/net/ip64/ip64-eth-interface.c
+Examining core/net/ip64/ip64-eth-interface.h
+Examining core/net/ip64/ip64-eth.c
+Examining core/net/ip64/ip64-eth.h
+Examining core/net/ip64/ip64-interface.h
+Examining core/net/ip64/ip64-ipv4-dhcp.c
+Examining core/net/ip64/ip64-ipv4-dhcp.h
+Examining core/net/ip64/ip64-null-driver.c
+Examining core/net/ip64/ip64-null-driver.h
+Examining core/net/ip64/ip64-slip-interface.c
+Examining core/net/ip64/ip64-slip-interface.h
+Examining core/net/ip64/ip64-special-ports.c
+Examining core/net/ip64/ip64-special-ports.h
+Examining core/net/ip64/ip64.c
+Examining core/net/ip64/ip64.h
+Examining core/net/ipv4/uaodv-def.h
+Examining core/net/ipv4/uaodv-rt.c
+Examining core/net/ipv4/uaodv-rt.h
+Examining core/net/ipv4/uaodv.c
+Examining core/net/ipv4/uaodv.h
+Examining core/net/ipv4/uip-fw-drv.c
+Examining core/net/ipv4/uip-fw-drv.h
+Examining core/net/ipv4/uip-fw.c
+Examining core/net/ipv4/uip-fw.h
+Examining core/net/ipv4/uip-neighbor.c
+Examining core/net/ipv4/uip-neighbor.h
+Examining core/net/ipv4/uip-over-mesh.c
+Examining core/net/ipv4/uip-over-mesh.h
+Examining core/net/ipv4/uip.c
+Examining core/net/ipv4/uip_arp.c
+Examining core/net/ipv4/uip_arp.h
+Examining core/net/ipv6/multicast/esmrf.c
+Examining core/net/ipv6/multicast/esmrf.h
+Examining core/net/ipv6/multicast/roll-tm.c
+Examining core/net/ipv6/multicast/roll-tm.h
+Examining core/net/ipv6/multicast/smrf.c
+Examining core/net/ipv6/multicast/smrf.h
+Examining core/net/ipv6/multicast/uip-mcast6-engines.h
+Examining core/net/ipv6/multicast/uip-mcast6-route.c
+Examining core/net/ipv6/multicast/uip-mcast6-route.h
+Examining core/net/ipv6/multicast/uip-mcast6-stats.c
+Examining core/net/ipv6/multicast/uip-mcast6-stats.h
+Examining core/net/ipv6/multicast/uip-mcast6.h
+Examining core/net/ipv6/sicslowpan.c
+Examining core/net/ipv6/sicslowpan.h
+Examining core/net/ipv6/uip-ds6-nbr.c
+Examining core/net/ipv6/uip-ds6-nbr.h
+Examining core/net/ipv6/uip-ds6-route.c
+Examining core/net/ipv6/uip-ds6-route.h
+Examining core/net/ipv6/uip-ds6.c
+Examining core/net/ipv6/uip-ds6.h
+Examining core/net/ipv6/uip-icmp6.c
+Examining core/net/ipv6/uip-icmp6.h
+Examining core/net/ipv6/uip-nd6.c
+Examining core/net/ipv6/uip-nd6.h
+Examining core/net/ipv6/uip6.c
+Examining core/net/ipv6/websocket-http-client.c
+Examining core/net/ipv6/websocket-http-client.h
+Examining core/net/ipv6/websocket.c
+Examining core/net/ipv6/websocket.h
+Examining core/net/link-stats.c
+Examining core/net/link-stats.h
+Examining core/net/linkaddr.c
+Examining core/net/linkaddr.h
+Examining core/net/llsec/anti-replay.c
+Examining core/net/llsec/anti-replay.h
+Examining core/net/llsec/ccm-star-packetbuf.c
+Examining core/net/llsec/ccm-star-packetbuf.h
+Examining core/net/llsec/llsec.h
+Examining core/net/llsec/llsec802154.h
+Examining core/net/llsec/noncoresec/noncoresec.c
+Examining core/net/llsec/noncoresec/noncoresec.h
+Examining core/net/llsec/nullsec.c
+Examining core/net/llsec/nullsec.h
+Examining core/net/mac/contikimac/contikimac-framer.c
+Examining core/net/mac/contikimac/contikimac-framer.h
+Examining core/net/mac/contikimac/contikimac.c
+Examining core/net/mac/contikimac/contikimac.h
+Examining core/net/mac/csma.c
+Examining core/net/mac/csma.h
+Examining core/net/mac/cxmac/cxmac.c
+Examining core/net/mac/cxmac/cxmac.h
+Examining core/net/mac/frame802154.c
+Examining core/net/mac/frame802154.h
+Examining core/net/mac/frame802154e-ie.c
+Examining core/net/mac/frame802154e-ie.h
+Examining core/net/mac/framer-802154.c
+Examining core/net/mac/framer-802154.h
+Examining core/net/mac/framer-nullmac.c
+Examining core/net/mac/framer-nullmac.h
+Examining core/net/mac/framer.h
+Examining core/net/mac/mac-sequence.c
+Examining core/net/mac/mac-sequence.h
+Examining core/net/mac/mac.c
+Examining core/net/mac/mac.h
+Examining core/net/mac/nordc.c
+Examining core/net/mac/nullmac.c
+Examining core/net/mac/nullmac.h
+Examining core/net/mac/nullrdc-noframer.c
+Examining core/net/mac/nullrdc-noframer.h
+Examining core/net/mac/nullrdc.c
+Examining core/net/mac/nullrdc.h
+Examining core/net/mac/phase.c
+Examining core/net/mac/phase.h
+Examining core/net/mac/rdc.h
+Examining core/net/mac/sicslowmac/sicslowmac.c
+Examining core/net/mac/sicslowmac/sicslowmac.h
+Examining core/net/mac/tsch/tsch-adaptive-timesync.c
+Examining core/net/mac/tsch/tsch-adaptive-timesync.h
+Examining core/net/mac/tsch/tsch-asn.h
+Examining core/net/mac/tsch/tsch-conf.h
+Examining core/net/mac/tsch/tsch-log.c
+Examining core/net/mac/tsch/tsch-log.h
+Examining core/net/mac/tsch/tsch-packet.c
+Examining core/net/mac/tsch/tsch-packet.h
+Examining core/net/mac/tsch/tsch-private.h
+Examining core/net/mac/tsch/tsch-queue.c
+Examining core/net/mac/tsch/tsch-queue.h
+Examining core/net/mac/tsch/tsch-rpl.c
+Examining core/net/mac/tsch/tsch-rpl.h
+Examining core/net/mac/tsch/tsch-schedule.c
+Examining core/net/mac/tsch/tsch-schedule.h
+Examining core/net/mac/tsch/tsch-security.c
+Examining core/net/mac/tsch/tsch-security.h
+Examining core/net/mac/tsch/tsch-slot-operation.c
+Examining core/net/mac/tsch/tsch-slot-operation.h
+Examining core/net/mac/tsch/tsch.c
+Examining core/net/mac/tsch/tsch.h
+Examining core/net/nbr-table.c
+Examining core/net/nbr-table.h
+Examining core/net/net-debug.c
+Examining core/net/net-debug.h
+Examining core/net/netstack.c
+Examining core/net/netstack.h
+Examining core/net/packetbuf.c
+Examining core/net/packetbuf.h
+Examining core/net/queuebuf.c
+Examining core/net/queuebuf.h
+Examining core/net/rime/abc.c
+Examining core/net/rime/abc.h
+Examining core/net/rime/announcement.c
+Examining core/net/rime/announcement.h
+Examining core/net/rime/broadcast-announcement.c
+Examining core/net/rime/broadcast-announcement.h
+Examining core/net/rime/broadcast.c
+Examining core/net/rime/broadcast.h
+Examining core/net/rime/chameleon-bitopt.c
+Examining core/net/rime/chameleon-bitopt.h
+Examining core/net/rime/chameleon-raw.c
+Examining core/net/rime/chameleon-raw.h
+Examining core/net/rime/chameleon.c
+Examining core/net/rime/chameleon.h
+Examining core/net/rime/channel.c
+Examining core/net/rime/channel.h
+Examining core/net/rime/collect-link-estimate.c
+Examining core/net/rime/collect-link-estimate.h
+Examining core/net/rime/collect-neighbor.c
+Examining core/net/rime/collect-neighbor.h
+Examining core/net/rime/collect.c
+Examining core/net/rime/collect.h
+Examining core/net/rime/ipolite.c
+Examining core/net/rime/ipolite.h
+Examining core/net/rime/mesh.c
+Examining core/net/rime/mesh.h
+Examining core/net/rime/multihop.c
+Examining core/net/rime/multihop.h
+Examining core/net/rime/neighbor-discovery.c
+Examining core/net/rime/neighbor-discovery.h
+Examining core/net/rime/netflood.c
+Examining core/net/rime/netflood.h
+Examining core/net/rime/packetqueue.c
+Examining core/net/rime/packetqueue.h
+Examining core/net/rime/polite-announcement.c
+Examining core/net/rime/polite-announcement.h
+Examining core/net/rime/polite.c
+Examining core/net/rime/polite.h
+Examining core/net/rime/rime.c
+Examining core/net/rime/rime.h
+Examining core/net/rime/rimestats.c
+Examining core/net/rime/rimestats.h
+Examining core/net/rime/rmh.c
+Examining core/net/rime/rmh.h
+Examining core/net/rime/route-discovery.c
+Examining core/net/rime/route-discovery.h
+Examining core/net/rime/route.c
+Examining core/net/rime/route.h
+Examining core/net/rime/rucb.c
+Examining core/net/rime/rucb.h
+Examining core/net/rime/rudolph1.c
+Examining core/net/rime/rudolph1.h
+Examining core/net/rime/rudolph2.c
+Examining core/net/rime/rudolph2.h
+Examining core/net/rime/runicast.c
+Examining core/net/rime/runicast.h
+Examining core/net/rime/stbroadcast.c
+Examining core/net/rime/stbroadcast.h
+Examining core/net/rime/stunicast.c
+Examining core/net/rime/stunicast.h
+Examining core/net/rime/timesynch.c
+Examining core/net/rime/timesynch.h
+Examining core/net/rime/trickle.c
+Examining core/net/rime/trickle.h
+Examining core/net/rime/unicast.c
+Examining core/net/rime/unicast.h
+Examining core/net/rpl/rpl-conf.h
+Examining core/net/rpl/rpl-dag-root.c
+Examining core/net/rpl/rpl-dag-root.h
+Examining core/net/rpl/rpl-dag.c
+Examining core/net/rpl/rpl-ext-header.c
+Examining core/net/rpl/rpl-icmp6.c
+Examining core/net/rpl/rpl-mrhof.c
+Examining core/net/rpl/rpl-nbr-policy.c
+Examining core/net/rpl/rpl-ns.c
+Examining core/net/rpl/rpl-ns.h
+Examining core/net/rpl/rpl-of0.c
+Examining core/net/rpl/rpl-private.h
+Examining core/net/rpl/rpl-timers.c
+Examining core/net/rpl/rpl.c
+Examining core/net/rpl/rpl.h
+Examining core/sys/arg.c
+Examining core/sys/arg.h
+Examining core/sys/autostart.c
+Examining core/sys/autostart.h
+Examining core/sys/cc-gcc.h
+Examining core/sys/cc.h
+Examining core/sys/clock.h
+Examining core/sys/compower.c
+Examining core/sys/compower.h
+Examining core/sys/ctimer.c
+Examining core/sys/ctimer.h
+Examining core/sys/dsc.h
+Examining core/sys/energest.c
+Examining core/sys/energest.h
+Examining core/sys/etimer.c
+Examining core/sys/etimer.h
+Examining core/sys/lc-addrlabels.h
+Examining core/sys/lc-switch.h
+Examining core/sys/lc.h
+Examining core/sys/loader.h
+Examining core/sys/log.h
+Examining core/sys/mt.c
+Examining core/sys/mt.h
+Examining core/sys/node-id.h
+Examining core/sys/process.c
+Examining core/sys/process.h
+Examining core/sys/procinit.c
+Examining core/sys/procinit.h
+Examining core/sys/pt-sem.h
+Examining core/sys/pt.h
+Examining core/sys/rtimer.c
+Examining core/sys/rtimer.h
+Examining core/sys/stimer.c
+Examining core/sys/stimer.h
+Examining core/sys/subprocess.h
+Examining core/sys/timer.c
+Examining core/sys/timer.h
+
+FINAL RESULTS:
+
+core/cfs/cfs-coffee.c:52:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/ctk/ctk.c:1251:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+core/lib/print-stats.c:51:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/lib/trickle-timer.c:54:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/loader/cle.c:50:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/loader/cle_avr.c:48:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/loader/cle_msp430.c:48:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/loader/cmod.c:47:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/loader/cmod.c:79:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+core/loader/cmod.c:107:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+core/loader/cmod.c:124:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+core/loader/elfloader-msp430x.c:54:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/loader/elfloader.c:48:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/loader/elfloader_compat.c:57:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ip/ip64-addr.c:37:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ip/resolv.c:90:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ip/resolv.c:96:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ip/uip-packetqueue.c:15:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ip64/ip64-addrmap.c:56:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ip64/ip64-arp.c:42:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ip64/ip64-arp.c:107:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ip64/ip64-dns64.c:42:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ip64/ip64-eth-interface.c:46:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ip64/ip64.c:76:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ipv4/uaodv.c:106:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ipv4/uaodv.c:109:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ipv4/uaodv.c:118:  [4] (format) vprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ipv4/uip-over-mesh.c:68:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ipv4/uip_arp.c:118:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/ipv6/uip-icmp6.c:53:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/link-stats.c:42:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/llsec/noncoresec/noncoresec.c:88:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/mac/contikimac/contikimac-framer.c:71:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/mac/contikimac/contikimac.c:248:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/mac/contikimac/contikimac.c:249:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/mac/csma.c:61:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/mac/cxmac/cxmac.c:170:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/mac/cxmac/cxmac.c:171:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/mac/framer-802154.c:50:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/mac/framer-nullmac.c:46:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/mac/mac.c:38:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/mac/nullrdc.c:57:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/mac/phase.c:83:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/mac/phase.c:84:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/mac/sicslowmac/sicslowmac.c:58:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/nbr-table.c:51:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/net-debug.h:61:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/net-debug.h:68:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/net-debug.h:78:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/packetbuf.c:69:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/queuebuf.c:122:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/abc.c:54:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/broadcast-announcement.c:90:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/broadcast.c:56:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/chameleon-bitopt.c:68:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/chameleon-bitopt.c:231:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/chameleon-raw.c:59:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/chameleon.c:60:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/chameleon.c:85:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/collect-link-estimate.c:57:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/collect-neighbor.c:75:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/collect.c:216:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/ipolite.c:55:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/mesh.c:57:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/multihop.c:61:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/neighbor-discovery.c:69:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/netflood.c:60:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/polite-announcement.c:88:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/rime.c:48:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/rmh.c:59:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/route-discovery.c:74:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/route.c:84:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/rucb.c:49:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/rudolph1.c:79:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/rudolph2.c:87:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/runicast.c:65:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/stunicast.c:52:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/trickle.c:68:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/net/rime/unicast.c:58:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/sys/autostart.c:45:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/sys/ctimer.c:56:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/sys/process.c:86:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/sys/rtimer.c:52:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+core/lib/random.c:43:  [3] (random) srand:
+  This function is not sufficiently random for security-related functions
+  such as key and nonce creation (CWE-327). Use a more secure technique for
+  acquiring random values.
+core/cfs/cfs-coffee.c:190:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/cfs/cfs-coffee.c:489:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/cfs/cfs-coffee.c:810:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/cfs/cfs-coffee.c:930:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/cfs/cfs-coffee.c:942:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/cfs/cfs-coffee.c:1100:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/cfs/cfs-coffee.c:1150:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/cfs/cfs-coffee.c:1251:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/cfs/cfs-coffee.c:1256:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/cfs/cfs-coffee.c:1261:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/cfs/cfs-posix.c:52:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/cfs/cfs-posix.c:65:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/cfs/cfs-ram.c:54:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/cfs/cfs-ram.c:97:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/cfs/cfs-ram.c:121:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/cfs/cfs.h:73:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/cfs/cfs.h:77:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/ctk/ctk-conio.c:452:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk-conio.c:456:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk-conio.c:503:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk-conio.c:513:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk-filedialog.c:51:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/ctk/ctk-filedialog.c:55:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/ctk/ctk-filedialog.c:60:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/ctk/ctk-filedialog.c:64:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/ctk/ctk.c:1077:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk.c:1081:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk.c:1090:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk.c:1105:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk.c:1280:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk.c:1290:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk.c:1324:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk.c:1450:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk.c:1538:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk.c:1549:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk.c:1571:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk.c:1738:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/ctk/ctk.h:613:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/dev/serial-line.c:89:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/dev/slip.c:339:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/dev/slip.c:340:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/dev/slip.c:341:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/lib/aes-128.c:86:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/lib/aes-128.c:175:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/lib/ccm-star.c:57:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/lib/ccm-star.c:126:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/lib/gcr.c:43:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/lib/gcr.c:51:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/lib/me_tabs.c:62:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/lib/me_tabs.c:92:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/lib/me_tabs.h:36:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/lib/me_tabs.h:37:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/lib/memb.h:90:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/lib/mmem.c:60:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/lib/petsciiconv.c:56:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/lib/sensors.h:53:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/lib/settings.c:454:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/cle.h:50:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/cle_msp430.c:61:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/loader/elf32.h:48:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-avr.c:117:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-avr.c:182:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-msp430.c:39:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-msp430.c:41:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-msp430x.c:62:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-msp430x.c:138:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-msp430x.c:187:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-msp430x.c:189:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-msp430x.c:218:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-msp430x.c:261:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-msp430x.c:297:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/loader/elfloader-msp430x.c:338:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-msp430x.c:368:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-msp430x.c:711:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-stub.c:36:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-stub.c:37:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-x86.c:51:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader-x86.c:63:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+core/loader/elfloader.c:57:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader.c:134:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader.c:182:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader.c:224:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader.c:261:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/loader/elfloader.c:300:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader.c:347:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader.h:160:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader_compat.c:80:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/elfloader_compat.c:97:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/loader/elfloader_compat.c:129:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/loader/elfloader_compat.c:156:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/loader/elfloader_compat.h:52:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/loader/symtab-avr.c:68:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/http-socket/http-socket.c:401:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/http-socket/http-socket.c:402:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/http-socket/http-socket.c:404:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/http-socket/http-socket.c:438:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+core/net/http-socket/http-socket.c:445:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+core/net/http-socket/http-socket.c:447:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+core/net/http-socket/http-socket.c:450:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+core/net/http-socket/http-socket.c:492:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/http-socket/http-socket.c:493:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/http-socket/http-socket.c:555:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/http-socket/http-socket.h:86:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/http-socket/http-socket.h:94:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/ip/dhcpc.c:109:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/dhcpc.c:118:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/dhcpc.c:147:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/dhcpc.c:151:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/dhcpc.c:155:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/dhcpc.c:162:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/dhcpc.c:205:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/dhcpc.c:208:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/dhcpc.c:211:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/dhcpc.c:217:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/dhcpc.c:220:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/dhcpc.c:239:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/ip64-addr.c:46:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/ip64-addr.c:52:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/psock.c:83:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/psock.c:90:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/psock.c:97:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/resolv.c:269:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/ip/resolv.c:299:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/ip/resolv.c:621:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/resolv.c:844:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/resolv.c:960:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/resolv.c:966:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/ip/resolv.c:1248:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/ip/resolv.c:1472:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/ip/simple-udp.c:159:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/slipdev.c:153:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/tcp-socket.c:79:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/tcp-socket.c:117:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/tcp-socket.c:353:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/tcpip.c:674:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/tcpip.c:707:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/tcpip.c:735:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/udp-socket.c:176:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip/uip-split.c:121:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-arp.c:176:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-arp.c:215:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-arp.c:246:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-arp.c:247:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-arp.c:248:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-arp.c:249:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-arp.c:336:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-arp.c:371:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-arp.c:374:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-arp.c:401:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-arp.c:402:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dhcpc.c:116:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dhcpc.c:125:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dhcpc.c:154:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dhcpc.c:158:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dhcpc.c:162:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dhcpc.c:169:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dhcpc.c:212:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dhcpc.c:215:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dhcpc.c:218:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dhcpc.c:224:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dhcpc.c:227:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dhcpc.c:246:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dns64.c:223:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dns64.c:239:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dns64.c:247:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-dns64.c:252:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-eth.c:42:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-slip-interface.c:68:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-slip-interface.c:100:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64-slip-interface.c:138:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64.c:386:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ip64/ip64.c:684:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip-fw.c:236:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip-neighbor.c:116:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip.c:553:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip.c:583:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip.c:641:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip.c:1055:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip.c:1140:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip.c:1968:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip_arp.c:182:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip_arp.c:221:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip_arp.c:311:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip_arp.c:312:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip_arp.c:313:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip_arp.c:314:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip_arp.c:376:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip_arp.c:409:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip_arp.c:410:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip_arp.c:428:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv4/uip_arp.c:430:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/multicast/esmrf.c:139:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/multicast/esmrf.c:220:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/multicast/esmrf.c:226:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/multicast/esmrf.c:236:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/multicast/esmrf.c:254:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/multicast/esmrf.c:347:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/multicast/roll-tm.c:83:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/multicast/roll-tm.c:627:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/multicast/roll-tm.c:1061:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/multicast/smrf.c:80:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/multicast/smrf.c:171:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:332:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:424:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:429:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:580:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:585:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:611:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:617:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:746:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:750:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:820:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:837:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:843:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:848:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:872:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:900:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:912:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:918:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:923:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:976:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:991:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:1112:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:1113:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:1123:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:1135:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:1157:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:1183:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:1212:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:1404:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:1450:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:1482:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:1626:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/sicslowpan.c:1672:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip-ds6.c:548:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip-ds6.c:551:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip-ds6.c:554:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip-icmp6.c:281:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip-nd6.c:144:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip-nd6.c:156:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip-nd6.c:343:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip-nd6.c:601:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip-nd6.c:1089:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip6.c:681:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip6.c:711:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip6.c:754:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip6.c:800:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip6.c:835:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip6.c:2353:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/uip6.c:2356:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/websocket-http-client.c:88:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/ipv6/websocket-http-client.c:94:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+core/net/ipv6/websocket-http-client.h:77:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/ipv6/websocket-http-client.h:78:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/ipv6/websocket-http-client.h:79:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/ipv6/websocket-http-client.h:80:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/ipv6/websocket.c:415:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/websocket.c:550:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/ipv6/websocket.c:551:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/ipv6/websocket.c:656:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/ipv6/websocket.c:668:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/linkaddr.c:65:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/linkaddr.h:66:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/llsec/ccm-star-packetbuf.c:74:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/cxmac/cxmac.c:329:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/cxmac/cxmac.c:370:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/cxmac/cxmac.c:460:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/frame802154.c:446:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/frame802154.c:457:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/frame802154.c:487:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/frame802154.c:519:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/frame802154.c:607:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/frame802154.c:618:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/frame802154e-ie.c:311:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/frame802154e-ie.c:432:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/mac-sequence.c:117:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/tsch/tsch-log.h:87:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/mac/tsch/tsch-packet.c:258:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/tsch/tsch-security.c:78:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/tsch/tsch-security.c:188:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/tsch/tsch.c:403:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/tsch/tsch.c:496:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/mac/tsch/tsch.c:500:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/nbr-table.c:453:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/packetbuf.c:91:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/packetbuf.c:116:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/packetbuf.c:117:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/packetbuf.c:207:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/packetbuf.c:208:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/packetbuf.c:215:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/packetbuf.c:216:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/queuebuf.c:143:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/rime/broadcast-announcement.c:137:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/broadcast-announcement.c:152:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/chameleon-bitopt.c:223:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/rime/chameleon-raw.c:112:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/chameleon-raw.c:119:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/chameleon-raw.c:178:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/chameleon.c:77:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/net/rime/collect.c:648:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/collect.c:749:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/collect.c:799:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/collect.c:933:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/neighbor-discovery.c:100:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/netflood.c:82:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/netflood.c:100:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/netflood.c:112:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/polite-announcement.c:132:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/polite-announcement.c:147:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rime/timesynch.c:134:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-dag.c:403:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-dag.c:468:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-dag.c:518:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-dag.c:521:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-dag.c:701:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-dag.c:1150:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-dag.c:1153:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-dag.c:1246:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-dag.c:1249:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-dag.c:1609:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-ext-header.c:294:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-ext-header.c:296:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-ext-header.c:443:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-icmp6.c:150:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-icmp6.c:332:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-icmp6.c:406:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-icmp6.c:450:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-icmp6.c:526:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-icmp6.c:586:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-icmp6.c:733:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-icmp6.c:965:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-icmp6.c:973:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-icmp6.c:1201:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-icmp6.c:1211:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-icmp6.c:1227:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-icmp6.c:1229:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-ns.c:152:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-ns.c:197:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-ns.c:198:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+core/net/rpl/rpl-ns.h:57:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/sys/arg.c:73:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/sys/energest.c:51:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/sys/energest.h:82:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+core/cfs/cfs-coffee.c:635:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/cfs/cfs-posix-dir.c:69:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/cfs/cfs-posix.c:79:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+core/ctk/ctk-conio.c:219:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/ctk/ctk-conio.c:507:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/ctk/ctk-conio.c:508:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/ctk/ctk-conio.c:511:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/ctk/ctk-filedialog.c:90:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/ctk/ctk-filedialog.c:114:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/ctk/ctk-filedialog.c:147:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/ctk/ctk-textentry-multiline.c:50:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/ctk/ctk-textentry-multiline.c:66:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/ctk/ctk-textentry-multiline.c:87:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/ctk/ctk.c:704:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/ctk/ctk.c:780:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/ctk/ctk.c:807:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/ctk/ctk.c:1223:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/dev/radio.h:251:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+core/lib/sensors.c:92:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/lib/settings.h:237:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/lib/settings.h:243:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/loader/cle.h:75:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+core/loader/cle.h:80:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+core/loader/cle.h:88:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+core/net/http-socket/http-socket.c:305:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/http-socket/http-socket.c:312:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/http-socket/http-socket.c:313:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/http-socket/http-socket.c:383:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/net/http-socket/http-socket.c:635:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/net/http-socket/http-socket.c:658:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/net/ip/psock.h:198:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ip/resolv.c:1092:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/net/ip/resolv.c:1095:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ip/resolv.c:1096:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ip/resolv.c:1097:  [1] (buffer) strncat:
+  Easily used incorrectly (e.g., incorrectly computing the correct maximum
+  size to add) [MS-banned] (CWE-120). Consider strcat_s, strlcat, snprintf,
+  or automatically resizing strings. Risk is low because the source is a
+  constant string.
+core/net/ip/resolv.c:1097:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ip/resolv.c:1249:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ip/resolv.c:1252:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/net/ip/resolv.c:1312:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/net/ip/resolv.c:1319:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ip/resolv.c:1449:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ip/resolv.c:1466:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ip/resolv.c:1477:  [1] (buffer) strncat:
+  Easily used incorrectly (e.g., incorrectly computing the correct maximum
+  size to add) [MS-banned] (CWE-120). Consider strcat_s, strlcat, snprintf,
+  or automatically resizing strings.
+core/net/ip/resolv.c:1478:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ip/resolv.c:1482:  [1] (buffer) strncat:
+  Easily used incorrectly (e.g., incorrectly computing the correct maximum
+  size to add) [MS-banned] (CWE-120). Consider strcat_s, strlcat, snprintf,
+  or automatically resizing strings. Risk is low because the source is a
+  constant string.
+core/net/ip/resolv.c:1482:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ip/tcp-socket.c:369:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ipv6/websocket-http-client.c:62:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ipv6/websocket-http-client.c:180:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ipv6/websocket-http-client.c:230:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/net/ipv6/websocket-http-client.c:235:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/net/ipv6/websocket-http-client.c:240:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/net/ipv6/websocket-http-client.c:243:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120). Risk is low because the source is a
+  constant character.
+core/net/ipv6/websocket-http-client.c:245:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/net/ipv6/websocket.c:87:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ipv6/websocket.c:92:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ipv6/websocket.c:93:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ipv6/websocket.c:94:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ipv6/websocket.c:95:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/ipv6/websocket.c:143:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+core/net/ipv6/websocket.c:677:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+core/net/mac/contikimac/contikimac.c:766:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+core/net/mac/cxmac/cxmac.c:563:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+core/net/mac/nullrdc.c:187:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+core/net/mac/tsch/tsch-slot-operation.c:616:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+core/net/mac/tsch/tsch-slot-operation.c:794:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+core/net/mac/tsch/tsch.c:651:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+
+ANALYSIS SUMMARY:
+
+Hits = 494
+Lines analyzed = 93560 in approximately 3.70 seconds (25319 lines/second)
+Physical Source Lines of Code (SLOC) = 49437
+Hits@level = [0]   0 [1]  67 [2] 343 [3]   1 [4]  83 [5]   0
+Hits@level+ = [0+] 494 [1+] 494 [2+] 427 [3+]  84 [4+]  83 [5+]   0
+Hits/KSLOC@level+ = [0+] 9.99252 [1+] 9.99252 [2+] 8.63726 [3+] 1.69913 [4+] 1.6789 [5+]   0
+Minimum risk level = 1
+Not every hit is necessarily a security vulnerability.
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming for Linux and Unix HOWTO'
+(http://www.dwheeler.com/secure-programs) for more information.

@@ -1,0 +1,33 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+Analyzing regression-tests//03-base/code/test-ringbufindex.c
+Analyzing regression-tests//04-rime/code/mesh-node.c
+Analyzing regression-tests//04-rime/code/trickle-node.c
+Analyzing regression-tests//11-ipv6/code/receiver/udp-receiver.c
+Analyzing regression-tests//11-ipv6/code/sender/udp-sender.c
+Analyzing regression-tests//11-ipv6/code/sender/unicast-sender.c
+Analyzing regression-tests//12-rpl/code/receiver-node.c
+Analyzing regression-tests//12-rpl/code/root-node.c
+Analyzing regression-tests//12-rpl/code/sender-node.c
+Analyzing regression-tests//17-slip-radio/code/wait-dag.c
+Analyzing regression-tests//21-large-rpl/code/node/client.c
+Analyzing regression-tests//21-large-rpl/code/router/router.c
+Analyzing regression-tests//23-rpl-non-storing/code/receiver-node.c
+Analyzing regression-tests//23-rpl-non-storing/code/root-node.c
+Analyzing regression-tests//23-rpl-non-storing/code/sender-node.c
+Analyzing regression-tests//25-ieee802154/code/test-panid-handling.c
+Analyzing regression-tests//25-ieee802154/code/test-tsch-packet.c
+Analyzing regression-tests//27-tsch/code/common.c
+Analyzing regression-tests//27-tsch/code/test-flush-nbr-queue.c
+regression-tests//12-rpl/code/sender-node.c:116: High: fixed size local buffer
+regression-tests//23-rpl-non-storing/code/sender-node.c:116: High: fixed size local buffer
+Extra care should be taken to ensure that character arrays that are allocated
+on the stack are used safely.  They are prime targets for buffer overflow
+attacks.
+
+Total lines analyzed: 2639
+Total time 0.024151 seconds
+109270 lines per second

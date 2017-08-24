@@ -1,0 +1,2 @@
+[examples/sky-ip/sky-telnet-server.c:63]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[examples/sky-ip/telnet-webserver.c:63]: (error) snprintf format string requires 4 parameters but only 1 is given.

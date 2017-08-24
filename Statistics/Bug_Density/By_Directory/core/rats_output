@@ -1,0 +1,288 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+Analyzing core//cfs/cfs-coffee.c
+Analyzing core//cfs/cfs-eeprom.c
+Analyzing core//cfs/cfs-posix-dir.c
+Analyzing core//cfs/cfs-posix.c
+Analyzing core//cfs/cfs-ram.c
+Analyzing core//cfs/cfs-xmem.c
+Analyzing core//ctk/ctk-conio.c
+Analyzing core//ctk/ctk-filedialog.c
+Analyzing core//ctk/ctk-textentry-checkbox.c
+Analyzing core//ctk/ctk-textentry-cmdline.c
+Analyzing core//ctk/ctk-textentry-multiline.c
+Analyzing core//ctk/ctk.c
+Analyzing core//ctk/libconio/libconio.c
+Analyzing core//dev/leds.c
+Analyzing core//dev/nullradio.c
+Analyzing core//dev/serial-line.c
+Analyzing core//dev/slip.c
+Analyzing core//lib/aes-128.c
+Analyzing core//lib/assert.c
+Analyzing core//lib/ccm-star.c
+Analyzing core//lib/crc16.c
+Analyzing core//lib/gcr.c
+Analyzing core//lib/ifft.c
+Analyzing core//lib/list.c
+Analyzing core//lib/me.c
+Analyzing core//lib/me_tabs.c
+Analyzing core//lib/memb.c
+Analyzing core//lib/mmem.c
+Analyzing core//lib/petsciiconv.c
+Analyzing core//lib/print-stats.c
+Analyzing core//lib/random.c
+Analyzing core//lib/ringbuf.c
+Analyzing core//lib/ringbufindex.c
+Analyzing core//lib/sensors.c
+Analyzing core//lib/settings.c
+Analyzing core//lib/strncasecmp/strncasecmp.c
+Analyzing core//lib/trickle-timer.c
+Analyzing core//loader/cle.c
+Analyzing core//loader/cle_avr.c
+Analyzing core//loader/cle_msp430.c
+Analyzing core//loader/cmod.c
+Analyzing core//loader/dlloader.c
+Analyzing core//loader/elfloader-avr.c
+Analyzing core//loader/elfloader-msp430.c
+Analyzing core//loader/elfloader-msp430x.c
+Analyzing core//loader/elfloader-stub.c
+Analyzing core//loader/elfloader-x86.c
+Analyzing core//loader/elfloader.c
+Analyzing core//loader/elfloader_compat.c
+Analyzing core//loader/sym.c
+Analyzing core//loader/symtab-avr.c
+Analyzing core//loader/symtab.c
+Analyzing core//net/http-socket/http-socket.c
+Analyzing core//net/ip/dhcpc.c
+Analyzing core//net/ip/ip64-addr.c
+Analyzing core//net/ip/psock.c
+Analyzing core//net/ip/resolv.c
+Analyzing core//net/ip/simple-udp.c
+Analyzing core//net/ip/slipdev.c
+Analyzing core//net/ip/tcp-socket.c
+Analyzing core//net/ip/tcpip.c
+Analyzing core//net/ip/udp-socket.c
+Analyzing core//net/ip/uip-debug.c
+Analyzing core//net/ip/uip-nameserver.c
+Analyzing core//net/ip/uip-packetqueue.c
+Analyzing core//net/ip/uip-split.c
+Analyzing core//net/ip/uip-udp-packet.c
+Analyzing core//net/ip/uiplib.c
+Analyzing core//net/ip64/ip64-addrmap.c
+Analyzing core//net/ip64/ip64-arp.c
+Analyzing core//net/ip64/ip64-dhcpc.c
+Analyzing core//net/ip64/ip64-dns64.c
+Analyzing core//net/ip64/ip64-eth-interface.c
+Analyzing core//net/ip64/ip64-eth.c
+Analyzing core//net/ip64/ip64-ipv4-dhcp.c
+Analyzing core//net/ip64/ip64-null-driver.c
+Analyzing core//net/ip64/ip64-slip-interface.c
+Analyzing core//net/ip64/ip64-special-ports.c
+Analyzing core//net/ip64/ip64.c
+Analyzing core//net/ipv4/uaodv-rt.c
+Analyzing core//net/ipv4/uaodv.c
+Analyzing core//net/ipv4/uip-fw-drv.c
+Analyzing core//net/ipv4/uip-fw.c
+Analyzing core//net/ipv4/uip-neighbor.c
+Analyzing core//net/ipv4/uip-over-mesh.c
+Analyzing core//net/ipv4/uip.c
+Analyzing core//net/ipv4/uip_arp.c
+Analyzing core//net/ipv6/multicast/esmrf.c
+Analyzing core//net/ipv6/multicast/roll-tm.c
+Analyzing core//net/ipv6/multicast/smrf.c
+Analyzing core//net/ipv6/multicast/uip-mcast6-route.c
+Analyzing core//net/ipv6/multicast/uip-mcast6-stats.c
+Analyzing core//net/ipv6/sicslowpan.c
+Analyzing core//net/ipv6/uip-ds6-nbr.c
+Analyzing core//net/ipv6/uip-ds6-route.c
+Analyzing core//net/ipv6/uip-ds6.c
+Analyzing core//net/ipv6/uip-icmp6.c
+Analyzing core//net/ipv6/uip-nd6.c
+Analyzing core//net/ipv6/uip6.c
+Analyzing core//net/ipv6/websocket-http-client.c
+Analyzing core//net/ipv6/websocket.c
+Analyzing core//net/link-stats.c
+Analyzing core//net/linkaddr.c
+Analyzing core//net/llsec/anti-replay.c
+Analyzing core//net/llsec/ccm-star-packetbuf.c
+Analyzing core//net/llsec/noncoresec/noncoresec.c
+Analyzing core//net/llsec/nullsec.c
+Analyzing core//net/mac/contikimac/contikimac-framer.c
+Analyzing core//net/mac/contikimac/contikimac.c
+Analyzing core//net/mac/csma.c
+Analyzing core//net/mac/cxmac/cxmac.c
+Analyzing core//net/mac/frame802154.c
+Analyzing core//net/mac/frame802154e-ie.c
+Analyzing core//net/mac/framer-802154.c
+Analyzing core//net/mac/framer-nullmac.c
+Analyzing core//net/mac/mac-sequence.c
+Analyzing core//net/mac/mac.c
+Analyzing core//net/mac/nordc.c
+Analyzing core//net/mac/nullmac.c
+Analyzing core//net/mac/nullrdc-noframer.c
+Analyzing core//net/mac/nullrdc.c
+Analyzing core//net/mac/phase.c
+Analyzing core//net/mac/sicslowmac/sicslowmac.c
+Analyzing core//net/mac/tsch/tsch-adaptive-timesync.c
+Analyzing core//net/mac/tsch/tsch-log.c
+Analyzing core//net/mac/tsch/tsch-packet.c
+Analyzing core//net/mac/tsch/tsch-queue.c
+Analyzing core//net/mac/tsch/tsch-rpl.c
+Analyzing core//net/mac/tsch/tsch-schedule.c
+Analyzing core//net/mac/tsch/tsch-security.c
+Analyzing core//net/mac/tsch/tsch-slot-operation.c
+Analyzing core//net/mac/tsch/tsch.c
+Analyzing core//net/nbr-table.c
+Analyzing core//net/net-debug.c
+Analyzing core//net/netstack.c
+Analyzing core//net/packetbuf.c
+Analyzing core//net/queuebuf.c
+Analyzing core//net/rime/abc.c
+Analyzing core//net/rime/announcement.c
+Analyzing core//net/rime/broadcast-announcement.c
+Analyzing core//net/rime/broadcast.c
+Analyzing core//net/rime/chameleon-bitopt.c
+Analyzing core//net/rime/chameleon-raw.c
+Analyzing core//net/rime/chameleon.c
+Analyzing core//net/rime/channel.c
+Analyzing core//net/rime/collect-link-estimate.c
+Analyzing core//net/rime/collect-neighbor.c
+Analyzing core//net/rime/collect.c
+Analyzing core//net/rime/ipolite.c
+Analyzing core//net/rime/mesh.c
+Analyzing core//net/rime/multihop.c
+Analyzing core//net/rime/neighbor-discovery.c
+Analyzing core//net/rime/netflood.c
+Analyzing core//net/rime/packetqueue.c
+Analyzing core//net/rime/polite-announcement.c
+Analyzing core//net/rime/polite.c
+Analyzing core//net/rime/rime.c
+Analyzing core//net/rime/rimestats.c
+Analyzing core//net/rime/rmh.c
+Analyzing core//net/rime/route-discovery.c
+Analyzing core//net/rime/route.c
+Analyzing core//net/rime/rucb.c
+Analyzing core//net/rime/rudolph1.c
+Analyzing core//net/rime/rudolph2.c
+Analyzing core//net/rime/runicast.c
+Analyzing core//net/rime/stbroadcast.c
+Analyzing core//net/rime/stunicast.c
+Analyzing core//net/rime/timesynch.c
+Analyzing core//net/rime/trickle.c
+Analyzing core//net/rime/unicast.c
+Analyzing core//net/rpl/rpl-dag-root.c
+Analyzing core//net/rpl/rpl-dag.c
+Analyzing core//net/rpl/rpl-ext-header.c
+Analyzing core//net/rpl/rpl-icmp6.c
+Analyzing core//net/rpl/rpl-mrhof.c
+Analyzing core//net/rpl/rpl-nbr-policy.c
+Analyzing core//net/rpl/rpl-ns.c
+Analyzing core//net/rpl/rpl-of0.c
+Analyzing core//net/rpl/rpl-timers.c
+Analyzing core//net/rpl/rpl.c
+Analyzing core//sys/arg.c
+Analyzing core//sys/autostart.c
+Analyzing core//sys/compower.c
+Analyzing core//sys/ctimer.c
+Analyzing core//sys/energest.c
+Analyzing core//sys/etimer.c
+Analyzing core//sys/mt.c
+Analyzing core//sys/process.c
+Analyzing core//sys/procinit.c
+Analyzing core//sys/rtimer.c
+Analyzing core//sys/stimer.c
+Analyzing core//sys/timer.c
+core//cfs/cfs-coffee.c:190: High: fixed size local buffer
+core//cfs/cfs-coffee.c:489: High: fixed size local buffer
+core//cfs/cfs-coffee.c:810: High: fixed size local buffer
+core//cfs/cfs-coffee.c:930: High: fixed size local buffer
+core//cfs/cfs-coffee.c:1150: High: fixed size local buffer
+core//dev/serial-line.c:89: High: fixed size local buffer
+core//dev/slip.c:339: High: fixed size local buffer
+core//lib/settings.c:454: High: fixed size local buffer
+core//loader/elfloader-avr.c:117: High: fixed size local buffer
+core//loader/elfloader-avr.c:182: High: fixed size local buffer
+core//loader/elfloader-msp430x.c:62: High: fixed size local buffer
+core//loader/elfloader-msp430x.c:218: High: fixed size local buffer
+core//loader/elfloader-msp430x.c:261: High: fixed size local buffer
+core//loader/elfloader-msp430x.c:338: High: fixed size local buffer
+core//loader/elfloader-msp430x.c:368: High: fixed size local buffer
+core//loader/elfloader-msp430x.c:711: High: fixed size local buffer
+core//loader/elfloader.c:57: High: fixed size local buffer
+core//loader/elfloader.c:182: High: fixed size local buffer
+core//loader/elfloader.c:224: High: fixed size local buffer
+core//loader/elfloader.c:300: High: fixed size local buffer
+core//loader/elfloader.c:347: High: fixed size local buffer
+core//loader/symtab-avr.c:68: High: fixed size local buffer
+core//net/http-socket/http-socket.c:401: High: fixed size local buffer
+core//net/http-socket/http-socket.c:402: High: fixed size local buffer
+core//net/http-socket/http-socket.c:404: High: fixed size local buffer
+core//net/http-socket/http-socket.c:492: High: fixed size local buffer
+core//net/http-socket/http-socket.c:493: High: fixed size local buffer
+core//net/http-socket/http-socket.c:555: High: fixed size local buffer
+core//net/ip/resolv.c:269: High: fixed size local buffer
+core//net/ip/resolv.c:966: High: fixed size local buffer
+core//net/ip/resolv.c:1248: High: fixed size local buffer
+core//net/ip/resolv.c:1472: High: fixed size local buffer
+core//net/ipv6/websocket-http-client.c:88: High: fixed size local buffer
+core//net/ipv6/websocket.c:550: High: fixed size local buffer
+core//net/ipv6/websocket.c:551: High: fixed size local buffer
+core//net/queuebuf.c:143: High: fixed size local buffer
+core//net/rime/chameleon-bitopt.c:223: High: fixed size local buffer
+core//net/rime/chameleon.c:77: High: fixed size local buffer
+core//sys/arg.c:73: High: fixed size local buffer
+Extra care should be taken to ensure that character arrays that are allocated
+on the stack are used safely.  They are prime targets for buffer overflow
+attacks.
+
+core//ctk/ctk.c:1251: High: strcpy
+core//loader/cmod.c:79: High: strcpy
+core//loader/cmod.c:107: High: strcpy
+core//loader/cmod.c:124: High: strcpy
+Check to be sure that argument 2 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+core//net/ip/resolv.c:1097: High: strncat
+core//net/ip/resolv.c:1477: High: strncat
+core//net/ip/resolv.c:1482: High: strncat
+Consider using strlcat() instead.
+
+core//net/ip/resolv.c:1097: High: strncat
+core//net/ip/resolv.c:1477: High: strncat
+core//net/ip/resolv.c:1482: High: strncat
+Check to be sure that argument 1 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+core//net/ipv4/uaodv.c:118: High: vprintf
+Check to be sure that the non-constant format string passed as argument 1 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+core//net/rime/chameleon-bitopt.c:231: High: printf
+core//net/rime/chameleon.c:85: High: printf
+Check to be sure that the non-constant format string passed as argument 1 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+core//cfs/cfs-posix.c:79: Medium: read
+core//net/mac/contikimac/contikimac.c:766: Medium: read
+core//net/mac/cxmac/cxmac.c:563: Medium: read
+core//net/mac/nullrdc.c:187: Medium: read
+core//net/mac/tsch/tsch-slot-operation.c:616: Medium: read
+core//net/mac/tsch/tsch-slot-operation.c:794: Medium: read
+core//net/mac/tsch/tsch.c:651: Medium: read
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+core//lib/random.c:43: Medium: srand
+Standard random number generators should not be used to 
+generate randomness used for security reasons.  For security sensitive 
+randomness a crytographic randomness generator that provides sufficient
+entropy should be used.
+
+Total lines analyzed: 64044
+Total time 0.040917 seconds
+1565217 lines per second

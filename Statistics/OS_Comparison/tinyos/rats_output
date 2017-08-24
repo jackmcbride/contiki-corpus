@@ -1,0 +1,59 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+Analyzing tinyos-main/apps/BaseStation15.4/seriallisten15-4.c
+Analyzing tinyos-main/apps/jennic-apps/sniffer/Mac_Jn516Sniffer/frame-listener.py
+Analyzing tinyos-main/apps/jennic-apps/sniffer/Mac_Jn516Sniffer/listener.py
+Analyzing tinyos-main/apps/jennic-apps/sniffer/Phy_Jn516Sniffer/docopt.py
+Analyzing tinyos-main/apps/jennic-apps/sniffer/Phy_Jn516Sniffer/listener.py
+Analyzing tinyos-main/apps/jennic-apps/sniffer/Phy_Jn516Sniffer/pcap_listener.py
+Analyzing tinyos-main/apps/jennic-apps/sniffer/Phy_Jn516Sniffer/pcap_parser.py
+Analyzing tinyos-main/apps/jennic-tests/serial/TestPrintf/am-printf-listener.py
+Analyzing tinyos-main/apps/jennic-tests/serial/TestSerial/serial-am-listener.py
+Analyzing tinyos-main/apps/MultihopOscilloscope/oscilloscope.py
+Analyzing tinyos-main/apps/MultihopOscilloscopeLqi/oscilloscope.py
+Analyzing tinyos-main/apps/Oscilloscope/oscilloscope.py
+Analyzing tinyos-main/apps/tests/LinkBench/scripts/make-tossim-network.py
+Analyzing tinyos-main/apps/tests/msp432/dma432_test/dma_test.c
+Analyzing tinyos-main/apps/tests/msp432/master_spi/master.c
+Analyzing tinyos-main/apps/tests/sam3/TestADE7753/TestADE7753Logger.py
+Analyzing tinyos-main/apps/tests/TestDhv/gentest.py
+Analyzing tinyos-main/apps/tests/TestDip/gentest.py
+Analyzing tinyos-main/apps/tests/TestDissemination/test.py
+Analyzing tinyos-main/apps/tests/TestFtsp/Ftsp/FtspDataLogger.py
+Analyzing tinyos-main/apps/tests/TestFtsp/FtspLpl/FtspDataLogger.py
+Analyzing tinyos-main/apps/tests/TestFtsp/FtspLpl/TestFtspMsg.py
+Analyzing tinyos-main/apps/tests/TestLocalTime/dump.py
+Analyzing tinyos-main/apps/tests/TestMultihopLqi/script.py
+Analyzing tinyos-main/apps/tests/TestNetwork/ctp-dump.py
+Analyzing tinyos-main/apps/tests/TestNetwork/Driver.c
+Analyzing tinyos-main/apps/tests/TestNetwork/test.py
+Analyzing tinyos-main/apps/tests/TestNetwork/tn-injector.c
+Analyzing tinyos-main/apps/tests/TestNetwork/tn-listener.c
+Analyzing tinyos-main/apps/tests/TestNetworkLpl/ctp-dump.py
+Analyzing tinyos-main/apps/tests/TestSimComm/test-asym.py
+Analyzing tinyos-main/apps/tests/TestSimComm/test-equal.py
+Analyzing tinyos-main/apps/tests/TestSimComm/test-unequal.py
+Analyzing tinyos-main/apps/tests/TestSimTimers/script.py
+Analyzing tinyos-main/apps/tests/TestSrp/sim.py
+Analyzing tinyos-main/apps/tests/TestTrickleTimer/Driver.c
+Analyzing tinyos-main/apps/tests/TestTrickleTimer/test.py
+Analyzing tinyos-main/apps/tests/TestTymo/test.py
+tinyos-main/apps/jennic-apps/sniffer/Phy_Jn516Sniffer/docopt.py:465: High: compile
+Argument 1 to this function call should be checked to ensure that it does not
+come from an untrusted source without first verifying that it contains nothing
+dangerous.
+
+tinyos-main/apps/tests/TestMultihopLqi/script.py:49: Medium: random
+Standard random number generators should not be used to 
+generate randomness used for security reasons.  For security sensitive randomness a crytographic randomness generator that provides sufficient entropy should be used.
+
+tinyos-main/apps/tests/TestNetwork/test.py:34: Medium: randint
+Standard random number generators should not be used to 
+generate randomness used for security reasons.  For security sensitive randomness a crytographic randomness generator that provides sufficient entropy should be used.
+
+Total lines analyzed: 3815
+Total time 0.134052 seconds
+28459 lines per second

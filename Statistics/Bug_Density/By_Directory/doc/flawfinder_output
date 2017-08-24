@@ -1,0 +1,24 @@
+Flawfinder version 2.0.0, (C) 2001-2017 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 219
+Examining doc/code-style.c
+Examining doc/example-list.c
+Examining doc/example-pollhandler.c
+Examining doc/example-program.c
+Examining doc/example-psock-client.c
+Examining doc/example-psock-server.c
+
+FINAL RESULTS:
+
+
+ANALYSIS SUMMARY:
+
+No hits found.
+Lines analyzed = 508 in approximately 0.03 seconds (14980 lines/second)
+Physical Source Lines of Code (SLOC) = 161
+Hits@level = [0]   0 [1]   0 [2]   0 [3]   0 [4]   0 [5]   0
+Hits@level+ = [0+]   0 [1+]   0 [2+]   0 [3+]   0 [4+]   0 [5+]   0
+Hits/KSLOC@level+ = [0+]   0 [1+]   0 [2+]   0 [3+]   0 [4+]   0 [5+]   0
+Minimum risk level = 1
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming for Linux and Unix HOWTO'
+(http://www.dwheeler.com/secure-programs) for more information.

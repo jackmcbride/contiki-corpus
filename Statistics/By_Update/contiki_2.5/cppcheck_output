@@ -1,0 +1,50 @@
+[contiki-2.5/README:4]: (error) syntax error
+[contiki-2.5/apps/ftp/ftpc.c:287]: (error) sprintf format string requires 6 parameters but only 3 are given.
+[contiki-2.5/apps/shell/shell-vars.c:109]: (error) Buffer is accessed out of bounds: numbuf
+[contiki-2.5/core/net/mac/cxmac.c:128]: (error) failed to evaluate #if condition
+[contiki-2.5/core/net/mac/lpp.c:107]: (error) failed to evaluate #if condition
+[contiki-2.5/core/net/mac/xmac.c:128]: (error) failed to evaluate #if condition
+[contiki-2.5/cpu/arm/at91sam7s/startup-SAM7S-arm.c:129]: (error) syntax error
+[contiki-2.5/cpu/arm/at91sam7s/usb-arch.c:197]: (error) syntax error
+[contiki-2.5/cpu/arm/stm32f103/usb-arch.c:343]: (error) syntax error
+[contiki-2.5/cpu/cc2430/dev/bus.c] -> [contiki-2.5/cpu/cc2430/dev/bus.c]: (error) syntax error
+[contiki-2.5/cpu/cc2430/uip_arch.c] -> [contiki-2.5/cpu/cc2430/uip_arch.c]: (error) syntax error
+[contiki-2.5/cpu/mc1322x/tests/printf.c:91]: (error) Null pointer dereference: np
+[contiki-2.5/cpu/mc1322x/tests/printf.c:88]: (error) Signed integer overflow for expression '(1<<(bs-1))+1'.
+[contiki-2.5/cpu/stm32w108/hal/micro/cortexm3/nvm.h:250]: (error) failed to evaluate #if condition
+[contiki-2.5/cpu/stm32w108/e_stdio/src/small_dtoa.c:1169]: (error) Uninitialized variable: k
+[contiki-2.5/cpu/stm32w108/e_stdio/src/small_dtoa.c:1171]: (error) Uninitialized variable: s
+[contiki-2.5/cpu/stm32w108/e_stdio/src/small_dtoa.c:1172]: (error) Uninitialized variable: s0
+[contiki-2.5/cpu/stm32w108/e_stdio/src/small_mprec.c:1356]: (error) Uninitialized variable: p5
+[contiki-2.5/cpu/stm32w108/e_stdio/src/small_vfsscanf.c:866]: (error) Uninitialized variable: mbslen
+[contiki-2.5/cpu/stm32w108/hal/micro/cortexm3/board.c:268]: (error) Array 'boardList[7]' accessed at index 13, which is out of bounds.
+[contiki-2.5/cpu/stm32w108/hal/micro/cortexm3/stm32w108/low_level_init.c] -> [contiki-2.5/cpu/stm32w108/hal/micro/cortexm3/stm32w108/low_level_init.c]: (error) syntax error
+[contiki-2.5/cpu/z80/loader/mef.c:101]: (error) Expression '*offset++=(char)((reloc.data+(u16_t)offset)&255)' depends on order of evaluation of side effects
+[contiki-2.5/cpu/z80/uip_arch.c] -> [contiki-2.5/cpu/z80/uip_arch.c]: (error) syntax error
+[contiki-2.5/examples/sky-ip/sky-telnet-server.c:64]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.5/examples/sky-ip/telnet-webserver.c:64]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.5/platform/avr-raven/contiki-conf.h:305]: (error) No header in #include
+[contiki-2.5/platform/avr-raven/contiki-raven-main.c:211]: (error) Uninitialized variable: j
+[contiki-2.5/platform/avr-ravenusb/contiki-raven-main.c:612]: (error) Uninitialized variable: lastprint
+[contiki-2.5/platform/cc2420dbk/gateway.c:130]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.5/platform/cooja/testapps/testuaodv.c:76]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.5/platform/cooja/testapps/testuaodv.c:79]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.5/platform/cooja/testapps/testuaodv.c:88]: (error) printf format string requires 5 parameters but only 2 are given.
+[contiki-2.5/platform/esb/contiki-conf.h:121]: (error) No header in #include
+[contiki-2.5/platform/iris/contiki-conf.h:202]: (error) No header in #include
+[contiki-2.5/platform/minimal-net/contiki-main.c:218]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.5/platform/minimal-net/contiki-main.c:226]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.5/platform/minimal-net/contiki-main.c:233]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.5/platform/netsim/contiki-main.c:155]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.5/platform/netsim/contiki-main.c:98]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.5/platform/netsim/contiki-main.c:140]: (error) snprintf format string requires 12 parameters but only 3 are given.
+[contiki-2.5/platform/netsim/main.c:277]: (error) printf format string requires 5 parameters but only 2 are given.
+[contiki-2.5/platform/netsim/main.c:283]: (error) printf format string requires 5 parameters but only 2 are given.
+[contiki-2.5/platform/sky/contiki-conf.h:8]: (error) No header in #include
+[contiki-2.5/platform/sky/contiki-conf.h:212]: (error) No header in #include
+[contiki-2.5/platform/stepper-robot/contiki-main.c:145]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.5/platform/stepper-robot/robot-main.c:157]: (error) printf format string requires 4 parameters but only 1 is given.
+[contiki-2.5/platform/z1/contiki-conf.h:192]: (error) No header in #include
+[contiki-2.5/tools/wpcapslip/wpcap.c:524]: (error) snprintf format string requires 4 parameters but only 1 is given.
+[contiki-2.5/tools/wpcapslip/wpcap.c:555]: (error) printf format string requires 8 parameters but only 2 are given.
+[contiki-2.5/tools/wpcapslip/wpcap.c:559]: (error) snprintf format string requires 12 parameters but only 3 are given.

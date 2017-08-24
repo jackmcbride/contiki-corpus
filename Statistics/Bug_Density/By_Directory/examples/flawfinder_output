@@ -1,0 +1,2728 @@
+Flawfinder version 2.0.0, (C) 2001-2017 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 219
+Examining examples/antelope/netdb/netdb-client.c
+Examining examples/antelope/netdb/netdb-server.c
+Examining examples/antelope/netdb/project-conf.h
+Examining examples/antelope/shell/project-conf.h
+Examining examples/antelope/shell/shell-db.c
+Examining examples/avr-rss2/AES128HW_test/AES128HW_test.c
+Examining examples/avr-rss2/AES128HW_test/project-conf.h
+Examining examples/avr-rss2/avr_radio_power/avr_radio_power.c
+Examining examples/avr-rss2/avr_radio_power/project-conf.h
+Examining examples/avr-rss2/hello-sensors/hello-sensors.c
+Examining examples/avr-rss2/hello-sensors/project-conf.h
+Examining examples/avr-rss2/ipv6/dc-rpl-coap/coap-client.c
+Examining examples/avr-rss2/ipv6/dc-rpl-coap/coap-server.c
+Examining examples/avr-rss2/ipv6/dc-rpl-coap/dev/dc-hw-sensor.c
+Examining examples/avr-rss2/ipv6/dc-rpl-coap/dev/dc-hw-sensor.h
+Examining examples/avr-rss2/ipv6/dc-rpl-coap/dev/dc-status-sensor.c
+Examining examples/avr-rss2/ipv6/dc-rpl-coap/dev/dc-status-sensor.h
+Examining examples/avr-rss2/ipv6/dc-rpl-coap/dev/dc-vdc-sensor.c
+Examining examples/avr-rss2/ipv6/dc-rpl-coap/dev/dc-vdc-sensor.h
+Examining examples/avr-rss2/ipv6/dc-rpl-coap/er-dc-test.h
+Examining examples/avr-rss2/ipv6/dc-rpl-coap/project-conf.h
+Examining examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-co2.c
+Examining examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-hwcfg.c
+Examining examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-status-obs.c
+Examining examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-vdc.c
+Examining examples/avr-rss2/ipv6/rpl-border-router/border-router.c
+Examining examples/avr-rss2/ipv6/rpl-border-router/enc28j60-ip64-driver.c
+Examining examples/avr-rss2/ipv6/rpl-border-router/enc28j60-ip64-driver.h
+Examining examples/avr-rss2/ipv6/rpl-border-router/eth-bridge.c
+Examining examples/avr-rss2/ipv6/rpl-border-router/httpd-simple.c
+Examining examples/avr-rss2/ipv6/rpl-border-router/httpd-simple.h
+Examining examples/avr-rss2/ipv6/rpl-border-router/project-conf.h
+Examining examples/avr-rss2/ipv6/rpl-udp-report/project-conf.h
+Examining examples/avr-rss2/ipv6/rpl-udp-report/report.c
+Examining examples/avr-rss2/ipv6/rpl-udp-report/sink.c
+Examining examples/avr-rss2/ipv6/sensd_client/project-conf.h
+Examining examples/avr-rss2/ipv6/sensd_client/sensd_client.c
+Examining examples/avr-rss2/ipv6/sensd_client/server.c
+Examining examples/cc2530dk/blink-hello.c
+Examining examples/cc2530dk/border-router/border-router.c
+Examining examples/cc2530dk/border-router/project-conf.h
+Examining examples/cc2530dk/border-router/slip-bridge.c
+Examining examples/cc2530dk/cc2531-usb-demo/cc2531-usb-demo.c
+Examining examples/cc2530dk/hello-world.c
+Examining examples/cc2530dk/sensors-demo.c
+Examining examples/cc2530dk/timer-test.c
+Examining examples/cc2530dk/udp-ipv6/client.c
+Examining examples/cc2530dk/udp-ipv6/ping6.c
+Examining examples/cc2530dk/udp-ipv6/project-conf.h
+Examining examples/cc2530dk/udp-ipv6/server.c
+Examining examples/cc2538-common/crypto/cbc-mac-test.c
+Examining examples/cc2538-common/crypto/cbc-test.c
+Examining examples/cc2538-common/crypto/ccm-test.c
+Examining examples/cc2538-common/crypto/ctr-test.c
+Examining examples/cc2538-common/crypto/ecb-test.c
+Examining examples/cc2538-common/crypto/gcm-test.c
+Examining examples/cc2538-common/crypto/sha256-test.c
+Examining examples/cc2538-common/mqtt-demo/mqtt-demo.c
+Examining examples/cc2538-common/mqtt-demo/project-conf.h
+Examining examples/cc2538-common/pka/ecc-ecdh.c
+Examining examples/cc2538-common/pka/ecc-sign.c
+Examining examples/cc2538-common/pka/ecc-verify.c
+Examining examples/cc2538-common/project-conf.h
+Examining examples/cc2538-common/test-pwm.c
+Examining examples/cc2538-common/test-uart.c
+Examining examples/cc2538-common/timer-test.c
+Examining examples/cc2538dk/cc2538-demo.c
+Examining examples/cc2538dk/project-conf.h
+Examining examples/cc2538dk/udp-ipv6-echo-server/udp-echo-server.c
+Examining examples/cc26xx/cc26xx-demo.c
+Examining examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.c
+Examining examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.h
+Examining examples/cc26xx/cc26xx-web-demo/cetic-6lbr-client.c
+Examining examples/cc26xx/cc26xx-web-demo/coap-server.c
+Examining examples/cc26xx/cc26xx-web-demo/coap-server.h
+Examining examples/cc26xx/cc26xx-web-demo/httpd-simple.c
+Examining examples/cc26xx/cc26xx-web-demo/httpd-simple.h
+Examining examples/cc26xx/cc26xx-web-demo/mqtt-client.c
+Examining examples/cc26xx/cc26xx-web-demo/mqtt-client.h
+Examining examples/cc26xx/cc26xx-web-demo/net-uart.c
+Examining examples/cc26xx/cc26xx-web-demo/net-uart.h
+Examining examples/cc26xx/cc26xx-web-demo/project-conf.h
+Examining examples/cc26xx/cc26xx-web-demo/resources/res-ble-advd.c
+Examining examples/cc26xx/cc26xx-web-demo/resources/res-device.c
+Examining examples/cc26xx/cc26xx-web-demo/resources/res-leds.c
+Examining examples/cc26xx/cc26xx-web-demo/resources/res-net.c
+Examining examples/cc26xx/cc26xx-web-demo/resources/res-sensors.c
+Examining examples/cc26xx/cc26xx-web-demo/resources/res-toggle-leds.c
+Examining examples/cc26xx/project-conf.h
+Examining examples/cc26xx/very-sleepy-demo/project-conf.h
+Examining examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c
+Examining examples/cfs-coffee/example-coffee.c
+Examining examples/cfs-coffee/project-conf.h
+Examining examples/cfs-coffee/test-cfs.c
+Examining examples/cfs-coffee/test-coffee.c
+Examining examples/collect/collect-view-shell.c
+Examining examples/econotag-ecc-test/econotag-ecc-test.c
+Examining examples/econotag-flash-test/econotag-flash-test.c
+Examining examples/econotag-flash-test/econotag-flash-test.h
+Examining examples/eeprom-test/eeprom-test.c
+Examining examples/email/email-client.c
+Examining examples/er-rest-example/er-example-client.c
+Examining examples/er-rest-example/er-example-observe-client.c
+Examining examples/er-rest-example/er-example-server.c
+Examining examples/er-rest-example/er-plugtest-server.c
+Examining examples/er-rest-example/er-plugtest.h
+Examining examples/er-rest-example/project-conf.h
+Examining examples/er-rest-example/resources/res-b1-sep-b2.c
+Examining examples/er-rest-example/resources/res-battery.c
+Examining examples/er-rest-example/resources/res-chunks.c
+Examining examples/er-rest-example/resources/res-event.c
+Examining examples/er-rest-example/resources/res-hello.c
+Examining examples/er-rest-example/resources/res-leds.c
+Examining examples/er-rest-example/resources/res-light.c
+Examining examples/er-rest-example/resources/res-mirror.c
+Examining examples/er-rest-example/resources/res-plugtest-create1.c
+Examining examples/er-rest-example/resources/res-plugtest-create2.c
+Examining examples/er-rest-example/resources/res-plugtest-create3.c
+Examining examples/er-rest-example/resources/res-plugtest-large-create.c
+Examining examples/er-rest-example/resources/res-plugtest-large-update.c
+Examining examples/er-rest-example/resources/res-plugtest-large.c
+Examining examples/er-rest-example/resources/res-plugtest-links.c
+Examining examples/er-rest-example/resources/res-plugtest-locquery.c
+Examining examples/er-rest-example/resources/res-plugtest-longpath.c
+Examining examples/er-rest-example/resources/res-plugtest-multi.c
+Examining examples/er-rest-example/resources/res-plugtest-obs.c
+Examining examples/er-rest-example/resources/res-plugtest-path.c
+Examining examples/er-rest-example/resources/res-plugtest-query.c
+Examining examples/er-rest-example/resources/res-plugtest-separate.c
+Examining examples/er-rest-example/resources/res-plugtest-test.c
+Examining examples/er-rest-example/resources/res-plugtest-validate.c
+Examining examples/er-rest-example/resources/res-push.c
+Examining examples/er-rest-example/resources/res-radio.c
+Examining examples/er-rest-example/resources/res-separate.c
+Examining examples/er-rest-example/resources/res-sht11.c
+Examining examples/er-rest-example/resources/res-sub.c
+Examining examples/er-rest-example/resources/res-temperature.c
+Examining examples/er-rest-example/resources/res-toggle.c
+Examining examples/example-shell/example-shell.c
+Examining examples/extended-rf-api/extended-rf-api.c
+Examining examples/extended-rf-api/project-conf.h
+Examining examples/fat/example-fat.c
+Examining examples/fat/project-conf.h
+Examining examples/ftp/ftp-client.c
+Examining examples/galileo/gpio-input.c
+Examining examples/galileo/gpio-interrupt.c
+Examining examples/galileo/gpio-output.c
+Examining examples/galileo/i2c-callbacks.c
+Examining examples/galileo/i2c-LSM9DS0.c
+Examining examples/galileo/print-imr.c
+Examining examples/galileo/prot-domain-switch-latency.c
+Examining examples/hello-world/hello-world.c
+Examining examples/http-socket/http-example.c
+Examining examples/ip64-router/ip64-router.c
+Examining examples/ip64-router/project-conf.h
+Examining examples/ipso-objects/example-ipso-objects.c
+Examining examples/ipso-objects/example-ipso-temperature.c
+Examining examples/ipso-objects/example-server.c
+Examining examples/ipso-objects/project-conf.h
+Examining examples/ipso-objects/serial-protocol.c
+Examining examples/ipso-objects/serial-protocol.h
+Examining examples/ipv6/json-ws/json-ws-udp.c
+Examining examples/ipv6/json-ws/json-ws.c
+Examining examples/ipv6/json-ws/json-ws.h
+Examining examples/ipv6/json-ws/project-conf.h
+Examining examples/ipv6/json-ws/websense-sky.c
+Examining examples/ipv6/json-ws/websense-z1.c
+Examining examples/ipv6/multicast/intermediate.c
+Examining examples/ipv6/multicast/project-conf.h
+Examining examples/ipv6/multicast/root.c
+Examining examples/ipv6/multicast/sink.c
+Examining examples/ipv6/native-border-router/border-router-cmds.c
+Examining examples/ipv6/native-border-router/border-router-cmds.h
+Examining examples/ipv6/native-border-router/border-router-rdc.c
+Examining examples/ipv6/native-border-router/border-router.c
+Examining examples/ipv6/native-border-router/border-router.h
+Examining examples/ipv6/native-border-router/httpd-simple.c
+Examining examples/ipv6/native-border-router/httpd-simple.h
+Examining examples/ipv6/native-border-router/project-conf.h
+Examining examples/ipv6/native-border-router/slip-config.c
+Examining examples/ipv6/native-border-router/slip-dev.c
+Examining examples/ipv6/native-border-router/tun-bridge.c
+Examining examples/ipv6/rpl-border-router/border-router.c
+Examining examples/ipv6/rpl-border-router/httpd-simple.c
+Examining examples/ipv6/rpl-border-router/httpd-simple.h
+Examining examples/ipv6/rpl-border-router/project-conf.h
+Examining examples/ipv6/rpl-border-router/slip-bridge.c
+Examining examples/ipv6/rpl-collect/collect-common.c
+Examining examples/ipv6/rpl-collect/collect-common.h
+Examining examples/ipv6/rpl-collect/project-conf.h
+Examining examples/ipv6/rpl-collect/udp-sender.c
+Examining examples/ipv6/rpl-collect/udp-sink.c
+Examining examples/ipv6/rpl-tsch/node.c
+Examining examples/ipv6/rpl-tsch/project-conf.h
+Examining examples/ipv6/rpl-udp/project-conf.h
+Examining examples/ipv6/rpl-udp/udp-client.c
+Examining examples/ipv6/rpl-udp/udp-server.c
+Examining examples/ipv6/simple-udp-rpl/broadcast-example.c
+Examining examples/ipv6/simple-udp-rpl/unicast-receiver.c
+Examining examples/ipv6/simple-udp-rpl/unicast-sender.c
+Examining examples/ipv6/sky-websense/project-conf.h
+Examining examples/ipv6/sky-websense/sky-websense.c
+Examining examples/ipv6/sky-websense/websense-remote.c
+Examining examples/ipv6/sky-websense/wget.c
+Examining examples/ipv6/sky-websense/wget.h
+Examining examples/ipv6/slip-radio/no-framer.c
+Examining examples/ipv6/slip-radio/project-conf.h
+Examining examples/ipv6/slip-radio/slip-net.c
+Examining examples/ipv6/slip-radio/slip-radio-cc2420.c
+Examining examples/ipv6/slip-radio/slip-radio-mc1322x.c
+Examining examples/ipv6/slip-radio/slip-radio-rf230.c
+Examining examples/ipv6/slip-radio/slip-radio-sky-sensors.c
+Examining examples/ipv6/slip-radio/slip-radio.c
+Examining examples/ipv6/slip-radio/slip-radio.h
+Examining examples/irc/irc-client.c
+Examining examples/irc-80col/irc-client.c
+Examining examples/jn516x/dr1175-sensors/node.c
+Examining examples/jn516x/dr1175-sensors/project-conf.h
+Examining examples/jn516x/rime/node.c
+Examining examples/jn516x/rime/project-conf.h
+Examining examples/jn516x/rpl/border-router/border-router.c
+Examining examples/jn516x/rpl/border-router/project-conf.h
+Examining examples/jn516x/rpl/border-router/slip-bridge.c
+Examining examples/jn516x/rpl/coap-dongle-node/dongle-node.c
+Examining examples/jn516x/rpl/coap-dongle-node/project-conf.h
+Examining examples/jn516x/rpl/coap-dr1175-node/dr1175-node.c
+Examining examples/jn516x/rpl/coap-dr1175-node/project-conf.h
+Examining examples/jn516x/rpl/coap-dr1199-node/dr1199-node.c
+Examining examples/jn516x/rpl/coap-dr1199-node/project-conf.h
+Examining examples/jn516x/rpl/common-conf.h
+Examining examples/jn516x/rpl/node/node.c
+Examining examples/jn516x/rpl/node/project-conf.h
+Examining examples/jn516x/rpl/tools/rpl-tools.c
+Examining examples/jn516x/rpl/tools/rpl-tools.h
+Examining examples/jn516x/tsch/common-conf-jn516x.h
+Examining examples/jn516x/tsch/common-conf.h
+Examining examples/jn516x/tsch/simple-sensor-network/node/node.c
+Examining examples/jn516x/tsch/simple-sensor-network/node/project-conf.h
+Examining examples/jn516x/tsch/simple-sensor-network/node/waveform.h
+Examining examples/jn516x/tsch/simple-sensor-network/rpl-border-router/border-router.c
+Examining examples/jn516x/tsch/simple-sensor-network/rpl-border-router/project-conf.h
+Examining examples/jn516x/tsch/simple-sensor-network/rpl-border-router/slip-bridge.c
+Examining examples/jn516x/tsch/tools/rpl-tools.c
+Examining examples/jn516x/tsch/tools/rpl-tools.h
+Examining examples/jn516x/tsch/tx-power-verification/node/node.c
+Examining examples/jn516x/tsch/tx-power-verification/node/project-conf.h
+Examining examples/jn516x/tsch/tx-power-verification/rpl-border-router/project-conf.h
+Examining examples/jn516x/tsch/tx-power-verification/rpl-border-router/rpl-border-router.c
+Examining examples/jn516x/tsch/tx-power-verification/rpl-border-router/slip-bridge.c
+Examining examples/jn516x/tsch/uart1-test-node/project-conf.h
+Examining examples/jn516x/tsch/uart1-test-node/uart1-test-node.c
+Examining examples/llsec/ccm-star-tests/encryption/project-conf.h
+Examining examples/llsec/ccm-star-tests/encryption/tests.c
+Examining examples/llsec/ccm-star-tests/verification/project-conf.h
+Examining examples/llsec/ccm-star-tests/verification/tests.c
+Examining examples/mbxxx/acc-sensor/acc-example.c
+Examining examples/mbxxx/button/test-button.c
+Examining examples/mbxxx/coffee-test/coffee-test.c
+Examining examples/mbxxx/mbxxx-shell/mbxxx-shell.c
+Examining examples/mbxxx/mbxxx-websense/mbxxx-websense.c
+Examining examples/mbxxx/mbxxx-websense/project-conf.h
+Examining examples/mbxxx/shell-exec/hello-world.c
+Examining examples/mbxxx/shell-exec/shell-exec-test.c
+Examining examples/mbxxx/telnet-server/telnet-server.c
+Examining examples/mbxxx/temperature/temp-sensor.c
+Examining examples/mbxxx/udp-ipv6-sleep/udp-client.c
+Examining examples/mbxxx/udp-ipv6-sleep/udp-server.c
+Examining examples/mbxxx/webserver-ajax/ajax-cgi.c
+Examining examples/mbxxx/webserver-ajax/httpd-fs.c
+Examining examples/mbxxx/webserver-ajax/httpd-fsdata.c
+Examining examples/mbxxx/webserver-ajax/mbxxx-webserver.c
+Examining examples/mbxxx/webserver-ajax/symbols.c
+Examining examples/mbxxx/webserver-ajax/symbols.h
+Examining examples/mbxxx/webserver-ajax/webserver-ajax-conf.h
+Examining examples/multi-threading/multi-threading.c
+Examining examples/netperf/netperf-shell.c
+Examining examples/nrf52dk/blink-hello/blink-hello.c
+Examining examples/nrf52dk/coap-demo/coap-client.c
+Examining examples/nrf52dk/coap-demo/coap-server.c
+Examining examples/nrf52dk/coap-demo/project-conf.h
+Examining examples/nrf52dk/coap-demo/resources/res-leds.c
+Examining examples/nrf52dk/mqtt-demo/mqtt-demo.c
+Examining examples/nrf52dk/mqtt-demo/project-conf.h
+Examining examples/nrf52dk/timer-test/timer-test.c
+Examining examples/openmote-cc2538/openmote-demo.c
+Examining examples/openmote-cc2538/project-conf.h
+Examining examples/ping-ipv6/example-ping6.c
+Examining examples/powertrace/example-powertrace.c
+Examining examples/ravenusbstick/fakeuip.c
+Examining examples/ravenusbstick/ravenusbstick.c
+Examining examples/rf_environment/project-conf.h
+Examining examples/rf_environment/rf_environment.c
+Examining examples/rime/example-abc.c
+Examining examples/rime/example-announcement.c
+Examining examples/rime/example-broadcast.c
+Examining examples/rime/example-collect.c
+Examining examples/rime/example-mesh.c
+Examining examples/rime/example-multihop.c
+Examining examples/rime/example-neighbors.c
+Examining examples/rime/example-polite.c
+Examining examples/rime/example-rucb.c
+Examining examples/rime/example-rudolph1.c
+Examining examples/rime/example-rudolph2.c
+Examining examples/rime/example-runicast.c
+Examining examples/rime/example-trickle.c
+Examining examples/rime/example-unicast.c
+Examining examples/rime-tsch/node.c
+Examining examples/rime-tsch/project-conf.h
+Examining examples/rssi-scanner/project-conf.h
+Examining examples/rssi-scanner/rssi-scanner-cc2420.c
+Examining examples/seedeye/powerswitch/project-conf.h
+Examining examples/seedeye/powerswitch/remotepowerswitch.c
+Examining examples/sensniff/avr-rss2/avr-rss2-io.h
+Examining examples/sensniff/avr-rss2/target-conf.h
+Examining examples/sensniff/cc2530dk/target-conf.h
+Examining examples/sensniff/cc2538dk/target-conf.h
+Examining examples/sensniff/ev-aducrf101mkxz/ev-aducrf101mkxz-io.h
+Examining examples/sensniff/ev-aducrf101mkxz/target-conf.h
+Examining examples/sensniff/jn516x/jn516x-io.h
+Examining examples/sensniff/jn516x/target-conf.h
+Examining examples/sensniff/netstack.c
+Examining examples/sensniff/openmote-cc2538/target-conf.h
+Examining examples/sensniff/pool/cc13xx-cc26xx-io.h
+Examining examples/sensniff/pool/cc2530-cc2531-io.h
+Examining examples/sensniff/pool/cc2538-io.h
+Examining examples/sensniff/pool/msp430-io.h
+Examining examples/sensniff/project-conf.h
+Examining examples/sensniff/sensniff-rdc.c
+Examining examples/sensniff/sensniff.c
+Examining examples/sensniff/sensniff.h
+Examining examples/sensniff/srf06-cc26xx/target-conf.h
+Examining examples/sensniff/z1/target-conf.h
+Examining examples/sensniff/zoul/target-conf.h
+Examining examples/servreg-hack/example-servreg-client.c
+Examining examples/servreg-hack/example-servreg-server.c
+Examining examples/settings-example/settings-example.c
+Examining examples/sky/radio-test.c
+Examining examples/sky/rt-leds.c
+Examining examples/sky/sky-collect.c
+Examining examples/sky/test-button.c
+Examining examples/sky-ip/ajax-cgi.c
+Examining examples/sky-ip/httpd-fs.c
+Examining examples/sky-ip/httpd-fsdata.c
+Examining examples/sky-ip/sky-telnet-server.c
+Examining examples/sky-ip/sky-webserver.c
+Examining examples/sky-ip/telnet-webserver.c
+Examining examples/sky-ip/telnet.c
+Examining examples/sky-shell/sky-shell.c
+Examining examples/sky-shell/sky-upload.c
+Examining examples/sky-shell-exec/hello-world.c
+Examining examples/sky-shell-exec/sky-shell-exec.c
+Examining examples/sky-shell-webserver/sky-shell-webserver.c
+Examining examples/stm32nucleo-spirit1/sensor-demo/sensor-demo.c
+Examining examples/tcp-socket/tcp-server.c
+Examining examples/telnet-server/telnet-server.c
+Examining examples/timers/all-timers.c
+Examining examples/trickle-library/trickle-library.c
+Examining examples/udp-ipv6/udp-client.c
+Examining examples/udp-ipv6/udp-server.c
+Examining examples/udp-stream/project-conf.h
+Examining examples/udp-stream/udp-stream.c
+Examining examples/webbrowser/webbrowser.c
+Examining examples/webbrowser-80col/webbrowser.c
+Examining examples/webserver/webserver-example.c
+Examining examples/webserver-ipv6/webserver6.c
+Examining examples/webserver-ipv6-raven/Huginn/makefsdata.h
+Examining examples/webserver-ipv6-raven/Muninn/makefsdata.h
+Examining examples/webserver-ipv6-raven/webserver6.c
+Examining examples/websockets/websocket-example.c
+Examining examples/wget/wget.c
+Examining examples/zolertia/z1/ipv6/z1-websense/project-conf.h
+Examining examples/zolertia/z1/ipv6/z1-websense/websense-remote.c
+Examining examples/zolertia/z1/ipv6/z1-websense/wget.c
+Examining examples/zolertia/z1/ipv6/z1-websense/wget.h
+Examining examples/zolertia/z1/ipv6/z1-websense/z1-websense.c
+Examining examples/zolertia/z1/test-adxl345.c
+Examining examples/zolertia/z1/test-battery.c
+Examining examples/zolertia/z1/test-light-ziglet.c
+Examining examples/zolertia/z1/test-phidgets.c
+Examining examples/zolertia/z1/test-potent.c
+Examining examples/zolertia/z1/test-reed-sensor.c
+Examining examples/zolertia/z1/test-relay-phidget.c
+Examining examples/zolertia/z1/test-sht11.c
+Examining examples/zolertia/z1/test-sht25.c
+Examining examples/zolertia/z1/test-tlc59116.c
+Examining examples/zolertia/z1/test-tmp102.c
+Examining examples/zolertia/zoul/at-test/at-master-test.c
+Examining examples/zolertia/zoul/at-test/project-conf.h
+Examining examples/zolertia/zoul/cc1200-demo/cc1200-demo.c
+Examining examples/zolertia/zoul/cc1200-demo/project-conf.h
+Examining examples/zolertia/zoul/orion/client/client.c
+Examining examples/zolertia/zoul/orion/client/ifttt-client.c
+Examining examples/zolertia/zoul/orion/client/project-conf.h
+Examining examples/zolertia/zoul/orion/ip64-router/httpd-simple.c
+Examining examples/zolertia/zoul/orion/ip64-router/httpd-simple.h
+Examining examples/zolertia/zoul/orion/ip64-router/ip64-router.c
+Examining examples/zolertia/zoul/orion/ip64-router/project-conf.h
+Examining examples/zolertia/zoul/project-conf.h
+Examining examples/zolertia/zoul/rev-a/project-conf.h
+Examining examples/zolertia/zoul/rev-a/test-power-mgmt.c
+Examining examples/zolertia/zoul/rev-b/project-conf.h
+Examining examples/zolertia/zoul/rev-b/test-power-mgmt.c
+Examining examples/zolertia/zoul/rtcc/project-conf.h
+Examining examples/zolertia/zoul/rtcc/test-rtcc.c
+Examining examples/zolertia/zoul/test-aac-sensor.c
+Examining examples/zolertia/zoul/test-ac-dimmer.c
+Examining examples/zolertia/zoul/test-bme280.c
+Examining examples/zolertia/zoul/test-bmp085-bmp180.c
+Examining examples/zolertia/zoul/test-dht22.c
+Examining examples/zolertia/zoul/test-grove-gyro.c
+Examining examples/zolertia/zoul/test-grove-light-sensor.c
+Examining examples/zolertia/zoul/test-grove-loudness-sensor.c
+Examining examples/zolertia/zoul/test-iaq.c
+Examining examples/zolertia/zoul/test-lcd.c
+Examining examples/zolertia/zoul/test-motion.c
+Examining examples/zolertia/zoul/test-pm10-sensor.c
+Examining examples/zolertia/zoul/test-relay.c
+Examining examples/zolertia/zoul/test-rotation-sensor.c
+Examining examples/zolertia/zoul/test-servo.c
+Examining examples/zolertia/zoul/test-sht25.c
+Examining examples/zolertia/zoul/test-tsl256x.c
+Examining examples/zolertia/zoul/test-vac-sensor.c
+Examining examples/zolertia/zoul/test-weather-meter.c
+Examining examples/zolertia/zoul/test-zonik.c
+Examining examples/zolertia/zoul/zoul-demo.c
+
+FINAL RESULTS:
+
+examples/antelope/netdb/netdb-server.c:97:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/avr-rss2/ipv6/dc-rpl-coap/coap-client.c:58:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/avr-rss2/ipv6/dc-rpl-coap/coap-server.c:75:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/avr-rss2/ipv6/dc-rpl-coap/er-dc-test.h:45:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/avr-rss2/ipv6/rpl-border-router/border-router.c:115:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/avr-rss2/ipv6/rpl-border-router/border-router.c:121:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/cc2530dk/sensors-demo.c:73:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/cc2538-common/test-pwm.c:60:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:375:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/er-rest-example/er-example-client.c:50:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/er-rest-example/er-example-observe-client.c:50:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/er-rest-example/er-example-observe-client.c:51:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/er-rest-example/er-example-server.c:53:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/er-rest-example/er-plugtest.h:49:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/er-rest-example/resources/res-event.c:46:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/er-rest-example/resources/res-leds.c:50:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/er-rest-example/resources/res-mirror.c:46:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/fat/example-fat.c:87:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/ipv6/json-ws/json-ws.c:54:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/ipv6/json-ws/websense-sky.c:50:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/ipv6/json-ws/websense-z1.c:55:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/ipv6/native-border-router/border-router-rdc.c:50:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/ipv6/native-border-router/border-router.c:117:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/ipv6/native-border-router/tun-bridge.c:94:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/ipv6/native-border-router/tun-bridge.c:98:  [4] (shell) system:
+  This causes a new program to execute and is difficult to use safely
+  (CWE-78). try using a library call that implements the same functionality
+  if available.
+examples/ipv6/native-border-router/tun-bridge.c:175:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+examples/ipv6/rpl-border-router/border-router.c:115:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/ipv6/rpl-border-router/border-router.c:121:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/ipv6/sky-websense/sky-websense.c:89:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/ipv6/slip-radio/no-framer.c:47:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/jn516x/rpl/coap-dongle-node/dongle-node.c:50:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/jn516x/rpl/coap-dr1175-node/dr1175-node.c:64:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/jn516x/rpl/coap-dr1199-node/dr1199-node.c:63:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/jn516x/tsch/tx-power-verification/node/node.c:51:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/jn516x/tsch/tx-power-verification/rpl-border-router/rpl-border-router.c:65:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/jn516x/tsch/uart1-test-node/uart1-test-node.c:56:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/mbxxx/mbxxx-websense/mbxxx-websense.c:65:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/nrf52dk/coap-demo/coap-client.c:60:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/rf_environment/rf_environment.c:51:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/rime/example-collect.c:102:  [4] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf.
+examples/sensniff/sensniff.c:49:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/wget/wget.c:177:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+examples/wget/wget.c:185:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+examples/zolertia/z1/ipv6/z1-websense/z1-websense.c:96:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/zolertia/z1/test-relay-phidget.c:46:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/zolertia/zoul/at-test/at-master-test.c:65:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/zolertia/zoul/at-test/at-master-test.c:429:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+examples/zolertia/zoul/orion/client/client.c:105:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+examples/zolertia/zoul/orion/client/ifttt-client.c:110:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+examples/zolertia/zoul/orion/ip64-router/ip64-router.c:93:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/zolertia/zoul/orion/ip64-router/ip64-router.c:99:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+examples/zolertia/zoul/test-servo.c:63:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+examples/ipv6/native-border-router/slip-config.c:76:  [3] (buffer) getopt:
+  Some older implementations do not protect against internal buffer overflows
+  (CWE-120, CWE-20). Check implementation on installation, or limit the size
+  of all string inputs.
+examples/antelope/netdb/netdb-client.c:74:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/antelope/netdb/netdb-client.c:106:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/antelope/netdb/netdb-client.c:116:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/antelope/netdb/netdb-server.c:77:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/antelope/netdb/netdb-server.c:94:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/antelope/netdb/netdb-server.c:108:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/antelope/netdb/netdb-server.c:273:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/antelope/netdb/netdb-server.c:283:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/avr-rss2/AES128HW_test/AES128HW_test.c:53:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/avr-rss2/AES128HW_test/AES128HW_test.c:54:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/avr-rss2/AES128HW_test/AES128HW_test.c:55:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/avr-rss2/AES128HW_test/AES128HW_test.c:56:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/avr-rss2/AES128HW_test/AES128HW_test.c:57:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/avr-rss2/AES128HW_test/AES128HW_test.c:68:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+examples/avr-rss2/avr_radio_power/avr_radio_power.c:58:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/avr-rss2/hello-sensors/hello-sensors.c:63:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/avr-rss2/ipv6/dc-rpl-coap/coap-client.c:108:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/avr-rss2/ipv6/dc-rpl-coap/coap-client.c:342:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-hwcfg.c:101:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-hwcfg.c:108:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-vdc.c:101:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-vdc.c:109:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/avr-rss2/ipv6/dc-rpl-coap/resources/res-dc-vdc.c:117:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/avr-rss2/ipv6/rpl-border-router/border-router.c:118:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/avr-rss2/ipv6/rpl-border-router/border-router.c:152:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/avr-rss2/ipv6/rpl-border-router/border-router.c:325:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/avr-rss2/ipv6/rpl-border-router/border-router.c:326:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/avr-rss2/ipv6/rpl-border-router/enc28j60-ip64-driver.c:53:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/avr-rss2/ipv6/rpl-border-router/enc28j60-ip64-driver.c:56:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/avr-rss2/ipv6/rpl-border-router/enc28j60-ip64-driver.c:57:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/avr-rss2/ipv6/rpl-border-router/enc28j60-ip64-driver.c:66:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/avr-rss2/ipv6/rpl-border-router/httpd-simple.h:60:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/avr-rss2/ipv6/rpl-border-router/httpd-simple.h:62:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/avr-rss2/ipv6/rpl-udp-report/report.c:92:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/avr-rss2/ipv6/sensd_client/sensd_client.c:68:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2530dk/border-router/border-router.c:102:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2530dk/border-router/slip-bridge.c:67:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2530dk/udp-ipv6/client.c:45:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2530dk/udp-ipv6/client.c:103:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2530dk/udp-ipv6/server.c:50:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2530dk/udp-ipv6/server.c:72:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/crypto/sha256-test.c:75:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:153:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:154:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:155:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:156:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:157:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:158:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:178:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:179:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:180:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:188:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:418:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:419:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:420:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:421:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:423:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:424:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:475:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2538-common/pka/ecc-ecdh.c:91:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-ecdh.c:95:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-ecdh.c:103:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-ecdh.c:114:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-ecdh.c:115:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-ecdh.c:116:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-ecdh.c:122:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-ecdh.c:123:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-ecdh.c:124:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-ecdh.c:144:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-ecdh.c:145:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-ecdh.c:146:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-ecdh.c:147:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-ecdh.c:166:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-ecdh.c:167:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-sign.c:109:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-sign.c:110:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-sign.c:118:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-sign.c:119:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-verify.c:92:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/pka/ecc-verify.c:93:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc2538-common/test-uart.c:82:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2538-common/test-uart.c:91:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/cc2538dk/udp-ipv6-echo-server/udp-echo-server.c:61:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc2538dk/udp-ipv6-echo-server/udp-echo-server.c:74:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.c:260:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.c:381:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.c:412:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.c:525:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.h:183:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/cetic-6lbr-client.c:84:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/cc26xx/cc26xx-web-demo/cetic-6lbr-client.c:92:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/cc26xx/cc26xx-web-demo/cetic-6lbr-client.c:102:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/cetic-6lbr-client.c:115:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/cetic-6lbr-client.c:155:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/cc26xx/cc26xx-web-demo/cetic-6lbr-client.c:160:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:85:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:86:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:87:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:142:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:246:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:258:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:259:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:272:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:273:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:326:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:348:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:351:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:354:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:357:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:360:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:381:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:384:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:390:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:456:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:1220:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:121:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:122:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:123:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:131:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:194:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:219:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:244:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:269:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:294:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:315:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:338:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:374:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:593:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:594:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:595:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:596:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:597:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:639:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:676:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.h:57:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.h:58:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.h:59:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.h:60:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.h:61:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/mqtt-client.h:62:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/net-uart.c:123:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/net-uart.c:141:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/net-uart.c:171:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/cc26xx/cc26xx-web-demo/net-uart.c:200:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/net-uart.c:219:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/cc26xx/cc26xx-web-demo/net-uart.c:287:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/net-uart.h:42:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/resources/res-ble-advd.c:57:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/cc26xx-web-demo/resources/res-ble-advd.c:66:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/cc26xx-web-demo/resources/res-ble-advd.c:73:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/cc26xx/cc26xx-web-demo/resources/res-net.c:88:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:180:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:190:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:191:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:207:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:208:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:221:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:222:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/cfs-coffee/example-coffee.c:63:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cfs-coffee/test-cfs.c:63:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cfs-coffee/test-cfs.c:103:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cfs-coffee/test-coffee.c:60:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cfs-coffee/test-coffee.c:197:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/cfs-coffee/test-coffee.c:253:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/er-rest-example/er-example-client.c:77:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/er-rest-example/resources/res-b1-sep-b2.c:102:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/er-rest-example/resources/res-hello.c:68:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/er-rest-example/resources/res-hello.c:75:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/er-rest-example/resources/res-hello.c:77:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/er-rest-example/resources/res-plugtest-large-update.c:103:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/er-rest-example/resources/res-plugtest-obs.c:60:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/er-rest-example/resources/res-plugtest-obs.c:108:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/er-rest-example/resources/res-plugtest-separate.c:63:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/er-rest-example/resources/res-separate.c:62:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/fat/example-fat.c:51:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipso-objects/example-server.c:71:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipso-objects/example-server.c:80:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipso-objects/example-server.c:81:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipso-objects/example-server.c:183:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipso-objects/example-server.c:206:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/json-ws/json-ws-udp.c:119:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/json-ws/json-ws.c:81:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/json-ws/json-ws.c:84:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/json-ws/json-ws.c:85:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/json-ws/json-ws.c:86:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/json-ws/json-ws.c:196:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/json-ws/json-ws.c:232:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/json-ws/json-ws.c:312:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/json-ws/json-ws.c:322:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/json-ws/websense-sky.c:68:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/json-ws/websense-z1.c:66:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/multicast/root.c:63:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/multicast/root.c:81:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/native-border-router/border-router-rdc.c:135:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/native-border-router/border-router.c:74:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/native-border-router/border-router.c:114:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/native-border-router/border-router.c:245:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/native-border-router/border-router.c:277:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/native-border-router/border-router.c:286:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/native-border-router/border-router.c:295:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/native-border-router/border-router.c:296:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/native-border-router/httpd-simple.h:60:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/native-border-router/httpd-simple.h:62:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/native-border-router/slip-config.c:57:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/native-border-router/slip-config.c:79:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/ipv6/native-border-router/slip-config.c:116:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/ipv6/native-border-router/slip-config.c:121:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/ipv6/native-border-router/slip-config.c:194:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+examples/ipv6/native-border-router/slip-dev.c:106:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/native-border-router/slip-dev.c:179:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/native-border-router/slip-dev.c:283:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/native-border-router/slip-dev.c:333:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/native-border-router/tun-bridge.c:69:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/native-border-router/tun-bridge.c:91:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/native-border-router/tun-bridge.c:145:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/native-border-router/tun-bridge.c:146:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+examples/ipv6/native-border-router/tun-bridge.c:148:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+examples/ipv6/native-border-router/tun-bridge.c:158:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+examples/ipv6/rpl-border-router/border-router.c:118:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/rpl-border-router/border-router.c:155:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/rpl-border-router/border-router.c:387:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/rpl-border-router/border-router.c:388:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/rpl-border-router/httpd-simple.h:60:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/rpl-border-router/httpd-simple.h:62:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/rpl-border-router/slip-bridge.c:67:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/rpl-collect/collect-common.c:99:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/rpl-tsch/node.c:151:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ipv6/rpl-tsch/node.c:182:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/rpl-tsch/node.c:183:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/rpl-udp/udp-client.c:89:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/rpl-udp/udp-client.c:110:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/ipv6/simple-udp-rpl/unicast-sender.c:122:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/simple-udp-rpl/unicast-sender.c:127:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/ipv6/sky-websense/sky-websense.c:86:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/sky-websense/wget.c:70:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/sky-websense/wget.c:73:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/sky-websense/wget.c:76:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/sky-websense/wget.c:79:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/sky-websense/wget.c:82:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/sky-websense/wget.c:85:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/sky-websense/wget.c:88:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/sky-websense/wget.c:91:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/sky-websense/wget.c:94:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/sky-websense/wget.c:97:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/slip-radio/slip-radio-sky-sensors.c:58:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ipv6/slip-radio/slip-radio.c:120:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/jn516x/rime/node.c:104:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/jn516x/rpl/border-router/border-router.c:61:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/jn516x/rpl/border-router/slip-bridge.c:75:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/jn516x/rpl/coap-dongle-node/dongle-node.c:46:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/jn516x/rpl/coap-dr1175-node/dr1175-node.c:61:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/jn516x/rpl/coap-dr1175-node/dr1175-node.c:69:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/jn516x/rpl/coap-dr1175-node/dr1175-node.c:259:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/jn516x/rpl/coap-dr1175-node/dr1175-node.c:288:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/jn516x/rpl/coap-dr1199-node/dr1199-node.c:45:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/jn516x/rpl/coap-dr1199-node/dr1199-node.c:71:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/jn516x/rpl/coap-dr1199-node/dr1199-node.c:332:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/jn516x/rpl/tools/rpl-tools.c:120:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/jn516x/tsch/simple-sensor-network/node/node.c:90:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/jn516x/tsch/simple-sensor-network/node/node.c:100:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/jn516x/tsch/simple-sensor-network/node/node.c:141:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/jn516x/tsch/simple-sensor-network/rpl-border-router/border-router.c:80:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/jn516x/tsch/simple-sensor-network/rpl-border-router/slip-bridge.c:75:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/jn516x/tsch/tools/rpl-tools.c:119:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/jn516x/tsch/tx-power-verification/node/node.c:48:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/jn516x/tsch/tx-power-verification/node/node.c:75:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/jn516x/tsch/tx-power-verification/rpl-border-router/rpl-border-router.c:62:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/jn516x/tsch/tx-power-verification/rpl-border-router/rpl-border-router.c:127:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/jn516x/tsch/tx-power-verification/rpl-border-router/slip-bridge.c:75:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/jn516x/tsch/uart1-test-node/uart1-test-node.c:54:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/jn516x/tsch/uart1-test-node/uart1-test-node.c:61:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/llsec/ccm-star-tests/encryption/tests.c:86:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/llsec/ccm-star-tests/verification/tests.c:114:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/mbxxx/mbxxx-websense/mbxxx-websense.c:62:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/mbxxx/udp-ipv6-sleep/udp-client.c:74:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/mbxxx/udp-ipv6-sleep/udp-client.c:78:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/mbxxx/udp-ipv6-sleep/udp-server.c:52:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/mbxxx/udp-ipv6-sleep/udp-server.c:55:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/mbxxx/udp-ipv6-sleep/udp-server.c:62:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/mbxxx/webserver-ajax/ajax-cgi.c:85:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/mbxxx/webserver-ajax/ajax-cgi.c:119:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/mbxxx/webserver-ajax/ajax-cgi.c:175:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:152:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:153:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:154:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:155:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:156:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:157:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:177:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:178:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:179:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:187:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:417:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:418:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:419:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:420:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:422:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:423:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:472:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/ravenusbstick/fakeuip.c:57:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ravenusbstick/fakeuip.c:60:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/ravenusbstick/fakeuip.c:63:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+examples/rime/example-announcement.c:67:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/rime/example-announcement.c:68:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/rime/example-rucb.c:73:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/rime/example-rucb.c:75:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/rime/example-rudolph1.c:71:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/rime/example-rudolph1.c:72:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/rime/example-rudolph2.c:70:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/rime/example-rudolph2.c:71:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/settings-example/settings-example.c:54:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/settings-example/settings-example.c:123:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/sky-ip/ajax-cgi.c:83:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/sky-ip/ajax-cgi.c:115:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/sky-ip/httpd-fsdata.c:4:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/sky-ip/httpd-fsdata.c:10:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/sky-ip/httpd-fsdata.c:235:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/sky-ip/httpd-fsdata.c:242:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/sky-ip/httpd-fsdata.c:296:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/sky-ip/httpd-fsdata.c:311:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/sky-ip/httpd-fsdata.c:332:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/sky-ip/httpd-fsdata.c:381:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/sky-ip/sky-telnet-server.c:61:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/sky-ip/telnet-webserver.c:61:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/sky/radio-test.c:100:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/sky/radio-test.c:140:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/tcp-socket/tcp-server.c:62:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/tcp-socket/tcp-server.c:63:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/udp-ipv6/udp-client.c:61:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/udp-ipv6/udp-client.c:69:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/udp-ipv6/udp-server.c:52:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/udp-ipv6/udp-server.c:55:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/udp-ipv6/udp-server.c:62:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+examples/wget/wget.c:55:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/wget/wget.c:67:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/wget/wget.c:165:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/zolertia/z1/ipv6/z1-websense/z1-websense.c:93:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/zolertia/zoul/at-test/at-master-test.c:160:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/zolertia/zoul/at-test/at-master-test.c:189:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/zolertia/zoul/at-test/at-master-test.c:203:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/zolertia/zoul/at-test/at-master-test.c:257:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/zolertia/zoul/at-test/at-master-test.c:304:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/zolertia/zoul/at-test/at-master-test.c:309:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/zolertia/zoul/at-test/at-master-test.c:348:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/zolertia/zoul/at-test/at-master-test.c:353:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+examples/zolertia/zoul/at-test/at-master-test.c:401:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/zolertia/zoul/orion/client/client.c:40:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/zolertia/zoul/orion/client/ifttt-client.c:41:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/zolertia/zoul/orion/client/ifttt-client.c:42:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/zolertia/zoul/orion/ip64-router/httpd-simple.h:57:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/zolertia/zoul/orion/ip64-router/httpd-simple.h:59:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/zolertia/zoul/orion/ip64-router/ip64-router.c:96:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/zolertia/zoul/orion/ip64-router/ip64-router.c:130:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/zolertia/zoul/test-lcd.c:64:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+examples/antelope/netdb/netdb-client.c:77:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/avr-rss2/ipv6/rpl-border-router/httpd-simple.c:132:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120). Risk is low because the source is a
+  constant string.
+examples/avr-rss2/ipv6/rpl-border-router/httpd-simple.c:174:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/avr-rss2/ipv6/rpl-border-router/httpd-simple.c:177:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/avr-rss2/ipv6/rpl-border-router/httpd-simple.h:72:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/avr-rss2/ipv6/rpl-udp-report/report.c:116:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/avr-rss2/ipv6/sensd_client/sensd_client.c:131:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc2538-common/crypto/sha256-test.c:212:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:303:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:418:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:419:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:420:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:422:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:423:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:517:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:556:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:557:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc2538-common/mqtt-demo/mqtt-demo.c:595:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.c:358:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.c:359:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.c:378:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.c:379:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.c:406:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.c:407:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/cc26xx-web-demo.c:520:  [1] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source is a constant character.
+examples/cc26xx/cc26xx-web-demo/cetic-6lbr-client.c:90:  [1] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source is a constant character.
+examples/cc26xx/cc26xx-web-demo/cetic-6lbr-client.c:163:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:58:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:348:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:351:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:354:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:357:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:360:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:1013:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:1054:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:1148:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120). Risk is low because the source is a
+  constant string.
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:1186:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:1189:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/cc26xx/cc26xx-web-demo/httpd-simple.c:1200:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:183:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:184:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:208:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:209:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:233:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:234:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:258:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:259:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:283:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:284:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:309:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:310:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:332:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:333:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:362:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:363:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:387:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:388:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:478:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:596:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:702:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:735:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:736:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/mqtt-client.c:776:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/net-uart.c:165:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/net-uart.c:166:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/net-uart.c:187:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/net-uart.c:188:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/net-uart.c:213:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/net-uart.c:214:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/net-uart.c:286:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-ble-advd.c:89:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-device.c:90:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-device.c:96:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-device.c:103:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-device.c:107:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-device.c:123:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-device.c:129:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-device.c:135:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-device.c:139:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-device.c:155:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-device.c:161:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-device.c:167:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-device.c:171:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-net.c:63:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-net.c:69:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-net.c:75:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-net.c:79:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-net.c:100:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-net.c:106:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-net.c:112:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-net.c:116:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-sensors.c:65:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-sensors.c:76:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-sensors.c:82:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-sensors.c:89:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/cc26xx-web-demo/resources/res-sensors.c:93:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:127:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:133:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:137:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:160:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:167:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:171:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cc26xx/very-sleepy-demo/very-sleepy-demo.c:239:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/cfs-coffee/example-coffee.c:83:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/er-rest-example/resources/res-battery.c:69:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-battery.c:74:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-battery.c:78:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-chunks.c:71:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-light.c:70:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-light.c:75:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-light.c:80:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-light.c:84:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-plugtest-large-create.c:69:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-plugtest-large-create.c:82:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-plugtest-large-create.c:88:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-plugtest-large-update.c:69:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-plugtest-large-update.c:97:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-plugtest-large-update.c:125:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-plugtest-large.c:64:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-plugtest-links.c:70:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-plugtest-multi.c:84:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-plugtest-path.c:60:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-plugtest-path.c:71:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-plugtest-separate.c:112:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-radio.c:83:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-radio.c:92:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-radio.c:96:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-separate.c:105:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-sht11.c:79:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-sht11.c:84:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-sht11.c:89:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-sht11.c:93:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-sub.c:62:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-sub.c:68:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-temperature.c:89:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-temperature.c:94:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/er-rest-example/resources/res-temperature.c:98:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/ipso-objects/example-server.c:118:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/ipso-objects/example-server.c:119:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/ipso-objects/example-server.c:139:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/ipso-objects/example-server.c:351:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/ipso-objects/example-server.c:357:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/ipso-objects/example-server.c:362:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/ipso-objects/example-server.c:364:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/ipv6/json-ws/json-ws-udp.c:147:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/ipv6/json-ws/json-ws.c:354:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/ipv6/json-ws/json-ws.c:450:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/ipv6/native-border-router/border-router-cmds.c:140:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/ipv6/native-border-router/border-router-cmds.c:142:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/ipv6/native-border-router/httpd-simple.c:132:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120). Risk is low because the source is a
+  constant string.
+examples/ipv6/native-border-router/httpd-simple.c:174:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/ipv6/native-border-router/httpd-simple.c:177:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/ipv6/native-border-router/httpd-simple.h:72:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/ipv6/native-border-router/slip-config.c:100:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/ipv6/native-border-router/slip-config.c:102:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/ipv6/native-border-router/slip-dev.c:456:  [1] (obsolete) usleep:
+  This C routine is considered obsolete (as opposed to the shell command by
+  the same name). The interaction of this function with SIGALRM and other
+  timer functions such as sleep(), alarm(), setitimer(), and nanosleep() is
+  unspecified (CWE-676). Use nanosleep(2) or setitimer(2) instead.
+examples/ipv6/native-border-router/tun-bridge.c:147:  [1] (buffer) strncat:
+  Easily used incorrectly (e.g., incorrectly computing the correct maximum
+  size to add) [MS-banned] (CWE-120). Consider strcat_s, strlcat, snprintf,
+  or automatically resizing strings.
+examples/ipv6/native-border-router/tun-bridge.c:169:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/ipv6/native-border-router/tun-bridge.c:240:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+examples/ipv6/rpl-border-router/httpd-simple.c:132:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120). Risk is low because the source is a
+  constant string.
+examples/ipv6/rpl-border-router/httpd-simple.c:174:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/ipv6/rpl-border-router/httpd-simple.c:177:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/ipv6/rpl-border-router/httpd-simple.h:72:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/ipv6/rpl-udp/udp-client.c:111:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/ipv6/simple-udp-rpl/unicast-sender.c:129:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/jn516x/tsch/simple-sensor-network/node/node.c:207:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/mbxxx/udp-ipv6-sleep/udp-client.c:83:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/mbxxx/udp-ipv6-sleep/udp-server.c:65:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/mbxxx/webserver-ajax/ajax-cgi.c:75:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:302:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:417:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:418:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:419:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:421:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:422:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:504:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:543:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:544:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/nrf52dk/mqtt-demo/mqtt-demo.c:582:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/rime/example-mesh.c:77:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/rime/example-mesh.c:102:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/sky-ip/ajax-cgi.c:73:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/udp-ipv6/udp-client.c:74:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/udp-ipv6/udp-server.c:65:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/wget/wget.c:72:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/wget/wget.c:89:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/wget/wget.c:156:  [1] (buffer) getchar:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+examples/wget/wget.c:181:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/wget/wget.c:189:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+examples/zolertia/zoul/at-test/at-master-test.c:425:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/zolertia/zoul/orion/ip64-router/httpd-simple.c:109:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120). Risk is low because the source is a
+  constant string.
+examples/zolertia/zoul/orion/ip64-router/httpd-simple.c:151:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/zolertia/zoul/orion/ip64-router/httpd-simple.c:154:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+examples/zolertia/zoul/orion/ip64-router/httpd-simple.h:68:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+
+ANALYSIS SUMMARY:
+
+Hits = 601
+Lines analyzed = 60799 in approximately 2.95 seconds (20622 lines/second)
+Physical Source Lines of Code (SLOC) = 33328
+Hits@level = [0]   0 [1] 194 [2] 354 [3]   1 [4]  52 [5]   0
+Hits@level+ = [0+] 601 [1+] 601 [2+] 407 [3+]  53 [4+]  52 [5+]   0
+Hits/KSLOC@level+ = [0+] 18.0329 [1+] 18.0329 [2+] 12.212 [3+] 1.59025 [4+] 1.56025 [5+]   0
+Minimum risk level = 1
+Not every hit is necessarily a security vulnerability.
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming for Linux and Unix HOWTO'
+(http://www.dwheeler.com/secure-programs) for more information.

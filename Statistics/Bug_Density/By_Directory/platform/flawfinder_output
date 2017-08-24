@@ -1,0 +1,3093 @@
+Flawfinder version 2.0.0, (C) 2001-2017 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 219
+Examining platform/apple2enh/contiki-conf.h
+Examining platform/apple2enh/contiki-main.c
+Examining platform/apple2enh/lib/error.c
+Examining platform/apple2enh/sys/clock.c
+Examining platform/atarixl/contiki-conf.h
+Examining platform/atarixl/contiki-main.c
+Examining platform/atarixl/lib/error.c
+Examining platform/avr-atmega128rfa1/apps/raven-ipso/raven-ipso.c
+Examining platform/avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cfs.c
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cfs.h
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.h
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fs/makefsdata.h
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fs.c
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fs.h
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.h
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/httpd.c
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/httpd.h
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/webserver-dsc.c
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/webserver-dsc.h
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/webserver-nogui.c
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/webserver-nogui.h
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/webserver.c
+Examining platform/avr-atmega128rfa1/apps/raven-webserver/webserver.h
+Examining platform/avr-atmega128rfa1/button-sensor.c
+Examining platform/avr-atmega128rfa1/contiki-conf.h
+Examining platform/avr-atmega128rfa1/contiki-main.c
+Examining platform/avr-atmega128rfa1/params.c
+Examining platform/avr-atmega128rfa1/params.h
+Examining platform/avr-atmega128rfa1/raven-lcd.h
+Examining platform/avr-atmega128rfa1/slip_uart0.c
+Examining platform/avr-raven/apps/raven-ipso/raven-ipso.c
+Examining platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c
+Examining platform/avr-raven/apps/raven-webserver/http-strings.c
+Examining platform/avr-raven/apps/raven-webserver/http-strings.h
+Examining platform/avr-raven/apps/raven-webserver/httpd-cfs.c
+Examining platform/avr-raven/apps/raven-webserver/httpd-cfs.h
+Examining platform/avr-raven/apps/raven-webserver/httpd-cgi.c
+Examining platform/avr-raven/apps/raven-webserver/httpd-cgi.h
+Examining platform/avr-raven/apps/raven-webserver/httpd-fs/makefsdata.h
+Examining platform/avr-raven/apps/raven-webserver/httpd-fs.c
+Examining platform/avr-raven/apps/raven-webserver/httpd-fs.h
+Examining platform/avr-raven/apps/raven-webserver/httpd-fsdata.h
+Examining platform/avr-raven/apps/raven-webserver/httpd.c
+Examining platform/avr-raven/apps/raven-webserver/httpd.h
+Examining platform/avr-raven/apps/raven-webserver/webserver-dsc.c
+Examining platform/avr-raven/apps/raven-webserver/webserver-dsc.h
+Examining platform/avr-raven/apps/raven-webserver/webserver-nogui.c
+Examining platform/avr-raven/apps/raven-webserver/webserver-nogui.h
+Examining platform/avr-raven/apps/raven-webserver/webserver.c
+Examining platform/avr-raven/apps/raven-webserver/webserver.h
+Examining platform/avr-raven/button-sensor.c
+Examining platform/avr-raven/cfs-coffee-arch.c
+Examining platform/avr-raven/cfs-coffee-arch.h
+Examining platform/avr-raven/contiki-conf.h
+Examining platform/avr-raven/contiki-raven-default-init-lowlevel.c
+Examining platform/avr-raven/contiki-raven-default-init-net.c
+Examining platform/avr-raven/contiki-raven-main.c
+Examining platform/avr-raven/contiki-raven.h
+Examining platform/avr-raven/dev/temperature-sensor.h
+Examining platform/avr-raven/loadable_prg.c
+Examining platform/avr-raven/params.c
+Examining platform/avr-raven/params.h
+Examining platform/avr-raven/raven-lcd.h
+Examining platform/avr-raven/slip_uart0.c
+Examining platform/avr-ravenlcd/adc.c
+Examining platform/avr-ravenlcd/adc.h
+Examining platform/avr-ravenlcd/beep.c
+Examining platform/avr-ravenlcd/beep.h
+Examining platform/avr-ravenlcd/key.c
+Examining platform/avr-ravenlcd/key.h
+Examining platform/avr-ravenlcd/lcd.c
+Examining platform/avr-ravenlcd/lcd.h
+Examining platform/avr-ravenlcd/main.h
+Examining platform/avr-ravenlcd/menu.c
+Examining platform/avr-ravenlcd/menu.h
+Examining platform/avr-ravenlcd/raven3290.c
+Examining platform/avr-ravenlcd/sleep.c
+Examining platform/avr-ravenlcd/sleep.h
+Examining platform/avr-ravenlcd/temp.c
+Examining platform/avr-ravenlcd/temp.h
+Examining platform/avr-ravenlcd/timer.c
+Examining platform/avr-ravenlcd/timer.h
+Examining platform/avr-ravenlcd/uart.c
+Examining platform/avr-ravenlcd/uart.h
+Examining platform/avr-ravenusb/cdc_task.c
+Examining platform/avr-ravenusb/cdc_task.h
+Examining platform/avr-ravenusb/contiki-conf.h
+Examining platform/avr-ravenusb/contiki-raven-default-init-lowlevel.c
+Examining platform/avr-ravenusb/contiki-raven-default-init-net.c
+Examining platform/avr-ravenusb/contiki-raven-main.c
+Examining platform/avr-ravenusb/contiki-raven.h
+Examining platform/avr-ravenusb/httpd-simple-avr.c
+Examining platform/avr-ravenusb/loadable_prg.c
+Examining platform/avr-ravenusb/rng.c
+Examining platform/avr-ravenusb/rng.h
+Examining platform/avr-ravenusb/sicslow_ethernet.c
+Examining platform/avr-ravenusb/sicslow_ethernet.h
+Examining platform/avr-rcb/contiki-conf.h
+Examining platform/avr-rcb/contiki-rcb-main.c
+Examining platform/avr-rcb/contiki-rcb.h
+Examining platform/avr-rcb/loadable_prg.c
+Examining platform/avr-rss2/contiki-conf.h
+Examining platform/avr-rss2/contiki-main.c
+Examining platform/avr-rss2/dev/adc.c
+Examining platform/avr-rss2/dev/adc.h
+Examining platform/avr-rss2/dev/battery-sensor.c
+Examining platform/avr-rss2/dev/bme280-arch.c
+Examining platform/avr-rss2/dev/button-sensor.c
+Examining platform/avr-rss2/dev/co2_sa_kxx-sensor.c
+Examining platform/avr-rss2/dev/co2_sa_kxx-sensor.h
+Examining platform/avr-rss2/dev/enc28j60_avr.c
+Examining platform/avr-rss2/dev/enc28j60_avr.h
+Examining platform/avr-rss2/dev/i2c.c
+Examining platform/avr-rss2/dev/i2c.h
+Examining platform/avr-rss2/dev/leds.c
+Examining platform/avr-rss2/dev/leds.h
+Examining platform/avr-rss2/dev/light-sensor.c
+Examining platform/avr-rss2/dev/light-sensor.h
+Examining platform/avr-rss2/dev/pulse-sensor.c
+Examining platform/avr-rss2/dev/pulse-sensor.h
+Examining platform/avr-rss2/dev/temp-sensor.c
+Examining platform/avr-rss2/dev/temp-sensor.h
+Examining platform/avr-rss2/dev/temp_mcu-sensor.c
+Examining platform/avr-rss2/dev/temp_mcu-sensor.h
+Examining platform/avr-rss2/ip64-conf.h
+Examining platform/avr-rss2/params.c
+Examining platform/avr-rss2/params.h
+Examining platform/avr-rss2/rss2.h
+Examining platform/avr-rss2/slip_uart0.c
+Examining platform/avr-zigbit/contiki-avr-zigbit-main.c
+Examining platform/avr-zigbit/contiki-avr-zigbit.h
+Examining platform/avr-zigbit/contiki-conf.h
+Examining platform/avr-zigbit/loadable_prg.c
+Examining platform/c128/contiki-conf.h
+Examining platform/c128/contiki-main.c
+Examining platform/c128/lib/exec.c
+Examining platform/c128/lib/lseek.c
+Examining platform/c128/lib/pfs-dir.c
+Examining platform/c64/contiki-conf.h
+Examining platform/c64/contiki-main.c
+Examining platform/c64/lib/exec.c
+Examining platform/c64/lib/lseek.c
+Examining platform/c64/lib/pfs-dir.c
+Examining platform/cc2530dk/contiki-conf.h
+Examining platform/cc2530dk/contiki-main.c
+Examining platform/cc2530dk/debug.c
+Examining platform/cc2530dk/debug.h
+Examining platform/cc2530dk/dev/adc-sensor.c
+Examining platform/cc2530dk/dev/adc-sensor.h
+Examining platform/cc2530dk/dev/button-sensor.c
+Examining platform/cc2530dk/dev/button-sensor.h
+Examining platform/cc2530dk/dev/io-arch.h
+Examining platform/cc2530dk/dev/leds-arch.c
+Examining platform/cc2530dk/dev/leds-arch.h
+Examining platform/cc2530dk/dev/slip-arch.c
+Examining platform/cc2530dk/dev/smartrf-sensors.c
+Examining platform/cc2530dk/dev/usb-serial.c
+Examining platform/cc2530dk/dev/usb-serial.h
+Examining platform/cc2530dk/models.h
+Examining platform/cc2530dk/putchar.c
+Examining platform/cc2530dk/uip-debug.c
+Examining platform/cc2530dk/viztool.c
+Examining platform/cc2538dk/contiki-conf.h
+Examining platform/cc2538dk/contiki-main.c
+Examining platform/cc2538dk/dev/als-sensor.c
+Examining platform/cc2538dk/dev/als-sensor.h
+Examining platform/cc2538dk/dev/board.h
+Examining platform/cc2538dk/dev/button-sensor.c
+Examining platform/cc2538dk/dev/button-sensor.h
+Examining platform/cc2538dk/dev/leds-arch.c
+Examining platform/cc2538dk/dev/smartrf-sensors.c
+Examining platform/cooja/cfs/cfs-cooja.c
+Examining platform/cooja/contiki-conf.h
+Examining platform/cooja/contiki-cooja-main.c
+Examining platform/cooja/dev/beep.c
+Examining platform/cooja/dev/beep.h
+Examining platform/cooja/dev/button-sensor.c
+Examining platform/cooja/dev/button-sensor.h
+Examining platform/cooja/dev/cooja-radio.c
+Examining platform/cooja/dev/cooja-radio.h
+Examining platform/cooja/dev/eeprom.c
+Examining platform/cooja/dev/ip.c
+Examining platform/cooja/dev/ip.h
+Examining platform/cooja/dev/leds-arch.c
+Examining platform/cooja/dev/moteid.c
+Examining platform/cooja/dev/moteid.h
+Examining platform/cooja/dev/pir-sensor.c
+Examining platform/cooja/dev/pir-sensor.h
+Examining platform/cooja/dev/rs232.c
+Examining platform/cooja/dev/rs232.h
+Examining platform/cooja/dev/uart1.h
+Examining platform/cooja/dev/vib-sensor.c
+Examining platform/cooja/dev/vib-sensor.h
+Examining platform/cooja/dev/watchdog.c
+Examining platform/cooja/lib/simEnvChange.c
+Examining platform/cooja/lib/simEnvChange.h
+Examining platform/cooja/mtarch.c
+Examining platform/cooja/mtarch.h
+Examining platform/cooja/net/init-net.h
+Examining platform/cooja/net/radio-uip-uaodv.c
+Examining platform/cooja/net/radio-uip-uaodv.h
+Examining platform/cooja/net/uip-driver.c
+Examining platform/cooja/net/uip-driver.h
+Examining platform/cooja/netstack-conf-example.h
+Examining platform/cooja/rtimer-arch.c
+Examining platform/cooja/rtimer-arch.h
+Examining platform/cooja/slip-arch.c
+Examining platform/cooja/sys/clock.c
+Examining platform/cooja/sys/cooja_mt.c
+Examining platform/cooja/sys/cooja_mt.h
+Examining platform/cooja/sys/cooja_mtarch.c
+Examining platform/cooja/sys/cooja_mtarch.h
+Examining platform/cooja/sys/log.c
+Examining platform/cooja/sys/node-id.h
+Examining platform/cooja/testapps/hello-world.c
+Examining platform/cooja/testapps/testbutton.c
+Examining platform/cooja/testapps/testcfs.c
+Examining platform/cooja/testapps/testctimer.c
+Examining platform/cooja/testapps/testetimer.c
+Examining platform/cooja/testapps/testsensors.c
+Examining platform/cooja/testapps/testserial.c
+Examining platform/cooja/testapps/testuaodv.c
+Examining platform/cooja/testapps/testuip.c
+Examining platform/cooja-ip64/contiki-cooja-ip64-main.c
+Examining platform/cooja-ip64/ip64-conf.h
+Examining platform/cooja-ip64/subplatform-conf.h
+Examining platform/econotag/apps/ecc/ecc.c
+Examining platform/econotag/apps/ecc/ecc.h
+Examining platform/econotag/apps/flash/flash.c
+Examining platform/econotag/apps/flash/flash.h
+Examining platform/econotag/button-sensor.c
+Examining platform/econotag/button-sensor2.c
+Examining platform/econotag/contiki-conf.h
+Examining platform/econotag/main.c
+Examining platform/econotag/platform_prints.c
+Examining platform/econotag/platform_prints.h
+Examining platform/ev-aducrf101mkxz/button-sensor.c
+Examining platform/ev-aducrf101mkxz/contiki-conf.h
+Examining platform/ev-aducrf101mkxz/contiki-main.c
+Examining platform/ev-aducrf101mkxz/leds-arch.c
+Examining platform/ev-aducrf101mkxz/platform-conf.h
+Examining platform/eval-adf7xxxmb4z/button-sensor.c
+Examining platform/eval-adf7xxxmb4z/contiki-conf.h
+Examining platform/eval-adf7xxxmb4z/contiki-main.c
+Examining platform/eval-adf7xxxmb4z/platform-conf.h
+Examining platform/exp5438/blink.c
+Examining platform/exp5438/cc2420-arch.c
+Examining platform/exp5438/clock.c
+Examining platform/exp5438/contiki-conf.h
+Examining platform/exp5438/contiki-exp5438-main.c
+Examining platform/exp5438/duty-cycle-scroller.c
+Examining platform/exp5438/duty-cycle-scroller.h
+Examining platform/exp5438/flash.c
+Examining platform/exp5438/hal_lcd.c
+Examining platform/exp5438/hal_lcd.h
+Examining platform/exp5438/hal_lcd_fonts.c
+Examining platform/exp5438/hal_lcd_fonts.h
+Examining platform/exp5438/hal_MSP-EXP430F5438.h
+Examining platform/exp5438/lcd.c
+Examining platform/exp5438/lcd.h
+Examining platform/exp5438/leds-arch.c
+Examining platform/exp5438/msp430.c
+Examining platform/exp5438/node-id.c
+Examining platform/exp5438/platform-conf.h
+Examining platform/exp5438/rtimer-arch.c
+Examining platform/exp5438/spix.c
+Examining platform/exp5438/uart1-putchar.c
+Examining platform/exp5438/uart1x.c
+Examining platform/exp5438/watchdog.c
+Examining platform/galileo/contiki-conf.h
+Examining platform/galileo/contiki-main.c
+Examining platform/galileo/core/sys/clock.c
+Examining platform/galileo/core/sys/mtarch.h
+Examining platform/galileo/core/sys/rtimer-arch.c
+Examining platform/galileo/core/sys/rtimer-arch.h
+Examining platform/galileo/drivers/cy8c9540a.c
+Examining platform/galileo/drivers/cy8c9540a.h
+Examining platform/galileo/drivers/galileo-gen1-pinmux.c
+Examining platform/galileo/drivers/galileo-gen2-pinmux.c
+Examining platform/galileo/drivers/galileo-gpio.c
+Examining platform/galileo/drivers/galileo-gpio.h
+Examining platform/galileo/drivers/galileo-pinmux.h
+Examining platform/galileo/drivers/gpio-pcal9535a.c
+Examining platform/galileo/drivers/gpio-pcal9535a.h
+Examining platform/galileo/drivers/pwm-pca9685.c
+Examining platform/galileo/drivers/pwm-pca9685.h
+Examining platform/galileo/net/eth-conf.c
+Examining platform/galileo/net/eth-conf.h
+Examining platform/galileo/net/eth-proc.c
+Examining platform/galileo/net/eth-proc.h
+Examining platform/galileo/newlib-syscalls.c
+Examining platform/jn516x/contiki-conf.h
+Examining platform/jn516x/contiki-jn516x-main.c
+Examining platform/jn516x/dev/clock.c
+Examining platform/jn516x/dev/dongle/leds-arch.c
+Examining platform/jn516x/dev/dr1174/button-sensor.c
+Examining platform/jn516x/dev/dr1174/button-sensor.h
+Examining platform/jn516x/dev/dr1174/leds-arch.c
+Examining platform/jn516x/dev/dr1175/ht-sensor.c
+Examining platform/jn516x/dev/dr1175/ht-sensor.h
+Examining platform/jn516x/dev/dr1175/leds-arch-1175.c
+Examining platform/jn516x/dev/dr1175/leds-arch-1175.h
+Examining platform/jn516x/dev/dr1175/light-sensor.c
+Examining platform/jn516x/dev/dr1175/light-sensor.h
+Examining platform/jn516x/dev/dr1199/leds-arch-1199.c
+Examining platform/jn516x/dev/dr1199/leds-arch-1199.h
+Examining platform/jn516x/dev/dr1199/pot-sensor.c
+Examining platform/jn516x/dev/dr1199/pot-sensor.h
+Examining platform/jn516x/dev/exceptions.c
+Examining platform/jn516x/dev/exceptions.h
+Examining platform/jn516x/dev/jn516x-ccm-star.c
+Examining platform/jn516x/dev/leds-extension.c
+Examining platform/jn516x/dev/leds-extension.h
+Examining platform/jn516x/dev/micromac-radio.c
+Examining platform/jn516x/dev/micromac-radio.h
+Examining platform/jn516x/dev/mtarch.c
+Examining platform/jn516x/dev/mtarch.h
+Examining platform/jn516x/dev/node-id.c
+Examining platform/jn516x/dev/rtimer-arch-slow.c
+Examining platform/jn516x/dev/rtimer-arch.c
+Examining platform/jn516x/dev/rtimer-arch.h
+Examining platform/jn516x/dev/slip_uart0.c
+Examining platform/jn516x/dev/uart-driver.c
+Examining platform/jn516x/dev/uart-driver.h
+Examining platform/jn516x/dev/uart0.c
+Examining platform/jn516x/dev/uart0.h
+Examining platform/jn516x/dev/uart1.c
+Examining platform/jn516x/dev/uart1.h
+Examining platform/jn516x/dev/watchdog.c
+Examining platform/jn516x/lib/log.c
+Examining platform/jn516x/lib/slip.c
+Examining platform/jn516x/lib/sprintf.c
+Examining platform/jn516x/platform-conf.h
+Examining platform/mbxxx/apps/shell-sensors.c
+Examining platform/mbxxx/apps/shell-sensors.h
+Examining platform/mbxxx/board.c
+Examining platform/mbxxx/board.h
+Examining platform/mbxxx/clock.c
+Examining platform/mbxxx/contiki-conf.h
+Examining platform/mbxxx/contiki-init-net.c
+Examining platform/mbxxx/contiki-init-net.h
+Examining platform/mbxxx/contiki-main.c
+Examining platform/mbxxx/dev/acc-sensor.c
+Examining platform/mbxxx/dev/acc-sensor.h
+Examining platform/mbxxx/dev/button-sensor.c
+Examining platform/mbxxx/dev/contact-sensor.c
+Examining platform/mbxxx/dev/contact-sensor.h
+Examining platform/mbxxx/dev/eeprom.c
+Examining platform/mbxxx/dev/i2c.c
+Examining platform/mbxxx/dev/i2c.h
+Examining platform/mbxxx/dev/irq.c
+Examining platform/mbxxx/dev/mems.c
+Examining platform/mbxxx/dev/mems.h
+Examining platform/mbxxx/dev/mems_regs.h
+Examining platform/mbxxx/dev/temperature-sensor.c
+Examining platform/mbxxx/dev/temperature-sensor.h
+Examining platform/mbxxx/platform-conf.h
+Examining platform/micaz/apps/battery-monitor.c
+Examining platform/micaz/apps/mts310/accel-test.c
+Examining platform/micaz/apps/mts310/light-test.c
+Examining platform/micaz/apps/mts310/magnet-test.c
+Examining platform/micaz/apps/mts310/mic-test.c
+Examining platform/micaz/contiki-conf.h
+Examining platform/micaz/contiki-micaz-main.c
+Examining platform/micaz/dev/adc.c
+Examining platform/micaz/dev/adc.h
+Examining platform/micaz/dev/cc2420-arch.c
+Examining platform/micaz/dev/clock.c
+Examining platform/micaz/dev/ds2401.c
+Examining platform/micaz/dev/ds2401.h
+Examining platform/micaz/dev/leds-arch.c
+Examining platform/micaz/dev/sensors/battery-sensor.c
+Examining platform/micaz/dev/sensors/mts300.c
+Examining platform/micaz/dev/sensors/mts300.h
+Examining platform/micaz/dev/slip_uart0.c
+Examining platform/micaz/init-net.c
+Examining platform/micaz/init-net.h
+Examining platform/micaz/node-id.c
+Examining platform/micaz/platform-conf.h
+Examining platform/minimal-net/clock.c
+Examining platform/minimal-net/contiki-conf.h
+Examining platform/minimal-net/contiki-main.c
+Examining platform/minimal-net/leds-arch.c
+Examining platform/native/cfs-coffee-arch.h
+Examining platform/native/clock.c
+Examining platform/native/contiki-conf.h
+Examining platform/native/contiki-main.c
+Examining platform/native/ctk/ctk-curses.c
+Examining platform/native/ctk/ctk-curses.h
+Examining platform/native/dev/beep.c
+Examining platform/native/dev/beep.h
+Examining platform/native/dev/button-sensor.c
+Examining platform/native/dev/button-sensor.h
+Examining platform/native/dev/dummy-sensors.c
+Examining platform/native/dev/irq.c
+Examining platform/native/dev/leds-arch.c
+Examining platform/native/dev/pir-sensor.c
+Examining platform/native/dev/pir-sensor.h
+Examining platform/native/dev/temperature-sensor.h
+Examining platform/native/dev/vib-sensor.c
+Examining platform/native/dev/vib-sensor.h
+Examining platform/native/dev/xmem.c
+Examining platform/nrf52dk/config/nrf_drv_config.h
+Examining platform/nrf52dk/config/pstorage_platform.h
+Examining platform/nrf52dk/contiki-conf.h
+Examining platform/nrf52dk/contiki-main.c
+Examining platform/nrf52dk/dbg-io/dbg.c
+Examining platform/nrf52dk/dbg-io/dbg.h
+Examining platform/nrf52dk/dbg-io/debug-uart.h
+Examining platform/nrf52dk/dev/button-sensor.c
+Examining platform/nrf52dk/dev/button-sensor.h
+Examining platform/nrf52dk/dev/leds-arch.c
+Examining platform/nrf52dk/dev/nrf52dk-sensors.c
+Examining platform/nrf52dk/dev/temperature-sensor.c
+Examining platform/nrf52dk/dev/temperature-sensor.h
+Examining platform/nrf52dk/platform-conf.h
+Examining platform/nrf52dk/rtt/rtt-printf.c
+Examining platform/nrf52dk/rtt/segger-rtt-conf.h
+Examining platform/nrf52dk/rtt/segger-rtt-printf.c
+Examining platform/nrf52dk/rtt/segger-rtt.c
+Examining platform/nrf52dk/rtt/segger-rtt.h
+Examining platform/openmote-cc2538/board.c
+Examining platform/openmote-cc2538/board.h
+Examining platform/openmote-cc2538/contiki-conf.h
+Examining platform/openmote-cc2538/contiki-main.c
+Examining platform/openmote-cc2538/dev/adxl346.c
+Examining platform/openmote-cc2538/dev/adxl346.h
+Examining platform/openmote-cc2538/dev/antenna.c
+Examining platform/openmote-cc2538/dev/antenna.h
+Examining platform/openmote-cc2538/dev/button-sensor.c
+Examining platform/openmote-cc2538/dev/button-sensor.h
+Examining platform/openmote-cc2538/dev/leds-arch.c
+Examining platform/openmote-cc2538/dev/max44009.c
+Examining platform/openmote-cc2538/dev/max44009.h
+Examining platform/openmote-cc2538/dev/openmote-sensors.c
+Examining platform/openmote-cc2538/dev/openmote-sensors.h
+Examining platform/openmote-cc2538/dev/sht21.c
+Examining platform/openmote-cc2538/dev/sht21.h
+Examining platform/openmote-cc2538/dev/tps62730.c
+Examining platform/openmote-cc2538/dev/tps62730.h
+Examining platform/seedeye/contiki-conf.h
+Examining platform/seedeye/contiki-seedeye-main.c
+Examining platform/seedeye/dev/battery-sensor.c
+Examining platform/seedeye/dev/button-sensor.c
+Examining platform/seedeye/dev/leds-arch.c
+Examining platform/seedeye/dev/mrf24j40/mrf24j40.c
+Examining platform/seedeye/dev/mrf24j40/mrf24j40.h
+Examining platform/seedeye/dev/mrf24j40/mrf24j40_arch.h
+Examining platform/seedeye/dev/radio-sensor.c
+Examining platform/seedeye/init-net.c
+Examining platform/seedeye/init-net.h
+Examining platform/seedeye/platform-conf.h
+Examining platform/sky/apps/blink.c
+Examining platform/sky/apps/burn-nodeid.c
+Examining platform/sky/apps/fader.c
+Examining platform/sky/cfs-coffee-arch.h
+Examining platform/sky/contiki-conf.h
+Examining platform/sky/contiki-sky-main.c
+Examining platform/sky/contiki-sky-platform.c
+Examining platform/sky/dev/battery-sensor.c
+Examining platform/sky/dev/button-sensor.c
+Examining platform/sky/dev/i2c.c
+Examining platform/sky/dev/i2c.h
+Examining platform/sky/dev/light-sensor.c
+Examining platform/sky/dev/light-sensor.h
+Examining platform/sky/dev/radio-sensor.c
+Examining platform/sky/dev/sht11-arch.h
+Examining platform/sky/dev/sky-sensors.c
+Examining platform/sky/dev/sky-sensors.h
+Examining platform/sky/dev/temperature-sensor.c
+Examining platform/sky/dev/temperature-sensor.h
+Examining platform/sky/dev/xmem.c
+Examining platform/sky/node-id.c
+Examining platform/sky/platform-conf.h
+Examining platform/srf06-cc26xx/common/board-spi.c
+Examining platform/srf06-cc26xx/common/board-spi.h
+Examining platform/srf06-cc26xx/common/ext-flash.c
+Examining platform/srf06-cc26xx/common/ext-flash.h
+Examining platform/srf06-cc26xx/contiki-conf.h
+Examining platform/srf06-cc26xx/contiki-main.c
+Examining platform/srf06-cc26xx/launchpad/board-peripherals.h
+Examining platform/srf06-cc26xx/launchpad/board.c
+Examining platform/srf06-cc26xx/launchpad/button-sensor.c
+Examining platform/srf06-cc26xx/launchpad/button-sensor.h
+Examining platform/srf06-cc26xx/launchpad/cc1310/board.h
+Examining platform/srf06-cc26xx/launchpad/cc1350/board.h
+Examining platform/srf06-cc26xx/launchpad/cc1350/rf-switch.c
+Examining platform/srf06-cc26xx/launchpad/cc1350/tx-power-driver.c
+Examining platform/srf06-cc26xx/launchpad/cc2650/board.h
+Examining platform/srf06-cc26xx/launchpad/launchpad-sensors.c
+Examining platform/srf06-cc26xx/launchpad/leds-arch.c
+Examining platform/srf06-cc26xx/sensortag/bmp-280-sensor.c
+Examining platform/srf06-cc26xx/sensortag/bmp-280-sensor.h
+Examining platform/srf06-cc26xx/sensortag/board-i2c.c
+Examining platform/srf06-cc26xx/sensortag/board-i2c.h
+Examining platform/srf06-cc26xx/sensortag/board-peripherals.h
+Examining platform/srf06-cc26xx/sensortag/board.c
+Examining platform/srf06-cc26xx/sensortag/button-sensor.c
+Examining platform/srf06-cc26xx/sensortag/button-sensor.h
+Examining platform/srf06-cc26xx/sensortag/buzzer.c
+Examining platform/srf06-cc26xx/sensortag/buzzer.h
+Examining platform/srf06-cc26xx/sensortag/cc1350/board.h
+Examining platform/srf06-cc26xx/sensortag/cc1350/leds-arch.c
+Examining platform/srf06-cc26xx/sensortag/cc2650/board.h
+Examining platform/srf06-cc26xx/sensortag/cc2650/leds-arch.c
+Examining platform/srf06-cc26xx/sensortag/hdc-1000-sensor.c
+Examining platform/srf06-cc26xx/sensortag/hdc-1000-sensor.h
+Examining platform/srf06-cc26xx/sensortag/mpu-9250-sensor.c
+Examining platform/srf06-cc26xx/sensortag/mpu-9250-sensor.h
+Examining platform/srf06-cc26xx/sensortag/opt-3001-sensor.c
+Examining platform/srf06-cc26xx/sensortag/opt-3001-sensor.h
+Examining platform/srf06-cc26xx/sensortag/reed-relay.c
+Examining platform/srf06-cc26xx/sensortag/reed-relay.h
+Examining platform/srf06-cc26xx/sensortag/sensor-common.c
+Examining platform/srf06-cc26xx/sensortag/sensor-common.h
+Examining platform/srf06-cc26xx/sensortag/sensortag-sensors.c
+Examining platform/srf06-cc26xx/sensortag/tmp-007-sensor.c
+Examining platform/srf06-cc26xx/sensortag/tmp-007-sensor.h
+Examining platform/srf06-cc26xx/srf06/als-sensor.c
+Examining platform/srf06-cc26xx/srf06/als-sensor.h
+Examining platform/srf06-cc26xx/srf06/board-peripherals.h
+Examining platform/srf06-cc26xx/srf06/board.c
+Examining platform/srf06-cc26xx/srf06/button-sensor.c
+Examining platform/srf06-cc26xx/srf06/button-sensor.h
+Examining platform/srf06-cc26xx/srf06/cc13xx/board.h
+Examining platform/srf06-cc26xx/srf06/cc26xx/board.h
+Examining platform/srf06-cc26xx/srf06/leds-arch.c
+Examining platform/srf06-cc26xx/srf06/srf06-sensors.c
+Examining platform/stm32nucleo-spirit1/contiki-conf.h
+Examining platform/stm32nucleo-spirit1/contiki-spirit1-main.c
+Examining platform/stm32nucleo-spirit1/dev/acceleration-sensor.c
+Examining platform/stm32nucleo-spirit1/dev/acceleration-sensor.h
+Examining platform/stm32nucleo-spirit1/dev/button-sensor.c
+Examining platform/stm32nucleo-spirit1/dev/gyroscope-sensor.c
+Examining platform/stm32nucleo-spirit1/dev/gyroscope-sensor.h
+Examining platform/stm32nucleo-spirit1/dev/humidity-sensor.c
+Examining platform/stm32nucleo-spirit1/dev/humidity-sensor.h
+Examining platform/stm32nucleo-spirit1/dev/leds-arch.c
+Examining platform/stm32nucleo-spirit1/dev/magneto-sensor.c
+Examining platform/stm32nucleo-spirit1/dev/magneto-sensor.h
+Examining platform/stm32nucleo-spirit1/dev/pressure-sensor.c
+Examining platform/stm32nucleo-spirit1/dev/pressure-sensor.h
+Examining platform/stm32nucleo-spirit1/dev/radio-sensor.c
+Examining platform/stm32nucleo-spirit1/dev/sensor-common.h
+Examining platform/stm32nucleo-spirit1/dev/temperature-sensor.c
+Examining platform/stm32nucleo-spirit1/dev/temperature-sensor.h
+Examining platform/stm32nucleo-spirit1/dev/uart1.h
+Examining platform/stm32nucleo-spirit1/hw-config.h
+Examining platform/stm32nucleo-spirit1/node-id.c
+Examining platform/stm32nucleo-spirit1/platform-conf.h
+Examining platform/stm32nucleo-spirit1/spirit1-arch.c
+Examining platform/stm32nucleo-spirit1/spirit1-arch.h
+Examining platform/stm32nucleo-spirit1/spirit1-config.h
+Examining platform/stm32nucleo-spirit1/spirit1-const.h
+Examining platform/stm32nucleo-spirit1/spirit1.c
+Examining platform/stm32nucleo-spirit1/spirit1.h
+Examining platform/stm32nucleo-spirit1/st-lib.h
+Examining platform/stm32nucleo-spirit1/stm32l-spirit1-config.h
+Examining platform/stm32nucleo-spirit1/uart-msg.c
+Examining platform/stm32test/contiki-conf.h
+Examining platform/stm32test/contiki-main.c
+Examining platform/stm32test/structgen_opts.gen.h
+Examining platform/win32/cfs/cfs-win32-dir.c
+Examining platform/win32/clock.c
+Examining platform/win32/conio.h
+Examining platform/win32/contiki-conf.h
+Examining platform/win32/contiki-main.c
+Examining platform/win32/ctk/ctk-console.c
+Examining platform/win32/ctk/ctk-console.h
+Examining platform/win32/loader/dll-loader.c
+Examining platform/win32/loader/dll-loader.h
+Examining platform/win32/loader/unload.c
+Examining platform/win32/loader/unload.h
+Examining platform/wismote/apps/burn-nodeid.c
+Examining platform/wismote/cfs-coffee-arch.h
+Examining platform/wismote/contiki-conf.h
+Examining platform/wismote/contiki-wismote-main.c
+Examining platform/wismote/contiki-wismote-platform.c
+Examining platform/wismote/dev/acc-sensor.c
+Examining platform/wismote/dev/acc-sensor.h
+Examining platform/wismote/dev/battery-sensor.c
+Examining platform/wismote/dev/button-sensor.c
+Examining platform/wismote/dev/ext-sensor.c
+Examining platform/wismote/dev/ext-sensor.h
+Examining platform/wismote/dev/i2c.c
+Examining platform/wismote/dev/i2c.h
+Examining platform/wismote/dev/light-sensor.c
+Examining platform/wismote/dev/light-sensor.h
+Examining platform/wismote/dev/radio-sensor.c
+Examining platform/wismote/dev/sht11-arch.h
+Examining platform/wismote/dev/sht15.c
+Examining platform/wismote/dev/sht15.h
+Examining platform/wismote/dev/sky-sensors.c
+Examining platform/wismote/dev/sky-sensors.h
+Examining platform/wismote/dev/xmem.c
+Examining platform/wismote/flash.c
+Examining platform/wismote/leds-arch.c
+Examining platform/wismote/node-id.c
+Examining platform/wismote/platform-conf.h
+Examining platform/z1/apps/blink.c
+Examining platform/z1/apps/burn-nodeid.c
+Examining platform/z1/apps/fader.c
+Examining platform/z1/cfs-coffee-arch.h
+Examining platform/z1/contiki-conf.h
+Examining platform/z1/contiki-z1-main.c
+Examining platform/z1/contiki-z1-platform.c
+Examining platform/z1/dev/adxl345.c
+Examining platform/z1/dev/adxl345.h
+Examining platform/z1/dev/battery-sensor.c
+Examining platform/z1/dev/button-sensor.c
+Examining platform/z1/dev/cc2420-arch.c
+Examining platform/z1/dev/i2cmaster.c
+Examining platform/z1/dev/i2cmaster.h
+Examining platform/z1/dev/light-sensor.c
+Examining platform/z1/dev/light-sensor.h
+Examining platform/z1/dev/light-ziglet.c
+Examining platform/z1/dev/light-ziglet.h
+Examining platform/z1/dev/potentiometer-sensor.c
+Examining platform/z1/dev/potentiometer-sensor.h
+Examining platform/z1/dev/radio-sensor.c
+Examining platform/z1/dev/reed-sensor.c
+Examining platform/z1/dev/reed-sensor.h
+Examining platform/z1/dev/relay-phidget.c
+Examining platform/z1/dev/relay-phidget.h
+Examining platform/z1/dev/sht11-arch.h
+Examining platform/z1/dev/sht25.c
+Examining platform/z1/dev/sht25.h
+Examining platform/z1/dev/sky-sensors.c
+Examining platform/z1/dev/sky-sensors.h
+Examining platform/z1/dev/temperature-sensor.c
+Examining platform/z1/dev/temperature-sensor.h
+Examining platform/z1/dev/tlc59116.c
+Examining platform/z1/dev/tlc59116.h
+Examining platform/z1/dev/tmp102.c
+Examining platform/z1/dev/tmp102.h
+Examining platform/z1/dev/xmem.c
+Examining platform/z1/dev/z1-phidgets.c
+Examining platform/z1/dev/z1-phidgets.h
+Examining platform/z1/dev/z1-sensors.c
+Examining platform/z1/node-id.c
+Examining platform/z1/platform-conf.h
+Examining platform/zoul/contiki-conf.h
+Examining platform/zoul/contiki-main.c
+Examining platform/zoul/dev/ac-dimmer.c
+Examining platform/zoul/dev/ac-dimmer.h
+Examining platform/zoul/dev/adc-sensors.c
+Examining platform/zoul/dev/adc-sensors.h
+Examining platform/zoul/dev/adc-zoul.c
+Examining platform/zoul/dev/adc-zoul.h
+Examining platform/zoul/dev/antenna-sw.c
+Examining platform/zoul/dev/antenna-sw.h
+Examining platform/zoul/dev/bme280-arch.c
+Examining platform/zoul/dev/bmpx8x.c
+Examining platform/zoul/dev/bmpx8x.h
+Examining platform/zoul/dev/button-sensor.c
+Examining platform/zoul/dev/button-sensor.h
+Examining platform/zoul/dev/cc1200-zoul-arch.c
+Examining platform/zoul/dev/dht22.c
+Examining platform/zoul/dev/dht22.h
+Examining platform/zoul/dev/grove-gyro.c
+Examining platform/zoul/dev/grove-gyro.h
+Examining platform/zoul/dev/iaq.c
+Examining platform/zoul/dev/iaq.h
+Examining platform/zoul/dev/led-strip.c
+Examining platform/zoul/dev/led-strip.h
+Examining platform/zoul/dev/leds-arch.c
+Examining platform/zoul/dev/mmc-arch.c
+Examining platform/zoul/dev/motion-sensor.c
+Examining platform/zoul/dev/motion-sensor.h
+Examining platform/zoul/dev/mp3-wtv020sd.c
+Examining platform/zoul/dev/mp3-wtv020sd.h
+Examining platform/zoul/dev/pm10-sensor.c
+Examining platform/zoul/dev/pm10-sensor.h
+Examining platform/zoul/dev/relay.c
+Examining platform/zoul/dev/relay.h
+Examining platform/zoul/dev/rgb-bl-lcd.c
+Examining platform/zoul/dev/rgb-bl-lcd.h
+Examining platform/zoul/dev/rtcc-config.h
+Examining platform/zoul/dev/rtcc.c
+Examining platform/zoul/dev/rtcc.h
+Examining platform/zoul/dev/servo.c
+Examining platform/zoul/dev/servo.h
+Examining platform/zoul/dev/sht25.c
+Examining platform/zoul/dev/sht25.h
+Examining platform/zoul/dev/tmp102.c
+Examining platform/zoul/dev/tmp102.h
+Examining platform/zoul/dev/tsl256x.c
+Examining platform/zoul/dev/tsl256x.h
+Examining platform/zoul/dev/weather-meter.c
+Examining platform/zoul/dev/weather-meter.h
+Examining platform/zoul/dev/zonik.c
+Examining platform/zoul/dev/zonik.h
+Examining platform/zoul/dev/zoul-sensors.c
+Examining platform/zoul/dev/zoul-sensors.h
+Examining platform/zoul/firefly/board.c
+Examining platform/zoul/firefly/board.h
+Examining platform/zoul/firefly-reva/board.c
+Examining platform/zoul/firefly-reva/board.h
+Examining platform/zoul/fs/fat/diskio.c
+Examining platform/zoul/fs/fat/ffconf.h
+Examining platform/zoul/orion/board.c
+Examining platform/zoul/orion/board.h
+Examining platform/zoul/orion/enc28j60-arch-gpio.c
+Examining platform/zoul/orion/enc28j60-arch-spi.c
+Examining platform/zoul/orion/ip64-conf.h
+Examining platform/zoul/remote-reva/board.c
+Examining platform/zoul/remote-reva/board.h
+Examining platform/zoul/remote-reva/power-mgmt.c
+Examining platform/zoul/remote-reva/power-mgmt.h
+Examining platform/zoul/remote-revb/board.c
+Examining platform/zoul/remote-revb/board.h
+Examining platform/zoul/remote-revb/leds-res-arch.c
+Examining platform/zoul/remote-revb/power-mgmt.c
+Examining platform/zoul/remote-revb/power-mgmt.h
+
+FINAL RESULTS:
+
+platform/avr-atmega128rfa1/apps/raven-ipso/raven-ipso.c:169:  [4] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:124:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:130:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd.c:74:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd.h:83:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd.h:87:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+platform/avr-raven/apps/raven-ipso/raven-ipso.c:169:  [4] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf.
+platform/avr-raven/apps/raven-webserver/httpd-cgi.c:123:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+platform/avr-raven/apps/raven-webserver/httpd-cgi.c:130:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+platform/avr-raven/apps/raven-webserver/httpd.c:74:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/avr-raven/apps/raven-webserver/httpd.h:83:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+platform/avr-raven/apps/raven-webserver/httpd.h:87:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+platform/avr-ravenlcd/lcd.c:453:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+platform/avr-ravenusb/cdc_task.c:90:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/cc2538dk/contiki-main.c:77:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/cooja-ip64/contiki-cooja-ip64-main.c:180:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/cooja/cfs/cfs-cooja.c:42:  [4] (race) access:
+  This usually indicates a security flaw. If an attacker can change anything
+  along the path between the call to access() and the file's actual use
+  (e.g., by moving files), the attacker can exploit the race condition
+  (CWE-362/CWE-367!). Set up the correct permissions (e.g., using setuid())
+  and try to open the file directly.
+platform/cooja/cfs/cfs-cooja.c:90:  [4] (race) access:
+  This usually indicates a security flaw. If an attacker can change anything
+  along the path between the call to access() and the file's actual use
+  (e.g., by moving files), the attacker can exploit the race condition
+  (CWE-362/CWE-367!). Set up the correct permissions (e.g., using setuid())
+  and try to open the file directly.
+platform/cooja/cfs/cfs-cooja.c:107:  [4] (race) access:
+  This usually indicates a security flaw. If an attacker can change anything
+  along the path between the call to access() and the file's actual use
+  (e.g., by moving files), the attacker can exploit the race condition
+  (CWE-362/CWE-367!). Set up the correct permissions (e.g., using setuid())
+  and try to open the file directly.
+platform/cooja/contiki-cooja-main.c:221:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/cooja/rtimer-arch.c:46:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/cooja/sys/log.c:154:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/cooja/sys/log.c:162:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+platform/econotag/apps/ecc/ecc.c:54:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/econotag/apps/flash/flash.c:55:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/ev-aducrf101mkxz/contiki-main.c:120:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/ev-aducrf101mkxz/contiki-main.c:122:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/ev-aducrf101mkxz/contiki-main.c:125:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/eval-adf7xxxmb4z/contiki-main.c:98:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/eval-adf7xxxmb4z/contiki-main.c:165:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/eval-adf7xxxmb4z/contiki-main.c:167:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/eval-adf7xxxmb4z/contiki-main.c:170:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/eval-adf7xxxmb4z/contiki-main.c:186:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/eval-adf7xxxmb4z/contiki-main.c:204:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/eval-adf7xxxmb4z/contiki-main.c:252:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/eval-adf7xxxmb4z/contiki-main.c:258:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/exp5438/contiki-exp5438-main.c:64:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/exp5438/rtimer-arch.c:50:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/jn516x/contiki-jn516x-main.c:132:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/jn516x/dev/clock.c:55:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/jn516x/dev/dr1174/button-sensor.c:46:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/jn516x/dev/dr1175/ht-sensor.c:47:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/jn516x/dev/dr1175/light-sensor.c:48:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/jn516x/dev/dr1199/pot-sensor.c:47:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/jn516x/dev/rtimer-arch-slow.c:54:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/jn516x/dev/rtimer-arch.c:55:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/jn516x/lib/slip.c:57:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/jn516x/lib/sprintf.c:79:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+platform/jn516x/lib/sprintf.c:193:  [4] (format) sprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+platform/jn516x/lib/sprintf.c:198:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+platform/jn516x/lib/sprintf.c:203:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+platform/jn516x/lib/sprintf.c:208:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+platform/jn516x/lib/sprintf.c:213:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/jn516x/lib/sprintf.c:219:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+platform/mbxxx/contiki-init-net.c:54:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/native/contiki-main.c:180:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/native/contiki-main.c:182:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/native/contiki-main.c:185:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/nrf52dk/contiki-main.c:65:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/nrf52dk/rtt/rtt-printf.c:14:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/openmote-cc2538/contiki-main.c:80:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/openmote-cc2538/dev/adxl346.c:50:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/openmote-cc2538/dev/max44009.c:50:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/openmote-cc2538/dev/sht21.c:50:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/seedeye/contiki-seedeye-main.c:75:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/seedeye/dev/mrf24j40/mrf24j40.c:65:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/seedeye/init-net.c:64:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/sky/contiki-sky-main.c:102:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/sky/dev/xmem.c:51:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/srf06-cc26xx/contiki-main.c:194:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/srf06-cc26xx/sensortag/bmp-280-sensor.c:53:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/srf06-cc26xx/sensortag/hdc-1000-sensor.c:55:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/srf06-cc26xx/sensortag/mpu-9250-sensor.c:55:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/srf06-cc26xx/sensortag/opt-3001-sensor.c:55:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/srf06-cc26xx/sensortag/tmp-007-sensor.c:54:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/stm32nucleo-spirit1/spirit1.c:52:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/win32/cfs/cfs-win32-dir.c:62:  [4] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf.
+platform/win32/contiki-conf.h:27:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+platform/win32/contiki-conf.h:27:  [4] (format) _snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+platform/win32/contiki-conf.h:183:  [4] (shell) execlp:
+  This causes a new program to execute and is difficult to use safely
+  (CWE-78). try using a library call that implements the same functionality
+  if available.
+platform/win32/contiki-main.c:77:  [4] (format) vsprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+platform/win32/loader/dll-loader.c:91:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+platform/wismote/contiki-wismote-main.c:282:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/wismote/dev/xmem.c:53:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/z1/contiki-z1-main.c:94:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/z1/dev/adxl345.c:53:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/z1/dev/i2cmaster.h:60:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/z1/dev/light-ziglet.c:48:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/z1/dev/tlc59116.h:48:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/z1/dev/tmp102.c:51:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/z1/dev/xmem.c:51:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/contiki-main.c:80:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/contiki-main.c:127:  [4] (shell) system:
+  This causes a new program to execute and is difficult to use safely
+  (CWE-78). try using a library call that implements the same functionality
+  if available.
+platform/zoul/dev/adc-sensors.c:53:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/dev/adc-zoul.c:53:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/dev/bmpx8x.c:53:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/dev/cc1200-zoul-arch.c:77:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/dev/dht22.c:49:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/dev/grove-gyro.c:52:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/dev/iaq.c:54:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/dev/motion-sensor.c:54:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/dev/rgb-bl-lcd.c:51:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/dev/rtcc.c:60:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/dev/servo.c:49:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/dev/sht25.c:51:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/dev/tsl256x.c:52:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/dev/weather-meter.c:60:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/dev/zonik.c:55:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/remote-reva/power-mgmt.c:52:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/zoul/remote-revb/power-mgmt.c:53:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+platform/win32/loader/dll-loader.c:49:  [3] (misc) LoadLibrary:
+  Ensure that the full path to the library is specified, or current directory
+  may be used (CWE-829, CWE-20). Use registry entry or GetWindowsDirectory to
+  find library path, if you aren't already.
+platform/win32/loader/dll-loader.c:84:  [3] (misc) LoadLibrary:
+  Ensure that the full path to the library is specified, or current directory
+  may be used (CWE-829, CWE-20). Use registry entry or GetWindowsDirectory to
+  find library path, if you aren't already.
+platform/avr-atmega128rfa1/apps/raven-ipso/raven-ipso.c:74:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c:263:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c:462:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:2:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:8:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:11:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:17:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:20:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:23:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:29:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:32:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:35:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:38:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:41:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:44:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:47:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:50:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:53:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:56:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:59:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:62:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:65:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:68:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:71:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:74:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:77:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:80:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:83:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:86:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:89:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:92:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:95:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:98:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.c:101:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:1:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:2:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:3:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:4:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:6:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:7:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:8:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:9:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:10:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:11:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:12:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:13:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:15:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:16:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:17:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:18:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:19:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:20:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:21:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:22:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:23:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:24:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:25:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:27:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:28:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:29:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:30:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:31:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:32:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:33:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/http-strings.h:34:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cfs.h:43:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cfs.h:44:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cfs.h:45:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:61:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:109:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:110:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:165:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:229:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:268:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:590:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c:15:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c:32:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c:72:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c:93:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c:100:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c:184:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c:293:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c:316:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c:323:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c:335:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c:359:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c:569:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-fsdata.c:596:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd.c:67:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd.c:214:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd.c:309:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd.c:310:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd.h:46:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd.h:47:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd.h:82:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-atmega128rfa1/apps/raven-webserver/webserver-dsc.c:39:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/webserver-dsc.c:55:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/webserver-nogui.c:72:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/webserver-nogui.c:77:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/webserver-nogui.c:78:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+platform/avr-atmega128rfa1/apps/raven-webserver/webserver.c:57:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-webserver/webserver.c:97:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-atmega128rfa1/apps/raven-webserver/webserver.c:100:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+platform/avr-atmega128rfa1/apps/raven-webserver/webserver.c:118:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-atmega128rfa1/button-sensor.c:8:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/contiki-main.c:268:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-atmega128rfa1/contiki-main.c:353:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-ipso/raven-ipso.c:74:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c:259:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c:314:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c:321:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c:462:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:2:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:8:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:11:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:17:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:20:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:23:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:29:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:32:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:35:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:38:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:41:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:44:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:47:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:50:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:53:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:56:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:59:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:62:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:65:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:68:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:71:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:74:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:77:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:80:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:83:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:86:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:89:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:92:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:95:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:98:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.c:101:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:1:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:2:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:3:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:4:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:6:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:7:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:8:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:9:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:10:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:11:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:12:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:13:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:15:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:16:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:17:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:18:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:19:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:20:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:21:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:22:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:23:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:24:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:25:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:27:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:28:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:29:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:30:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:31:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:32:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:33:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/http-strings.h:34:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/httpd-cfs.h:43:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/httpd-cfs.h:44:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/httpd-cfs.h:45:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/httpd-cgi.c:60:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/httpd-cgi.c:108:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/httpd-cgi.c:109:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/httpd-cgi.c:166:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/httpd-cgi.c:230:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/httpd-cgi.c:269:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/httpd-cgi.c:571:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+platform/avr-raven/apps/raven-webserver/httpd.c:67:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/httpd.c:214:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/httpd.h:46:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/httpd.h:47:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/httpd.h:82:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-raven/apps/raven-webserver/webserver-dsc.c:39:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/webserver-dsc.c:55:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/webserver-nogui.c:72:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/webserver-nogui.c:77:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/webserver-nogui.c:78:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+platform/avr-raven/apps/raven-webserver/webserver.c:57:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/apps/raven-webserver/webserver.c:97:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-raven/apps/raven-webserver/webserver.c:100:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+platform/avr-raven/apps/raven-webserver/webserver.c:118:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-raven/button-sensor.c:8:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/cfs-coffee-arch.c:82:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/cfs-coffee-arch.c:404:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/cfs-coffee-arch.c:560:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/contiki-raven-main.c:52:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-raven/contiki-raven-main.c:269:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-raven/contiki-raven-main.c:371:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-ravenlcd/lcd.c:250:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-ravenlcd/lcd.c:477:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-ravenlcd/menu.h:68:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-ravenlcd/raven3290.c:271:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-ravenlcd/uart.c:320:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-ravenlcd/uart.c:441:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-ravenusb/cdc_task.c:128:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-ravenusb/cdc_task.c:129:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-ravenusb/cdc_task.c:294:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-ravenusb/cdc_task.c:307:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+platform/avr-ravenusb/cdc_task.c:379:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+platform/avr-ravenusb/contiki-raven-main.c:166:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-ravenusb/contiki-raven-main.c:505:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-ravenusb/httpd-simple-avr.c:59:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-ravenusb/httpd-simple-avr.c:60:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-ravenusb/httpd-simple-avr.c:61:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-ravenusb/httpd-simple-avr.c:113:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-ravenusb/httpd-simple-avr.c:214:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-ravenusb/sicslow_ethernet.c:753:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-ravenusb/sicslow_ethernet.c:924:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-ravenusb/sicslow_ethernet.c:970:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-ravenusb/sicslow_ethernet.c:1011:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-rss2/contiki-main.c:287:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-rss2/contiki-main.c:314:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-rss2/contiki-main.c:315:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/avr-rss2/contiki-main.c:404:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-rss2/dev/button-sensor.c:8:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-zigbit/contiki-avr-zigbit-main.c:140:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/c128/lib/exec.c:54:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/c128/lib/exec.c:55:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/c128/lib/exec.c:57:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/c128/lib/pfs-dir.c:65:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/c128/lib/pfs-dir.c:101:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/c64/lib/exec.c:54:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/c64/lib/exec.c:55:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/c64/lib/exec.c:57:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/c64/lib/pfs-dir.c:65:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/c64/lib/pfs-dir.c:101:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/cc2530dk/contiki-main.c:139:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/contiki-main.c:264:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/dev/smartrf-sensors.c:57:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/cc2530dk/viztool.c:59:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/cc2530dk/viztool.c:103:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/viztool.c:105:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/viztool.c:107:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/viztool.c:109:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/viztool.c:133:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/viztool.c:135:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/viztool.c:137:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/viztool.c:146:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/viztool.c:181:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/viztool.c:183:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/viztool.c:185:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/viztool.c:199:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/viztool.c:201:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2530dk/viztool.c:252:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2538dk/contiki-main.c:119:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cc2538dk/contiki-main.c:217:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja-ip64/contiki-cooja-ip64-main.c:206:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja-ip64/contiki-cooja-ip64-main.c:351:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/cfs/cfs-cooja.c:53:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/cooja/cfs/cfs-cooja.c:94:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/cfs/cfs-cooja.c:112:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/contiki-conf.h:52:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/contiki-cooja-main.c:287:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/contiki-cooja-main.c:427:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/dev/cooja-radio.c:53:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/cooja/dev/cooja-radio.c:56:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/cooja/dev/cooja-radio.c:180:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/dev/cooja-radio.c:236:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/dev/eeprom.c:40:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/cooja/dev/eeprom.c:61:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/dev/eeprom.c:79:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/dev/ip.c:43:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/cooja/dev/ip.c:50:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/cooja/dev/rs232.c:43:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/cooja/net/radio-uip-uaodv.c:119:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/net/radio-uip-uaodv.c:212:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/net/radio-uip-uaodv.c:301:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/net/radio-uip-uaodv.c:309:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/net/radio-uip-uaodv.c:359:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/net/radio-uip-uaodv.c:360:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/net/radio-uip-uaodv.c:361:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/net/radio-uip-uaodv.c:362:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/net/radio-uip-uaodv.c:370:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/net/radio-uip-uaodv.c:371:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/net/radio-uip-uaodv.c:378:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/net/uip-driver.c:77:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/sys/log.c:56:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/cooja/sys/log.c:82:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/cooja/sys/log.c:157:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/cooja/testapps/testcfs.c:46:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/cooja/testapps/testcfs.c:57:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+platform/econotag/main.c:128:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/ev-aducrf101mkxz/contiki-main.c:79:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/ev-aducrf101mkxz/contiki-main.c:146:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/eval-adf7xxxmb4z/contiki-main.c:82:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/eval-adf7xxxmb4z/contiki-main.c:189:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/exp5438/contiki-exp5438-main.c:69:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/exp5438/contiki-exp5438-main.c:81:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/exp5438/contiki-exp5438-main.c:167:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/exp5438/contiki-exp5438-main.c:207:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/exp5438/lcd.c:89:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/exp5438/node-id.c:47:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/galileo/net/eth-proc.c:52:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/galileo/net/eth-proc.c:54:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/galileo/newlib-syscalls.c:41:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/jn516x/contiki-jn516x-main.c:90:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/jn516x/contiki-jn516x-main.c:250:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/jn516x/contiki-jn516x-main.c:327:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/jn516x/contiki-jn516x-main.c:366:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/jn516x/dev/jn516x-ccm-star.c:57:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/jn516x/dev/jn516x-ccm-star.c:92:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/jn516x/dev/jn516x-ccm-star.c:95:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/jn516x/dev/jn516x-ccm-star.c:110:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/jn516x/dev/micromac-radio.c:463:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/jn516x/dev/micromac-radio.c:466:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/jn516x/dev/micromac-radio.c:616:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/jn516x/dev/micromac-radio.c:652:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/jn516x/dev/node-id.c:46:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/jn516x/dev/uart0.c:50:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/jn516x/dev/uart0.c:51:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/jn516x/dev/uart1.c:48:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/jn516x/dev/uart1.c:49:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/jn516x/lib/sprintf.c:52:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/jn516x/lib/sprintf.c:216:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/mbxxx/apps/shell-sensors.c:64:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/mbxxx/board.c:389:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/mbxxx/board.h:54:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/mbxxx/contiki-main.c:115:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/micaz/dev/ds2401.c:56:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/micaz/dev/ds2401.h:36:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/micaz/init-net.c:87:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/micaz/init-net.c:146:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/minimal-net/contiki-main.c:85:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/minimal-net/contiki-main.c:86:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/minimal-net/contiki-main.c:155:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/minimal-net/contiki-main.c:173:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+platform/native/contiki-main.c:151:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/native/contiki-main.c:221:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/native/ctk/ctk-curses.c:69:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/native/dev/xmem.c:46:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/native/dev/xmem.c:62:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/native/dev/xmem.c:70:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/nrf52dk/contiki-main.c:173:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/nrf52dk/rtt/segger-rtt-printf.c:128:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/nrf52dk/rtt/segger-rtt-printf.c:319:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/nrf52dk/rtt/segger-rtt.c:100:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/nrf52dk/rtt/segger-rtt.c:124:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/nrf52dk/rtt/segger-rtt.c:135:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/nrf52dk/rtt/segger-rtt.c:136:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/nrf52dk/rtt/segger-rtt.c:194:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+platform/nrf52dk/rtt/segger-rtt.c:195:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+platform/nrf52dk/rtt/segger-rtt.c:237:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/nrf52dk/rtt/segger-rtt.c:280:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/nrf52dk/rtt/segger-rtt.c:287:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/nrf52dk/rtt/segger-rtt.c:289:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/nrf52dk/rtt/segger-rtt.c:308:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/nrf52dk/rtt/segger-rtt.c:390:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/nrf52dk/rtt/segger-rtt.c:408:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/nrf52dk/rtt/segger-rtt.c:512:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/nrf52dk/rtt/segger-rtt.c:529:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/nrf52dk/rtt/segger-rtt.c:535:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/nrf52dk/rtt/segger-rtt.c:536:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/nrf52dk/rtt/segger-rtt.c:544:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/nrf52dk/rtt/segger-rtt.c:975:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/nrf52dk/rtt/segger-rtt.h:85:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/openmote-cc2538/contiki-main.c:127:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/openmote-cc2538/contiki-main.c:213:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/seedeye/init-net.c:144:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/seedeye/init-net.c:146:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/sky/contiki-sky-main.c:142:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/sky/contiki-sky-main.c:243:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/sky/contiki-sky-main.c:295:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/sky/dev/sky-sensors.c:42:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/sky/node-id.c:50:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/sky/node-id.c:63:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/srf06-cc26xx/contiki-main.c:112:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/srf06-cc26xx/contiki-main.c:227:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/stm32nucleo-spirit1/contiki-spirit1-main.c:91:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/stm32nucleo-spirit1/contiki-spirit1-main.c:159:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/stm32nucleo-spirit1/contiki-spirit1-main.c:190:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/stm32nucleo-spirit1/node-id.c:37:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/stm32nucleo-spirit1/spirit1.c:406:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/stm32nucleo-spirit1/uart-msg.c:45:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/win32/cfs/cfs-win32-dir.c:56:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/win32/cfs/cfs-win32-dir.c:60:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+platform/win32/contiki-main.c:74:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/win32/ctk/ctk-console.c:53:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/win32/ctk/ctk-console.c:59:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/win32/ctk/ctk-console.c:60:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/win32/loader/dll-loader.c:82:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/wismote/contiki-wismote-main.c:291:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/wismote/node-id.c:50:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/wismote/node-id.c:63:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/z1/contiki-z1-main.c:60:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/z1/contiki-z1-main.c:142:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/z1/contiki-z1-main.c:261:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/z1/contiki-z1-main.c:311:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/z1/dev/i2cmaster.c:45:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/z1/dev/sky-sensors.c:42:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/z1/node-id.c:46:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/z1/node-id.c:52:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/z1/node-id.c:57:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/z1/node-id.c:66:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/zoul/contiki-main.c:181:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/zoul/contiki-main.c:278:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+platform/zoul/dev/rgb-bl-lcd.c:68:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+platform/avr-atmega128rfa1/apps/raven-lcd-interface/raven-lcd.c:450:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cfs.c:55:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cfs.c:156:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cfs.c:159:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd-cgi.c:270:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd.c:408:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+platform/avr-atmega128rfa1/apps/raven-webserver/httpd.h:86:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/avr-atmega128rfa1/apps/raven-webserver/webserver.c:108:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+platform/avr-atmega128rfa1/apps/raven-webserver/webserver.c:121:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+platform/avr-raven/apps/raven-lcd-interface/raven-lcd.c:450:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/avr-raven/apps/raven-webserver/httpd-cfs.c:55:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/avr-raven/apps/raven-webserver/httpd-cfs.c:156:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+platform/avr-raven/apps/raven-webserver/httpd-cfs.c:159:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+platform/avr-raven/apps/raven-webserver/httpd-cgi.c:271:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+platform/avr-raven/apps/raven-webserver/httpd.c:406:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+platform/avr-raven/apps/raven-webserver/httpd.h:86:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/avr-raven/apps/raven-webserver/webserver.c:108:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+platform/avr-raven/apps/raven-webserver/webserver.c:121:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+platform/avr-ravenlcd/lcd.c:454:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/avr-ravenlcd/menu.c:488:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/avr-ravenlcd/menu.c:494:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/avr-ravenusb/httpd-simple-avr.c:112:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/avr-ravenusb/httpd-simple-avr.c:185:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+platform/c128/lib/exec.c:129:  [1] (buffer) strncat:
+  Easily used incorrectly (e.g., incorrectly computing the correct maximum
+  size to add) [MS-banned] (CWE-120). Consider strcat_s, strlcat, snprintf,
+  or automatically resizing strings.
+platform/c64/lib/exec.c:129:  [1] (buffer) strncat:
+  Easily used incorrectly (e.g., incorrectly computing the correct maximum
+  size to add) [MS-banned] (CWE-120). Consider strcat_s, strlcat, snprintf,
+  or automatically resizing strings.
+platform/cc2530dk/contiki-main.c:302:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+platform/cooja/net/radio-uip-uaodv.c:164:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+platform/cooja/sys/log.c:77:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/cooja/sys/log.c:82:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/cooja/sys/log.c:83:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/eval-adf7xxxmb4z/contiki-main.c:220:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+platform/jn516x/dev/micromac-radio.c:569:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+platform/jn516x/dev/micromac-radio.c:884:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+platform/jn516x/dev/micromac-radio.c:1087:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+platform/jn516x/lib/sprintf.c:234:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/minimal-net/contiki-main.c:383:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+platform/native/contiki-main.c:134:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+platform/nrf52dk/rtt/segger-rtt.c:96:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/nrf52dk/rtt/segger-rtt.c:1045:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/win32/cfs/cfs-win32-dir.c:85:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+platform/win32/ctk/ctk-console.c:239:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+platform/zoul/fs/fat/diskio.c:58:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+
+ANALYSIS SUMMARY:
+
+Hits = 579
+Lines analyzed = 112353 in approximately 4.49 seconds (25015 lines/second)
+Physical Source Lines of Code (SLOC) = 57720
+Hits@level = [0]   0 [1]  42 [2] 425 [3]   2 [4] 110 [5]   0
+Hits@level+ = [0+] 579 [1+] 579 [2+] 537 [3+] 112 [4+] 110 [5+]   0
+Hits/KSLOC@level+ = [0+] 10.0312 [1+] 10.0312 [2+] 9.30353 [3+] 1.9404 [4+] 1.90575 [5+]   0
+Minimum risk level = 1
+Not every hit is necessarily a security vulnerability.
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming for Linux and Unix HOWTO'
+(http://www.dwheeler.com/secure-programs) for more information.

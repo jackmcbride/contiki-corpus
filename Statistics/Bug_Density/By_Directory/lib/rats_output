@@ -1,0 +1,17 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+Analyzing lib//fs/fat/ff.c
+Analyzing lib//fs/fat/option/syscall.c
+Analyzing lib//fs/fat/option/unicode/cc932.c
+Analyzing lib//fs/fat/option/unicode/cc936.c
+Analyzing lib//fs/fat/option/unicode/cc949.c
+Analyzing lib//fs/fat/option/unicode/cc950.c
+Analyzing lib//fs/fat/option/unicode/ccsbcs.c
+Analyzing lib//fs/fat/option/unicode.c
+Analyzing lib//newlib/syscalls.c
+Total lines analyzed: 37189
+Total time 0.020074 seconds
+1852595 lines per second
