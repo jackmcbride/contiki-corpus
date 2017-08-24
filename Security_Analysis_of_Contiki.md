@@ -754,7 +754,7 @@ Within this report, you can also read more about CodeSonar under the [Static Ana
 
 ##Images
 
-Below is a series of select screenshots of CodeSonar in action. For a more comprehensive overview of the reporting capabilities of the tool, navigate to `/Static_Analysis/Proprietary_tools/CodeSonar/Reports` to view the reports of 40 different Contiki applications.
+Below is a series of select screenshots of CodeSonar in action. For a more comprehensive overview of the reporting capabilities of the tool, navigate to <a href = "Static_Analysis/Proprietary_tools/CodeSonar/Reports">`Static_Analysis/Proprietary_tools/CodeSonar/Reports`</a> to view the reports of 40 different Contiki applications.
 
 ####CodeSonar Overview
 
