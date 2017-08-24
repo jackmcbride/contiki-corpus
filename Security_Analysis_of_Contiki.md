@@ -788,7 +788,7 @@ By selecting individual errors in the report, you are then able to view the spec
 
 ![Total Errors](Images/cc26xx-web-demo-chart.png)
 
-Resulting from CodeSonar's extensive reporting capabilities, we were able to use it to generate simple warning metrics such as the one above, allowing us to grasp an understanding of the volume of errors as well as the nature of them. The complete collection of these across the projects we analysed can be seen in `/Static_Analysis/Proprietary_tools/CodeSonar/Reports`. To see more documentation of confirmed bugs in the Contiki project, navigate to the `/Static_Analysis/Proprietary_tools/CodeSonar/Bug_Screenshots` and `/Static_Analysis/Proprietary_tools/CodeSonar/Critical_Bugs` folders. 
+Resulting from CodeSonar's extensive reporting capabilities, we were able to use it to generate simple warning metrics such as the one above, allowing us to grasp an understanding of the volume of errors as well as the nature of them. The complete collection of these across the projects we analysed can be seen in <a href = "/Static_Analysis/Proprietary_tools/CodeSonar/Reports">`Static_Analysis/Proprietary_tools/CodeSonar/Reports`</a>. To see more documentation of confirmed bugs in the Contiki project, navigate to the <a href = "Static_Analysis/Proprietary_tools/CodeSonar/Bug_Screenshots">`Static_Analysis/Proprietary_tools/CodeSonar/Bug_Screenshots`</a> and <a href = "Static_Analysis/Proprietary_tools/CodeSonar/Critical_Bugs">`Static_Analysis/Proprietary_tools/CodeSonar/Critical_Bugs`</a> folders.
 
 ####Application: cc26xx-web-demo comparison
 
